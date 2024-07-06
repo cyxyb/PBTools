@@ -672,7 +672,7 @@ message SCUserInfoNotify
 	repeated GunInfo gun_info = 2;
 	repeated WingsInfo wings_info = 3;
 	VipInfo vip_info = 4;
-	PropInfo prop_info = 5;
+	repeated PropInfo prop_info = 5;
 	int32 last_gun_level = 6;
 	int32 last_ratio = 7;
 	int32 last_wings_propId = 8;

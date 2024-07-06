@@ -11415,8 +11415,8 @@ class SCUserInfoNotify PROTOBUF_FINAL :
   enum : int {
     kGunInfoFieldNumber = 2,
     kWingsInfoFieldNumber = 3,
-    kVipInfoFieldNumber = 4,
     kPropInfoFieldNumber = 5,
+    kVipInfoFieldNumber = 4,
     kChairIdxFieldNumber = 1,
     kLastGunLevelFieldNumber = 6,
     kLastRatioFieldNumber = 7,
@@ -11458,6 +11458,24 @@ class SCUserInfoNotify PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo >&
       wings_info() const;
 
+  // repeated .F4BY.PropInfo prop_info = 5;
+  int prop_info_size() const;
+  private:
+  int _internal_prop_info_size() const;
+  public:
+  void clear_prop_info();
+  ::F4BY::PropInfo* mutable_prop_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::PropInfo >*
+      mutable_prop_info();
+  private:
+  const ::F4BY::PropInfo& _internal_prop_info(int index) const;
+  ::F4BY::PropInfo* _internal_add_prop_info();
+  public:
+  const ::F4BY::PropInfo& prop_info(int index) const;
+  ::F4BY::PropInfo* add_prop_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::PropInfo >&
+      prop_info() const;
+
   // .F4BY.VipInfo vip_info = 4;
   bool has_vip_info() const;
   private:
@@ -11475,24 +11493,6 @@ class SCUserInfoNotify PROTOBUF_FINAL :
   void unsafe_arena_set_allocated_vip_info(
       ::F4BY::VipInfo* vip_info);
   ::F4BY::VipInfo* unsafe_arena_release_vip_info();
-
-  // .F4BY.PropInfo prop_info = 5;
-  bool has_prop_info() const;
-  private:
-  bool _internal_has_prop_info() const;
-  public:
-  void clear_prop_info();
-  const ::F4BY::PropInfo& prop_info() const;
-  ::F4BY::PropInfo* release_prop_info();
-  ::F4BY::PropInfo* mutable_prop_info();
-  void set_allocated_prop_info(::F4BY::PropInfo* prop_info);
-  private:
-  const ::F4BY::PropInfo& _internal_prop_info() const;
-  ::F4BY::PropInfo* _internal_mutable_prop_info();
-  public:
-  void unsafe_arena_set_allocated_prop_info(
-      ::F4BY::PropInfo* prop_info);
-  ::F4BY::PropInfo* unsafe_arena_release_prop_info();
 
   // int32 chair_idx = 1;
   void clear_chair_idx();
@@ -11539,8 +11539,8 @@ class SCUserInfoNotify PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo > gun_info_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo > wings_info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::PropInfo > prop_info_;
   ::F4BY::VipInfo* vip_info_;
-  ::F4BY::PropInfo* prop_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 last_gun_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 last_ratio_;
@@ -44669,87 +44669,43 @@ inline void SCUserInfoNotify::set_allocated_vip_info(::F4BY::VipInfo* vip_info) 
   // @@protoc_insertion_point(field_set_allocated:F4BY.SCUserInfoNotify.vip_info)
 }
 
-// .F4BY.PropInfo prop_info = 5;
-inline bool SCUserInfoNotify::_internal_has_prop_info() const {
-  return this != internal_default_instance() && prop_info_ != nullptr;
+// repeated .F4BY.PropInfo prop_info = 5;
+inline int SCUserInfoNotify::_internal_prop_info_size() const {
+  return prop_info_.size();
 }
-inline bool SCUserInfoNotify::has_prop_info() const {
-  return _internal_has_prop_info();
+inline int SCUserInfoNotify::prop_info_size() const {
+  return _internal_prop_info_size();
 }
 inline void SCUserInfoNotify::clear_prop_info() {
-  if (GetArena() == nullptr && prop_info_ != nullptr) {
-    delete prop_info_;
-  }
-  prop_info_ = nullptr;
+  prop_info_.Clear();
 }
-inline const ::F4BY::PropInfo& SCUserInfoNotify::_internal_prop_info() const {
-  const ::F4BY::PropInfo* p = prop_info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::PropInfo&>(
-      ::F4BY::_PropInfo_default_instance_);
-}
-inline const ::F4BY::PropInfo& SCUserInfoNotify::prop_info() const {
-  // @@protoc_insertion_point(field_get:F4BY.SCUserInfoNotify.prop_info)
-  return _internal_prop_info();
-}
-inline void SCUserInfoNotify::unsafe_arena_set_allocated_prop_info(
-    ::F4BY::PropInfo* prop_info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(prop_info_);
-  }
-  prop_info_ = prop_info;
-  if (prop_info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:F4BY.SCUserInfoNotify.prop_info)
-}
-inline ::F4BY::PropInfo* SCUserInfoNotify::release_prop_info() {
-  
-  ::F4BY::PropInfo* temp = prop_info_;
-  prop_info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::F4BY::PropInfo* SCUserInfoNotify::unsafe_arena_release_prop_info() {
-  // @@protoc_insertion_point(field_release:F4BY.SCUserInfoNotify.prop_info)
-  
-  ::F4BY::PropInfo* temp = prop_info_;
-  prop_info_ = nullptr;
-  return temp;
-}
-inline ::F4BY::PropInfo* SCUserInfoNotify::_internal_mutable_prop_info() {
-  
-  if (prop_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::F4BY::PropInfo>(GetArena());
-    prop_info_ = p;
-  }
-  return prop_info_;
-}
-inline ::F4BY::PropInfo* SCUserInfoNotify::mutable_prop_info() {
+inline ::F4BY::PropInfo* SCUserInfoNotify::mutable_prop_info(int index) {
   // @@protoc_insertion_point(field_mutable:F4BY.SCUserInfoNotify.prop_info)
-  return _internal_mutable_prop_info();
+  return prop_info_.Mutable(index);
 }
-inline void SCUserInfoNotify::set_allocated_prop_info(::F4BY::PropInfo* prop_info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete prop_info_;
-  }
-  if (prop_info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(prop_info);
-    if (message_arena != submessage_arena) {
-      prop_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, prop_info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  prop_info_ = prop_info;
-  // @@protoc_insertion_point(field_set_allocated:F4BY.SCUserInfoNotify.prop_info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::PropInfo >*
+SCUserInfoNotify::mutable_prop_info() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SCUserInfoNotify.prop_info)
+  return &prop_info_;
+}
+inline const ::F4BY::PropInfo& SCUserInfoNotify::_internal_prop_info(int index) const {
+  return prop_info_.Get(index);
+}
+inline const ::F4BY::PropInfo& SCUserInfoNotify::prop_info(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SCUserInfoNotify.prop_info)
+  return _internal_prop_info(index);
+}
+inline ::F4BY::PropInfo* SCUserInfoNotify::_internal_add_prop_info() {
+  return prop_info_.Add();
+}
+inline ::F4BY::PropInfo* SCUserInfoNotify::add_prop_info() {
+  // @@protoc_insertion_point(field_add:F4BY.SCUserInfoNotify.prop_info)
+  return _internal_add_prop_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::PropInfo >&
+SCUserInfoNotify::prop_info() const {
+  // @@protoc_insertion_point(field_list:F4BY.SCUserInfoNotify.prop_info)
+  return prop_info_;
 }
 
 // int32 last_gun_level = 6;

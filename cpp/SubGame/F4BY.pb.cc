@@ -6452,7 +6452,7 @@ const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\005\022\037\n\010gun_info\030\002 \003(\0132\r.F4BY.GunInfo\022#\n\nwi"
   "ngs_info\030\003 \003(\0132\017.F4BY.WingsInfo\022\037\n\010vip_i"
   "nfo\030\004 \001(\0132\r.F4BY.VipInfo\022!\n\tprop_info\030\005 "
-  "\001(\0132\016.F4BY.PropInfo\022\026\n\016last_gun_level\030\006 "
+  "\003(\0132\016.F4BY.PropInfo\022\026\n\016last_gun_level\030\006 "
   "\001(\005\022\022\n\nlast_ratio\030\007 \001(\005\022\031\n\021last_wings_pr"
   "opId\030\010 \001(\005\"a\n\020SCGameInfoNotify\022\021\n\tuser_p"
   "ool\030\001 \001(\010\022\022\n\naward_fish\030\002 \003(\005\022&\n\017user_po"
@@ -23187,21 +23187,17 @@ void CSUserInfoNotify::InternalSwap(CSUserInfoNotify* other) {
 class SCUserInfoNotify::_Internal {
  public:
   static const ::F4BY::VipInfo& vip_info(const SCUserInfoNotify* msg);
-  static const ::F4BY::PropInfo& prop_info(const SCUserInfoNotify* msg);
 };
 
 const ::F4BY::VipInfo&
 SCUserInfoNotify::_Internal::vip_info(const SCUserInfoNotify* msg) {
   return *msg->vip_info_;
 }
-const ::F4BY::PropInfo&
-SCUserInfoNotify::_Internal::prop_info(const SCUserInfoNotify* msg) {
-  return *msg->prop_info_;
-}
 SCUserInfoNotify::SCUserInfoNotify(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   gun_info_(arena),
-  wings_info_(arena) {
+  wings_info_(arena),
+  prop_info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:F4BY.SCUserInfoNotify)
@@ -23209,17 +23205,13 @@ SCUserInfoNotify::SCUserInfoNotify(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 SCUserInfoNotify::SCUserInfoNotify(const SCUserInfoNotify& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       gun_info_(from.gun_info_),
-      wings_info_(from.wings_info_) {
+      wings_info_(from.wings_info_),
+      prop_info_(from.prop_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_vip_info()) {
     vip_info_ = new ::F4BY::VipInfo(*from.vip_info_);
   } else {
     vip_info_ = nullptr;
-  }
-  if (from._internal_has_prop_info()) {
-    prop_info_ = new ::F4BY::PropInfo(*from.prop_info_);
-  } else {
-    prop_info_ = nullptr;
   }
   ::memcpy(&chair_idx_, &from.chair_idx_,
     static_cast<size_t>(reinterpret_cast<char*>(&last_wings_propid_) -
@@ -23244,7 +23236,6 @@ SCUserInfoNotify::~SCUserInfoNotify() {
 void SCUserInfoNotify::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete vip_info_;
-  if (this != internal_default_instance()) delete prop_info_;
 }
 
 void SCUserInfoNotify::ArenaDtor(void* object) {
@@ -23270,14 +23261,11 @@ void SCUserInfoNotify::Clear() {
 
   gun_info_.Clear();
   wings_info_.Clear();
+  prop_info_.Clear();
   if (GetArena() == nullptr && vip_info_ != nullptr) {
     delete vip_info_;
   }
   vip_info_ = nullptr;
-  if (GetArena() == nullptr && prop_info_ != nullptr) {
-    delete prop_info_;
-  }
-  prop_info_ = nullptr;
   ::memset(&chair_idx_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&last_wings_propid_) -
       reinterpret_cast<char*>(&chair_idx_)) + sizeof(last_wings_propid_));
@@ -23329,11 +23317,16 @@ const char* SCUserInfoNotify::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .F4BY.PropInfo prop_info = 5;
+      // repeated .F4BY.PropInfo prop_info = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_prop_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_prop_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
         } else goto handle_unusual;
         continue;
       // int32 last_gun_level = 6;
@@ -23415,12 +23408,12 @@ failure:
         4, _Internal::vip_info(this), target, stream);
   }
 
-  // .F4BY.PropInfo prop_info = 5;
-  if (this->has_prop_info()) {
+  // repeated .F4BY.PropInfo prop_info = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_prop_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::prop_info(this), target, stream);
+      InternalWriteMessage(5, this->_internal_prop_info(i), target, stream);
   }
 
   // int32 last_gun_level = 6;
@@ -23471,18 +23464,18 @@ size_t SCUserInfoNotify::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
+  // repeated .F4BY.PropInfo prop_info = 5;
+  total_size += 1UL * this->_internal_prop_info_size();
+  for (const auto& msg : this->prop_info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
   // .F4BY.VipInfo vip_info = 4;
   if (this->has_vip_info()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *vip_info_);
-  }
-
-  // .F4BY.PropInfo prop_info = 5;
-  if (this->has_prop_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *prop_info_);
   }
 
   // int32 chair_idx = 1;
@@ -23546,11 +23539,9 @@ void SCUserInfoNotify::MergeFrom(const SCUserInfoNotify& from) {
 
   gun_info_.MergeFrom(from.gun_info_);
   wings_info_.MergeFrom(from.wings_info_);
+  prop_info_.MergeFrom(from.prop_info_);
   if (from.has_vip_info()) {
     _internal_mutable_vip_info()->::F4BY::VipInfo::MergeFrom(from._internal_vip_info());
-  }
-  if (from.has_prop_info()) {
-    _internal_mutable_prop_info()->::F4BY::PropInfo::MergeFrom(from._internal_prop_info());
   }
   if (from.chair_idx() != 0) {
     _internal_set_chair_idx(from._internal_chair_idx());
@@ -23589,6 +23580,7 @@ void SCUserInfoNotify::InternalSwap(SCUserInfoNotify* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   gun_info_.InternalSwap(&other->gun_info_);
   wings_info_.InternalSwap(&other->wings_info_);
+  prop_info_.InternalSwap(&other->prop_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SCUserInfoNotify, last_wings_propid_)
       + sizeof(SCUserInfoNotify::last_wings_propid_)

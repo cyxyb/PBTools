@@ -151,7 +151,7 @@ namespace F4BY {
             "U0NVc2VySW5mb05vdGlmeRIRCgljaGFpcl9pZHgYASABKAUSHwoIZ3VuX2lu",
             "Zm8YAiADKAsyDS5GNEJZLkd1bkluZm8SIwoKd2luZ3NfaW5mbxgDIAMoCzIP",
             "LkY0QlkuV2luZ3NJbmZvEh8KCHZpcF9pbmZvGAQgASgLMg0uRjRCWS5WaXBJ",
-            "bmZvEiEKCXByb3BfaW5mbxgFIAEoCzIOLkY0QlkuUHJvcEluZm8SFgoObGFz",
+            "bmZvEiEKCXByb3BfaW5mbxgFIAMoCzIOLkY0QlkuUHJvcEluZm8SFgoObGFz",
             "dF9ndW5fbGV2ZWwYBiABKAUSEgoKbGFzdF9yYXRpbxgHIAEoBRIZChFsYXN0",
             "X3dpbmdzX3Byb3BJZBgIIAEoBSJhChBTQ0dhbWVJbmZvTm90aWZ5EhEKCXVz",
             "ZXJfcG9vbBgBIAEoCBISCgphd2FyZF9maXNoGAIgAygFEiYKD3VzZXJfcG9v",
@@ -16904,7 +16904,7 @@ namespace F4BY {
       gunInfo_ = other.gunInfo_.Clone();
       wingsInfo_ = other.wingsInfo_.Clone();
       vipInfo_ = other.vipInfo_ != null ? other.vipInfo_.Clone() : null;
-      propInfo_ = other.propInfo_ != null ? other.propInfo_.Clone() : null;
+      propInfo_ = other.propInfo_.Clone();
       lastGunLevel_ = other.lastGunLevel_;
       lastRatio_ = other.lastRatio_;
       lastWingsPropId_ = other.lastWingsPropId_;
@@ -16960,13 +16960,12 @@ namespace F4BY {
 
     /// <summary>Field number for the "prop_info" field.</summary>
     public const int PropInfoFieldNumber = 5;
-    private global::F4BY.PropInfo propInfo_;
+    private static readonly pb::FieldCodec<global::F4BY.PropInfo> _repeated_propInfo_codec
+        = pb::FieldCodec.ForMessage(42, global::F4BY.PropInfo.Parser);
+    private readonly pbc::RepeatedField<global::F4BY.PropInfo> propInfo_ = new pbc::RepeatedField<global::F4BY.PropInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::F4BY.PropInfo PropInfo {
+    public pbc::RepeatedField<global::F4BY.PropInfo> PropInfo {
       get { return propInfo_; }
-      set {
-        propInfo_ = value;
-      }
     }
 
     /// <summary>Field number for the "last_gun_level" field.</summary>
@@ -17019,7 +17018,7 @@ namespace F4BY {
       if(!gunInfo_.Equals(other.gunInfo_)) return false;
       if(!wingsInfo_.Equals(other.wingsInfo_)) return false;
       if (!object.Equals(VipInfo, other.VipInfo)) return false;
-      if (!object.Equals(PropInfo, other.PropInfo)) return false;
+      if(!propInfo_.Equals(other.propInfo_)) return false;
       if (LastGunLevel != other.LastGunLevel) return false;
       if (LastRatio != other.LastRatio) return false;
       if (LastWingsPropId != other.LastWingsPropId) return false;
@@ -17033,7 +17032,7 @@ namespace F4BY {
       hash ^= gunInfo_.GetHashCode();
       hash ^= wingsInfo_.GetHashCode();
       if (vipInfo_ != null) hash ^= VipInfo.GetHashCode();
-      if (propInfo_ != null) hash ^= PropInfo.GetHashCode();
+      hash ^= propInfo_.GetHashCode();
       if (LastGunLevel != 0) hash ^= LastGunLevel.GetHashCode();
       if (LastRatio != 0) hash ^= LastRatio.GetHashCode();
       if (LastWingsPropId != 0) hash ^= LastWingsPropId.GetHashCode();
@@ -17063,10 +17062,7 @@ namespace F4BY {
         output.WriteRawTag(34);
         output.WriteMessage(VipInfo);
       }
-      if (propInfo_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(PropInfo);
-      }
+      propInfo_.WriteTo(output, _repeated_propInfo_codec);
       if (LastGunLevel != 0) {
         output.WriteRawTag(48);
         output.WriteInt32(LastGunLevel);
@@ -17098,10 +17094,7 @@ namespace F4BY {
         output.WriteRawTag(34);
         output.WriteMessage(VipInfo);
       }
-      if (propInfo_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(PropInfo);
-      }
+      propInfo_.WriteTo(ref output, _repeated_propInfo_codec);
       if (LastGunLevel != 0) {
         output.WriteRawTag(48);
         output.WriteInt32(LastGunLevel);
@@ -17131,9 +17124,7 @@ namespace F4BY {
       if (vipInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(VipInfo);
       }
-      if (propInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PropInfo);
-      }
+      size += propInfo_.CalculateSize(_repeated_propInfo_codec);
       if (LastGunLevel != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LastGunLevel);
       }
@@ -17165,12 +17156,7 @@ namespace F4BY {
         }
         VipInfo.MergeFrom(other.VipInfo);
       }
-      if (other.propInfo_ != null) {
-        if (propInfo_ == null) {
-          PropInfo = new global::F4BY.PropInfo();
-        }
-        PropInfo.MergeFrom(other.PropInfo);
-      }
+      propInfo_.Add(other.propInfo_);
       if (other.LastGunLevel != 0) {
         LastGunLevel = other.LastGunLevel;
       }
@@ -17214,10 +17200,7 @@ namespace F4BY {
             break;
           }
           case 42: {
-            if (propInfo_ == null) {
-              PropInfo = new global::F4BY.PropInfo();
-            }
-            input.ReadMessage(PropInfo);
+            propInfo_.AddEntriesFrom(input, _repeated_propInfo_codec);
             break;
           }
           case 48: {
@@ -17266,10 +17249,7 @@ namespace F4BY {
             break;
           }
           case 42: {
-            if (propInfo_ == null) {
-              PropInfo = new global::F4BY.PropInfo();
-            }
-            input.ReadMessage(PropInfo);
+            propInfo_.AddEntriesFrom(ref input, _repeated_propInfo_codec);
             break;
           }
           case 48: {
