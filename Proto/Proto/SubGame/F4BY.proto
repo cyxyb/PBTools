@@ -488,7 +488,7 @@ message SCFishTracesList
 	repeated FishTrace fish_traces = 1;
 	int32 fish_road = 2;
 	int32 fish_array = 3;
-	float create_interval = 4;
+	int32 create_interval = 4;
 	bool is_called = 5;
 	bool after_tide_first = 6;
 	CallFishType call_type = 7;
