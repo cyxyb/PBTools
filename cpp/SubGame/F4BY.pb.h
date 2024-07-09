@@ -7453,13 +7453,13 @@ class SCFishTracesList PROTOBUF_FINAL :
   void _internal_set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // float create_interval = 4;
+  // int32 create_interval = 4;
   void clear_create_interval();
-  float create_interval() const;
-  void set_create_interval(float value);
+  ::PROTOBUF_NAMESPACE_ID::int32 create_interval() const;
+  void set_create_interval(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  float _internal_create_interval() const;
-  void _internal_set_create_interval(float value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_create_interval() const;
+  void _internal_set_create_interval(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // bool is_called = 5;
@@ -7526,7 +7526,7 @@ class SCFishTracesList PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::FishTrace > fish_traces_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_road_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_array_;
-  float create_interval_;
+  ::PROTOBUF_NAMESPACE_ID::int32 create_interval_;
   bool is_called_;
   bool after_tide_first_;
   int call_type_;
@@ -42485,22 +42485,22 @@ inline void SCFishTracesList::set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:F4BY.SCFishTracesList.fish_array)
 }
 
-// float create_interval = 4;
+// int32 create_interval = 4;
 inline void SCFishTracesList::clear_create_interval() {
   create_interval_ = 0;
 }
-inline float SCFishTracesList::_internal_create_interval() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCFishTracesList::_internal_create_interval() const {
   return create_interval_;
 }
-inline float SCFishTracesList::create_interval() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCFishTracesList::create_interval() const {
   // @@protoc_insertion_point(field_get:F4BY.SCFishTracesList.create_interval)
   return _internal_create_interval();
 }
-inline void SCFishTracesList::_internal_set_create_interval(float value) {
+inline void SCFishTracesList::_internal_set_create_interval(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   create_interval_ = value;
 }
-inline void SCFishTracesList::set_create_interval(float value) {
+inline void SCFishTracesList::set_create_interval(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_create_interval(value);
   // @@protoc_insertion_point(field_set:F4BY.SCFishTracesList.create_interval)
 }

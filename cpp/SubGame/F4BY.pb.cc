@@ -6395,7 +6395,7 @@ const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "(\005\"\202\002\n\020SCFishTracesList\022$\n\013fish_traces\030\001"
   " \003(\0132\017.F4BY.FishTrace\022\021\n\tfish_road\030\002 \001(\005"
   "\022\022\n\nfish_array\030\003 \001(\005\022\027\n\017create_interval\030"
-  "\004 \001(\002\022\021\n\tis_called\030\005 \001(\010\022\030\n\020after_tide_f"
+  "\004 \001(\005\022\021\n\tis_called\030\005 \001(\010\022\030\n\020after_tide_f"
   "irst\030\006 \001(\010\022%\n\tcall_type\030\007 \001(\0162\022.F4BY.Cal"
   "lFishType\022\022\n\nmove_delay\030\010 \001(\002\022\020\n\010road_id"
   "x\030\t \001(\005\022\016\n\006move_t\030\n \001(\002\"!\n\rCSSyncFishReq"
@@ -17031,11 +17031,11 @@ const char* SCFishTracesList::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // float create_interval = 4;
+      // int32 create_interval = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
-          create_interval_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
-          ptr += sizeof(float);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          create_interval_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool is_called = 5;
@@ -17129,10 +17129,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_fish_array(), target);
   }
 
-  // float create_interval = 4;
-  if (!(this->create_interval() <= 0 && this->create_interval() >= 0)) {
+  // int32 create_interval = 4;
+  if (this->create_interval() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_create_interval(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_create_interval(), target);
   }
 
   // bool is_called = 5;
@@ -17209,9 +17209,11 @@ size_t SCFishTracesList::ByteSizeLong() const {
         this->_internal_fish_array());
   }
 
-  // float create_interval = 4;
-  if (!(this->create_interval() <= 0 && this->create_interval() >= 0)) {
-    total_size += 1 + 4;
+  // int32 create_interval = 4;
+  if (this->create_interval() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_create_interval());
   }
 
   // bool is_called = 5;
@@ -17285,7 +17287,7 @@ void SCFishTracesList::MergeFrom(const SCFishTracesList& from) {
   if (from.fish_array() != 0) {
     _internal_set_fish_array(from._internal_fish_array());
   }
-  if (!(from.create_interval() <= 0 && from.create_interval() >= 0)) {
+  if (from.create_interval() != 0) {
     _internal_set_create_interval(from._internal_create_interval());
   }
   if (from.is_called() != 0) {

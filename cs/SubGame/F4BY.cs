@@ -100,7 +100,7 @@ namespace F4BY {
             "c3QYByADKAUSFgoOZmlzaF90b3JwZWRvSWQYCCABKAUSEQoJZmlzaF9yb2Fk",
             "GAkgASgFIoICChBTQ0Zpc2hUcmFjZXNMaXN0EiQKC2Zpc2hfdHJhY2VzGAEg",
             "AygLMg8uRjRCWS5GaXNoVHJhY2USEQoJZmlzaF9yb2FkGAIgASgFEhIKCmZp",
-            "c2hfYXJyYXkYAyABKAUSFwoPY3JlYXRlX2ludGVydmFsGAQgASgCEhEKCWlz",
+            "c2hfYXJyYXkYAyABKAUSFwoPY3JlYXRlX2ludGVydmFsGAQgASgFEhEKCWlz",
             "X2NhbGxlZBgFIAEoCBIYChBhZnRlcl90aWRlX2ZpcnN0GAYgASgIEiUKCWNh",
             "bGxfdHlwZRgHIAEoDjISLkY0QlkuQ2FsbEZpc2hUeXBlEhIKCm1vdmVfZGVs",
             "YXkYCCABKAISEAoIcm9hZF9pZHgYCSABKAUSDgoGbW92ZV90GAogASgCIiEK",
@@ -10562,9 +10562,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "create_interval" field.</summary>
     public const int CreateIntervalFieldNumber = 4;
-    private float createInterval_;
+    private int createInterval_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float CreateInterval {
+    public int CreateInterval {
       get { return createInterval_; }
       set {
         createInterval_ = value;
@@ -10653,7 +10653,7 @@ namespace F4BY {
       if(!fishTraces_.Equals(other.fishTraces_)) return false;
       if (FishRoad != other.FishRoad) return false;
       if (FishArray != other.FishArray) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CreateInterval, other.CreateInterval)) return false;
+      if (CreateInterval != other.CreateInterval) return false;
       if (IsCalled != other.IsCalled) return false;
       if (AfterTideFirst != other.AfterTideFirst) return false;
       if (CallType != other.CallType) return false;
@@ -10669,7 +10669,7 @@ namespace F4BY {
       hash ^= fishTraces_.GetHashCode();
       if (FishRoad != 0) hash ^= FishRoad.GetHashCode();
       if (FishArray != 0) hash ^= FishArray.GetHashCode();
-      if (CreateInterval != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CreateInterval);
+      if (CreateInterval != 0) hash ^= CreateInterval.GetHashCode();
       if (IsCalled != false) hash ^= IsCalled.GetHashCode();
       if (AfterTideFirst != false) hash ^= AfterTideFirst.GetHashCode();
       if (CallType != global::F4BY.CallFishType.CallTypeNormal) hash ^= CallType.GetHashCode();
@@ -10701,9 +10701,9 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(FishArray);
       }
-      if (CreateInterval != 0F) {
-        output.WriteRawTag(37);
-        output.WriteFloat(CreateInterval);
+      if (CreateInterval != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(CreateInterval);
       }
       if (IsCalled != false) {
         output.WriteRawTag(40);
@@ -10747,9 +10747,9 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(FishArray);
       }
-      if (CreateInterval != 0F) {
-        output.WriteRawTag(37);
-        output.WriteFloat(CreateInterval);
+      if (CreateInterval != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(CreateInterval);
       }
       if (IsCalled != false) {
         output.WriteRawTag(40);
@@ -10791,8 +10791,8 @@ namespace F4BY {
       if (FishArray != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishArray);
       }
-      if (CreateInterval != 0F) {
-        size += 1 + 4;
+      if (CreateInterval != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CreateInterval);
       }
       if (IsCalled != false) {
         size += 1 + 1;
@@ -10830,7 +10830,7 @@ namespace F4BY {
       if (other.FishArray != 0) {
         FishArray = other.FishArray;
       }
-      if (other.CreateInterval != 0F) {
+      if (other.CreateInterval != 0) {
         CreateInterval = other.CreateInterval;
       }
       if (other.IsCalled != false) {
@@ -10877,8 +10877,8 @@ namespace F4BY {
             FishArray = input.ReadInt32();
             break;
           }
-          case 37: {
-            CreateInterval = input.ReadFloat();
+          case 32: {
+            CreateInterval = input.ReadInt32();
             break;
           }
           case 40: {
@@ -10931,8 +10931,8 @@ namespace F4BY {
             FishArray = input.ReadInt32();
             break;
           }
-          case 37: {
-            CreateInterval = input.ReadFloat();
+          case 32: {
+            CreateInterval = input.ReadInt32();
             break;
           }
           case 40: {
