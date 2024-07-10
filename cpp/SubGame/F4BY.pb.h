@@ -5463,6 +5463,7 @@ class CSHitFish PROTOBUF_FINAL :
     kBulletIdFieldNumber = 2,
     kChairIdFieldNumber = 4,
     kRatioFieldNumber = 5,
+    kBulletTypeFieldNumber = 6,
   };
   // repeated int32 screen_fishes = 3;
   int screen_fishes_size() const;
@@ -5522,6 +5523,15 @@ class CSHitFish PROTOBUF_FINAL :
   void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 bullet_type = 6;
+  void clear_bullet_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 bullet_type() const;
+  void set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bullet_type() const;
+  void _internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSHitFish)
  private:
   class _Internal;
@@ -5535,6 +5545,7 @@ class CSHitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 bullet_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bullet_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -41312,6 +41323,26 @@ inline void CSHitFish::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value)
 inline void CSHitFish::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ratio(value);
   // @@protoc_insertion_point(field_set:F4BY.CSHitFish.ratio)
+}
+
+// int32 bullet_type = 6;
+inline void CSHitFish::clear_bullet_type() {
+  bullet_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::_internal_bullet_type() const {
+  return bullet_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::bullet_type() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSHitFish.bullet_type)
+  return _internal_bullet_type();
+}
+inline void CSHitFish::_internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bullet_type_ = value;
+}
+inline void CSHitFish::set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bullet_type(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSHitFish.bullet_type)
 }
 
 // -------------------------------------------------------------------
