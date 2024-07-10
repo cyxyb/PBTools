@@ -5246,6 +5246,7 @@ class CSHitFish PROTOBUF_FINAL :
     kFishUidFieldNumber = 1,
     kBulletIdFieldNumber = 2,
     kChairIdFieldNumber = 4,
+    kRatioFieldNumber = 5,
   };
   // repeated int32 screen_fishes = 3;
   int screen_fishes_size() const;
@@ -5296,6 +5297,15 @@ class CSHitFish PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 ratio = 5;
+  void clear_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSHitFish)
  private:
   class _Internal;
@@ -5308,6 +5318,7 @@ class CSHitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
   ::PROTOBUF_NAMESPACE_ID::int32 bullet_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -40871,6 +40882,26 @@ inline void CSHitFish::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 val
 inline void CSHitFish::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
   // @@protoc_insertion_point(field_set:F4BY.CSHitFish.chair_id)
+}
+
+// int32 ratio = 5;
+inline void CSHitFish::clear_ratio() {
+  ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::_internal_ratio() const {
+  return ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::ratio() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSHitFish.ratio)
+  return _internal_ratio();
+}
+inline void CSHitFish::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ratio_ = value;
+}
+inline void CSHitFish::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ratio(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSHitFish.ratio)
 }
 
 // -------------------------------------------------------------------

@@ -384,6 +384,7 @@ message CSHitFish
 	int32 bullet_id = 2;
 	repeated int32 screen_fishes = 3;
 	int32 chair_id = 4;
+	int32 ratio	= 5;
 }
 
 message MultiInfo
