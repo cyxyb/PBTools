@@ -418,6 +418,7 @@ message SCHitFish
 	repeated MultiInfo multi_list = 9;
 	int32 origin_uid = 10;
 	repeated Object drop_props = 11;
+	bool death = 12;
 }
 
 message SCHitSpecialFish

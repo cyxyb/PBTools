@@ -5832,6 +5832,7 @@ class SCHitFish PROTOBUF_FINAL :
     kHitBulletTypeFieldNumber = 7,
     kMagicCubeMultiFieldNumber = 8,
     kOriginUidFieldNumber = 10,
+    kDeathFieldNumber = 12,
   };
   // repeated .F4BY.MultiInfo multi_list = 9;
   int multi_list_size() const;
@@ -5950,6 +5951,15 @@ class SCHitFish PROTOBUF_FINAL :
   void _internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool death = 12;
+  void clear_death();
+  bool death() const;
+  void set_death(bool value);
+  private:
+  bool _internal_death() const;
+  void _internal_set_death(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SCHitFish)
  private:
   class _Internal;
@@ -5968,6 +5978,7 @@ class SCHitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 hit_bullet_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 magic_cube_multi_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
+  bool death_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -41669,6 +41680,26 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object >&
 SCHitFish::drop_props() const {
   // @@protoc_insertion_point(field_list:F4BY.SCHitFish.drop_props)
   return drop_props_;
+}
+
+// bool death = 12;
+inline void SCHitFish::clear_death() {
+  death_ = false;
+}
+inline bool SCHitFish::_internal_death() const {
+  return death_;
+}
+inline bool SCHitFish::death() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitFish.death)
+  return _internal_death();
+}
+inline void SCHitFish::_internal_set_death(bool value) {
+  
+  death_ = value;
+}
+inline void SCHitFish::set_death(bool value) {
+  _internal_set_death(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitFish.death)
 }
 
 // -------------------------------------------------------------------
