@@ -1412,7 +1412,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
     kStationBaseListFieldNumber = 1,
     kGunInfoFieldNumber = 2,
     kRatioListFieldNumber = 5,
-    kGunTypeNumFieldNumber = 3,
+    kGunRatioNumFieldNumber = 3,
     kGunLevelNumFieldNumber = 4,
   };
   // repeated .F4BY.StationBase station_base_list = 1;
@@ -1473,13 +1473,13 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_ratio_list();
 
-  // int32 gun_type_num = 3;
-  void clear_gun_type_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 gun_type_num() const;
-  void set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 gun_ratio_num = 3;
+  void clear_gun_ratio_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_ratio_num() const;
+  void set_gun_ratio_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_gun_type_num() const;
-  void _internal_set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_gun_ratio_num() const;
+  void _internal_set_gun_ratio_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 gun_level_num = 4;
@@ -1502,7 +1502,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo > gun_info_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > ratio_list_;
   mutable std::atomic<int> _ratio_list_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int32 gun_type_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_ratio_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 gun_level_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -38904,24 +38904,24 @@ SC_SceneInfo::gun_info() const {
   return gun_info_;
 }
 
-// int32 gun_type_num = 3;
-inline void SC_SceneInfo::clear_gun_type_num() {
-  gun_type_num_ = 0;
+// int32 gun_ratio_num = 3;
+inline void SC_SceneInfo::clear_gun_ratio_num() {
+  gun_ratio_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_gun_type_num() const {
-  return gun_type_num_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_gun_ratio_num() const {
+  return gun_ratio_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::gun_type_num() const {
-  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.gun_type_num)
-  return _internal_gun_type_num();
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::gun_ratio_num() const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.gun_ratio_num)
+  return _internal_gun_ratio_num();
 }
-inline void SC_SceneInfo::_internal_set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SC_SceneInfo::_internal_set_gun_ratio_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  gun_type_num_ = value;
+  gun_ratio_num_ = value;
 }
-inline void SC_SceneInfo::set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_gun_type_num(value);
-  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.gun_type_num)
+inline void SC_SceneInfo::set_gun_ratio_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_gun_ratio_num(value);
+  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.gun_ratio_num)
 }
 
 // int32 gun_level_num = 4;

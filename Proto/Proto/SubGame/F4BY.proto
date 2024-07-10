@@ -212,7 +212,7 @@ message SC_SceneInfo
 {
 	repeated StationBase station_base_list = 1;
 	repeated GunInfo gun_info = 2;
-	int32 gun_type_num = 3;
+	int32 gun_ratio_num = 3;
 	int32 gun_level_num = 4;
 	repeated int32 ratio_list = 5;
 	
