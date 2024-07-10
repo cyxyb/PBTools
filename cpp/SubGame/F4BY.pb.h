@@ -1411,6 +1411,9 @@ class SC_SceneInfo PROTOBUF_FINAL :
   enum : int {
     kStationBaseListFieldNumber = 1,
     kGunInfoFieldNumber = 2,
+    kRatioListFieldNumber = 5,
+    kGunTypeNumFieldNumber = 3,
+    kGunLevelNumFieldNumber = 4,
   };
   // repeated .F4BY.StationBase station_base_list = 1;
   int station_base_list_size() const;
@@ -1448,6 +1451,46 @@ class SC_SceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >&
       gun_info() const;
 
+  // repeated int32 ratio_list = 5;
+  int ratio_list_size() const;
+  private:
+  int _internal_ratio_list_size() const;
+  public:
+  void clear_ratio_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_ratio_list() const;
+  void _internal_add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_ratio_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_list(int index) const;
+  void set_ratio_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      ratio_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_ratio_list();
+
+  // int32 gun_type_num = 3;
+  void clear_gun_type_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_type_num() const;
+  void set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_gun_type_num() const;
+  void _internal_set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 gun_level_num = 4;
+  void clear_gun_level_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_level_num() const;
+  void set_gun_level_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_gun_level_num() const;
+  void _internal_set_gun_level_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SC_SceneInfo)
  private:
   class _Internal;
@@ -1457,6 +1500,10 @@ class SC_SceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase > station_base_list_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo > gun_info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > ratio_list_;
+  mutable std::atomic<int> _ratio_list_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_type_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_level_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -38855,6 +38902,93 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >&
 SC_SceneInfo::gun_info() const {
   // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.gun_info)
   return gun_info_;
+}
+
+// int32 gun_type_num = 3;
+inline void SC_SceneInfo::clear_gun_type_num() {
+  gun_type_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_gun_type_num() const {
+  return gun_type_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::gun_type_num() const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.gun_type_num)
+  return _internal_gun_type_num();
+}
+inline void SC_SceneInfo::_internal_set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  gun_type_num_ = value;
+}
+inline void SC_SceneInfo::set_gun_type_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_gun_type_num(value);
+  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.gun_type_num)
+}
+
+// int32 gun_level_num = 4;
+inline void SC_SceneInfo::clear_gun_level_num() {
+  gun_level_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_gun_level_num() const {
+  return gun_level_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::gun_level_num() const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.gun_level_num)
+  return _internal_gun_level_num();
+}
+inline void SC_SceneInfo::_internal_set_gun_level_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  gun_level_num_ = value;
+}
+inline void SC_SceneInfo::set_gun_level_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_gun_level_num(value);
+  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.gun_level_num)
+}
+
+// repeated int32 ratio_list = 5;
+inline int SC_SceneInfo::_internal_ratio_list_size() const {
+  return ratio_list_.size();
+}
+inline int SC_SceneInfo::ratio_list_size() const {
+  return _internal_ratio_list_size();
+}
+inline void SC_SceneInfo::clear_ratio_list() {
+  ratio_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_ratio_list(int index) const {
+  return ratio_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::ratio_list(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.ratio_list)
+  return _internal_ratio_list(index);
+}
+inline void SC_SceneInfo::set_ratio_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  ratio_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.ratio_list)
+}
+inline void SC_SceneInfo::_internal_add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  ratio_list_.Add(value);
+}
+inline void SC_SceneInfo::add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_ratio_list(value);
+  // @@protoc_insertion_point(field_add:F4BY.SC_SceneInfo.ratio_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::_internal_ratio_list() const {
+  return ratio_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::ratio_list() const {
+  // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.ratio_list)
+  return _internal_ratio_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::_internal_mutable_ratio_list() {
+  return &ratio_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::mutable_ratio_list() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SC_SceneInfo.ratio_list)
+  return _internal_mutable_ratio_list();
 }
 
 // -------------------------------------------------------------------
