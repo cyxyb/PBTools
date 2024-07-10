@@ -210,9 +210,8 @@ enum ChestAutoSelectOption
 
 message SC_SceneInfo
 {
-	repeated int32 bet_list = 1;	//押注
-	repeated StationBase station_base_list = 2;
-	repeated GunInfo gun_info = 3;
+	repeated StationBase station_base_list = 1;
+	repeated GunInfo gun_info = 2;
 }
 
 message CommonResp
@@ -655,6 +654,7 @@ message GunInfo
 	float attack_speed = 13;
 	float rage = 14;
 	int32 activity_id = 15;
+	repeated int32 ratio_list = 16;
 }
 
 message VipInfo

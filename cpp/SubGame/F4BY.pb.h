@@ -1409,33 +1409,10 @@ class SC_SceneInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetListFieldNumber = 1,
-    kStationBaseListFieldNumber = 2,
-    kGunInfoFieldNumber = 3,
+    kStationBaseListFieldNumber = 1,
+    kGunInfoFieldNumber = 2,
   };
-  // repeated int32 bet_list = 1;
-  int bet_list_size() const;
-  private:
-  int _internal_bet_list_size() const;
-  public:
-  void clear_bet_list();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet_list(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_bet_list() const;
-  void _internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_bet_list();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 bet_list(int index) const;
-  void set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      bet_list() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_bet_list();
-
-  // repeated .F4BY.StationBase station_base_list = 2;
+  // repeated .F4BY.StationBase station_base_list = 1;
   int station_base_list_size() const;
   private:
   int _internal_station_base_list_size() const;
@@ -1453,7 +1430,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >&
       station_base_list() const;
 
-  // repeated .F4BY.GunInfo gun_info = 3;
+  // repeated .F4BY.GunInfo gun_info = 2;
   int gun_info_size() const;
   private:
   int _internal_gun_info_size() const;
@@ -1478,8 +1455,6 @@ class SC_SceneInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_list_;
-  mutable std::atomic<int> _bet_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase > station_base_list_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo > gun_info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -10880,6 +10855,7 @@ class GunInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kRatioListFieldNumber = 16,
     kGunSpecEffectFieldNumber = 11,
     kGunLevelFieldNumber = 1,
     kRatioMinFieldNumber = 2,
@@ -10896,6 +10872,28 @@ class GunInfo PROTOBUF_FINAL :
     kRageFieldNumber = 14,
     kActivityIdFieldNumber = 15,
   };
+  // repeated int32 ratio_list = 16;
+  int ratio_list_size() const;
+  private:
+  int _internal_ratio_list_size() const;
+  public:
+  void clear_ratio_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_ratio_list() const;
+  void _internal_add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_ratio_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_list(int index) const;
+  void set_ratio_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      ratio_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_ratio_list();
+
   // .F4BY.GunSpecEffect gunSpecEffect = 11;
   bool has_gunspeceffect() const;
   private:
@@ -11047,6 +11045,8 @@ class GunInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > ratio_list_;
+  mutable std::atomic<int> _ratio_list_cached_byte_size_;
   ::F4BY::GunSpecEffect* gunspeceffect_;
   ::PROTOBUF_NAMESPACE_ID::int32 gun_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_min_;
@@ -38779,54 +38779,7 @@ class CSFreePoolOpen PROTOBUF_FINAL :
 #endif  // __GNUC__
 // SC_SceneInfo
 
-// repeated int32 bet_list = 1;
-inline int SC_SceneInfo::_internal_bet_list_size() const {
-  return bet_list_.size();
-}
-inline int SC_SceneInfo::bet_list_size() const {
-  return _internal_bet_list_size();
-}
-inline void SC_SceneInfo::clear_bet_list() {
-  bet_list_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_bet_list(int index) const {
-  return bet_list_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::bet_list(int index) const {
-  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.bet_list)
-  return _internal_bet_list(index);
-}
-inline void SC_SceneInfo::set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  bet_list_.Set(index, value);
-  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.bet_list)
-}
-inline void SC_SceneInfo::_internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  bet_list_.Add(value);
-}
-inline void SC_SceneInfo::add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_bet_list(value);
-  // @@protoc_insertion_point(field_add:F4BY.SC_SceneInfo.bet_list)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-SC_SceneInfo::_internal_bet_list() const {
-  return bet_list_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-SC_SceneInfo::bet_list() const {
-  // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.bet_list)
-  return _internal_bet_list();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-SC_SceneInfo::_internal_mutable_bet_list() {
-  return &bet_list_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-SC_SceneInfo::mutable_bet_list() {
-  // @@protoc_insertion_point(field_mutable_list:F4BY.SC_SceneInfo.bet_list)
-  return _internal_mutable_bet_list();
-}
-
-// repeated .F4BY.StationBase station_base_list = 2;
+// repeated .F4BY.StationBase station_base_list = 1;
 inline int SC_SceneInfo::_internal_station_base_list_size() const {
   return station_base_list_.size();
 }
@@ -38865,7 +38818,7 @@ SC_SceneInfo::station_base_list() const {
   return station_base_list_;
 }
 
-// repeated .F4BY.GunInfo gun_info = 3;
+// repeated .F4BY.GunInfo gun_info = 2;
 inline int SC_SceneInfo::_internal_gun_info_size() const {
   return gun_info_.size();
 }
@@ -44661,6 +44614,53 @@ inline void GunInfo::_internal_set_activity_id(::PROTOBUF_NAMESPACE_ID::int32 va
 inline void GunInfo::set_activity_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_activity_id(value);
   // @@protoc_insertion_point(field_set:F4BY.GunInfo.activity_id)
+}
+
+// repeated int32 ratio_list = 16;
+inline int GunInfo::_internal_ratio_list_size() const {
+  return ratio_list_.size();
+}
+inline int GunInfo::ratio_list_size() const {
+  return _internal_ratio_list_size();
+}
+inline void GunInfo::clear_ratio_list() {
+  ratio_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GunInfo::_internal_ratio_list(int index) const {
+  return ratio_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GunInfo::ratio_list(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.GunInfo.ratio_list)
+  return _internal_ratio_list(index);
+}
+inline void GunInfo::set_ratio_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  ratio_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:F4BY.GunInfo.ratio_list)
+}
+inline void GunInfo::_internal_add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  ratio_list_.Add(value);
+}
+inline void GunInfo::add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_ratio_list(value);
+  // @@protoc_insertion_point(field_add:F4BY.GunInfo.ratio_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+GunInfo::_internal_ratio_list() const {
+  return ratio_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+GunInfo::ratio_list() const {
+  // @@protoc_insertion_point(field_list:F4BY.GunInfo.ratio_list)
+  return _internal_ratio_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+GunInfo::_internal_mutable_ratio_list() {
+  return &ratio_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+GunInfo::mutable_ratio_list() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.GunInfo.ratio_list)
+  return _internal_mutable_ratio_list();
 }
 
 // -------------------------------------------------------------------
