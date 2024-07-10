@@ -212,6 +212,7 @@ message SC_SceneInfo
 {
 	repeated int32 bet_list = 1;	//押注
 	repeated StationBase station_base_list = 2;
+	repeated GunInfo gun_info = 3;
 }
 
 message CommonResp

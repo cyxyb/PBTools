@@ -1411,6 +1411,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   enum : int {
     kBetListFieldNumber = 1,
     kStationBaseListFieldNumber = 2,
+    kGunInfoFieldNumber = 3,
   };
   // repeated int32 bet_list = 1;
   int bet_list_size() const;
@@ -1452,6 +1453,24 @@ class SC_SceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >&
       station_base_list() const;
 
+  // repeated .F4BY.GunInfo gun_info = 3;
+  int gun_info_size() const;
+  private:
+  int _internal_gun_info_size() const;
+  public:
+  void clear_gun_info();
+  ::F4BY::GunInfo* mutable_gun_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >*
+      mutable_gun_info();
+  private:
+  const ::F4BY::GunInfo& _internal_gun_info(int index) const;
+  ::F4BY::GunInfo* _internal_add_gun_info();
+  public:
+  const ::F4BY::GunInfo& gun_info(int index) const;
+  ::F4BY::GunInfo* add_gun_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >&
+      gun_info() const;
+
   // @@protoc_insertion_point(class_scope:F4BY.SC_SceneInfo)
  private:
   class _Internal;
@@ -1462,6 +1481,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_list_;
   mutable std::atomic<int> _bet_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase > station_base_list_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo > gun_info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -38843,6 +38863,45 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >&
 SC_SceneInfo::station_base_list() const {
   // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.station_base_list)
   return station_base_list_;
+}
+
+// repeated .F4BY.GunInfo gun_info = 3;
+inline int SC_SceneInfo::_internal_gun_info_size() const {
+  return gun_info_.size();
+}
+inline int SC_SceneInfo::gun_info_size() const {
+  return _internal_gun_info_size();
+}
+inline void SC_SceneInfo::clear_gun_info() {
+  gun_info_.Clear();
+}
+inline ::F4BY::GunInfo* SC_SceneInfo::mutable_gun_info(int index) {
+  // @@protoc_insertion_point(field_mutable:F4BY.SC_SceneInfo.gun_info)
+  return gun_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >*
+SC_SceneInfo::mutable_gun_info() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SC_SceneInfo.gun_info)
+  return &gun_info_;
+}
+inline const ::F4BY::GunInfo& SC_SceneInfo::_internal_gun_info(int index) const {
+  return gun_info_.Get(index);
+}
+inline const ::F4BY::GunInfo& SC_SceneInfo::gun_info(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.gun_info)
+  return _internal_gun_info(index);
+}
+inline ::F4BY::GunInfo* SC_SceneInfo::_internal_add_gun_info() {
+  return gun_info_.Add();
+}
+inline ::F4BY::GunInfo* SC_SceneInfo::add_gun_info() {
+  // @@protoc_insertion_point(field_add:F4BY.SC_SceneInfo.gun_info)
+  return _internal_add_gun_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >&
+SC_SceneInfo::gun_info() const {
+  // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.gun_info)
+  return gun_info_;
 }
 
 // -------------------------------------------------------------------
