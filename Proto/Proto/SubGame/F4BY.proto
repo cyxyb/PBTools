@@ -208,6 +208,12 @@ enum ChestAutoSelectOption
     Money                           = 2;
 }
 
+message SC_SceneInfo
+{
+	repeated int32 bet_list = 1;	//押注
+	repeated StationBase station_base_list = 2;
+}
+
 message CommonResp
 {
     int32 code  = 1;

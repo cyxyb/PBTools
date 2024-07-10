@@ -47,7 +47,7 @@ struct TableStruct_F4BY_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[227]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[228]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -700,6 +700,9 @@ extern SCVipChargeAwardDefaultTypeInternal _SCVipChargeAward_default_instance_;
 class SCWaterDropInfo;
 class SCWaterDropInfoDefaultTypeInternal;
 extern SCWaterDropInfoDefaultTypeInternal _SCWaterDropInfo_default_instance_;
+class SC_SceneInfo;
+class SC_SceneInfoDefaultTypeInternal;
+extern SC_SceneInfoDefaultTypeInternal _SC_SceneInfo_default_instance_;
 class ScallopLottery;
 class ScallopLotteryDefaultTypeInternal;
 extern ScallopLotteryDefaultTypeInternal _ScallopLottery_default_instance_;
@@ -953,6 +956,7 @@ template<> ::F4BY::SCVerifyActivity* Arena::CreateMaybeMessage<::F4BY::SCVerifyA
 template<> ::F4BY::SCVerifyTermChange* Arena::CreateMaybeMessage<::F4BY::SCVerifyTermChange>(Arena*);
 template<> ::F4BY::SCVipChargeAward* Arena::CreateMaybeMessage<::F4BY::SCVipChargeAward>(Arena*);
 template<> ::F4BY::SCWaterDropInfo* Arena::CreateMaybeMessage<::F4BY::SCWaterDropInfo>(Arena*);
+template<> ::F4BY::SC_SceneInfo* Arena::CreateMaybeMessage<::F4BY::SC_SceneInfo>(Arena*);
 template<> ::F4BY::ScallopLottery* Arena::CreateMaybeMessage<::F4BY::ScallopLottery>(Arena*);
 template<> ::F4BY::SevenDayDetail* Arena::CreateMaybeMessage<::F4BY::SevenDayDetail>(Arena*);
 template<> ::F4BY::SevenDayTask* Arena::CreateMaybeMessage<::F4BY::SevenDayTask>(Arena*);
@@ -1293,6 +1297,176 @@ inline bool ChestAutoSelectOption_Parse(
 }
 // ===================================================================
 
+class SC_SceneInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:F4BY.SC_SceneInfo) */ {
+ public:
+  inline SC_SceneInfo() : SC_SceneInfo(nullptr) {}
+  virtual ~SC_SceneInfo();
+
+  SC_SceneInfo(const SC_SceneInfo& from);
+  SC_SceneInfo(SC_SceneInfo&& from) noexcept
+    : SC_SceneInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline SC_SceneInfo& operator=(const SC_SceneInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SC_SceneInfo& operator=(SC_SceneInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const SC_SceneInfo& default_instance();
+
+  static inline const SC_SceneInfo* internal_default_instance() {
+    return reinterpret_cast<const SC_SceneInfo*>(
+               &_SC_SceneInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(SC_SceneInfo& a, SC_SceneInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SC_SceneInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SC_SceneInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SC_SceneInfo* New() const final {
+    return CreateMaybeMessage<SC_SceneInfo>(nullptr);
+  }
+
+  SC_SceneInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SC_SceneInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const SC_SceneInfo& from);
+  void MergeFrom(const SC_SceneInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SC_SceneInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "F4BY.SC_SceneInfo";
+  }
+  protected:
+  explicit SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_F4BY_2eproto);
+    return ::descriptor_table_F4BY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kBetListFieldNumber = 1,
+    kStationBaseListFieldNumber = 2,
+  };
+  // repeated int32 bet_list = 1;
+  int bet_list_size() const;
+  private:
+  int _internal_bet_list_size() const;
+  public:
+  void clear_bet_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_bet_list() const;
+  void _internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_bet_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 bet_list(int index) const;
+  void set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      bet_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_bet_list();
+
+  // repeated .F4BY.StationBase station_base_list = 2;
+  int station_base_list_size() const;
+  private:
+  int _internal_station_base_list_size() const;
+  public:
+  void clear_station_base_list();
+  ::F4BY::StationBase* mutable_station_base_list(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >*
+      mutable_station_base_list();
+  private:
+  const ::F4BY::StationBase& _internal_station_base_list(int index) const;
+  ::F4BY::StationBase* _internal_add_station_base_list();
+  public:
+  const ::F4BY::StationBase& station_base_list(int index) const;
+  ::F4BY::StationBase* add_station_base_list();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >&
+      station_base_list() const;
+
+  // @@protoc_insertion_point(class_scope:F4BY.SC_SceneInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_list_;
+  mutable std::atomic<int> _bet_list_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase > station_base_list_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_F4BY_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CommonResp PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:F4BY.CommonResp) */ {
  public:
@@ -1334,7 +1508,7 @@ class CommonResp PROTOBUF_FINAL :
                &_CommonResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   friend void swap(CommonResp& a, CommonResp& b) {
     a.Swap(&b);
@@ -1488,7 +1662,7 @@ class Object PROTOBUF_FINAL :
                &_Object_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(Object& a, Object& b) {
     a.Swap(&b);
@@ -1721,7 +1895,7 @@ class Obj PROTOBUF_FINAL :
                &_Obj_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   friend void swap(Obj& a, Obj& b) {
     a.Swap(&b);
@@ -1868,7 +2042,7 @@ class Object1 PROTOBUF_FINAL :
                &_Object1_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(Object1& a, Object1& b) {
     a.Swap(&b);
@@ -2022,7 +2196,7 @@ class Object2 PROTOBUF_FINAL :
                &_Object2_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(Object2& a, Object2& b) {
     a.Swap(&b);
@@ -2183,7 +2357,7 @@ class Object3 PROTOBUF_FINAL :
                &_Object3_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(Object3& a, Object3& b) {
     a.Swap(&b);
@@ -2330,7 +2504,7 @@ class WheelObject PROTOBUF_FINAL :
                &_WheelObject_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(WheelObject& a, WheelObject& b) {
     a.Swap(&b);
@@ -2486,7 +2660,7 @@ class Decimal PROTOBUF_FINAL :
                &_Decimal_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(Decimal& a, Decimal& b) {
     a.Swap(&b);
@@ -2633,7 +2807,7 @@ class CSLoginGameWithToken PROTOBUF_FINAL :
                &_CSLoginGameWithToken_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(CSLoginGameWithToken& a, CSLoginGameWithToken& b) {
     a.Swap(&b);
@@ -2820,7 +2994,7 @@ class SCLoginGameWithToken PROTOBUF_FINAL :
                &_SCLoginGameWithToken_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(SCLoginGameWithToken& a, SCLoginGameWithToken& b) {
     a.Swap(&b);
@@ -2967,7 +3141,7 @@ class CSUserReady PROTOBUF_FINAL :
                &_CSUserReady_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(CSUserReady& a, CSUserReady& b) {
     a.Swap(&b);
@@ -3103,7 +3277,7 @@ class EffectInfo PROTOBUF_FINAL :
                &_EffectInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(EffectInfo& a, EffectInfo& b) {
     a.Swap(&b);
@@ -3250,7 +3424,7 @@ class StationBase PROTOBUF_FINAL :
                &_StationBase_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   friend void swap(StationBase& a, StationBase& b) {
     a.Swap(&b);
@@ -3565,7 +3739,7 @@ class SCUserReady PROTOBUF_FINAL :
                &_SCUserReady_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(SCUserReady& a, SCUserReady& b) {
     a.Swap(&b);
@@ -3710,7 +3884,7 @@ class SCNotifyLogin PROTOBUF_FINAL :
                &_SCNotifyLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(SCNotifyLogin& a, SCNotifyLogin& b) {
     a.Swap(&b);
@@ -3855,7 +4029,7 @@ class CSNotifyLogout PROTOBUF_FINAL :
                &_CSNotifyLogout_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(CSNotifyLogout& a, CSNotifyLogout& b) {
     a.Swap(&b);
@@ -3978,7 +4152,7 @@ class SCNotifyLogout PROTOBUF_FINAL :
                &_SCNotifyLogout_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(SCNotifyLogout& a, SCNotifyLogout& b) {
     a.Swap(&b);
@@ -4114,7 +4288,7 @@ class CSSetProbability PROTOBUF_FINAL :
                &_CSSetProbability_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(CSSetProbability& a, CSSetProbability& b) {
     a.Swap(&b);
@@ -4272,7 +4446,7 @@ class SCSetProbability PROTOBUF_FINAL :
                &_SCSetProbability_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(SCSetProbability& a, SCSetProbability& b) {
     a.Swap(&b);
@@ -4481,7 +4655,7 @@ class CSSetWings PROTOBUF_FINAL :
                &_CSSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(CSSetWings& a, CSSetWings& b) {
     a.Swap(&b);
@@ -4617,7 +4791,7 @@ class SCSetWings PROTOBUF_FINAL :
                &_SCSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(SCSetWings& a, SCSetWings& b) {
     a.Swap(&b);
@@ -4775,7 +4949,7 @@ class CSUserShoot PROTOBUF_FINAL :
                &_CSUserShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   friend void swap(CSUserShoot& a, CSUserShoot& b) {
     a.Swap(&b);
@@ -4991,7 +5165,7 @@ class SCUserShoot PROTOBUF_FINAL :
                &_SCUserShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    23;
 
   friend void swap(SCUserShoot& a, SCUserShoot& b) {
     a.Swap(&b);
@@ -5171,7 +5345,7 @@ class CSHitFish PROTOBUF_FINAL :
                &_CSHitFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    24;
 
   friend void swap(CSHitFish& a, CSHitFish& b) {
     a.Swap(&b);
@@ -5365,7 +5539,7 @@ class MultiInfo PROTOBUF_FINAL :
                &_MultiInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    25;
 
   friend void swap(MultiInfo& a, MultiInfo& b) {
     a.Swap(&b);
@@ -5523,7 +5697,7 @@ class SCHitFish PROTOBUF_FINAL :
                &_SCHitFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    26;
 
   friend void swap(SCHitFish& a, SCHitFish& b) {
     a.Swap(&b);
@@ -5787,7 +5961,7 @@ class SCHitSpecialFish PROTOBUF_FINAL :
                &_SCHitSpecialFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    27;
 
   friend void swap(SCHitSpecialFish& a, SCHitSpecialFish& b) {
     a.Swap(&b);
@@ -6135,7 +6309,7 @@ class SyncPropInfoX PROTOBUF_FINAL :
                &_SyncPropInfoX_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    28;
 
   friend void swap(SyncPropInfoX& a, SyncPropInfoX& b) {
     a.Swap(&b);
@@ -6324,7 +6498,7 @@ class UserSyncPropInfo PROTOBUF_FINAL :
                &_UserSyncPropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    29;
 
   friend void swap(UserSyncPropInfo& a, UserSyncPropInfo& b) {
     a.Swap(&b);
@@ -6480,7 +6654,7 @@ class CSSyncPropInfo PROTOBUF_FINAL :
                &_CSSyncPropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    30;
 
   friend void swap(CSSyncPropInfo& a, CSSyncPropInfo& b) {
     a.Swap(&b);
@@ -6636,7 +6810,7 @@ class SCSyncPropInfo PROTOBUF_FINAL :
                &_SCSyncPropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    31;
 
   friend void swap(SCSyncPropInfo& a, SCSyncPropInfo& b) {
     a.Swap(&b);
@@ -6781,7 +6955,7 @@ class CSSyncMoney PROTOBUF_FINAL :
                &_CSSyncMoney_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    32;
 
   friend void swap(CSSyncMoney& a, CSSyncMoney& b) {
     a.Swap(&b);
@@ -6917,7 +7091,7 @@ class SCSyncMoney PROTOBUF_FINAL :
                &_SCSyncMoney_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    33;
 
   friend void swap(SCSyncMoney& a, SCSyncMoney& b) {
     a.Swap(&b);
@@ -7108,7 +7282,7 @@ class FishTrace PROTOBUF_FINAL :
                &_FishTrace_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    34;
 
   friend void swap(FishTrace& a, FishTrace& b) {
     a.Swap(&b);
@@ -7346,7 +7520,7 @@ class SCFishTracesList PROTOBUF_FINAL :
                &_SCFishTracesList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    35;
 
   friend void swap(SCFishTracesList& a, SCFishTracesList& b) {
     a.Swap(&b);
@@ -7590,7 +7764,7 @@ class CSSyncFishReq PROTOBUF_FINAL :
                &_CSSyncFishReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    36;
 
   friend void swap(CSSyncFishReq& a, CSSyncFishReq& b) {
     a.Swap(&b);
@@ -7726,7 +7900,7 @@ class SCSyncFishReq PROTOBUF_FINAL :
                &_SCSyncFishReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    37;
 
   friend void swap(SCSyncFishReq& a, SCSyncFishReq& b) {
     a.Swap(&b);
@@ -7862,7 +8036,7 @@ class CSSyncFishRsp PROTOBUF_FINAL :
                &_CSSyncFishRsp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    38;
 
   friend void swap(CSSyncFishRsp& a, CSSyncFishRsp& b) {
     a.Swap(&b);
@@ -8084,7 +8258,7 @@ class SCSyncFishRsp PROTOBUF_FINAL :
                &_SCSyncFishRsp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    39;
 
   friend void swap(SCSyncFishRsp& a, SCSyncFishRsp& b) {
     a.Swap(&b);
@@ -8317,7 +8491,7 @@ class SCChangeScene PROTOBUF_FINAL :
                &_SCChangeScene_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    40;
 
   friend void swap(SCChangeScene& a, SCChangeScene& b) {
     a.Swap(&b);
@@ -8453,7 +8627,7 @@ class CSFishOutsideScreen PROTOBUF_FINAL :
                &_CSFishOutsideScreen_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    41;
 
   friend void swap(CSFishOutsideScreen& a, CSFishOutsideScreen& b) {
     a.Swap(&b);
@@ -8589,7 +8763,7 @@ class CSLockFish PROTOBUF_FINAL :
                &_CSLockFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    42;
 
   friend void swap(CSLockFish& a, CSLockFish& b) {
     a.Swap(&b);
@@ -8747,7 +8921,7 @@ class SCLockFish PROTOBUF_FINAL :
                &_SCLockFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    43;
 
   friend void swap(SCLockFish& a, SCLockFish& b) {
     a.Swap(&b);
@@ -8905,7 +9079,7 @@ class CSCrazySkill PROTOBUF_FINAL :
                &_CSCrazySkill_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    44;
 
   friend void swap(CSCrazySkill& a, CSCrazySkill& b) {
     a.Swap(&b);
@@ -9041,7 +9215,7 @@ class SCCrazySkill PROTOBUF_FINAL :
                &_SCCrazySkill_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    45;
 
   friend void swap(SCCrazySkill& a, SCCrazySkill& b) {
     a.Swap(&b);
@@ -9188,7 +9362,7 @@ class CSTrebleSkill PROTOBUF_FINAL :
                &_CSTrebleSkill_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    46;
 
   friend void swap(CSTrebleSkill& a, CSTrebleSkill& b) {
     a.Swap(&b);
@@ -9324,7 +9498,7 @@ class SCTrebleSkill PROTOBUF_FINAL :
                &_SCTrebleSkill_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    47;
 
   friend void swap(SCTrebleSkill& a, SCTrebleSkill& b) {
     a.Swap(&b);
@@ -9471,7 +9645,7 @@ class CSUserRunBackground PROTOBUF_FINAL :
                &_CSUserRunBackground_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    48;
 
   friend void swap(CSUserRunBackground& a, CSUserRunBackground& b) {
     a.Swap(&b);
@@ -9607,7 +9781,7 @@ class SCUserRunBackground PROTOBUF_FINAL :
                &_SCUserRunBackground_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    49;
 
   friend void swap(SCUserRunBackground& a, SCUserRunBackground& b) {
     a.Swap(&b);
@@ -9754,7 +9928,7 @@ class CSHeartBeat PROTOBUF_FINAL :
                &_CSHeartBeat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    50;
 
   friend void swap(CSHeartBeat& a, CSHeartBeat& b) {
     a.Swap(&b);
@@ -9877,7 +10051,7 @@ class SCHeartBeat PROTOBUF_FINAL :
                &_SCHeartBeat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    51;
 
   friend void swap(SCHeartBeat& a, SCHeartBeat& b) {
     a.Swap(&b);
@@ -10000,7 +10174,7 @@ class GunSpecEffect PROTOBUF_FINAL :
                &_GunSpecEffect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    52;
 
   friend void swap(GunSpecEffect& a, GunSpecEffect& b) {
     a.Swap(&b);
@@ -10202,7 +10376,7 @@ class WingsSpecEffect PROTOBUF_FINAL :
                &_WingsSpecEffect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    53;
 
   friend void swap(WingsSpecEffect& a, WingsSpecEffect& b) {
     a.Swap(&b);
@@ -10393,7 +10567,7 @@ class WingsInfo PROTOBUF_FINAL :
                &_WingsInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    54;
 
   friend void swap(WingsInfo& a, WingsInfo& b) {
     a.Swap(&b);
@@ -10615,7 +10789,7 @@ class GunInfo PROTOBUF_FINAL :
                &_GunInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    55;
 
   friend void swap(GunInfo& a, GunInfo& b) {
     a.Swap(&b);
@@ -10914,7 +11088,7 @@ class VipInfo PROTOBUF_FINAL :
                &_VipInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    56;
 
   friend void swap(VipInfo& a, VipInfo& b) {
     a.Swap(&b);
@@ -11061,7 +11235,7 @@ class PropInfo PROTOBUF_FINAL :
                &_PropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    57;
 
   friend void swap(PropInfo& a, PropInfo& b) {
     a.Swap(&b);
@@ -11217,7 +11391,7 @@ class CSUserInfoNotify PROTOBUF_FINAL :
                &_CSUserInfoNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    58;
 
   friend void swap(CSUserInfoNotify& a, CSUserInfoNotify& b) {
     a.Swap(&b);
@@ -11353,7 +11527,7 @@ class SCUserInfoNotify PROTOBUF_FINAL :
                &_SCUserInfoNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    59;
 
   friend void swap(SCUserInfoNotify& a, SCUserInfoNotify& b) {
     a.Swap(&b);
@@ -11602,7 +11776,7 @@ class SCGameInfoNotify PROTOBUF_FINAL :
                &_SCGameInfoNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    60;
 
   friend void swap(SCGameInfoNotify& a, SCGameInfoNotify& b) {
     a.Swap(&b);
@@ -11783,7 +11957,7 @@ class SCInfoRedDot PROTOBUF_FINAL :
                &_SCInfoRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    61;
 
   friend void swap(SCInfoRedDot& a, SCInfoRedDot& b) {
     a.Swap(&b);
@@ -11930,7 +12104,7 @@ class JumpHighArena PROTOBUF_FINAL :
                &_JumpHighArena_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    62;
 
   friend void swap(JumpHighArena& a, JumpHighArena& b) {
     a.Swap(&b);
@@ -12117,7 +12291,7 @@ class SCActivityInfo PROTOBUF_FINAL :
                &_SCActivityInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    63;
 
   friend void swap(SCActivityInfo& a, SCActivityInfo& b) {
     a.Swap(&b);
@@ -12284,7 +12458,7 @@ class CSChat PROTOBUF_FINAL :
                &_CSChat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    64;
 
   friend void swap(CSChat& a, CSChat& b) {
     a.Swap(&b);
@@ -12442,7 +12616,7 @@ class SCChat PROTOBUF_FINAL :
                &_SCChat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    65;
 
   friend void swap(SCChat& a, SCChat& b) {
     a.Swap(&b);
@@ -12600,7 +12774,7 @@ class SCGainAward PROTOBUF_FINAL :
                &_SCGainAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    66;
 
   friend void swap(SCGainAward& a, SCGainAward& b) {
     a.Swap(&b);
@@ -12767,7 +12941,7 @@ class CSAwardPool PROTOBUF_FINAL :
                &_CSAwardPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    67;
 
   friend void swap(CSAwardPool& a, CSAwardPool& b) {
     a.Swap(&b);
@@ -12890,7 +13064,7 @@ class SCAwardPool PROTOBUF_FINAL :
                &_SCAwardPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    68;
 
   friend void swap(SCAwardPool& a, SCAwardPool& b) {
     a.Swap(&b);
@@ -13035,7 +13209,7 @@ class CSPropStatus PROTOBUF_FINAL :
                &_CSPropStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    69;
 
   friend void swap(CSPropStatus& a, CSPropStatus& b) {
     a.Swap(&b);
@@ -13182,7 +13356,7 @@ class SCPropStatus PROTOBUF_FINAL :
                &_SCPropStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    70;
 
   friend void swap(SCPropStatus& a, SCPropStatus& b) {
     a.Swap(&b);
@@ -13351,7 +13525,7 @@ class GivenCardAward PROTOBUF_FINAL :
                &_GivenCardAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    71;
 
   friend void swap(GivenCardAward& a, GivenCardAward& b) {
     a.Swap(&b);
@@ -13509,7 +13683,7 @@ class UserAwardItem PROTOBUF_FINAL :
                &_UserAwardItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    72;
 
   friend void swap(UserAwardItem& a, UserAwardItem& b) {
     a.Swap(&b);
@@ -13694,7 +13868,7 @@ class CSUserPoolInfo PROTOBUF_FINAL :
                &_CSUserPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    73;
 
   friend void swap(CSUserPoolInfo& a, CSUserPoolInfo& b) {
     a.Swap(&b);
@@ -13830,7 +14004,7 @@ class SCUserPoolInfo PROTOBUF_FINAL :
                &_SCUserPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    74;
 
   friend void swap(SCUserPoolInfo& a, SCUserPoolInfo& b) {
     a.Swap(&b);
@@ -14030,7 +14204,7 @@ class CSUserPoolStatus PROTOBUF_FINAL :
                &_CSUserPoolStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    75;
 
   friend void swap(CSUserPoolStatus& a, CSUserPoolStatus& b) {
     a.Swap(&b);
@@ -14166,7 +14340,7 @@ class SCUserPoolStatus PROTOBUF_FINAL :
                &_SCUserPoolStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    76;
 
   friend void swap(SCUserPoolStatus& a, SCUserPoolStatus& b) {
     a.Swap(&b);
@@ -14302,7 +14476,7 @@ class CSUserPoolPreDraw PROTOBUF_FINAL :
                &_CSUserPoolPreDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    77;
 
   friend void swap(CSUserPoolPreDraw& a, CSUserPoolPreDraw& b) {
     a.Swap(&b);
@@ -14438,7 +14612,7 @@ class SCUserPoolPreDraw PROTOBUF_FINAL :
                &_SCUserPoolPreDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    78;
 
   friend void swap(SCUserPoolPreDraw& a, SCUserPoolPreDraw& b) {
     a.Swap(&b);
@@ -14603,7 +14777,7 @@ class CSUserPoolDraw PROTOBUF_FINAL :
                &_CSUserPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    78;
+    79;
 
   friend void swap(CSUserPoolDraw& a, CSUserPoolDraw& b) {
     a.Swap(&b);
@@ -14726,7 +14900,7 @@ class SCUserPoolDraw PROTOBUF_FINAL :
                &_SCUserPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    79;
+    80;
 
   friend void swap(SCUserPoolDraw& a, SCUserPoolDraw& b) {
     a.Swap(&b);
@@ -14922,7 +15096,7 @@ class SCUserPoolAdd PROTOBUF_FINAL :
                &_SCUserPoolAdd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    81;
 
   friend void swap(SCUserPoolAdd& a, SCUserPoolAdd& b) {
     a.Swap(&b);
@@ -15120,7 +15294,7 @@ class CSUserPoolDoubleInfo PROTOBUF_FINAL :
                &_CSUserPoolDoubleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    82;
 
   friend void swap(CSUserPoolDoubleInfo& a, CSUserPoolDoubleInfo& b) {
     a.Swap(&b);
@@ -15243,7 +15417,7 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
                &_SCUserPoolDoubleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    83;
 
   friend void swap(SCUserPoolDoubleInfo& a, SCUserPoolDoubleInfo& b) {
     a.Swap(&b);
@@ -15419,7 +15593,7 @@ class CSUserPoolDouble PROTOBUF_FINAL :
                &_CSUserPoolDouble_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    84;
 
   friend void swap(CSUserPoolDouble& a, CSUserPoolDouble& b) {
     a.Swap(&b);
@@ -15555,7 +15729,7 @@ class SCUserPoolDouble PROTOBUF_FINAL :
                &_SCUserPoolDouble_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    85;
 
   friend void swap(SCUserPoolDouble& a, SCUserPoolDouble& b) {
     a.Swap(&b);
@@ -15753,7 +15927,7 @@ class CSLuckyPoolInfo PROTOBUF_FINAL :
                &_CSLuckyPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    85;
+    86;
 
   friend void swap(CSLuckyPoolInfo& a, CSLuckyPoolInfo& b) {
     a.Swap(&b);
@@ -15876,7 +16050,7 @@ class SCLuckyPoolInfo PROTOBUF_FINAL :
                &_SCLuckyPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    86;
+    87;
 
   friend void swap(SCLuckyPoolInfo& a, SCLuckyPoolInfo& b) {
     a.Swap(&b);
@@ -16023,7 +16197,7 @@ class CSLuckyPoolDraw PROTOBUF_FINAL :
                &_CSLuckyPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    87;
+    88;
 
   friend void swap(CSLuckyPoolDraw& a, CSLuckyPoolDraw& b) {
     a.Swap(&b);
@@ -16146,7 +16320,7 @@ class SCLuckyPoolDraw PROTOBUF_FINAL :
                &_SCLuckyPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    88;
+    89;
 
   friend void swap(SCLuckyPoolDraw& a, SCLuckyPoolDraw& b) {
     a.Swap(&b);
@@ -16291,7 +16465,7 @@ class CSTorpedoPreShoot PROTOBUF_FINAL :
                &_CSTorpedoPreShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    89;
+    90;
 
   friend void swap(CSTorpedoPreShoot& a, CSTorpedoPreShoot& b) {
     a.Swap(&b);
@@ -16427,7 +16601,7 @@ class SCTorpedoPreShoot PROTOBUF_FINAL :
                &_SCTorpedoPreShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    90;
+    91;
 
   friend void swap(SCTorpedoPreShoot& a, SCTorpedoPreShoot& b) {
     a.Swap(&b);
@@ -16603,7 +16777,7 @@ class CSTorpedoCancelShoot PROTOBUF_FINAL :
                &_CSTorpedoCancelShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    91;
+    92;
 
   friend void swap(CSTorpedoCancelShoot& a, CSTorpedoCancelShoot& b) {
     a.Swap(&b);
@@ -16726,7 +16900,7 @@ class SCTorpedoCancelShoot PROTOBUF_FINAL :
                &_SCTorpedoCancelShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    92;
+    93;
 
   friend void swap(SCTorpedoCancelShoot& a, SCTorpedoCancelShoot& b) {
     a.Swap(&b);
@@ -16862,7 +17036,7 @@ class CSTorpedoShoot PROTOBUF_FINAL :
                &_CSTorpedoShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    93;
+    94;
 
   friend void swap(CSTorpedoShoot& a, CSTorpedoShoot& b) {
     a.Swap(&b);
@@ -17020,7 +17194,7 @@ class SCTorpedoShoot PROTOBUF_FINAL :
                &_SCTorpedoShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    94;
+    95;
 
   friend void swap(SCTorpedoShoot& a, SCTorpedoShoot& b) {
     a.Swap(&b);
@@ -17189,7 +17363,7 @@ class CSTorpedoHit PROTOBUF_FINAL :
                &_CSTorpedoHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    95;
+    96;
 
   friend void swap(CSTorpedoHit& a, CSTorpedoHit& b) {
     a.Swap(&b);
@@ -17312,7 +17486,7 @@ class SCTorpedoHit PROTOBUF_FINAL :
                &_SCTorpedoHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    96;
+    97;
 
   friend void swap(SCTorpedoHit& a, SCTorpedoHit& b) {
     a.Swap(&b);
@@ -17525,7 +17699,7 @@ class CSCallFish PROTOBUF_FINAL :
                &_CSCallFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    97;
+    98;
 
   friend void swap(CSCallFish& a, CSCallFish& b) {
     a.Swap(&b);
@@ -17661,7 +17835,7 @@ class SCCallFish PROTOBUF_FINAL :
                &_SCCallFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    98;
+    99;
 
   friend void swap(SCCallFish& a, SCCallFish& b) {
     a.Swap(&b);
@@ -17848,7 +18022,7 @@ class SCComTask PROTOBUF_FINAL :
                &_SCComTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    99;
+    100;
 
   friend void swap(SCComTask& a, SCComTask& b) {
     a.Swap(&b);
@@ -18017,7 +18191,7 @@ class SCTaskInfo PROTOBUF_FINAL :
                &_SCTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    100;
+    101;
 
   friend void swap(SCTaskInfo& a, SCTaskInfo& b) {
     a.Swap(&b);
@@ -18241,7 +18415,7 @@ class CSSaveSkillTime PROTOBUF_FINAL :
                &_CSSaveSkillTime_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    101;
+    102;
 
   friend void swap(CSSaveSkillTime& a, CSSaveSkillTime& b) {
     a.Swap(&b);
@@ -18410,7 +18584,7 @@ class SevenDayTask PROTOBUF_FINAL :
                &_SevenDayTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    102;
+    103;
 
   friend void swap(SevenDayTask& a, SevenDayTask& b) {
     a.Swap(&b);
@@ -18601,7 +18775,7 @@ class SevenDayDetail PROTOBUF_FINAL :
                &_SevenDayDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    103;
+    104;
 
   friend void swap(SevenDayDetail& a, SevenDayDetail& b) {
     a.Swap(&b);
@@ -18768,7 +18942,7 @@ class CSSevenDayInfo PROTOBUF_FINAL :
                &_CSSevenDayInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    104;
+    105;
 
   friend void swap(CSSevenDayInfo& a, CSSevenDayInfo& b) {
     a.Swap(&b);
@@ -18891,7 +19065,7 @@ class SCSevenDayInfo PROTOBUF_FINAL :
                &_SCSevenDayInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    105;
+    106;
 
   friend void swap(SCSevenDayInfo& a, SCSevenDayInfo& b) {
     a.Swap(&b);
@@ -19127,7 +19301,7 @@ class CSSevenDayAward PROTOBUF_FINAL :
                &_CSSevenDayAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    106;
+    107;
 
   friend void swap(CSSevenDayAward& a, CSSevenDayAward& b) {
     a.Swap(&b);
@@ -19285,7 +19459,7 @@ class SCSevenDayAward PROTOBUF_FINAL :
                &_SCSevenDayAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    107;
+    108;
 
   friend void swap(SCSevenDayAward& a, SCSevenDayAward& b) {
     a.Swap(&b);
@@ -19452,7 +19626,7 @@ class SCVipChargeAward PROTOBUF_FINAL :
                &_SCVipChargeAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    108;
+    109;
 
   friend void swap(SCVipChargeAward& a, SCVipChargeAward& b) {
     a.Swap(&b);
@@ -19599,7 +19773,7 @@ class CSClickStatistic PROTOBUF_FINAL :
                &_CSClickStatistic_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    109;
+    110;
 
   friend void swap(CSClickStatistic& a, CSClickStatistic& b) {
     a.Swap(&b);
@@ -19753,7 +19927,7 @@ class CSNewClickStatistic PROTOBUF_FINAL :
                &_CSNewClickStatistic_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    110;
+    111;
 
   friend void swap(CSNewClickStatistic& a, CSNewClickStatistic& b) {
     a.Swap(&b);
@@ -19896,7 +20070,7 @@ class CSUserLog PROTOBUF_FINAL :
                &_CSUserLog_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    111;
+    112;
 
   friend void swap(CSUserLog& a, CSUserLog& b) {
     a.Swap(&b);
@@ -20068,7 +20242,7 @@ class CSUserEvent PROTOBUF_FINAL :
                &_CSUserEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    112;
+    113;
 
   friend void swap(CSUserEvent& a, CSUserEvent& b) {
     a.Swap(&b);
@@ -20215,7 +20389,7 @@ class CSGetAwardPoolRecord PROTOBUF_FINAL :
                &_CSGetAwardPoolRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    113;
+    114;
 
   friend void swap(CSGetAwardPoolRecord& a, CSGetAwardPoolRecord& b) {
     a.Swap(&b);
@@ -20338,7 +20512,7 @@ class AwardPoolRecord PROTOBUF_FINAL :
                &_AwardPoolRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    114;
+    115;
 
   friend void swap(AwardPoolRecord& a, AwardPoolRecord& b) {
     a.Swap(&b);
@@ -20532,7 +20706,7 @@ class SCGetAwardPoolRecord PROTOBUF_FINAL :
                &_SCGetAwardPoolRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    115;
+    116;
 
   friend void swap(SCGetAwardPoolRecord& a, SCGetAwardPoolRecord& b) {
     a.Swap(&b);
@@ -20677,7 +20851,7 @@ class SCPropDropNotify PROTOBUF_FINAL :
                &_SCPropDropNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    116;
+    117;
 
   friend void swap(SCPropDropNotify& a, SCPropDropNotify& b) {
     a.Swap(&b);
@@ -20844,7 +21018,7 @@ class CSUseProp PROTOBUF_FINAL :
                &_CSUseProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    117;
+    118;
 
   friend void swap(CSUseProp& a, CSUseProp& b) {
     a.Swap(&b);
@@ -20980,7 +21154,7 @@ class SCUseProp PROTOBUF_FINAL :
                &_SCUseProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    118;
+    119;
 
   friend void swap(SCUseProp& a, SCUseProp& b) {
     a.Swap(&b);
@@ -21167,7 +21341,7 @@ class SCFrozenTime PROTOBUF_FINAL :
                &_SCFrozenTime_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    119;
+    120;
 
   friend void swap(SCFrozenTime& a, SCFrozenTime& b) {
     a.Swap(&b);
@@ -21325,7 +21499,7 @@ class SCTreasureFishInfo PROTOBUF_FINAL :
                &_SCTreasureFishInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    120;
+    121;
 
   friend void swap(SCTreasureFishInfo& a, SCTreasureFishInfo& b) {
     a.Swap(&b);
@@ -21494,7 +21668,7 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
                &_SCTreasureFishCatched_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    121;
+    122;
 
   friend void swap(SCTreasureFishCatched& a, SCTreasureFishCatched& b) {
     a.Swap(&b);
@@ -21782,7 +21956,7 @@ class MatchPackAddition PROTOBUF_FINAL :
                &_MatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    122;
+    123;
 
   friend void swap(MatchPackAddition& a, MatchPackAddition& b) {
     a.Swap(&b);
@@ -21980,7 +22154,7 @@ class CSMatchPackAddition PROTOBUF_FINAL :
                &_CSMatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    123;
+    124;
 
   friend void swap(CSMatchPackAddition& a, CSMatchPackAddition& b) {
     a.Swap(&b);
@@ -22103,7 +22277,7 @@ class SCMatchPackAddition PROTOBUF_FINAL :
                &_SCMatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    124;
+    125;
 
   friend void swap(SCMatchPackAddition& a, SCMatchPackAddition& b) {
     a.Swap(&b);
@@ -22248,7 +22422,7 @@ class SCMatchPackInvail PROTOBUF_FINAL :
                &_SCMatchPackInvail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    125;
+    126;
 
   friend void swap(SCMatchPackInvail& a, SCMatchPackInvail& b) {
     a.Swap(&b);
@@ -22391,7 +22565,7 @@ class CSMatchPackBuying PROTOBUF_FINAL :
                &_CSMatchPackBuying_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    126;
+    127;
 
   friend void swap(CSMatchPackBuying& a, CSMatchPackBuying& b) {
     a.Swap(&b);
@@ -22534,7 +22708,7 @@ class AwardDetail PROTOBUF_FINAL :
                &_AwardDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    127;
+    128;
 
   friend void swap(AwardDetail& a, AwardDetail& b) {
     a.Swap(&b);
@@ -22739,7 +22913,7 @@ class LuckyAwardNotify PROTOBUF_FINAL :
                &_LuckyAwardNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    128;
+    129;
 
   friend void swap(LuckyAwardNotify& a, LuckyAwardNotify& b) {
     a.Swap(&b);
@@ -22895,7 +23069,7 @@ class CSGameItemSwitch PROTOBUF_FINAL :
                &_CSGameItemSwitch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    129;
+    130;
 
   friend void swap(CSGameItemSwitch& a, CSGameItemSwitch& b) {
     a.Swap(&b);
@@ -23018,7 +23192,7 @@ class SCGameItemSwitch PROTOBUF_FINAL :
                &_SCGameItemSwitch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    130;
+    131;
 
   friend void swap(SCGameItemSwitch& a, SCGameItemSwitch& b) {
     a.Swap(&b);
@@ -23154,7 +23328,7 @@ class AwardProp PROTOBUF_FINAL :
                &_AwardProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    131;
+    132;
 
   friend void swap(AwardProp& a, AwardProp& b) {
     a.Swap(&b);
@@ -23301,7 +23475,7 @@ class LuckyTaskInfo PROTOBUF_FINAL :
                &_LuckyTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    132;
+    133;
 
   friend void swap(LuckyTaskInfo& a, LuckyTaskInfo& b) {
     a.Swap(&b);
@@ -23499,7 +23673,7 @@ class CSLuckyDrawInfo PROTOBUF_FINAL :
                &_CSLuckyDrawInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    133;
+    134;
 
   friend void swap(CSLuckyDrawInfo& a, CSLuckyDrawInfo& b) {
     a.Swap(&b);
@@ -23622,7 +23796,7 @@ class SCLuckyDrawInfo PROTOBUF_FINAL :
                &_SCLuckyDrawInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    134;
+    135;
 
   friend void swap(SCLuckyDrawInfo& a, SCLuckyDrawInfo& b) {
     a.Swap(&b);
@@ -23967,7 +24141,7 @@ class CSGetLuckyTaskAward PROTOBUF_FINAL :
                &_CSGetLuckyTaskAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    135;
+    136;
 
   friend void swap(CSGetLuckyTaskAward& a, CSGetLuckyTaskAward& b) {
     a.Swap(&b);
@@ -24103,7 +24277,7 @@ class SCGetLuckyTaskAward PROTOBUF_FINAL :
                &_SCGetLuckyTaskAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    136;
+    137;
 
   friend void swap(SCGetLuckyTaskAward& a, SCGetLuckyTaskAward& b) {
     a.Swap(&b);
@@ -24270,7 +24444,7 @@ class CSGetLuckyNum PROTOBUF_FINAL :
                &_CSGetLuckyNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    137;
+    138;
 
   friend void swap(CSGetLuckyNum& a, CSGetLuckyNum& b) {
     a.Swap(&b);
@@ -24406,7 +24580,7 @@ class SCGetLuckyNum PROTOBUF_FINAL :
                &_SCGetLuckyNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    139;
 
   friend void swap(SCGetLuckyNum& a, SCGetLuckyNum& b) {
     a.Swap(&b);
@@ -24578,7 +24752,7 @@ class CSLuckyRedDot PROTOBUF_FINAL :
                &_CSLuckyRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    140;
 
   friend void swap(CSLuckyRedDot& a, CSLuckyRedDot& b) {
     a.Swap(&b);
@@ -24701,7 +24875,7 @@ class SCLuckyRedDot PROTOBUF_FINAL :
                &_SCLuckyRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    141;
 
   friend void swap(SCLuckyRedDot& a, SCLuckyRedDot& b) {
     a.Swap(&b);
@@ -24837,7 +25011,7 @@ class LuckyRecord PROTOBUF_FINAL :
                &_LuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    142;
 
   friend void swap(LuckyRecord& a, LuckyRecord& b) {
     a.Swap(&b);
@@ -25024,7 +25198,7 @@ class OwnRecord PROTOBUF_FINAL :
                &_OwnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    143;
 
   friend void swap(OwnRecord& a, OwnRecord& b) {
     a.Swap(&b);
@@ -25202,7 +25376,7 @@ class CSLuckyRecord PROTOBUF_FINAL :
                &_CSLuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    144;
 
   friend void swap(CSLuckyRecord& a, CSLuckyRecord& b) {
     a.Swap(&b);
@@ -25338,7 +25512,7 @@ class SCLuckyRecord PROTOBUF_FINAL :
                &_SCLuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    145;
 
   friend void swap(SCLuckyRecord& a, SCLuckyRecord& b) {
     a.Swap(&b);
@@ -25494,7 +25668,7 @@ class SCOwnRecord PROTOBUF_FINAL :
                &_SCOwnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    146;
 
   friend void swap(SCOwnRecord& a, SCOwnRecord& b) {
     a.Swap(&b);
@@ -25639,7 +25813,7 @@ class CSBombInfo PROTOBUF_FINAL :
                &_CSBombInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    147;
 
   friend void swap(CSBombInfo& a, CSBombInfo& b) {
     a.Swap(&b);
@@ -25797,7 +25971,7 @@ class SCSyncBomb PROTOBUF_FINAL :
                &_SCSyncBomb_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    147;
+    148;
 
   friend void swap(SCSyncBomb& a, SCSyncBomb& b) {
     a.Swap(&b);
@@ -26021,7 +26195,7 @@ class SCSyncBombFinish PROTOBUF_FINAL :
                &_SCSyncBombFinish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    148;
+    149;
 
   friend void swap(SCSyncBombFinish& a, SCSyncBombFinish& b) {
     a.Swap(&b);
@@ -26179,7 +26353,7 @@ class CSBombHitFishInfo PROTOBUF_FINAL :
                &_CSBombHitFishInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    149;
+    150;
 
   friend void swap(CSBombHitFishInfo& a, CSBombHitFishInfo& b) {
     a.Swap(&b);
@@ -26351,7 +26525,7 @@ class SCGetMagicCube PROTOBUF_FINAL :
                &_SCGetMagicCube_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    150;
+    151;
 
   friend void swap(SCGetMagicCube& a, SCGetMagicCube& b) {
     a.Swap(&b);
@@ -26553,7 +26727,7 @@ class SCMagicCubeBulletInfo PROTOBUF_FINAL :
                &_SCMagicCubeBulletInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    151;
+    152;
 
   friend void swap(SCMagicCubeBulletInfo& a, SCMagicCubeBulletInfo& b) {
     a.Swap(&b);
@@ -26711,7 +26885,7 @@ class CSPreHit PROTOBUF_FINAL :
                &_CSPreHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    152;
+    153;
 
   friend void swap(CSPreHit& a, CSPreHit& b) {
     a.Swap(&b);
@@ -26861,7 +27035,7 @@ class SCPreHit PROTOBUF_FINAL :
                &_SCPreHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    153;
+    154;
 
   friend void swap(SCPreHit& a, SCPreHit& b) {
     a.Swap(&b);
@@ -27019,7 +27193,7 @@ class CSPreShoot PROTOBUF_FINAL :
                &_CSPreShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    154;
+    155;
 
   friend void swap(CSPreShoot& a, CSPreShoot& b) {
     a.Swap(&b);
@@ -27177,7 +27351,7 @@ class SCPreShoot PROTOBUF_FINAL :
                &_SCPreShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    155;
+    156;
 
   friend void swap(SCPreShoot& a, SCPreShoot& b) {
     a.Swap(&b);
@@ -27335,7 +27509,7 @@ class FrozenFish PROTOBUF_FINAL :
                &_FrozenFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    156;
+    157;
 
   friend void swap(FrozenFish& a, FrozenFish& b) {
     a.Swap(&b);
@@ -27482,7 +27656,7 @@ class SCFrozenFish PROTOBUF_FINAL :
                &_SCFrozenFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    157;
+    158;
 
   friend void swap(SCFrozenFish& a, SCFrozenFish& b) {
     a.Swap(&b);
@@ -27627,7 +27801,7 @@ class SCValentineDayFish PROTOBUF_FINAL :
                &_SCValentineDayFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    158;
+    159;
 
   friend void swap(SCValentineDayFish& a, SCValentineDayFish& b) {
     a.Swap(&b);
@@ -27830,7 +28004,7 @@ class SCKiRinFish PROTOBUF_FINAL :
                &_SCKiRinFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    159;
+    160;
 
   friend void swap(SCKiRinFish& a, SCKiRinFish& b) {
     a.Swap(&b);
@@ -28019,7 +28193,7 @@ class SCNvWaFishCapture PROTOBUF_FINAL :
                &_SCNvWaFishCapture_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    160;
+    161;
 
   friend void swap(SCNvWaFishCapture& a, SCNvWaFishCapture& b) {
     a.Swap(&b);
@@ -28219,7 +28393,7 @@ class SCBombGlobeFishInfo PROTOBUF_FINAL :
                &_SCBombGlobeFishInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    161;
+    162;
 
   friend void swap(SCBombGlobeFishInfo& a, SCBombGlobeFishInfo& b) {
     a.Swap(&b);
@@ -28432,7 +28606,7 @@ class CSBombGlobeFishHit PROTOBUF_FINAL :
                &_CSBombGlobeFishHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    162;
+    163;
 
   friend void swap(CSBombGlobeFishHit& a, CSBombGlobeFishHit& b) {
     a.Swap(&b);
@@ -28604,7 +28778,7 @@ class SCAnniversaryShowSelect PROTOBUF_FINAL :
                &_SCAnniversaryShowSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    163;
+    164;
 
   friend void swap(SCAnniversaryShowSelect& a, SCAnniversaryShowSelect& b) {
     a.Swap(&b);
@@ -28773,7 +28947,7 @@ class CSAnniversarySelectReq PROTOBUF_FINAL :
                &_CSAnniversarySelectReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    164;
+    165;
 
   friend void swap(CSAnniversarySelectReq& a, CSAnniversarySelectReq& b) {
     a.Swap(&b);
@@ -28909,7 +29083,7 @@ class AnniversaryStage1Result PROTOBUF_FINAL :
                &_AnniversaryStage1Result_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    165;
+    166;
 
   friend void swap(AnniversaryStage1Result& a, AnniversaryStage1Result& b) {
     a.Swap(&b);
@@ -29056,7 +29230,7 @@ class AnniversaryStage2Result PROTOBUF_FINAL :
                &_AnniversaryStage2Result_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    166;
+    167;
 
   friend void swap(AnniversaryStage2Result& a, AnniversaryStage2Result& b) {
     a.Swap(&b);
@@ -29228,7 +29402,7 @@ class AnniversaryStage3Result PROTOBUF_FINAL :
                &_AnniversaryStage3Result_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    167;
+    168;
 
   friend void swap(AnniversaryStage3Result& a, AnniversaryStage3Result& b) {
     a.Swap(&b);
@@ -29375,7 +29549,7 @@ class SCAnniversarySelectResult PROTOBUF_FINAL :
                &_SCAnniversarySelectResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    168;
+    169;
 
   friend void swap(SCAnniversarySelectResult& a, SCAnniversarySelectResult& b) {
     a.Swap(&b);
@@ -29635,7 +29809,7 @@ class CSAnniversaryHit PROTOBUF_FINAL :
                &_CSAnniversaryHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    169;
+    170;
 
   friend void swap(CSAnniversaryHit& a, CSAnniversaryHit& b) {
     a.Swap(&b);
@@ -29807,7 +29981,7 @@ class SCSyncAnniversaryHitStage PROTOBUF_FINAL :
                &_SCSyncAnniversaryHitStage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    170;
+    171;
 
   friend void swap(SCSyncAnniversaryHitStage& a, SCSyncAnniversaryHitStage& b) {
     a.Swap(&b);
@@ -29998,7 +30172,7 @@ class ScallopLottery PROTOBUF_FINAL :
                &_ScallopLottery_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    171;
+    172;
 
   friend void swap(ScallopLottery& a, ScallopLottery& b) {
     a.Swap(&b);
@@ -30176,7 +30350,7 @@ class SCCaptureScallop PROTOBUF_FINAL :
                &_SCCaptureScallop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    172;
+    173;
 
   friend void swap(SCCaptureScallop& a, SCCaptureScallop& b) {
     a.Swap(&b);
@@ -30385,7 +30559,7 @@ class CSOpenScallop PROTOBUF_FINAL :
                &_CSOpenScallop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    173;
+    174;
 
   friend void swap(CSOpenScallop& a, CSOpenScallop& b) {
     a.Swap(&b);
@@ -30521,7 +30695,7 @@ class SCOpenScallop PROTOBUF_FINAL :
                &_SCOpenScallop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    174;
+    175;
 
   friend void swap(SCOpenScallop& a, SCOpenScallop& b) {
     a.Swap(&b);
@@ -30677,7 +30851,7 @@ class SCSettleScallopLottery PROTOBUF_FINAL :
                &_SCSettleScallopLottery_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    175;
+    176;
 
   friend void swap(SCSettleScallopLottery& a, SCSettleScallopLottery& b) {
     a.Swap(&b);
@@ -30864,7 +31038,7 @@ class SCSyncScallopLottery PROTOBUF_FINAL :
                &_SCSyncScallopLottery_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    176;
+    177;
 
   friend void swap(SCSyncScallopLottery& a, SCSyncScallopLottery& b) {
     a.Swap(&b);
@@ -31062,7 +31236,7 @@ class OpenChestReward PROTOBUF_FINAL :
                &_OpenChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    177;
+    178;
 
   friend void swap(OpenChestReward& a, OpenChestReward& b) {
     a.Swap(&b);
@@ -31218,7 +31392,7 @@ class SCUpdateChestStatus PROTOBUF_FINAL :
                &_SCUpdateChestStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    178;
+    179;
 
   friend void swap(SCUpdateChestStatus& a, SCUpdateChestStatus& b) {
     a.Swap(&b);
@@ -31409,7 +31583,7 @@ class CSChestConfig PROTOBUF_FINAL :
                &_CSChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    179;
+    180;
 
   friend void swap(CSChestConfig& a, CSChestConfig& b) {
     a.Swap(&b);
@@ -31532,7 +31706,7 @@ class ChestBrief PROTOBUF_FINAL :
                &_ChestBrief_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    180;
+    181;
 
   friend void swap(ChestBrief& a, ChestBrief& b) {
     a.Swap(&b);
@@ -31688,7 +31862,7 @@ class SCChestConfig PROTOBUF_FINAL :
                &_SCChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    181;
+    182;
 
   friend void swap(SCChestConfig& a, SCChestConfig& b) {
     a.Swap(&b);
@@ -31888,7 +32062,7 @@ class SCOpenChest PROTOBUF_FINAL :
                &_SCOpenChest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    182;
+    183;
 
   friend void swap(SCOpenChest& a, SCOpenChest& b) {
     a.Swap(&b);
@@ -32044,7 +32218,7 @@ class CSSelectChestReward PROTOBUF_FINAL :
                &_CSSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    183;
+    184;
 
   friend void swap(CSSelectChestReward& a, CSSelectChestReward& b) {
     a.Swap(&b);
@@ -32180,7 +32354,7 @@ class SCSelectChestReward PROTOBUF_FINAL :
                &_SCSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    184;
+    185;
 
   friend void swap(SCSelectChestReward& a, SCSelectChestReward& b) {
     a.Swap(&b);
@@ -32325,7 +32499,7 @@ class CSChestSetAutoSelect PROTOBUF_FINAL :
                &_CSChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    185;
+    186;
 
   friend void swap(CSChestSetAutoSelect& a, CSChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -32472,7 +32646,7 @@ class SCChestSetAutoSelect PROTOBUF_FINAL :
                &_SCChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    186;
+    187;
 
   friend void swap(SCChestSetAutoSelect& a, SCChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -32619,7 +32793,7 @@ class CSChestSetEnable PROTOBUF_FINAL :
                &_CSChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    187;
+    188;
 
   friend void swap(CSChestSetEnable& a, CSChestSetEnable& b) {
     a.Swap(&b);
@@ -32755,7 +32929,7 @@ class SCChestSetEnable PROTOBUF_FINAL :
                &_SCChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    188;
+    189;
 
   friend void swap(SCChestSetEnable& a, SCChestSetEnable& b) {
     a.Swap(&b);
@@ -32891,7 +33065,7 @@ class SCSpecEffect PROTOBUF_FINAL :
                &_SCSpecEffect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    189;
+    190;
 
   friend void swap(SCSpecEffect& a, SCSpecEffect& b) {
     a.Swap(&b);
@@ -33038,7 +33212,7 @@ class SCTortoiseExplode PROTOBUF_FINAL :
                &_SCTortoiseExplode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    190;
+    191;
 
   friend void swap(SCTortoiseExplode& a, SCTortoiseExplode& b) {
     a.Swap(&b);
@@ -33218,7 +33392,7 @@ class RewardInfo PROTOBUF_FINAL :
                &_RewardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    191;
+    192;
 
   friend void swap(RewardInfo& a, RewardInfo& b) {
     a.Swap(&b);
@@ -33387,7 +33561,7 @@ class MissionInfo PROTOBUF_FINAL :
                &_MissionInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    192;
+    193;
 
   friend void swap(MissionInfo& a, MissionInfo& b) {
     a.Swap(&b);
@@ -33576,7 +33750,7 @@ class BigRewardInfo PROTOBUF_FINAL :
                &_BigRewardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    193;
+    194;
 
   friend void swap(BigRewardInfo& a, BigRewardInfo& b) {
     a.Swap(&b);
@@ -33732,7 +33906,7 @@ class TreasureHuntConfig PROTOBUF_FINAL :
                &_TreasureHuntConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    194;
+    195;
 
   friend void swap(TreasureHuntConfig& a, TreasureHuntConfig& b) {
     a.Swap(&b);
@@ -33974,7 +34148,7 @@ class CSSyncConfigs PROTOBUF_FINAL :
                &_CSSyncConfigs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    195;
+    196;
 
   friend void swap(CSSyncConfigs& a, CSSyncConfigs& b) {
     a.Swap(&b);
@@ -34110,7 +34284,7 @@ class SCSyncConfigs PROTOBUF_FINAL :
                &_SCSyncConfigs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    196;
+    197;
 
   friend void swap(SCSyncConfigs& a, SCSyncConfigs& b) {
     a.Swap(&b);
@@ -34255,7 +34429,7 @@ class CSDrawReward PROTOBUF_FINAL :
                &_CSDrawReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    197;
+    198;
 
   friend void swap(CSDrawReward& a, CSDrawReward& b) {
     a.Swap(&b);
@@ -34402,7 +34576,7 @@ class SCDrawReward PROTOBUF_FINAL :
                &_SCDrawReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    198;
+    199;
 
   friend void swap(SCDrawReward& a, SCDrawReward& b) {
     a.Swap(&b);
@@ -34547,7 +34721,7 @@ class CSTreasureHuntMission PROTOBUF_FINAL :
                &_CSTreasureHuntMission_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    199;
+    200;
 
   friend void swap(CSTreasureHuntMission& a, CSTreasureHuntMission& b) {
     a.Swap(&b);
@@ -34670,7 +34844,7 @@ class SCTreasureHuntMission PROTOBUF_FINAL :
                &_SCTreasureHuntMission_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    200;
+    201;
 
   friend void swap(SCTreasureHuntMission& a, SCTreasureHuntMission& b) {
     a.Swap(&b);
@@ -34826,7 +35000,7 @@ class CSReceiveMissionReward PROTOBUF_FINAL :
                &_CSReceiveMissionReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    201;
+    202;
 
   friend void swap(CSReceiveMissionReward& a, CSReceiveMissionReward& b) {
     a.Swap(&b);
@@ -34962,7 +35136,7 @@ class SCReceiveMissionReward PROTOBUF_FINAL :
                &_SCReceiveMissionReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    202;
+    203;
 
   friend void swap(SCReceiveMissionReward& a, SCReceiveMissionReward& b) {
     a.Swap(&b);
@@ -35107,7 +35281,7 @@ class CSDrawTimes PROTOBUF_FINAL :
                &_CSDrawTimes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    203;
+    204;
 
   friend void swap(CSDrawTimes& a, CSDrawTimes& b) {
     a.Swap(&b);
@@ -35230,7 +35404,7 @@ class SCDrawTimes PROTOBUF_FINAL :
                &_SCDrawTimes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    204;
+    205;
 
   friend void swap(SCDrawTimes& a, SCDrawTimes& b) {
     a.Swap(&b);
@@ -35399,7 +35573,7 @@ class CSVerifyActivity PROTOBUF_FINAL :
                &_CSVerifyActivity_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    205;
+    206;
 
   friend void swap(CSVerifyActivity& a, CSVerifyActivity& b) {
     a.Swap(&b);
@@ -35535,7 +35709,7 @@ class SCVerifyActivity PROTOBUF_FINAL :
                &_SCVerifyActivity_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    206;
+    207;
 
   friend void swap(SCVerifyActivity& a, SCVerifyActivity& b) {
     a.Swap(&b);
@@ -35682,7 +35856,7 @@ class Package PROTOBUF_FINAL :
                &_Package_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    207;
+    208;
 
   friend void swap(Package& a, Package& b) {
     a.Swap(&b);
@@ -35915,7 +36089,7 @@ class CSTreasureHuntPackage PROTOBUF_FINAL :
                &_CSTreasureHuntPackage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    208;
+    209;
 
   friend void swap(CSTreasureHuntPackage& a, CSTreasureHuntPackage& b) {
     a.Swap(&b);
@@ -36051,7 +36225,7 @@ class SCTreasureHuntPackage PROTOBUF_FINAL :
                &_SCTreasureHuntPackage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    209;
+    210;
 
   friend void swap(SCTreasureHuntPackage& a, SCTreasureHuntPackage& b) {
     a.Swap(&b);
@@ -36207,7 +36381,7 @@ class ExchangeShopInfo PROTOBUF_FINAL :
                &_ExchangeShopInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    210;
+    211;
 
   friend void swap(ExchangeShopInfo& a, ExchangeShopInfo& b) {
     a.Swap(&b);
@@ -36374,7 +36548,7 @@ class CSExchangeShop PROTOBUF_FINAL :
                &_CSExchangeShop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    211;
+    212;
 
   friend void swap(CSExchangeShop& a, CSExchangeShop& b) {
     a.Swap(&b);
@@ -36497,7 +36671,7 @@ class SCExchangeShop PROTOBUF_FINAL :
                &_SCExchangeShop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    212;
+    213;
 
   friend void swap(SCExchangeShop& a, SCExchangeShop& b) {
     a.Swap(&b);
@@ -36642,7 +36816,7 @@ class CSPurchasePackage PROTOBUF_FINAL :
                &_CSPurchasePackage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    213;
+    214;
 
   friend void swap(CSPurchasePackage& a, CSPurchasePackage& b) {
     a.Swap(&b);
@@ -36778,7 +36952,7 @@ class SCPurchasePackage PROTOBUF_FINAL :
                &_SCPurchasePackage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    214;
+    215;
 
   friend void swap(SCPurchasePackage& a, SCPurchasePackage& b) {
     a.Swap(&b);
@@ -36923,7 +37097,7 @@ class CSVerifyTermChange PROTOBUF_FINAL :
                &_CSVerifyTermChange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    215;
+    216;
 
   friend void swap(CSVerifyTermChange& a, CSVerifyTermChange& b) {
     a.Swap(&b);
@@ -37046,7 +37220,7 @@ class SCVerifyTermChange PROTOBUF_FINAL :
                &_SCVerifyTermChange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    216;
+    217;
 
   friend void swap(SCVerifyTermChange& a, SCVerifyTermChange& b) {
     a.Swap(&b);
@@ -37202,7 +37376,7 @@ class SCWaterDropInfo PROTOBUF_FINAL :
                &_SCWaterDropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    217;
+    218;
 
   friend void swap(SCWaterDropInfo& a, SCWaterDropInfo& b) {
     a.Swap(&b);
@@ -37360,7 +37534,7 @@ class CSBuyGun PROTOBUF_FINAL :
                &_CSBuyGun_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    218;
+    219;
 
   friend void swap(CSBuyGun& a, CSBuyGun& b) {
     a.Swap(&b);
@@ -37496,7 +37670,7 @@ class SCBuyGun PROTOBUF_FINAL :
                &_SCBuyGun_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    219;
+    220;
 
   friend void swap(SCBuyGun& a, SCBuyGun& b) {
     a.Swap(&b);
@@ -37643,7 +37817,7 @@ class CSBuyWings PROTOBUF_FINAL :
                &_CSBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    220;
+    221;
 
   friend void swap(CSBuyWings& a, CSBuyWings& b) {
     a.Swap(&b);
@@ -37779,7 +37953,7 @@ class SCBuyWings PROTOBUF_FINAL :
                &_SCBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    221;
+    222;
 
   friend void swap(SCBuyWings& a, SCBuyWings& b) {
     a.Swap(&b);
@@ -37926,7 +38100,7 @@ class SCNotifyActStatus PROTOBUF_FINAL :
                &_SCNotifyActStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    222;
+    223;
 
   friend void swap(SCNotifyActStatus& a, SCNotifyActStatus& b) {
     a.Swap(&b);
@@ -38073,7 +38247,7 @@ class CSSetDoubleShoot PROTOBUF_FINAL :
                &_CSSetDoubleShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    223;
+    224;
 
   friend void swap(CSSetDoubleShoot& a, CSSetDoubleShoot& b) {
     a.Swap(&b);
@@ -38209,7 +38383,7 @@ class CSFreePoolInfo PROTOBUF_FINAL :
                &_CSFreePoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    224;
+    225;
 
   friend void swap(CSFreePoolInfo& a, CSFreePoolInfo& b) {
     a.Swap(&b);
@@ -38345,7 +38519,7 @@ class CSFreePoolLottery PROTOBUF_FINAL :
                &_CSFreePoolLottery_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    225;
+    226;
 
   friend void swap(CSFreePoolLottery& a, CSFreePoolLottery& b) {
     a.Swap(&b);
@@ -38481,7 +38655,7 @@ class CSFreePoolOpen PROTOBUF_FINAL :
                &_CSFreePoolOpen_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    226;
+    227;
 
   friend void swap(CSFreePoolOpen& a, CSFreePoolOpen& b) {
     a.Swap(&b);
@@ -38583,6 +38757,96 @@ class CSFreePoolOpen PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// SC_SceneInfo
+
+// repeated int32 bet_list = 1;
+inline int SC_SceneInfo::_internal_bet_list_size() const {
+  return bet_list_.size();
+}
+inline int SC_SceneInfo::bet_list_size() const {
+  return _internal_bet_list_size();
+}
+inline void SC_SceneInfo::clear_bet_list() {
+  bet_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_bet_list(int index) const {
+  return bet_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::bet_list(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.bet_list)
+  return _internal_bet_list(index);
+}
+inline void SC_SceneInfo::set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bet_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:F4BY.SC_SceneInfo.bet_list)
+}
+inline void SC_SceneInfo::_internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bet_list_.Add(value);
+}
+inline void SC_SceneInfo::add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_bet_list(value);
+  // @@protoc_insertion_point(field_add:F4BY.SC_SceneInfo.bet_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::_internal_bet_list() const {
+  return bet_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::bet_list() const {
+  // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.bet_list)
+  return _internal_bet_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::_internal_mutable_bet_list() {
+  return &bet_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::mutable_bet_list() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SC_SceneInfo.bet_list)
+  return _internal_mutable_bet_list();
+}
+
+// repeated .F4BY.StationBase station_base_list = 2;
+inline int SC_SceneInfo::_internal_station_base_list_size() const {
+  return station_base_list_.size();
+}
+inline int SC_SceneInfo::station_base_list_size() const {
+  return _internal_station_base_list_size();
+}
+inline void SC_SceneInfo::clear_station_base_list() {
+  station_base_list_.Clear();
+}
+inline ::F4BY::StationBase* SC_SceneInfo::mutable_station_base_list(int index) {
+  // @@protoc_insertion_point(field_mutable:F4BY.SC_SceneInfo.station_base_list)
+  return station_base_list_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >*
+SC_SceneInfo::mutable_station_base_list() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SC_SceneInfo.station_base_list)
+  return &station_base_list_;
+}
+inline const ::F4BY::StationBase& SC_SceneInfo::_internal_station_base_list(int index) const {
+  return station_base_list_.Get(index);
+}
+inline const ::F4BY::StationBase& SC_SceneInfo::station_base_list(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SC_SceneInfo.station_base_list)
+  return _internal_station_base_list(index);
+}
+inline ::F4BY::StationBase* SC_SceneInfo::_internal_add_station_base_list() {
+  return station_base_list_.Add();
+}
+inline ::F4BY::StationBase* SC_SceneInfo::add_station_base_list() {
+  // @@protoc_insertion_point(field_add:F4BY.SC_SceneInfo.station_base_list)
+  return _internal_add_station_base_list();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::StationBase >&
+SC_SceneInfo::station_base_list() const {
+  // @@protoc_insertion_point(field_list:F4BY.SC_SceneInfo.station_base_list)
+  return station_base_list_;
+}
+
+// -------------------------------------------------------------------
+
 // CommonResp
 
 // int32 code = 1;
@@ -58382,6 +58646,8 @@ inline void CSFreePoolOpen::set_openfreepool(bool value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

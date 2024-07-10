@@ -58,6 +58,10 @@ extern PROTOBUF_INTERNAL_EXPORT_F4BY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::
 extern PROTOBUF_INTERNAL_EXPORT_F4BY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_WingsInfo_F4BY_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_F4BY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_WingsSpecEffect_F4BY_2eproto;
 namespace F4BY {
+class SC_SceneInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_SceneInfo> _instance;
+} _SC_SceneInfo_default_instance_;
 class CommonRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CommonResp> _instance;
@@ -3836,6 +3840,20 @@ static void InitDefaultsscc_info_SCWaterDropInfo_F4BY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SCWaterDropInfo_F4BY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SCWaterDropInfo_F4BY_2eproto}, {}};
 
+static void InitDefaultsscc_info_SC_SceneInfo_F4BY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::F4BY::_SC_SceneInfo_default_instance_;
+    new (ptr) ::F4BY::SC_SceneInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SC_SceneInfo_F4BY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SC_SceneInfo_F4BY_2eproto}, {
+      &scc_info_StationBase_F4BY_2eproto.base,}};
+
 static void InitDefaultsscc_info_ScallopLottery_F4BY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -4003,11 +4021,18 @@ static void InitDefaultsscc_info_WingsSpecEffect_F4BY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_WingsSpecEffect_F4BY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_WingsSpecEffect_F4BY_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_F4BY_2eproto[227];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_F4BY_2eproto[228];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_F4BY_2eproto[6];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_F4BY_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_F4BY_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::F4BY::SC_SceneInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::F4BY::SC_SceneInfo, bet_list_),
+  PROTOBUF_FIELD_OFFSET(::F4BY::SC_SceneInfo, station_base_list_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::F4BY::CommonResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -5850,236 +5875,238 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_F4BY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::F4BY::CSFreePoolOpen, openfreepool_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::F4BY::CommonResp)},
-  { 7, -1, sizeof(::F4BY::Object)},
-  { 21, -1, sizeof(::F4BY::Obj)},
-  { 28, -1, sizeof(::F4BY::Object1)},
-  { 35, -1, sizeof(::F4BY::Object2)},
-  { 42, -1, sizeof(::F4BY::Object3)},
-  { 49, -1, sizeof(::F4BY::WheelObject)},
-  { 56, -1, sizeof(::F4BY::Decimal)},
-  { 63, -1, sizeof(::F4BY::CSLoginGameWithToken)},
-  { 73, -1, sizeof(::F4BY::SCLoginGameWithToken)},
-  { 80, -1, sizeof(::F4BY::CSUserReady)},
-  { 86, -1, sizeof(::F4BY::EffectInfo)},
-  { 93, -1, sizeof(::F4BY::StationBase)},
-  { 113, -1, sizeof(::F4BY::SCUserReady)},
-  { 119, -1, sizeof(::F4BY::SCNotifyLogin)},
-  { 125, -1, sizeof(::F4BY::CSNotifyLogout)},
-  { 130, -1, sizeof(::F4BY::SCNotifyLogout)},
-  { 136, -1, sizeof(::F4BY::CSSetProbability)},
-  { 144, -1, sizeof(::F4BY::SCSetProbability)},
-  { 156, -1, sizeof(::F4BY::CSSetWings)},
-  { 162, -1, sizeof(::F4BY::SCSetWings)},
-  { 170, -1, sizeof(::F4BY::CSUserShoot)},
-  { 182, -1, sizeof(::F4BY::SCUserShoot)},
-  { 192, -1, sizeof(::F4BY::CSHitFish)},
-  { 202, -1, sizeof(::F4BY::MultiInfo)},
-  { 210, -1, sizeof(::F4BY::SCHitFish)},
-  { 226, -1, sizeof(::F4BY::SCHitSpecialFish)},
-  { 248, -1, sizeof(::F4BY::SyncPropInfoX)},
-  { 258, -1, sizeof(::F4BY::UserSyncPropInfo)},
-  { 265, -1, sizeof(::F4BY::CSSyncPropInfo)},
-  { 272, -1, sizeof(::F4BY::SCSyncPropInfo)},
-  { 278, -1, sizeof(::F4BY::CSSyncMoney)},
-  { 284, -1, sizeof(::F4BY::SCSyncMoney)},
-  { 295, -1, sizeof(::F4BY::FishTrace)},
-  { 309, -1, sizeof(::F4BY::SCFishTracesList)},
-  { 324, -1, sizeof(::F4BY::CSSyncFishReq)},
-  { 330, -1, sizeof(::F4BY::SCSyncFishReq)},
-  { 336, -1, sizeof(::F4BY::CSSyncFishRsp)},
-  { 349, -1, sizeof(::F4BY::SCSyncFishRsp)},
-  { 363, -1, sizeof(::F4BY::SCChangeScene)},
-  { 369, -1, sizeof(::F4BY::CSFishOutsideScreen)},
-  { 375, -1, sizeof(::F4BY::CSLockFish)},
-  { 383, -1, sizeof(::F4BY::SCLockFish)},
-  { 391, -1, sizeof(::F4BY::CSCrazySkill)},
-  { 397, -1, sizeof(::F4BY::SCCrazySkill)},
-  { 404, -1, sizeof(::F4BY::CSTrebleSkill)},
-  { 410, -1, sizeof(::F4BY::SCTrebleSkill)},
-  { 417, -1, sizeof(::F4BY::CSUserRunBackground)},
-  { 423, -1, sizeof(::F4BY::SCUserRunBackground)},
-  { 430, -1, sizeof(::F4BY::CSHeartBeat)},
-  { 435, -1, sizeof(::F4BY::SCHeartBeat)},
-  { 440, -1, sizeof(::F4BY::GunSpecEffect)},
-  { 452, -1, sizeof(::F4BY::WingsSpecEffect)},
-  { 463, -1, sizeof(::F4BY::WingsInfo)},
-  { 476, -1, sizeof(::F4BY::GunInfo)},
-  { 496, -1, sizeof(::F4BY::VipInfo)},
-  { 503, -1, sizeof(::F4BY::PropInfo)},
-  { 510, -1, sizeof(::F4BY::CSUserInfoNotify)},
-  { 516, -1, sizeof(::F4BY::SCUserInfoNotify)},
-  { 529, -1, sizeof(::F4BY::SCGameInfoNotify)},
-  { 537, -1, sizeof(::F4BY::SCInfoRedDot)},
-  { 544, -1, sizeof(::F4BY::JumpHighArena)},
-  { 554, -1, sizeof(::F4BY::SCActivityInfo)},
-  { 562, -1, sizeof(::F4BY::CSChat)},
-  { 570, -1, sizeof(::F4BY::SCChat)},
-  { 578, -1, sizeof(::F4BY::SCGainAward)},
-  { 586, -1, sizeof(::F4BY::CSAwardPool)},
-  { 591, -1, sizeof(::F4BY::SCAwardPool)},
-  { 597, -1, sizeof(::F4BY::CSPropStatus)},
-  { 604, -1, sizeof(::F4BY::SCPropStatus)},
-  { 613, -1, sizeof(::F4BY::GivenCardAward)},
-  { 621, -1, sizeof(::F4BY::UserAwardItem)},
-  { 630, -1, sizeof(::F4BY::CSUserPoolInfo)},
-  { 636, -1, sizeof(::F4BY::SCUserPoolInfo)},
-  { 647, -1, sizeof(::F4BY::CSUserPoolStatus)},
-  { 653, -1, sizeof(::F4BY::SCUserPoolStatus)},
-  { 659, -1, sizeof(::F4BY::CSUserPoolPreDraw)},
-  { 665, -1, sizeof(::F4BY::SCUserPoolPreDraw)},
-  { 673, -1, sizeof(::F4BY::CSUserPoolDraw)},
-  { 678, -1, sizeof(::F4BY::SCUserPoolDraw)},
-  { 687, -1, sizeof(::F4BY::SCUserPoolAdd)},
-  { 698, -1, sizeof(::F4BY::CSUserPoolDoubleInfo)},
-  { 703, -1, sizeof(::F4BY::SCUserPoolDoubleInfo)},
-  { 711, -1, sizeof(::F4BY::CSUserPoolDouble)},
-  { 717, -1, sizeof(::F4BY::SCUserPoolDouble)},
-  { 727, -1, sizeof(::F4BY::CSLuckyPoolInfo)},
-  { 732, -1, sizeof(::F4BY::SCLuckyPoolInfo)},
-  { 739, -1, sizeof(::F4BY::CSLuckyPoolDraw)},
-  { 744, -1, sizeof(::F4BY::SCLuckyPoolDraw)},
-  { 750, -1, sizeof(::F4BY::CSTorpedoPreShoot)},
-  { 756, -1, sizeof(::F4BY::SCTorpedoPreShoot)},
-  { 765, -1, sizeof(::F4BY::CSTorpedoCancelShoot)},
-  { 770, -1, sizeof(::F4BY::SCTorpedoCancelShoot)},
-  { 776, -1, sizeof(::F4BY::CSTorpedoShoot)},
-  { 784, -1, sizeof(::F4BY::SCTorpedoShoot)},
-  { 793, -1, sizeof(::F4BY::CSTorpedoHit)},
-  { 798, -1, sizeof(::F4BY::SCTorpedoHit)},
-  { 811, -1, sizeof(::F4BY::CSCallFish)},
-  { 817, -1, sizeof(::F4BY::SCCallFish)},
-  { 827, -1, sizeof(::F4BY::SCComTask)},
-  { 836, -1, sizeof(::F4BY::SCTaskInfo)},
-  { 850, -1, sizeof(::F4BY::CSSaveSkillTime)},
-  { 859, -1, sizeof(::F4BY::SevenDayTask)},
-  { 870, -1, sizeof(::F4BY::SevenDayDetail)},
-  { 878, -1, sizeof(::F4BY::CSSevenDayInfo)},
-  { 883, -1, sizeof(::F4BY::SCSevenDayInfo)},
-  { 896, -1, sizeof(::F4BY::CSSevenDayAward)},
-  { 904, -1, sizeof(::F4BY::SCSevenDayAward)},
-  { 912, -1, sizeof(::F4BY::SCVipChargeAward)},
-  { 919, -1, sizeof(::F4BY::CSClickStatistic)},
-  { 926, -1, sizeof(::F4BY::CSNewClickStatistic)},
-  { 932, -1, sizeof(::F4BY::CSUserLog)},
-  { 940, -1, sizeof(::F4BY::CSUserEvent)},
-  { 947, -1, sizeof(::F4BY::CSGetAwardPoolRecord)},
-  { 952, -1, sizeof(::F4BY::AwardPoolRecord)},
-  { 962, -1, sizeof(::F4BY::SCGetAwardPoolRecord)},
-  { 968, -1, sizeof(::F4BY::SCPropDropNotify)},
-  { 976, -1, sizeof(::F4BY::CSUseProp)},
-  { 982, -1, sizeof(::F4BY::SCUseProp)},
-  { 992, -1, sizeof(::F4BY::SCFrozenTime)},
-  { 1000, -1, sizeof(::F4BY::SCTreasureFishInfo)},
-  { 1009, -1, sizeof(::F4BY::SCTreasureFishCatched)},
-  { 1028, -1, sizeof(::F4BY::MatchPackAddition)},
-  { 1039, -1, sizeof(::F4BY::CSMatchPackAddition)},
-  { 1044, -1, sizeof(::F4BY::SCMatchPackAddition)},
-  { 1050, -1, sizeof(::F4BY::SCMatchPackInvail)},
-  { 1056, -1, sizeof(::F4BY::CSMatchPackBuying)},
-  { 1062, -1, sizeof(::F4BY::AwardDetail)},
-  { 1073, -1, sizeof(::F4BY::LuckyAwardNotify)},
-  { 1080, -1, sizeof(::F4BY::CSGameItemSwitch)},
-  { 1085, -1, sizeof(::F4BY::SCGameItemSwitch)},
-  { 1091, -1, sizeof(::F4BY::AwardProp)},
-  { 1098, -1, sizeof(::F4BY::LuckyTaskInfo)},
-  { 1109, -1, sizeof(::F4BY::CSLuckyDrawInfo)},
-  { 1114, -1, sizeof(::F4BY::SCLuckyDrawInfo)},
-  { 1134, -1, sizeof(::F4BY::CSGetLuckyTaskAward)},
-  { 1140, -1, sizeof(::F4BY::SCGetLuckyTaskAward)},
-  { 1148, -1, sizeof(::F4BY::CSGetLuckyNum)},
-  { 1154, -1, sizeof(::F4BY::SCGetLuckyNum)},
-  { 1162, -1, sizeof(::F4BY::CSLuckyRedDot)},
-  { 1167, -1, sizeof(::F4BY::SCLuckyRedDot)},
-  { 1173, -1, sizeof(::F4BY::LuckyRecord)},
-  { 1183, -1, sizeof(::F4BY::OwnRecord)},
-  { 1192, -1, sizeof(::F4BY::CSLuckyRecord)},
-  { 1198, -1, sizeof(::F4BY::SCLuckyRecord)},
-  { 1205, -1, sizeof(::F4BY::SCOwnRecord)},
-  { 1211, -1, sizeof(::F4BY::CSBombInfo)},
-  { 1219, -1, sizeof(::F4BY::SCSyncBomb)},
-  { 1233, -1, sizeof(::F4BY::SCSyncBombFinish)},
-  { 1241, -1, sizeof(::F4BY::CSBombHitFishInfo)},
-  { 1249, -1, sizeof(::F4BY::SCGetMagicCube)},
-  { 1261, -1, sizeof(::F4BY::SCMagicCubeBulletInfo)},
-  { 1269, -1, sizeof(::F4BY::CSPreHit)},
-  { 1275, -1, sizeof(::F4BY::SCPreHit)},
-  { 1283, -1, sizeof(::F4BY::CSPreShoot)},
-  { 1291, -1, sizeof(::F4BY::SCPreShoot)},
-  { 1299, -1, sizeof(::F4BY::FrozenFish)},
-  { 1306, -1, sizeof(::F4BY::SCFrozenFish)},
-  { 1312, -1, sizeof(::F4BY::SCValentineDayFish)},
-  { 1322, -1, sizeof(::F4BY::SCKiRinFish)},
-  { 1332, -1, sizeof(::F4BY::SCNvWaFishCapture)},
-  { 1343, -1, sizeof(::F4BY::SCBombGlobeFishInfo)},
-  { 1356, -1, sizeof(::F4BY::CSBombGlobeFishHit)},
-  { 1364, -1, sizeof(::F4BY::SCAnniversaryShowSelect)},
-  { 1373, -1, sizeof(::F4BY::CSAnniversarySelectReq)},
-  { 1379, -1, sizeof(::F4BY::AnniversaryStage1Result)},
-  { 1386, -1, sizeof(::F4BY::AnniversaryStage2Result)},
-  { 1394, -1, sizeof(::F4BY::AnniversaryStage3Result)},
-  { 1401, -1, sizeof(::F4BY::SCAnniversarySelectResult)},
-  { 1415, -1, sizeof(::F4BY::CSAnniversaryHit)},
-  { 1423, -1, sizeof(::F4BY::SCSyncAnniversaryHitStage)},
-  { 1434, -1, sizeof(::F4BY::ScallopLottery)},
-  { 1443, -1, sizeof(::F4BY::SCCaptureScallop)},
-  { 1454, -1, sizeof(::F4BY::CSOpenScallop)},
-  { 1460, -1, sizeof(::F4BY::SCOpenScallop)},
-  { 1467, -1, sizeof(::F4BY::SCSettleScallopLottery)},
-  { 1476, -1, sizeof(::F4BY::SCSyncScallopLottery)},
-  { 1486, -1, sizeof(::F4BY::OpenChestReward)},
-  { 1493, -1, sizeof(::F4BY::SCUpdateChestStatus)},
-  { 1504, -1, sizeof(::F4BY::CSChestConfig)},
-  { 1509, -1, sizeof(::F4BY::ChestBrief)},
-  { 1516, -1, sizeof(::F4BY::SCChestConfig)},
-  { 1527, -1, sizeof(::F4BY::SCOpenChest)},
-  { 1534, -1, sizeof(::F4BY::CSSelectChestReward)},
-  { 1540, -1, sizeof(::F4BY::SCSelectChestReward)},
-  { 1546, -1, sizeof(::F4BY::CSChestSetAutoSelect)},
-  { 1553, -1, sizeof(::F4BY::SCChestSetAutoSelect)},
-  { 1560, -1, sizeof(::F4BY::CSChestSetEnable)},
-  { 1566, -1, sizeof(::F4BY::SCChestSetEnable)},
-  { 1572, -1, sizeof(::F4BY::SCSpecEffect)},
-  { 1579, -1, sizeof(::F4BY::SCTortoiseExplode)},
-  { 1589, -1, sizeof(::F4BY::RewardInfo)},
-  { 1598, -1, sizeof(::F4BY::MissionInfo)},
-  { 1608, -1, sizeof(::F4BY::BigRewardInfo)},
-  { 1615, -1, sizeof(::F4BY::TreasureHuntConfig)},
-  { 1629, -1, sizeof(::F4BY::CSSyncConfigs)},
-  { 1635, -1, sizeof(::F4BY::SCSyncConfigs)},
-  { 1641, -1, sizeof(::F4BY::CSDrawReward)},
-  { 1648, -1, sizeof(::F4BY::SCDrawReward)},
-  { 1654, -1, sizeof(::F4BY::CSTreasureHuntMission)},
-  { 1659, -1, sizeof(::F4BY::SCTreasureHuntMission)},
-  { 1666, -1, sizeof(::F4BY::CSReceiveMissionReward)},
-  { 1672, -1, sizeof(::F4BY::SCReceiveMissionReward)},
-  { 1678, -1, sizeof(::F4BY::CSDrawTimes)},
-  { 1683, -1, sizeof(::F4BY::SCDrawTimes)},
-  { 1692, -1, sizeof(::F4BY::CSVerifyActivity)},
-  { 1698, -1, sizeof(::F4BY::SCVerifyActivity)},
-  { 1705, -1, sizeof(::F4BY::Package)},
-  { 1719, -1, sizeof(::F4BY::CSTreasureHuntPackage)},
-  { 1725, -1, sizeof(::F4BY::SCTreasureHuntPackage)},
-  { 1732, -1, sizeof(::F4BY::ExchangeShopInfo)},
-  { 1740, -1, sizeof(::F4BY::CSExchangeShop)},
-  { 1745, -1, sizeof(::F4BY::SCExchangeShop)},
-  { 1751, -1, sizeof(::F4BY::CSPurchasePackage)},
-  { 1757, -1, sizeof(::F4BY::SCPurchasePackage)},
-  { 1763, -1, sizeof(::F4BY::CSVerifyTermChange)},
-  { 1768, -1, sizeof(::F4BY::SCVerifyTermChange)},
-  { 1775, -1, sizeof(::F4BY::SCWaterDropInfo)},
-  { 1783, -1, sizeof(::F4BY::CSBuyGun)},
-  { 1789, -1, sizeof(::F4BY::SCBuyGun)},
-  { 1796, -1, sizeof(::F4BY::CSBuyWings)},
-  { 1802, -1, sizeof(::F4BY::SCBuyWings)},
-  { 1809, -1, sizeof(::F4BY::SCNotifyActStatus)},
-  { 1816, -1, sizeof(::F4BY::CSSetDoubleShoot)},
-  { 1822, -1, sizeof(::F4BY::CSFreePoolInfo)},
-  { 1828, -1, sizeof(::F4BY::CSFreePoolLottery)},
-  { 1834, -1, sizeof(::F4BY::CSFreePoolOpen)},
+  { 0, -1, sizeof(::F4BY::SC_SceneInfo)},
+  { 7, -1, sizeof(::F4BY::CommonResp)},
+  { 14, -1, sizeof(::F4BY::Object)},
+  { 28, -1, sizeof(::F4BY::Obj)},
+  { 35, -1, sizeof(::F4BY::Object1)},
+  { 42, -1, sizeof(::F4BY::Object2)},
+  { 49, -1, sizeof(::F4BY::Object3)},
+  { 56, -1, sizeof(::F4BY::WheelObject)},
+  { 63, -1, sizeof(::F4BY::Decimal)},
+  { 70, -1, sizeof(::F4BY::CSLoginGameWithToken)},
+  { 80, -1, sizeof(::F4BY::SCLoginGameWithToken)},
+  { 87, -1, sizeof(::F4BY::CSUserReady)},
+  { 93, -1, sizeof(::F4BY::EffectInfo)},
+  { 100, -1, sizeof(::F4BY::StationBase)},
+  { 120, -1, sizeof(::F4BY::SCUserReady)},
+  { 126, -1, sizeof(::F4BY::SCNotifyLogin)},
+  { 132, -1, sizeof(::F4BY::CSNotifyLogout)},
+  { 137, -1, sizeof(::F4BY::SCNotifyLogout)},
+  { 143, -1, sizeof(::F4BY::CSSetProbability)},
+  { 151, -1, sizeof(::F4BY::SCSetProbability)},
+  { 163, -1, sizeof(::F4BY::CSSetWings)},
+  { 169, -1, sizeof(::F4BY::SCSetWings)},
+  { 177, -1, sizeof(::F4BY::CSUserShoot)},
+  { 189, -1, sizeof(::F4BY::SCUserShoot)},
+  { 199, -1, sizeof(::F4BY::CSHitFish)},
+  { 209, -1, sizeof(::F4BY::MultiInfo)},
+  { 217, -1, sizeof(::F4BY::SCHitFish)},
+  { 233, -1, sizeof(::F4BY::SCHitSpecialFish)},
+  { 255, -1, sizeof(::F4BY::SyncPropInfoX)},
+  { 265, -1, sizeof(::F4BY::UserSyncPropInfo)},
+  { 272, -1, sizeof(::F4BY::CSSyncPropInfo)},
+  { 279, -1, sizeof(::F4BY::SCSyncPropInfo)},
+  { 285, -1, sizeof(::F4BY::CSSyncMoney)},
+  { 291, -1, sizeof(::F4BY::SCSyncMoney)},
+  { 302, -1, sizeof(::F4BY::FishTrace)},
+  { 316, -1, sizeof(::F4BY::SCFishTracesList)},
+  { 331, -1, sizeof(::F4BY::CSSyncFishReq)},
+  { 337, -1, sizeof(::F4BY::SCSyncFishReq)},
+  { 343, -1, sizeof(::F4BY::CSSyncFishRsp)},
+  { 356, -1, sizeof(::F4BY::SCSyncFishRsp)},
+  { 370, -1, sizeof(::F4BY::SCChangeScene)},
+  { 376, -1, sizeof(::F4BY::CSFishOutsideScreen)},
+  { 382, -1, sizeof(::F4BY::CSLockFish)},
+  { 390, -1, sizeof(::F4BY::SCLockFish)},
+  { 398, -1, sizeof(::F4BY::CSCrazySkill)},
+  { 404, -1, sizeof(::F4BY::SCCrazySkill)},
+  { 411, -1, sizeof(::F4BY::CSTrebleSkill)},
+  { 417, -1, sizeof(::F4BY::SCTrebleSkill)},
+  { 424, -1, sizeof(::F4BY::CSUserRunBackground)},
+  { 430, -1, sizeof(::F4BY::SCUserRunBackground)},
+  { 437, -1, sizeof(::F4BY::CSHeartBeat)},
+  { 442, -1, sizeof(::F4BY::SCHeartBeat)},
+  { 447, -1, sizeof(::F4BY::GunSpecEffect)},
+  { 459, -1, sizeof(::F4BY::WingsSpecEffect)},
+  { 470, -1, sizeof(::F4BY::WingsInfo)},
+  { 483, -1, sizeof(::F4BY::GunInfo)},
+  { 503, -1, sizeof(::F4BY::VipInfo)},
+  { 510, -1, sizeof(::F4BY::PropInfo)},
+  { 517, -1, sizeof(::F4BY::CSUserInfoNotify)},
+  { 523, -1, sizeof(::F4BY::SCUserInfoNotify)},
+  { 536, -1, sizeof(::F4BY::SCGameInfoNotify)},
+  { 544, -1, sizeof(::F4BY::SCInfoRedDot)},
+  { 551, -1, sizeof(::F4BY::JumpHighArena)},
+  { 561, -1, sizeof(::F4BY::SCActivityInfo)},
+  { 569, -1, sizeof(::F4BY::CSChat)},
+  { 577, -1, sizeof(::F4BY::SCChat)},
+  { 585, -1, sizeof(::F4BY::SCGainAward)},
+  { 593, -1, sizeof(::F4BY::CSAwardPool)},
+  { 598, -1, sizeof(::F4BY::SCAwardPool)},
+  { 604, -1, sizeof(::F4BY::CSPropStatus)},
+  { 611, -1, sizeof(::F4BY::SCPropStatus)},
+  { 620, -1, sizeof(::F4BY::GivenCardAward)},
+  { 628, -1, sizeof(::F4BY::UserAwardItem)},
+  { 637, -1, sizeof(::F4BY::CSUserPoolInfo)},
+  { 643, -1, sizeof(::F4BY::SCUserPoolInfo)},
+  { 654, -1, sizeof(::F4BY::CSUserPoolStatus)},
+  { 660, -1, sizeof(::F4BY::SCUserPoolStatus)},
+  { 666, -1, sizeof(::F4BY::CSUserPoolPreDraw)},
+  { 672, -1, sizeof(::F4BY::SCUserPoolPreDraw)},
+  { 680, -1, sizeof(::F4BY::CSUserPoolDraw)},
+  { 685, -1, sizeof(::F4BY::SCUserPoolDraw)},
+  { 694, -1, sizeof(::F4BY::SCUserPoolAdd)},
+  { 705, -1, sizeof(::F4BY::CSUserPoolDoubleInfo)},
+  { 710, -1, sizeof(::F4BY::SCUserPoolDoubleInfo)},
+  { 718, -1, sizeof(::F4BY::CSUserPoolDouble)},
+  { 724, -1, sizeof(::F4BY::SCUserPoolDouble)},
+  { 734, -1, sizeof(::F4BY::CSLuckyPoolInfo)},
+  { 739, -1, sizeof(::F4BY::SCLuckyPoolInfo)},
+  { 746, -1, sizeof(::F4BY::CSLuckyPoolDraw)},
+  { 751, -1, sizeof(::F4BY::SCLuckyPoolDraw)},
+  { 757, -1, sizeof(::F4BY::CSTorpedoPreShoot)},
+  { 763, -1, sizeof(::F4BY::SCTorpedoPreShoot)},
+  { 772, -1, sizeof(::F4BY::CSTorpedoCancelShoot)},
+  { 777, -1, sizeof(::F4BY::SCTorpedoCancelShoot)},
+  { 783, -1, sizeof(::F4BY::CSTorpedoShoot)},
+  { 791, -1, sizeof(::F4BY::SCTorpedoShoot)},
+  { 800, -1, sizeof(::F4BY::CSTorpedoHit)},
+  { 805, -1, sizeof(::F4BY::SCTorpedoHit)},
+  { 818, -1, sizeof(::F4BY::CSCallFish)},
+  { 824, -1, sizeof(::F4BY::SCCallFish)},
+  { 834, -1, sizeof(::F4BY::SCComTask)},
+  { 843, -1, sizeof(::F4BY::SCTaskInfo)},
+  { 857, -1, sizeof(::F4BY::CSSaveSkillTime)},
+  { 866, -1, sizeof(::F4BY::SevenDayTask)},
+  { 877, -1, sizeof(::F4BY::SevenDayDetail)},
+  { 885, -1, sizeof(::F4BY::CSSevenDayInfo)},
+  { 890, -1, sizeof(::F4BY::SCSevenDayInfo)},
+  { 903, -1, sizeof(::F4BY::CSSevenDayAward)},
+  { 911, -1, sizeof(::F4BY::SCSevenDayAward)},
+  { 919, -1, sizeof(::F4BY::SCVipChargeAward)},
+  { 926, -1, sizeof(::F4BY::CSClickStatistic)},
+  { 933, -1, sizeof(::F4BY::CSNewClickStatistic)},
+  { 939, -1, sizeof(::F4BY::CSUserLog)},
+  { 947, -1, sizeof(::F4BY::CSUserEvent)},
+  { 954, -1, sizeof(::F4BY::CSGetAwardPoolRecord)},
+  { 959, -1, sizeof(::F4BY::AwardPoolRecord)},
+  { 969, -1, sizeof(::F4BY::SCGetAwardPoolRecord)},
+  { 975, -1, sizeof(::F4BY::SCPropDropNotify)},
+  { 983, -1, sizeof(::F4BY::CSUseProp)},
+  { 989, -1, sizeof(::F4BY::SCUseProp)},
+  { 999, -1, sizeof(::F4BY::SCFrozenTime)},
+  { 1007, -1, sizeof(::F4BY::SCTreasureFishInfo)},
+  { 1016, -1, sizeof(::F4BY::SCTreasureFishCatched)},
+  { 1035, -1, sizeof(::F4BY::MatchPackAddition)},
+  { 1046, -1, sizeof(::F4BY::CSMatchPackAddition)},
+  { 1051, -1, sizeof(::F4BY::SCMatchPackAddition)},
+  { 1057, -1, sizeof(::F4BY::SCMatchPackInvail)},
+  { 1063, -1, sizeof(::F4BY::CSMatchPackBuying)},
+  { 1069, -1, sizeof(::F4BY::AwardDetail)},
+  { 1080, -1, sizeof(::F4BY::LuckyAwardNotify)},
+  { 1087, -1, sizeof(::F4BY::CSGameItemSwitch)},
+  { 1092, -1, sizeof(::F4BY::SCGameItemSwitch)},
+  { 1098, -1, sizeof(::F4BY::AwardProp)},
+  { 1105, -1, sizeof(::F4BY::LuckyTaskInfo)},
+  { 1116, -1, sizeof(::F4BY::CSLuckyDrawInfo)},
+  { 1121, -1, sizeof(::F4BY::SCLuckyDrawInfo)},
+  { 1141, -1, sizeof(::F4BY::CSGetLuckyTaskAward)},
+  { 1147, -1, sizeof(::F4BY::SCGetLuckyTaskAward)},
+  { 1155, -1, sizeof(::F4BY::CSGetLuckyNum)},
+  { 1161, -1, sizeof(::F4BY::SCGetLuckyNum)},
+  { 1169, -1, sizeof(::F4BY::CSLuckyRedDot)},
+  { 1174, -1, sizeof(::F4BY::SCLuckyRedDot)},
+  { 1180, -1, sizeof(::F4BY::LuckyRecord)},
+  { 1190, -1, sizeof(::F4BY::OwnRecord)},
+  { 1199, -1, sizeof(::F4BY::CSLuckyRecord)},
+  { 1205, -1, sizeof(::F4BY::SCLuckyRecord)},
+  { 1212, -1, sizeof(::F4BY::SCOwnRecord)},
+  { 1218, -1, sizeof(::F4BY::CSBombInfo)},
+  { 1226, -1, sizeof(::F4BY::SCSyncBomb)},
+  { 1240, -1, sizeof(::F4BY::SCSyncBombFinish)},
+  { 1248, -1, sizeof(::F4BY::CSBombHitFishInfo)},
+  { 1256, -1, sizeof(::F4BY::SCGetMagicCube)},
+  { 1268, -1, sizeof(::F4BY::SCMagicCubeBulletInfo)},
+  { 1276, -1, sizeof(::F4BY::CSPreHit)},
+  { 1282, -1, sizeof(::F4BY::SCPreHit)},
+  { 1290, -1, sizeof(::F4BY::CSPreShoot)},
+  { 1298, -1, sizeof(::F4BY::SCPreShoot)},
+  { 1306, -1, sizeof(::F4BY::FrozenFish)},
+  { 1313, -1, sizeof(::F4BY::SCFrozenFish)},
+  { 1319, -1, sizeof(::F4BY::SCValentineDayFish)},
+  { 1329, -1, sizeof(::F4BY::SCKiRinFish)},
+  { 1339, -1, sizeof(::F4BY::SCNvWaFishCapture)},
+  { 1350, -1, sizeof(::F4BY::SCBombGlobeFishInfo)},
+  { 1363, -1, sizeof(::F4BY::CSBombGlobeFishHit)},
+  { 1371, -1, sizeof(::F4BY::SCAnniversaryShowSelect)},
+  { 1380, -1, sizeof(::F4BY::CSAnniversarySelectReq)},
+  { 1386, -1, sizeof(::F4BY::AnniversaryStage1Result)},
+  { 1393, -1, sizeof(::F4BY::AnniversaryStage2Result)},
+  { 1401, -1, sizeof(::F4BY::AnniversaryStage3Result)},
+  { 1408, -1, sizeof(::F4BY::SCAnniversarySelectResult)},
+  { 1422, -1, sizeof(::F4BY::CSAnniversaryHit)},
+  { 1430, -1, sizeof(::F4BY::SCSyncAnniversaryHitStage)},
+  { 1441, -1, sizeof(::F4BY::ScallopLottery)},
+  { 1450, -1, sizeof(::F4BY::SCCaptureScallop)},
+  { 1461, -1, sizeof(::F4BY::CSOpenScallop)},
+  { 1467, -1, sizeof(::F4BY::SCOpenScallop)},
+  { 1474, -1, sizeof(::F4BY::SCSettleScallopLottery)},
+  { 1483, -1, sizeof(::F4BY::SCSyncScallopLottery)},
+  { 1493, -1, sizeof(::F4BY::OpenChestReward)},
+  { 1500, -1, sizeof(::F4BY::SCUpdateChestStatus)},
+  { 1511, -1, sizeof(::F4BY::CSChestConfig)},
+  { 1516, -1, sizeof(::F4BY::ChestBrief)},
+  { 1523, -1, sizeof(::F4BY::SCChestConfig)},
+  { 1534, -1, sizeof(::F4BY::SCOpenChest)},
+  { 1541, -1, sizeof(::F4BY::CSSelectChestReward)},
+  { 1547, -1, sizeof(::F4BY::SCSelectChestReward)},
+  { 1553, -1, sizeof(::F4BY::CSChestSetAutoSelect)},
+  { 1560, -1, sizeof(::F4BY::SCChestSetAutoSelect)},
+  { 1567, -1, sizeof(::F4BY::CSChestSetEnable)},
+  { 1573, -1, sizeof(::F4BY::SCChestSetEnable)},
+  { 1579, -1, sizeof(::F4BY::SCSpecEffect)},
+  { 1586, -1, sizeof(::F4BY::SCTortoiseExplode)},
+  { 1596, -1, sizeof(::F4BY::RewardInfo)},
+  { 1605, -1, sizeof(::F4BY::MissionInfo)},
+  { 1615, -1, sizeof(::F4BY::BigRewardInfo)},
+  { 1622, -1, sizeof(::F4BY::TreasureHuntConfig)},
+  { 1636, -1, sizeof(::F4BY::CSSyncConfigs)},
+  { 1642, -1, sizeof(::F4BY::SCSyncConfigs)},
+  { 1648, -1, sizeof(::F4BY::CSDrawReward)},
+  { 1655, -1, sizeof(::F4BY::SCDrawReward)},
+  { 1661, -1, sizeof(::F4BY::CSTreasureHuntMission)},
+  { 1666, -1, sizeof(::F4BY::SCTreasureHuntMission)},
+  { 1673, -1, sizeof(::F4BY::CSReceiveMissionReward)},
+  { 1679, -1, sizeof(::F4BY::SCReceiveMissionReward)},
+  { 1685, -1, sizeof(::F4BY::CSDrawTimes)},
+  { 1690, -1, sizeof(::F4BY::SCDrawTimes)},
+  { 1699, -1, sizeof(::F4BY::CSVerifyActivity)},
+  { 1705, -1, sizeof(::F4BY::SCVerifyActivity)},
+  { 1712, -1, sizeof(::F4BY::Package)},
+  { 1726, -1, sizeof(::F4BY::CSTreasureHuntPackage)},
+  { 1732, -1, sizeof(::F4BY::SCTreasureHuntPackage)},
+  { 1739, -1, sizeof(::F4BY::ExchangeShopInfo)},
+  { 1747, -1, sizeof(::F4BY::CSExchangeShop)},
+  { 1752, -1, sizeof(::F4BY::SCExchangeShop)},
+  { 1758, -1, sizeof(::F4BY::CSPurchasePackage)},
+  { 1764, -1, sizeof(::F4BY::SCPurchasePackage)},
+  { 1770, -1, sizeof(::F4BY::CSVerifyTermChange)},
+  { 1775, -1, sizeof(::F4BY::SCVerifyTermChange)},
+  { 1782, -1, sizeof(::F4BY::SCWaterDropInfo)},
+  { 1790, -1, sizeof(::F4BY::CSBuyGun)},
+  { 1796, -1, sizeof(::F4BY::SCBuyGun)},
+  { 1803, -1, sizeof(::F4BY::CSBuyWings)},
+  { 1809, -1, sizeof(::F4BY::SCBuyWings)},
+  { 1816, -1, sizeof(::F4BY::SCNotifyActStatus)},
+  { 1823, -1, sizeof(::F4BY::CSSetDoubleShoot)},
+  { 1829, -1, sizeof(::F4BY::CSFreePoolInfo)},
+  { 1835, -1, sizeof(::F4BY::CSFreePoolLottery)},
+  { 1841, -1, sizeof(::F4BY::CSFreePoolOpen)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::F4BY::_SC_SceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::F4BY::_CommonResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::F4BY::_Object_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::F4BY::_Obj_default_instance_),
@@ -6310,7 +6337,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nF4BY.proto\022\004F4BY\"+\n\nCommonResp\022\014\n\004code"
+  "\n\nF4BY.proto\022\004F4BY\"N\n\014SC_SceneInfo\022\020\n\010be"
+  "t_list\030\001 \003(\005\022,\n\021station_base_list\030\002 \003(\0132"
+  "\021.F4BY.StationBase\"+\n\nCommonResp\022\014\n\004code"
   "\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"\252\001\n\006Object\022\n\n\002id"
   "\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\022\014\n\004"
   "time\030\004 \001(\002\022\020\n\010multiple\030\005 \001(\005\022\013\n\003uid\030\006 \001("
@@ -6882,7 +6911,7 @@ const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_F4BY_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_F4BY_2eproto_sccs[227] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_F4BY_2eproto_sccs[228] = {
   &scc_info_AnniversaryStage1Result_F4BY_2eproto.base,
   &scc_info_AnniversaryStage2Result_F4BY_2eproto.base,
   &scc_info_AnniversaryStage3Result_F4BY_2eproto.base,
@@ -7098,6 +7127,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_F4B
   &scc_info_SCVerifyTermChange_F4BY_2eproto.base,
   &scc_info_SCVipChargeAward_F4BY_2eproto.base,
   &scc_info_SCWaterDropInfo_F4BY_2eproto.base,
+  &scc_info_SC_SceneInfo_F4BY_2eproto.base,
   &scc_info_ScallopLottery_F4BY_2eproto.base,
   &scc_info_SevenDayDetail_F4BY_2eproto.base,
   &scc_info_SevenDayTask_F4BY_2eproto.base,
@@ -7113,10 +7143,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_F4B
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_F4BY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_F4BY_2eproto = {
-  false, false, descriptor_table_protodef_F4BY_2eproto, "F4BY.proto", 22738,
-  &descriptor_table_F4BY_2eproto_once, descriptor_table_F4BY_2eproto_sccs, descriptor_table_F4BY_2eproto_deps, 227, 0,
+  false, false, descriptor_table_protodef_F4BY_2eproto, "F4BY.proto", 22818,
+  &descriptor_table_F4BY_2eproto_once, descriptor_table_F4BY_2eproto_sccs, descriptor_table_F4BY_2eproto_deps, 228, 0,
   schemas, file_default_instances, TableStruct_F4BY_2eproto::offsets,
-  file_level_metadata_F4BY_2eproto, 227, file_level_enum_descriptors_F4BY_2eproto, file_level_service_descriptors_F4BY_2eproto,
+  file_level_metadata_F4BY_2eproto, 228, file_level_enum_descriptors_F4BY_2eproto, file_level_service_descriptors_F4BY_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -7377,6 +7407,245 @@ bool ChestAutoSelectOption_IsValid(int value) {
     default:
       return false;
   }
+}
+
+
+// ===================================================================
+
+class SC_SceneInfo::_Internal {
+ public:
+};
+
+SC_SceneInfo::SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  bet_list_(arena),
+  station_base_list_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:F4BY.SC_SceneInfo)
+}
+SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      bet_list_(from.bet_list_),
+      station_base_list_(from.station_base_list_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:F4BY.SC_SceneInfo)
+}
+
+void SC_SceneInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SC_SceneInfo_F4BY_2eproto.base);
+}
+
+SC_SceneInfo::~SC_SceneInfo() {
+  // @@protoc_insertion_point(destructor:F4BY.SC_SceneInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void SC_SceneInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void SC_SceneInfo::ArenaDtor(void* object) {
+  SC_SceneInfo* _this = reinterpret_cast< SC_SceneInfo* >(object);
+  (void)_this;
+}
+void SC_SceneInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SC_SceneInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const SC_SceneInfo& SC_SceneInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SC_SceneInfo_F4BY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void SC_SceneInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:F4BY.SC_SceneInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  bet_list_.Clear();
+  station_base_list_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SC_SceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated int32 bet_list = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bet_list(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
+          _internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .F4BY.StationBase station_base_list = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_station_base_list(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SC_SceneInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:F4BY.SC_SceneInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated int32 bet_list = 1;
+  {
+    int byte_size = _bet_list_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          1, _internal_bet_list(), byte_size, target);
+    }
+  }
+
+  // repeated .F4BY.StationBase station_base_list = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_station_base_list_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_station_base_list(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:F4BY.SC_SceneInfo)
+  return target;
+}
+
+size_t SC_SceneInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:F4BY.SC_SceneInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated int32 bet_list = 1;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->bet_list_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _bet_list_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .F4BY.StationBase station_base_list = 2;
+  total_size += 1UL * this->_internal_station_base_list_size();
+  for (const auto& msg : this->station_base_list_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SC_SceneInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:F4BY.SC_SceneInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SC_SceneInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SC_SceneInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:F4BY.SC_SceneInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:F4BY.SC_SceneInfo)
+    MergeFrom(*source);
+  }
+}
+
+void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:F4BY.SC_SceneInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  bet_list_.MergeFrom(from.bet_list_);
+  station_base_list_.MergeFrom(from.station_base_list_);
+}
+
+void SC_SceneInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:F4BY.SC_SceneInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SC_SceneInfo::CopyFrom(const SC_SceneInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:F4BY.SC_SceneInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SC_SceneInfo::IsInitialized() const {
+  return true;
+}
+
+void SC_SceneInfo::InternalSwap(SC_SceneInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  bet_list_.InternalSwap(&other->bet_list_);
+  station_base_list_.InternalSwap(&other->station_base_list_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SC_SceneInfo::GetMetadata() const {
+  return GetMetadataStatic();
 }
 
 
@@ -65282,6 +65551,9 @@ void CSFreePoolOpen::InternalSwap(CSFreePoolOpen* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace F4BY
 PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::F4BY::SC_SceneInfo* Arena::CreateMaybeMessage< ::F4BY::SC_SceneInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::F4BY::SC_SceneInfo >(arena);
+}
 template<> PROTOBUF_NOINLINE ::F4BY::CommonResp* Arena::CreateMaybeMessage< ::F4BY::CommonResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::F4BY::CommonResp >(arena);
 }
