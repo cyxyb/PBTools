@@ -4240,6 +4240,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_F4BY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::F4BY::CSHitFish, chair_id_),
   PROTOBUF_FIELD_OFFSET(::F4BY::CSHitFish, ratio_),
   PROTOBUF_FIELD_OFFSET(::F4BY::CSHitFish, bullet_type_),
+  PROTOBUF_FIELD_OFFSET(::F4BY::CSHitFish, origin_uid_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::F4BY::MultiInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -5907,209 +5908,209 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 180, -1, sizeof(::F4BY::CSUserShoot)},
   { 192, -1, sizeof(::F4BY::SCUserShoot)},
   { 202, -1, sizeof(::F4BY::CSHitFish)},
-  { 213, -1, sizeof(::F4BY::MultiInfo)},
-  { 221, -1, sizeof(::F4BY::SCHitFish)},
-  { 238, -1, sizeof(::F4BY::SCHitSpecialFish)},
-  { 260, -1, sizeof(::F4BY::SyncPropInfoX)},
-  { 270, -1, sizeof(::F4BY::UserSyncPropInfo)},
-  { 277, -1, sizeof(::F4BY::CSSyncPropInfo)},
-  { 284, -1, sizeof(::F4BY::SCSyncPropInfo)},
-  { 290, -1, sizeof(::F4BY::CSSyncMoney)},
-  { 296, -1, sizeof(::F4BY::SCSyncMoney)},
-  { 307, -1, sizeof(::F4BY::FishTrace)},
-  { 321, -1, sizeof(::F4BY::SCFishTracesList)},
-  { 336, -1, sizeof(::F4BY::CSSyncFishReq)},
-  { 342, -1, sizeof(::F4BY::SCSyncFishReq)},
-  { 348, -1, sizeof(::F4BY::CSSyncFishRsp)},
-  { 361, -1, sizeof(::F4BY::SCSyncFishRsp)},
-  { 375, -1, sizeof(::F4BY::SCChangeScene)},
-  { 381, -1, sizeof(::F4BY::CSFishOutsideScreen)},
-  { 387, -1, sizeof(::F4BY::CSLockFish)},
-  { 395, -1, sizeof(::F4BY::SCLockFish)},
-  { 403, -1, sizeof(::F4BY::CSCrazySkill)},
-  { 409, -1, sizeof(::F4BY::SCCrazySkill)},
-  { 416, -1, sizeof(::F4BY::CSTrebleSkill)},
-  { 422, -1, sizeof(::F4BY::SCTrebleSkill)},
-  { 429, -1, sizeof(::F4BY::CSUserRunBackground)},
-  { 435, -1, sizeof(::F4BY::SCUserRunBackground)},
-  { 442, -1, sizeof(::F4BY::CSHeartBeat)},
-  { 447, -1, sizeof(::F4BY::SCHeartBeat)},
-  { 452, -1, sizeof(::F4BY::GunSpecEffect)},
-  { 464, -1, sizeof(::F4BY::WingsSpecEffect)},
-  { 475, -1, sizeof(::F4BY::WingsInfo)},
-  { 488, -1, sizeof(::F4BY::GunInfo)},
-  { 509, -1, sizeof(::F4BY::VipInfo)},
-  { 516, -1, sizeof(::F4BY::PropInfo)},
-  { 523, -1, sizeof(::F4BY::CSUserInfoNotify)},
-  { 529, -1, sizeof(::F4BY::SCUserInfoNotify)},
-  { 542, -1, sizeof(::F4BY::SCGameInfoNotify)},
-  { 550, -1, sizeof(::F4BY::SCInfoRedDot)},
-  { 557, -1, sizeof(::F4BY::JumpHighArena)},
-  { 567, -1, sizeof(::F4BY::SCActivityInfo)},
-  { 575, -1, sizeof(::F4BY::CSChat)},
-  { 583, -1, sizeof(::F4BY::SCChat)},
-  { 591, -1, sizeof(::F4BY::SCGainAward)},
-  { 599, -1, sizeof(::F4BY::CSAwardPool)},
-  { 604, -1, sizeof(::F4BY::SCAwardPool)},
-  { 610, -1, sizeof(::F4BY::CSPropStatus)},
-  { 617, -1, sizeof(::F4BY::SCPropStatus)},
-  { 626, -1, sizeof(::F4BY::GivenCardAward)},
-  { 634, -1, sizeof(::F4BY::UserAwardItem)},
-  { 643, -1, sizeof(::F4BY::CSUserPoolInfo)},
-  { 649, -1, sizeof(::F4BY::SCUserPoolInfo)},
-  { 660, -1, sizeof(::F4BY::CSUserPoolStatus)},
-  { 666, -1, sizeof(::F4BY::SCUserPoolStatus)},
-  { 672, -1, sizeof(::F4BY::CSUserPoolPreDraw)},
-  { 678, -1, sizeof(::F4BY::SCUserPoolPreDraw)},
-  { 686, -1, sizeof(::F4BY::CSUserPoolDraw)},
-  { 691, -1, sizeof(::F4BY::SCUserPoolDraw)},
-  { 700, -1, sizeof(::F4BY::SCUserPoolAdd)},
-  { 711, -1, sizeof(::F4BY::CSUserPoolDoubleInfo)},
-  { 716, -1, sizeof(::F4BY::SCUserPoolDoubleInfo)},
-  { 724, -1, sizeof(::F4BY::CSUserPoolDouble)},
-  { 730, -1, sizeof(::F4BY::SCUserPoolDouble)},
-  { 740, -1, sizeof(::F4BY::CSLuckyPoolInfo)},
-  { 745, -1, sizeof(::F4BY::SCLuckyPoolInfo)},
-  { 752, -1, sizeof(::F4BY::CSLuckyPoolDraw)},
-  { 757, -1, sizeof(::F4BY::SCLuckyPoolDraw)},
-  { 763, -1, sizeof(::F4BY::CSTorpedoPreShoot)},
-  { 769, -1, sizeof(::F4BY::SCTorpedoPreShoot)},
-  { 778, -1, sizeof(::F4BY::CSTorpedoCancelShoot)},
-  { 783, -1, sizeof(::F4BY::SCTorpedoCancelShoot)},
-  { 789, -1, sizeof(::F4BY::CSTorpedoShoot)},
-  { 797, -1, sizeof(::F4BY::SCTorpedoShoot)},
-  { 806, -1, sizeof(::F4BY::CSTorpedoHit)},
-  { 811, -1, sizeof(::F4BY::SCTorpedoHit)},
-  { 824, -1, sizeof(::F4BY::CSCallFish)},
-  { 830, -1, sizeof(::F4BY::SCCallFish)},
-  { 840, -1, sizeof(::F4BY::SCComTask)},
-  { 849, -1, sizeof(::F4BY::SCTaskInfo)},
-  { 863, -1, sizeof(::F4BY::CSSaveSkillTime)},
-  { 872, -1, sizeof(::F4BY::SevenDayTask)},
-  { 883, -1, sizeof(::F4BY::SevenDayDetail)},
-  { 891, -1, sizeof(::F4BY::CSSevenDayInfo)},
-  { 896, -1, sizeof(::F4BY::SCSevenDayInfo)},
-  { 909, -1, sizeof(::F4BY::CSSevenDayAward)},
-  { 917, -1, sizeof(::F4BY::SCSevenDayAward)},
-  { 925, -1, sizeof(::F4BY::SCVipChargeAward)},
-  { 932, -1, sizeof(::F4BY::CSClickStatistic)},
-  { 939, -1, sizeof(::F4BY::CSNewClickStatistic)},
-  { 945, -1, sizeof(::F4BY::CSUserLog)},
-  { 953, -1, sizeof(::F4BY::CSUserEvent)},
-  { 960, -1, sizeof(::F4BY::CSGetAwardPoolRecord)},
-  { 965, -1, sizeof(::F4BY::AwardPoolRecord)},
-  { 975, -1, sizeof(::F4BY::SCGetAwardPoolRecord)},
-  { 981, -1, sizeof(::F4BY::SCPropDropNotify)},
-  { 989, -1, sizeof(::F4BY::CSUseProp)},
-  { 995, -1, sizeof(::F4BY::SCUseProp)},
-  { 1005, -1, sizeof(::F4BY::SCFrozenTime)},
-  { 1013, -1, sizeof(::F4BY::SCTreasureFishInfo)},
-  { 1022, -1, sizeof(::F4BY::SCTreasureFishCatched)},
-  { 1041, -1, sizeof(::F4BY::MatchPackAddition)},
-  { 1052, -1, sizeof(::F4BY::CSMatchPackAddition)},
-  { 1057, -1, sizeof(::F4BY::SCMatchPackAddition)},
-  { 1063, -1, sizeof(::F4BY::SCMatchPackInvail)},
-  { 1069, -1, sizeof(::F4BY::CSMatchPackBuying)},
-  { 1075, -1, sizeof(::F4BY::AwardDetail)},
-  { 1086, -1, sizeof(::F4BY::LuckyAwardNotify)},
-  { 1093, -1, sizeof(::F4BY::CSGameItemSwitch)},
-  { 1098, -1, sizeof(::F4BY::SCGameItemSwitch)},
-  { 1104, -1, sizeof(::F4BY::AwardProp)},
-  { 1111, -1, sizeof(::F4BY::LuckyTaskInfo)},
-  { 1122, -1, sizeof(::F4BY::CSLuckyDrawInfo)},
-  { 1127, -1, sizeof(::F4BY::SCLuckyDrawInfo)},
-  { 1147, -1, sizeof(::F4BY::CSGetLuckyTaskAward)},
-  { 1153, -1, sizeof(::F4BY::SCGetLuckyTaskAward)},
-  { 1161, -1, sizeof(::F4BY::CSGetLuckyNum)},
-  { 1167, -1, sizeof(::F4BY::SCGetLuckyNum)},
-  { 1175, -1, sizeof(::F4BY::CSLuckyRedDot)},
-  { 1180, -1, sizeof(::F4BY::SCLuckyRedDot)},
-  { 1186, -1, sizeof(::F4BY::LuckyRecord)},
-  { 1196, -1, sizeof(::F4BY::OwnRecord)},
-  { 1205, -1, sizeof(::F4BY::CSLuckyRecord)},
-  { 1211, -1, sizeof(::F4BY::SCLuckyRecord)},
-  { 1218, -1, sizeof(::F4BY::SCOwnRecord)},
-  { 1224, -1, sizeof(::F4BY::CSBombInfo)},
-  { 1232, -1, sizeof(::F4BY::SCSyncBomb)},
-  { 1246, -1, sizeof(::F4BY::SCSyncBombFinish)},
-  { 1254, -1, sizeof(::F4BY::CSBombHitFishInfo)},
-  { 1262, -1, sizeof(::F4BY::SCGetMagicCube)},
-  { 1274, -1, sizeof(::F4BY::SCMagicCubeBulletInfo)},
-  { 1282, -1, sizeof(::F4BY::CSPreHit)},
-  { 1288, -1, sizeof(::F4BY::SCPreHit)},
-  { 1296, -1, sizeof(::F4BY::CSPreShoot)},
-  { 1304, -1, sizeof(::F4BY::SCPreShoot)},
-  { 1312, -1, sizeof(::F4BY::FrozenFish)},
-  { 1319, -1, sizeof(::F4BY::SCFrozenFish)},
-  { 1325, -1, sizeof(::F4BY::SCValentineDayFish)},
-  { 1335, -1, sizeof(::F4BY::SCKiRinFish)},
-  { 1345, -1, sizeof(::F4BY::SCNvWaFishCapture)},
-  { 1356, -1, sizeof(::F4BY::SCBombGlobeFishInfo)},
-  { 1369, -1, sizeof(::F4BY::CSBombGlobeFishHit)},
-  { 1377, -1, sizeof(::F4BY::SCAnniversaryShowSelect)},
-  { 1386, -1, sizeof(::F4BY::CSAnniversarySelectReq)},
-  { 1392, -1, sizeof(::F4BY::AnniversaryStage1Result)},
-  { 1399, -1, sizeof(::F4BY::AnniversaryStage2Result)},
-  { 1407, -1, sizeof(::F4BY::AnniversaryStage3Result)},
-  { 1414, -1, sizeof(::F4BY::SCAnniversarySelectResult)},
-  { 1428, -1, sizeof(::F4BY::CSAnniversaryHit)},
-  { 1436, -1, sizeof(::F4BY::SCSyncAnniversaryHitStage)},
-  { 1447, -1, sizeof(::F4BY::ScallopLottery)},
-  { 1456, -1, sizeof(::F4BY::SCCaptureScallop)},
-  { 1467, -1, sizeof(::F4BY::CSOpenScallop)},
-  { 1473, -1, sizeof(::F4BY::SCOpenScallop)},
-  { 1480, -1, sizeof(::F4BY::SCSettleScallopLottery)},
-  { 1489, -1, sizeof(::F4BY::SCSyncScallopLottery)},
-  { 1499, -1, sizeof(::F4BY::OpenChestReward)},
-  { 1506, -1, sizeof(::F4BY::SCUpdateChestStatus)},
-  { 1517, -1, sizeof(::F4BY::CSChestConfig)},
-  { 1522, -1, sizeof(::F4BY::ChestBrief)},
-  { 1529, -1, sizeof(::F4BY::SCChestConfig)},
-  { 1540, -1, sizeof(::F4BY::SCOpenChest)},
-  { 1547, -1, sizeof(::F4BY::CSSelectChestReward)},
-  { 1553, -1, sizeof(::F4BY::SCSelectChestReward)},
-  { 1559, -1, sizeof(::F4BY::CSChestSetAutoSelect)},
-  { 1566, -1, sizeof(::F4BY::SCChestSetAutoSelect)},
-  { 1573, -1, sizeof(::F4BY::CSChestSetEnable)},
-  { 1579, -1, sizeof(::F4BY::SCChestSetEnable)},
-  { 1585, -1, sizeof(::F4BY::SCSpecEffect)},
-  { 1592, -1, sizeof(::F4BY::SCTortoiseExplode)},
-  { 1602, -1, sizeof(::F4BY::RewardInfo)},
-  { 1611, -1, sizeof(::F4BY::MissionInfo)},
-  { 1621, -1, sizeof(::F4BY::BigRewardInfo)},
-  { 1628, -1, sizeof(::F4BY::TreasureHuntConfig)},
-  { 1642, -1, sizeof(::F4BY::CSSyncConfigs)},
-  { 1648, -1, sizeof(::F4BY::SCSyncConfigs)},
-  { 1654, -1, sizeof(::F4BY::CSDrawReward)},
-  { 1661, -1, sizeof(::F4BY::SCDrawReward)},
-  { 1667, -1, sizeof(::F4BY::CSTreasureHuntMission)},
-  { 1672, -1, sizeof(::F4BY::SCTreasureHuntMission)},
-  { 1679, -1, sizeof(::F4BY::CSReceiveMissionReward)},
-  { 1685, -1, sizeof(::F4BY::SCReceiveMissionReward)},
-  { 1691, -1, sizeof(::F4BY::CSDrawTimes)},
-  { 1696, -1, sizeof(::F4BY::SCDrawTimes)},
-  { 1705, -1, sizeof(::F4BY::CSVerifyActivity)},
-  { 1711, -1, sizeof(::F4BY::SCVerifyActivity)},
-  { 1718, -1, sizeof(::F4BY::Package)},
-  { 1732, -1, sizeof(::F4BY::CSTreasureHuntPackage)},
-  { 1738, -1, sizeof(::F4BY::SCTreasureHuntPackage)},
-  { 1745, -1, sizeof(::F4BY::ExchangeShopInfo)},
-  { 1753, -1, sizeof(::F4BY::CSExchangeShop)},
-  { 1758, -1, sizeof(::F4BY::SCExchangeShop)},
-  { 1764, -1, sizeof(::F4BY::CSPurchasePackage)},
-  { 1770, -1, sizeof(::F4BY::SCPurchasePackage)},
-  { 1776, -1, sizeof(::F4BY::CSVerifyTermChange)},
-  { 1781, -1, sizeof(::F4BY::SCVerifyTermChange)},
-  { 1788, -1, sizeof(::F4BY::SCWaterDropInfo)},
-  { 1796, -1, sizeof(::F4BY::CSBuyGun)},
-  { 1802, -1, sizeof(::F4BY::SCBuyGun)},
-  { 1809, -1, sizeof(::F4BY::CSBuyWings)},
-  { 1815, -1, sizeof(::F4BY::SCBuyWings)},
-  { 1822, -1, sizeof(::F4BY::SCNotifyActStatus)},
-  { 1829, -1, sizeof(::F4BY::CSSetDoubleShoot)},
-  { 1835, -1, sizeof(::F4BY::CSFreePoolInfo)},
-  { 1841, -1, sizeof(::F4BY::CSFreePoolLottery)},
-  { 1847, -1, sizeof(::F4BY::CSFreePoolOpen)},
+  { 214, -1, sizeof(::F4BY::MultiInfo)},
+  { 222, -1, sizeof(::F4BY::SCHitFish)},
+  { 239, -1, sizeof(::F4BY::SCHitSpecialFish)},
+  { 261, -1, sizeof(::F4BY::SyncPropInfoX)},
+  { 271, -1, sizeof(::F4BY::UserSyncPropInfo)},
+  { 278, -1, sizeof(::F4BY::CSSyncPropInfo)},
+  { 285, -1, sizeof(::F4BY::SCSyncPropInfo)},
+  { 291, -1, sizeof(::F4BY::CSSyncMoney)},
+  { 297, -1, sizeof(::F4BY::SCSyncMoney)},
+  { 308, -1, sizeof(::F4BY::FishTrace)},
+  { 322, -1, sizeof(::F4BY::SCFishTracesList)},
+  { 337, -1, sizeof(::F4BY::CSSyncFishReq)},
+  { 343, -1, sizeof(::F4BY::SCSyncFishReq)},
+  { 349, -1, sizeof(::F4BY::CSSyncFishRsp)},
+  { 362, -1, sizeof(::F4BY::SCSyncFishRsp)},
+  { 376, -1, sizeof(::F4BY::SCChangeScene)},
+  { 382, -1, sizeof(::F4BY::CSFishOutsideScreen)},
+  { 388, -1, sizeof(::F4BY::CSLockFish)},
+  { 396, -1, sizeof(::F4BY::SCLockFish)},
+  { 404, -1, sizeof(::F4BY::CSCrazySkill)},
+  { 410, -1, sizeof(::F4BY::SCCrazySkill)},
+  { 417, -1, sizeof(::F4BY::CSTrebleSkill)},
+  { 423, -1, sizeof(::F4BY::SCTrebleSkill)},
+  { 430, -1, sizeof(::F4BY::CSUserRunBackground)},
+  { 436, -1, sizeof(::F4BY::SCUserRunBackground)},
+  { 443, -1, sizeof(::F4BY::CSHeartBeat)},
+  { 448, -1, sizeof(::F4BY::SCHeartBeat)},
+  { 453, -1, sizeof(::F4BY::GunSpecEffect)},
+  { 465, -1, sizeof(::F4BY::WingsSpecEffect)},
+  { 476, -1, sizeof(::F4BY::WingsInfo)},
+  { 489, -1, sizeof(::F4BY::GunInfo)},
+  { 510, -1, sizeof(::F4BY::VipInfo)},
+  { 517, -1, sizeof(::F4BY::PropInfo)},
+  { 524, -1, sizeof(::F4BY::CSUserInfoNotify)},
+  { 530, -1, sizeof(::F4BY::SCUserInfoNotify)},
+  { 543, -1, sizeof(::F4BY::SCGameInfoNotify)},
+  { 551, -1, sizeof(::F4BY::SCInfoRedDot)},
+  { 558, -1, sizeof(::F4BY::JumpHighArena)},
+  { 568, -1, sizeof(::F4BY::SCActivityInfo)},
+  { 576, -1, sizeof(::F4BY::CSChat)},
+  { 584, -1, sizeof(::F4BY::SCChat)},
+  { 592, -1, sizeof(::F4BY::SCGainAward)},
+  { 600, -1, sizeof(::F4BY::CSAwardPool)},
+  { 605, -1, sizeof(::F4BY::SCAwardPool)},
+  { 611, -1, sizeof(::F4BY::CSPropStatus)},
+  { 618, -1, sizeof(::F4BY::SCPropStatus)},
+  { 627, -1, sizeof(::F4BY::GivenCardAward)},
+  { 635, -1, sizeof(::F4BY::UserAwardItem)},
+  { 644, -1, sizeof(::F4BY::CSUserPoolInfo)},
+  { 650, -1, sizeof(::F4BY::SCUserPoolInfo)},
+  { 661, -1, sizeof(::F4BY::CSUserPoolStatus)},
+  { 667, -1, sizeof(::F4BY::SCUserPoolStatus)},
+  { 673, -1, sizeof(::F4BY::CSUserPoolPreDraw)},
+  { 679, -1, sizeof(::F4BY::SCUserPoolPreDraw)},
+  { 687, -1, sizeof(::F4BY::CSUserPoolDraw)},
+  { 692, -1, sizeof(::F4BY::SCUserPoolDraw)},
+  { 701, -1, sizeof(::F4BY::SCUserPoolAdd)},
+  { 712, -1, sizeof(::F4BY::CSUserPoolDoubleInfo)},
+  { 717, -1, sizeof(::F4BY::SCUserPoolDoubleInfo)},
+  { 725, -1, sizeof(::F4BY::CSUserPoolDouble)},
+  { 731, -1, sizeof(::F4BY::SCUserPoolDouble)},
+  { 741, -1, sizeof(::F4BY::CSLuckyPoolInfo)},
+  { 746, -1, sizeof(::F4BY::SCLuckyPoolInfo)},
+  { 753, -1, sizeof(::F4BY::CSLuckyPoolDraw)},
+  { 758, -1, sizeof(::F4BY::SCLuckyPoolDraw)},
+  { 764, -1, sizeof(::F4BY::CSTorpedoPreShoot)},
+  { 770, -1, sizeof(::F4BY::SCTorpedoPreShoot)},
+  { 779, -1, sizeof(::F4BY::CSTorpedoCancelShoot)},
+  { 784, -1, sizeof(::F4BY::SCTorpedoCancelShoot)},
+  { 790, -1, sizeof(::F4BY::CSTorpedoShoot)},
+  { 798, -1, sizeof(::F4BY::SCTorpedoShoot)},
+  { 807, -1, sizeof(::F4BY::CSTorpedoHit)},
+  { 812, -1, sizeof(::F4BY::SCTorpedoHit)},
+  { 825, -1, sizeof(::F4BY::CSCallFish)},
+  { 831, -1, sizeof(::F4BY::SCCallFish)},
+  { 841, -1, sizeof(::F4BY::SCComTask)},
+  { 850, -1, sizeof(::F4BY::SCTaskInfo)},
+  { 864, -1, sizeof(::F4BY::CSSaveSkillTime)},
+  { 873, -1, sizeof(::F4BY::SevenDayTask)},
+  { 884, -1, sizeof(::F4BY::SevenDayDetail)},
+  { 892, -1, sizeof(::F4BY::CSSevenDayInfo)},
+  { 897, -1, sizeof(::F4BY::SCSevenDayInfo)},
+  { 910, -1, sizeof(::F4BY::CSSevenDayAward)},
+  { 918, -1, sizeof(::F4BY::SCSevenDayAward)},
+  { 926, -1, sizeof(::F4BY::SCVipChargeAward)},
+  { 933, -1, sizeof(::F4BY::CSClickStatistic)},
+  { 940, -1, sizeof(::F4BY::CSNewClickStatistic)},
+  { 946, -1, sizeof(::F4BY::CSUserLog)},
+  { 954, -1, sizeof(::F4BY::CSUserEvent)},
+  { 961, -1, sizeof(::F4BY::CSGetAwardPoolRecord)},
+  { 966, -1, sizeof(::F4BY::AwardPoolRecord)},
+  { 976, -1, sizeof(::F4BY::SCGetAwardPoolRecord)},
+  { 982, -1, sizeof(::F4BY::SCPropDropNotify)},
+  { 990, -1, sizeof(::F4BY::CSUseProp)},
+  { 996, -1, sizeof(::F4BY::SCUseProp)},
+  { 1006, -1, sizeof(::F4BY::SCFrozenTime)},
+  { 1014, -1, sizeof(::F4BY::SCTreasureFishInfo)},
+  { 1023, -1, sizeof(::F4BY::SCTreasureFishCatched)},
+  { 1042, -1, sizeof(::F4BY::MatchPackAddition)},
+  { 1053, -1, sizeof(::F4BY::CSMatchPackAddition)},
+  { 1058, -1, sizeof(::F4BY::SCMatchPackAddition)},
+  { 1064, -1, sizeof(::F4BY::SCMatchPackInvail)},
+  { 1070, -1, sizeof(::F4BY::CSMatchPackBuying)},
+  { 1076, -1, sizeof(::F4BY::AwardDetail)},
+  { 1087, -1, sizeof(::F4BY::LuckyAwardNotify)},
+  { 1094, -1, sizeof(::F4BY::CSGameItemSwitch)},
+  { 1099, -1, sizeof(::F4BY::SCGameItemSwitch)},
+  { 1105, -1, sizeof(::F4BY::AwardProp)},
+  { 1112, -1, sizeof(::F4BY::LuckyTaskInfo)},
+  { 1123, -1, sizeof(::F4BY::CSLuckyDrawInfo)},
+  { 1128, -1, sizeof(::F4BY::SCLuckyDrawInfo)},
+  { 1148, -1, sizeof(::F4BY::CSGetLuckyTaskAward)},
+  { 1154, -1, sizeof(::F4BY::SCGetLuckyTaskAward)},
+  { 1162, -1, sizeof(::F4BY::CSGetLuckyNum)},
+  { 1168, -1, sizeof(::F4BY::SCGetLuckyNum)},
+  { 1176, -1, sizeof(::F4BY::CSLuckyRedDot)},
+  { 1181, -1, sizeof(::F4BY::SCLuckyRedDot)},
+  { 1187, -1, sizeof(::F4BY::LuckyRecord)},
+  { 1197, -1, sizeof(::F4BY::OwnRecord)},
+  { 1206, -1, sizeof(::F4BY::CSLuckyRecord)},
+  { 1212, -1, sizeof(::F4BY::SCLuckyRecord)},
+  { 1219, -1, sizeof(::F4BY::SCOwnRecord)},
+  { 1225, -1, sizeof(::F4BY::CSBombInfo)},
+  { 1233, -1, sizeof(::F4BY::SCSyncBomb)},
+  { 1247, -1, sizeof(::F4BY::SCSyncBombFinish)},
+  { 1255, -1, sizeof(::F4BY::CSBombHitFishInfo)},
+  { 1263, -1, sizeof(::F4BY::SCGetMagicCube)},
+  { 1275, -1, sizeof(::F4BY::SCMagicCubeBulletInfo)},
+  { 1283, -1, sizeof(::F4BY::CSPreHit)},
+  { 1289, -1, sizeof(::F4BY::SCPreHit)},
+  { 1297, -1, sizeof(::F4BY::CSPreShoot)},
+  { 1305, -1, sizeof(::F4BY::SCPreShoot)},
+  { 1313, -1, sizeof(::F4BY::FrozenFish)},
+  { 1320, -1, sizeof(::F4BY::SCFrozenFish)},
+  { 1326, -1, sizeof(::F4BY::SCValentineDayFish)},
+  { 1336, -1, sizeof(::F4BY::SCKiRinFish)},
+  { 1346, -1, sizeof(::F4BY::SCNvWaFishCapture)},
+  { 1357, -1, sizeof(::F4BY::SCBombGlobeFishInfo)},
+  { 1370, -1, sizeof(::F4BY::CSBombGlobeFishHit)},
+  { 1378, -1, sizeof(::F4BY::SCAnniversaryShowSelect)},
+  { 1387, -1, sizeof(::F4BY::CSAnniversarySelectReq)},
+  { 1393, -1, sizeof(::F4BY::AnniversaryStage1Result)},
+  { 1400, -1, sizeof(::F4BY::AnniversaryStage2Result)},
+  { 1408, -1, sizeof(::F4BY::AnniversaryStage3Result)},
+  { 1415, -1, sizeof(::F4BY::SCAnniversarySelectResult)},
+  { 1429, -1, sizeof(::F4BY::CSAnniversaryHit)},
+  { 1437, -1, sizeof(::F4BY::SCSyncAnniversaryHitStage)},
+  { 1448, -1, sizeof(::F4BY::ScallopLottery)},
+  { 1457, -1, sizeof(::F4BY::SCCaptureScallop)},
+  { 1468, -1, sizeof(::F4BY::CSOpenScallop)},
+  { 1474, -1, sizeof(::F4BY::SCOpenScallop)},
+  { 1481, -1, sizeof(::F4BY::SCSettleScallopLottery)},
+  { 1490, -1, sizeof(::F4BY::SCSyncScallopLottery)},
+  { 1500, -1, sizeof(::F4BY::OpenChestReward)},
+  { 1507, -1, sizeof(::F4BY::SCUpdateChestStatus)},
+  { 1518, -1, sizeof(::F4BY::CSChestConfig)},
+  { 1523, -1, sizeof(::F4BY::ChestBrief)},
+  { 1530, -1, sizeof(::F4BY::SCChestConfig)},
+  { 1541, -1, sizeof(::F4BY::SCOpenChest)},
+  { 1548, -1, sizeof(::F4BY::CSSelectChestReward)},
+  { 1554, -1, sizeof(::F4BY::SCSelectChestReward)},
+  { 1560, -1, sizeof(::F4BY::CSChestSetAutoSelect)},
+  { 1567, -1, sizeof(::F4BY::SCChestSetAutoSelect)},
+  { 1574, -1, sizeof(::F4BY::CSChestSetEnable)},
+  { 1580, -1, sizeof(::F4BY::SCChestSetEnable)},
+  { 1586, -1, sizeof(::F4BY::SCSpecEffect)},
+  { 1593, -1, sizeof(::F4BY::SCTortoiseExplode)},
+  { 1603, -1, sizeof(::F4BY::RewardInfo)},
+  { 1612, -1, sizeof(::F4BY::MissionInfo)},
+  { 1622, -1, sizeof(::F4BY::BigRewardInfo)},
+  { 1629, -1, sizeof(::F4BY::TreasureHuntConfig)},
+  { 1643, -1, sizeof(::F4BY::CSSyncConfigs)},
+  { 1649, -1, sizeof(::F4BY::SCSyncConfigs)},
+  { 1655, -1, sizeof(::F4BY::CSDrawReward)},
+  { 1662, -1, sizeof(::F4BY::SCDrawReward)},
+  { 1668, -1, sizeof(::F4BY::CSTreasureHuntMission)},
+  { 1673, -1, sizeof(::F4BY::SCTreasureHuntMission)},
+  { 1680, -1, sizeof(::F4BY::CSReceiveMissionReward)},
+  { 1686, -1, sizeof(::F4BY::SCReceiveMissionReward)},
+  { 1692, -1, sizeof(::F4BY::CSDrawTimes)},
+  { 1697, -1, sizeof(::F4BY::SCDrawTimes)},
+  { 1706, -1, sizeof(::F4BY::CSVerifyActivity)},
+  { 1712, -1, sizeof(::F4BY::SCVerifyActivity)},
+  { 1719, -1, sizeof(::F4BY::Package)},
+  { 1733, -1, sizeof(::F4BY::CSTreasureHuntPackage)},
+  { 1739, -1, sizeof(::F4BY::SCTreasureHuntPackage)},
+  { 1746, -1, sizeof(::F4BY::ExchangeShopInfo)},
+  { 1754, -1, sizeof(::F4BY::CSExchangeShop)},
+  { 1759, -1, sizeof(::F4BY::SCExchangeShop)},
+  { 1765, -1, sizeof(::F4BY::CSPurchasePackage)},
+  { 1771, -1, sizeof(::F4BY::SCPurchasePackage)},
+  { 1777, -1, sizeof(::F4BY::CSVerifyTermChange)},
+  { 1782, -1, sizeof(::F4BY::SCVerifyTermChange)},
+  { 1789, -1, sizeof(::F4BY::SCWaterDropInfo)},
+  { 1797, -1, sizeof(::F4BY::CSBuyGun)},
+  { 1803, -1, sizeof(::F4BY::SCBuyGun)},
+  { 1810, -1, sizeof(::F4BY::CSBuyWings)},
+  { 1816, -1, sizeof(::F4BY::SCBuyWings)},
+  { 1823, -1, sizeof(::F4BY::SCNotifyActStatus)},
+  { 1830, -1, sizeof(::F4BY::CSSetDoubleShoot)},
+  { 1836, -1, sizeof(::F4BY::CSFreePoolInfo)},
+  { 1842, -1, sizeof(::F4BY::CSFreePoolLottery)},
+  { 1848, -1, sizeof(::F4BY::CSFreePoolOpen)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -6394,530 +6395,531 @@ const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "r_id\030\006 \001(\005\022\021\n\textra_mul\030\007 \001(\005\"j\n\013SCUserS"
   "hoot\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005angle\030\002 \001(\005\022\r"
   "\n\005score\030\003 \001(\005\022\023\n\013bullet_type\030\004 \001(\005\022\025\n\rbu"
-  "llet_offset\030\005 \001(\010\"}\n\tCSHitFish\022\020\n\010fish_u"
-  "id\030\001 \001(\005\022\021\n\tbullet_id\030\002 \001(\005\022\025\n\rscreen_fi"
-  "shes\030\003 \003(\005\022\020\n\010chair_id\030\004 \001(\005\022\r\n\005ratio\030\005 "
-  "\001(\005\022\023\n\013bullet_type\030\006 \001(\005\"\?\n\tMultiInfo\022\017\n"
-  "\007bt_type\030\001 \001(\005\022\020\n\010bt_multi\030\002 \001(\005\022\017\n\007bt_b"
-  "ase\030\003 \001(\005\"\225\002\n\tSCHitFish\022\021\n\tchair_idx\030\001 \001"
-  "(\005\022\020\n\010fish_uid\030\002 \001(\005\022\014\n\004earn\030\003 \001(\005\022\022\n\nus"
-  "er_score\030\004 \001(\003\022\022\n\nfish_value\030\005 \001(\005\022\020\n\010mu"
-  "ltiple\030\006 \001(\005\022\027\n\017hit_bullet_type\030\007 \001(\005\022\030\n"
-  "\020magic_cube_multi\030\010 \001(\005\022#\n\nmulti_list\030\t "
-  "\003(\0132\017.F4BY.MultiInfo\022\022\n\norigin_uid\030\n \001(\005"
-  "\022 \n\ndrop_props\030\013 \003(\0132\014.F4BY.Object\022\r\n\005de"
-  "ath\030\014 \001(\010\"\235\003\n\020SCHitSpecialFish\022\021\n\tchair_"
-  "idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\014\n\004earn\030\003 \001("
-  "\005\022\022\n\nfish_value\030\004 \001(\005\022\022\n\nuser_score\030\005 \001("
-  "\003\022\r\n\005death\030\006 \001(\010\022\022\n\ngrow_stage\030\007 \001(\005\022\020\n\010"
-  "multiple\030\010 \001(\005\022\"\n\014shock_fishes\030\t \003(\0132\014.F"
-  "4BY.Object\022 \n\ndrop_props\030\n \003(\0132\014.F4BY.Ob"
-  "ject\022 \n\005wheel\030\013 \001(\0132\021.F4BY.WheelObject\022\027"
-  "\n\017hit_bullet_type\030\014 \001(\005\022\017\n\007prop_no\030\r \001(\005"
-  "\022\030\n\020magic_cube_multi\030\016 \001(\005\022#\n\nmulti_list"
-  "\030\017 \003(\0132\017.F4BY.MultiInfo\022\022\n\norigin_uid\030\020 "
-  "\001(\005\022\024\n\014dragon_score\030\021 \001(\005\"`\n\rSyncPropInf"
-  "oX\022\032\n\004prop\030\001 \001(\0132\014.F4BY.Object\022\t\n\001x\030\002 \001("
-  "\002\022\t\n\001y\030\003 \001(\002\022\r\n\005angle\030\004 \001(\002\022\016\n\006status\030\005 "
-  "\001(\005\"I\n\020UserSyncPropInfo\022\021\n\tchair_idx\030\001 \001"
-  "(\005\022\"\n\005props\030\002 \003(\0132\023.F4BY.SyncPropInfoX\"F"
-  "\n\016CSSyncPropInfo\022!\n\004info\030\001 \001(\0132\023.F4BY.Sy"
-  "ncPropInfoX\022\021\n\tchair_idx\030\002 \001(\005\"7\n\016SCSync"
-  "PropInfo\022%\n\005users\030\001 \003(\0132\026.F4BY.UserSyncP"
-  "ropInfo\"\033\n\013CSSyncMoney\022\014\n\004type\030\001 \001(\005\"i\n\013"
-  "SCSyncMoney\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005score\030"
-  "\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\r\n\005delta\030\004 \001(\005\022\016\n\006ti"
-  "cket\030\005 \001(\005\022\013\n\003vip\030\006 \001(\005\"\274\001\n\tFishTrace\022\020\n"
-  "\010fish_uid\030\001 \001(\005\022\021\n\tfish_type\030\002 \001(\005\022\022\n\nfi"
-  "sh_layer\030\003 \001(\005\022\022\n\nfish_stage\030\004 \001(\005\022\017\n\007is"
-  "_aced\030\005 \001(\010\022\022\n\nalive_time\030\006 \001(\005\022\022\n\nbeads"
-  "_list\030\007 \003(\005\022\026\n\016fish_torpedoId\030\010 \001(\005\022\021\n\tf"
-  "ish_road\030\t \001(\005\"\202\002\n\020SCFishTracesList\022$\n\013f"
-  "ish_traces\030\001 \003(\0132\017.F4BY.FishTrace\022\021\n\tfis"
-  "h_road\030\002 \001(\005\022\022\n\nfish_array\030\003 \001(\005\022\027\n\017crea"
-  "te_interval\030\004 \001(\005\022\021\n\tis_called\030\005 \001(\010\022\030\n\020"
-  "after_tide_first\030\006 \001(\010\022%\n\tcall_type\030\007 \001("
-  "\0162\022.F4BY.CallFishType\022\022\n\nmove_delay\030\010 \001("
-  "\002\022\020\n\010road_idx\030\t \001(\005\022\016\n\006move_t\030\n \001(\002\"!\n\rC"
-  "SSyncFishReq\022\020\n\010chair_id\030\001 \001(\005\"&\n\rSCSync"
-  "FishReq\022\025\n\rreq_player_id\030\001 \001(\005\"\271\001\n\rCSSyn"
-  "cFishRsp\022$\n\013fish_traces\030\001 \003(\0132\017.F4BY.Fis"
-  "hTrace\022\021\n\tfish_road\030\002 \001(\005\022\022\n\nfish_array\030"
-  "\003 \001(\005\022\022\n\nmove_delay\030\004 \001(\002\022\020\n\010road_idx\030\005 "
-  "\001(\005\022\016\n\006move_t\030\006 \001(\002\022\016\n\006finish\030\007 \001(\010\022\025\n\rr"
-  "eq_player_id\030\010 \001(\005\"\345\001\n\rSCSyncFishRsp\022$\n\013"
-  "fish_traces\030\001 \003(\0132\017.F4BY.FishTrace\022\021\n\tfi"
-  "sh_road\030\002 \001(\005\022\022\n\nfish_array\030\003 \001(\005\022\022\n\nmov"
-  "e_delay\030\004 \001(\002\022\020\n\010road_idx\030\005 \001(\005\022\016\n\006move_"
-  "t\030\006 \001(\002\022\027\n\017create_interval\030\007 \001(\002\022\021\n\tis_c"
-  "alled\030\010 \001(\010\022%\n\tcall_type\030\t \001(\0162\022.F4BY.Ca"
-  "llFishType\"$\n\rSCChangeScene\022\023\n\013scene_ind"
-  "ex\030\001 \001(\005\"\'\n\023CSFishOutsideScreen\022\020\n\010fish_"
-  "uid\030\001 \001(\005\"B\n\nCSLockFish\022\020\n\010fish_uid\030\001 \001("
-  "\005\022\017\n\007is_open\030\002 \001(\010\022\021\n\tchair_idx\030\003 \001(\005\"B\n"
-  "\nSCLockFish\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_u"
-  "id\030\002 \001(\005\022\017\n\007is_open\030\003 \001(\010\"\037\n\014CSCrazySkil"
-  "l\022\017\n\007is_open\030\001 \001(\010\"2\n\014SCCrazySkill\022\021\n\tch"
-  "air_idx\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\" \n\rCSTreb"
-  "leSkill\022\017\n\007is_open\030\001 \001(\010\"3\n\rSCTrebleSkil"
-  "l\022\021\n\tchair_idx\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\")\n"
-  "\023CSUserRunBackground\022\022\n\nbackground\030\001 \001(\010"
-  "\"<\n\023SCUserRunBackground\022\021\n\tchair_idx\030\001 \001"
-  "(\005\022\022\n\nbackground\030\002 \001(\010\"\r\n\013CSHeartBeat\"\r\n"
-  "\013SCHeartBeat\"\242\001\n\rGunSpecEffect\022\022\n\nratioL"
-  "imit\030\001 \001(\005\022\025\n\rhitChangeRate\030\002 \001(\002\022\027\n\017mon"
-  "eyChangeRate\030\003 \001(\002\022\024\n\014violenceRate\030\004 \001(\002"
-  "\022\021\n\tspeedRate\030\005 \001(\002\022\020\n\010advanced\030\006 \001(\010\022\022\n"
-  "\ndouble_tag\030\007 \001(\010\"\216\001\n\017WingsSpecEffect\022\021\n"
-  "\tspeedRate\030\001 \001(\002\022\022\n\nratioLimit\030\002 \001(\005\022\025\n\r"
-  "hitChangeRate\030\003 \001(\002\022\027\n\017moneyChangeRate\030\004"
-  " \001(\002\022\020\n\010advanced\030\005 \001(\010\022\022\n\ndouble_tag\030\006 \001"
-  "(\010\"\301\001\n\tWingsInfo\022\020\n\010wings_id\030\001 \001(\005\022\016\n\006en"
-  "able\030\002 \001(\010\0220\n\021wings_spec_effect\030\003 \001(\0132\025."
-  "F4BY.WingsSpecEffect\022\024\n\014receive_type\030\004 \001"
-  "(\005\022\023\n\013activity_id\030\005 \001(\005\022\r\n\005price\030\006 \001(\005\022\022"
-  "\n\nnew_enable\030\007 \001(\010\022\022\n\ndouble_tag\030\010 \001(\010\"\314"
-  "\002\n\007GunInfo\022\021\n\tgun_level\030\001 \001(\005\022\021\n\tratio_m"
-  "in\030\002 \001(\005\022\021\n\tratio_max\030\003 \001(\005\022\016\n\006enable\030\004 "
-  "\001(\010\022\022\n\nnew_enable\030\005 \001(\010\022\016\n\006is_vip\030\006 \001(\010\022"
-  "\021\n\tvip_limit\030\007 \001(\005\022\021\n\tis_member\030\010 \001(\010\022\022\n"
-  "\nmember_sec\030\t \001(\005\022\022\n\nextra_data\030\n \001(\005\022*\n"
-  "\rgunSpecEffect\030\013 \001(\0132\023.F4BY.GunSpecEffec"
-  "t\022\r\n\005price\030\014 \001(\005\022\024\n\014attack_speed\030\r \001(\002\022\014"
-  "\n\004rage\030\016 \001(\002\022\023\n\013activity_id\030\017 \001(\005\022\022\n\nrat"
-  "io_list\030\020 \003(\005\"+\n\007VipInfo\022\017\n\007old_vip\030\001 \001("
-  "\005\022\017\n\007cur_vip\030\002 \001(\005\"6\n\010PropInfo\022\016\n\006enable"
-  "\030\001 \001(\010\022\032\n\004prop\030\002 \001(\0132\014.F4BY.Object\"%\n\020CS"
-  "UserInfoNotify\022\021\n\tbroadcast\030\001 \001(\010\"\366\001\n\020SC"
-  "UserInfoNotify\022\021\n\tchair_idx\030\001 \001(\005\022\037\n\010gun"
-  "_info\030\002 \003(\0132\r.F4BY.GunInfo\022#\n\nwings_info"
-  "\030\003 \003(\0132\017.F4BY.WingsInfo\022\037\n\010vip_info\030\004 \001("
-  "\0132\r.F4BY.VipInfo\022!\n\tprop_info\030\005 \003(\0132\016.F4"
-  "BY.PropInfo\022\026\n\016last_gun_level\030\006 \001(\005\022\022\n\nl"
-  "ast_ratio\030\007 \001(\005\022\031\n\021last_wings_propId\030\010 \001"
-  "(\005\"a\n\020SCGameInfoNotify\022\021\n\tuser_pool\030\001 \001("
-  "\010\022\022\n\naward_fish\030\002 \003(\005\022&\n\017user_pool_limit"
-  "\030\003 \003(\0132\r.F4BY.Object3\"2\n\014SCInfoRedDot\022\021\n"
-  "\tseven_day\030\001 \001(\010\022\017\n\007red_dot\030\002 \001(\010\"\\\n\rJum"
-  "pHighArena\022\017\n\007is_open\030\001 \001(\010\022\013\n\003vip\030\002 \001(\005"
-  "\022\014\n\004coin\030\003 \001(\005\022\021\n\tgame_time\030\004 \001(\005\022\014\n\004tip"
-  "s\030\005 \001(\t\"X\n\016SCActivityInfo\022!\n\004jump\030\001 \001(\0132"
-  "\023.F4BY.JumpHighArena\022\r\n\005limit\030\002 \001(\005\022\024\n\014p"
-  "ool_is_open\030\003 \001(\010\">\n\006CSChat\022\020\n\010msg_type\030"
-  "\001 \001(\005\022\017\n\007msg_idx\030\002 \001(\005\022\021\n\tchair_idx\030\003 \001("
-  "\005\">\n\006SCChat\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010msg_ty"
-  "pe\030\002 \001(\005\022\017\n\007msg_idx\030\003 \001(\005\"L\n\013SCGainAward"
-  "\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\022\033\n\005aw"
-  "ard\030\003 \001(\0132\014.F4BY.Object\"\r\n\013CSAwardPool\"*"
-  "\n\013SCAwardPool\022\033\n\004pool\030\001 \003(\0132\r.F4BY.Objec"
-  "t3\"/\n\014CSPropStatus\022\017\n\007prop_id\030\001 \001(\005\022\016\n\006s"
-  "tatus\030\002 \001(\005\"Q\n\014SCPropStatus\022\021\n\tchair_idx"
-  "\030\001 \001(\005\022\017\n\007prop_id\030\002 \001(\005\022\016\n\006status\030\003 \001(\005\022"
-  "\r\n\005bt_id\030\004 \001(\005\"B\n\016GivenCardAward\022\020\n\010card"
-  "_idx\030\001 \001(\005\022\014\n\004base\030\002 \001(\005\022\020\n\010multiple\030\003 \001"
-  "(\005\"\\\n\rUserAwardItem\022\r\n\005index\030\001 \001(\005\022\020\n\010it"
-  "em_max\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\034\n\005goods\030\004 \003("
-  "\0132\r.F4BY.Object2\"#\n\016CSUserPoolInfo\022\021\n\top"
-  "en_page\030\001 \001(\010\"\213\001\n\016SCUserPoolInfo\022\021\n\tchai"
-  "r_idx\030\001 \001(\005\022\021\n\topen_page\030\002 \001(\010\022\016\n\006status"
-  "\030\003 \001(\010\022\r\n\005count\030\004 \001(\005\022\020\n\010pool_max\030\005 \001(\005\022"
-  "\"\n\005items\030\006 \003(\0132\023.F4BY.UserAwardItem\" \n\020C"
-  "SUserPoolStatus\022\014\n\004open\030\001 \001(\010\" \n\020SCUserP"
-  "oolStatus\022\014\n\004open\030\001 \001(\010\"\"\n\021CSUserPoolPre"
-  "Draw\022\r\n\005level\030\001 \001(\005\"=\n\021SCUserPoolPreDraw"
-  "\022\014\n\004code\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\013\n\003msg\030\003 \001"
-  "(\t\"\020\n\016CSUserPoolDraw\"\200\001\n\016SCUserPoolDraw\022"
-  "\021\n\tchair_idx\030\001 \001(\005\022\034\n\005goods\030\002 \003(\0132\r.F4BY"
-  ".Object2\022\034\n\005award\030\003 \001(\0132\r.F4BY.Object2\022\037"
-  "\n\taward_cnt\030\004 \001(\0132\014.F4BY.Object\"t\n\rSCUse"
-  "rPoolAdd\022\013\n\003add\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\021\n\t"
-  "first_max\030\003 \001(\005\022\020\n\010pool_max\030\004 \001(\005\022\016\n\006sta"
-  "tus\030\005 \001(\010\022\022\n\nlevel_name\030\006 \001(\t\"\026\n\024CSUserP"
-  "oolDoubleInfo\"l\n\024SCUserPoolDoubleInfo\022\014\n"
-  "\004cost\030\001 \001(\005\022\"\n\013item_before\030\002 \001(\0132\r.F4BY."
-  "Object2\022\"\n\013item_double\030\003 \001(\0132\r.F4BY.Obje"
-  "ct2\"%\n\020CSUserPoolDouble\022\021\n\tis_double\030\001 \001"
-  "(\010\"\203\001\n\020SCUserPoolDouble\022\014\n\004code\030\001 \001(\005\022\016\n"
-  "\006result\030\002 \001(\005\022\021\n\tchair_idx\030\003 \001(\005\022\033\n\004item"
-  "\030\004 \001(\0132\r.F4BY.Object3\022!\n\nextra_item\030\005 \001("
-  "\0132\r.F4BY.Object3\"\021\n\017CSLuckyPoolInfo\"-\n\017S"
-  "CLuckyPoolInfo\022\r\n\005count\030\001 \001(\005\022\013\n\003max\030\002 \001"
-  "(\005\"\021\n\017CSLuckyPoolDraw\".\n\017SCLuckyPoolDraw"
-  "\022\033\n\004item\030\001 \001(\0132\r.F4BY.Object3\"#\n\021CSTorpe"
-  "doPreShoot\022\016\n\006propId\030\001 \001(\005\"Q\n\021SCTorpedoP"
-  "reShoot\022\021\n\tchair_idx\030\001 \001(\005\022\016\n\006propId\030\002 \001"
-  "(\005\022\014\n\004code\030\003 \001(\005\022\013\n\003msg\030\004 \001(\t\"\026\n\024CSTorpe"
-  "doCancelShoot\")\n\024SCTorpedoCancelShoot\022\021\n"
-  "\tchair_idx\030\001 \001(\005\"8\n\016CSTorpedoShoot\022\020\n\010fi"
-  "sh_uid\030\001 \001(\005\022\t\n\001x\030\002 \001(\002\022\t\n\001y\030\003 \001(\002\"K\n\016SC"
-  "TorpedoShoot\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_"
-  "uid\030\002 \001(\005\022\t\n\001x\030\003 \001(\002\022\t\n\001y\030\004 \001(\002\"\016\n\014CSTor"
-  "pedoHit\"\206\001\n\014SCTorpedoHit\022\021\n\tchair_idx\030\001 "
-  "\001(\005\022\014\n\004earn\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\022\016\n\006prop"
-  "Id\030\004 \001(\005\022\016\n\006remain\030\005 \001(\005\022\020\n\010fish_uid\030\006 \001"
-  "(\005\022\t\n\001x\030\007 \001(\002\022\t\n\001y\030\010 \001(\002\"3\n\nCSCallFish\022%"
-  "\n\tcall_type\030\001 \001(\0162\022.F4BY.CallFishType\"Z\n"
-  "\nSCCallFish\022\021\n\tchair_idx\030\001 \001(\005\022\016\n\006propId"
-  "\030\002 \001(\005\022\016\n\006remain\030\003 \001(\005\022\014\n\004code\030\004 \001(\005\022\013\n\003"
-  "msg\030\005 \001(\t\"P\n\tSCComTask\022\021\n\tgun_ratio\030\001 \001("
-  "\005\022\021\n\tgun_level\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\016\n\006t"
-  "icket\030\004 \001(\005\"\262\001\n\nSCTaskInfo\022\021\n\tgun_ratio\030"
-  "\001 \001(\005\022\021\n\tgun_level\030\002 \001(\005\022\017\n\007cur_num\030\003 \001("
-  "\005\022\021\n\ttotal_num\030\004 \001(\005\022\021\n\tvip_level\030\005 \001(\005\022"
-  "\021\n\tis_unlock\030\006 \001(\010\022\r\n\005award\030\007 \001(\005\022\025\n\ris_"
-  "vip_unlock\030\010 \001(\010\022\016\n\006ticket\030\t \001(\005\"L\n\017CSSa"
-  "veSkillTime\022\014\n\004auto\030\001 \001(\005\022\014\n\004lock\030\002 \001(\005\022"
-  "\r\n\005angry\030\003 \001(\005\022\016\n\006treble\030\004 \001(\005\"q\n\014SevenD"
-  "ayTask\022\r\n\005index\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\022\021"
-  "\n\ttotal_num\030\003 \001(\005\022\017\n\007cur_num\030\004 \001(\005\022\016\n\006st"
-  "atus\030\005 \001(\005\022\r\n\005award\030\006 \001(\005\"S\n\016SevenDayDet"
-  "ail\022\013\n\003day\030\001 \001(\005\022\022\n\nbox_status\030\002 \001(\005\022 \n\004"
-  "task\030\003 \001(\0132\022.F4BY.SevenDayTask\"\020\n\016CSSeve"
-  "nDayInfo\"\273\001\n\016SCSevenDayInfo\022\022\n\nstart_dat"
-  "e\030\001 \001(\t\022\020\n\010end_date\030\002 \001(\t\022\017\n\007cur_day\030\003 \001"
-  "(\005\022\022\n\nget_remain\030\004 \001(\005\022\024\n\014remain_score\030\005"
-  " \001(\005\022\016\n\006ticket\030\006 \001(\005\022$\n\006detail\030\007 \001(\0132\024.F"
-  "4BY.SevenDayDetail\022\022\n\ngun_enable\030\010 \001(\005\"E"
-  "\n\017CSSevenDayAward\022\013\n\003day\030\001 \001(\005\022\r\n\005index\030"
-  "\002 \001(\005\022\026\n\016get_award_type\030\003 \001(\005\"T\n\017SCSeven"
-  "DayAward\022\r\n\005score\030\001 \001(\005\022\016\n\006ticket\030\002 \001(\005\022"
-  "\"\n\004task\030\003 \001(\0132\024.F4BY.SevenDayDetail\"1\n\020S"
-  "CVipChargeAward\022\r\n\005score\030\001 \001(\005\022\016\n\006ticket"
-  "\030\002 \001(\005\"3\n\020CSClickStatistic\022\013\n\003num\030\001 \001(\t\022"
-  "\022\n\nnot_repeat\030\002 \001(\010\"\"\n\023CSNewClickStatist"
-  "ic\022\013\n\003num\030\001 \001(\t\"9\n\tCSUserLog\022\014\n\004type\030\001 \001"
-  "(\005\022\r\n\005score\030\002 \001(\t\022\017\n\007content\030\003 \001(\t\")\n\013CS"
-  "UserEvent\022\n\n\002id\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\"\026\n"
-  "\024CSGetAwardPoolRecord\"^\n\017AwardPoolRecord"
-  "\022\014\n\004time\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\016\n\006poolId\030\003"
-  " \001(\005\022\r\n\005award\030\004 \001(\005\022\020\n\010playerId\030\005 \001(\005\">\n"
-  "\024SCGetAwardPoolRecord\022&\n\007records\030\001 \003(\0132\025"
-  ".F4BY.AwardPoolRecord\"Y\n\020SCPropDropNotif"
-  "y\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022 "
-  "\n\ndrop_props\030\003 \003(\0132\014.F4BY.Object\"\034\n\tCSUs"
-  "eProp\022\017\n\007prop_id\030\001 \001(\005\"Z\n\tSCUseProp\022\021\n\tc"
-  "hair_idx\030\001 \001(\005\022\017\n\007prop_id\030\002 \001(\005\022\016\n\006remai"
-  "n\030\003 \001(\005\022\014\n\004code\030\004 \001(\005\022\013\n\003msg\030\005 \001(\t\"G\n\014SC"
-  "FrozenTime\022\021\n\tchair_idx\030\001 \001(\005\022\021\n\tis_froz"
-  "en\030\002 \001(\010\022\021\n\tfrozen_cd\030\003 \001(\002\"b\n\022SCTreasur"
-  "eFishInfo\022\020\n\010fish_uid\030\001 \001(\005\022\021\n\tcur_stage"
-  "\030\002 \001(\005\022\023\n\013accum_money\030\003 \001(\005\022\022\n\nfish_valu"
-  "e\030\004 \001(\005\"\267\002\n\025SCTreasureFishCatched\022\021\n\tcha"
-  "ir_idx\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\022\020\n\010fish_uid\030"
-  "\003 \001(\005\022\022\n\nfish_value\030\004 \001(\005\022\023\n\013accum_money"
-  "\030\005 \001(\005\022\020\n\010multiple\030\006 \001(\005\022\r\n\005death\030\007 \001(\010\022"
-  "\014\n\004earn\030\010 \001(\005\022\022\n\nuser_score\030\t \001(\003\022\030\n\020dis"
-  "play_multiple\030\n \001(\010\022\021\n\tcur_stage\030\013 \001(\005\022\030"
-  "\n\020magic_cube_multi\030\014 \001(\005\022#\n\nmulti_list\030\r"
-  " \003(\0132\017.F4BY.MultiInfo\022\022\n\norigin_uid\030\016 \001("
-  "\005\"|\n\021MatchPackAddition\022\n\n\002id\030\001 \001(\t\022\016\n\006is"
-  "_buy\030\002 \001(\010\022\026\n\016score_addition\030\003 \001(\002\022\030\n\020re"
-  "award_addition\030\004 \001(\002\022\014\n\004card\030\005 \001(\005\022\013\n\003se"
-  "c\030\006 \001(\005\"\025\n\023CSMatchPackAddition\"@\n\023SCMatc"
-  "hPackAddition\022)\n\010addition\030\001 \003(\0132\027.F4BY.M"
-  "atchPackAddition\"#\n\021SCMatchPackInvail\022\016\n"
-  "\006packId\030\001 \001(\t\"#\n\021CSMatchPackBuying\022\016\n\006pa"
-  "ckId\030\001 \001(\t\"g\n\013AwardDetail\022\020\n\010playerId\030\001 "
-  "\001(\005\022\014\n\004nums\030\002 \001(\005\022\016\n\006period\030\003 \001(\005\022\013\n\003vip"
-  "\030\004 \001(\005\022\014\n\004nick\030\005 \001(\t\022\r\n\005photo\030\006 \001(\t\"H\n\020L"
-  "uckyAwardNotify\022\021\n\tawardType\030\001 \001(\005\022!\n\006de"
-  "tail\030\002 \003(\0132\021.F4BY.AwardDetail\"\022\n\020CSGameI"
-  "temSwitch\"&\n\020SCGameItemSwitch\022\022\n\nlucky_t"
-  "ask\030\001 \001(\010\")\n\tAwardProp\022\017\n\007prop_id\030\001 \001(\005\022"
-  "\013\n\003num\030\002 \001(\005\"h\n\rLuckyTaskInfo\022\n\n\002id\030\001 \001("
-  "\005\022\016\n\006status\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\022\014\n\004text"
-  "\030\004 \001(\t\022\016\n\006amount\030\005 \001(\005\022\016\n\006target\030\006 \001(\005\"\021"
-  "\n\017CSLuckyDrawInfo\"\225\003\n\017SCLuckyDrawInfo\022\027\n"
-  "\017hour_remain_sec\030\001 \001(\005\022\026\n\016day_remain_sec"
-  "\030\002 \001(\005\022$\n\013hour_reward\030\003 \003(\0132\017.F4BY.Award"
-  "Prop\022#\n\nday_reward\030\004 \003(\0132\017.F4BY.AwardPro"
-  "p\022\026\n\016day_lucky_nums\030\005 \003(\005\022\r\n\005score\030\006 \001(\005"
-  "\022\022\n\nhour_total\030\007 \001(\005\022\021\n\tday_total\030\010 \001(\005\022"
-  "\026\n\016hour_award_num\030\t \001(\005\022\025\n\rday_award_num"
-  "\030\n \001(\005\022\027\n\017next_start_tick\030\013 \001(\005\022&\n\ttask_"
-  "info\030\014 \003(\0132\023.F4BY.LuckyTaskInfo\022\026\n\016excha"
-  "nge_score\030\r \001(\005\022\027\n\017next_remain_sec\030\016 \001(\005"
-  "\022\027\n\017hour_lucky_nums\030\017 \003(\005\"&\n\023CSGetLuckyT"
-  "askAward\022\017\n\007task_id\030\001 \001(\005\"U\n\023SCGetLuckyT"
-  "askAward\022!\n\004task\030\001 \001(\0132\023.F4BY.LuckyTaskI"
-  "nfo\022\r\n\005score\030\002 \001(\005\022\014\n\004code\030\003 \001(\005\"\036\n\rCSGe"
-  "tLuckyNum\022\r\n\005times\030\001 \001(\005\"F\n\rSCGetLuckyNu"
-  "m\022\r\n\005score\030\001 \001(\005\022\022\n\nerror_code\030\002 \001(\005\022\022\n\n"
-  "lucky_nums\030\003 \003(\005\"\017\n\rCSLuckyRedDot\"\035\n\rSCL"
-  "uckyRedDot\022\014\n\004show\030\001 \001(\010\"]\n\013LuckyRecord\022"
-  "\013\n\003vip\030\001 \001(\005\022\r\n\005times\030\002 \001(\005\022\021\n\tlucky_num"
-  "\030\003 \001(\005\022\014\n\004tick\030\004 \001(\005\022\021\n\tnick_name\030\005 \001(\t\""
-  "]\n\tOwnRecord\022\037\n\006reward\030\001 \003(\0132\017.F4BY.Awar"
-  "dProp\022\016\n\006status\030\002 \001(\005\022\014\n\004tick\030\003 \001(\005\022\021\n\tl"
-  "ucky_num\030\004 \001(\005\"\035\n\rCSLuckyRecord\022\014\n\004type\030"
-  "\001 \001(\005\"@\n\rSCLuckyRecord\022\014\n\004type\030\001 \001(\005\022!\n\006"
-  "record\030\002 \003(\0132\021.F4BY.LuckyRecord\".\n\013SCOwn"
-  "Record\022\037\n\006record\030\001 \003(\0132\017.F4BY.OwnRecord\""
-  "5\n\nCSBombInfo\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\021\n\tc"
-  "hair_idx\030\003 \001(\005\"\227\001\n\nSCSyncBomb\022\021\n\tchair_i"
-  "dx\030\001 \001(\005\022\016\n\006bombId\030\002 \001(\005\022\021\n\tcurStatus\030\003 "
-  "\001(\005\022\t\n\001x\030\004 \001(\002\022\t\n\001y\030\005 \001(\002\022\r\n\005nextX\030\006 \001(\002"
-  "\022\r\n\005nextY\030\007 \001(\002\022\r\n\005score\030\010 \001(\005\022\020\n\010isFini"
-  "sh\030\t \001(\010\"J\n\020SCSyncBombFinish\022\021\n\tchair_id"
-  "x\030\001 \001(\005\022\016\n\006bombId\030\002 \001(\005\022\023\n\013returnMoney\030\003"
-  " \001(\005\"F\n\021CSBombHitFishInfo\022\016\n\006bombId\030\001 \001("
-  "\005\022\016\n\006fishId\030\002 \003(\005\022\021\n\tchair_idx\030\003 \001(\005\"\237\001\n"
-  "\016SCGetMagicCube\022\021\n\tchair_idx\030\001 \001(\005\022\022\n\nbu"
-  "lletType\030\002 \001(\005\022\024\n\014createWeapon\030\003 \001(\010\022\022\n\n"
-  "isSyncInfo\030\004 \001(\010\022\020\n\010isFinish\030\005 \001(\010\022\020\n\010gu"
-  "nRatio\030\006 \001(\005\022\030\n\020magic_cube_multi\030\007 \001(\005\"L"
-  "\n\025SCMagicCubeBulletInfo\022\021\n\tchair_idx\030\001 \001"
-  "(\005\022\020\n\010totalNum\030\002 \001(\005\022\016\n\006curNum\030\003 \001(\005\"\037\n\010"
-  "CSPreHit\022\023\n\013screen_fish\030\001 \003(\005\";\n\010SCPreHi"
-  "t\022\013\n\003err\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\020\n\010chai"
-  "r_id\030\003 \001(\005\"B\n\nCSPreShoot\022\021\n\tchair_idx\030\001 "
-  "\001(\005\022\r\n\005angle\030\002 \001(\005\022\022\n\nshoot_type\030\003 \001(\005\"B"
-  "\n\nSCPreShoot\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005angle"
-  "\030\002 \001(\005\022\022\n\nshoot_type\030\003 \001(\005\"2\n\nFrozenFish"
-  "\022\017\n\007fish_id\030\001 \001(\005\022\023\n\013frozen_time\030\002 \001(\005\"4"
-  "\n\014SCFrozenFish\022$\n\nfrozenFish\030\001 \003(\0132\020.F4B"
-  "Y.FrozenFish\"\204\001\n\022SCValentineDayFish\022\"\n\tf"
-  "ish_info\030\001 \001(\0132\017.F4BY.SCHitFish\022\020\n\010bt_ra"
-  "tio\030\002 \001(\005\022\022\n\nrand_multi\030\003 \001(\005\022\022\n\nball_mu"
-  "lti\030\004 \001(\005\022\020\n\010uid_list\030\005 \003(\005\"t\n\013SCKiRinFi"
-  "sh\022\"\n\tfish_info\030\001 \001(\0132\017.F4BY.SCHitFish\022\020"
-  "\n\010bt_ratio\030\002 \001(\005\022\r\n\005multi\030\003 \001(\005\022\021\n\tis_se"
-  "nior\030\004 \001(\010\022\r\n\005level\030\005 \001(\005\"\224\001\n\021SCNvWaFish"
-  "Capture\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002"
-  " \001(\005\022\r\n\005ratio\030\003 \001(\005\022\025\n\rnvwa_multiple\030\004 \001"
-  "(\005\022\017\n\007bt_kind\030\005 \001(\005\022#\n\nmulti_list\030\006 \003(\0132"
-  "\017.F4BY.MultiInfo\"\243\001\n\023SCBombGlobeFishInfo"
-  "\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\022\020\n\010fi"
-  "sh_uid\030\003 \001(\005\022\r\n\005stage\030\004 \001(\005\022\016\n\006bombId\030\005 "
-  "\001(\005\022\022\n\ntotal_earn\030\006 \001(\005\022\023\n\013self_bombId\030\007"
-  " \001(\005\022\020\n\010originId\030\010 \001(\005\"L\n\022CSBombGlobeFis"
-  "hHit\022\016\n\006bombId\030\001 \001(\005\022\017\n\007bt_type\030\002 \001(\005\022\025\n"
-  "\rscreen_fishes\030\003 \003(\005\"e\n\027SCAnniversarySho"
-  "wSelect\022\021\n\tchair_idx\030\001 \001(\005\022\023\n\013show_selec"
-  "t\030\002 \001(\010\022\023\n\013remain_time\030\003 \001(\005\022\r\n\005stage\030\004 "
-  "\001(\005\"\'\n\026CSAnniversarySelectReq\022\r\n\005stage\030\001"
-  " \001(\005\":\n\027AnniversaryStage1Result\022\r\n\005score"
-  "\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\"S\n\027AnniversaryS"
-  "tage2Result\022\022\n\nscore_list\030\001 \003(\005\022\022\n\ndrop_"
-  "times\030\002 \001(\005\022\020\n\010multiple\030\003 \001(\005\"=\n\027Anniver"
-  "saryStage3Result\022\021\n\torigin_id\030\001 \001(\005\022\017\n\007s"
-  "elf_id\030\002 \001(\005\"\247\002\n\031SCAnniversarySelectResu"
-  "lt\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005stage\030\002 \001(\005\022\020\n\010"
-  "bt_ratio\030\003 \001(\005\022#\n\nmulti_list\030\004 \003(\0132\017.F4B"
-  "Y.MultiInfo\022\022\n\ntotal_earn\030\005 \001(\005\022\r\n\005death"
-  "\030\006 \001(\010\022.\n\007result1\030\007 \001(\0132\035.F4BY.Anniversa"
-  "ryStage1Result\022.\n\007result2\030\010 \001(\0132\035.F4BY.A"
-  "nniversaryStage2Result\022.\n\007result3\030\t \001(\0132"
-  "\035.F4BY.AnniversaryStage3Result\"J\n\020CSAnni"
-  "versaryHit\022\016\n\006bombId\030\001 \001(\005\022\017\n\007bt_type\030\002 "
-  "\001(\005\022\025\n\rscreen_fishes\030\003 \003(\005\"\213\001\n\031SCSyncAnn"
-  "iversaryHitStage\022\021\n\tchair_idx\030\001 \001(\005\022\021\n\to"
-  "rigin_id\030\002 \001(\005\022\017\n\007self_id\030\003 \001(\005\022\r\n\005stage"
-  "\030\004 \001(\005\022\022\n\ntotal_earn\030\005 \001(\005\022\024\n\014invalid_ea"
-  "rn\030\006 \001(\005\"U\n\016ScallopLottery\022\n\n\002id\030\001 \001(\005\022\014"
-  "\n\004type\030\002 \001(\005\022\016\n\006status\030\003 \001(\005\022\031\n\006reward\030\004"
-  " \001(\0132\t.F4BY.Obj\"\242\001\n\020SCCaptureScallop\022\021\n\t"
-  "chair_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\r\n\005rat"
-  "io\030\003 \001(\005\022\014\n\004time\030\004 \001(\005\022*\n\014lottery_list\030\005"
-  " \003(\0132\024.F4BY.ScallopLottery\022 \n\rreward_con"
-  "fig\030\006 \003(\0132\t.F4BY.Obj\"\033\n\rCSOpenScallop\022\n\n"
-  "\002id\030\001 \001(\005\"I\n\rSCOpenScallop\022\021\n\tchair_idx\030"
-  "\001 \001(\005\022%\n\007scallop\030\002 \001(\0132\024.F4BY.ScallopLot"
-  "tery\"\212\001\n\026SCSettleScallopLottery\022\021\n\tchair"
-  "_idx\030\001 \001(\005\022\014\n\004earn\030\002 \001(\005\022*\n\014lottery_list"
-  "\030\003 \003(\0132\024.F4BY.ScallopLottery\022#\n\nmulti_li"
-  "st\030\004 \003(\0132\017.F4BY.MultiInfo\"\224\001\n\024SCSyncScal"
-  "lopLottery\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005ratio\030\002"
-  " \001(\005\022\014\n\004time\030\003 \001(\005\022*\n\014lottery_list\030\004 \003(\013"
-  "2\024.F4BY.ScallopLottery\022 \n\rreward_config\030"
-  "\005 \003(\0132\t.F4BY.Obj\"9\n\017OpenChestReward\022\n\n\002i"
-  "d\030\001 \001(\005\022\032\n\003num\030\002 \001(\0132\r.F4BY.Decimal\"\247\001\n\023"
-  "SCUpdateChestStatus\022\021\n\tis_active\030\001 \001(\010\022#"
-  "\n\nchest_type\030\002 \001(\0162\017.F4BY.ChestType\022\026\n\016t"
-  "otal_progress\030\003 \001(\005\022\027\n\017remain_progress\030\004"
-  " \001(\005\022\r\n\005guide\030\005 \001(\010\022\030\n\020available_reward\030"
-  "\006 \001(\005\"\017\n\rCSChestConfig\"X\n\nChestBrief\022#\n\n"
-  "chest_type\030\001 \001(\0162\017.F4BY.ChestType\022%\n\006rew"
-  "ard\030\002 \003(\0132\025.F4BY.OpenChestReward\"\270\001\n\rSCC"
-  "hestConfig\022\020\n\010end_time\030\001 \001(\005\022*\n\020chest_br"
-  "ief_list\030\002 \003(\0132\020.F4BY.ChestBrief\022\021\n\tmin_"
-  "ratio\030\003 \001(\005\022\021\n\tauto_open\030\004 \001(\010\0220\n\013auto_o"
-  "ption\030\005 \001(\0162\033.F4BY.ChestAutoSelectOption"
-  "\022\021\n\tis_enable\030\006 \001(\010\"k\n\013SCOpenChest\022*\n\013re"
-  "ward_list\030\001 \003(\0132\025.F4BY.OpenChestReward\0220"
-  "\n\013auto_option\030\002 \001(\0162\033.F4BY.ChestAutoSele"
-  "ctOption\"+\n\023CSSelectChestReward\022\024\n\014selec"
-  "t_index\030\001 \001(\005\"<\n\023SCSelectChestReward\022%\n\006"
-  "reward\030\001 \001(\0132\025.F4BY.OpenChestReward\"[\n\024C"
-  "SChestSetAutoSelect\0220\n\013auto_option\030\001 \001(\016"
-  "2\033.F4BY.ChestAutoSelectOption\022\021\n\tauto_op"
-  "en\030\002 \001(\010\"[\n\024SCChestSetAutoSelect\0220\n\013auto"
-  "_option\030\001 \001(\0162\033.F4BY.ChestAutoSelectOpti"
-  "on\022\021\n\tauto_open\030\002 \001(\010\"%\n\020CSChestSetEnabl"
-  "e\022\021\n\tis_enable\030\001 \001(\010\"%\n\020SCChestSetEnable"
-  "\022\021\n\tis_enable\030\001 \001(\010\"4\n\014SCSpecEffect\022\021\n\tc"
-  "ostMoney\030\001 \001(\005\022\021\n\tearnMoney\030\002 \001(\005\"n\n\021SCT"
-  "ortoiseExplode\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fis"
-  "h_uid\030\002 \001(\005\022\021\n\tbullet_id\030\003 \001(\005\022\r\n\005ratio\030"
-  "\004 \001(\005\022\022\n\nmax_effect\030\005 \001(\005\"S\n\nRewardInfo\022"
-  "\017\n\007prop_id\030\001 \001(\005\022\020\n\010prop_num\030\002 \001(\005\022\017\n\007qu"
-  "ality\030\003 \001(\005\022\021\n\tspec_show\030\004 \001(\010\"\177\n\013Missio"
-  "nInfo\022\022\n\ndraw_times\030\001 \001(\005\022%\n\013reward_list"
-  "\030\002 \003(\0132\020.F4BY.RewardInfo\022\020\n\010complete\030\003 \001"
-  "(\010\022\017\n\007receive\030\004 \001(\010\022\022\n\nmission_id\030\005 \001(\005\""
-  "T\n\rBigRewardInfo\022\030\n\020big_reward_times\030\001 \001"
-  "(\005\022)\n\017draw_rewardList\030\002 \003(\0132\020.F4BY.Rewar"
-  "dInfo\"\340\001\n\022TreasureHuntConfig\022\014\n\004term\030\001 \001"
-  "(\005\022\022\n\nstart_time\030\002 \001(\005\022\020\n\010end_time\030\003 \001(\005"
-  "\022\016\n\006enable\030\004 \001(\010\022,\n\017big_reward_info\030\005 \001("
-  "\0132\023.F4BY.BigRewardInfo\022%\n\013reward_list\030\006 "
-  "\003(\0132\020.F4BY.RewardInfo\022\020\n\010min_draw\030\007 \001(\005\022"
-  "\020\n\010max_draw\030\010 \001(\005\022\r\n\005topic\030\t \001(\005\"$\n\rCSSy"
-  "ncConfigs\022\023\n\013config_type\030\001 \001(\005\"B\n\rSCSync"
-  "Configs\0221\n\017treasure_config\030\001 \001(\0132\030.F4BY."
-  "TreasureHuntConfig\".\n\014CSDrawReward\022\013\n\003nu"
-  "m\030\001 \001(\005\022\021\n\tdraw_type\030\002 \001(\005\"5\n\014SCDrawRewa"
-  "rd\022%\n\013reward_list\030\001 \003(\0132\020.F4BY.RewardInf"
-  "o\"\027\n\025CSTreasureHuntMission\"T\n\025SCTreasure"
-  "HuntMission\022\'\n\014mission_list\030\001 \003(\0132\021.F4BY"
-  ".MissionInfo\022\022\n\ndraw_times\030\002 \001(\005\",\n\026CSRe"
-  "ceiveMissionReward\022\022\n\nmission_id\030\001 \001(\005\"\?"
-  "\n\026SCReceiveMissionReward\022%\n\013reward_list\030"
-  "\001 \003(\0132\020.F4BY.RewardInfo\"\r\n\013CSDrawTimes\"v"
-  "\n\013SCDrawTimes\022\030\n\020total_draw_times\030\001 \001(\005\022"
-  "\032\n\022big_reward_process\030\002 \001(\005\022\027\n\017free_draw"
-  "_times\030\003 \001(\005\022\030\n\020draw_tickers_num\030\004 \001(\005\"\'"
-  "\n\020CSVerifyActivity\022\023\n\013activity_id\030\001 \001(\005\""
-  "5\n\020SCVerifyActivity\022\014\n\004open\030\001 \001(\010\022\023\n\013act"
-  "ivity_id\030\002 \001(\005\"\316\001\n\007Package\022\022\n\npackage_id"
-  "\030\001 \001(\005\022\r\n\005limit\030\002 \001(\005\022\025\n\rconsume_price\030\003"
-  " \001(\005\022\022\n\nlimit_type\030\004 \001(\005\022\025\n\rconsume_prop"
-  "s\030\005 \001(\005\022\026\n\016purchase_times\030\006 \001(\005\022%\n\013rewar"
-  "d_list\030\007 \003(\0132\020.F4BY.RewardInfo\022\014\n\004lock\030\010"
-  " \001(\010\022\021\n\tvip_limit\030\t \001(\005\"-\n\025CSTreasureHun"
-  "tPackage\022\024\n\014package_type\030\001 \001(\005\"R\n\025SCTrea"
-  "sureHuntPackage\022#\n\014package_list\030\001 \003(\0132\r."
-  "F4BY.Package\022\024\n\014package_type\030\002 \001(\005\"V\n\020Ex"
-  "changeShopInfo\022\r\n\005level\030\001 \001(\005\022#\n\014package"
-  "_list\030\002 \003(\0132\r.F4BY.Package\022\016\n\006unlock\030\003 \001"
-  "(\010\"\020\n\016CSExchangeShop\"B\n\016SCExchangeShop\0220"
-  "\n\020exchangeShopList\030\001 \003(\0132\026.F4BY.Exchange"
-  "ShopInfo\"\'\n\021CSPurchasePackage\022\022\n\npackage"
-  "_id\030\001 \001(\005\"3\n\021SCPurchasePackage\022\036\n\007packag"
-  "e\030\001 \001(\0132\r.F4BY.Package\"\024\n\022CSVerifyTermCh"
-  "ange\"K\n\022SCVerifyTermChange\022\016\n\006change\030\001 \001"
-  "(\010\022%\n\013reward_list\030\002 \003(\0132\020.F4BY.RewardInf"
-  "o\"M\n\017SCWaterDropInfo\022\016\n\006enable\030\001 \001(\010\022\022\n\n"
-  "drop_count\030\002 \001(\005\022\026\n\016fragment_count\030\003 \001(\005"
-  "\"\035\n\010CSBuyGun\022\021\n\tgun_level\030\001 \001(\005\",\n\010SCBuy"
-  "Gun\022\021\n\tgun_level\030\001 \001(\005\022\r\n\005price\030\002 \001(\005\"\036\n"
-  "\nCSBuyWings\022\020\n\010wings_id\030\001 \001(\005\"-\n\nSCBuyWi"
-  "ngs\022\020\n\010wings_id\030\001 \001(\005\022\r\n\005price\030\002 \001(\005\"9\n\021"
-  "SCNotifyActStatus\022\020\n\010act_type\030\001 \001(\005\022\022\n\na"
-  "ct_status\030\002 \001(\005\"%\n\020CSSetDoubleShoot\022\021\n\te"
-  "xtra_mul\030\001 \001(\005\"(\n\016CSFreePoolInfo\022\026\n\016prep"
-  "areLottery\030\001 \001(\010\"\"\n\021CSFreePoolLottery\022\r\n"
-  "\005level\030\001 \001(\005\"&\n\016CSFreePoolOpen\022\024\n\014openFr"
-  "eePool\030\001 \001(\010*\226\023\n\rEMsgIDSubGame\022\010\n\004None\020\000"
-  "\022\016\n\tHeartBeat\020\350\007\022\027\n\022LoginGameWithToken\020\351"
-  "\007\022\016\n\tUserReady\020\352\007\022\023\n\016SetProbability\020\353\007\022\023"
-  "\n\016FishTracesList\020\354\007\022\020\n\013ChangeScene\020\355\007\022\026\n"
-  "\021FishOutsideScreen\020\356\007\022\r\n\010LockFish\020\357\007\022\016\n\t"
-  "UserShoot\020\360\007\022\014\n\007HitFish\020\361\007\022\017\n\nCrazySkill"
-  "\020\362\007\022\016\n\tSyncMoney\020\363\007\022\021\n\014NotifyLogout\020\364\007\022\020"
-  "\n\013SyncFishReq\020\365\007\022\020\n\013SyncFishRsp\020\366\007\022\026\n\021Us"
-  "erRunBackground\020\367\007\022\023\n\016HitSpecialFish\020\370\007\022"
-  "\021\n\014SyncPropInfo\020\371\007\022\020\n\013NotifyLogin\020\372\007\022\020\n\013"
-  "TrebleSkill\020\373\007\022\014\n\007UserLog\020\374\007\022\016\n\tUserEven"
-  "t\020\375\007\022\023\n\016UserInfoNotify\020\201\010\022\023\n\016GameInfoNot"
-  "ify\020\202\010\022\t\n\004Chat\020\203\010\022\016\n\tGainAward\020\204\010\022\017\n\nPro"
-  "pStatus\020\205\010\022\023\n\016PropDropNotify\020\206\010\022\014\n\007UsePr"
-  "op\020\207\010\022\017\n\nFrozenTime\020\210\010\022\021\n\014UserPoolInfo\020\222"
-  "\010\022\023\n\016UserPoolStatus\020\223\010\022\024\n\017UserPoolPreDra"
-  "w\020\224\010\022\021\n\014UserPoolDraw\020\225\010\022\020\n\013UserPoolAdd\020\226"
-  "\010\022\024\n\017TorpedoPreShoot\020\227\010\022\027\n\022TorpedoCancel"
-  "Shoot\020\230\010\022\021\n\014TorpedoShoot\020\231\010\022\017\n\nTorpedoHi"
-  "t\020\232\010\022\r\n\010CallFish\020\233\010\022\014\n\007ComTask\020\234\010\022\r\n\010Tas"
-  "kInfo\020\235\010\022\022\n\rSaveSkillTime\020\236\010\022\021\n\014SevenDay"
-  "Info\020\237\010\022\022\n\rSevenDayAward\020\240\010\022\023\n\016VipCharge"
-  "Award\020\241\010\022\017\n\nInfoRedDot\020\242\010\022\021\n\014ActivityInf"
-  "o\020\243\010\022\023\n\016ClickStatistic\020\244\010\022\016\n\tAwardPool\020\245"
-  "\010\022\026\n\021NewClickStatistic\020\246\010\022\027\n\022GetAwardPoo"
-  "lRecord\020\247\010\022\025\n\020TreasureFishInfo\020\250\010\022\030\n\023Tre"
-  "asureFishCatched\020\251\010\022\027\n\022MatchPackAddition"
-  "X\020\252\010\022\024\n\017MatchPackInvail\020\253\010\022\024\n\017MatchPackB"
-  "uying\020\254\010\022\023\n\016GameItemSwitch\020\255\010\022\022\n\rLuckyDr"
-  "awInfo\020\256\010\022\026\n\021GetLuckyTaskAward\020\257\010\022\020\n\013Luc"
-  "kyRedDot\020\260\010\022\020\n\013GetLuckyNum\020\261\010\022\023\n\016GetLuck"
-  "yRecord\020\262\010\022\021\n\014GetOwnRecord\020\263\010\022\027\n\022UserPoo"
-  "lDoubleInfo\020\314\010\022\023\n\016UserPoolDouble\020\315\010\022\022\n\rL"
-  "uckyPoolInfo\020\316\010\022\022\n\rLuckyPoolDraw\020\317\010\022\r\n\010B"
-  "ombInfo\020\326\010\022\024\n\017BombHitFishInfo\020\327\010\022\r\n\010Sync"
-  "Bomb\020\330\010\022\023\n\016SyncBombFinish\020\331\010\022\021\n\014GetMagic"
-  "Cube\020\332\010\022\030\n\023SyncMagicCubeBtInfo\020\333\010\022\013\n\006Pre"
-  "Hit\020\334\010\022\r\n\010PreShoot\020\335\010\022\031\n\024SyncValentineDa"
-  "yFish\020\336\010\022\026\n\021BombGlobeFishInfo\020\337\010\022\025\n\020Bomb"
-  "GlobeFishHit\020\340\010\022\032\n\025AnniversaryShowSelect"
-  "\020\355\010\022\031\n\024AnniversarySelectReq\020\356\010\022\034\n\027Annive"
-  "rsarySelectResult\020\357\010\022\023\n\016AnniversaryHit\020\360"
-  "\010\022\034\n\027SyncAnniversaryHitStage\020\361\010\022\026\n\021SyncK"
-  "iRinHitStage\020\362\010\022\024\n\017NvWaFishCapture\020\363\010\022\023\n"
-  "\016CaptureScallop\020\365\010\022\031\n\024SettleScallopLotte"
-  "ry\020\366\010\022\027\n\022SyncScallopLottery\020\367\010\022\020\n\013OpenSc"
-  "allop\020\370\010\022\026\n\021UpdateChestStatus\020\371\010\022\020\n\013Ches"
-  "tConfig\020\372\010\022\016\n\tOpenChest\020\373\010\022\026\n\021SelectChes"
-  "tReward\020\374\010\022\027\n\022ChestSetAutoSelect\020\375\010\022\017\n\nS"
-  "pecEffect\020\376\010\022\023\n\016ChestSetEnable\020\377\010\022\022\n\rFro"
-  "zenFishRep\020\260\t\022\024\n\017TortoiseExplode\020\272\t\022\r\n\010S"
-  "etWings\020\273\t\022\020\n\013SyncConfigs\020\274\t\022\017\n\nDrawRewa"
-  "rd\020\275\t\022\030\n\023TreasureHuntMission\020\276\t\022\031\n\024Recei"
-  "veMissionReward\020\277\t\022\016\n\tDrawTimes\020\301\t\022\023\n\016Ve"
-  "rifyActivity\020\302\t\022\021\n\014ExchangeShop\020\303\t\022\030\n\023Tr"
-  "easureHuntPackage\020\304\t\022\024\n\017PurchasePackage\020"
-  "\305\t\022\025\n\020VerifyTermChange\020\306\t\022\013\n\006BuyGun\020\307\t\022\r"
-  "\n\010BuyWings\020\310\t\022\022\n\rWaterDropInfo\020\316\t\022\024\n\017Not"
-  "ifyActStatus\020\317\t\022\023\n\016SetDoubleShoot\020\320\t\022\027\n\021"
-  "LotteryResult3002\020\241\234\001\022\027\n\021LotteryResult30"
-  "05\020\242\234\001\022\022\n\014FreePoolInfo\020\211\244\001\022\025\n\017FreePoolLo"
-  "ttery\020\212\244\001\022\022\n\014FreePoolOpen\020\213\244\001*\373\007\n\007ErrCod"
-  "e\022\010\n\004Succ\020\000\022\027\n\022AlreadyInOtherGame\020\361\001\022\t\n\004"
-  "Fail\020\350\007\022\030\n\023LoadPropsDataFailed\020\221N\022\032\n\025Can"
-  "NotFindPlayerPoint\020\222N\022\025\n\020ParameterIsWron"
-  "g\020\223N\022\020\n\013LackOfMoney\020\224N\022\031\n\024FreeTimesChang"
-  "eRatio\020\225N\022\r\n\010IsNotSup\020\226N\022\026\n\021DeserializeF"
-  "ailed\020\227N\022\023\n\016PlayerNotExist\020\230N\022\027\n\022PlayerA"
-  "lreadyLogin\020\231N\022\031\n\024LoadPlayerDataFailed\020\232"
-  "N\022\025\n\020AllocTableFailed\020\233N\022\021\n\014DefendPlugIn"
-  "\020\234N\022\026\n\021QPEnterRoomFailed\020\235N\022\034\n\027QPBaseUse"
-  "rInfoGetFailed\020\236N\022\025\n\020QPReadGoldFailed\020\237N"
-  "\022\024\n\017ThisTableIsFull\020\240N\022\021\n\014PropNoEnough\020\241"
-  "N\022\022\n\rPropRoomLimit\020\242N\022\016\n\tPropUsing\020\243N\022\021\n"
-  "\014PropNotExist\020\244N\022\024\n\017PropUsingSetGun\020\245N\022\023"
-  "\n\016ThisRoomIsFull\020\246N\022\021\n\014ServerClosed\020\247N\022\r"
-  "\n\010PropHave\020\250N\022\022\n\rPropCanNotBuy\020\251N\022\023\n\016Use"
-  "rPoolNoMeet\020\256N\022\025\n\020UserPoolToHigher\020\257N\022\027\n"
-  "\022CallFishTideComing\020\260N\022\021\n\014CallFishFull\020\261"
-  "N\022\025\n\020UserPoolLoadFail\020\262N\022\031\n\024FrozenFishTi"
-  "deComing\020\263N\022\024\n\017FrozenNotEnough\020\264N\022\021\n\014Fro"
-  "zenWaitCD\020\265N\022\023\n\016FrozenFishTide\020\266N\022\021\n\014Ill"
-  "egalParam\020\270N\022\020\n\013ConfigError\020\271N\022\030\n\023Preven"
-  "tCheatWarning\020\272N\022\022\n\rOpenChestFail\020\302N\022\032\n\025"
-  "SelectChestRewardFail\020\303N\022\035\n\030NotMetTaskCo"
-  "nditionError\020\304N\022\021\n\014DrawNumError\020\305N\022\027\n\022Pu"
-  "rchaseLimitError\020\306N\022\036\n\031TreasureHuntNotSt"
-  "artError\020\307N*\347\001\n\rUserEventType\022\031\n\025UserEve"
-  "ntTypeHideIcon\020\000\022\033\n\027UserEventTypeCrazySk"
-  "ill\020\001\022\031\n\025UserEventTypeUserPool\020\002\022\033\n\027User"
-  "EventTypeMultiShoot\020\003\022\026\n\022UserEventTypeSt"
-  "ore\020\004\022\034\n\030UserEventTypeCustomTable\020\005\022\034\n\030U"
-  "serEventTypeChangeTable\020\006\022\022\n\016UserLogType"
-  "Max\020\007*7\n\014CallFishType\022\022\n\016CallTypeNormal\020"
-  "\000\022\023\n\017CallTypeSpecial\020\001*s\n\tChestType\022\021\n\rC"
-  "hestTypeNone\020\000\022\026\n\022ChestTypePorcelain\020\001\022\023"
-  "\n\017ChestTypeBronze\020\002\022\023\n\017ChestTypeSilver\020\003"
-  "\022\021\n\rChestTypeGold\020\004*V\n\025ChestAutoSelectOp"
-  "tion\022\035\n\031ChestAutoSelectOptionNone\020\000\022\023\n\017R"
-  "edPacketTicket\020\001\022\t\n\005Money\020\002b\006proto3"
+  "llet_offset\030\005 \001(\010\"\221\001\n\tCSHitFish\022\020\n\010fish_"
+  "uid\030\001 \001(\005\022\021\n\tbullet_id\030\002 \001(\005\022\025\n\rscreen_f"
+  "ishes\030\003 \003(\005\022\020\n\010chair_id\030\004 \001(\005\022\r\n\005ratio\030\005"
+  " \001(\005\022\023\n\013bullet_type\030\006 \001(\005\022\022\n\norigin_uid\030"
+  "\007 \001(\005\"\?\n\tMultiInfo\022\017\n\007bt_type\030\001 \001(\005\022\020\n\010b"
+  "t_multi\030\002 \001(\005\022\017\n\007bt_base\030\003 \001(\005\"\225\002\n\tSCHit"
+  "Fish\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001("
+  "\005\022\014\n\004earn\030\003 \001(\005\022\022\n\nuser_score\030\004 \001(\003\022\022\n\nf"
+  "ish_value\030\005 \001(\005\022\020\n\010multiple\030\006 \001(\005\022\027\n\017hit"
+  "_bullet_type\030\007 \001(\005\022\030\n\020magic_cube_multi\030\010"
+  " \001(\005\022#\n\nmulti_list\030\t \003(\0132\017.F4BY.MultiInf"
+  "o\022\022\n\norigin_uid\030\n \001(\005\022 \n\ndrop_props\030\013 \003("
+  "\0132\014.F4BY.Object\022\r\n\005death\030\014 \001(\010\"\235\003\n\020SCHit"
+  "SpecialFish\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_u"
+  "id\030\002 \001(\005\022\014\n\004earn\030\003 \001(\005\022\022\n\nfish_value\030\004 \001"
+  "(\005\022\022\n\nuser_score\030\005 \001(\003\022\r\n\005death\030\006 \001(\010\022\022\n"
+  "\ngrow_stage\030\007 \001(\005\022\020\n\010multiple\030\010 \001(\005\022\"\n\014s"
+  "hock_fishes\030\t \003(\0132\014.F4BY.Object\022 \n\ndrop_"
+  "props\030\n \003(\0132\014.F4BY.Object\022 \n\005wheel\030\013 \001(\013"
+  "2\021.F4BY.WheelObject\022\027\n\017hit_bullet_type\030\014"
+  " \001(\005\022\017\n\007prop_no\030\r \001(\005\022\030\n\020magic_cube_mult"
+  "i\030\016 \001(\005\022#\n\nmulti_list\030\017 \003(\0132\017.F4BY.Multi"
+  "Info\022\022\n\norigin_uid\030\020 \001(\005\022\024\n\014dragon_score"
+  "\030\021 \001(\005\"`\n\rSyncPropInfoX\022\032\n\004prop\030\001 \001(\0132\014."
+  "F4BY.Object\022\t\n\001x\030\002 \001(\002\022\t\n\001y\030\003 \001(\002\022\r\n\005ang"
+  "le\030\004 \001(\002\022\016\n\006status\030\005 \001(\005\"I\n\020UserSyncProp"
+  "Info\022\021\n\tchair_idx\030\001 \001(\005\022\"\n\005props\030\002 \003(\0132\023"
+  ".F4BY.SyncPropInfoX\"F\n\016CSSyncPropInfo\022!\n"
+  "\004info\030\001 \001(\0132\023.F4BY.SyncPropInfoX\022\021\n\tchai"
+  "r_idx\030\002 \001(\005\"7\n\016SCSyncPropInfo\022%\n\005users\030\001"
+  " \003(\0132\026.F4BY.UserSyncPropInfo\"\033\n\013CSSyncMo"
+  "ney\022\014\n\004type\030\001 \001(\005\"i\n\013SCSyncMoney\022\021\n\tchai"
+  "r_idx\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\022\014\n\004type\030\003 \001(\005"
+  "\022\r\n\005delta\030\004 \001(\005\022\016\n\006ticket\030\005 \001(\005\022\013\n\003vip\030\006"
+  " \001(\005\"\274\001\n\tFishTrace\022\020\n\010fish_uid\030\001 \001(\005\022\021\n\t"
+  "fish_type\030\002 \001(\005\022\022\n\nfish_layer\030\003 \001(\005\022\022\n\nf"
+  "ish_stage\030\004 \001(\005\022\017\n\007is_aced\030\005 \001(\010\022\022\n\naliv"
+  "e_time\030\006 \001(\005\022\022\n\nbeads_list\030\007 \003(\005\022\026\n\016fish"
+  "_torpedoId\030\010 \001(\005\022\021\n\tfish_road\030\t \001(\005\"\202\002\n\020"
+  "SCFishTracesList\022$\n\013fish_traces\030\001 \003(\0132\017."
+  "F4BY.FishTrace\022\021\n\tfish_road\030\002 \001(\005\022\022\n\nfis"
+  "h_array\030\003 \001(\005\022\027\n\017create_interval\030\004 \001(\005\022\021"
+  "\n\tis_called\030\005 \001(\010\022\030\n\020after_tide_first\030\006 "
+  "\001(\010\022%\n\tcall_type\030\007 \001(\0162\022.F4BY.CallFishTy"
+  "pe\022\022\n\nmove_delay\030\010 \001(\002\022\020\n\010road_idx\030\t \001(\005"
+  "\022\016\n\006move_t\030\n \001(\002\"!\n\rCSSyncFishReq\022\020\n\010cha"
+  "ir_id\030\001 \001(\005\"&\n\rSCSyncFishReq\022\025\n\rreq_play"
+  "er_id\030\001 \001(\005\"\271\001\n\rCSSyncFishRsp\022$\n\013fish_tr"
+  "aces\030\001 \003(\0132\017.F4BY.FishTrace\022\021\n\tfish_road"
+  "\030\002 \001(\005\022\022\n\nfish_array\030\003 \001(\005\022\022\n\nmove_delay"
+  "\030\004 \001(\002\022\020\n\010road_idx\030\005 \001(\005\022\016\n\006move_t\030\006 \001(\002"
+  "\022\016\n\006finish\030\007 \001(\010\022\025\n\rreq_player_id\030\010 \001(\005\""
+  "\345\001\n\rSCSyncFishRsp\022$\n\013fish_traces\030\001 \003(\0132\017"
+  ".F4BY.FishTrace\022\021\n\tfish_road\030\002 \001(\005\022\022\n\nfi"
+  "sh_array\030\003 \001(\005\022\022\n\nmove_delay\030\004 \001(\002\022\020\n\010ro"
+  "ad_idx\030\005 \001(\005\022\016\n\006move_t\030\006 \001(\002\022\027\n\017create_i"
+  "nterval\030\007 \001(\002\022\021\n\tis_called\030\010 \001(\010\022%\n\tcall"
+  "_type\030\t \001(\0162\022.F4BY.CallFishType\"$\n\rSCCha"
+  "ngeScene\022\023\n\013scene_index\030\001 \001(\005\"\'\n\023CSFishO"
+  "utsideScreen\022\020\n\010fish_uid\030\001 \001(\005\"B\n\nCSLock"
+  "Fish\022\020\n\010fish_uid\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\022"
+  "\021\n\tchair_idx\030\003 \001(\005\"B\n\nSCLockFish\022\021\n\tchai"
+  "r_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\017\n\007is_open"
+  "\030\003 \001(\010\"\037\n\014CSCrazySkill\022\017\n\007is_open\030\001 \001(\010\""
+  "2\n\014SCCrazySkill\022\021\n\tchair_idx\030\001 \001(\005\022\017\n\007is"
+  "_open\030\002 \001(\010\" \n\rCSTrebleSkill\022\017\n\007is_open\030"
+  "\001 \001(\010\"3\n\rSCTrebleSkill\022\021\n\tchair_idx\030\001 \001("
+  "\005\022\017\n\007is_open\030\002 \001(\010\")\n\023CSUserRunBackgroun"
+  "d\022\022\n\nbackground\030\001 \001(\010\"<\n\023SCUserRunBackgr"
+  "ound\022\021\n\tchair_idx\030\001 \001(\005\022\022\n\nbackground\030\002 "
+  "\001(\010\"\r\n\013CSHeartBeat\"\r\n\013SCHeartBeat\"\242\001\n\rGu"
+  "nSpecEffect\022\022\n\nratioLimit\030\001 \001(\005\022\025\n\rhitCh"
+  "angeRate\030\002 \001(\002\022\027\n\017moneyChangeRate\030\003 \001(\002\022"
+  "\024\n\014violenceRate\030\004 \001(\002\022\021\n\tspeedRate\030\005 \001(\002"
+  "\022\020\n\010advanced\030\006 \001(\010\022\022\n\ndouble_tag\030\007 \001(\010\"\216"
+  "\001\n\017WingsSpecEffect\022\021\n\tspeedRate\030\001 \001(\002\022\022\n"
+  "\nratioLimit\030\002 \001(\005\022\025\n\rhitChangeRate\030\003 \001(\002"
+  "\022\027\n\017moneyChangeRate\030\004 \001(\002\022\020\n\010advanced\030\005 "
+  "\001(\010\022\022\n\ndouble_tag\030\006 \001(\010\"\301\001\n\tWingsInfo\022\020\n"
+  "\010wings_id\030\001 \001(\005\022\016\n\006enable\030\002 \001(\010\0220\n\021wings"
+  "_spec_effect\030\003 \001(\0132\025.F4BY.WingsSpecEffec"
+  "t\022\024\n\014receive_type\030\004 \001(\005\022\023\n\013activity_id\030\005"
+  " \001(\005\022\r\n\005price\030\006 \001(\005\022\022\n\nnew_enable\030\007 \001(\010\022"
+  "\022\n\ndouble_tag\030\010 \001(\010\"\314\002\n\007GunInfo\022\021\n\tgun_l"
+  "evel\030\001 \001(\005\022\021\n\tratio_min\030\002 \001(\005\022\021\n\tratio_m"
+  "ax\030\003 \001(\005\022\016\n\006enable\030\004 \001(\010\022\022\n\nnew_enable\030\005"
+  " \001(\010\022\016\n\006is_vip\030\006 \001(\010\022\021\n\tvip_limit\030\007 \001(\005\022"
+  "\021\n\tis_member\030\010 \001(\010\022\022\n\nmember_sec\030\t \001(\005\022\022"
+  "\n\nextra_data\030\n \001(\005\022*\n\rgunSpecEffect\030\013 \001("
+  "\0132\023.F4BY.GunSpecEffect\022\r\n\005price\030\014 \001(\005\022\024\n"
+  "\014attack_speed\030\r \001(\002\022\014\n\004rage\030\016 \001(\002\022\023\n\013act"
+  "ivity_id\030\017 \001(\005\022\022\n\nratio_list\030\020 \003(\005\"+\n\007Vi"
+  "pInfo\022\017\n\007old_vip\030\001 \001(\005\022\017\n\007cur_vip\030\002 \001(\005\""
+  "6\n\010PropInfo\022\016\n\006enable\030\001 \001(\010\022\032\n\004prop\030\002 \001("
+  "\0132\014.F4BY.Object\"%\n\020CSUserInfoNotify\022\021\n\tb"
+  "roadcast\030\001 \001(\010\"\366\001\n\020SCUserInfoNotify\022\021\n\tc"
+  "hair_idx\030\001 \001(\005\022\037\n\010gun_info\030\002 \003(\0132\r.F4BY."
+  "GunInfo\022#\n\nwings_info\030\003 \003(\0132\017.F4BY.Wings"
+  "Info\022\037\n\010vip_info\030\004 \001(\0132\r.F4BY.VipInfo\022!\n"
+  "\tprop_info\030\005 \003(\0132\016.F4BY.PropInfo\022\026\n\016last"
+  "_gun_level\030\006 \001(\005\022\022\n\nlast_ratio\030\007 \001(\005\022\031\n\021"
+  "last_wings_propId\030\010 \001(\005\"a\n\020SCGameInfoNot"
+  "ify\022\021\n\tuser_pool\030\001 \001(\010\022\022\n\naward_fish\030\002 \003"
+  "(\005\022&\n\017user_pool_limit\030\003 \003(\0132\r.F4BY.Objec"
+  "t3\"2\n\014SCInfoRedDot\022\021\n\tseven_day\030\001 \001(\010\022\017\n"
+  "\007red_dot\030\002 \001(\010\"\\\n\rJumpHighArena\022\017\n\007is_op"
+  "en\030\001 \001(\010\022\013\n\003vip\030\002 \001(\005\022\014\n\004coin\030\003 \001(\005\022\021\n\tg"
+  "ame_time\030\004 \001(\005\022\014\n\004tips\030\005 \001(\t\"X\n\016SCActivi"
+  "tyInfo\022!\n\004jump\030\001 \001(\0132\023.F4BY.JumpHighAren"
+  "a\022\r\n\005limit\030\002 \001(\005\022\024\n\014pool_is_open\030\003 \001(\010\">"
+  "\n\006CSChat\022\020\n\010msg_type\030\001 \001(\005\022\017\n\007msg_idx\030\002 "
+  "\001(\005\022\021\n\tchair_idx\030\003 \001(\005\">\n\006SCChat\022\021\n\tchai"
+  "r_idx\030\001 \001(\005\022\020\n\010msg_type\030\002 \001(\005\022\017\n\007msg_idx"
+  "\030\003 \001(\005\"L\n\013SCGainAward\022\021\n\tchair_idx\030\001 \001(\005"
+  "\022\r\n\005score\030\002 \001(\005\022\033\n\005award\030\003 \001(\0132\014.F4BY.Ob"
+  "ject\"\r\n\013CSAwardPool\"*\n\013SCAwardPool\022\033\n\004po"
+  "ol\030\001 \003(\0132\r.F4BY.Object3\"/\n\014CSPropStatus\022"
+  "\017\n\007prop_id\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\"Q\n\014SCPr"
+  "opStatus\022\021\n\tchair_idx\030\001 \001(\005\022\017\n\007prop_id\030\002"
+  " \001(\005\022\016\n\006status\030\003 \001(\005\022\r\n\005bt_id\030\004 \001(\005\"B\n\016G"
+  "ivenCardAward\022\020\n\010card_idx\030\001 \001(\005\022\014\n\004base\030"
+  "\002 \001(\005\022\020\n\010multiple\030\003 \001(\005\"\\\n\rUserAwardItem"
+  "\022\r\n\005index\030\001 \001(\005\022\020\n\010item_max\030\002 \001(\005\022\014\n\004nam"
+  "e\030\003 \001(\t\022\034\n\005goods\030\004 \003(\0132\r.F4BY.Object2\"#\n"
+  "\016CSUserPoolInfo\022\021\n\topen_page\030\001 \001(\010\"\213\001\n\016S"
+  "CUserPoolInfo\022\021\n\tchair_idx\030\001 \001(\005\022\021\n\topen"
+  "_page\030\002 \001(\010\022\016\n\006status\030\003 \001(\010\022\r\n\005count\030\004 \001"
+  "(\005\022\020\n\010pool_max\030\005 \001(\005\022\"\n\005items\030\006 \003(\0132\023.F4"
+  "BY.UserAwardItem\" \n\020CSUserPoolStatus\022\014\n\004"
+  "open\030\001 \001(\010\" \n\020SCUserPoolStatus\022\014\n\004open\030\001"
+  " \001(\010\"\"\n\021CSUserPoolPreDraw\022\r\n\005level\030\001 \001(\005"
+  "\"=\n\021SCUserPoolPreDraw\022\014\n\004code\030\001 \001(\005\022\r\n\005l"
+  "evel\030\002 \001(\005\022\013\n\003msg\030\003 \001(\t\"\020\n\016CSUserPoolDra"
+  "w\"\200\001\n\016SCUserPoolDraw\022\021\n\tchair_idx\030\001 \001(\005\022"
+  "\034\n\005goods\030\002 \003(\0132\r.F4BY.Object2\022\034\n\005award\030\003"
+  " \001(\0132\r.F4BY.Object2\022\037\n\taward_cnt\030\004 \001(\0132\014"
+  ".F4BY.Object\"t\n\rSCUserPoolAdd\022\013\n\003add\030\001 \001"
+  "(\005\022\r\n\005count\030\002 \001(\005\022\021\n\tfirst_max\030\003 \001(\005\022\020\n\010"
+  "pool_max\030\004 \001(\005\022\016\n\006status\030\005 \001(\010\022\022\n\nlevel_"
+  "name\030\006 \001(\t\"\026\n\024CSUserPoolDoubleInfo\"l\n\024SC"
+  "UserPoolDoubleInfo\022\014\n\004cost\030\001 \001(\005\022\"\n\013item"
+  "_before\030\002 \001(\0132\r.F4BY.Object2\022\"\n\013item_dou"
+  "ble\030\003 \001(\0132\r.F4BY.Object2\"%\n\020CSUserPoolDo"
+  "uble\022\021\n\tis_double\030\001 \001(\010\"\203\001\n\020SCUserPoolDo"
+  "uble\022\014\n\004code\030\001 \001(\005\022\016\n\006result\030\002 \001(\005\022\021\n\tch"
+  "air_idx\030\003 \001(\005\022\033\n\004item\030\004 \001(\0132\r.F4BY.Objec"
+  "t3\022!\n\nextra_item\030\005 \001(\0132\r.F4BY.Object3\"\021\n"
+  "\017CSLuckyPoolInfo\"-\n\017SCLuckyPoolInfo\022\r\n\005c"
+  "ount\030\001 \001(\005\022\013\n\003max\030\002 \001(\005\"\021\n\017CSLuckyPoolDr"
+  "aw\".\n\017SCLuckyPoolDraw\022\033\n\004item\030\001 \001(\0132\r.F4"
+  "BY.Object3\"#\n\021CSTorpedoPreShoot\022\016\n\006propI"
+  "d\030\001 \001(\005\"Q\n\021SCTorpedoPreShoot\022\021\n\tchair_id"
+  "x\030\001 \001(\005\022\016\n\006propId\030\002 \001(\005\022\014\n\004code\030\003 \001(\005\022\013\n"
+  "\003msg\030\004 \001(\t\"\026\n\024CSTorpedoCancelShoot\")\n\024SC"
+  "TorpedoCancelShoot\022\021\n\tchair_idx\030\001 \001(\005\"8\n"
+  "\016CSTorpedoShoot\022\020\n\010fish_uid\030\001 \001(\005\022\t\n\001x\030\002"
+  " \001(\002\022\t\n\001y\030\003 \001(\002\"K\n\016SCTorpedoShoot\022\021\n\tcha"
+  "ir_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\t\n\001x\030\003 \001("
+  "\002\022\t\n\001y\030\004 \001(\002\"\016\n\014CSTorpedoHit\"\206\001\n\014SCTorpe"
+  "doHit\022\021\n\tchair_idx\030\001 \001(\005\022\014\n\004earn\030\002 \001(\005\022\r"
+  "\n\005score\030\003 \001(\005\022\016\n\006propId\030\004 \001(\005\022\016\n\006remain\030"
+  "\005 \001(\005\022\020\n\010fish_uid\030\006 \001(\005\022\t\n\001x\030\007 \001(\002\022\t\n\001y\030"
+  "\010 \001(\002\"3\n\nCSCallFish\022%\n\tcall_type\030\001 \001(\0162\022"
+  ".F4BY.CallFishType\"Z\n\nSCCallFish\022\021\n\tchai"
+  "r_idx\030\001 \001(\005\022\016\n\006propId\030\002 \001(\005\022\016\n\006remain\030\003 "
+  "\001(\005\022\014\n\004code\030\004 \001(\005\022\013\n\003msg\030\005 \001(\t\"P\n\tSCComT"
+  "ask\022\021\n\tgun_ratio\030\001 \001(\005\022\021\n\tgun_level\030\002 \001("
+  "\005\022\r\n\005award\030\003 \001(\005\022\016\n\006ticket\030\004 \001(\005\"\262\001\n\nSCT"
+  "askInfo\022\021\n\tgun_ratio\030\001 \001(\005\022\021\n\tgun_level\030"
+  "\002 \001(\005\022\017\n\007cur_num\030\003 \001(\005\022\021\n\ttotal_num\030\004 \001("
+  "\005\022\021\n\tvip_level\030\005 \001(\005\022\021\n\tis_unlock\030\006 \001(\010\022"
+  "\r\n\005award\030\007 \001(\005\022\025\n\ris_vip_unlock\030\010 \001(\010\022\016\n"
+  "\006ticket\030\t \001(\005\"L\n\017CSSaveSkillTime\022\014\n\004auto"
+  "\030\001 \001(\005\022\014\n\004lock\030\002 \001(\005\022\r\n\005angry\030\003 \001(\005\022\016\n\006t"
+  "reble\030\004 \001(\005\"q\n\014SevenDayTask\022\r\n\005index\030\001 \001"
+  "(\005\022\017\n\007fish_id\030\002 \001(\005\022\021\n\ttotal_num\030\003 \001(\005\022\017"
+  "\n\007cur_num\030\004 \001(\005\022\016\n\006status\030\005 \001(\005\022\r\n\005award"
+  "\030\006 \001(\005\"S\n\016SevenDayDetail\022\013\n\003day\030\001 \001(\005\022\022\n"
+  "\nbox_status\030\002 \001(\005\022 \n\004task\030\003 \001(\0132\022.F4BY.S"
+  "evenDayTask\"\020\n\016CSSevenDayInfo\"\273\001\n\016SCSeve"
+  "nDayInfo\022\022\n\nstart_date\030\001 \001(\t\022\020\n\010end_date"
+  "\030\002 \001(\t\022\017\n\007cur_day\030\003 \001(\005\022\022\n\nget_remain\030\004 "
+  "\001(\005\022\024\n\014remain_score\030\005 \001(\005\022\016\n\006ticket\030\006 \001("
+  "\005\022$\n\006detail\030\007 \001(\0132\024.F4BY.SevenDayDetail\022"
+  "\022\n\ngun_enable\030\010 \001(\005\"E\n\017CSSevenDayAward\022\013"
+  "\n\003day\030\001 \001(\005\022\r\n\005index\030\002 \001(\005\022\026\n\016get_award_"
+  "type\030\003 \001(\005\"T\n\017SCSevenDayAward\022\r\n\005score\030\001"
+  " \001(\005\022\016\n\006ticket\030\002 \001(\005\022\"\n\004task\030\003 \001(\0132\024.F4B"
+  "Y.SevenDayDetail\"1\n\020SCVipChargeAward\022\r\n\005"
+  "score\030\001 \001(\005\022\016\n\006ticket\030\002 \001(\005\"3\n\020CSClickSt"
+  "atistic\022\013\n\003num\030\001 \001(\t\022\022\n\nnot_repeat\030\002 \001(\010"
+  "\"\"\n\023CSNewClickStatistic\022\013\n\003num\030\001 \001(\t\"9\n\t"
+  "CSUserLog\022\014\n\004type\030\001 \001(\005\022\r\n\005score\030\002 \001(\t\022\017"
+  "\n\007content\030\003 \001(\t\")\n\013CSUserEvent\022\n\n\002id\030\001 \001"
+  "(\005\022\016\n\006status\030\002 \001(\005\"\026\n\024CSGetAwardPoolReco"
+  "rd\"^\n\017AwardPoolRecord\022\014\n\004time\030\001 \001(\t\022\014\n\004n"
+  "ame\030\002 \001(\t\022\016\n\006poolId\030\003 \001(\005\022\r\n\005award\030\004 \001(\005"
+  "\022\020\n\010playerId\030\005 \001(\005\">\n\024SCGetAwardPoolReco"
+  "rd\022&\n\007records\030\001 \003(\0132\025.F4BY.AwardPoolReco"
+  "rd\"Y\n\020SCPropDropNotify\022\021\n\tchair_idx\030\001 \001("
+  "\005\022\020\n\010fish_uid\030\002 \001(\005\022 \n\ndrop_props\030\003 \003(\0132"
+  "\014.F4BY.Object\"\034\n\tCSUseProp\022\017\n\007prop_id\030\001 "
+  "\001(\005\"Z\n\tSCUseProp\022\021\n\tchair_idx\030\001 \001(\005\022\017\n\007p"
+  "rop_id\030\002 \001(\005\022\016\n\006remain\030\003 \001(\005\022\014\n\004code\030\004 \001"
+  "(\005\022\013\n\003msg\030\005 \001(\t\"G\n\014SCFrozenTime\022\021\n\tchair"
+  "_idx\030\001 \001(\005\022\021\n\tis_frozen\030\002 \001(\010\022\021\n\tfrozen_"
+  "cd\030\003 \001(\002\"b\n\022SCTreasureFishInfo\022\020\n\010fish_u"
+  "id\030\001 \001(\005\022\021\n\tcur_stage\030\002 \001(\005\022\023\n\013accum_mon"
+  "ey\030\003 \001(\005\022\022\n\nfish_value\030\004 \001(\005\"\267\002\n\025SCTreas"
+  "ureFishCatched\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005rat"
+  "io\030\002 \001(\005\022\020\n\010fish_uid\030\003 \001(\005\022\022\n\nfish_value"
+  "\030\004 \001(\005\022\023\n\013accum_money\030\005 \001(\005\022\020\n\010multiple\030"
+  "\006 \001(\005\022\r\n\005death\030\007 \001(\010\022\014\n\004earn\030\010 \001(\005\022\022\n\nus"
+  "er_score\030\t \001(\003\022\030\n\020display_multiple\030\n \001(\010"
+  "\022\021\n\tcur_stage\030\013 \001(\005\022\030\n\020magic_cube_multi\030"
+  "\014 \001(\005\022#\n\nmulti_list\030\r \003(\0132\017.F4BY.MultiIn"
+  "fo\022\022\n\norigin_uid\030\016 \001(\005\"|\n\021MatchPackAddit"
+  "ion\022\n\n\002id\030\001 \001(\t\022\016\n\006is_buy\030\002 \001(\010\022\026\n\016score"
+  "_addition\030\003 \001(\002\022\030\n\020reaward_addition\030\004 \001("
+  "\002\022\014\n\004card\030\005 \001(\005\022\013\n\003sec\030\006 \001(\005\"\025\n\023CSMatchP"
+  "ackAddition\"@\n\023SCMatchPackAddition\022)\n\010ad"
+  "dition\030\001 \003(\0132\027.F4BY.MatchPackAddition\"#\n"
+  "\021SCMatchPackInvail\022\016\n\006packId\030\001 \001(\t\"#\n\021CS"
+  "MatchPackBuying\022\016\n\006packId\030\001 \001(\t\"g\n\013Award"
+  "Detail\022\020\n\010playerId\030\001 \001(\005\022\014\n\004nums\030\002 \001(\005\022\016"
+  "\n\006period\030\003 \001(\005\022\013\n\003vip\030\004 \001(\005\022\014\n\004nick\030\005 \001("
+  "\t\022\r\n\005photo\030\006 \001(\t\"H\n\020LuckyAwardNotify\022\021\n\t"
+  "awardType\030\001 \001(\005\022!\n\006detail\030\002 \003(\0132\021.F4BY.A"
+  "wardDetail\"\022\n\020CSGameItemSwitch\"&\n\020SCGame"
+  "ItemSwitch\022\022\n\nlucky_task\030\001 \001(\010\")\n\tAwardP"
+  "rop\022\017\n\007prop_id\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\"h\n\rLuc"
+  "kyTaskInfo\022\n\n\002id\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\022\r"
+  "\n\005score\030\003 \001(\005\022\014\n\004text\030\004 \001(\t\022\016\n\006amount\030\005 "
+  "\001(\005\022\016\n\006target\030\006 \001(\005\"\021\n\017CSLuckyDrawInfo\"\225"
+  "\003\n\017SCLuckyDrawInfo\022\027\n\017hour_remain_sec\030\001 "
+  "\001(\005\022\026\n\016day_remain_sec\030\002 \001(\005\022$\n\013hour_rewa"
+  "rd\030\003 \003(\0132\017.F4BY.AwardProp\022#\n\nday_reward\030"
+  "\004 \003(\0132\017.F4BY.AwardProp\022\026\n\016day_lucky_nums"
+  "\030\005 \003(\005\022\r\n\005score\030\006 \001(\005\022\022\n\nhour_total\030\007 \001("
+  "\005\022\021\n\tday_total\030\010 \001(\005\022\026\n\016hour_award_num\030\t"
+  " \001(\005\022\025\n\rday_award_num\030\n \001(\005\022\027\n\017next_star"
+  "t_tick\030\013 \001(\005\022&\n\ttask_info\030\014 \003(\0132\023.F4BY.L"
+  "uckyTaskInfo\022\026\n\016exchange_score\030\r \001(\005\022\027\n\017"
+  "next_remain_sec\030\016 \001(\005\022\027\n\017hour_lucky_nums"
+  "\030\017 \003(\005\"&\n\023CSGetLuckyTaskAward\022\017\n\007task_id"
+  "\030\001 \001(\005\"U\n\023SCGetLuckyTaskAward\022!\n\004task\030\001 "
+  "\001(\0132\023.F4BY.LuckyTaskInfo\022\r\n\005score\030\002 \001(\005\022"
+  "\014\n\004code\030\003 \001(\005\"\036\n\rCSGetLuckyNum\022\r\n\005times\030"
+  "\001 \001(\005\"F\n\rSCGetLuckyNum\022\r\n\005score\030\001 \001(\005\022\022\n"
+  "\nerror_code\030\002 \001(\005\022\022\n\nlucky_nums\030\003 \003(\005\"\017\n"
+  "\rCSLuckyRedDot\"\035\n\rSCLuckyRedDot\022\014\n\004show\030"
+  "\001 \001(\010\"]\n\013LuckyRecord\022\013\n\003vip\030\001 \001(\005\022\r\n\005tim"
+  "es\030\002 \001(\005\022\021\n\tlucky_num\030\003 \001(\005\022\014\n\004tick\030\004 \001("
+  "\005\022\021\n\tnick_name\030\005 \001(\t\"]\n\tOwnRecord\022\037\n\006rew"
+  "ard\030\001 \003(\0132\017.F4BY.AwardProp\022\016\n\006status\030\002 \001"
+  "(\005\022\014\n\004tick\030\003 \001(\005\022\021\n\tlucky_num\030\004 \001(\005\"\035\n\rC"
+  "SLuckyRecord\022\014\n\004type\030\001 \001(\005\"@\n\rSCLuckyRec"
+  "ord\022\014\n\004type\030\001 \001(\005\022!\n\006record\030\002 \003(\0132\021.F4BY"
+  ".LuckyRecord\".\n\013SCOwnRecord\022\037\n\006record\030\001 "
+  "\003(\0132\017.F4BY.OwnRecord\"5\n\nCSBombInfo\022\t\n\001x\030"
+  "\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\021\n\tchair_idx\030\003 \001(\005\"\227\001\n\n"
+  "SCSyncBomb\022\021\n\tchair_idx\030\001 \001(\005\022\016\n\006bombId\030"
+  "\002 \001(\005\022\021\n\tcurStatus\030\003 \001(\005\022\t\n\001x\030\004 \001(\002\022\t\n\001y"
+  "\030\005 \001(\002\022\r\n\005nextX\030\006 \001(\002\022\r\n\005nextY\030\007 \001(\002\022\r\n\005"
+  "score\030\010 \001(\005\022\020\n\010isFinish\030\t \001(\010\"J\n\020SCSyncB"
+  "ombFinish\022\021\n\tchair_idx\030\001 \001(\005\022\016\n\006bombId\030\002"
+  " \001(\005\022\023\n\013returnMoney\030\003 \001(\005\"F\n\021CSBombHitFi"
+  "shInfo\022\016\n\006bombId\030\001 \001(\005\022\016\n\006fishId\030\002 \003(\005\022\021"
+  "\n\tchair_idx\030\003 \001(\005\"\237\001\n\016SCGetMagicCube\022\021\n\t"
+  "chair_idx\030\001 \001(\005\022\022\n\nbulletType\030\002 \001(\005\022\024\n\014c"
+  "reateWeapon\030\003 \001(\010\022\022\n\nisSyncInfo\030\004 \001(\010\022\020\n"
+  "\010isFinish\030\005 \001(\010\022\020\n\010gunRatio\030\006 \001(\005\022\030\n\020mag"
+  "ic_cube_multi\030\007 \001(\005\"L\n\025SCMagicCubeBullet"
+  "Info\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010totalNum\030\002 \001("
+  "\005\022\016\n\006curNum\030\003 \001(\005\"\037\n\010CSPreHit\022\023\n\013screen_"
+  "fish\030\001 \003(\005\";\n\010SCPreHit\022\013\n\003err\030\001 \001(\005\022\020\n\010f"
+  "ish_uid\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\"B\n\nCSPre"
+  "Shoot\022\021\n\tchair_idx\030\001 \001(\005\022\r\n\005angle\030\002 \001(\005\022"
+  "\022\n\nshoot_type\030\003 \001(\005\"B\n\nSCPreShoot\022\021\n\tcha"
+  "ir_idx\030\001 \001(\005\022\r\n\005angle\030\002 \001(\005\022\022\n\nshoot_typ"
+  "e\030\003 \001(\005\"2\n\nFrozenFish\022\017\n\007fish_id\030\001 \001(\005\022\023"
+  "\n\013frozen_time\030\002 \001(\005\"4\n\014SCFrozenFish\022$\n\nf"
+  "rozenFish\030\001 \003(\0132\020.F4BY.FrozenFish\"\204\001\n\022SC"
+  "ValentineDayFish\022\"\n\tfish_info\030\001 \001(\0132\017.F4"
+  "BY.SCHitFish\022\020\n\010bt_ratio\030\002 \001(\005\022\022\n\nrand_m"
+  "ulti\030\003 \001(\005\022\022\n\nball_multi\030\004 \001(\005\022\020\n\010uid_li"
+  "st\030\005 \003(\005\"t\n\013SCKiRinFish\022\"\n\tfish_info\030\001 \001"
+  "(\0132\017.F4BY.SCHitFish\022\020\n\010bt_ratio\030\002 \001(\005\022\r\n"
+  "\005multi\030\003 \001(\005\022\021\n\tis_senior\030\004 \001(\010\022\r\n\005level"
+  "\030\005 \001(\005\"\224\001\n\021SCNvWaFishCapture\022\021\n\tchair_id"
+  "x\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005"
+  "\022\025\n\rnvwa_multiple\030\004 \001(\005\022\017\n\007bt_kind\030\005 \001(\005"
+  "\022#\n\nmulti_list\030\006 \003(\0132\017.F4BY.MultiInfo\"\243\001"
+  "\n\023SCBombGlobeFishInfo\022\021\n\tchair_idx\030\001 \001(\005"
+  "\022\r\n\005ratio\030\002 \001(\005\022\020\n\010fish_uid\030\003 \001(\005\022\r\n\005sta"
+  "ge\030\004 \001(\005\022\016\n\006bombId\030\005 \001(\005\022\022\n\ntotal_earn\030\006"
+  " \001(\005\022\023\n\013self_bombId\030\007 \001(\005\022\020\n\010originId\030\010 "
+  "\001(\005\"L\n\022CSBombGlobeFishHit\022\016\n\006bombId\030\001 \001("
+  "\005\022\017\n\007bt_type\030\002 \001(\005\022\025\n\rscreen_fishes\030\003 \003("
+  "\005\"e\n\027SCAnniversaryShowSelect\022\021\n\tchair_id"
+  "x\030\001 \001(\005\022\023\n\013show_select\030\002 \001(\010\022\023\n\013remain_t"
+  "ime\030\003 \001(\005\022\r\n\005stage\030\004 \001(\005\"\'\n\026CSAnniversar"
+  "ySelectReq\022\r\n\005stage\030\001 \001(\005\":\n\027Anniversary"
+  "Stage1Result\022\r\n\005score\030\001 \001(\005\022\020\n\010fish_uid\030"
+  "\002 \001(\005\"S\n\027AnniversaryStage2Result\022\022\n\nscor"
+  "e_list\030\001 \003(\005\022\022\n\ndrop_times\030\002 \001(\005\022\020\n\010mult"
+  "iple\030\003 \001(\005\"=\n\027AnniversaryStage3Result\022\021\n"
+  "\torigin_id\030\001 \001(\005\022\017\n\007self_id\030\002 \001(\005\"\247\002\n\031SC"
+  "AnniversarySelectResult\022\021\n\tchair_idx\030\001 \001"
+  "(\005\022\r\n\005stage\030\002 \001(\005\022\020\n\010bt_ratio\030\003 \001(\005\022#\n\nm"
+  "ulti_list\030\004 \003(\0132\017.F4BY.MultiInfo\022\022\n\ntota"
+  "l_earn\030\005 \001(\005\022\r\n\005death\030\006 \001(\010\022.\n\007result1\030\007"
+  " \001(\0132\035.F4BY.AnniversaryStage1Result\022.\n\007r"
+  "esult2\030\010 \001(\0132\035.F4BY.AnniversaryStage2Res"
+  "ult\022.\n\007result3\030\t \001(\0132\035.F4BY.AnniversaryS"
+  "tage3Result\"J\n\020CSAnniversaryHit\022\016\n\006bombI"
+  "d\030\001 \001(\005\022\017\n\007bt_type\030\002 \001(\005\022\025\n\rscreen_fishe"
+  "s\030\003 \003(\005\"\213\001\n\031SCSyncAnniversaryHitStage\022\021\n"
+  "\tchair_idx\030\001 \001(\005\022\021\n\torigin_id\030\002 \001(\005\022\017\n\007s"
+  "elf_id\030\003 \001(\005\022\r\n\005stage\030\004 \001(\005\022\022\n\ntotal_ear"
+  "n\030\005 \001(\005\022\024\n\014invalid_earn\030\006 \001(\005\"U\n\016Scallop"
+  "Lottery\022\n\n\002id\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\016\n\006sta"
+  "tus\030\003 \001(\005\022\031\n\006reward\030\004 \001(\0132\t.F4BY.Obj\"\242\001\n"
+  "\020SCCaptureScallop\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010"
+  "fish_uid\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\022\014\n\004time\030\004 "
+  "\001(\005\022*\n\014lottery_list\030\005 \003(\0132\024.F4BY.Scallop"
+  "Lottery\022 \n\rreward_config\030\006 \003(\0132\t.F4BY.Ob"
+  "j\"\033\n\rCSOpenScallop\022\n\n\002id\030\001 \001(\005\"I\n\rSCOpen"
+  "Scallop\022\021\n\tchair_idx\030\001 \001(\005\022%\n\007scallop\030\002 "
+  "\001(\0132\024.F4BY.ScallopLottery\"\212\001\n\026SCSettleSc"
+  "allopLottery\022\021\n\tchair_idx\030\001 \001(\005\022\014\n\004earn\030"
+  "\002 \001(\005\022*\n\014lottery_list\030\003 \003(\0132\024.F4BY.Scall"
+  "opLottery\022#\n\nmulti_list\030\004 \003(\0132\017.F4BY.Mul"
+  "tiInfo\"\224\001\n\024SCSyncScallopLottery\022\021\n\tchair"
+  "_idx\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\022\014\n\004time\030\003 \001(\005\022"
+  "*\n\014lottery_list\030\004 \003(\0132\024.F4BY.ScallopLott"
+  "ery\022 \n\rreward_config\030\005 \003(\0132\t.F4BY.Obj\"9\n"
+  "\017OpenChestReward\022\n\n\002id\030\001 \001(\005\022\032\n\003num\030\002 \001("
+  "\0132\r.F4BY.Decimal\"\247\001\n\023SCUpdateChestStatus"
+  "\022\021\n\tis_active\030\001 \001(\010\022#\n\nchest_type\030\002 \001(\0162"
+  "\017.F4BY.ChestType\022\026\n\016total_progress\030\003 \001(\005"
+  "\022\027\n\017remain_progress\030\004 \001(\005\022\r\n\005guide\030\005 \001(\010"
+  "\022\030\n\020available_reward\030\006 \001(\005\"\017\n\rCSChestCon"
+  "fig\"X\n\nChestBrief\022#\n\nchest_type\030\001 \001(\0162\017."
+  "F4BY.ChestType\022%\n\006reward\030\002 \003(\0132\025.F4BY.Op"
+  "enChestReward\"\270\001\n\rSCChestConfig\022\020\n\010end_t"
+  "ime\030\001 \001(\005\022*\n\020chest_brief_list\030\002 \003(\0132\020.F4"
+  "BY.ChestBrief\022\021\n\tmin_ratio\030\003 \001(\005\022\021\n\tauto"
+  "_open\030\004 \001(\010\0220\n\013auto_option\030\005 \001(\0162\033.F4BY."
+  "ChestAutoSelectOption\022\021\n\tis_enable\030\006 \001(\010"
+  "\"k\n\013SCOpenChest\022*\n\013reward_list\030\001 \003(\0132\025.F"
+  "4BY.OpenChestReward\0220\n\013auto_option\030\002 \001(\016"
+  "2\033.F4BY.ChestAutoSelectOption\"+\n\023CSSelec"
+  "tChestReward\022\024\n\014select_index\030\001 \001(\005\"<\n\023SC"
+  "SelectChestReward\022%\n\006reward\030\001 \001(\0132\025.F4BY"
+  ".OpenChestReward\"[\n\024CSChestSetAutoSelect"
+  "\0220\n\013auto_option\030\001 \001(\0162\033.F4BY.ChestAutoSe"
+  "lectOption\022\021\n\tauto_open\030\002 \001(\010\"[\n\024SCChest"
+  "SetAutoSelect\0220\n\013auto_option\030\001 \001(\0162\033.F4B"
+  "Y.ChestAutoSelectOption\022\021\n\tauto_open\030\002 \001"
+  "(\010\"%\n\020CSChestSetEnable\022\021\n\tis_enable\030\001 \001("
+  "\010\"%\n\020SCChestSetEnable\022\021\n\tis_enable\030\001 \001(\010"
+  "\"4\n\014SCSpecEffect\022\021\n\tcostMoney\030\001 \001(\005\022\021\n\te"
+  "arnMoney\030\002 \001(\005\"n\n\021SCTortoiseExplode\022\021\n\tc"
+  "hair_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005\022\021\n\tbull"
+  "et_id\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022\022\n\nmax_effect"
+  "\030\005 \001(\005\"S\n\nRewardInfo\022\017\n\007prop_id\030\001 \001(\005\022\020\n"
+  "\010prop_num\030\002 \001(\005\022\017\n\007quality\030\003 \001(\005\022\021\n\tspec"
+  "_show\030\004 \001(\010\"\177\n\013MissionInfo\022\022\n\ndraw_times"
+  "\030\001 \001(\005\022%\n\013reward_list\030\002 \003(\0132\020.F4BY.Rewar"
+  "dInfo\022\020\n\010complete\030\003 \001(\010\022\017\n\007receive\030\004 \001(\010"
+  "\022\022\n\nmission_id\030\005 \001(\005\"T\n\rBigRewardInfo\022\030\n"
+  "\020big_reward_times\030\001 \001(\005\022)\n\017draw_rewardLi"
+  "st\030\002 \003(\0132\020.F4BY.RewardInfo\"\340\001\n\022TreasureH"
+  "untConfig\022\014\n\004term\030\001 \001(\005\022\022\n\nstart_time\030\002 "
+  "\001(\005\022\020\n\010end_time\030\003 \001(\005\022\016\n\006enable\030\004 \001(\010\022,\n"
+  "\017big_reward_info\030\005 \001(\0132\023.F4BY.BigRewardI"
+  "nfo\022%\n\013reward_list\030\006 \003(\0132\020.F4BY.RewardIn"
+  "fo\022\020\n\010min_draw\030\007 \001(\005\022\020\n\010max_draw\030\010 \001(\005\022\r"
+  "\n\005topic\030\t \001(\005\"$\n\rCSSyncConfigs\022\023\n\013config"
+  "_type\030\001 \001(\005\"B\n\rSCSyncConfigs\0221\n\017treasure"
+  "_config\030\001 \001(\0132\030.F4BY.TreasureHuntConfig\""
+  ".\n\014CSDrawReward\022\013\n\003num\030\001 \001(\005\022\021\n\tdraw_typ"
+  "e\030\002 \001(\005\"5\n\014SCDrawReward\022%\n\013reward_list\030\001"
+  " \003(\0132\020.F4BY.RewardInfo\"\027\n\025CSTreasureHunt"
+  "Mission\"T\n\025SCTreasureHuntMission\022\'\n\014miss"
+  "ion_list\030\001 \003(\0132\021.F4BY.MissionInfo\022\022\n\ndra"
+  "w_times\030\002 \001(\005\",\n\026CSReceiveMissionReward\022"
+  "\022\n\nmission_id\030\001 \001(\005\"\?\n\026SCReceiveMissionR"
+  "eward\022%\n\013reward_list\030\001 \003(\0132\020.F4BY.Reward"
+  "Info\"\r\n\013CSDrawTimes\"v\n\013SCDrawTimes\022\030\n\020to"
+  "tal_draw_times\030\001 \001(\005\022\032\n\022big_reward_proce"
+  "ss\030\002 \001(\005\022\027\n\017free_draw_times\030\003 \001(\005\022\030\n\020dra"
+  "w_tickers_num\030\004 \001(\005\"\'\n\020CSVerifyActivity\022"
+  "\023\n\013activity_id\030\001 \001(\005\"5\n\020SCVerifyActivity"
+  "\022\014\n\004open\030\001 \001(\010\022\023\n\013activity_id\030\002 \001(\005\"\316\001\n\007"
+  "Package\022\022\n\npackage_id\030\001 \001(\005\022\r\n\005limit\030\002 \001"
+  "(\005\022\025\n\rconsume_price\030\003 \001(\005\022\022\n\nlimit_type\030"
+  "\004 \001(\005\022\025\n\rconsume_props\030\005 \001(\005\022\026\n\016purchase"
+  "_times\030\006 \001(\005\022%\n\013reward_list\030\007 \003(\0132\020.F4BY"
+  ".RewardInfo\022\014\n\004lock\030\010 \001(\010\022\021\n\tvip_limit\030\t"
+  " \001(\005\"-\n\025CSTreasureHuntPackage\022\024\n\014package"
+  "_type\030\001 \001(\005\"R\n\025SCTreasureHuntPackage\022#\n\014"
+  "package_list\030\001 \003(\0132\r.F4BY.Package\022\024\n\014pac"
+  "kage_type\030\002 \001(\005\"V\n\020ExchangeShopInfo\022\r\n\005l"
+  "evel\030\001 \001(\005\022#\n\014package_list\030\002 \003(\0132\r.F4BY."
+  "Package\022\016\n\006unlock\030\003 \001(\010\"\020\n\016CSExchangeSho"
+  "p\"B\n\016SCExchangeShop\0220\n\020exchangeShopList\030"
+  "\001 \003(\0132\026.F4BY.ExchangeShopInfo\"\'\n\021CSPurch"
+  "asePackage\022\022\n\npackage_id\030\001 \001(\005\"3\n\021SCPurc"
+  "hasePackage\022\036\n\007package\030\001 \001(\0132\r.F4BY.Pack"
+  "age\"\024\n\022CSVerifyTermChange\"K\n\022SCVerifyTer"
+  "mChange\022\016\n\006change\030\001 \001(\010\022%\n\013reward_list\030\002"
+  " \003(\0132\020.F4BY.RewardInfo\"M\n\017SCWaterDropInf"
+  "o\022\016\n\006enable\030\001 \001(\010\022\022\n\ndrop_count\030\002 \001(\005\022\026\n"
+  "\016fragment_count\030\003 \001(\005\"\035\n\010CSBuyGun\022\021\n\tgun"
+  "_level\030\001 \001(\005\",\n\010SCBuyGun\022\021\n\tgun_level\030\001 "
+  "\001(\005\022\r\n\005price\030\002 \001(\005\"\036\n\nCSBuyWings\022\020\n\010wing"
+  "s_id\030\001 \001(\005\"-\n\nSCBuyWings\022\020\n\010wings_id\030\001 \001"
+  "(\005\022\r\n\005price\030\002 \001(\005\"9\n\021SCNotifyActStatus\022\020"
+  "\n\010act_type\030\001 \001(\005\022\022\n\nact_status\030\002 \001(\005\"%\n\020"
+  "CSSetDoubleShoot\022\021\n\textra_mul\030\001 \001(\005\"(\n\016C"
+  "SFreePoolInfo\022\026\n\016prepareLottery\030\001 \001(\010\"\"\n"
+  "\021CSFreePoolLottery\022\r\n\005level\030\001 \001(\005\"&\n\016CSF"
+  "reePoolOpen\022\024\n\014openFreePool\030\001 \001(\010*\226\023\n\rEM"
+  "sgIDSubGame\022\010\n\004None\020\000\022\016\n\tHeartBeat\020\350\007\022\027\n"
+  "\022LoginGameWithToken\020\351\007\022\016\n\tUserReady\020\352\007\022\023"
+  "\n\016SetProbability\020\353\007\022\023\n\016FishTracesList\020\354\007"
+  "\022\020\n\013ChangeScene\020\355\007\022\026\n\021FishOutsideScreen\020"
+  "\356\007\022\r\n\010LockFish\020\357\007\022\016\n\tUserShoot\020\360\007\022\014\n\007Hit"
+  "Fish\020\361\007\022\017\n\nCrazySkill\020\362\007\022\016\n\tSyncMoney\020\363\007"
+  "\022\021\n\014NotifyLogout\020\364\007\022\020\n\013SyncFishReq\020\365\007\022\020\n"
+  "\013SyncFishRsp\020\366\007\022\026\n\021UserRunBackground\020\367\007\022"
+  "\023\n\016HitSpecialFish\020\370\007\022\021\n\014SyncPropInfo\020\371\007\022"
+  "\020\n\013NotifyLogin\020\372\007\022\020\n\013TrebleSkill\020\373\007\022\014\n\007U"
+  "serLog\020\374\007\022\016\n\tUserEvent\020\375\007\022\023\n\016UserInfoNot"
+  "ify\020\201\010\022\023\n\016GameInfoNotify\020\202\010\022\t\n\004Chat\020\203\010\022\016"
+  "\n\tGainAward\020\204\010\022\017\n\nPropStatus\020\205\010\022\023\n\016PropD"
+  "ropNotify\020\206\010\022\014\n\007UseProp\020\207\010\022\017\n\nFrozenTime"
+  "\020\210\010\022\021\n\014UserPoolInfo\020\222\010\022\023\n\016UserPoolStatus"
+  "\020\223\010\022\024\n\017UserPoolPreDraw\020\224\010\022\021\n\014UserPoolDra"
+  "w\020\225\010\022\020\n\013UserPoolAdd\020\226\010\022\024\n\017TorpedoPreShoo"
+  "t\020\227\010\022\027\n\022TorpedoCancelShoot\020\230\010\022\021\n\014Torpedo"
+  "Shoot\020\231\010\022\017\n\nTorpedoHit\020\232\010\022\r\n\010CallFish\020\233\010"
+  "\022\014\n\007ComTask\020\234\010\022\r\n\010TaskInfo\020\235\010\022\022\n\rSaveSki"
+  "llTime\020\236\010\022\021\n\014SevenDayInfo\020\237\010\022\022\n\rSevenDay"
+  "Award\020\240\010\022\023\n\016VipChargeAward\020\241\010\022\017\n\nInfoRed"
+  "Dot\020\242\010\022\021\n\014ActivityInfo\020\243\010\022\023\n\016ClickStatis"
+  "tic\020\244\010\022\016\n\tAwardPool\020\245\010\022\026\n\021NewClickStatis"
+  "tic\020\246\010\022\027\n\022GetAwardPoolRecord\020\247\010\022\025\n\020Treas"
+  "ureFishInfo\020\250\010\022\030\n\023TreasureFishCatched\020\251\010"
+  "\022\027\n\022MatchPackAdditionX\020\252\010\022\024\n\017MatchPackIn"
+  "vail\020\253\010\022\024\n\017MatchPackBuying\020\254\010\022\023\n\016GameIte"
+  "mSwitch\020\255\010\022\022\n\rLuckyDrawInfo\020\256\010\022\026\n\021GetLuc"
+  "kyTaskAward\020\257\010\022\020\n\013LuckyRedDot\020\260\010\022\020\n\013GetL"
+  "uckyNum\020\261\010\022\023\n\016GetLuckyRecord\020\262\010\022\021\n\014GetOw"
+  "nRecord\020\263\010\022\027\n\022UserPoolDoubleInfo\020\314\010\022\023\n\016U"
+  "serPoolDouble\020\315\010\022\022\n\rLuckyPoolInfo\020\316\010\022\022\n\r"
+  "LuckyPoolDraw\020\317\010\022\r\n\010BombInfo\020\326\010\022\024\n\017BombH"
+  "itFishInfo\020\327\010\022\r\n\010SyncBomb\020\330\010\022\023\n\016SyncBomb"
+  "Finish\020\331\010\022\021\n\014GetMagicCube\020\332\010\022\030\n\023SyncMagi"
+  "cCubeBtInfo\020\333\010\022\013\n\006PreHit\020\334\010\022\r\n\010PreShoot\020"
+  "\335\010\022\031\n\024SyncValentineDayFish\020\336\010\022\026\n\021BombGlo"
+  "beFishInfo\020\337\010\022\025\n\020BombGlobeFishHit\020\340\010\022\032\n\025"
+  "AnniversaryShowSelect\020\355\010\022\031\n\024AnniversaryS"
+  "electReq\020\356\010\022\034\n\027AnniversarySelectResult\020\357"
+  "\010\022\023\n\016AnniversaryHit\020\360\010\022\034\n\027SyncAnniversar"
+  "yHitStage\020\361\010\022\026\n\021SyncKiRinHitStage\020\362\010\022\024\n\017"
+  "NvWaFishCapture\020\363\010\022\023\n\016CaptureScallop\020\365\010\022"
+  "\031\n\024SettleScallopLottery\020\366\010\022\027\n\022SyncScallo"
+  "pLottery\020\367\010\022\020\n\013OpenScallop\020\370\010\022\026\n\021UpdateC"
+  "hestStatus\020\371\010\022\020\n\013ChestConfig\020\372\010\022\016\n\tOpenC"
+  "hest\020\373\010\022\026\n\021SelectChestReward\020\374\010\022\027\n\022Chest"
+  "SetAutoSelect\020\375\010\022\017\n\nSpecEffect\020\376\010\022\023\n\016Che"
+  "stSetEnable\020\377\010\022\022\n\rFrozenFishRep\020\260\t\022\024\n\017To"
+  "rtoiseExplode\020\272\t\022\r\n\010SetWings\020\273\t\022\020\n\013SyncC"
+  "onfigs\020\274\t\022\017\n\nDrawReward\020\275\t\022\030\n\023TreasureHu"
+  "ntMission\020\276\t\022\031\n\024ReceiveMissionReward\020\277\t\022"
+  "\016\n\tDrawTimes\020\301\t\022\023\n\016VerifyActivity\020\302\t\022\021\n\014"
+  "ExchangeShop\020\303\t\022\030\n\023TreasureHuntPackage\020\304"
+  "\t\022\024\n\017PurchasePackage\020\305\t\022\025\n\020VerifyTermCha"
+  "nge\020\306\t\022\013\n\006BuyGun\020\307\t\022\r\n\010BuyWings\020\310\t\022\022\n\rWa"
+  "terDropInfo\020\316\t\022\024\n\017NotifyActStatus\020\317\t\022\023\n\016"
+  "SetDoubleShoot\020\320\t\022\027\n\021LotteryResult3002\020\241"
+  "\234\001\022\027\n\021LotteryResult3005\020\242\234\001\022\022\n\014FreePoolI"
+  "nfo\020\211\244\001\022\025\n\017FreePoolLottery\020\212\244\001\022\022\n\014FreePo"
+  "olOpen\020\213\244\001*\373\007\n\007ErrCode\022\010\n\004Succ\020\000\022\027\n\022Alre"
+  "adyInOtherGame\020\361\001\022\t\n\004Fail\020\350\007\022\030\n\023LoadProp"
+  "sDataFailed\020\221N\022\032\n\025CanNotFindPlayerPoint\020"
+  "\222N\022\025\n\020ParameterIsWrong\020\223N\022\020\n\013LackOfMoney"
+  "\020\224N\022\031\n\024FreeTimesChangeRatio\020\225N\022\r\n\010IsNotS"
+  "up\020\226N\022\026\n\021DeserializeFailed\020\227N\022\023\n\016PlayerN"
+  "otExist\020\230N\022\027\n\022PlayerAlreadyLogin\020\231N\022\031\n\024L"
+  "oadPlayerDataFailed\020\232N\022\025\n\020AllocTableFail"
+  "ed\020\233N\022\021\n\014DefendPlugIn\020\234N\022\026\n\021QPEnterRoomF"
+  "ailed\020\235N\022\034\n\027QPBaseUserInfoGetFailed\020\236N\022\025"
+  "\n\020QPReadGoldFailed\020\237N\022\024\n\017ThisTableIsFull"
+  "\020\240N\022\021\n\014PropNoEnough\020\241N\022\022\n\rPropRoomLimit\020"
+  "\242N\022\016\n\tPropUsing\020\243N\022\021\n\014PropNotExist\020\244N\022\024\n"
+  "\017PropUsingSetGun\020\245N\022\023\n\016ThisRoomIsFull\020\246N"
+  "\022\021\n\014ServerClosed\020\247N\022\r\n\010PropHave\020\250N\022\022\n\rPr"
+  "opCanNotBuy\020\251N\022\023\n\016UserPoolNoMeet\020\256N\022\025\n\020U"
+  "serPoolToHigher\020\257N\022\027\n\022CallFishTideComing"
+  "\020\260N\022\021\n\014CallFishFull\020\261N\022\025\n\020UserPoolLoadFa"
+  "il\020\262N\022\031\n\024FrozenFishTideComing\020\263N\022\024\n\017Froz"
+  "enNotEnough\020\264N\022\021\n\014FrozenWaitCD\020\265N\022\023\n\016Fro"
+  "zenFishTide\020\266N\022\021\n\014IllegalParam\020\270N\022\020\n\013Con"
+  "figError\020\271N\022\030\n\023PreventCheatWarning\020\272N\022\022\n"
+  "\rOpenChestFail\020\302N\022\032\n\025SelectChestRewardFa"
+  "il\020\303N\022\035\n\030NotMetTaskConditionError\020\304N\022\021\n\014"
+  "DrawNumError\020\305N\022\027\n\022PurchaseLimitError\020\306N"
+  "\022\036\n\031TreasureHuntNotStartError\020\307N*\347\001\n\rUse"
+  "rEventType\022\031\n\025UserEventTypeHideIcon\020\000\022\033\n"
+  "\027UserEventTypeCrazySkill\020\001\022\031\n\025UserEventT"
+  "ypeUserPool\020\002\022\033\n\027UserEventTypeMultiShoot"
+  "\020\003\022\026\n\022UserEventTypeStore\020\004\022\034\n\030UserEventT"
+  "ypeCustomTable\020\005\022\034\n\030UserEventTypeChangeT"
+  "able\020\006\022\022\n\016UserLogTypeMax\020\007*7\n\014CallFishTy"
+  "pe\022\022\n\016CallTypeNormal\020\000\022\023\n\017CallTypeSpecia"
+  "l\020\001*s\n\tChestType\022\021\n\rChestTypeNone\020\000\022\026\n\022C"
+  "hestTypePorcelain\020\001\022\023\n\017ChestTypeBronze\020\002"
+  "\022\023\n\017ChestTypeSilver\020\003\022\021\n\rChestTypeGold\020\004"
+  "*V\n\025ChestAutoSelectOption\022\035\n\031ChestAutoSe"
+  "lectOptionNone\020\000\022\023\n\017RedPacketTicket\020\001\022\t\n"
+  "\005Money\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_F4BY_2eproto_deps[1] = {
 };
@@ -7153,7 +7155,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_F4B
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_F4BY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_F4BY_2eproto = {
-  false, false, descriptor_table_protodef_F4BY_2eproto, "F4BY.proto", 22955,
+  false, false, descriptor_table_protodef_F4BY_2eproto, "F4BY.proto", 22976,
   &descriptor_table_F4BY_2eproto_once, descriptor_table_F4BY_2eproto_sccs, descriptor_table_F4BY_2eproto_deps, 228, 0,
   schemas, file_default_instances, TableStruct_F4BY_2eproto::offsets,
   file_level_metadata_F4BY_2eproto, 228, file_level_enum_descriptors_F4BY_2eproto, file_level_service_descriptors_F4BY_2eproto,
@@ -13807,16 +13809,16 @@ CSHitFish::CSHitFish(const CSHitFish& from)
       screen_fishes_(from.screen_fishes_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&fish_uid_, &from.fish_uid_,
-    static_cast<size_t>(reinterpret_cast<char*>(&bullet_type_) -
-    reinterpret_cast<char*>(&fish_uid_)) + sizeof(bullet_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&origin_uid_) -
+    reinterpret_cast<char*>(&fish_uid_)) + sizeof(origin_uid_));
   // @@protoc_insertion_point(copy_constructor:F4BY.CSHitFish)
 }
 
 void CSHitFish::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&fish_uid_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&bullet_type_) -
-      reinterpret_cast<char*>(&fish_uid_)) + sizeof(bullet_type_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&origin_uid_) -
+      reinterpret_cast<char*>(&fish_uid_)) + sizeof(origin_uid_));
 }
 
 CSHitFish::~CSHitFish() {
@@ -13852,8 +13854,8 @@ void CSHitFish::Clear() {
 
   screen_fishes_.Clear();
   ::memset(&fish_uid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&bullet_type_) -
-      reinterpret_cast<char*>(&fish_uid_)) + sizeof(bullet_type_));
+      reinterpret_cast<char*>(&origin_uid_) -
+      reinterpret_cast<char*>(&fish_uid_)) + sizeof(origin_uid_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -13906,6 +13908,13 @@ const char* CSHitFish::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           bullet_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 origin_uid = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          origin_uid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13976,6 +13985,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_bullet_type(), target);
   }
 
+  // int32 origin_uid = 7;
+  if (this->origin_uid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_origin_uid(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -14042,6 +14057,13 @@ size_t CSHitFish::ByteSizeLong() const {
         this->_internal_bullet_type());
   }
 
+  // int32 origin_uid = 7;
+  if (this->origin_uid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_origin_uid());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -14089,6 +14111,9 @@ void CSHitFish::MergeFrom(const CSHitFish& from) {
   if (from.bullet_type() != 0) {
     _internal_set_bullet_type(from._internal_bullet_type());
   }
+  if (from.origin_uid() != 0) {
+    _internal_set_origin_uid(from._internal_origin_uid());
+  }
 }
 
 void CSHitFish::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -14114,8 +14139,8 @@ void CSHitFish::InternalSwap(CSHitFish* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   screen_fishes_.InternalSwap(&other->screen_fishes_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSHitFish, bullet_type_)
-      + sizeof(CSHitFish::bullet_type_)
+      PROTOBUF_FIELD_OFFSET(CSHitFish, origin_uid_)
+      + sizeof(CSHitFish::origin_uid_)
       - PROTOBUF_FIELD_OFFSET(CSHitFish, fish_uid_)>(
           reinterpret_cast<char*>(&fish_uid_),
           reinterpret_cast<char*>(&other->fish_uid_));

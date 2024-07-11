@@ -5464,6 +5464,7 @@ class CSHitFish PROTOBUF_FINAL :
     kChairIdFieldNumber = 4,
     kRatioFieldNumber = 5,
     kBulletTypeFieldNumber = 6,
+    kOriginUidFieldNumber = 7,
   };
   // repeated int32 screen_fishes = 3;
   int screen_fishes_size() const;
@@ -5532,6 +5533,15 @@ class CSHitFish PROTOBUF_FINAL :
   void _internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 origin_uid = 7;
+  void clear_origin_uid();
+  ::PROTOBUF_NAMESPACE_ID::int32 origin_uid() const;
+  void set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_origin_uid() const;
+  void _internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSHitFish)
  private:
   class _Internal;
@@ -5546,6 +5556,7 @@ class CSHitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 bullet_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -41354,6 +41365,26 @@ inline void CSHitFish::_internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 
 inline void CSHitFish::set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_bullet_type(value);
   // @@protoc_insertion_point(field_set:F4BY.CSHitFish.bullet_type)
+}
+
+// int32 origin_uid = 7;
+inline void CSHitFish::clear_origin_uid() {
+  origin_uid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::_internal_origin_uid() const {
+  return origin_uid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::origin_uid() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSHitFish.origin_uid)
+  return _internal_origin_uid();
+}
+inline void CSHitFish::_internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  origin_uid_ = value;
+}
+inline void CSHitFish::set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_origin_uid(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSHitFish.origin_uid)
 }
 
 // -------------------------------------------------------------------
