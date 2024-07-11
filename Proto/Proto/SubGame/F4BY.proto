@@ -441,6 +441,7 @@ message SCHitSpecialFish
 	repeated MultiInfo multi_list = 15;
 	int32 origin_uid = 16;
 	int32 dragon_score = 17;
+	bool IsCapture = 18;
 }
 
 message SyncPropInfoX

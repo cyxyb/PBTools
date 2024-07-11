@@ -6116,10 +6116,11 @@ class SCHitSpecialFish PROTOBUF_FINAL :
     kEarnFieldNumber = 3,
     kFishValueFieldNumber = 4,
     kUserScoreFieldNumber = 5,
-    kDeathFieldNumber = 6,
     kGrowStageFieldNumber = 7,
     kMultipleFieldNumber = 8,
     kHitBulletTypeFieldNumber = 12,
+    kDeathFieldNumber = 6,
+    kIsCaptureFieldNumber = 18,
     kPropNoFieldNumber = 13,
     kMagicCubeMultiFieldNumber = 14,
     kOriginUidFieldNumber = 16,
@@ -6242,15 +6243,6 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   void _internal_set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // bool death = 6;
-  void clear_death();
-  bool death() const;
-  void set_death(bool value);
-  private:
-  bool _internal_death() const;
-  void _internal_set_death(bool value);
-  public:
-
   // int32 grow_stage = 7;
   void clear_grow_stage();
   ::PROTOBUF_NAMESPACE_ID::int32 grow_stage() const;
@@ -6276,6 +6268,24 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_hit_bullet_type() const;
   void _internal_set_hit_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool death = 6;
+  void clear_death();
+  bool death() const;
+  void set_death(bool value);
+  private:
+  bool _internal_death() const;
+  void _internal_set_death(bool value);
+  public:
+
+  // bool IsCapture = 18;
+  void clear_iscapture();
+  bool iscapture() const;
+  void set_iscapture(bool value);
+  private:
+  bool _internal_iscapture() const;
+  void _internal_set_iscapture(bool value);
   public:
 
   // int32 prop_no = 13;
@@ -6330,10 +6340,11 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 earn_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_value_;
   ::PROTOBUF_NAMESPACE_ID::int64 user_score_;
-  bool death_;
   ::PROTOBUF_NAMESPACE_ID::int32 grow_stage_;
   ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
   ::PROTOBUF_NAMESPACE_ID::int32 hit_bullet_type_;
+  bool death_;
+  bool iscapture_;
   ::PROTOBUF_NAMESPACE_ID::int32 prop_no_;
   ::PROTOBUF_NAMESPACE_ID::int32 magic_cube_multi_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
@@ -42195,6 +42206,26 @@ inline void SCHitSpecialFish::_internal_set_dragon_score(::PROTOBUF_NAMESPACE_ID
 inline void SCHitSpecialFish::set_dragon_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_dragon_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.dragon_score)
+}
+
+// bool IsCapture = 18;
+inline void SCHitSpecialFish::clear_iscapture() {
+  iscapture_ = false;
+}
+inline bool SCHitSpecialFish::_internal_iscapture() const {
+  return iscapture_;
+}
+inline bool SCHitSpecialFish::iscapture() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.IsCapture)
+  return _internal_iscapture();
+}
+inline void SCHitSpecialFish::_internal_set_iscapture(bool value) {
+  
+  iscapture_ = value;
+}
+inline void SCHitSpecialFish::set_iscapture(bool value) {
+  _internal_set_iscapture(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.IsCapture)
 }
 
 // -------------------------------------------------------------------
