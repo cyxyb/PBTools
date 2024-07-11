@@ -442,6 +442,9 @@ message SCHitSpecialFish
 	int32 origin_uid = 16;
 	int32 dragon_score = 17;
 	bool IsCapture = 18;
+	int32 ratio = 19;
+	int32 accum_money = 20;
+	int32 cur_stage = 21;
 }
 
 message SyncPropInfoX

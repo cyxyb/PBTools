@@ -6125,6 +6125,9 @@ class SCHitSpecialFish PROTOBUF_FINAL :
     kMagicCubeMultiFieldNumber = 14,
     kOriginUidFieldNumber = 16,
     kDragonScoreFieldNumber = 17,
+    kRatioFieldNumber = 19,
+    kAccumMoneyFieldNumber = 20,
+    kCurStageFieldNumber = 21,
   };
   // repeated .F4BY.Object shock_fishes = 9;
   int shock_fishes_size() const;
@@ -6324,6 +6327,33 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   void _internal_set_dragon_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 ratio = 19;
+  void clear_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 accum_money = 20;
+  void clear_accum_money();
+  ::PROTOBUF_NAMESPACE_ID::int32 accum_money() const;
+  void set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_accum_money() const;
+  void _internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 cur_stage = 21;
+  void clear_cur_stage();
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_stage() const;
+  void set_cur_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_stage() const;
+  void _internal_set_cur_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SCHitSpecialFish)
  private:
   class _Internal;
@@ -6349,6 +6379,9 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 magic_cube_multi_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
   ::PROTOBUF_NAMESPACE_ID::int32 dragon_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 accum_money_;
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_stage_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -42226,6 +42259,66 @@ inline void SCHitSpecialFish::_internal_set_iscapture(bool value) {
 inline void SCHitSpecialFish::set_iscapture(bool value) {
   _internal_set_iscapture(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.IsCapture)
+}
+
+// int32 ratio = 19;
+inline void SCHitSpecialFish::clear_ratio() {
+  ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_ratio() const {
+  return ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::ratio() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.ratio)
+  return _internal_ratio();
+}
+inline void SCHitSpecialFish::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ratio_ = value;
+}
+inline void SCHitSpecialFish::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ratio(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.ratio)
+}
+
+// int32 accum_money = 20;
+inline void SCHitSpecialFish::clear_accum_money() {
+  accum_money_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_accum_money() const {
+  return accum_money_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::accum_money() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.accum_money)
+  return _internal_accum_money();
+}
+inline void SCHitSpecialFish::_internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  accum_money_ = value;
+}
+inline void SCHitSpecialFish::set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_accum_money(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.accum_money)
+}
+
+// int32 cur_stage = 21;
+inline void SCHitSpecialFish::clear_cur_stage() {
+  cur_stage_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_cur_stage() const {
+  return cur_stage_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::cur_stage() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.cur_stage)
+  return _internal_cur_stage();
+}
+inline void SCHitSpecialFish::_internal_set_cur_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  cur_stage_ = value;
+}
+inline void SCHitSpecialFish::set_cur_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_cur_stage(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.cur_stage)
 }
 
 // -------------------------------------------------------------------
