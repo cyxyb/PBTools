@@ -499,6 +499,8 @@ message FishTrace
 	repeated int32 beads_list = 7;
 	int32 fish_torpedoId = 8;
 	int32 fish_road = 9;
+	int32 fish_value = 10;
+	int32 accum_money = 11;
 }
 
 message SCFishTracesList

@@ -7481,6 +7481,8 @@ class FishTrace PROTOBUF_FINAL :
     kAliveTimeFieldNumber = 6,
     kFishTorpedoIdFieldNumber = 8,
     kFishRoadFieldNumber = 9,
+    kFishValueFieldNumber = 10,
+    kAccumMoneyFieldNumber = 11,
   };
   // repeated int32 beads_list = 7;
   int beads_list_size() const;
@@ -7576,6 +7578,24 @@ class FishTrace PROTOBUF_FINAL :
   void _internal_set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 fish_value = 10;
+  void clear_fish_value();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value() const;
+  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_value() const;
+  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 accum_money = 11;
+  void clear_accum_money();
+  ::PROTOBUF_NAMESPACE_ID::int32 accum_money() const;
+  void set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_accum_money() const;
+  void _internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.FishTrace)
  private:
   class _Internal;
@@ -7593,6 +7613,8 @@ class FishTrace PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 alive_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_torpedoid_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_road_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 accum_money_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -43058,6 +43080,46 @@ inline void FishTrace::_internal_set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 va
 inline void FishTrace::set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_road(value);
   // @@protoc_insertion_point(field_set:F4BY.FishTrace.fish_road)
+}
+
+// int32 fish_value = 10;
+inline void FishTrace::clear_fish_value() {
+  fish_value_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTrace::_internal_fish_value() const {
+  return fish_value_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTrace::fish_value() const {
+  // @@protoc_insertion_point(field_get:F4BY.FishTrace.fish_value)
+  return _internal_fish_value();
+}
+inline void FishTrace::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_value_ = value;
+}
+inline void FishTrace::set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_fish_value(value);
+  // @@protoc_insertion_point(field_set:F4BY.FishTrace.fish_value)
+}
+
+// int32 accum_money = 11;
+inline void FishTrace::clear_accum_money() {
+  accum_money_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTrace::_internal_accum_money() const {
+  return accum_money_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTrace::accum_money() const {
+  // @@protoc_insertion_point(field_get:F4BY.FishTrace.accum_money)
+  return _internal_accum_money();
+}
+inline void FishTrace::_internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  accum_money_ = value;
+}
+inline void FishTrace::set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_accum_money(value);
+  // @@protoc_insertion_point(field_set:F4BY.FishTrace.accum_money)
 }
 
 // -------------------------------------------------------------------
