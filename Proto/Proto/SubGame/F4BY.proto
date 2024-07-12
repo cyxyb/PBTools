@@ -397,6 +397,7 @@ message CSHitFish
 	int32 ratio	= 5;
 	int32 bullet_type = 6;
 	int32 origin_uid = 7;
+	int32 bomb_id = 8;
 }
 
 message MultiInfo
@@ -1307,6 +1308,8 @@ message CSBombInfo
 	float x = 1;
 	float y = 2;
 	int32 chair_idx = 3;
+	float nextX = 4;
+	float nextY = 5;
 }
 
 message SCSyncBomb

@@ -5465,6 +5465,7 @@ class CSHitFish PROTOBUF_FINAL :
     kRatioFieldNumber = 5,
     kBulletTypeFieldNumber = 6,
     kOriginUidFieldNumber = 7,
+    kBombIdFieldNumber = 8,
   };
   // repeated int32 screen_fishes = 3;
   int screen_fishes_size() const;
@@ -5542,6 +5543,15 @@ class CSHitFish PROTOBUF_FINAL :
   void _internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 bomb_id = 8;
+  void clear_bomb_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 bomb_id() const;
+  void set_bomb_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bomb_id() const;
+  void _internal_set_bomb_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSHitFish)
  private:
   class _Internal;
@@ -5557,6 +5567,7 @@ class CSHitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 bullet_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bomb_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -26053,6 +26064,8 @@ class CSBombInfo PROTOBUF_FINAL :
     kXFieldNumber = 1,
     kYFieldNumber = 2,
     kChairIdxFieldNumber = 3,
+    kNextXFieldNumber = 4,
+    kNextYFieldNumber = 5,
   };
   // float x = 1;
   void clear_x();
@@ -26081,6 +26094,24 @@ class CSBombInfo PROTOBUF_FINAL :
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // float nextX = 4;
+  void clear_nextx();
+  float nextx() const;
+  void set_nextx(float value);
+  private:
+  float _internal_nextx() const;
+  void _internal_set_nextx(float value);
+  public:
+
+  // float nextY = 5;
+  void clear_nexty();
+  float nexty() const;
+  void set_nexty(float value);
+  private:
+  float _internal_nexty() const;
+  void _internal_set_nexty(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSBombInfo)
  private:
   class _Internal;
@@ -26091,6 +26122,8 @@ class CSBombInfo PROTOBUF_FINAL :
   float x_;
   float y_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  float nextx_;
+  float nexty_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -41453,6 +41486,26 @@ inline void CSHitFish::set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.CSHitFish.origin_uid)
 }
 
+// int32 bomb_id = 8;
+inline void CSHitFish::clear_bomb_id() {
+  bomb_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::_internal_bomb_id() const {
+  return bomb_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitFish::bomb_id() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSHitFish.bomb_id)
+  return _internal_bomb_id();
+}
+inline void CSHitFish::_internal_set_bomb_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bomb_id_ = value;
+}
+inline void CSHitFish::set_bomb_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bomb_id(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSHitFish.bomb_id)
+}
+
 // -------------------------------------------------------------------
 
 // MultiInfo
@@ -53018,6 +53071,46 @@ inline void CSBombInfo::_internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 v
 inline void CSBombInfo::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_idx(value);
   // @@protoc_insertion_point(field_set:F4BY.CSBombInfo.chair_idx)
+}
+
+// float nextX = 4;
+inline void CSBombInfo::clear_nextx() {
+  nextx_ = 0;
+}
+inline float CSBombInfo::_internal_nextx() const {
+  return nextx_;
+}
+inline float CSBombInfo::nextx() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSBombInfo.nextX)
+  return _internal_nextx();
+}
+inline void CSBombInfo::_internal_set_nextx(float value) {
+  
+  nextx_ = value;
+}
+inline void CSBombInfo::set_nextx(float value) {
+  _internal_set_nextx(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSBombInfo.nextX)
+}
+
+// float nextY = 5;
+inline void CSBombInfo::clear_nexty() {
+  nexty_ = 0;
+}
+inline float CSBombInfo::_internal_nexty() const {
+  return nexty_;
+}
+inline float CSBombInfo::nexty() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSBombInfo.nextY)
+  return _internal_nexty();
+}
+inline void CSBombInfo::_internal_set_nexty(float value) {
+  
+  nexty_ = value;
+}
+inline void CSBombInfo::set_nexty(float value) {
+  _internal_set_nexty(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSBombInfo.nextY)
 }
 
 // -------------------------------------------------------------------
