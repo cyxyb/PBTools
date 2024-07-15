@@ -446,6 +446,8 @@ message SCHitSpecialFish
 	int32 ratio = 19;
 	int32 accum_money = 20;
 	int32 cur_stage = 21;
+	int32 rand_multi = 22;
+	repeated int32 uid_list = 23;
 }
 
 message SyncPropInfoX

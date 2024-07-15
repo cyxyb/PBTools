@@ -6121,6 +6121,7 @@ class SCHitSpecialFish PROTOBUF_FINAL :
     kShockFishesFieldNumber = 9,
     kDropPropsFieldNumber = 10,
     kMultiListFieldNumber = 15,
+    kUidListFieldNumber = 23,
     kWheelFieldNumber = 11,
     kChairIdxFieldNumber = 1,
     kFishUidFieldNumber = 2,
@@ -6139,6 +6140,7 @@ class SCHitSpecialFish PROTOBUF_FINAL :
     kRatioFieldNumber = 19,
     kAccumMoneyFieldNumber = 20,
     kCurStageFieldNumber = 21,
+    kRandMultiFieldNumber = 22,
   };
   // repeated .F4BY.Object shock_fishes = 9;
   int shock_fishes_size() const;
@@ -6193,6 +6195,28 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::F4BY::MultiInfo* add_multi_list();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::MultiInfo >&
       multi_list() const;
+
+  // repeated int32 uid_list = 23;
+  int uid_list_size() const;
+  private:
+  int _internal_uid_list_size() const;
+  public:
+  void clear_uid_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_uid_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_uid_list() const;
+  void _internal_add_uid_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_uid_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 uid_list(int index) const;
+  void set_uid_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_uid_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      uid_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_uid_list();
 
   // .F4BY.WheelObject wheel = 11;
   bool has_wheel() const;
@@ -6365,6 +6389,15 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   void _internal_set_cur_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 rand_multi = 22;
+  void clear_rand_multi();
+  ::PROTOBUF_NAMESPACE_ID::int32 rand_multi() const;
+  void set_rand_multi(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_rand_multi() const;
+  void _internal_set_rand_multi(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SCHitSpecialFish)
  private:
   class _Internal;
@@ -6375,6 +6408,8 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object > shock_fishes_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object > drop_props_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::MultiInfo > multi_list_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > uid_list_;
+  mutable std::atomic<int> _uid_list_cached_byte_size_;
   ::F4BY::WheelObject* wheel_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
@@ -6393,6 +6428,7 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 accum_money_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_stage_;
+  ::PROTOBUF_NAMESPACE_ID::int32 rand_multi_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -42394,6 +42430,73 @@ inline void SCHitSpecialFish::_internal_set_cur_stage(::PROTOBUF_NAMESPACE_ID::i
 inline void SCHitSpecialFish::set_cur_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_cur_stage(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.cur_stage)
+}
+
+// int32 rand_multi = 22;
+inline void SCHitSpecialFish::clear_rand_multi() {
+  rand_multi_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_rand_multi() const {
+  return rand_multi_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::rand_multi() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.rand_multi)
+  return _internal_rand_multi();
+}
+inline void SCHitSpecialFish::_internal_set_rand_multi(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  rand_multi_ = value;
+}
+inline void SCHitSpecialFish::set_rand_multi(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_rand_multi(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.rand_multi)
+}
+
+// repeated int32 uid_list = 23;
+inline int SCHitSpecialFish::_internal_uid_list_size() const {
+  return uid_list_.size();
+}
+inline int SCHitSpecialFish::uid_list_size() const {
+  return _internal_uid_list_size();
+}
+inline void SCHitSpecialFish::clear_uid_list() {
+  uid_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_uid_list(int index) const {
+  return uid_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::uid_list(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.uid_list)
+  return _internal_uid_list(index);
+}
+inline void SCHitSpecialFish::set_uid_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  uid_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.uid_list)
+}
+inline void SCHitSpecialFish::_internal_add_uid_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  uid_list_.Add(value);
+}
+inline void SCHitSpecialFish::add_uid_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_uid_list(value);
+  // @@protoc_insertion_point(field_add:F4BY.SCHitSpecialFish.uid_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SCHitSpecialFish::_internal_uid_list() const {
+  return uid_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SCHitSpecialFish::uid_list() const {
+  // @@protoc_insertion_point(field_list:F4BY.SCHitSpecialFish.uid_list)
+  return _internal_uid_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SCHitSpecialFish::_internal_mutable_uid_list() {
+  return &uid_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SCHitSpecialFish::mutable_uid_list() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SCHitSpecialFish.uid_list)
+  return _internal_mutable_uid_list();
 }
 
 // -------------------------------------------------------------------
