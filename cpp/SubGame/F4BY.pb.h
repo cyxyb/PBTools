@@ -15353,41 +15353,41 @@ class SCUserPoolDraw PROTOBUF_FINAL :
     kUpgradecostFieldNumber = 5,
     kIndexFieldNumber = 6,
   };
-  // repeated .F4BY.Object2 goods = 2;
+  // repeated .F4BY.GoodsInfo goods = 2;
   int goods_size() const;
   private:
   int _internal_goods_size() const;
   public:
   void clear_goods();
-  ::F4BY::Object2* mutable_goods(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object2 >*
+  ::F4BY::GoodsInfo* mutable_goods(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GoodsInfo >*
       mutable_goods();
   private:
-  const ::F4BY::Object2& _internal_goods(int index) const;
-  ::F4BY::Object2* _internal_add_goods();
+  const ::F4BY::GoodsInfo& _internal_goods(int index) const;
+  ::F4BY::GoodsInfo* _internal_add_goods();
   public:
-  const ::F4BY::Object2& goods(int index) const;
-  ::F4BY::Object2* add_goods();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object2 >&
+  const ::F4BY::GoodsInfo& goods(int index) const;
+  ::F4BY::GoodsInfo* add_goods();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GoodsInfo >&
       goods() const;
 
-  // .F4BY.Object2 award = 3;
+  // .F4BY.GoodsInfo award = 3;
   bool has_award() const;
   private:
   bool _internal_has_award() const;
   public:
   void clear_award();
-  const ::F4BY::Object2& award() const;
-  ::F4BY::Object2* release_award();
-  ::F4BY::Object2* mutable_award();
-  void set_allocated_award(::F4BY::Object2* award);
+  const ::F4BY::GoodsInfo& award() const;
+  ::F4BY::GoodsInfo* release_award();
+  ::F4BY::GoodsInfo* mutable_award();
+  void set_allocated_award(::F4BY::GoodsInfo* award);
   private:
-  const ::F4BY::Object2& _internal_award() const;
-  ::F4BY::Object2* _internal_mutable_award();
+  const ::F4BY::GoodsInfo& _internal_award() const;
+  ::F4BY::GoodsInfo* _internal_mutable_award();
   public:
   void unsafe_arena_set_allocated_award(
-      ::F4BY::Object2* award);
-  ::F4BY::Object2* unsafe_arena_release_award();
+      ::F4BY::GoodsInfo* award);
+  ::F4BY::GoodsInfo* unsafe_arena_release_award();
 
   // .F4BY.Object award_cnt = 4;
   bool has_award_cnt() const;
@@ -15441,8 +15441,8 @@ class SCUserPoolDraw PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object2 > goods_;
-  ::F4BY::Object2* award_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GoodsInfo > goods_;
+  ::F4BY::GoodsInfo* award_;
   ::F4BY::Object* award_cnt_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 upgradecost_;
@@ -47375,7 +47375,7 @@ inline void SCUserPoolDraw::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:F4BY.SCUserPoolDraw.chair_idx)
 }
 
-// repeated .F4BY.Object2 goods = 2;
+// repeated .F4BY.GoodsInfo goods = 2;
 inline int SCUserPoolDraw::_internal_goods_size() const {
   return goods_.size();
 }
@@ -47385,36 +47385,36 @@ inline int SCUserPoolDraw::goods_size() const {
 inline void SCUserPoolDraw::clear_goods() {
   goods_.Clear();
 }
-inline ::F4BY::Object2* SCUserPoolDraw::mutable_goods(int index) {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::mutable_goods(int index) {
   // @@protoc_insertion_point(field_mutable:F4BY.SCUserPoolDraw.goods)
   return goods_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object2 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GoodsInfo >*
 SCUserPoolDraw::mutable_goods() {
   // @@protoc_insertion_point(field_mutable_list:F4BY.SCUserPoolDraw.goods)
   return &goods_;
 }
-inline const ::F4BY::Object2& SCUserPoolDraw::_internal_goods(int index) const {
+inline const ::F4BY::GoodsInfo& SCUserPoolDraw::_internal_goods(int index) const {
   return goods_.Get(index);
 }
-inline const ::F4BY::Object2& SCUserPoolDraw::goods(int index) const {
+inline const ::F4BY::GoodsInfo& SCUserPoolDraw::goods(int index) const {
   // @@protoc_insertion_point(field_get:F4BY.SCUserPoolDraw.goods)
   return _internal_goods(index);
 }
-inline ::F4BY::Object2* SCUserPoolDraw::_internal_add_goods() {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::_internal_add_goods() {
   return goods_.Add();
 }
-inline ::F4BY::Object2* SCUserPoolDraw::add_goods() {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::add_goods() {
   // @@protoc_insertion_point(field_add:F4BY.SCUserPoolDraw.goods)
   return _internal_add_goods();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object2 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GoodsInfo >&
 SCUserPoolDraw::goods() const {
   // @@protoc_insertion_point(field_list:F4BY.SCUserPoolDraw.goods)
   return goods_;
 }
 
-// .F4BY.Object2 award = 3;
+// .F4BY.GoodsInfo award = 3;
 inline bool SCUserPoolDraw::_internal_has_award() const {
   return this != internal_default_instance() && award_ != nullptr;
 }
@@ -47427,17 +47427,17 @@ inline void SCUserPoolDraw::clear_award() {
   }
   award_ = nullptr;
 }
-inline const ::F4BY::Object2& SCUserPoolDraw::_internal_award() const {
-  const ::F4BY::Object2* p = award_;
-  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::Object2&>(
-      ::F4BY::_Object2_default_instance_);
+inline const ::F4BY::GoodsInfo& SCUserPoolDraw::_internal_award() const {
+  const ::F4BY::GoodsInfo* p = award_;
+  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::GoodsInfo&>(
+      ::F4BY::_GoodsInfo_default_instance_);
 }
-inline const ::F4BY::Object2& SCUserPoolDraw::award() const {
+inline const ::F4BY::GoodsInfo& SCUserPoolDraw::award() const {
   // @@protoc_insertion_point(field_get:F4BY.SCUserPoolDraw.award)
   return _internal_award();
 }
 inline void SCUserPoolDraw::unsafe_arena_set_allocated_award(
-    ::F4BY::Object2* award) {
+    ::F4BY::GoodsInfo* award) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(award_);
   }
@@ -47449,35 +47449,35 @@ inline void SCUserPoolDraw::unsafe_arena_set_allocated_award(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:F4BY.SCUserPoolDraw.award)
 }
-inline ::F4BY::Object2* SCUserPoolDraw::release_award() {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::release_award() {
   
-  ::F4BY::Object2* temp = award_;
+  ::F4BY::GoodsInfo* temp = award_;
   award_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::F4BY::Object2* SCUserPoolDraw::unsafe_arena_release_award() {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::unsafe_arena_release_award() {
   // @@protoc_insertion_point(field_release:F4BY.SCUserPoolDraw.award)
   
-  ::F4BY::Object2* temp = award_;
+  ::F4BY::GoodsInfo* temp = award_;
   award_ = nullptr;
   return temp;
 }
-inline ::F4BY::Object2* SCUserPoolDraw::_internal_mutable_award() {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::_internal_mutable_award() {
   
   if (award_ == nullptr) {
-    auto* p = CreateMaybeMessage<::F4BY::Object2>(GetArena());
+    auto* p = CreateMaybeMessage<::F4BY::GoodsInfo>(GetArena());
     award_ = p;
   }
   return award_;
 }
-inline ::F4BY::Object2* SCUserPoolDraw::mutable_award() {
+inline ::F4BY::GoodsInfo* SCUserPoolDraw::mutable_award() {
   // @@protoc_insertion_point(field_mutable:F4BY.SCUserPoolDraw.award)
   return _internal_mutable_award();
 }
-inline void SCUserPoolDraw::set_allocated_award(::F4BY::Object2* award) {
+inline void SCUserPoolDraw::set_allocated_award(::F4BY::GoodsInfo* award) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete award_;
