@@ -15889,41 +15889,41 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
     kItemDoubleFieldNumber = 3,
     kCostFieldNumber = 1,
   };
-  // .F4BY.Object2 item_before = 2;
+  // .F4BY.GoodsInfo item_before = 2;
   bool has_item_before() const;
   private:
   bool _internal_has_item_before() const;
   public:
   void clear_item_before();
-  const ::F4BY::Object2& item_before() const;
-  ::F4BY::Object2* release_item_before();
-  ::F4BY::Object2* mutable_item_before();
-  void set_allocated_item_before(::F4BY::Object2* item_before);
+  const ::F4BY::GoodsInfo& item_before() const;
+  ::F4BY::GoodsInfo* release_item_before();
+  ::F4BY::GoodsInfo* mutable_item_before();
+  void set_allocated_item_before(::F4BY::GoodsInfo* item_before);
   private:
-  const ::F4BY::Object2& _internal_item_before() const;
-  ::F4BY::Object2* _internal_mutable_item_before();
+  const ::F4BY::GoodsInfo& _internal_item_before() const;
+  ::F4BY::GoodsInfo* _internal_mutable_item_before();
   public:
   void unsafe_arena_set_allocated_item_before(
-      ::F4BY::Object2* item_before);
-  ::F4BY::Object2* unsafe_arena_release_item_before();
+      ::F4BY::GoodsInfo* item_before);
+  ::F4BY::GoodsInfo* unsafe_arena_release_item_before();
 
-  // .F4BY.Object2 item_double = 3;
+  // .F4BY.GoodsInfo item_double = 3;
   bool has_item_double() const;
   private:
   bool _internal_has_item_double() const;
   public:
   void clear_item_double();
-  const ::F4BY::Object2& item_double() const;
-  ::F4BY::Object2* release_item_double();
-  ::F4BY::Object2* mutable_item_double();
-  void set_allocated_item_double(::F4BY::Object2* item_double);
+  const ::F4BY::GoodsInfo& item_double() const;
+  ::F4BY::GoodsInfo* release_item_double();
+  ::F4BY::GoodsInfo* mutable_item_double();
+  void set_allocated_item_double(::F4BY::GoodsInfo* item_double);
   private:
-  const ::F4BY::Object2& _internal_item_double() const;
-  ::F4BY::Object2* _internal_mutable_item_double();
+  const ::F4BY::GoodsInfo& _internal_item_double() const;
+  ::F4BY::GoodsInfo* _internal_mutable_item_double();
   public:
   void unsafe_arena_set_allocated_item_double(
-      ::F4BY::Object2* item_double);
-  ::F4BY::Object2* unsafe_arena_release_item_double();
+      ::F4BY::GoodsInfo* item_double);
+  ::F4BY::GoodsInfo* unsafe_arena_release_item_double();
 
   // int32 cost = 1;
   void clear_cost();
@@ -15941,8 +15941,8 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::F4BY::Object2* item_before_;
-  ::F4BY::Object2* item_double_;
+  ::F4BY::GoodsInfo* item_before_;
+  ::F4BY::GoodsInfo* item_double_;
   ::PROTOBUF_NAMESPACE_ID::int32 cost_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -47859,7 +47859,7 @@ inline void SCUserPoolDoubleInfo::set_cost(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:F4BY.SCUserPoolDoubleInfo.cost)
 }
 
-// .F4BY.Object2 item_before = 2;
+// .F4BY.GoodsInfo item_before = 2;
 inline bool SCUserPoolDoubleInfo::_internal_has_item_before() const {
   return this != internal_default_instance() && item_before_ != nullptr;
 }
@@ -47872,17 +47872,17 @@ inline void SCUserPoolDoubleInfo::clear_item_before() {
   }
   item_before_ = nullptr;
 }
-inline const ::F4BY::Object2& SCUserPoolDoubleInfo::_internal_item_before() const {
-  const ::F4BY::Object2* p = item_before_;
-  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::Object2&>(
-      ::F4BY::_Object2_default_instance_);
+inline const ::F4BY::GoodsInfo& SCUserPoolDoubleInfo::_internal_item_before() const {
+  const ::F4BY::GoodsInfo* p = item_before_;
+  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::GoodsInfo&>(
+      ::F4BY::_GoodsInfo_default_instance_);
 }
-inline const ::F4BY::Object2& SCUserPoolDoubleInfo::item_before() const {
+inline const ::F4BY::GoodsInfo& SCUserPoolDoubleInfo::item_before() const {
   // @@protoc_insertion_point(field_get:F4BY.SCUserPoolDoubleInfo.item_before)
   return _internal_item_before();
 }
 inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_before(
-    ::F4BY::Object2* item_before) {
+    ::F4BY::GoodsInfo* item_before) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(item_before_);
   }
@@ -47894,35 +47894,35 @@ inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_before(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:F4BY.SCUserPoolDoubleInfo.item_before)
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::release_item_before() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::release_item_before() {
   
-  ::F4BY::Object2* temp = item_before_;
+  ::F4BY::GoodsInfo* temp = item_before_;
   item_before_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::unsafe_arena_release_item_before() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::unsafe_arena_release_item_before() {
   // @@protoc_insertion_point(field_release:F4BY.SCUserPoolDoubleInfo.item_before)
   
-  ::F4BY::Object2* temp = item_before_;
+  ::F4BY::GoodsInfo* temp = item_before_;
   item_before_ = nullptr;
   return temp;
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::_internal_mutable_item_before() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::_internal_mutable_item_before() {
   
   if (item_before_ == nullptr) {
-    auto* p = CreateMaybeMessage<::F4BY::Object2>(GetArena());
+    auto* p = CreateMaybeMessage<::F4BY::GoodsInfo>(GetArena());
     item_before_ = p;
   }
   return item_before_;
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::mutable_item_before() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::mutable_item_before() {
   // @@protoc_insertion_point(field_mutable:F4BY.SCUserPoolDoubleInfo.item_before)
   return _internal_mutable_item_before();
 }
-inline void SCUserPoolDoubleInfo::set_allocated_item_before(::F4BY::Object2* item_before) {
+inline void SCUserPoolDoubleInfo::set_allocated_item_before(::F4BY::GoodsInfo* item_before) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete item_before_;
@@ -47942,7 +47942,7 @@ inline void SCUserPoolDoubleInfo::set_allocated_item_before(::F4BY::Object2* ite
   // @@protoc_insertion_point(field_set_allocated:F4BY.SCUserPoolDoubleInfo.item_before)
 }
 
-// .F4BY.Object2 item_double = 3;
+// .F4BY.GoodsInfo item_double = 3;
 inline bool SCUserPoolDoubleInfo::_internal_has_item_double() const {
   return this != internal_default_instance() && item_double_ != nullptr;
 }
@@ -47955,17 +47955,17 @@ inline void SCUserPoolDoubleInfo::clear_item_double() {
   }
   item_double_ = nullptr;
 }
-inline const ::F4BY::Object2& SCUserPoolDoubleInfo::_internal_item_double() const {
-  const ::F4BY::Object2* p = item_double_;
-  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::Object2&>(
-      ::F4BY::_Object2_default_instance_);
+inline const ::F4BY::GoodsInfo& SCUserPoolDoubleInfo::_internal_item_double() const {
+  const ::F4BY::GoodsInfo* p = item_double_;
+  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::GoodsInfo&>(
+      ::F4BY::_GoodsInfo_default_instance_);
 }
-inline const ::F4BY::Object2& SCUserPoolDoubleInfo::item_double() const {
+inline const ::F4BY::GoodsInfo& SCUserPoolDoubleInfo::item_double() const {
   // @@protoc_insertion_point(field_get:F4BY.SCUserPoolDoubleInfo.item_double)
   return _internal_item_double();
 }
 inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_double(
-    ::F4BY::Object2* item_double) {
+    ::F4BY::GoodsInfo* item_double) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(item_double_);
   }
@@ -47977,35 +47977,35 @@ inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_double(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:F4BY.SCUserPoolDoubleInfo.item_double)
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::release_item_double() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::release_item_double() {
   
-  ::F4BY::Object2* temp = item_double_;
+  ::F4BY::GoodsInfo* temp = item_double_;
   item_double_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::unsafe_arena_release_item_double() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::unsafe_arena_release_item_double() {
   // @@protoc_insertion_point(field_release:F4BY.SCUserPoolDoubleInfo.item_double)
   
-  ::F4BY::Object2* temp = item_double_;
+  ::F4BY::GoodsInfo* temp = item_double_;
   item_double_ = nullptr;
   return temp;
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::_internal_mutable_item_double() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::_internal_mutable_item_double() {
   
   if (item_double_ == nullptr) {
-    auto* p = CreateMaybeMessage<::F4BY::Object2>(GetArena());
+    auto* p = CreateMaybeMessage<::F4BY::GoodsInfo>(GetArena());
     item_double_ = p;
   }
   return item_double_;
 }
-inline ::F4BY::Object2* SCUserPoolDoubleInfo::mutable_item_double() {
+inline ::F4BY::GoodsInfo* SCUserPoolDoubleInfo::mutable_item_double() {
   // @@protoc_insertion_point(field_mutable:F4BY.SCUserPoolDoubleInfo.item_double)
   return _internal_mutable_item_double();
 }
-inline void SCUserPoolDoubleInfo::set_allocated_item_double(::F4BY::Object2* item_double) {
+inline void SCUserPoolDoubleInfo::set_allocated_item_double(::F4BY::GoodsInfo* item_double) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete item_double_;
