@@ -17830,6 +17830,38 @@ class CSTorpedoHit PROTOBUF_FINAL :
 
   // accessors -------------------------------------------------------
 
+  enum : int {
+    kFishUidFieldNumber = 1,
+    kXFieldNumber = 2,
+    kYFieldNumber = 3,
+  };
+  // int32 fish_uid = 1;
+  void clear_fish_uid();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_uid() const;
+  void set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_uid() const;
+  void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // float x = 2;
+  void clear_x();
+  float x() const;
+  void set_x(float value);
+  private:
+  float _internal_x() const;
+  void _internal_set_x(float value);
+  public:
+
+  // float y = 3;
+  void clear_y();
+  float y() const;
+  void set_y(float value);
+  private:
+  float _internal_y() const;
+  void _internal_set_y(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSTorpedoHit)
  private:
   class _Internal;
@@ -17837,6 +17869,9 @@ class CSTorpedoHit PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
+  float x_;
+  float y_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -48700,6 +48735,66 @@ inline void SCTorpedoShoot::set_y(float value) {
 // -------------------------------------------------------------------
 
 // CSTorpedoHit
+
+// int32 fish_uid = 1;
+inline void CSTorpedoHit::clear_fish_uid() {
+  fish_uid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSTorpedoHit::_internal_fish_uid() const {
+  return fish_uid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSTorpedoHit::fish_uid() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSTorpedoHit.fish_uid)
+  return _internal_fish_uid();
+}
+inline void CSTorpedoHit::_internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_uid_ = value;
+}
+inline void CSTorpedoHit::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_fish_uid(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSTorpedoHit.fish_uid)
+}
+
+// float x = 2;
+inline void CSTorpedoHit::clear_x() {
+  x_ = 0;
+}
+inline float CSTorpedoHit::_internal_x() const {
+  return x_;
+}
+inline float CSTorpedoHit::x() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSTorpedoHit.x)
+  return _internal_x();
+}
+inline void CSTorpedoHit::_internal_set_x(float value) {
+  
+  x_ = value;
+}
+inline void CSTorpedoHit::set_x(float value) {
+  _internal_set_x(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSTorpedoHit.x)
+}
+
+// float y = 3;
+inline void CSTorpedoHit::clear_y() {
+  y_ = 0;
+}
+inline float CSTorpedoHit::_internal_y() const {
+  return y_;
+}
+inline float CSTorpedoHit::y() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSTorpedoHit.y)
+  return _internal_y();
+}
+inline void CSTorpedoHit::_internal_set_y(float value) {
+  
+  y_ = value;
+}
+inline void CSTorpedoHit::set_y(float value) {
+  _internal_set_y(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSTorpedoHit.y)
+}
 
 // -------------------------------------------------------------------
 
