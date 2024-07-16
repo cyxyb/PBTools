@@ -846,16 +846,18 @@ message SCUserPoolDraw
 	repeated Object2 goods = 2;
 	Object2 award = 3;
 	Object award_cnt = 4;
+	int32 upgradecost = 5;
+	int32 index = 6;
 }
 
 message SCUserPoolAdd
 {
 	int32 add = 1;
-	int32 count = 2;
-	int32 first_max = 3;
-	int32 pool_max = 4;
-	bool status = 5;
-	string level_name = 6;
+	int32 count = 2;		//奖池分
+	int32 first_max = 3;	//抽奖消耗
+	int32 pool_max = 4;		//奖池上限(玩家最多能累计这么多奖池分数)
+	bool status = 5;		//开启状态
+	string level_name = 6;	
 }
 
 message CSUserPoolDoubleInfo
