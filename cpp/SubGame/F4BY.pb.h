@@ -17834,6 +17834,7 @@ class CSTorpedoHit PROTOBUF_FINAL :
     kFishUidFieldNumber = 1,
     kXFieldNumber = 2,
     kYFieldNumber = 3,
+    kPropIdFieldNumber = 4,
   };
   // int32 fish_uid = 1;
   void clear_fish_uid();
@@ -17862,6 +17863,15 @@ class CSTorpedoHit PROTOBUF_FINAL :
   void _internal_set_y(float value);
   public:
 
+  // int32 prop_id = 4;
+  void clear_prop_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_id() const;
+  void set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_prop_id() const;
+  void _internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSTorpedoHit)
  private:
   class _Internal;
@@ -17872,6 +17882,7 @@ class CSTorpedoHit PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
   float x_;
   float y_;
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -48794,6 +48805,26 @@ inline void CSTorpedoHit::_internal_set_y(float value) {
 inline void CSTorpedoHit::set_y(float value) {
   _internal_set_y(value);
   // @@protoc_insertion_point(field_set:F4BY.CSTorpedoHit.y)
+}
+
+// int32 prop_id = 4;
+inline void CSTorpedoHit::clear_prop_id() {
+  prop_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSTorpedoHit::_internal_prop_id() const {
+  return prop_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSTorpedoHit::prop_id() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSTorpedoHit.prop_id)
+  return _internal_prop_id();
+}
+inline void CSTorpedoHit::_internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  prop_id_ = value;
+}
+inline void CSTorpedoHit::set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_prop_id(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSTorpedoHit.prop_id)
 }
 
 // -------------------------------------------------------------------

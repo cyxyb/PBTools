@@ -947,6 +947,7 @@ message CSTorpedoHit
 	int32 fish_uid = 1;
 	float x = 2;
 	float y = 3;
+	int32 prop_id = 4;
 }
 
 message SCTorpedoHit
