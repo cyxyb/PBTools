@@ -47,7 +47,7 @@ struct TableStruct_JSBY_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[131]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[132]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -289,6 +289,9 @@ extern SCLeaveTowerTableCountdownDefaultTypeInternal _SCLeaveTowerTableCountdown
 class SCLoginGameWithToken;
 class SCLoginGameWithTokenDefaultTypeInternal;
 extern SCLoginGameWithTokenDefaultTypeInternal _SCLoginGameWithToken_default_instance_;
+class SCLogoutGame;
+class SCLogoutGameDefaultTypeInternal;
+extern SCLogoutGameDefaultTypeInternal _SCLogoutGame_default_instance_;
 class SCNotifyActivityInfo;
 class SCNotifyActivityInfoDefaultTypeInternal;
 extern SCNotifyActivityInfoDefaultTypeInternal _SCNotifyActivityInfo_default_instance_;
@@ -528,6 +531,7 @@ template<> ::JSBY::SCKeepRatio* Arena::CreateMaybeMessage<::JSBY::SCKeepRatio>(A
 template<> ::JSBY::SCLeaveTowerTable* Arena::CreateMaybeMessage<::JSBY::SCLeaveTowerTable>(Arena*);
 template<> ::JSBY::SCLeaveTowerTableCountdown* Arena::CreateMaybeMessage<::JSBY::SCLeaveTowerTableCountdown>(Arena*);
 template<> ::JSBY::SCLoginGameWithToken* Arena::CreateMaybeMessage<::JSBY::SCLoginGameWithToken>(Arena*);
+template<> ::JSBY::SCLogoutGame* Arena::CreateMaybeMessage<::JSBY::SCLogoutGame>(Arena*);
 template<> ::JSBY::SCNotifyActivityInfo* Arena::CreateMaybeMessage<::JSBY::SCNotifyActivityInfo>(Arena*);
 template<> ::JSBY::SCNotifyTowerTablePlayer* Arena::CreateMaybeMessage<::JSBY::SCNotifyTowerTablePlayer>(Arena*);
 template<> ::JSBY::SCOneKeyUpdateHero* Arena::CreateMaybeMessage<::JSBY::SCOneKeyUpdateHero>(Arena*);
@@ -21415,6 +21419,142 @@ class ShutdownService PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
+// -------------------------------------------------------------------
+
+class SCLogoutGame PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:JSBY.SCLogoutGame) */ {
+ public:
+  inline SCLogoutGame() : SCLogoutGame(nullptr) {}
+  virtual ~SCLogoutGame();
+
+  SCLogoutGame(const SCLogoutGame& from);
+  SCLogoutGame(SCLogoutGame&& from) noexcept
+    : SCLogoutGame() {
+    *this = ::std::move(from);
+  }
+
+  inline SCLogoutGame& operator=(const SCLogoutGame& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SCLogoutGame& operator=(SCLogoutGame&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const SCLogoutGame& default_instance();
+
+  static inline const SCLogoutGame* internal_default_instance() {
+    return reinterpret_cast<const SCLogoutGame*>(
+               &_SCLogoutGame_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    131;
+
+  friend void swap(SCLogoutGame& a, SCLogoutGame& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SCLogoutGame* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SCLogoutGame* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SCLogoutGame* New() const final {
+    return CreateMaybeMessage<SCLogoutGame>(nullptr);
+  }
+
+  SCLogoutGame* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SCLogoutGame>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const SCLogoutGame& from);
+  void MergeFrom(const SCLogoutGame& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SCLogoutGame* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "JSBY.SCLogoutGame";
+  }
+  protected:
+  explicit SCLogoutGame(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_JSBY_2eproto);
+    return ::descriptor_table_JSBY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLogoutTypeFieldNumber = 1,
+  };
+  // int32 logoutType = 1;
+  void clear_logouttype();
+  ::PROTOBUF_NAMESPACE_ID::int32 logouttype() const;
+  void set_logouttype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_logouttype() const;
+  void _internal_set_logouttype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:JSBY.SCLogoutGame)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 logouttype_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_JSBY_2eproto;
+};
 // ===================================================================
 
 
@@ -31000,9 +31140,35 @@ inline void ShutdownService::set_serverid(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:JSBY.ShutdownService.ServerID)
 }
 
+// -------------------------------------------------------------------
+
+// SCLogoutGame
+
+// int32 logoutType = 1;
+inline void SCLogoutGame::clear_logouttype() {
+  logouttype_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCLogoutGame::_internal_logouttype() const {
+  return logouttype_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCLogoutGame::logouttype() const {
+  // @@protoc_insertion_point(field_get:JSBY.SCLogoutGame.logoutType)
+  return _internal_logouttype();
+}
+inline void SCLogoutGame::_internal_set_logouttype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  logouttype_ = value;
+}
+inline void SCLogoutGame::set_logouttype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_logouttype(value);
+  // @@protoc_insertion_point(field_set:JSBY.SCLogoutGame.logoutType)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

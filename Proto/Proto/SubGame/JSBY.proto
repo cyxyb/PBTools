@@ -990,3 +990,7 @@ message ShutdownService
 	 int32 ServerID = 3;
 }
 
+message SCLogoutGame
+{
+	int32 logoutType = 1;
+}
