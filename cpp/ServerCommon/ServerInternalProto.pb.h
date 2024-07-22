@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[69]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[68]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -206,9 +206,6 @@ extern MsgLoginModifyTableInfoDefaultTypeInternal _MsgLoginModifyTableInfo_defau
 class MsgLoginPlayerInfo;
 class MsgLoginPlayerInfoDefaultTypeInternal;
 extern MsgLoginPlayerInfoDefaultTypeInternal _MsgLoginPlayerInfo_default_instance_;
-class MsgModifyTableInfo;
-class MsgModifyTableInfoDefaultTypeInternal;
-extern MsgModifyTableInfoDefaultTypeInternal _MsgModifyTableInfo_default_instance_;
 class MsgPlayerAttribute;
 class MsgPlayerAttributeDefaultTypeInternal;
 extern MsgPlayerAttributeDefaultTypeInternal _MsgPlayerAttribute_default_instance_;
@@ -312,7 +309,6 @@ template<> ::MsgGameServerUnRegister* Arena::CreateMaybeMessage<::MsgGameServerU
 template<> ::MsgLoadCheatRate* Arena::CreateMaybeMessage<::MsgLoadCheatRate>(Arena*);
 template<> ::MsgLoginModifyTableInfo* Arena::CreateMaybeMessage<::MsgLoginModifyTableInfo>(Arena*);
 template<> ::MsgLoginPlayerInfo* Arena::CreateMaybeMessage<::MsgLoginPlayerInfo>(Arena*);
-template<> ::MsgModifyTableInfo* Arena::CreateMaybeMessage<::MsgModifyTableInfo>(Arena*);
 template<> ::MsgPlayerAttribute* Arena::CreateMaybeMessage<::MsgPlayerAttribute>(Arena*);
 template<> ::MsgPvpAddTable* Arena::CreateMaybeMessage<::MsgPvpAddTable>(Arena*);
 template<> ::MsgPvpDelTable* Arena::CreateMaybeMessage<::MsgPvpDelTable>(Arena*);
@@ -734,153 +730,6 @@ class MsgRegisterGameServer PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgModifyTableInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgModifyTableInfo) */ {
- public:
-  inline MsgModifyTableInfo() : MsgModifyTableInfo(nullptr) {}
-  virtual ~MsgModifyTableInfo();
-
-  MsgModifyTableInfo(const MsgModifyTableInfo& from);
-  MsgModifyTableInfo(MsgModifyTableInfo&& from) noexcept
-    : MsgModifyTableInfo() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgModifyTableInfo& operator=(const MsgModifyTableInfo& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgModifyTableInfo& operator=(MsgModifyTableInfo&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgModifyTableInfo& default_instance();
-
-  static inline const MsgModifyTableInfo* internal_default_instance() {
-    return reinterpret_cast<const MsgModifyTableInfo*>(
-               &_MsgModifyTableInfo_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    2;
-
-  friend void swap(MsgModifyTableInfo& a, MsgModifyTableInfo& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgModifyTableInfo* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgModifyTableInfo* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgModifyTableInfo* New() const final {
-    return CreateMaybeMessage<MsgModifyTableInfo>(nullptr);
-  }
-
-  MsgModifyTableInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgModifyTableInfo>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgModifyTableInfo& from);
-  void MergeFrom(const MsgModifyTableInfo& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgModifyTableInfo* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgModifyTableInfo";
-  }
-  protected:
-  explicit MsgModifyTableInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
-    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kTableNoFieldNumber = 1,
-    kIsAddFieldNumber = 2,
-  };
-  // int32 table_No = 1;
-  void clear_table_no();
-  ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
-  void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_no() const;
-  void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // bool is_add = 2;
-  void clear_is_add();
-  bool is_add() const;
-  void set_is_add(bool value);
-  private:
-  bool _internal_is_add() const;
-  void _internal_set_is_add(bool value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MsgModifyTableInfo)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
-  bool is_add_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_ServerInternalProto_2eproto;
-};
-// -------------------------------------------------------------------
-
 class MsgLoginModifyTableInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgLoginModifyTableInfo) */ {
  public:
@@ -922,7 +771,7 @@ class MsgLoginModifyTableInfo PROTOBUF_FINAL :
                &_MsgLoginModifyTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    2;
 
   friend void swap(MsgLoginModifyTableInfo& a, MsgLoginModifyTableInfo& b) {
     a.Swap(&b);
@@ -1102,7 +951,7 @@ class MsgRegisterChatServer PROTOBUF_FINAL :
                &_MsgRegisterChatServer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    3;
 
   friend void swap(MsgRegisterChatServer& a, MsgRegisterChatServer& b) {
     a.Swap(&b);
@@ -1271,7 +1120,7 @@ class MsgApplyRobot PROTOBUF_FINAL :
                &_MsgApplyRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    4;
 
   friend void swap(MsgApplyRobot& a, MsgApplyRobot& b) {
     a.Swap(&b);
@@ -1432,7 +1281,7 @@ class MsgApplyRobotResp PROTOBUF_FINAL :
                &_MsgApplyRobotResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    5;
 
   friend void swap(MsgApplyRobotResp& a, MsgApplyRobotResp& b) {
     a.Swap(&b);
@@ -1582,7 +1431,7 @@ class MsgCreateRobot PROTOBUF_FINAL :
                &_MsgCreateRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    6;
 
   friend void swap(MsgCreateRobot& a, MsgCreateRobot& b) {
     a.Swap(&b);
@@ -1740,7 +1589,7 @@ class MsgCreateRobotResp PROTOBUF_FINAL :
                &_MsgCreateRobotResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    7;
 
   friend void swap(MsgCreateRobotResp& a, MsgCreateRobotResp& b) {
     a.Swap(&b);
@@ -1912,7 +1761,7 @@ class MsgSendPhoneCode PROTOBUF_FINAL :
                &_MsgSendPhoneCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    8;
 
   friend void swap(MsgSendPhoneCode& a, MsgSendPhoneCode& b) {
     a.Swap(&b);
@@ -2077,7 +1926,7 @@ class MsgUpdatePhoneCodeState PROTOBUF_FINAL :
                &_MsgUpdatePhoneCodeState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    9;
 
   friend void swap(MsgUpdatePhoneCodeState& a, MsgUpdatePhoneCodeState& b) {
     a.Swap(&b);
@@ -2242,7 +2091,7 @@ class MsgUpdateGameServerOnlineNum PROTOBUF_FINAL :
                &_MsgUpdateGameServerOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    10;
 
   friend void swap(MsgUpdateGameServerOnlineNum& a, MsgUpdateGameServerOnlineNum& b) {
     a.Swap(&b);
@@ -2411,7 +2260,7 @@ class MsgGameServerUnRegister PROTOBUF_FINAL :
                &_MsgGameServerUnRegister_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    11;
 
   friend void swap(MsgGameServerUnRegister& a, MsgGameServerUnRegister& b) {
     a.Swap(&b);
@@ -2569,7 +2418,7 @@ class MsgLoadCheatRate PROTOBUF_FINAL :
                &_MsgLoadCheatRate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    12;
 
   friend void swap(MsgLoadCheatRate& a, MsgLoadCheatRate& b) {
     a.Swap(&b);
@@ -2738,7 +2587,7 @@ class MsgRelayServerRegister PROTOBUF_FINAL :
                &_MsgRelayServerRegister_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    13;
 
   friend void swap(MsgRelayServerRegister& a, MsgRelayServerRegister& b) {
     a.Swap(&b);
@@ -2885,7 +2734,7 @@ class MsgRelayServerAddMail PROTOBUF_FINAL :
                &_MsgRelayServerAddMail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    14;
 
   friend void swap(MsgRelayServerAddMail& a, MsgRelayServerAddMail& b) {
     a.Swap(&b);
@@ -3101,7 +2950,7 @@ class MsgRelayServerRecharge PROTOBUF_FINAL :
                &_MsgRelayServerRecharge_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    15;
 
   friend void swap(MsgRelayServerRecharge& a, MsgRelayServerRecharge& b) {
     a.Swap(&b);
@@ -3270,7 +3119,7 @@ class MsgUpdateChatServerOnlineNum PROTOBUF_FINAL :
                &_MsgUpdateChatServerOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    16;
 
   friend void swap(MsgUpdateChatServerOnlineNum& a, MsgUpdateChatServerOnlineNum& b) {
     a.Swap(&b);
@@ -3417,7 +3266,7 @@ class MsgUpdateLImitChat PROTOBUF_FINAL :
                &_MsgUpdateLImitChat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    17;
 
   friend void swap(MsgUpdateLImitChat& a, MsgUpdateLImitChat& b) {
     a.Swap(&b);
@@ -3564,7 +3413,7 @@ class MsgWebCmd PROTOBUF_FINAL :
                &_MsgWebCmd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    18;
 
   friend void swap(MsgWebCmd& a, MsgWebCmd& b) {
     a.Swap(&b);
@@ -3733,7 +3582,7 @@ class MsgDBCommonKV PROTOBUF_FINAL :
                &_MsgDBCommonKV_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    19;
 
   friend void swap(MsgDBCommonKV& a, MsgDBCommonKV& b) {
     a.Swap(&b);
@@ -3880,7 +3729,7 @@ class MsgDBUpdateOnlineNum PROTOBUF_FINAL :
                &_MsgDBUpdateOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    20;
 
   friend void swap(MsgDBUpdateOnlineNum& a, MsgDBUpdateOnlineNum& b) {
     a.Swap(&b);
@@ -4038,7 +3887,7 @@ class MsgDBRegisterLogin PROTOBUF_FINAL :
                &_MsgDBRegisterLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    21;
 
   friend void swap(MsgDBRegisterLogin& a, MsgDBRegisterLogin& b) {
     a.Swap(&b);
@@ -4185,7 +4034,7 @@ class MsgPlayerAttribute PROTOBUF_FINAL :
                &_MsgPlayerAttribute_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    22;
 
   friend void swap(MsgPlayerAttribute& a, MsgPlayerAttribute& b) {
     a.Swap(&b);
@@ -4401,7 +4250,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
                &_MsgLoginPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    23;
 
   friend void swap(MsgLoginPlayerInfo& a, MsgLoginPlayerInfo& b) {
     a.Swap(&b);
@@ -4958,7 +4807,7 @@ class MsgDBLoginOut PROTOBUF_FINAL :
                &_MsgDBLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    24;
 
   friend void swap(MsgDBLoginOut& a, MsgDBLoginOut& b) {
     a.Swap(&b);
@@ -5105,7 +4954,7 @@ class MsgDBUpdatePlayerInfo PROTOBUF_FINAL :
                &_MsgDBUpdatePlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    25;
 
   friend void swap(MsgDBUpdatePlayerInfo& a, MsgDBUpdatePlayerInfo& b) {
     a.Swap(&b);
@@ -5317,7 +5166,7 @@ class MsgDBMailData PROTOBUF_FINAL :
                &_MsgDBMailData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    26;
 
   friend void swap(MsgDBMailData& a, MsgDBMailData& b) {
     a.Swap(&b);
@@ -5464,7 +5313,7 @@ class MsgDBMail PROTOBUF_FINAL :
                &_MsgDBMail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    27;
 
   friend void swap(MsgDBMail& a, MsgDBMail& b) {
     a.Swap(&b);
@@ -5702,7 +5551,7 @@ class MsgDBRegisterGame PROTOBUF_FINAL :
                &_MsgDBRegisterGame_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    28;
 
   friend void swap(MsgDBRegisterGame& a, MsgDBRegisterGame& b) {
     a.Swap(&b);
@@ -5856,7 +5705,7 @@ class MsgDBLoadRobotInfo PROTOBUF_FINAL :
                &_MsgDBLoadRobotInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    29;
 
   friend void swap(MsgDBLoadRobotInfo& a, MsgDBLoadRobotInfo& b) {
     a.Swap(&b);
@@ -6003,7 +5852,7 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
                &_MsgDBLoadRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    30;
 
   friend void swap(MsgDBLoadRobot& a, MsgDBLoadRobot& b) {
     a.Swap(&b);
@@ -6148,7 +5997,7 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
                &_MsgDBGamePlayerLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    31;
 
   friend void swap(MsgDBGamePlayerLogin& a, MsgDBGamePlayerLogin& b) {
     a.Swap(&b);
@@ -6356,7 +6205,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
                &_MsgDBPlayerReconnectData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    32;
 
   friend void swap(MsgDBPlayerReconnectData& a, MsgDBPlayerReconnectData& b) {
     a.Swap(&b);
@@ -6594,7 +6443,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
                &_MsgDBGamePlayerLoginResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    33;
 
   friend void swap(MsgDBGamePlayerLoginResp& a, MsgDBGamePlayerLoginResp& b) {
     a.Swap(&b);
@@ -6955,7 +6804,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
                &_MsgDBWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    34;
 
   friend void swap(MsgDBWriteScore& a, MsgDBWriteScore& b) {
     a.Swap(&b);
@@ -7186,7 +7035,7 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    35;
 
   friend void swap(MsgDBWriteScoreResp& a, MsgDBWriteScoreResp& b) {
     a.Swap(&b);
@@ -7399,7 +7248,7 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    36;
 
   friend void swap(MsgDBFingerGuessWriteScore& a, MsgDBFingerGuessWriteScore& b) {
     a.Swap(&b);
@@ -7568,7 +7417,7 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    37;
 
   friend void swap(MsgDBFingerGuessWriteScoreResp& a, MsgDBFingerGuessWriteScoreResp& b) {
     a.Swap(&b);
@@ -7770,7 +7619,7 @@ class MsgDBFingerGuessQueryRecord PROTOBUF_FINAL :
                &_MsgDBFingerGuessQueryRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    38;
 
   friend void swap(MsgDBFingerGuessQueryRecord& a, MsgDBFingerGuessQueryRecord& b) {
     a.Swap(&b);
@@ -7939,7 +7788,7 @@ class MsgDBModifyAvatar PROTOBUF_FINAL :
                &_MsgDBModifyAvatar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    39;
 
   friend void swap(MsgDBModifyAvatar& a, MsgDBModifyAvatar& b) {
     a.Swap(&b);
@@ -8093,7 +7942,7 @@ class MsgDBUpdateJackpot PROTOBUF_FINAL :
                &_MsgDBUpdateJackpot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    40;
 
   friend void swap(MsgDBUpdateJackpot& a, MsgDBUpdateJackpot& b) {
     a.Swap(&b);
@@ -8251,7 +8100,7 @@ class MsgDBTransferOperate PROTOBUF_FINAL :
                &_MsgDBTransferOperate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    41;
 
   friend void swap(MsgDBTransferOperate& a, MsgDBTransferOperate& b) {
     a.Swap(&b);
@@ -8420,7 +8269,7 @@ class MsgStorageCode PROTOBUF_FINAL :
                &_MsgStorageCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    42;
 
   friend void swap(MsgStorageCode& a, MsgStorageCode& b) {
     a.Swap(&b);
@@ -8596,7 +8445,7 @@ class MsgDBBindPhone PROTOBUF_FINAL :
                &_MsgDBBindPhone_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    43;
 
   friend void swap(MsgDBBindPhone& a, MsgDBBindPhone& b) {
     a.Swap(&b);
@@ -8786,7 +8635,7 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
                &_MsgDBBindPhoneRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    44;
 
   friend void swap(MsgDBBindPhoneRes& a, MsgDBBindPhoneRes& b) {
     a.Swap(&b);
@@ -8969,7 +8818,7 @@ class MsgDBChatLogin PROTOBUF_FINAL :
                &_MsgDBChatLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    45;
 
   friend void swap(MsgDBChatLogin& a, MsgDBChatLogin& b) {
     a.Swap(&b);
@@ -9123,7 +8972,7 @@ class MsgDBChatTrumpetMsg PROTOBUF_FINAL :
                &_MsgDBChatTrumpetMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    46;
 
   friend void swap(MsgDBChatTrumpetMsg& a, MsgDBChatTrumpetMsg& b) {
     a.Swap(&b);
@@ -9277,7 +9126,7 @@ class MsgDBBuyGoods PROTOBUF_FINAL :
                &_MsgDBBuyGoods_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    47;
 
   friend void swap(MsgDBBuyGoods& a, MsgDBBuyGoods& b) {
     a.Swap(&b);
@@ -9435,7 +9284,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
                &_MsgDBGameLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    48;
 
   friend void swap(MsgDBGameLoginOut& a, MsgDBGameLoginOut& b) {
     a.Swap(&b);
@@ -9615,7 +9464,7 @@ class MsgDBSubagentInformation PROTOBUF_FINAL :
                &_MsgDBSubagentInformation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    49;
 
   friend void swap(MsgDBSubagentInformation& a, MsgDBSubagentInformation& b) {
     a.Swap(&b);
@@ -9813,7 +9662,7 @@ class MsgDBQueryTransferTax PROTOBUF_FINAL :
                &_MsgDBQueryTransferTax_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    50;
 
   friend void swap(MsgDBQueryTransferTax& a, MsgDBQueryTransferTax& b) {
     a.Swap(&b);
@@ -9960,7 +9809,7 @@ class MsgDBTransferTakeOut PROTOBUF_FINAL :
                &_MsgDBTransferTakeOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    51;
 
   friend void swap(MsgDBTransferTakeOut& a, MsgDBTransferTakeOut& b) {
     a.Swap(&b);
@@ -10162,7 +10011,7 @@ class MsgDBTransferReceive PROTOBUF_FINAL :
                &_MsgDBTransferReceive_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    53;
+    52;
 
   friend void swap(MsgDBTransferReceive& a, MsgDBTransferReceive& b) {
     a.Swap(&b);
@@ -10309,7 +10158,7 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
                &_MsgDBBindInviteCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    54;
+    53;
 
   friend void swap(MsgDBBindInviteCode& a, MsgDBBindInviteCode& b) {
     a.Swap(&b);
@@ -10463,7 +10312,7 @@ class MsgDBSyncDotData PROTOBUF_FINAL :
                &_MsgDBSyncDotData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    55;
+    54;
 
   friend void swap(MsgDBSyncDotData& a, MsgDBSyncDotData& b) {
     a.Swap(&b);
@@ -10610,7 +10459,7 @@ class MsgDBOnlineActivePick PROTOBUF_FINAL :
                &_MsgDBOnlineActivePick_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    56;
+    55;
 
   friend void swap(MsgDBOnlineActivePick& a, MsgDBOnlineActivePick& b) {
     a.Swap(&b);
@@ -10757,7 +10606,7 @@ class MsgDBCDKExchange PROTOBUF_FINAL :
                &_MsgDBCDKExchange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    57;
+    56;
 
   friend void swap(MsgDBCDKExchange& a, MsgDBCDKExchange& b) {
     a.Swap(&b);
@@ -10911,7 +10760,7 @@ class MsgDBPersonalDetailsRespAdd PROTOBUF_FINAL :
                &_MsgDBPersonalDetailsRespAdd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    57;
 
   friend void swap(MsgDBPersonalDetailsRespAdd& a, MsgDBPersonalDetailsRespAdd& b) {
     a.Swap(&b);
@@ -11076,7 +10925,7 @@ class MsgDBUpgradeVIP PROTOBUF_FINAL :
                &_MsgDBUpgradeVIP_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    58;
 
   friend void swap(MsgDBUpgradeVIP& a, MsgDBUpgradeVIP& b) {
     a.Swap(&b);
@@ -11245,7 +11094,7 @@ class MsgDBSetSubAgent PROTOBUF_FINAL :
                &_MsgDBSetSubAgent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    59;
 
   friend void swap(MsgDBSetSubAgent& a, MsgDBSetSubAgent& b) {
     a.Swap(&b);
@@ -11403,7 +11252,7 @@ class MsgDBGetPlayerGold PROTOBUF_FINAL :
                &_MsgDBGetPlayerGold_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    60;
 
   friend void swap(MsgDBGetPlayerGold& a, MsgDBGetPlayerGold& b) {
     a.Swap(&b);
@@ -11550,7 +11399,7 @@ class MsgDBControlUser PROTOBUF_FINAL :
                &_MsgDBControlUser_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    61;
 
   friend void swap(MsgDBControlUser& a, MsgDBControlUser& b) {
     a.Swap(&b);
@@ -11719,7 +11568,7 @@ class MsgDBModifyProp PROTOBUF_FINAL :
                &_MsgDBModifyProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    62;
 
   friend void swap(MsgDBModifyProp& a, MsgDBModifyProp& b) {
     a.Swap(&b);
@@ -11877,7 +11726,7 @@ class MsgErrorCode PROTOBUF_FINAL :
                &_MsgErrorCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    63;
 
   friend void swap(MsgErrorCode& a, MsgErrorCode& b) {
     a.Swap(&b);
@@ -12024,7 +11873,7 @@ class MsgDeleteFrequentlyPhone PROTOBUF_FINAL :
                &_MsgDeleteFrequentlyPhone_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    64;
 
   friend void swap(MsgDeleteFrequentlyPhone& a, MsgDeleteFrequentlyPhone& b) {
     a.Swap(&b);
@@ -12187,7 +12036,7 @@ class MsgPvpSerTableInfo PROTOBUF_FINAL :
                &_MsgPvpSerTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    65;
 
   friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
     a.Swap(&b);
@@ -12425,7 +12274,7 @@ class MsgPvpAddTable PROTOBUF_FINAL :
                &_MsgPvpAddTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    66;
 
   friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
     a.Swap(&b);
@@ -12581,7 +12430,7 @@ class MsgPvpDelTable PROTOBUF_FINAL :
                &_MsgPvpDelTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    67;
 
   friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
     a.Swap(&b);
@@ -12999,50 +12848,6 @@ inline void MsgRegisterGameServer::set_allocated_room_name(std::string* room_nam
   room_name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), room_name,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgRegisterGameServer.room_name)
-}
-
-// -------------------------------------------------------------------
-
-// MsgModifyTableInfo
-
-// int32 table_No = 1;
-inline void MsgModifyTableInfo::clear_table_no() {
-  table_no_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgModifyTableInfo::_internal_table_no() const {
-  return table_no_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgModifyTableInfo::table_no() const {
-  // @@protoc_insertion_point(field_get:MsgModifyTableInfo.table_No)
-  return _internal_table_no();
-}
-inline void MsgModifyTableInfo::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  table_no_ = value;
-}
-inline void MsgModifyTableInfo::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_table_no(value);
-  // @@protoc_insertion_point(field_set:MsgModifyTableInfo.table_No)
-}
-
-// bool is_add = 2;
-inline void MsgModifyTableInfo::clear_is_add() {
-  is_add_ = false;
-}
-inline bool MsgModifyTableInfo::_internal_is_add() const {
-  return is_add_;
-}
-inline bool MsgModifyTableInfo::is_add() const {
-  // @@protoc_insertion_point(field_get:MsgModifyTableInfo.is_add)
-  return _internal_is_add();
-}
-inline void MsgModifyTableInfo::_internal_set_is_add(bool value) {
-  
-  is_add_ = value;
-}
-inline void MsgModifyTableInfo::set_is_add(bool value) {
-  _internal_set_is_add(value);
-  // @@protoc_insertion_point(field_set:MsgModifyTableInfo.is_add)
 }
 
 // -------------------------------------------------------------------
@@ -21355,8 +21160,6 @@ inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

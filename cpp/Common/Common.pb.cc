@@ -37,6 +37,10 @@ class MsgCommonStrDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgCommonStr> _instance;
 } _MsgCommonStr_default_instance_;
+class MsgModifyTableInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgModifyTableInfo> _instance;
+} _MsgModifyTableInfo_default_instance_;
 class MsgGameServerInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgGameServerInfo> _instance;
@@ -214,6 +218,19 @@ static void InitDefaultsscc_info_MsgGameServerList_Common_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgGameServerList_Common_2eproto}, {
       &scc_info_MsgGameServerInfo_Common_2eproto.base,}};
 
+static void InitDefaultsscc_info_MsgModifyTableInfo_Common_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgModifyTableInfo_default_instance_;
+    new (ptr) ::MsgModifyTableInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgModifyTableInfo_Common_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgModifyTableInfo_Common_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgNotifyChatNormalMsg_Common_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -241,7 +258,7 @@ static void InitDefaultsscc_info_MsgNotifyChatTrumpetMsg_Common_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgNotifyChatTrumpetMsg_Common_2eproto}, {
       &scc_info_MsgChatPlayerInfo_Common_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Common_2eproto[13];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Common_2eproto[14];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Common_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Common_2eproto = nullptr;
 
@@ -275,6 +292,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgCommonStr, value_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, table_no_),
+  PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, is_add_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -364,14 +388,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 11, -1, sizeof(::MsgCommonN32)},
   { 17, -1, sizeof(::MsgCommonN64)},
   { 23, -1, sizeof(::MsgCommonStr)},
-  { 29, -1, sizeof(::MsgGameServerInfo)},
-  { 45, -1, sizeof(::MsgGameServerList)},
-  { 51, -1, sizeof(::MsgBroadcastZmdTip)},
-  { 67, -1, sizeof(::MsgNotifyChatNormalMsg)},
-  { 75, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
-  { 83, -1, sizeof(::MsgChatPlayerInfo)},
-  { 95, -1, sizeof(::MsgChatServerInfo)},
-  { 105, -1, sizeof(::MsgChatServerList)},
+  { 29, -1, sizeof(::MsgModifyTableInfo)},
+  { 36, -1, sizeof(::MsgGameServerInfo)},
+  { 52, -1, sizeof(::MsgGameServerList)},
+  { 58, -1, sizeof(::MsgBroadcastZmdTip)},
+  { 74, -1, sizeof(::MsgNotifyChatNormalMsg)},
+  { 82, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
+  { 90, -1, sizeof(::MsgChatPlayerInfo)},
+  { 102, -1, sizeof(::MsgChatServerInfo)},
+  { 112, -1, sizeof(::MsgChatServerList)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -380,6 +405,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCommonN32_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCommonN64_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCommonStr_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgModifyTableInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGameServerInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGameServerList_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBroadcastZmdTip_default_instance_),
@@ -394,37 +420,39 @@ const char descriptor_table_protodef_Common_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\n\014Common.proto\"\020\n\016MsgCommonEmpty\"\036\n\rMsgC"
   "ommonBool\022\r\n\005value\030\001 \001(\010\"\035\n\014MsgCommonN32"
   "\022\r\n\005value\030\001 \001(\005\"\035\n\014MsgCommonN64\022\r\n\005value"
-  "\030\001 \001(\003\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"\341\001"
-  "\n\021MsgGameServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030"
-  "\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005\022\022\n\nonline_num\030\004"
-  " \001(\005\022\017\n\007kind_id\030\005 \001(\005\022\022\n\nroom_level\030\006 \001("
-  "\005\022\022\n\nlimit_gold\030\007 \001(\005\022\022\n\nmax_player\030\010 \001("
-  "\005\022\021\n\ttable_num\030\t \001(\005\022\021\n\tchair_num\030\n \001(\005\022"
-  "\030\n\020is_need_password\030\013 \001(\010\"A\n\021MsgGameServ"
-  "erList\022,\n\020game_server_list\030\001 \003(\0132\022.MsgGa"
-  "meServerInfo\"\345\001\n\022MsgBroadcastZmdTip\022\017\n\007u"
-  "ser_id\030\001 \001(\005\022\017\n\007game_id\030\002 \001(\005\022\022\n\nroom_le"
-  "vel\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\004\022\021\n\tnick_name"
-  "\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t\022\023\n\013language_id\030"
-  "\007 \001(\005\022\023\n\013template_id\030\010 \001(\005\022\021\n\tvip_level\030"
-  "\t \001(\005\022\024\n\014avatar_frame\030\n \001(\005\022\017\n\007content\030\013"
-  " \003(\t\"I\n\026MsgNotifyChatNormalMsg\022\r\n\005index\030"
-  "\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017\n\007message\030\003 \001(\t\""
-  "b\n\027MsgNotifyChatTrumpetMsg\022\r\n\005index\030\001 \001("
-  "\005\022\'\n\013player_info\030\002 \001(\0132\022.MsgChatPlayerIn"
-  "fo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021MsgChatPlayerInf"
-  "o\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001(\005"
-  "\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\021\n\tvi"
-  "p_level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 \001(\005\022\023\n\013c"
-  "lient_type\030\007 \001(\005\"h\n\021MsgChatServerInfo\022\n\n"
-  "\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id\030\003 \001"
-  "(\005\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nmax_player\030\005 \001"
-  "(\005\"A\n\021MsgChatServerList\022,\n\020chat_server_l"
-  "ist\030\001 \003(\0132\022.MsgChatServerInfob\006proto3"
+  "\030\001 \001(\003\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"6\n"
+  "\022MsgModifyTableInfo\022\020\n\010table_No\030\001 \001(\005\022\016\n"
+  "\006is_add\030\002 \001(\010\"\341\001\n\021MsgGameServerInfo\022\n\n\002i"
+  "p\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005"
+  "\022\022\n\nonline_num\030\004 \001(\005\022\017\n\007kind_id\030\005 \001(\005\022\022\n"
+  "\nroom_level\030\006 \001(\005\022\022\n\nlimit_gold\030\007 \001(\005\022\022\n"
+  "\nmax_player\030\010 \001(\005\022\021\n\ttable_num\030\t \001(\005\022\021\n\t"
+  "chair_num\030\n \001(\005\022\030\n\020is_need_password\030\013 \001("
+  "\010\"A\n\021MsgGameServerList\022,\n\020game_server_li"
+  "st\030\001 \003(\0132\022.MsgGameServerInfo\"\345\001\n\022MsgBroa"
+  "dcastZmdTip\022\017\n\007user_id\030\001 \001(\005\022\017\n\007game_id\030"
+  "\002 \001(\005\022\022\n\nroom_level\030\003 \001(\005\022\020\n\010win_gold\030\004 "
+  "\001(\004\022\021\n\tnick_name\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t"
+  "\022\023\n\013language_id\030\007 \001(\005\022\023\n\013template_id\030\010 \001"
+  "(\005\022\021\n\tvip_level\030\t \001(\005\022\024\n\014avatar_frame\030\n "
+  "\001(\005\022\017\n\007content\030\013 \003(\t\"I\n\026MsgNotifyChatNor"
+  "malMsg\022\r\n\005index\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017"
+  "\n\007message\030\003 \001(\t\"b\n\027MsgNotifyChatTrumpetM"
+  "sg\022\r\n\005index\030\001 \001(\005\022\'\n\013player_info\030\002 \001(\0132\022"
+  ".MsgChatPlayerInfo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021"
+  "MsgChatPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014be"
+  "autiful_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006av"
+  "atar\030\004 \001(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_"
+  "frame\030\006 \001(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgC"
+  "hatServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022"
+  "\021\n\tserver_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022"
+  "\n\nmax_player\030\005 \001(\005\"A\n\021MsgChatServerList\022"
+  ",\n\020chat_server_list\030\001 \003(\0132\022.MsgChatServe"
+  "rInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Common_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Common_2eproto_sccs[13] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Common_2eproto_sccs[14] = {
   &scc_info_MsgBroadcastZmdTip_Common_2eproto.base,
   &scc_info_MsgChatPlayerInfo_Common_2eproto.base,
   &scc_info_MsgChatServerInfo_Common_2eproto.base,
@@ -436,15 +464,16 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
   &scc_info_MsgCommonStr_Common_2eproto.base,
   &scc_info_MsgGameServerInfo_Common_2eproto.base,
   &scc_info_MsgGameServerList_Common_2eproto.base,
+  &scc_info_MsgModifyTableInfo_Common_2eproto.base,
   &scc_info_MsgNotifyChatNormalMsg_Common_2eproto.base,
   &scc_info_MsgNotifyChatTrumpetMsg_Common_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Common_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto = {
-  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1197,
-  &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 13, 0,
+  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1253,
+  &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_Common_2eproto::offsets,
-  file_level_metadata_Common_2eproto, 13, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
+  file_level_metadata_Common_2eproto, 14, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1394,6 +1423,233 @@ void MsgCommonStr::InternalSwap(MsgCommonStr* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgCommonStr::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgModifyTableInfo::_Internal {
+ public:
+};
+
+MsgModifyTableInfo::MsgModifyTableInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgModifyTableInfo)
+}
+MsgModifyTableInfo::MsgModifyTableInfo(const MsgModifyTableInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&table_no_, &from.table_no_,
+    static_cast<size_t>(reinterpret_cast<char*>(&is_add_) -
+    reinterpret_cast<char*>(&table_no_)) + sizeof(is_add_));
+  // @@protoc_insertion_point(copy_constructor:MsgModifyTableInfo)
+}
+
+void MsgModifyTableInfo::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&table_no_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_add_) -
+      reinterpret_cast<char*>(&table_no_)) + sizeof(is_add_));
+}
+
+MsgModifyTableInfo::~MsgModifyTableInfo() {
+  // @@protoc_insertion_point(destructor:MsgModifyTableInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgModifyTableInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgModifyTableInfo::ArenaDtor(void* object) {
+  MsgModifyTableInfo* _this = reinterpret_cast< MsgModifyTableInfo* >(object);
+  (void)_this;
+}
+void MsgModifyTableInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgModifyTableInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgModifyTableInfo& MsgModifyTableInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgModifyTableInfo_Common_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgModifyTableInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgModifyTableInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&table_no_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_add_) -
+      reinterpret_cast<char*>(&table_no_)) + sizeof(is_add_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgModifyTableInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 table_No = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          table_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_add = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          is_add_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgModifyTableInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgModifyTableInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 table_No = 1;
+  if (this->table_no() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_table_no(), target);
+  }
+
+  // bool is_add = 2;
+  if (this->is_add() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_is_add(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgModifyTableInfo)
+  return target;
+}
+
+size_t MsgModifyTableInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgModifyTableInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 table_No = 1;
+  if (this->table_no() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_table_no());
+  }
+
+  // bool is_add = 2;
+  if (this->is_add() != 0) {
+    total_size += 1 + 1;
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgModifyTableInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgModifyTableInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgModifyTableInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgModifyTableInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgModifyTableInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgModifyTableInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MsgModifyTableInfo::MergeFrom(const MsgModifyTableInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgModifyTableInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.table_no() != 0) {
+    _internal_set_table_no(from._internal_table_no());
+  }
+  if (from.is_add() != 0) {
+    _internal_set_is_add(from._internal_is_add());
+  }
+}
+
+void MsgModifyTableInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgModifyTableInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgModifyTableInfo::CopyFrom(const MsgModifyTableInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgModifyTableInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgModifyTableInfo::IsInitialized() const {
+  return true;
+}
+
+void MsgModifyTableInfo::InternalSwap(MsgModifyTableInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgModifyTableInfo, is_add_)
+      + sizeof(MsgModifyTableInfo::is_add_)
+      - PROTOBUF_FIELD_OFFSET(MsgModifyTableInfo, table_no_)>(
+          reinterpret_cast<char*>(&table_no_),
+          reinterpret_cast<char*>(&other->table_no_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgModifyTableInfo::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -3951,6 +4207,9 @@ template<> PROTOBUF_NOINLINE ::MsgCommonN64* Arena::CreateMaybeMessage< ::MsgCom
 }
 template<> PROTOBUF_NOINLINE ::MsgCommonStr* Arena::CreateMaybeMessage< ::MsgCommonStr >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgCommonStr >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgModifyTableInfo* Arena::CreateMaybeMessage< ::MsgModifyTableInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgModifyTableInfo >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgGameServerInfo* Arena::CreateMaybeMessage< ::MsgGameServerInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgGameServerInfo >(arena);

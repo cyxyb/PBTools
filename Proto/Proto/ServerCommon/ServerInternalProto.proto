@@ -25,13 +25,6 @@ message MsgRegisterGameServer
 }
 
 //修改桌子信息
-message MsgModifyTableInfo
-{
-	int32	table_No			= 1; //桌子号
-	bool	is_add				= 2; //是否增加
-}
-
-//修改桌子信息
 message MsgLoginModifyTableInfo
 {
 	int32	table_No			= 1; //桌子号

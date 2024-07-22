@@ -195,6 +195,7 @@ enum EMsgIDGame
 	MsgIDGame_GetPropInfo				= 1023;		//获取道具信息(MsgCommonBool)
 	MsgIDGame_GetPropInfoResp			= 1024;		//获取道具信息返回(MsgGetPropInfo)
 	MsgIDGame_SitDownByTableNo			= 1025;		//玩家通过桌子号坐下(MsgSitDownByTableNo)
+	MsgIDGame_SyncTableInfo				= 1026;		//同步桌子人数信息(MsgModifyTableInfo)
 	
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////
