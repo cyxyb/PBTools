@@ -25,29 +25,30 @@ public static partial class CommonReflection {
           "ChlQcm90by9Db21tb24vQ29tbW9uLnByb3RvIhAKDk1zZ0NvbW1vbkVtcHR5",
           "Ih4KDU1zZ0NvbW1vbkJvb2wSDQoFdmFsdWUYASABKAgiHQoMTXNnQ29tbW9u",
           "TjMyEg0KBXZhbHVlGAEgASgFIh0KDE1zZ0NvbW1vbk42NBINCgV2YWx1ZRgB",
-          "IAEoAyIdCgxNc2dDb21tb25TdHISDQoFdmFsdWUYASABKAkioQEKEU1zZ0dh",
+          "IAEoAyIdCgxNc2dDb21tb25TdHISDQoFdmFsdWUYASABKAki4QEKEU1zZ0dh",
           "bWVTZXJ2ZXJJbmZvEgoKAmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJc2Vy",
           "dmVyX2lkGAMgASgFEhIKCm9ubGluZV9udW0YBCABKAUSDwoHa2luZF9pZBgF",
           "IAEoBRISCgpyb29tX2xldmVsGAYgASgFEhIKCmxpbWl0X2dvbGQYByABKAUS",
-          "EgoKbWF4X3BsYXllchgIIAEoBSJBChFNc2dHYW1lU2VydmVyTGlzdBIsChBn",
-          "YW1lX3NlcnZlcl9saXN0GAEgAygLMhIuTXNnR2FtZVNlcnZlckluZm8i5QEK",
-          "Ek1zZ0Jyb2FkY2FzdFptZFRpcBIPCgd1c2VyX2lkGAEgASgFEg8KB2dhbWVf",
-          "aWQYAiABKAUSEgoKcm9vbV9sZXZlbBgDIAEoBRIQCgh3aW5fZ29sZBgEIAEo",
-          "BBIRCgluaWNrX25hbWUYBSABKAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFu",
-          "Z3VhZ2VfaWQYByABKAUSEwoLdGVtcGxhdGVfaWQYCCABKAUSEQoJdmlwX2xl",
-          "dmVsGAkgASgFEhQKDGF2YXRhcl9mcmFtZRgKIAEoBRIPCgdjb250ZW50GAsg",
-          "AygJIkkKFk1zZ05vdGlmeUNoYXROb3JtYWxNc2cSDQoFaW5kZXgYASABKAUS",
-          "DwoHdXNlcl9pZBgCIAEoBRIPCgdtZXNzYWdlGAMgASgJImIKF01zZ05vdGlm",
-          "eUNoYXRUcnVtcGV0TXNnEg0KBWluZGV4GAEgASgFEicKC3BsYXllcl9pbmZv",
-          "GAIgASgLMhIuTXNnQ2hhdFBsYXllckluZm8SDwoHbWVzc2FnZRgDIAEoCSKa",
-          "AQoRTXNnQ2hhdFBsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1",
-          "dGlmdWxfaWQYAiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQg",
-          "ASgJEhEKCXZpcF9sZXZlbBgFIAEoBRIUCgxhdmF0YXJfZnJhbWUYBiABKAUS",
-          "EwoLY2xpZW50X3R5cGUYByABKAUiaAoRTXNnQ2hhdFNlcnZlckluZm8SCgoC",
-          "aXAYASABKAUSDAoEcG9ydBgCIAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoK",
-          "b25saW5lX251bRgEIAEoBRISCgptYXhfcGxheWVyGAUgASgFIkEKEU1zZ0No",
-          "YXRTZXJ2ZXJMaXN0EiwKEGNoYXRfc2VydmVyX2xpc3QYASADKAsyEi5Nc2dD",
-          "aGF0U2VydmVySW5mb2IGcHJvdG8z"));
+          "EgoKbWF4X3BsYXllchgIIAEoBRIRCgl0YWJsZV9udW0YCSABKAUSEQoJY2hh",
+          "aXJfbnVtGAogASgFEhgKEGlzX25lZWRfcGFzc3dvcmQYCyABKAgiQQoRTXNn",
+          "R2FtZVNlcnZlckxpc3QSLAoQZ2FtZV9zZXJ2ZXJfbGlzdBgBIAMoCzISLk1z",
+          "Z0dhbWVTZXJ2ZXJJbmZvIuUBChJNc2dCcm9hZGNhc3RabWRUaXASDwoHdXNl",
+          "cl9pZBgBIAEoBRIPCgdnYW1lX2lkGAIgASgFEhIKCnJvb21fbGV2ZWwYAyAB",
+          "KAUSEAoId2luX2dvbGQYBCABKAQSEQoJbmlja19uYW1lGAUgASgJEhAKCGhl",
+          "YWRfdXJsGAYgASgJEhMKC2xhbmd1YWdlX2lkGAcgASgFEhMKC3RlbXBsYXRl",
+          "X2lkGAggASgFEhEKCXZpcF9sZXZlbBgJIAEoBRIUCgxhdmF0YXJfZnJhbWUY",
+          "CiABKAUSDwoHY29udGVudBgLIAMoCSJJChZNc2dOb3RpZnlDaGF0Tm9ybWFs",
+          "TXNnEg0KBWluZGV4GAEgASgFEg8KB3VzZXJfaWQYAiABKAUSDwoHbWVzc2Fn",
+          "ZRgDIAEoCSJiChdNc2dOb3RpZnlDaGF0VHJ1bXBldE1zZxINCgVpbmRleBgB",
+          "IAEoBRInCgtwbGF5ZXJfaW5mbxgCIAEoCzISLk1zZ0NoYXRQbGF5ZXJJbmZv",
+          "Eg8KB21lc3NhZ2UYAyABKAkimgEKEU1zZ0NoYXRQbGF5ZXJJbmZvEg8KB3Vz",
+          "ZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lkGAIgASgFEhAKCG5pY2tuYW1l",
+          "GAMgASgJEg4KBmF2YXRhchgEIAEoCRIRCgl2aXBfbGV2ZWwYBSABKAUSFAoM",
+          "YXZhdGFyX2ZyYW1lGAYgASgFEhMKC2NsaWVudF90eXBlGAcgASgFImgKEU1z",
+          "Z0NoYXRTZXJ2ZXJJbmZvEgoKAmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJ",
+          "c2VydmVyX2lkGAMgASgFEhIKCm9ubGluZV9udW0YBCABKAUSEgoKbWF4X3Bs",
+          "YXllchgFIAEoBSJBChFNc2dDaGF0U2VydmVyTGlzdBIsChBjaGF0X3NlcnZl",
+          "cl9saXN0GAEgAygLMhIuTXNnQ2hhdFNlcnZlckluZm9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -56,7 +57,7 @@ public static partial class CommonReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonN32), global::MsgCommonN32.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonN64), global::MsgCommonN64.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonStr), global::MsgCommonStr.Parser, new[]{ "Value" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerInfo), global::MsgGameServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "KindId", "RoomLevel", "LimitGold", "MaxPlayer" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerInfo), global::MsgGameServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "KindId", "RoomLevel", "LimitGold", "MaxPlayer", "TableNum", "ChairNum", "IsNeedPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerList), global::MsgGameServerList.Parser, new[]{ "GameServerList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBroadcastZmdTip), global::MsgBroadcastZmdTip.Parser, new[]{ "UserId", "GameId", "RoomLevel", "WinGold", "NickName", "HeadUrl", "LanguageId", "TemplateId", "VipLevel", "AvatarFrame", "Content" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatNormalMsg), global::MsgNotifyChatNormalMsg.Parser, new[]{ "Index", "UserId", "Message" }, null, null, null, null),
@@ -934,6 +935,9 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
     roomLevel_ = other.roomLevel_;
     limitGold_ = other.limitGold_;
     maxPlayer_ = other.maxPlayer_;
+    tableNum_ = other.tableNum_;
+    chairNum_ = other.chairNum_;
+    isNeedPassword_ = other.isNeedPassword_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1054,6 +1058,48 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
     }
   }
 
+  /// <summary>Field number for the "table_num" field.</summary>
+  public const int TableNumFieldNumber = 9;
+  private int tableNum_;
+  /// <summary>
+  ///桌子数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TableNum {
+    get { return tableNum_; }
+    set {
+      tableNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "chair_num" field.</summary>
+  public const int ChairNumFieldNumber = 10;
+  private int chairNum_;
+  /// <summary>
+  ///椅子号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ChairNum {
+    get { return chairNum_; }
+    set {
+      chairNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "is_need_password" field.</summary>
+  public const int IsNeedPasswordFieldNumber = 11;
+  private bool isNeedPassword_;
+  /// <summary>
+  ///需要密码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsNeedPassword {
+    get { return isNeedPassword_; }
+    set {
+      isNeedPassword_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgGameServerInfo);
@@ -1075,6 +1121,9 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
     if (RoomLevel != other.RoomLevel) return false;
     if (LimitGold != other.LimitGold) return false;
     if (MaxPlayer != other.MaxPlayer) return false;
+    if (TableNum != other.TableNum) return false;
+    if (ChairNum != other.ChairNum) return false;
+    if (IsNeedPassword != other.IsNeedPassword) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1089,6 +1138,9 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
     if (RoomLevel != 0) hash ^= RoomLevel.GetHashCode();
     if (LimitGold != 0) hash ^= LimitGold.GetHashCode();
     if (MaxPlayer != 0) hash ^= MaxPlayer.GetHashCode();
+    if (TableNum != 0) hash ^= TableNum.GetHashCode();
+    if (ChairNum != 0) hash ^= ChairNum.GetHashCode();
+    if (IsNeedPassword != false) hash ^= IsNeedPassword.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1137,6 +1189,18 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(MaxPlayer);
     }
+    if (TableNum != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(TableNum);
+    }
+    if (ChairNum != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(ChairNum);
+    }
+    if (IsNeedPassword != false) {
+      output.WriteRawTag(88);
+      output.WriteBool(IsNeedPassword);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1178,6 +1242,18 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(MaxPlayer);
     }
+    if (TableNum != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(TableNum);
+    }
+    if (ChairNum != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(ChairNum);
+    }
+    if (IsNeedPassword != false) {
+      output.WriteRawTag(88);
+      output.WriteBool(IsNeedPassword);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1210,6 +1286,15 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
     }
     if (MaxPlayer != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxPlayer);
+    }
+    if (TableNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableNum);
+    }
+    if (ChairNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairNum);
+    }
+    if (IsNeedPassword != false) {
+      size += 1 + 1;
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1245,6 +1330,15 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
     }
     if (other.MaxPlayer != 0) {
       MaxPlayer = other.MaxPlayer;
+    }
+    if (other.TableNum != 0) {
+      TableNum = other.TableNum;
+    }
+    if (other.ChairNum != 0) {
+      ChairNum = other.ChairNum;
+    }
+    if (other.IsNeedPassword != false) {
+      IsNeedPassword = other.IsNeedPassword;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -1292,6 +1386,18 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
           MaxPlayer = input.ReadInt32();
           break;
         }
+        case 72: {
+          TableNum = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          ChairNum = input.ReadInt32();
+          break;
+        }
+        case 88: {
+          IsNeedPassword = input.ReadBool();
+          break;
+        }
       }
     }
   #endif
@@ -1336,6 +1442,18 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
         }
         case 64: {
           MaxPlayer = input.ReadInt32();
+          break;
+        }
+        case 72: {
+          TableNum = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          ChairNum = input.ReadInt32();
+          break;
+        }
+        case 88: {
+          IsNeedPassword = input.ReadBool();
           break;
         }
       }

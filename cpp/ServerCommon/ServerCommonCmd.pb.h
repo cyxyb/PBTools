@@ -130,6 +130,7 @@ enum EMsgIDServerInternalProto : int {
   LOGIN2CENTER_KickUser = 36,
   CENTER2LOGIN_NotifyWebBuyWeekMonthCard = 37,
   CENTER2LOGIN_NotifySysMaintain = 38,
+  CENTER2LOGIN_ModifyTableInfo = 39,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
@@ -137,6 +138,7 @@ enum EMsgIDServerInternalProto : int {
   GAME2CENTER_UpdateOnlineNum = 2005,
   GAME2CENTER_BroadcastTip = 2006,
   CENTER2GAME_KickUserResp = 2007,
+  GAME2CENTER_ModifyTableInfo = 2008,
   GAME2CENTER_PvpAddTable = 2050,
   GAME2CENTER_PvpDelTable = 2051,
   ROBOT2GAME_RobotLogin = 3001,
@@ -374,12 +376,13 @@ enum EGameBattleTypeID : int {
   GAME_CREATE = 2,
   GAME_BATTLE = 3,
   GAME_BANKER_HUNDERD = 4,
+  GAME_TRANSFER_GAME = 5,
   EGameBattleTypeID_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EGameBattleTypeID_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EGameBattleTypeID_IsValid(int value);
 constexpr EGameBattleTypeID EGameBattleTypeID_MIN = GAME_NORMAL;
-constexpr EGameBattleTypeID EGameBattleTypeID_MAX = GAME_BANKER_HUNDERD;
+constexpr EGameBattleTypeID EGameBattleTypeID_MAX = GAME_TRANSFER_GAME;
 constexpr int EGameBattleTypeID_ARRAYSIZE = EGameBattleTypeID_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGameBattleTypeID_descriptor();

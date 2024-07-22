@@ -38,6 +38,13 @@ message MsgGamePlayerLoginResp
 	uint64		coin			= 6;	//玩家金币
 }
 
+//玩家坐下指定桌子号
+message MsgSitDownByTableNo
+{
+	int32		table_no		= 1;	//桌子号
+	string		password		= 2;	//设置的密码
+}
+
 //同步桌子所有玩家分数
 message MsgSyncPlayersScore
 {

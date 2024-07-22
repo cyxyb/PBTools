@@ -164,6 +164,8 @@ enum EMsgIDLogin
 	MsgIDAgent_ControlUserResp					= 150;		//控制玩家返回(MsgCommonN32)
 	MsgIDTransfer_TransferRecall				= 151;		//转账撤回(MsgCommonN32)
 	MsgIDTransfer_TransferRecallResp			= 152;		//转账撤回返回(MsgTranferRecallResp)
+	MsgIDSelectRoom_GetTableInfo				= 153;		//请求桌子信息(MsgReqRoomTableInfo)
+	MsgIDSelectRoom_GetTableInfoResp			= 154;		//请求桌子信息返回(MsgRoomTableInfoResp)
 }
 
 enum EMsgIDGame
@@ -192,6 +194,7 @@ enum EMsgIDGame
 	MsgIDGame_ModifyPropResp			= 1022;		//道具修改返回(MsgPropInfo)
 	MsgIDGame_GetPropInfo				= 1023;		//获取道具信息(MsgCommonBool)
 	MsgIDGame_GetPropInfoResp			= 1024;		//获取道具信息返回(MsgGetPropInfo)
+	MsgIDGame_SitDownByTableNo			= 1025;		//玩家通过桌子号坐下(MsgSitDownByTableNo)
 	
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////

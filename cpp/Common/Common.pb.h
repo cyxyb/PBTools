@@ -904,6 +904,9 @@ class MsgGameServerInfo PROTOBUF_FINAL :
     kRoomLevelFieldNumber = 6,
     kLimitGoldFieldNumber = 7,
     kMaxPlayerFieldNumber = 8,
+    kTableNumFieldNumber = 9,
+    kChairNumFieldNumber = 10,
+    kIsNeedPasswordFieldNumber = 11,
   };
   // int32 ip = 1;
   void clear_ip();
@@ -977,6 +980,33 @@ class MsgGameServerInfo PROTOBUF_FINAL :
   void _internal_set_max_player(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 table_num = 9;
+  void clear_table_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_num() const;
+  void set_table_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_num() const;
+  void _internal_set_table_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 chair_num = 10;
+  void clear_chair_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_num() const;
+  void set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_num() const;
+  void _internal_set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_need_password = 11;
+  void clear_is_need_password();
+  bool is_need_password() const;
+  void set_is_need_password(bool value);
+  private:
+  bool _internal_is_need_password() const;
+  void _internal_set_is_need_password(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgGameServerInfo)
  private:
   class _Internal;
@@ -992,6 +1022,9 @@ class MsgGameServerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 room_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 limit_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 max_player_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_num_;
+  bool is_need_password_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Common_2eproto;
 };
@@ -2605,6 +2638,66 @@ inline void MsgGameServerInfo::_internal_set_max_player(::PROTOBUF_NAMESPACE_ID:
 inline void MsgGameServerInfo::set_max_player(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_max_player(value);
   // @@protoc_insertion_point(field_set:MsgGameServerInfo.max_player)
+}
+
+// int32 table_num = 9;
+inline void MsgGameServerInfo::clear_table_num() {
+  table_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGameServerInfo::_internal_table_num() const {
+  return table_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGameServerInfo::table_num() const {
+  // @@protoc_insertion_point(field_get:MsgGameServerInfo.table_num)
+  return _internal_table_num();
+}
+inline void MsgGameServerInfo::_internal_set_table_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_num_ = value;
+}
+inline void MsgGameServerInfo::set_table_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_num(value);
+  // @@protoc_insertion_point(field_set:MsgGameServerInfo.table_num)
+}
+
+// int32 chair_num = 10;
+inline void MsgGameServerInfo::clear_chair_num() {
+  chair_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGameServerInfo::_internal_chair_num() const {
+  return chair_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGameServerInfo::chair_num() const {
+  // @@protoc_insertion_point(field_get:MsgGameServerInfo.chair_num)
+  return _internal_chair_num();
+}
+inline void MsgGameServerInfo::_internal_set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_num_ = value;
+}
+inline void MsgGameServerInfo::set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_num(value);
+  // @@protoc_insertion_point(field_set:MsgGameServerInfo.chair_num)
+}
+
+// bool is_need_password = 11;
+inline void MsgGameServerInfo::clear_is_need_password() {
+  is_need_password_ = false;
+}
+inline bool MsgGameServerInfo::_internal_is_need_password() const {
+  return is_need_password_;
+}
+inline bool MsgGameServerInfo::is_need_password() const {
+  // @@protoc_insertion_point(field_get:MsgGameServerInfo.is_need_password)
+  return _internal_is_need_password();
+}
+inline void MsgGameServerInfo::_internal_set_is_need_password(bool value) {
+  
+  is_need_password_ = value;
+}
+inline void MsgGameServerInfo::set_is_need_password(bool value) {
+  _internal_set_is_need_password(value);
+  // @@protoc_insertion_point(field_set:MsgGameServerInfo.is_need_password)
 }
 
 // -------------------------------------------------------------------

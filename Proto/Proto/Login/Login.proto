@@ -50,6 +50,22 @@ message MsgPlayerLoginResp
 	int32		register_gold	= 26;	//注册奖励金币
 }
 
+//请求房间桌子数据
+message MsgReqRoomTableInfo
+{
+	int32		server_id		= 1;	//服务器id
+	int32		kind_id			= 2;	//游戏id
+	int32		room_level		= 3;	//房间等级
+}
+
+//请求房间桌子数据返回
+message MsgRoomTableInfoResp
+{
+	int32		res_code		= 1;
+	int32		max_chair_num	= 2;	//椅子最大数量
+	repeated int32	table_info	= 3;	//桌子玩家数量
+}
+
 //修改密码
 message MsgModifyPassword
 {

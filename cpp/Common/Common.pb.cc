@@ -288,6 +288,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, room_level_),
   PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, limit_gold_),
   PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, max_player_),
+  PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, table_num_),
+  PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, chair_num_),
+  PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, is_need_password_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgGameServerList, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -362,13 +365,13 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 17, -1, sizeof(::MsgCommonN64)},
   { 23, -1, sizeof(::MsgCommonStr)},
   { 29, -1, sizeof(::MsgGameServerInfo)},
-  { 42, -1, sizeof(::MsgGameServerList)},
-  { 48, -1, sizeof(::MsgBroadcastZmdTip)},
-  { 64, -1, sizeof(::MsgNotifyChatNormalMsg)},
-  { 72, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
-  { 80, -1, sizeof(::MsgChatPlayerInfo)},
-  { 92, -1, sizeof(::MsgChatServerInfo)},
-  { 102, -1, sizeof(::MsgChatServerList)},
+  { 45, -1, sizeof(::MsgGameServerList)},
+  { 51, -1, sizeof(::MsgBroadcastZmdTip)},
+  { 67, -1, sizeof(::MsgNotifyChatNormalMsg)},
+  { 75, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
+  { 83, -1, sizeof(::MsgChatPlayerInfo)},
+  { 95, -1, sizeof(::MsgChatServerInfo)},
+  { 105, -1, sizeof(::MsgChatServerList)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -391,32 +394,33 @@ const char descriptor_table_protodef_Common_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\n\014Common.proto\"\020\n\016MsgCommonEmpty\"\036\n\rMsgC"
   "ommonBool\022\r\n\005value\030\001 \001(\010\"\035\n\014MsgCommonN32"
   "\022\r\n\005value\030\001 \001(\005\"\035\n\014MsgCommonN64\022\r\n\005value"
-  "\030\001 \001(\003\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"\241\001"
+  "\030\001 \001(\003\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"\341\001"
   "\n\021MsgGameServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030"
   "\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005\022\022\n\nonline_num\030\004"
   " \001(\005\022\017\n\007kind_id\030\005 \001(\005\022\022\n\nroom_level\030\006 \001("
   "\005\022\022\n\nlimit_gold\030\007 \001(\005\022\022\n\nmax_player\030\010 \001("
-  "\005\"A\n\021MsgGameServerList\022,\n\020game_server_li"
-  "st\030\001 \003(\0132\022.MsgGameServerInfo\"\345\001\n\022MsgBroa"
-  "dcastZmdTip\022\017\n\007user_id\030\001 \001(\005\022\017\n\007game_id\030"
-  "\002 \001(\005\022\022\n\nroom_level\030\003 \001(\005\022\020\n\010win_gold\030\004 "
-  "\001(\004\022\021\n\tnick_name\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t"
-  "\022\023\n\013language_id\030\007 \001(\005\022\023\n\013template_id\030\010 \001"
-  "(\005\022\021\n\tvip_level\030\t \001(\005\022\024\n\014avatar_frame\030\n "
-  "\001(\005\022\017\n\007content\030\013 \003(\t\"I\n\026MsgNotifyChatNor"
-  "malMsg\022\r\n\005index\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017"
-  "\n\007message\030\003 \001(\t\"b\n\027MsgNotifyChatTrumpetM"
-  "sg\022\r\n\005index\030\001 \001(\005\022\'\n\013player_info\030\002 \001(\0132\022"
-  ".MsgChatPlayerInfo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021"
-  "MsgChatPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014be"
-  "autiful_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006av"
-  "atar\030\004 \001(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_"
-  "frame\030\006 \001(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgC"
-  "hatServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022"
-  "\021\n\tserver_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022"
-  "\n\nmax_player\030\005 \001(\005\"A\n\021MsgChatServerList\022"
-  ",\n\020chat_server_list\030\001 \003(\0132\022.MsgChatServe"
-  "rInfob\006proto3"
+  "\005\022\021\n\ttable_num\030\t \001(\005\022\021\n\tchair_num\030\n \001(\005\022"
+  "\030\n\020is_need_password\030\013 \001(\010\"A\n\021MsgGameServ"
+  "erList\022,\n\020game_server_list\030\001 \003(\0132\022.MsgGa"
+  "meServerInfo\"\345\001\n\022MsgBroadcastZmdTip\022\017\n\007u"
+  "ser_id\030\001 \001(\005\022\017\n\007game_id\030\002 \001(\005\022\022\n\nroom_le"
+  "vel\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\004\022\021\n\tnick_name"
+  "\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t\022\023\n\013language_id\030"
+  "\007 \001(\005\022\023\n\013template_id\030\010 \001(\005\022\021\n\tvip_level\030"
+  "\t \001(\005\022\024\n\014avatar_frame\030\n \001(\005\022\017\n\007content\030\013"
+  " \003(\t\"I\n\026MsgNotifyChatNormalMsg\022\r\n\005index\030"
+  "\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017\n\007message\030\003 \001(\t\""
+  "b\n\027MsgNotifyChatTrumpetMsg\022\r\n\005index\030\001 \001("
+  "\005\022\'\n\013player_info\030\002 \001(\0132\022.MsgChatPlayerIn"
+  "fo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021MsgChatPlayerInf"
+  "o\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001(\005"
+  "\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\021\n\tvi"
+  "p_level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 \001(\005\022\023\n\013c"
+  "lient_type\030\007 \001(\005\"h\n\021MsgChatServerInfo\022\n\n"
+  "\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id\030\003 \001"
+  "(\005\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nmax_player\030\005 \001"
+  "(\005\"A\n\021MsgChatServerList\022,\n\020chat_server_l"
+  "ist\030\001 \003(\0132\022.MsgChatServerInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Common_2eproto_deps[1] = {
 };
@@ -437,7 +441,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Common_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto = {
-  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1133,
+  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1197,
   &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Common_2eproto::offsets,
   file_level_metadata_Common_2eproto, 13, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
@@ -1410,16 +1414,16 @@ MsgGameServerInfo::MsgGameServerInfo(const MsgGameServerInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&ip_, &from.ip_,
-    static_cast<size_t>(reinterpret_cast<char*>(&max_player_) -
-    reinterpret_cast<char*>(&ip_)) + sizeof(max_player_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_need_password_) -
+    reinterpret_cast<char*>(&ip_)) + sizeof(is_need_password_));
   // @@protoc_insertion_point(copy_constructor:MsgGameServerInfo)
 }
 
 void MsgGameServerInfo::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&ip_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&max_player_) -
-      reinterpret_cast<char*>(&ip_)) + sizeof(max_player_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_need_password_) -
+      reinterpret_cast<char*>(&ip_)) + sizeof(is_need_password_));
 }
 
 MsgGameServerInfo::~MsgGameServerInfo() {
@@ -1454,8 +1458,8 @@ void MsgGameServerInfo::Clear() {
   (void) cached_has_bits;
 
   ::memset(&ip_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&max_player_) -
-      reinterpret_cast<char*>(&ip_)) + sizeof(max_player_));
+      reinterpret_cast<char*>(&is_need_password_) -
+      reinterpret_cast<char*>(&ip_)) + sizeof(is_need_password_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1519,6 +1523,27 @@ const char* MsgGameServerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           max_player_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 table_num = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          table_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 chair_num = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          chair_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_need_password = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          is_need_password_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1598,6 +1623,24 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_max_player(), target);
   }
 
+  // int32 table_num = 9;
+  if (this->table_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_table_num(), target);
+  }
+
+  // int32 chair_num = 10;
+  if (this->chair_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_chair_num(), target);
+  }
+
+  // bool is_need_password = 11;
+  if (this->is_need_password() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(11, this->_internal_is_need_password(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1670,6 +1713,25 @@ size_t MsgGameServerInfo::ByteSizeLong() const {
         this->_internal_max_player());
   }
 
+  // int32 table_num = 9;
+  if (this->table_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_table_num());
+  }
+
+  // int32 chair_num = 10;
+  if (this->chair_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_num());
+  }
+
+  // bool is_need_password = 11;
+  if (this->is_need_password() != 0) {
+    total_size += 1 + 1;
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -1725,6 +1787,15 @@ void MsgGameServerInfo::MergeFrom(const MsgGameServerInfo& from) {
   if (from.max_player() != 0) {
     _internal_set_max_player(from._internal_max_player());
   }
+  if (from.table_num() != 0) {
+    _internal_set_table_num(from._internal_table_num());
+  }
+  if (from.chair_num() != 0) {
+    _internal_set_chair_num(from._internal_chair_num());
+  }
+  if (from.is_need_password() != 0) {
+    _internal_set_is_need_password(from._internal_is_need_password());
+  }
 }
 
 void MsgGameServerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1749,8 +1820,8 @@ void MsgGameServerInfo::InternalSwap(MsgGameServerInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgGameServerInfo, max_player_)
-      + sizeof(MsgGameServerInfo::max_player_)
+      PROTOBUF_FIELD_OFFSET(MsgGameServerInfo, is_need_password_)
+      + sizeof(MsgGameServerInfo::is_need_password_)
       - PROTOBUF_FIELD_OFFSET(MsgGameServerInfo, ip_)>(
           reinterpret_cast<char*>(&ip_),
           reinterpret_cast<char*>(&other->ip_));

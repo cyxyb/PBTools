@@ -18,8 +18,27 @@ message MsgRegisterGameServer
 	int32	kind_id				= 4; //kindID
 	int32	room_level			= 5; //房间等级
 	int32	limit_gold			= 6; //入场金币
-	int32	max_player			= 7; //最大人数
-	string	room_name			= 8; //房间名字
+	int32	table_num			= 7; //桌子数量
+	int32	chair_num			= 8; //椅子数量
+	bool	is_need_password	= 9; //是否需要密码
+	string	room_name			= 10;//房间名字
+}
+
+//修改桌子信息
+message MsgModifyTableInfo
+{
+	int32	table_No			= 1; //桌子号
+	bool	is_add				= 2; //是否增加
+}
+
+//修改桌子信息
+message MsgLoginModifyTableInfo
+{
+	int32	table_No			= 1; //桌子号
+	bool	is_add				= 2; //是否增加
+	int32	kind_id				= 3; //游戏ID
+	int32	room_level			= 4; //房间等级
+	int32	server_id			= 5; //服务器ID
 }
 
 //注册聊天服务器

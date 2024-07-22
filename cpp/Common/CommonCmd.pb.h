@@ -237,12 +237,14 @@ enum EMsgIDLogin : int {
   MsgIDAgent_ControlUserResp = 150,
   MsgIDTransfer_TransferRecall = 151,
   MsgIDTransfer_TransferRecallResp = 152,
+  MsgIDSelectRoom_GetTableInfo = 153,
+  MsgIDSelectRoom_GetTableInfoResp = 154,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDTransfer_TransferRecallResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDSelectRoom_GetTableInfoResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
@@ -283,6 +285,7 @@ enum EMsgIDGame : int {
   MsgIDGame_ModifyPropResp = 1022,
   MsgIDGame_GetPropInfo = 1023,
   MsgIDGame_GetPropInfoResp = 1024,
+  MsgIDGame_SitDownByTableNo = 1025,
   MsgIDGame_Pvp_GetRoomConfigResp = 1051,
   MsgIDGame_Pvp_SendTableListResp = 1053,
   MsgIDGame_Pvp_CreateTable = 1054,

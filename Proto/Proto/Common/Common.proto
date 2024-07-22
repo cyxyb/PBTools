@@ -36,6 +36,9 @@ message MsgGameServerInfo
 	int32	room_level			= 6;		//房间等级
 	int32	limit_gold			= 7;		//入场金币
 	int32	max_player			= 8;		//最大人数
+	int32	table_num			= 9;		//桌子数量
+	int32	chair_num			= 10;		//椅子号
+	bool	is_need_password	= 11;		//需要密码
 }
 
 //游戏服务器列表
