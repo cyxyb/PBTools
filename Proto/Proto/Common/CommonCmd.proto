@@ -167,7 +167,7 @@ enum EMsgIDLogin
 	MsgIDSelectRoom_GetTableInfo				= 153;		//请求桌子信息(MsgReqRoomTableInfo)
 	MsgIDSelectRoom_GetTableInfoResp			= 154;		//请求桌子信息返回(MsgRoomTableInfoResp)
 	MsgIDProp_GetPropInfo						= 155;		//获取道具信息(MsgCommonBool)
-	MsgIDProp_GetPropInfoResp					= 156;		//获取道具信息返回(MsgGetPropInfo)
+	MsgIDProp_GetPropInfoResp					= 156;		//获取道具信息返回(MsgPlayerPropInfo)
 }
 
 enum EMsgIDGame

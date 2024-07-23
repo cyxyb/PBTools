@@ -836,7 +836,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDProp_GetPropInfo")] MsgIdpropGetPropInfo = 155,
   /// <summary>
-  ///获取道具信息返回(MsgGetPropInfo)
+  ///获取道具信息返回(MsgPlayerPropInfo)
   /// </summary>
   [pbr::OriginalName("MsgIDProp_GetPropInfoResp")] MsgIdpropGetPropInfoResp = 156,
 }
