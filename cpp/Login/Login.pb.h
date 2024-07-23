@@ -1479,6 +1479,8 @@ class MsgRoomTableInfoResp PROTOBUF_FINAL :
     kTableInfoFieldNumber = 3,
     kResCodeFieldNumber = 1,
     kMaxChairNumFieldNumber = 2,
+    kKindIdFieldNumber = 4,
+    kRoomLevelFieldNumber = 5,
   };
   // repeated int32 table_info = 3;
   int table_info_size() const;
@@ -1520,6 +1522,24 @@ class MsgRoomTableInfoResp PROTOBUF_FINAL :
   void _internal_set_max_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 kind_id = 4;
+  void clear_kind_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_id() const;
+  void set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_kind_id() const;
+  void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 room_level = 5;
+  void clear_room_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 room_level() const;
+  void set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_room_level() const;
+  void _internal_set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgRoomTableInfoResp)
  private:
   class _Internal;
@@ -1531,6 +1551,8 @@ class MsgRoomTableInfoResp PROTOBUF_FINAL :
   mutable std::atomic<int> _table_info_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 max_chair_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 room_level_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -16968,6 +16990,46 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 MsgRoomTableInfoResp::mutable_table_info() {
   // @@protoc_insertion_point(field_mutable_list:MsgRoomTableInfoResp.table_info)
   return _internal_mutable_table_info();
+}
+
+// int32 kind_id = 4;
+inline void MsgRoomTableInfoResp::clear_kind_id() {
+  kind_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRoomTableInfoResp::_internal_kind_id() const {
+  return kind_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRoomTableInfoResp::kind_id() const {
+  // @@protoc_insertion_point(field_get:MsgRoomTableInfoResp.kind_id)
+  return _internal_kind_id();
+}
+inline void MsgRoomTableInfoResp::_internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  kind_id_ = value;
+}
+inline void MsgRoomTableInfoResp::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_kind_id(value);
+  // @@protoc_insertion_point(field_set:MsgRoomTableInfoResp.kind_id)
+}
+
+// int32 room_level = 5;
+inline void MsgRoomTableInfoResp::clear_room_level() {
+  room_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRoomTableInfoResp::_internal_room_level() const {
+  return room_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRoomTableInfoResp::room_level() const {
+  // @@protoc_insertion_point(field_get:MsgRoomTableInfoResp.room_level)
+  return _internal_room_level();
+}
+inline void MsgRoomTableInfoResp::_internal_set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  room_level_ = value;
+}
+inline void MsgRoomTableInfoResp::set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_room_level(value);
+  // @@protoc_insertion_point(field_set:MsgRoomTableInfoResp.room_level)
 }
 
 // -------------------------------------------------------------------

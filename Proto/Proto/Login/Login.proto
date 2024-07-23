@@ -64,6 +64,8 @@ message MsgRoomTableInfoResp
 	int32		res_code		= 1;
 	int32		max_chair_num	= 2;	//椅子最大数量
 	repeated int32	table_info	= 3;	//桌子玩家数量
+	int32		kind_id			= 4;	//游戏id
+	int32		room_level		= 5;	//房间等级
 }
 
 //修改密码

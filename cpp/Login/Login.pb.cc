@@ -1542,6 +1542,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgRoomTableInfoResp, res_code_),
   PROTOBUF_FIELD_OFFSET(::MsgRoomTableInfoResp, max_chair_num_),
   PROTOBUF_FIELD_OFFSET(::MsgRoomTableInfoResp, table_info_),
+  PROTOBUF_FIELD_OFFSET(::MsgRoomTableInfoResp, kind_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgRoomTableInfoResp, room_level_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgModifyPassword, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -2240,85 +2242,85 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 20, -1, sizeof(::MsgPlayerLoginResp)},
   { 50, -1, sizeof(::MsgReqRoomTableInfo)},
   { 58, -1, sizeof(::MsgRoomTableInfoResp)},
-  { 66, -1, sizeof(::MsgModifyPassword)},
-  { 73, -1, sizeof(::MsgBindPhone)},
-  { 82, -1, sizeof(::MsgCommonKV)},
-  { 89, -1, sizeof(::MsgPropInfo)},
-  { 95, -1, sizeof(::MsgCheckInInfo)},
-  { 104, -1, sizeof(::MsgTurntableHistoryData)},
-  { 116, -1, sizeof(::MsgTurnPlayInfo)},
-  { 126, -1, sizeof(::MsgTurnCfg)},
-  { 135, -1, sizeof(::MsgTurntableData)},
-  { 148, -1, sizeof(::MsgTurntable)},
-  { 155, -1, sizeof(::MsgTurntableResp)},
-  { 166, -1, sizeof(::MsgMailsInfo)},
-  { 172, -1, sizeof(::MsgMailData)},
-  { 186, -1, sizeof(::MsgShareData)},
-  { 193, -1, sizeof(::MsgBindParentData)},
-  { 199, -1, sizeof(::MsgInviteAwardInfo)},
-  { 207, -1, sizeof(::MsgInviteAwardConfig)},
-  { 214, -1, sizeof(::MsgRechargeInfo)},
-  { 224, -1, sizeof(::MsgQueryRebateRecordInfo)},
-  { 230, -1, sizeof(::MsgQueryRebateRecord)},
-  { 238, -1, sizeof(::MsgForgetPassword)},
-  { 247, -1, sizeof(::MsgVIPInfo)},
-  { 264, -1, sizeof(::MsgVIPConfig)},
-  { 270, -1, sizeof(::MsgUpgradeVIP)},
-  { 277, -1, sizeof(::MsgGetAvatarInfo)},
-  { 283, -1, sizeof(::MsgPlayerInfo)},
-  { 302, -1, sizeof(::ActiveInfoRet)},
-  { 318, -1, sizeof(::MsgActiveInfoSCRet)},
-  { 324, -1, sizeof(::MsgActiveInfoCSPick)},
-  { 332, -1, sizeof(::MsgActiveInfoSCPick)},
-  { 349, -1, sizeof(::MsgModifySignature)},
-  { 356, -1, sizeof(::MsgTransferOperate)},
-  { 363, -1, sizeof(::MsgTopInfo)},
-  { 375, -1, sizeof(::MsgGetRank)},
-  { 384, -1, sizeof(::MsgTopListResp)},
-  { 395, -1, sizeof(::MsgTransferOperateResp)},
-  { 402, -1, sizeof(::MsgTransferOperateSyncResp)},
-  { 412, -1, sizeof(::MsgTransferReceiveResp)},
-  { 419, -1, sizeof(::MsgTransferRecord)},
-  { 431, -1, sizeof(::MsgTransferRecordResp)},
-  { 437, -1, sizeof(::MsgPhoneCode)},
-  { 444, -1, sizeof(::MsgItem)},
-  { 451, -1, sizeof(::MsgPlayerItem)},
-  { 457, -1, sizeof(::MsgTransferQueryNickname)},
-  { 465, -1, sizeof(::MsgSubagentInformation)},
-  { 476, -1, sizeof(::MsgTtotalSubagentInformation)},
-  { 482, -1, sizeof(::MsgBindParentInfo)},
-  { 491, -1, sizeof(::MsgBindInviteCodeResp)},
-  { 499, -1, sizeof(::MsgDotRechargeResp)},
-  { 507, -1, sizeof(::MsgOnlineActiveConfig)},
-  { 517, -1, sizeof(::MsgOnlineActiveQuery)},
-  { 525, -1, sizeof(::MsgOlineActiveAward)},
-  { 534, -1, sizeof(::MsgCDKExchange)},
-  { 542, -1, sizeof(::MsgCDKExchangeResp)},
-  { 549, -1, sizeof(::MsgPersonalDetailsRespAdd)},
-  { 556, -1, sizeof(::MsgInviteUserInfo)},
-  { 565, -1, sizeof(::MsgInviteUserResp)},
-  { 571, -1, sizeof(::MsgQueryCelebrityGoldCoinResp)},
-  { 581, -1, sizeof(::MsgInfiniteAgentQueryMyInfoResp)},
-  { 597, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
-  { 605, -1, sizeof(::InfiniteAgentQuerySubInfo)},
-  { 618, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
-  { 626, -1, sizeof(::MsgSetSubAgent)},
-  { 633, -1, sizeof(::MsgSetSubAgentResp)},
-  { 645, -1, sizeof(::MsgRecviveAgentRebateResp)},
-  { 652, -1, sizeof(::MsgClaimRecord)},
-  { 659, -1, sizeof(::MsgGetClaimRecordResp)},
-  { 665, -1, sizeof(::MsgQueryPerformance)},
-  { 674, -1, sizeof(::MsgQueryPerformanceResp)},
-  { 680, -1, sizeof(::MsgWeekMonthInfo)},
-  { 691, -1, sizeof(::MsgWeekMonthCfg)},
-  { 702, -1, sizeof(::MsgGetWeekMonthInfoResp)},
-  { 709, -1, sizeof(::MsgWeekMonthGetAward)},
-  { 715, -1, sizeof(::MsgWeekMonthGetAwardResp)},
-  { 723, -1, sizeof(::MsgGetPhoneCode)},
-  { 730, -1, sizeof(::MsgQueryRechargeGiveInfo)},
-  { 736, -1, sizeof(::MsgBindPhoneAward)},
-  { 743, -1, sizeof(::MsgControlUser)},
-  { 751, -1, sizeof(::MsgTranferRecallResp)},
+  { 68, -1, sizeof(::MsgModifyPassword)},
+  { 75, -1, sizeof(::MsgBindPhone)},
+  { 84, -1, sizeof(::MsgCommonKV)},
+  { 91, -1, sizeof(::MsgPropInfo)},
+  { 97, -1, sizeof(::MsgCheckInInfo)},
+  { 106, -1, sizeof(::MsgTurntableHistoryData)},
+  { 118, -1, sizeof(::MsgTurnPlayInfo)},
+  { 128, -1, sizeof(::MsgTurnCfg)},
+  { 137, -1, sizeof(::MsgTurntableData)},
+  { 150, -1, sizeof(::MsgTurntable)},
+  { 157, -1, sizeof(::MsgTurntableResp)},
+  { 168, -1, sizeof(::MsgMailsInfo)},
+  { 174, -1, sizeof(::MsgMailData)},
+  { 188, -1, sizeof(::MsgShareData)},
+  { 195, -1, sizeof(::MsgBindParentData)},
+  { 201, -1, sizeof(::MsgInviteAwardInfo)},
+  { 209, -1, sizeof(::MsgInviteAwardConfig)},
+  { 216, -1, sizeof(::MsgRechargeInfo)},
+  { 226, -1, sizeof(::MsgQueryRebateRecordInfo)},
+  { 232, -1, sizeof(::MsgQueryRebateRecord)},
+  { 240, -1, sizeof(::MsgForgetPassword)},
+  { 249, -1, sizeof(::MsgVIPInfo)},
+  { 266, -1, sizeof(::MsgVIPConfig)},
+  { 272, -1, sizeof(::MsgUpgradeVIP)},
+  { 279, -1, sizeof(::MsgGetAvatarInfo)},
+  { 285, -1, sizeof(::MsgPlayerInfo)},
+  { 304, -1, sizeof(::ActiveInfoRet)},
+  { 320, -1, sizeof(::MsgActiveInfoSCRet)},
+  { 326, -1, sizeof(::MsgActiveInfoCSPick)},
+  { 334, -1, sizeof(::MsgActiveInfoSCPick)},
+  { 351, -1, sizeof(::MsgModifySignature)},
+  { 358, -1, sizeof(::MsgTransferOperate)},
+  { 365, -1, sizeof(::MsgTopInfo)},
+  { 377, -1, sizeof(::MsgGetRank)},
+  { 386, -1, sizeof(::MsgTopListResp)},
+  { 397, -1, sizeof(::MsgTransferOperateResp)},
+  { 404, -1, sizeof(::MsgTransferOperateSyncResp)},
+  { 414, -1, sizeof(::MsgTransferReceiveResp)},
+  { 421, -1, sizeof(::MsgTransferRecord)},
+  { 433, -1, sizeof(::MsgTransferRecordResp)},
+  { 439, -1, sizeof(::MsgPhoneCode)},
+  { 446, -1, sizeof(::MsgItem)},
+  { 453, -1, sizeof(::MsgPlayerItem)},
+  { 459, -1, sizeof(::MsgTransferQueryNickname)},
+  { 467, -1, sizeof(::MsgSubagentInformation)},
+  { 478, -1, sizeof(::MsgTtotalSubagentInformation)},
+  { 484, -1, sizeof(::MsgBindParentInfo)},
+  { 493, -1, sizeof(::MsgBindInviteCodeResp)},
+  { 501, -1, sizeof(::MsgDotRechargeResp)},
+  { 509, -1, sizeof(::MsgOnlineActiveConfig)},
+  { 519, -1, sizeof(::MsgOnlineActiveQuery)},
+  { 527, -1, sizeof(::MsgOlineActiveAward)},
+  { 536, -1, sizeof(::MsgCDKExchange)},
+  { 544, -1, sizeof(::MsgCDKExchangeResp)},
+  { 551, -1, sizeof(::MsgPersonalDetailsRespAdd)},
+  { 558, -1, sizeof(::MsgInviteUserInfo)},
+  { 567, -1, sizeof(::MsgInviteUserResp)},
+  { 573, -1, sizeof(::MsgQueryCelebrityGoldCoinResp)},
+  { 583, -1, sizeof(::MsgInfiniteAgentQueryMyInfoResp)},
+  { 599, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
+  { 607, -1, sizeof(::InfiniteAgentQuerySubInfo)},
+  { 620, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
+  { 628, -1, sizeof(::MsgSetSubAgent)},
+  { 635, -1, sizeof(::MsgSetSubAgentResp)},
+  { 647, -1, sizeof(::MsgRecviveAgentRebateResp)},
+  { 654, -1, sizeof(::MsgClaimRecord)},
+  { 661, -1, sizeof(::MsgGetClaimRecordResp)},
+  { 667, -1, sizeof(::MsgQueryPerformance)},
+  { 676, -1, sizeof(::MsgQueryPerformanceResp)},
+  { 682, -1, sizeof(::MsgWeekMonthInfo)},
+  { 693, -1, sizeof(::MsgWeekMonthCfg)},
+  { 704, -1, sizeof(::MsgGetWeekMonthInfoResp)},
+  { 711, -1, sizeof(::MsgWeekMonthGetAward)},
+  { 717, -1, sizeof(::MsgWeekMonthGetAwardResp)},
+  { 725, -1, sizeof(::MsgGetPhoneCode)},
+  { 732, -1, sizeof(::MsgQueryRechargeGiveInfo)},
+  { 738, -1, sizeof(::MsgBindPhoneAward)},
+  { 745, -1, sizeof(::MsgControlUser)},
+  { 753, -1, sizeof(::MsgTranferRecallResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2430,205 +2432,206 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\022\021\n\tserver_id\030\030 \001(\005\022\017\n\007kind_id\030\031 \001(\005\022\025\n\r"
   "register_gold\030\032 \001(\005\"M\n\023MsgReqRoomTableIn"
   "fo\022\021\n\tserver_id\030\001 \001(\005\022\017\n\007kind_id\030\002 \001(\005\022\022"
-  "\n\nroom_level\030\003 \001(\005\"S\n\024MsgRoomTableInfoRe"
+  "\n\nroom_level\030\003 \001(\005\"x\n\024MsgRoomTableInfoRe"
   "sp\022\020\n\010res_code\030\001 \001(\005\022\025\n\rmax_chair_num\030\002 "
-  "\001(\005\022\022\n\ntable_info\030\003 \003(\005\"\?\n\021MsgModifyPass"
-  "word\022\024\n\014old_password\030\001 \001(\t\022\024\n\014new_passwo"
-  "rd\030\002 \001(\t\"V\n\014MsgBindPhone\022\014\n\004code\030\001 \001(\005\022\021"
-  "\n\tphone_num\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\022\023\n\013i"
-  "nvite_code\030\004 \001(\t\"#\n\013MsgCommonKV\022\t\n\001k\030\001 \001"
-  "(\005\022\t\n\001v\030\002 \001(\005\".\n\013MsgPropInfo\022\037\n\tprop_inf"
-  "o\030\001 \003(\0132\014.MsgCommonKV\"i\n\016MsgCheckInInfo\022"
-  "\022\n\ncheck_days\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\022\020\n\010"
-  "can_pick\030\003 \001(\010\022 \n\nCheckInCfg\030\004 \003(\0132\014.Msg"
-  "CommonKV\"\213\001\n\027MsgTurntableHistoryData\022\017\n\007"
-  "user_id\030\001 \001(\005\022\021\n\tnick_name\030\002 \001(\t\022\r\n\005scor"
-  "e\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\022\n\n"
-  "award_type\030\006 \001(\005\022\014\n\004time\030\007 \001(\t\"s\n\017MsgTur"
-  "nPlayInfo\022\020\n\010play_num\030\001 \001(\005\022\022\n\nlimit_tur"
-  "n\030\002 \001(\005\022\022\n\nneed_score\030\003 \001(\005\022\020\n\010turn_pro\030"
-  "\004 \001(\005\022\024\n\014turn_max_pro\030\005 \001(\005\"L\n\nMsgTurnCf"
-  "g\022\r\n\005index\030\001 \001(\005\022\r\n\005arwad\030\002 \001(\005\022\022\n\narwad"
-  "_type\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\"\243\002\n\020MsgTurntab"
-  "leData\022\r\n\005score\030\001 \001(\003\022\025\n\rgold_to_score\030\003"
-  " \001(\005\022%\n\013silver_info\030\004 \001(\0132\020.MsgTurnPlayI"
-  "nfo\022#\n\tgold_info\030\005 \001(\0132\020.MsgTurnPlayInfo"
-  "\022\037\n\nsilver_cfg\030\006 \003(\0132\013.MsgTurnCfg\022\035\n\010gol"
-  "d_cfg\030\007 \003(\0132\013.MsgTurnCfg\022.\n\014this_history"
-  "\030\010 \003(\0132\030.MsgTurntableHistoryData\022-\n\013big_"
-  "history\030\t \003(\0132\030.MsgTurntableHistoryData\""
-  "2\n\014MsgTurntable\022\017\n\007user_id\030\001 \001(\005\022\021\n\tturn"
-  "_type\030\002 \001(\003\"|\n\020MsgTurntableResp\022\r\n\005score"
-  "\030\001 \001(\003\022\022\n\naward_type\030\002 \001(\005\022\021\n\tnew_value\030"
-  "\003 \001(\003\022\021\n\tturnIndex\030\004 \001(\003\022\021\n\tget_value\030\005 "
-  "\001(\003\022\014\n\004code\030\006 \001(\005\"+\n\014MsgMailsInfo\022\033\n\005mai"
-  "ls\030\001 \003(\0132\014.MsgMailData\"\254\001\n\013MsgMailData\022\017"
-  "\n\007mail_id\030\001 \001(\005\022\024\n\014send_user_id\030\002 \001(\005\022\021\n"
-  "\tsend_time\030\003 \001(\005\022\r\n\005title\030\004 \001(\t\022\017\n\007conte"
-  "nt\030\005 \001(\t\022\014\n\004gold\030\006 \001(\003\022\017\n\007is_read\030\007 \001(\010\022"
-  "\020\n\010is_claim\030\010 \001(\010\022\022\n\nto_user_id\030\t \001(\005\"6\n"
-  "\014MsgShareData\022\023\n\013invite_code\030\001 \001(\t\022\021\n\tbi"
-  "nd_list\030\002 \003(\005\"$\n\021MsgBindParentData\022\017\n\007st"
-  "rCode\030\001 \001(\t\"c\n\022MsgInviteAwardInfo\022\021\n\tinv"
-  "iteNum\030\001 \001(\005\022\021\n\tpickIndex\030\002 \001(\005\022\'\n\010award"
-  "Cfg\030\003 \003(\0132\025.MsgInviteAwardConfig\"8\n\024MsgI"
-  "nviteAwardConfig\022\021\n\tinviteNum\030\001 \001(\005\022\r\n\005a"
-  "ward\030\002 \001(\005\"w\n\017MsgRechargeInfo\022\021\n\tinviteN"
-  "um\030\001 \001(\005\022\022\n\ntodayAward\030\002 \001(\003\022\022\n\ntotalAwa"
-  "rd\030\003 \001(\003\022\025\n\rcanPickAmount\030\004 \001(\003\022\022\n\ninvit"
-  "eCode\030\005 \001(\t\"L\n\030MsgQueryRebateRecordInfo\022"
-  "0\n\021queryRebateRecord\030\001 \003(\0132\025.MsgQueryReb"
-  "ateRecord\"V\n\024MsgQueryRebateRecord\022\026\n\016rec"
-  "hargeUserId\030\001 \001(\005\022\026\n\016rechargeAmount\030\002 \001("
-  "\005\022\016\n\006rebate\030\003 \001(\005\"[\n\021MsgForgetPassword\022\023"
-  "\n\013client_type\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004co"
-  "de\030\003 \001(\005\022\024\n\014new_password\030\004 \001(\t\"\213\002\n\nMsgVI"
-  "PInfo\022\021\n\tvip_level\030\001 \001(\005\022\020\n\010need_exp\030\002 \001"
-  "(\003\022\025\n\rturntable_num\030\003 \001(\005\022\030\n\020trumpet_dis"
-  "count\030\004 \001(\005\022\026\n\016check_addition\030\005 \001(\005\022\022\n\nw"
-  "orld_chat\030\006 \001(\010\022\016\n\006avatar\030\007 \001(\005\022\024\n\014avata"
-  "r_frame\030\010 \001(\005\022\022\n\naward_gold\030\t \001(\005\022\022\n\none"
-  "_to_one\030\n \001(\010\022\026\n\016withdraw_total\030\013 \001(\005\022\025\n"
-  "\rwithdraw_free\030\014 \001(\005\"-\n\014MsgVIPConfig\022\035\n\010"
-  "vip_info\030\001 \003(\0132\013.MsgVIPInfo\"/\n\rMsgUpgrad"
-  "eVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"#\n\020"
-  "MsgGetAvatarInfo\022\017\n\007avatars\030\001 \003(\005\"\241\002\n\rMs"
-  "gPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautifu"
-  "l_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004"
-  " \001(\t\022\014\n\004coin\030\005 \001(\004\022\021\n\tphone_num\030\006 \001(\t\022\021\n"
-  "\tvip_level\030\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\021"
-  "\n\tsignature\030\t \001(\t\022\023\n\013zmd_game_id\030\n \001(\005\022\024"
-  "\n\014zmd_win_gold\030\013 \001(\004\022\023\n\013whatsup_msg\030\023 \001("
-  "\t\022\024\n\014telegram_msg\030\024 \001(\t\022\024\n\014facebook_msg\030"
-  "\025 \001(\t\"\330\001\n\rActiveInfoRet\022\021\n\tactive_id\030\001 \001"
+  "\001(\005\022\022\n\ntable_info\030\003 \003(\005\022\017\n\007kind_id\030\004 \001(\005"
+  "\022\022\n\nroom_level\030\005 \001(\005\"\?\n\021MsgModifyPasswor"
+  "d\022\024\n\014old_password\030\001 \001(\t\022\024\n\014new_password\030"
+  "\002 \001(\t\"V\n\014MsgBindPhone\022\014\n\004code\030\001 \001(\005\022\021\n\tp"
+  "hone_num\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\022\023\n\013invi"
+  "te_code\030\004 \001(\t\"#\n\013MsgCommonKV\022\t\n\001k\030\001 \001(\005\022"
+  "\t\n\001v\030\002 \001(\005\".\n\013MsgPropInfo\022\037\n\tprop_info\030\001"
+  " \003(\0132\014.MsgCommonKV\"i\n\016MsgCheckInInfo\022\022\n\n"
+  "check_days\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\022\020\n\010can"
+  "_pick\030\003 \001(\010\022 \n\nCheckInCfg\030\004 \003(\0132\014.MsgCom"
+  "monKV\"\213\001\n\027MsgTurntableHistoryData\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\021\n\tnick_name\030\002 \001(\t\022\r\n\005score\030\003"
+  " \001(\005\022\r\n\005award\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\022\n\nawa"
+  "rd_type\030\006 \001(\005\022\014\n\004time\030\007 \001(\t\"s\n\017MsgTurnPl"
+  "ayInfo\022\020\n\010play_num\030\001 \001(\005\022\022\n\nlimit_turn\030\002"
+  " \001(\005\022\022\n\nneed_score\030\003 \001(\005\022\020\n\010turn_pro\030\004 \001"
+  "(\005\022\024\n\014turn_max_pro\030\005 \001(\005\"L\n\nMsgTurnCfg\022\r"
+  "\n\005index\030\001 \001(\005\022\r\n\005arwad\030\002 \001(\005\022\022\n\narwad_ty"
+  "pe\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\"\243\002\n\020MsgTurntableD"
+  "ata\022\r\n\005score\030\001 \001(\003\022\025\n\rgold_to_score\030\003 \001("
+  "\005\022%\n\013silver_info\030\004 \001(\0132\020.MsgTurnPlayInfo"
+  "\022#\n\tgold_info\030\005 \001(\0132\020.MsgTurnPlayInfo\022\037\n"
+  "\nsilver_cfg\030\006 \003(\0132\013.MsgTurnCfg\022\035\n\010gold_c"
+  "fg\030\007 \003(\0132\013.MsgTurnCfg\022.\n\014this_history\030\010 "
+  "\003(\0132\030.MsgTurntableHistoryData\022-\n\013big_his"
+  "tory\030\t \003(\0132\030.MsgTurntableHistoryData\"2\n\014"
+  "MsgTurntable\022\017\n\007user_id\030\001 \001(\005\022\021\n\tturn_ty"
+  "pe\030\002 \001(\003\"|\n\020MsgTurntableResp\022\r\n\005score\030\001 "
+  "\001(\003\022\022\n\naward_type\030\002 \001(\005\022\021\n\tnew_value\030\003 \001"
+  "(\003\022\021\n\tturnIndex\030\004 \001(\003\022\021\n\tget_value\030\005 \001(\003"
+  "\022\014\n\004code\030\006 \001(\005\"+\n\014MsgMailsInfo\022\033\n\005mails\030"
+  "\001 \003(\0132\014.MsgMailData\"\254\001\n\013MsgMailData\022\017\n\007m"
+  "ail_id\030\001 \001(\005\022\024\n\014send_user_id\030\002 \001(\005\022\021\n\tse"
+  "nd_time\030\003 \001(\005\022\r\n\005title\030\004 \001(\t\022\017\n\007content\030"
+  "\005 \001(\t\022\014\n\004gold\030\006 \001(\003\022\017\n\007is_read\030\007 \001(\010\022\020\n\010"
+  "is_claim\030\010 \001(\010\022\022\n\nto_user_id\030\t \001(\005\"6\n\014Ms"
+  "gShareData\022\023\n\013invite_code\030\001 \001(\t\022\021\n\tbind_"
+  "list\030\002 \003(\005\"$\n\021MsgBindParentData\022\017\n\007strCo"
+  "de\030\001 \001(\t\"c\n\022MsgInviteAwardInfo\022\021\n\tinvite"
+  "Num\030\001 \001(\005\022\021\n\tpickIndex\030\002 \001(\005\022\'\n\010awardCfg"
+  "\030\003 \003(\0132\025.MsgInviteAwardConfig\"8\n\024MsgInvi"
+  "teAwardConfig\022\021\n\tinviteNum\030\001 \001(\005\022\r\n\005awar"
+  "d\030\002 \001(\005\"w\n\017MsgRechargeInfo\022\021\n\tinviteNum\030"
+  "\001 \001(\005\022\022\n\ntodayAward\030\002 \001(\003\022\022\n\ntotalAward\030"
+  "\003 \001(\003\022\025\n\rcanPickAmount\030\004 \001(\003\022\022\n\ninviteCo"
+  "de\030\005 \001(\t\"L\n\030MsgQueryRebateRecordInfo\0220\n\021"
+  "queryRebateRecord\030\001 \003(\0132\025.MsgQueryRebate"
+  "Record\"V\n\024MsgQueryRebateRecord\022\026\n\016rechar"
+  "geUserId\030\001 \001(\005\022\026\n\016rechargeAmount\030\002 \001(\005\022\016"
+  "\n\006rebate\030\003 \001(\005\"[\n\021MsgForgetPassword\022\023\n\013c"
+  "lient_type\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004code\030"
+  "\003 \001(\005\022\024\n\014new_password\030\004 \001(\t\"\213\002\n\nMsgVIPIn"
+  "fo\022\021\n\tvip_level\030\001 \001(\005\022\020\n\010need_exp\030\002 \001(\003\022"
+  "\025\n\rturntable_num\030\003 \001(\005\022\030\n\020trumpet_discou"
+  "nt\030\004 \001(\005\022\026\n\016check_addition\030\005 \001(\005\022\022\n\nworl"
+  "d_chat\030\006 \001(\010\022\016\n\006avatar\030\007 \001(\005\022\024\n\014avatar_f"
+  "rame\030\010 \001(\005\022\022\n\naward_gold\030\t \001(\005\022\022\n\none_to"
+  "_one\030\n \001(\010\022\026\n\016withdraw_total\030\013 \001(\005\022\025\n\rwi"
+  "thdraw_free\030\014 \001(\005\"-\n\014MsgVIPConfig\022\035\n\010vip"
+  "_info\030\001 \003(\0132\013.MsgVIPInfo\"/\n\rMsgUpgradeVI"
+  "P\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"#\n\020Msg"
+  "GetAvatarInfo\022\017\n\007avatars\030\001 \003(\005\"\241\002\n\rMsgPl"
+  "ayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_i"
+  "d\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001("
+  "\t\022\014\n\004coin\030\005 \001(\004\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvi"
+  "p_level\030\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\021\n\ts"
+  "ignature\030\t \001(\t\022\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014z"
+  "md_win_gold\030\013 \001(\004\022\023\n\013whatsup_msg\030\023 \001(\t\022\024"
+  "\n\014telegram_msg\030\024 \001(\t\022\024\n\014facebook_msg\030\025 \001"
+  "(\t\"\330\001\n\rActiveInfoRet\022\021\n\tactive_id\030\001 \001(\005\022"
+  "\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016"
+  "\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogre"
+  "ss1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogress"
+  "3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_type\030\n"
+  " \001(\005\022\017\n\007is_pick\030\013 \001(\010\"6\n\022MsgActiveInfoSC"
+  "Ret\022 \n\010vec_info\030\001 \003(\0132\016.ActiveInfoRet\"P\n"
+  "\023MsgActiveInfoCSPick\022\017\n\007user_id\030\001 \001(\005\022\021\n"
+  "\tactive_id\030\002 \001(\005\022\025\n\rsub_active_id\030\003 \001(\005\""
+  "\353\001\n\023MsgActiveInfoSCPick\022\021\n\tactive_id\030\001 \001"
   "(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 \001("
   "\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tpro"
   "gress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogr"
   "ess3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_typ"
-  "e\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\010\"6\n\022MsgActiveInf"
-  "oSCRet\022 \n\010vec_info\030\001 \003(\0132\016.ActiveInfoRet"
-  "\"P\n\023MsgActiveInfoCSPick\022\017\n\007user_id\030\001 \001(\005"
-  "\022\021\n\tactive_id\030\002 \001(\005\022\025\n\rsub_active_id\030\003 \001"
-  "(\005\"\353\001\n\023MsgActiveInfoSCPick\022\021\n\tactive_id\030"
-  "\001 \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003"
-  " \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\t"
-  "progress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tpr"
-  "ogress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_"
-  "type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n\003res\030\014 \001(\010"
-  "\"8\n\022MsgModifySignature\022\017\n\007user_id\030\001 \001(\005\022"
-  "\021\n\tsignature\030\002 \001(\t\"A\n\022MsgTransferOperate"
-  "\022\024\n\014recv_user_id\030\001 \001(\005\022\025\n\rtransfer_gold\030"
-  "\002 \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_id\030\001 \001(\005\022\017\n"
-  "\007user_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021\n\tvip_leve"
-  "l\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010head_ur"
-  "l\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMsgGetRank"
-  "\022\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014"
-  "current_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001\n\016"
-  "MsgTopListResp\022\017\n\007user_id\030\001 \001(\005\022\021\n\trank_"
-  "type\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001(\005\022\021\n\tth"
-  "is_gold\030\004 \001(\003\022\016\n\006is_end\030\005 \001(\005\022\032\n\005lists\030\006"
-  " \003(\0132\013.MsgTopInfo\">\n\026MsgTransferOperateR"
-  "esp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_gold\030\002 \001("
-  "\003\"\203\001\n\032MsgTransferOperateSyncResp\022\021\n\tret_"
-  "value\030\001 \001(\005\022\024\n\014send_user_id\030\003 \001(\005\022\020\n\010add"
-  "_gold\030\004 \001(\003\022\025\n\rreceive_state\030\006 \001(\003\022\023\n\013tr"
-  "ansfer_id\030\007 \001(\003\"@\n\026MsgTransferReceiveRes"
-  "p\022\021\n\tret_value\030\001 \001(\005\022\023\n\013change_gold\030\002 \001("
-  "\003\"\243\001\n\021MsgTransferRecord\022\024\n\014send_user_id\030"
-  "\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtransfer_gold"
-  "\030\003 \001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_user_id\030\006 "
-  "\001(\005\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013transfer_i"
-  "d\030\010 \001(\003\"<\n\025MsgTransferRecordResp\022#\n\007reco"
-  "rds\030\001 \003(\0132\022.MsgTransferRecord\"0\n\014MsgPhon"
-  "eCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phone\030\002 \001(\t\""
-  ",\n\007MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030"
-  "\002 \001(\003\"\'\n\rMsgPlayerItem\022\026\n\004item\030\001 \003(\0132\010.M"
-  "sgItem\"L\n\030MsgTransferQueryNickname\022\021\n\tre"
-  "t_Value\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\013\n\003tax\030\003"
-  " \001(\005\"\236\001\n\026MsgSubagentInformation\022\026\n\016agent"
-  "_nickname\030\001 \001(\t\022\025\n\ragent_user_id\030\002 \001(\005\022\022"
-  "\n\nagent_type\030\003 \001(\010\022\026\n\016total_shift_to\030\004 \001"
-  "(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvip_level\030"
-  "\006 \001(\005\"K\n\034MsgTtotalSubagentInformation\022+\n"
-  "\nagent_info\030\001 \003(\0132\027.MsgSubagentInformati"
-  "on\"]\n\021MsgBindParentInfo\022\017\n\007user_id\030\001 \001(\005"
-  "\022\016\n\006avatar\030\002 \001(\t\022\024\n\014avatar_frame\030\003 \001(\005\022\021"
-  "\n\tnick_name\030\004 \001(\t\"^\n\025MsgBindInviteCodeRe"
-  "sp\022\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_type\030\002 \001(\005\022"
-  " \n\004info\030\003 \001(\0132\022.MsgBindParentInfo\"R\n\022Msg"
-  "DotRechargeResp\022\027\n\017is_new_recharge\030\001 \001(\010"
-  "\022\014\n\004gold\030\002 \001(\003\022\025\n\rrecharge_info\030\003 \003(\005\"m\n"
-  "\025MsgOnlineActiveConfig\022\017\n\007item_id\030\001 \001(\005\022"
-  "\020\n\010item_num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\024\n\014onlin"
-  "e_index\030\004 \001(\005\022\r\n\005times\030\005 \001(\005\"k\n\024MsgOnlin"
-  "eActiveQuery\022\022\n\nuser_times\030\001 \001(\005\022\020\n\010inde"
-  "x_id\030\002 \003(\005\022-\n\ronline_config\030\003 \003(\0132\026.MsgO"
-  "nlineActiveConfig\"\\\n\023MsgOlineActiveAward"
-  "\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\005\022\014\n\004t"
-  "ype\030\003 \001(\005\022\024\n\014online_index\030\004 \001(\005\"F\n\016MsgCD"
-  "KExchange\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002"
-  " \001(\005\022\021\n\titem_type\030\003 \001(\005\"E\n\022MsgCDKExchang"
-  "eResp\022\020\n\010ret_code\030\001 \001(\005\022\035\n\004info\030\002 \003(\0132\017."
-  "MsgCDKExchange\"6\n\031MsgPersonalDetailsResp"
-  "Add\022\014\n\004type\030\001 \001(\005\022\013\n\003msg\030\002 \001(\t\"c\n\021MsgInv"
-  "iteUserInfo\022\021\n\tvip_level\030\001 \001(\005\022\023\n\013invite"
-  "_time\030\002 \001(\t\022\024\n\014beautiful_id\030\003 \001(\005\022\020\n\010nic"
-  "kname\030\004 \001(\t\"5\n\021MsgInviteUserResp\022 \n\004info"
-  "\030\001 \003(\0132\022.MsgInviteUserInfo\"y\n\035MsgQueryCe"
-  "lebrityGoldCoinResp\022\016\n\006avatar\030\001 \001(\t\022\024\n\014a"
-  "vatar_frame\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\021\n\tg"
-  "old_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\244\002\n\037MsgInf"
-  "initeAgentQueryMyInfoResp\022\023\n\013agent_level"
-  "\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\022\017\n\007bind_id\030\003"
-  " \001(\005\022\022\n\ncur_rebate\030\004 \001(\003\022\024\n\014total_rebate"
-  "\030\005 \001(\003\022\023\n\013game_rebate\030\006 \001(\003\022\030\n\020bind_invi"
-  "te_code\030\007 \001(\t\022 \n\030today_performance_rebat"
-  "e\030\010 \001(\003\022\031\n\021today_game_rebate\030\t \001(\003\022\031\n\021ye"
-  "sterday_add_num\030\n \001(\005\022\025\n\rtoday_add_num\030\013"
-  " \001(\005\"V\n\034MsgInfiniteAgentQuerySubInfo\022\017\n\007"
-  "user_id\030\001 \001(\005\022\024\n\014current_page\030\002 \001(\005\022\017\n\007m"
-  "ax_row\030\003 \001(\005\"\265\001\n\031InfiniteAgentQuerySubIn"
-  "fo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014subordinates\030\002 \001("
-  "\005\022\021\n\ttotal_tax\030\003 \001(\003\022\021\n\ttoday_tax\030\004 \001(\003\022"
-  "\023\n\013today_ratio\030\005 \001(\003\022\023\n\013total_ratio\030\006 \001("
-  "\003\022\023\n\013agent_ratio\030\007 \001(\005\022\014\n\004rank\030\010 \001(\005\"s\n "
-  "MsgInfiniteAgentQuerySubInfoResp\022\023\n\013agen"
-  "t_count\030\001 \001(\005\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030"
-  "\003 \003(\0132\032.InfiniteAgentQuerySubInfo\"6\n\016Msg"
-  "SetSubAgent\022\017\n\007user_id\030\001 \001(\005\022\023\n\013agent_ra"
-  "tio\030\002 \001(\005\"\231\001\n\022MsgSetSubAgentResp\022\014\n\004code"
-  "\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014subordinates\030"
-  "\003 \001(\005\022\021\n\ttotal_tax\030\004 \001(\003\022\021\n\ttoday_tax\030\005 "
-  "\001(\003\022\023\n\013today_ratio\030\006 \001(\003\022\023\n\013agent_ratio\030"
-  "\007 \001(\005\"=\n\031MsgRecviveAgentRebateResp\022\014\n\004co"
-  "de\030\001 \001(\005\022\022\n\ncur_rebate\030\002 \001(\003\"1\n\016MsgClaim"
-  "Record\022\021\n\tdate_time\030\001 \001(\t\022\014\n\004gold\030\002 \001(\005\""
-  "6\n\025MsgGetClaimRecordResp\022\035\n\004info\030\001 \003(\0132\017"
-  ".MsgClaimRecord\"g\n\023MsgQueryPerformance\022\021"
-  "\n\tdate_time\030\001 \001(\t\022\022\n\ntotal_gold\030\002 \001(\005\022\023\n"
-  "\013game_rebate\030\003 \001(\005\022\024\n\014agent_rabete\030\004 \001(\005"
-  "\"=\n\027MsgQueryPerformanceResp\022\"\n\004info\030\001 \003("
-  "\0132\024.MsgQueryPerformance\"\177\n\020MsgWeekMonthI"
-  "nfo\022\021\n\tcard_type\030\001 \001(\005\022\020\n\010buy_time\030\002 \001(\005"
-  "\022\017\n\007is_pick\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\022\n\ncard"
-  "_level\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"\203\001\n\017Msg"
-  "WeekMonthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\tbuy_m"
-  "oney\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_level\030"
-  "\004 \001(\005\022\021\n\ttotal_day\030\005 \001(\005\022\024\n\014profit_ratio"
-  "\030\006 \001(\005\"e\n\027MsgGetWeekMonthInfoResp\022#\n\tcar"
-  "ds_cfg\030\001 \003(\0132\020.MsgWeekMonthCfg\022%\n\ncards_"
-  "info\030\002 \003(\0132\021.MsgWeekMonthInfo\")\n\024MsgWeek"
-  "MonthGetAward\022\021\n\tcard_type\030\001 \001(\005\"M\n\030MsgW"
-  "eekMonthGetAwardResp\022\020\n\010ret_code\030\001 \001(\005\022\r"
-  "\n\005award\030\002 \001(\003\022\020\n\010new_gold\030\003 \001(\003\"5\n\017MsgGe"
-  "tPhoneCode\022\024\n\014phone_number\030\001 \001(\t\022\014\n\004type"
-  "\030\002 \001(\005\":\n\030MsgQueryRechargeGiveInfo\022\036\n\010Us"
-  "erInfo\030\001 \003(\0132\014.MsgCommonKV\"/\n\021MsgBindPho"
-  "neAward\022\014\n\004code\030\001 \001(\005\022\014\n\004gold\030\003 \001(\005\"J\n\016M"
-  "sgControlUser\022\024\n\014control_user\030\001 \001(\005\022\014\n\004t"
-  "ype\030\002 \001(\005\022\024\n\014control_gold\030\003 \001(\003\"6\n\024MsgTr"
-  "anferRecallResp\022\014\n\004code\030\001 \001(\005\022\020\n\010cur_gol"
-  "d\030\002 \001(\003b\006proto3"
+  "e\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n\003res\030\014 \001(\010\"8\n"
+  "\022MsgModifySignature\022\017\n\007user_id\030\001 \001(\005\022\021\n\t"
+  "signature\030\002 \001(\t\"A\n\022MsgTransferOperate\022\024\n"
+  "\014recv_user_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001"
+  "(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_id\030\001 \001(\005\022\017\n\007us"
+  "er_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021\n\tvip_level\030\004"
+  " \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010head_url\030\006"
+  " \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMsgGetRank\022\021\n"
+  "\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014cur"
+  "rent_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001\n\016Msg"
+  "TopListResp\022\017\n\007user_id\030\001 \001(\005\022\021\n\trank_typ"
+  "e\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001(\005\022\021\n\tthis_"
+  "gold\030\004 \001(\003\022\016\n\006is_end\030\005 \001(\005\022\032\n\005lists\030\006 \003("
+  "\0132\013.MsgTopInfo\">\n\026MsgTransferOperateResp"
+  "\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_gold\030\002 \001(\003\"\203"
+  "\001\n\032MsgTransferOperateSyncResp\022\021\n\tret_val"
+  "ue\030\001 \001(\005\022\024\n\014send_user_id\030\003 \001(\005\022\020\n\010add_go"
+  "ld\030\004 \001(\003\022\025\n\rreceive_state\030\006 \001(\003\022\023\n\013trans"
+  "fer_id\030\007 \001(\003\"@\n\026MsgTransferReceiveResp\022\021"
+  "\n\tret_value\030\001 \001(\005\022\023\n\013change_gold\030\002 \001(\003\"\243"
+  "\001\n\021MsgTransferRecord\022\024\n\014send_user_id\030\001 \001"
+  "(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtransfer_gold\030\003 "
+  "\001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_user_id\030\006 \001(\005"
+  "\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013transfer_id\030\010"
+  " \001(\003\"<\n\025MsgTransferRecordResp\022#\n\007records"
+  "\030\001 \003(\0132\022.MsgTransferRecord\"0\n\014MsgPhoneCo"
+  "de\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phone\030\002 \001(\t\",\n\007"
+  "MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001"
+  "(\003\"\'\n\rMsgPlayerItem\022\026\n\004item\030\001 \003(\0132\010.MsgI"
+  "tem\"L\n\030MsgTransferQueryNickname\022\021\n\tret_V"
+  "alue\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\013\n\003tax\030\003 \001("
+  "\005\"\236\001\n\026MsgSubagentInformation\022\026\n\016agent_ni"
+  "ckname\030\001 \001(\t\022\025\n\ragent_user_id\030\002 \001(\005\022\022\n\na"
+  "gent_type\030\003 \001(\010\022\026\n\016total_shift_to\030\004 \001(\003\022"
+  "\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvip_level\030\006 \001"
+  "(\005\"K\n\034MsgTtotalSubagentInformation\022+\n\nag"
+  "ent_info\030\001 \003(\0132\027.MsgSubagentInformation\""
+  "]\n\021MsgBindParentInfo\022\017\n\007user_id\030\001 \001(\005\022\016\n"
+  "\006avatar\030\002 \001(\t\022\024\n\014avatar_frame\030\003 \001(\005\022\021\n\tn"
+  "ick_name\030\004 \001(\t\"^\n\025MsgBindInviteCodeResp\022"
+  "\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_type\030\002 \001(\005\022 \n\004"
+  "info\030\003 \001(\0132\022.MsgBindParentInfo\"R\n\022MsgDot"
+  "RechargeResp\022\027\n\017is_new_recharge\030\001 \001(\010\022\014\n"
+  "\004gold\030\002 \001(\003\022\025\n\rrecharge_info\030\003 \003(\005\"m\n\025Ms"
+  "gOnlineActiveConfig\022\017\n\007item_id\030\001 \001(\005\022\020\n\010"
+  "item_num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\024\n\014online_i"
+  "ndex\030\004 \001(\005\022\r\n\005times\030\005 \001(\005\"k\n\024MsgOnlineAc"
+  "tiveQuery\022\022\n\nuser_times\030\001 \001(\005\022\020\n\010index_i"
+  "d\030\002 \003(\005\022-\n\ronline_config\030\003 \003(\0132\026.MsgOnli"
+  "neActiveConfig\"\\\n\023MsgOlineActiveAward\022\017\n"
+  "\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\005\022\014\n\004type"
+  "\030\003 \001(\005\022\024\n\014online_index\030\004 \001(\005\"F\n\016MsgCDKEx"
+  "change\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001("
+  "\005\022\021\n\titem_type\030\003 \001(\005\"E\n\022MsgCDKExchangeRe"
+  "sp\022\020\n\010ret_code\030\001 \001(\005\022\035\n\004info\030\002 \003(\0132\017.Msg"
+  "CDKExchange\"6\n\031MsgPersonalDetailsRespAdd"
+  "\022\014\n\004type\030\001 \001(\005\022\013\n\003msg\030\002 \001(\t\"c\n\021MsgInvite"
+  "UserInfo\022\021\n\tvip_level\030\001 \001(\005\022\023\n\013invite_ti"
+  "me\030\002 \001(\t\022\024\n\014beautiful_id\030\003 \001(\005\022\020\n\010nickna"
+  "me\030\004 \001(\t\"5\n\021MsgInviteUserResp\022 \n\004info\030\001 "
+  "\003(\0132\022.MsgInviteUserInfo\"y\n\035MsgQueryCeleb"
+  "rityGoldCoinResp\022\016\n\006avatar\030\001 \001(\t\022\024\n\014avat"
+  "ar_frame\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\021\n\tgold"
+  "_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\244\002\n\037MsgInfini"
+  "teAgentQueryMyInfoResp\022\023\n\013agent_level\030\001 "
+  "\001(\005\022\023\n\013agent_ratio\030\002 \001(\005\022\017\n\007bind_id\030\003 \001("
+  "\005\022\022\n\ncur_rebate\030\004 \001(\003\022\024\n\014total_rebate\030\005 "
+  "\001(\003\022\023\n\013game_rebate\030\006 \001(\003\022\030\n\020bind_invite_"
+  "code\030\007 \001(\t\022 \n\030today_performance_rebate\030\010"
+  " \001(\003\022\031\n\021today_game_rebate\030\t \001(\003\022\031\n\021yeste"
+  "rday_add_num\030\n \001(\005\022\025\n\rtoday_add_num\030\013 \001("
+  "\005\"V\n\034MsgInfiniteAgentQuerySubInfo\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\024\n\014current_page\030\002 \001(\005\022\017\n\007max_"
+  "row\030\003 \001(\005\"\265\001\n\031InfiniteAgentQuerySubInfo\022"
+  "\017\n\007user_id\030\001 \001(\005\022\024\n\014subordinates\030\002 \001(\005\022\021"
+  "\n\ttotal_tax\030\003 \001(\003\022\021\n\ttoday_tax\030\004 \001(\003\022\023\n\013"
+  "today_ratio\030\005 \001(\003\022\023\n\013total_ratio\030\006 \001(\003\022\023"
+  "\n\013agent_ratio\030\007 \001(\005\022\014\n\004rank\030\010 \001(\005\"s\n Msg"
+  "InfiniteAgentQuerySubInfoResp\022\023\n\013agent_c"
+  "ount\030\001 \001(\005\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030\003 \003"
+  "(\0132\032.InfiniteAgentQuerySubInfo\"6\n\016MsgSet"
+  "SubAgent\022\017\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio"
+  "\030\002 \001(\005\"\231\001\n\022MsgSetSubAgentResp\022\014\n\004code\030\001 "
+  "\001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014subordinates\030\003 \001"
+  "(\005\022\021\n\ttotal_tax\030\004 \001(\003\022\021\n\ttoday_tax\030\005 \001(\003"
+  "\022\023\n\013today_ratio\030\006 \001(\003\022\023\n\013agent_ratio\030\007 \001"
+  "(\005\"=\n\031MsgRecviveAgentRebateResp\022\014\n\004code\030"
+  "\001 \001(\005\022\022\n\ncur_rebate\030\002 \001(\003\"1\n\016MsgClaimRec"
+  "ord\022\021\n\tdate_time\030\001 \001(\t\022\014\n\004gold\030\002 \001(\005\"6\n\025"
+  "MsgGetClaimRecordResp\022\035\n\004info\030\001 \003(\0132\017.Ms"
+  "gClaimRecord\"g\n\023MsgQueryPerformance\022\021\n\td"
+  "ate_time\030\001 \001(\t\022\022\n\ntotal_gold\030\002 \001(\005\022\023\n\013ga"
+  "me_rebate\030\003 \001(\005\022\024\n\014agent_rabete\030\004 \001(\005\"=\n"
+  "\027MsgQueryPerformanceResp\022\"\n\004info\030\001 \003(\0132\024"
+  ".MsgQueryPerformance\"\177\n\020MsgWeekMonthInfo"
+  "\022\021\n\tcard_type\030\001 \001(\005\022\020\n\010buy_time\030\002 \001(\005\022\017\n"
+  "\007is_pick\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\022\n\ncard_le"
+  "vel\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"\203\001\n\017MsgWee"
+  "kMonthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\tbuy_mone"
+  "y\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_level\030\004 \001"
+  "(\005\022\021\n\ttotal_day\030\005 \001(\005\022\024\n\014profit_ratio\030\006 "
+  "\001(\005\"e\n\027MsgGetWeekMonthInfoResp\022#\n\tcards_"
+  "cfg\030\001 \003(\0132\020.MsgWeekMonthCfg\022%\n\ncards_inf"
+  "o\030\002 \003(\0132\021.MsgWeekMonthInfo\")\n\024MsgWeekMon"
+  "thGetAward\022\021\n\tcard_type\030\001 \001(\005\"M\n\030MsgWeek"
+  "MonthGetAwardResp\022\020\n\010ret_code\030\001 \001(\005\022\r\n\005a"
+  "ward\030\002 \001(\003\022\020\n\010new_gold\030\003 \001(\003\"5\n\017MsgGetPh"
+  "oneCode\022\024\n\014phone_number\030\001 \001(\t\022\014\n\004type\030\002 "
+  "\001(\005\":\n\030MsgQueryRechargeGiveInfo\022\036\n\010UserI"
+  "nfo\030\001 \003(\0132\014.MsgCommonKV\"/\n\021MsgBindPhoneA"
+  "ward\022\014\n\004code\030\001 \001(\005\022\014\n\004gold\030\003 \001(\005\"J\n\016MsgC"
+  "ontrolUser\022\024\n\014control_user\030\001 \001(\005\022\014\n\004type"
+  "\030\002 \001(\005\022\024\n\014control_gold\030\003 \001(\003\"6\n\024MsgTranf"
+  "erRecallResp\022\014\n\004code\030\001 \001(\005\022\020\n\010cur_gold\030\002"
+  " \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2719,7 +2722,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 8815,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 8852,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 83, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 83, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -4552,16 +4555,16 @@ MsgRoomTableInfoResp::MsgRoomTableInfoResp(const MsgRoomTableInfoResp& from)
       table_info_(from.table_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&res_code_, &from.res_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&max_chair_num_) -
-    reinterpret_cast<char*>(&res_code_)) + sizeof(max_chair_num_));
+    static_cast<size_t>(reinterpret_cast<char*>(&room_level_) -
+    reinterpret_cast<char*>(&res_code_)) + sizeof(room_level_));
   // @@protoc_insertion_point(copy_constructor:MsgRoomTableInfoResp)
 }
 
 void MsgRoomTableInfoResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&max_chair_num_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(max_chair_num_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&room_level_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(room_level_));
 }
 
 MsgRoomTableInfoResp::~MsgRoomTableInfoResp() {
@@ -4597,8 +4600,8 @@ void MsgRoomTableInfoResp::Clear() {
 
   table_info_.Clear();
   ::memset(&res_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&max_chair_num_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(max_chair_num_));
+      reinterpret_cast<char*>(&room_level_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(room_level_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4630,6 +4633,20 @@ const char* MsgRoomTableInfoResp::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
           _internal_add_table_info(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 kind_id = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          kind_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 room_level = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          room_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4682,6 +4699,18 @@ failure:
     }
   }
 
+  // int32 kind_id = 4;
+  if (this->kind_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_kind_id(), target);
+  }
+
+  // int32 room_level = 5;
+  if (this->room_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_room_level(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4727,6 +4756,20 @@ size_t MsgRoomTableInfoResp::ByteSizeLong() const {
         this->_internal_max_chair_num());
   }
 
+  // int32 kind_id = 4;
+  if (this->kind_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_kind_id());
+  }
+
+  // int32 room_level = 5;
+  if (this->room_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_room_level());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -4765,6 +4808,12 @@ void MsgRoomTableInfoResp::MergeFrom(const MsgRoomTableInfoResp& from) {
   if (from.max_chair_num() != 0) {
     _internal_set_max_chair_num(from._internal_max_chair_num());
   }
+  if (from.kind_id() != 0) {
+    _internal_set_kind_id(from._internal_kind_id());
+  }
+  if (from.room_level() != 0) {
+    _internal_set_room_level(from._internal_room_level());
+  }
 }
 
 void MsgRoomTableInfoResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -4790,8 +4839,8 @@ void MsgRoomTableInfoResp::InternalSwap(MsgRoomTableInfoResp* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   table_info_.InternalSwap(&other->table_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgRoomTableInfoResp, max_chair_num_)
-      + sizeof(MsgRoomTableInfoResp::max_chair_num_)
+      PROTOBUF_FIELD_OFFSET(MsgRoomTableInfoResp, room_level_)
+      + sizeof(MsgRoomTableInfoResp::room_level_)
       - PROTOBUF_FIELD_OFFSET(MsgRoomTableInfoResp, res_code_)>(
           reinterpret_cast<char*>(&res_code_),
           reinterpret_cast<char*>(&other->res_code_));

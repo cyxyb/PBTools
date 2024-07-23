@@ -245,6 +245,8 @@ enum EMsgIDDB
 	DB2LOGIN_ControlUserResp				= 1115;	//控制玩家返回
 	LOGIN2DB_TranferRecall					= 1116;	//转账撤回
 	DB2LOGIN_TranferRecallResp				= 1117;	//转账撤回返回
+	LOGIN2DB_GetPropInfo					= 1118;	//获取道具信息
+	DB2LOGIN_GetPropInfoResp				= 1119;	//获取道具信息返回
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp						= 2002;	//玩家登录游戏返回
