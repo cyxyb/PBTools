@@ -3768,7 +3768,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "gonProps\"%\n\022CSEquipDragonProps\022\017\n\007PropsI"
   "D\030\001 \001(\005\"5\n\022SCEquipDragonProps\022\037\n\004Info\030\001 "
   "\001(\0132\021.JSBY.DragonProps\"4\n\021SCPushDragonPr"
-  "ops\022\037\n\004Info\030\001 \001(\0132\021.JSBY.DragonProps\"i\n\010"
+  "ops\022\037\n\004Info\030\001 \003(\0132\021.JSBY.DragonProps\"i\n\010"
   "ShopInfo\022\016\n\006ShopID\030\001 \001(\005\022\014\n\004Name\030\002 \001(\t\022\r"
   "\n\005Value\030\003 \001(\005\022\024\n\014CurrencyType\030\004 \001(\005\022\r\n\005P"
   "rice\030\005 \001(\005\022\013\n\003Num\030\006 \001(\005\"5\n\rCSGetShopInfo"
@@ -28245,33 +28245,24 @@ void SCEquipDragonProps::InternalSwap(SCEquipDragonProps* other) {
 
 class SCPushDragonProps::_Internal {
  public:
-  static const ::JSBY::DragonProps& info(const SCPushDragonProps* msg);
 };
 
-const ::JSBY::DragonProps&
-SCPushDragonProps::_Internal::info(const SCPushDragonProps* msg) {
-  return *msg->info_;
-}
 SCPushDragonProps::SCPushDragonProps(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCPushDragonProps)
 }
 SCPushDragonProps::SCPushDragonProps(const SCPushDragonProps& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::DragonProps(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCPushDragonProps)
 }
 
 void SCPushDragonProps::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCPushDragonProps_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 SCPushDragonProps::~SCPushDragonProps() {
@@ -28282,7 +28273,6 @@ SCPushDragonProps::~SCPushDragonProps() {
 
 void SCPushDragonProps::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCPushDragonProps::ArenaDtor(void* object) {
@@ -28306,10 +28296,7 @@ void SCPushDragonProps::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -28320,11 +28307,16 @@ const char* SCPushDragonProps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.DragonProps Info = 1;
+      // repeated .JSBY.DragonProps Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -28355,12 +28347,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.DragonProps Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.DragonProps Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -28379,11 +28371,11 @@ size_t SCPushDragonProps::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.DragonProps Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.DragonProps Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -28417,9 +28409,7 @@ void SCPushDragonProps::MergeFrom(const SCPushDragonProps& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::DragonProps::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void SCPushDragonProps::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -28443,7 +28433,7 @@ bool SCPushDragonProps::IsInitialized() const {
 void SCPushDragonProps::InternalSwap(SCPushDragonProps* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCPushDragonProps::GetMetadata() const {

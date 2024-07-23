@@ -16785,23 +16785,23 @@ class SCPushDragonProps PROTOBUF_FINAL :
   enum : int {
     kInfoFieldNumber = 1,
   };
-  // .JSBY.DragonProps Info = 1;
-  bool has_info() const;
+  // repeated .JSBY.DragonProps Info = 1;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::DragonProps& info() const;
-  ::JSBY::DragonProps* release_info();
-  ::JSBY::DragonProps* mutable_info();
-  void set_allocated_info(::JSBY::DragonProps* info);
+  ::JSBY::DragonProps* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::DragonProps >*
+      mutable_info();
   private:
-  const ::JSBY::DragonProps& _internal_info() const;
-  ::JSBY::DragonProps* _internal_mutable_info();
+  const ::JSBY::DragonProps& _internal_info(int index) const;
+  ::JSBY::DragonProps* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::DragonProps* info);
-  ::JSBY::DragonProps* unsafe_arena_release_info();
+  const ::JSBY::DragonProps& info(int index) const;
+  ::JSBY::DragonProps* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::DragonProps >&
+      info() const;
 
   // @@protoc_insertion_point(class_scope:JSBY.SCPushDragonProps)
  private:
@@ -16810,7 +16810,7 @@ class SCPushDragonProps PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::DragonProps* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::DragonProps > info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -28828,87 +28828,43 @@ inline void SCEquipDragonProps::set_allocated_info(::JSBY::DragonProps* info) {
 
 // SCPushDragonProps
 
-// .JSBY.DragonProps Info = 1;
-inline bool SCPushDragonProps::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.DragonProps Info = 1;
+inline int SCPushDragonProps::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCPushDragonProps::has_info() const {
-  return _internal_has_info();
+inline int SCPushDragonProps::info_size() const {
+  return _internal_info_size();
 }
 inline void SCPushDragonProps::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::DragonProps& SCPushDragonProps::_internal_info() const {
-  const ::JSBY::DragonProps* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::DragonProps&>(
-      ::JSBY::_DragonProps_default_instance_);
-}
-inline const ::JSBY::DragonProps& SCPushDragonProps::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCPushDragonProps.Info)
-  return _internal_info();
-}
-inline void SCPushDragonProps::unsafe_arena_set_allocated_info(
-    ::JSBY::DragonProps* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCPushDragonProps.Info)
-}
-inline ::JSBY::DragonProps* SCPushDragonProps::release_info() {
-  
-  ::JSBY::DragonProps* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::DragonProps* SCPushDragonProps::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCPushDragonProps.Info)
-  
-  ::JSBY::DragonProps* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::DragonProps* SCPushDragonProps::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::DragonProps>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::DragonProps* SCPushDragonProps::mutable_info() {
+inline ::JSBY::DragonProps* SCPushDragonProps::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCPushDragonProps.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCPushDragonProps::set_allocated_info(::JSBY::DragonProps* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCPushDragonProps.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::DragonProps >*
+SCPushDragonProps::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCPushDragonProps.Info)
+  return &info_;
+}
+inline const ::JSBY::DragonProps& SCPushDragonProps::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::DragonProps& SCPushDragonProps::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCPushDragonProps.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::DragonProps* SCPushDragonProps::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::DragonProps* SCPushDragonProps::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCPushDragonProps.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::DragonProps >&
+SCPushDragonProps::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCPushDragonProps.Info)
+  return info_;
 }
 
 // -------------------------------------------------------------------

@@ -816,7 +816,7 @@ message SCEquipDragonProps
 }
 message SCPushDragonProps
 {
-	 DragonProps Info = 1;
+	 repeated DragonProps Info = 1;
 }
 message ShopInfo
 {
