@@ -92,8 +92,8 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "r_UpdateOnlineNum\020\362.\022\037\n\032Chat2Center_Send"
   "TrumpetMsg\020\363.\022#\n\036Center2Chat_SendTrumpet"
   "MsgResp\020\364.\022\035\n\030Center2Chat_KickUserResp\020\365"
-  ".\022#\n\036Center2Chat_LimitChatLoginResp\020\366.*\332"
-  "(\n\010EMsgIDDB\022\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTER2"
+  ".\022#\n\036Center2Chat_LimitChatLoginResp\020\366.*\242"
+  ")\n\010EMsgIDDB\022\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTER2"
   "DB_UpdateOnlineNum\020\001\022\034\n\030CENTER2DB_InitSe"
   "rverData\020\002\022\033\n\027CENTER2DB_RegisterLogin\020\003\022"
   "\035\n\031CENTER2DB_UnregisterLogin\020\004\022\032\n\026CENTER"
@@ -219,14 +219,16 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "t\020\343\017\022\033\n\026DB2GAME_ApplyRobotResp\020\344\017\022\034\n\027GAM"
   "E2DB_QueryPlayerGold\020\345\017\022 \n\033DB2GAME_Query"
   "PlayerGoldResp\020\346\017\022\027\n\022GAME2DB_ModifyProp\020"
-  "\347\017\022\033\n\026DB2GAME_ModifyPropResp\020\350\017\022\022\n\rCHAT2"
-  "DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027\022\033\n\026C"
-  "HAT2DB_SendTrumpetMsg\020\273\027\022\037\n\032DB2CHAT_Send"
-  "TrumpetMsgResp\020\274\027\022 \n\033App2DB_UpdatePhoneC"
-  "odeState\020\241\037*\211\001\n\021EGameBattleTypeID\022\017\n\013GAM"
-  "E_NORMAL\020\000\022\020\n\014GAME_HUNDRED\020\001\022\017\n\013GAME_CRE"
-  "ATE\020\002\022\017\n\013GAME_BATTLE\020\003\022\027\n\023GAME_BANKER_HU"
-  "NDERD\020\004\022\026\n\022GAME_TRANSFER_GAME\020\005b\006proto3"
+  "\347\017\022\033\n\026DB2GAME_ModifyPropResp\020\350\017\022 \n\033GAME2"
+  "DB_VerifyAgentRelation\020\351\017\022$\n\037DB2GAME_Ver"
+  "ifyAgentRelationResp\020\352\017\022\022\n\rCHAT2DB_Login"
+  "\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027\022\033\n\026CHAT2DB_S"
+  "endTrumpetMsg\020\273\027\022\037\n\032DB2CHAT_SendTrumpetM"
+  "sgResp\020\274\027\022 \n\033App2DB_UpdatePhoneCodeState"
+  "\020\241\037*\211\001\n\021EGameBattleTypeID\022\017\n\013GAME_NORMAL"
+  "\020\000\022\020\n\014GAME_HUNDRED\020\001\022\017\n\013GAME_CREATE\020\002\022\017\n"
+  "\013GAME_BATTLE\020\003\022\027\n\023GAME_BANKER_HUNDERD\020\004\022"
+  "\026\n\022GAME_TRANSFER_GAME\020\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -234,7 +236,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 8199,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 8271,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -515,6 +517,8 @@ bool EMsgIDDB_IsValid(int value) {
     case 2022:
     case 2023:
     case 2024:
+    case 2025:
+    case 2026:
     case 3001:
     case 3002:
     case 3003:

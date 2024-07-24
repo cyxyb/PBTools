@@ -272,6 +272,8 @@ enum EMsgIDDB
 	DB2GAME_QueryPlayerGoldResp				= 2022;	//查询玩家金币返回
 	GAME2DB_ModifyProp						= 2023;	//修改道具
 	DB2GAME_ModifyPropResp					= 2024;	//修改道具返回
+	GAME2DB_VerifyAgentRelation				= 2025;	//验证代理关系
+	DB2GAME_VerifyAgentRelationResp			= 2026;	//验证代理关系返回
 	
 	//3001-4000 ChatServer2DB		
 	CHAT2DB_Login							= 3001;	//登录

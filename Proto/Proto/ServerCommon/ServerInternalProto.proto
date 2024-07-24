@@ -594,7 +594,16 @@ message MsgDeleteFrequentlyPhone
 {
 	MsgErrorCode error_code 	= 1;	//验证码错误状态
 	string 		phone 			= 2;	//手机号
-}	
+}
+
+//验证玩家代理关系
+message MsgDBVerifyAgentrelation
+{
+	int32		code			= 1;
+	int32 		table_no 		= 2;	//桌子id
+	int32 		sitdown_userid 	= 3;	//已经坐下玩家userid
+	int32		user_id			= 4;	//自己userid
+}
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo
 {
