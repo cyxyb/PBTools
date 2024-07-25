@@ -873,6 +873,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kServerIdFieldNumber = 24,
     kKindIdFieldNumber = 25,
     kRegisterGoldFieldNumber = 26,
+    kTranferTypeFieldNumber = 27,
   };
   // string account = 4;
   void clear_account();
@@ -1169,6 +1170,15 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 tranfer_type = 27;
+  void clear_tranfer_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 tranfer_type() const;
+  void set_tranfer_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_tranfer_type() const;
+  void _internal_set_tranfer_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerLoginResp)
  private:
   class _Internal;
@@ -1201,6 +1211,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 register_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 tranfer_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -16835,6 +16846,26 @@ inline void MsgPlayerLoginResp::_internal_set_register_gold(::PROTOBUF_NAMESPACE
 inline void MsgPlayerLoginResp::set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_register_gold(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.register_gold)
+}
+
+// int32 tranfer_type = 27;
+inline void MsgPlayerLoginResp::clear_tranfer_type() {
+  tranfer_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_tranfer_type() const {
+  return tranfer_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::tranfer_type() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.tranfer_type)
+  return _internal_tranfer_type();
+}
+inline void MsgPlayerLoginResp::_internal_set_tranfer_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  tranfer_type_ = value;
+}
+inline void MsgPlayerLoginResp::set_tranfer_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_tranfer_type(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.tranfer_type)
 }
 
 // -------------------------------------------------------------------
