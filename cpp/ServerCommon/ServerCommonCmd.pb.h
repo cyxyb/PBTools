@@ -321,6 +321,7 @@ enum EMsgIDDB : int {
   DB2LOGIN_TranferRecallResp = 1117,
   LOGIN2DB_GetPropInfo = 1118,
   DB2LOGIN_GetPropInfoResp = 1119,
+  LOGIN2DB_DeleteMail = 1120,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
