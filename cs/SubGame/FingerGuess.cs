@@ -25,26 +25,26 @@ namespace FingerGuess {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch9Qcm90by9TdWJHYW1lL0Zpbmdlckd1ZXNzLnByb3RvEgtGaW5nZXJHdWVz",
-            "cyKGAQoMTXNnU2NlbmVJbmZvEg8KB3Jvb21faWQYASABKAUSCwoDYmV0GAIg",
-            "AygFEg8KB2N1cl9iZXQYAyABKAUSEAoIcGFzc3dvcmQYBCABKAkSDwoHbWlu",
-            "X2JldBgFIAEoBRIPCgdtYXhfYmV0GAYgASgDEhMKC2hvdXNlX293bmVyGAcg",
-            "ASgIIlcKCU1zZ1Jlc3VsdBIOCgZyZXN1bHQYASABKAUSDAoEZ29sZBgCIAEo",
-            "AxIVCg1iYW5rZXJfcmVzdWx0GAMgASgFEhUKDXBsYXllcl9yZXN1bHQYBCAB",
-            "KAUqjgMKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIc",
-            "ChhNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHkQARIgChxNc2dJRFN1YkdhbWVf",
-            "UGxheWVyUmVhZHlSZXNwEAISIAocTXNnSURTdWJHYW1lX0JhbmtlckNoYW5n",
-            "ZUJldBADEiQKIE1zZ0lEU3ViR2FtZV9CYW5rZXJDaGFuZ2VCZXRSZXNwEAQS",
-            "IQodTXNnSURTdWJHYW1lX1BsYXllckNvbmZpcm1CZXQQBRIlCiFNc2dJRFN1",
-            "YkdhbWVfUGxheWVyQ29uZmlybUJldFJlc3AQBhIaChZNc2dJRFN1YkdhbWVf",
-            "U3RhcnRHYW1lEAcSGwoXTXNnSURTdWJHYW1lX1Jlc3VsdFJlc3AQCBIbChdN",
-            "c2dJRFN1YkdhbWVfS2lja1BsYXllchAJEhwKGE1zZ0lEU3ViR2FtZV9DYW5j",
-            "ZWxSZWFkeRAKEiAKHE1zZ0lEU3ViR2FtZV9DYW5jZWxSZWFkeVJlc3AQC2IG",
-            "cHJvdG8z"));
+            "cyI1CgxNc2dTY2VuZUluZm8SEAoIcGFzc3dvcmQYASABKAkSEwoLaG91c2Vf",
+            "b3duZXIYAiABKAgiZwoJTXNnUmVzdWx0Eg4KBmlzX2VuZBgBIAEoCBIOCgZy",
+            "ZXN1bHQYAiABKAUSDAoEZ29sZBgDIAEoAxIVCg1iYW5rZXJfcmVzdWx0GAQg",
+            "ASgFEhUKDXBsYXllcl9yZXN1bHQYBSABKAUq5wMKDUVNc2dJRFN1YkdhbWUS",
+            "FQoRTXNnSURTdWJHYW1lX051bGwQABIcChhNc2dJRFN1YkdhbWVfUGxheWVy",
+            "UmVhZHkQARIgChxNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHlSZXNwEAISIAoc",
+            "TXNnSURTdWJHYW1lX0JhbmtlckNoYW5nZUJldBADEiQKIE1zZ0lEU3ViR2Ft",
+            "ZV9CYW5rZXJDaGFuZ2VCZXRSZXNwEAQSIQodTXNnSURTdWJHYW1lX1BsYXll",
+            "ckNvbmZpcm1CZXQQBRIlCiFNc2dJRFN1YkdhbWVfUGxheWVyQ29uZmlybUJl",
+            "dFJlc3AQBhIaChZNc2dJRFN1YkdhbWVfU3RhcnRHYW1lEAcSGwoXTXNnSURT",
+            "dWJHYW1lX1Jlc3VsdFJlc3AQCBIbChdNc2dJRFN1YkdhbWVfS2lja1BsYXll",
+            "chAJEhwKGE1zZ0lEU3ViR2FtZV9DYW5jZWxSZWFkeRAKEiAKHE1zZ0lEU3Vi",
+            "R2FtZV9DYW5jZWxSZWFkeVJlc3AQCxIXChNNc2dJRFN1YkdhbWVfR2l2ZVVw",
+            "EAwSGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJlc3AQDRIhCh1Nc2dJRFN1Ykdh",
+            "bWVfUGxheWVyU2VuZFJlc3VsdBAOYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FingerGuess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgSceneInfo), global::FingerGuess.MsgSceneInfo.Parser, new[]{ "RoomId", "Bet", "CurBet", "Password", "MinBet", "MaxBet", "HouseOwner" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "Result", "Gold", "BankerResult", "PlayerResult" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgSceneInfo), global::FingerGuess.MsgSceneInfo.Parser, new[]{ "Password", "HouseOwner" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "IsEnd", "Result", "Gold", "BankerResult", "PlayerResult" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,7 +78,7 @@ namespace FingerGuess {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_PlayerConfirmBetResp")] MsgIdsubGamePlayerConfirmBetResp = 6,
     /// <summary>
-    ///开始游戏(MsgCommonN32)
+    ///开始游戏(MsgCommonEmpty)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_StartGame")] MsgIdsubGameStartGame = 7,
     /// <summary>
@@ -90,13 +90,25 @@ namespace FingerGuess {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_KickPlayer")] MsgIdsubGameKickPlayer = 9,
     /// <summary>
-    ///玩家取消准备(MsgCommonBool)
+    ///玩家取消准备(MsgCommonEmpty)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_CancelReady")] MsgIdsubGameCancelReady = 10,
     /// <summary>
-    ///玩家取消准备返回(MsgCommonBool)
+    ///玩家取消准备返回(MsgCommonN32)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_CancelReadyResp")] MsgIdsubGameCancelReadyResp = 11,
+    /// <summary>
+    ///玩家认输(MsgCommonEmpty)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_GiveUp")] MsgIdsubGameGiveUp = 12,
+    /// <summary>
+    ///玩家认输返回(MsgCommonBool)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_GiveUpResp")] MsgIdsubGameGiveUpResp = 13,
+    /// <summary>
+    ///玩家发送结果(MsgCommonN32)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_PlayerSendResult")] MsgIdsubGamePlayerSendResult = 14,
   }
 
   #endregion
@@ -134,12 +146,7 @@ namespace FingerGuess {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgSceneInfo(MsgSceneInfo other) : this() {
-      roomId_ = other.roomId_;
-      bet_ = other.bet_.Clone();
-      curBet_ = other.curBet_;
       password_ = other.password_;
-      minBet_ = other.minBet_;
-      maxBet_ = other.maxBet_;
       houseOwner_ = other.houseOwner_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -149,49 +156,8 @@ namespace FingerGuess {
       return new MsgSceneInfo(this);
     }
 
-    /// <summary>Field number for the "room_id" field.</summary>
-    public const int RoomIdFieldNumber = 1;
-    private int roomId_;
-    /// <summary>
-    ///房间ID
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int RoomId {
-      get { return roomId_; }
-      set {
-        roomId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "bet" field.</summary>
-    public const int BetFieldNumber = 2;
-    private static readonly pb::FieldCodec<int> _repeated_bet_codec
-        = pb::FieldCodec.ForInt32(18);
-    private readonly pbc::RepeatedField<int> bet_ = new pbc::RepeatedField<int>();
-    /// <summary>
-    ///固定押注配置
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Bet {
-      get { return bet_; }
-    }
-
-    /// <summary>Field number for the "cur_bet" field.</summary>
-    public const int CurBetFieldNumber = 3;
-    private int curBet_;
-    /// <summary>
-    ///当前押注
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CurBet {
-      get { return curBet_; }
-      set {
-        curBet_ = value;
-      }
-    }
-
     /// <summary>Field number for the "password" field.</summary>
-    public const int PasswordFieldNumber = 4;
+    public const int PasswordFieldNumber = 1;
     private string password_ = "";
     /// <summary>
     ///房间密码
@@ -204,36 +170,8 @@ namespace FingerGuess {
       }
     }
 
-    /// <summary>Field number for the "min_bet" field.</summary>
-    public const int MinBetFieldNumber = 5;
-    private int minBet_;
-    /// <summary>
-    ///最小押注
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int MinBet {
-      get { return minBet_; }
-      set {
-        minBet_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "max_bet" field.</summary>
-    public const int MaxBetFieldNumber = 6;
-    private long maxBet_;
-    /// <summary>
-    ///最大押注
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long MaxBet {
-      get { return maxBet_; }
-      set {
-        maxBet_ = value;
-      }
-    }
-
     /// <summary>Field number for the "house_owner" field.</summary>
-    public const int HouseOwnerFieldNumber = 7;
+    public const int HouseOwnerFieldNumber = 2;
     private bool houseOwner_;
     /// <summary>
     ///是否房主
@@ -259,12 +197,7 @@ namespace FingerGuess {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (RoomId != other.RoomId) return false;
-      if(!bet_.Equals(other.bet_)) return false;
-      if (CurBet != other.CurBet) return false;
       if (Password != other.Password) return false;
-      if (MinBet != other.MinBet) return false;
-      if (MaxBet != other.MaxBet) return false;
       if (HouseOwner != other.HouseOwner) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -272,12 +205,7 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (RoomId != 0) hash ^= RoomId.GetHashCode();
-      hash ^= bet_.GetHashCode();
-      if (CurBet != 0) hash ^= CurBet.GetHashCode();
       if (Password.Length != 0) hash ^= Password.GetHashCode();
-      if (MinBet != 0) hash ^= MinBet.GetHashCode();
-      if (MaxBet != 0L) hash ^= MaxBet.GetHashCode();
       if (HouseOwner != false) hash ^= HouseOwner.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -295,29 +223,12 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (RoomId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RoomId);
-      }
-      bet_.WriteTo(output, _repeated_bet_codec);
-      if (CurBet != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(CurBet);
-      }
       if (Password.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(10);
         output.WriteString(Password);
       }
-      if (MinBet != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(MinBet);
-      }
-      if (MaxBet != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(MaxBet);
-      }
       if (HouseOwner != false) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(16);
         output.WriteBool(HouseOwner);
       }
       if (_unknownFields != null) {
@@ -329,29 +240,12 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (RoomId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RoomId);
-      }
-      bet_.WriteTo(ref output, _repeated_bet_codec);
-      if (CurBet != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(CurBet);
-      }
       if (Password.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(10);
         output.WriteString(Password);
       }
-      if (MinBet != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(MinBet);
-      }
-      if (MaxBet != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(MaxBet);
-      }
       if (HouseOwner != false) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(16);
         output.WriteBool(HouseOwner);
       }
       if (_unknownFields != null) {
@@ -363,21 +257,8 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (RoomId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoomId);
-      }
-      size += bet_.CalculateSize(_repeated_bet_codec);
-      if (CurBet != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurBet);
-      }
       if (Password.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
-      }
-      if (MinBet != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MinBet);
-      }
-      if (MaxBet != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxBet);
       }
       if (HouseOwner != false) {
         size += 1 + 1;
@@ -393,21 +274,8 @@ namespace FingerGuess {
       if (other == null) {
         return;
       }
-      if (other.RoomId != 0) {
-        RoomId = other.RoomId;
-      }
-      bet_.Add(other.bet_);
-      if (other.CurBet != 0) {
-        CurBet = other.CurBet;
-      }
       if (other.Password.Length != 0) {
         Password = other.Password;
-      }
-      if (other.MinBet != 0) {
-        MinBet = other.MinBet;
-      }
-      if (other.MaxBet != 0L) {
-        MaxBet = other.MaxBet;
       }
       if (other.HouseOwner != false) {
         HouseOwner = other.HouseOwner;
@@ -426,32 +294,11 @@ namespace FingerGuess {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            RoomId = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
-            bet_.AddEntriesFrom(input, _repeated_bet_codec);
-            break;
-          }
-          case 24: {
-            CurBet = input.ReadInt32();
-            break;
-          }
-          case 34: {
+          case 10: {
             Password = input.ReadString();
             break;
           }
-          case 40: {
-            MinBet = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            MaxBet = input.ReadInt64();
-            break;
-          }
-          case 56: {
+          case 16: {
             HouseOwner = input.ReadBool();
             break;
           }
@@ -469,32 +316,11 @@ namespace FingerGuess {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            RoomId = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
-            bet_.AddEntriesFrom(ref input, _repeated_bet_codec);
-            break;
-          }
-          case 24: {
-            CurBet = input.ReadInt32();
-            break;
-          }
-          case 34: {
+          case 10: {
             Password = input.ReadString();
             break;
           }
-          case 40: {
-            MinBet = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            MaxBet = input.ReadInt64();
-            break;
-          }
-          case 56: {
+          case 16: {
             HouseOwner = input.ReadBool();
             break;
           }
@@ -537,6 +363,7 @@ namespace FingerGuess {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgResult(MsgResult other) : this() {
+      isEnd_ = other.isEnd_;
       result_ = other.result_;
       gold_ = other.gold_;
       bankerResult_ = other.bankerResult_;
@@ -549,8 +376,22 @@ namespace FingerGuess {
       return new MsgResult(this);
     }
 
+    /// <summary>Field number for the "is_end" field.</summary>
+    public const int IsEndFieldNumber = 1;
+    private bool isEnd_;
+    /// <summary>
+    ///是否结束
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsEnd {
+      get { return isEnd_; }
+      set {
+        isEnd_ = value;
+      }
+    }
+
     /// <summary>Field number for the "result" field.</summary>
-    public const int ResultFieldNumber = 1;
+    public const int ResultFieldNumber = 2;
     private int result_;
     /// <summary>
     ///游戏结果(1:庄家赢 2:玩家赢 3: 和)
@@ -564,7 +405,7 @@ namespace FingerGuess {
     }
 
     /// <summary>Field number for the "gold" field.</summary>
-    public const int GoldFieldNumber = 2;
+    public const int GoldFieldNumber = 3;
     private long gold_;
     /// <summary>
     ///金币
@@ -578,7 +419,7 @@ namespace FingerGuess {
     }
 
     /// <summary>Field number for the "banker_result" field.</summary>
-    public const int BankerResultFieldNumber = 3;
+    public const int BankerResultFieldNumber = 4;
     private int bankerResult_;
     /// <summary>
     ///庄家结果
@@ -592,7 +433,7 @@ namespace FingerGuess {
     }
 
     /// <summary>Field number for the "player_result" field.</summary>
-    public const int PlayerResultFieldNumber = 4;
+    public const int PlayerResultFieldNumber = 5;
     private int playerResult_;
     /// <summary>
     ///玩家结果
@@ -618,6 +459,7 @@ namespace FingerGuess {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (IsEnd != other.IsEnd) return false;
       if (Result != other.Result) return false;
       if (Gold != other.Gold) return false;
       if (BankerResult != other.BankerResult) return false;
@@ -628,6 +470,7 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (IsEnd != false) hash ^= IsEnd.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
       if (Gold != 0L) hash ^= Gold.GetHashCode();
       if (BankerResult != 0) hash ^= BankerResult.GetHashCode();
@@ -648,20 +491,24 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Result != 0) {
+      if (IsEnd != false) {
         output.WriteRawTag(8);
+        output.WriteBool(IsEnd);
+      }
+      if (Result != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(Result);
       }
       if (Gold != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt64(Gold);
       }
       if (BankerResult != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(BankerResult);
       }
       if (PlayerResult != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(PlayerResult);
       }
       if (_unknownFields != null) {
@@ -673,20 +520,24 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Result != 0) {
+      if (IsEnd != false) {
         output.WriteRawTag(8);
+        output.WriteBool(IsEnd);
+      }
+      if (Result != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(Result);
       }
       if (Gold != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt64(Gold);
       }
       if (BankerResult != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(BankerResult);
       }
       if (PlayerResult != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(PlayerResult);
       }
       if (_unknownFields != null) {
@@ -698,6 +549,9 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (IsEnd != false) {
+        size += 1 + 1;
+      }
       if (Result != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Result);
       }
@@ -720,6 +574,9 @@ namespace FingerGuess {
     public void MergeFrom(MsgResult other) {
       if (other == null) {
         return;
+      }
+      if (other.IsEnd != false) {
+        IsEnd = other.IsEnd;
       }
       if (other.Result != 0) {
         Result = other.Result;
@@ -748,18 +605,22 @@ namespace FingerGuess {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Result = input.ReadInt32();
+            IsEnd = input.ReadBool();
             break;
           }
           case 16: {
-            Gold = input.ReadInt64();
+            Result = input.ReadInt32();
             break;
           }
           case 24: {
-            BankerResult = input.ReadInt32();
+            Gold = input.ReadInt64();
             break;
           }
           case 32: {
+            BankerResult = input.ReadInt32();
+            break;
+          }
+          case 40: {
             PlayerResult = input.ReadInt32();
             break;
           }
@@ -778,18 +639,22 @@ namespace FingerGuess {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Result = input.ReadInt32();
+            IsEnd = input.ReadBool();
             break;
           }
           case 16: {
-            Gold = input.ReadInt64();
+            Result = input.ReadInt32();
             break;
           }
           case 24: {
-            BankerResult = input.ReadInt32();
+            Gold = input.ReadInt64();
             break;
           }
           case 32: {
+            BankerResult = input.ReadInt32();
+            break;
+          }
+          case 40: {
             PlayerResult = input.ReadInt32();
             break;
           }

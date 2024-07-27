@@ -11,31 +11,31 @@ enum EMsgIDSubGame
 	MsgIDSubGame_BankerChangeBetResp	= 4;	//庄家更改下注返回(MsgCommonN64)
 	MsgIDSubGame_PlayerConfirmBet		= 5;	//玩家确认更改下注值(MsgCommonN32)
 	MsgIDSubGame_PlayerConfirmBetResp	= 6;	//玩家确认更改下注值返回(MsgCommonN32 1:同意 2:取消准备)
-	MsgIDSubGame_StartGame				= 7;	//开始游戏(MsgCommonN32)
+	MsgIDSubGame_StartGame				= 7;	//开始游戏(MsgCommonEmpty)
 	MsgIDSubGame_ResultResp				= 8;	//游戏结果(MsgResult)
 	MsgIDSubGame_KickPlayer				= 9;	//踢出玩家(MsgCommonBool)
-	MsgIDSubGame_CancelReady			= 10;	//玩家取消准备(MsgCommonBool)
-	MsgIDSubGame_CancelReadyResp		= 11;	//玩家取消准备返回(MsgCommonBool)
+	MsgIDSubGame_CancelReady			= 10;	//玩家取消准备(MsgCommonEmpty)
+	MsgIDSubGame_CancelReadyResp		= 11;	//玩家取消准备返回(MsgCommonN32)
+	MsgIDSubGame_GiveUp					= 12;	//玩家认输(MsgCommonEmpty)
+	MsgIDSubGame_GiveUpResp				= 13;	//玩家认输返回(MsgCommonBool)
+	MsgIDSubGame_PlayerSendResult		= 14;	//玩家发送结果(MsgCommonN32)
+	
 }
 
 //场景消息
 message MsgSceneInfo
 {
-	int32			room_id 	= 1;			//房间ID
-	repeated int32  bet     	= 2;			//固定押注配置
-	int32			cur_bet		= 3;			//当前押注
-	string			password 	= 4;			//房间密码
-	int32			min_bet		= 5;			//最小押注
-	int64			max_bet		= 6;			//最大押注
-	bool			house_owner = 7;			//是否房主
+	string			password 	= 1;			//房间密码
+	bool			house_owner = 2;			//是否房主
 }
 
 //游戏结果
 message MsgResult
 {
-	int32			result 			= 1;			//游戏结果(1:庄家赢 2:玩家赢 3: 和)
-	int64			gold			= 2;			//金币
-	int32			banker_result 	= 3;			//庄家结果
-	int32			player_result 	= 4;			//玩家结果
+	bool			is_end			= 1;			//是否结束
+	int32			result 			= 2;			//游戏结果(1:庄家赢 2:玩家赢 3: 和)
+	int64			gold			= 3;			//金币
+	int32			banker_result 	= 4;			//庄家结果
+	int32			player_result 	= 5;			//玩家结果
 }
 

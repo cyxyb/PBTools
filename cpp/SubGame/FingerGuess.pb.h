@@ -81,12 +81,15 @@ enum EMsgIDSubGame : int {
   MsgIDSubGame_KickPlayer = 9,
   MsgIDSubGame_CancelReady = 10,
   MsgIDSubGame_CancelReadyResp = 11,
+  MsgIDSubGame_GiveUp = 12,
+  MsgIDSubGame_GiveUpResp = 13,
+  MsgIDSubGame_PlayerSendResult = 14,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_CancelReadyResp;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_PlayerSendResult;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
@@ -217,37 +220,10 @@ class MsgSceneInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetFieldNumber = 2,
-    kPasswordFieldNumber = 4,
-    kRoomIdFieldNumber = 1,
-    kCurBetFieldNumber = 3,
-    kMaxBetFieldNumber = 6,
-    kMinBetFieldNumber = 5,
-    kHouseOwnerFieldNumber = 7,
+    kPasswordFieldNumber = 1,
+    kHouseOwnerFieldNumber = 2,
   };
-  // repeated int32 bet = 2;
-  int bet_size() const;
-  private:
-  int _internal_bet_size() const;
-  public:
-  void clear_bet();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_bet() const;
-  void _internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_bet();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 bet(int index) const;
-  void set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      bet() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_bet();
-
-  // string password = 4;
+  // string password = 1;
   void clear_password();
   const std::string& password() const;
   void set_password(const std::string& value);
@@ -263,43 +239,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   std::string* _internal_mutable_password();
   public:
 
-  // int32 room_id = 1;
-  void clear_room_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 room_id() const;
-  void set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_room_id() const;
-  void _internal_set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 cur_bet = 3;
-  void clear_cur_bet();
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_bet() const;
-  void set_cur_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_bet() const;
-  void _internal_set_cur_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 max_bet = 6;
-  void clear_max_bet();
-  ::PROTOBUF_NAMESPACE_ID::int64 max_bet() const;
-  void set_max_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_max_bet() const;
-  void _internal_set_max_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int32 min_bet = 5;
-  void clear_min_bet();
-  ::PROTOBUF_NAMESPACE_ID::int32 min_bet() const;
-  void set_min_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_min_bet() const;
-  void _internal_set_min_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // bool house_owner = 7;
+  // bool house_owner = 2;
   void clear_house_owner();
   bool house_owner() const;
   void set_house_owner(bool value);
@@ -315,13 +255,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_;
-  mutable std::atomic<int> _bet_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
-  ::PROTOBUF_NAMESPACE_ID::int32 room_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_bet_;
-  ::PROTOBUF_NAMESPACE_ID::int64 max_bet_;
-  ::PROTOBUF_NAMESPACE_ID::int32 min_bet_;
   bool house_owner_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_FingerGuess_2eproto;
@@ -440,21 +374,22 @@ class MsgResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGoldFieldNumber = 2,
-    kResultFieldNumber = 1,
-    kBankerResultFieldNumber = 3,
-    kPlayerResultFieldNumber = 4,
+    kIsEndFieldNumber = 1,
+    kResultFieldNumber = 2,
+    kGoldFieldNumber = 3,
+    kBankerResultFieldNumber = 4,
+    kPlayerResultFieldNumber = 5,
   };
-  // int64 gold = 2;
-  void clear_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
-  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // bool is_end = 1;
+  void clear_is_end();
+  bool is_end() const;
+  void set_is_end(bool value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
-  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  bool _internal_is_end() const;
+  void _internal_set_is_end(bool value);
   public:
 
-  // int32 result = 1;
+  // int32 result = 2;
   void clear_result();
   ::PROTOBUF_NAMESPACE_ID::int32 result() const;
   void set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -463,7 +398,16 @@ class MsgResult PROTOBUF_FINAL :
   void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 banker_result = 3;
+  // int64 gold = 3;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 banker_result = 4;
   void clear_banker_result();
   ::PROTOBUF_NAMESPACE_ID::int32 banker_result() const;
   void set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -472,7 +416,7 @@ class MsgResult PROTOBUF_FINAL :
   void _internal_set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 player_result = 4;
+  // int32 player_result = 5;
   void clear_player_result();
   ::PROTOBUF_NAMESPACE_ID::int32 player_result() const;
   void set_player_result(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -488,8 +432,9 @@ class MsgResult PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
+  bool is_end_;
   ::PROTOBUF_NAMESPACE_ID::int32 result_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_result_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_result_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -506,94 +451,7 @@ class MsgResult PROTOBUF_FINAL :
 #endif  // __GNUC__
 // MsgSceneInfo
 
-// int32 room_id = 1;
-inline void MsgSceneInfo::clear_room_id() {
-  room_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_room_id() const {
-  return room_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::room_id() const {
-  // @@protoc_insertion_point(field_get:FingerGuess.MsgSceneInfo.room_id)
-  return _internal_room_id();
-}
-inline void MsgSceneInfo::_internal_set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  room_id_ = value;
-}
-inline void MsgSceneInfo::set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_room_id(value);
-  // @@protoc_insertion_point(field_set:FingerGuess.MsgSceneInfo.room_id)
-}
-
-// repeated int32 bet = 2;
-inline int MsgSceneInfo::_internal_bet_size() const {
-  return bet_.size();
-}
-inline int MsgSceneInfo::bet_size() const {
-  return _internal_bet_size();
-}
-inline void MsgSceneInfo::clear_bet() {
-  bet_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_bet(int index) const {
-  return bet_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::bet(int index) const {
-  // @@protoc_insertion_point(field_get:FingerGuess.MsgSceneInfo.bet)
-  return _internal_bet(index);
-}
-inline void MsgSceneInfo::set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  bet_.Set(index, value);
-  // @@protoc_insertion_point(field_set:FingerGuess.MsgSceneInfo.bet)
-}
-inline void MsgSceneInfo::_internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  bet_.Add(value);
-}
-inline void MsgSceneInfo::add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_bet(value);
-  // @@protoc_insertion_point(field_add:FingerGuess.MsgSceneInfo.bet)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_bet() const {
-  return bet_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::bet() const {
-  // @@protoc_insertion_point(field_list:FingerGuess.MsgSceneInfo.bet)
-  return _internal_bet();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_bet() {
-  return &bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_bet() {
-  // @@protoc_insertion_point(field_mutable_list:FingerGuess.MsgSceneInfo.bet)
-  return _internal_mutable_bet();
-}
-
-// int32 cur_bet = 3;
-inline void MsgSceneInfo::clear_cur_bet() {
-  cur_bet_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_cur_bet() const {
-  return cur_bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::cur_bet() const {
-  // @@protoc_insertion_point(field_get:FingerGuess.MsgSceneInfo.cur_bet)
-  return _internal_cur_bet();
-}
-inline void MsgSceneInfo::_internal_set_cur_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  cur_bet_ = value;
-}
-inline void MsgSceneInfo::set_cur_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_cur_bet(value);
-  // @@protoc_insertion_point(field_set:FingerGuess.MsgSceneInfo.cur_bet)
-}
-
-// string password = 4;
+// string password = 1;
 inline void MsgSceneInfo::clear_password() {
   password_.ClearToEmpty();
 }
@@ -654,47 +512,7 @@ inline void MsgSceneInfo::set_allocated_password(std::string* password) {
   // @@protoc_insertion_point(field_set_allocated:FingerGuess.MsgSceneInfo.password)
 }
 
-// int32 min_bet = 5;
-inline void MsgSceneInfo::clear_min_bet() {
-  min_bet_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_min_bet() const {
-  return min_bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::min_bet() const {
-  // @@protoc_insertion_point(field_get:FingerGuess.MsgSceneInfo.min_bet)
-  return _internal_min_bet();
-}
-inline void MsgSceneInfo::_internal_set_min_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  min_bet_ = value;
-}
-inline void MsgSceneInfo::set_min_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_min_bet(value);
-  // @@protoc_insertion_point(field_set:FingerGuess.MsgSceneInfo.min_bet)
-}
-
-// int64 max_bet = 6;
-inline void MsgSceneInfo::clear_max_bet() {
-  max_bet_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_max_bet() const {
-  return max_bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::max_bet() const {
-  // @@protoc_insertion_point(field_get:FingerGuess.MsgSceneInfo.max_bet)
-  return _internal_max_bet();
-}
-inline void MsgSceneInfo::_internal_set_max_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  max_bet_ = value;
-}
-inline void MsgSceneInfo::set_max_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_max_bet(value);
-  // @@protoc_insertion_point(field_set:FingerGuess.MsgSceneInfo.max_bet)
-}
-
-// bool house_owner = 7;
+// bool house_owner = 2;
 inline void MsgSceneInfo::clear_house_owner() {
   house_owner_ = false;
 }
@@ -718,7 +536,27 @@ inline void MsgSceneInfo::set_house_owner(bool value) {
 
 // MsgResult
 
-// int32 result = 1;
+// bool is_end = 1;
+inline void MsgResult::clear_is_end() {
+  is_end_ = false;
+}
+inline bool MsgResult::_internal_is_end() const {
+  return is_end_;
+}
+inline bool MsgResult::is_end() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgResult.is_end)
+  return _internal_is_end();
+}
+inline void MsgResult::_internal_set_is_end(bool value) {
+  
+  is_end_ = value;
+}
+inline void MsgResult::set_is_end(bool value) {
+  _internal_set_is_end(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.is_end)
+}
+
+// int32 result = 2;
 inline void MsgResult::clear_result() {
   result_ = 0;
 }
@@ -738,7 +576,7 @@ inline void MsgResult::set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.result)
 }
 
-// int64 gold = 2;
+// int64 gold = 3;
 inline void MsgResult::clear_gold() {
   gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -758,7 +596,7 @@ inline void MsgResult::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.gold)
 }
 
-// int32 banker_result = 3;
+// int32 banker_result = 4;
 inline void MsgResult::clear_banker_result() {
   banker_result_ = 0;
 }
@@ -778,7 +616,7 @@ inline void MsgResult::set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.banker_result)
 }
 
-// int32 player_result = 4;
+// int32 player_result = 5;
 inline void MsgResult::clear_player_result() {
   player_result_ = 0;
 }

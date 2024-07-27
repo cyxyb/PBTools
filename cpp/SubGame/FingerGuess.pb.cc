@@ -60,18 +60,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, room_id_),
-  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, bet_),
-  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, cur_bet_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, password_),
-  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, min_bet_),
-  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, max_bet_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgSceneInfo, house_owner_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, is_end_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, result_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, gold_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, banker_result_),
@@ -79,7 +75,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::FingerGuess::MsgSceneInfo)},
-  { 12, -1, sizeof(::FingerGuess::MsgResult)},
+  { 7, -1, sizeof(::FingerGuess::MsgResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -88,23 +84,24 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\021FingerGuess.proto\022\013FingerGuess\"\206\001\n\014Msg"
-  "SceneInfo\022\017\n\007room_id\030\001 \001(\005\022\013\n\003bet\030\002 \003(\005\022"
-  "\017\n\007cur_bet\030\003 \001(\005\022\020\n\010password\030\004 \001(\t\022\017\n\007mi"
-  "n_bet\030\005 \001(\005\022\017\n\007max_bet\030\006 \001(\003\022\023\n\013house_ow"
-  "ner\030\007 \001(\010\"W\n\tMsgResult\022\016\n\006result\030\001 \001(\005\022\014"
-  "\n\004gold\030\002 \001(\003\022\025\n\rbanker_result\030\003 \001(\005\022\025\n\rp"
-  "layer_result\030\004 \001(\005*\216\003\n\rEMsgIDSubGame\022\025\n\021"
-  "MsgIDSubGame_Null\020\000\022\034\n\030MsgIDSubGame_Play"
-  "erReady\020\001\022 \n\034MsgIDSubGame_PlayerReadyRes"
-  "p\020\002\022 \n\034MsgIDSubGame_BankerChangeBet\020\003\022$\n"
-  " MsgIDSubGame_BankerChangeBetResp\020\004\022!\n\035M"
-  "sgIDSubGame_PlayerConfirmBet\020\005\022%\n!MsgIDS"
-  "ubGame_PlayerConfirmBetResp\020\006\022\032\n\026MsgIDSu"
-  "bGame_StartGame\020\007\022\033\n\027MsgIDSubGame_Result"
-  "Resp\020\010\022\033\n\027MsgIDSubGame_KickPlayer\020\t\022\034\n\030M"
-  "sgIDSubGame_CancelReady\020\n\022 \n\034MsgIDSubGam"
-  "e_CancelReadyResp\020\013b\006proto3"
+  "\n\021FingerGuess.proto\022\013FingerGuess\"5\n\014MsgS"
+  "ceneInfo\022\020\n\010password\030\001 \001(\t\022\023\n\013house_owne"
+  "r\030\002 \001(\010\"g\n\tMsgResult\022\016\n\006is_end\030\001 \001(\010\022\016\n\006"
+  "result\030\002 \001(\005\022\014\n\004gold\030\003 \001(\003\022\025\n\rbanker_res"
+  "ult\030\004 \001(\005\022\025\n\rplayer_result\030\005 \001(\005*\347\003\n\rEMs"
+  "gIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030Msg"
+  "IDSubGame_PlayerReady\020\001\022 \n\034MsgIDSubGame_"
+  "PlayerReadyResp\020\002\022 \n\034MsgIDSubGame_Banker"
+  "ChangeBet\020\003\022$\n MsgIDSubGame_BankerChange"
+  "BetResp\020\004\022!\n\035MsgIDSubGame_PlayerConfirmB"
+  "et\020\005\022%\n!MsgIDSubGame_PlayerConfirmBetRes"
+  "p\020\006\022\032\n\026MsgIDSubGame_StartGame\020\007\022\033\n\027MsgID"
+  "SubGame_ResultResp\020\010\022\033\n\027MsgIDSubGame_Kic"
+  "kPlayer\020\t\022\034\n\030MsgIDSubGame_CancelReady\020\n\022"
+  " \n\034MsgIDSubGame_CancelReadyResp\020\013\022\027\n\023Msg"
+  "IDSubGame_GiveUp\020\014\022\033\n\027MsgIDSubGame_GiveU"
+  "pResp\020\r\022!\n\035MsgIDSubGame_PlayerSendResult"
+  "\020\016b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FingerGuess_2eproto_deps[1] = {
 };
@@ -114,7 +111,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Fin
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FingerGuess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto = {
-  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 667,
+  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 690,
   &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_FingerGuess_2eproto::offsets,
   file_level_metadata_FingerGuess_2eproto, 2, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
@@ -141,6 +138,9 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 9:
     case 10:
     case 11:
+    case 12:
+    case 13:
+    case 14:
       return true;
     default:
       return false;
@@ -155,34 +155,27 @@ class MsgSceneInfo::_Internal {
 };
 
 MsgSceneInfo::MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  bet_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:FingerGuess.MsgSceneInfo)
 }
 MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      bet_(from.bet_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_password().empty()) {
     password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_password(), 
       GetArena());
   }
-  ::memcpy(&room_id_, &from.room_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&house_owner_) -
-    reinterpret_cast<char*>(&room_id_)) + sizeof(house_owner_));
+  house_owner_ = from.house_owner_;
   // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgSceneInfo)
 }
 
 void MsgSceneInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgSceneInfo_FingerGuess_2eproto.base);
   password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&room_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&house_owner_) -
-      reinterpret_cast<char*>(&room_id_)) + sizeof(house_owner_));
+  house_owner_ = false;
 }
 
 MsgSceneInfo::~MsgSceneInfo() {
@@ -217,11 +210,8 @@ void MsgSceneInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  bet_.Clear();
   password_.ClearToEmpty();
-  ::memset(&room_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&house_owner_) -
-      reinterpret_cast<char*>(&room_id_)) + sizeof(house_owner_));
+  house_owner_ = false;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -232,56 +222,18 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 room_id = 1;
+      // string password = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          room_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 bet = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bet(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_bet(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 cur_bet = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          cur_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // string password = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           auto str = _internal_mutable_password();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "FingerGuess.MsgSceneInfo.password"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 min_bet = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          min_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 max_bet = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          max_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool house_owner = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+      // bool house_owner = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           house_owner_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -314,53 +266,20 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 room_id = 1;
-  if (this->room_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_room_id(), target);
-  }
-
-  // repeated int32 bet = 2;
-  {
-    int byte_size = _bet_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          2, _internal_bet(), byte_size, target);
-    }
-  }
-
-  // int32 cur_bet = 3;
-  if (this->cur_bet() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_cur_bet(), target);
-  }
-
-  // string password = 4;
+  // string password = 1;
   if (this->password().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_password().data(), static_cast<int>(this->_internal_password().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "FingerGuess.MsgSceneInfo.password");
     target = stream->WriteStringMaybeAliased(
-        4, this->_internal_password(), target);
+        1, this->_internal_password(), target);
   }
 
-  // int32 min_bet = 5;
-  if (this->min_bet() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_min_bet(), target);
-  }
-
-  // int64 max_bet = 6;
-  if (this->max_bet() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_max_bet(), target);
-  }
-
-  // bool house_owner = 7;
+  // bool house_owner = 2;
   if (this->house_owner() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_house_owner(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_house_owner(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -379,57 +298,14 @@ size_t MsgSceneInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 bet = 2;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->bet_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _bet_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
-  // string password = 4;
+  // string password = 1;
   if (this->password().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_password());
   }
 
-  // int32 room_id = 1;
-  if (this->room_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_room_id());
-  }
-
-  // int32 cur_bet = 3;
-  if (this->cur_bet() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cur_bet());
-  }
-
-  // int64 max_bet = 6;
-  if (this->max_bet() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_max_bet());
-  }
-
-  // int32 min_bet = 5;
-  if (this->min_bet() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_min_bet());
-  }
-
-  // bool house_owner = 7;
+  // bool house_owner = 2;
   if (this->house_owner() != 0) {
     total_size += 1 + 1;
   }
@@ -465,21 +341,8 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  bet_.MergeFrom(from.bet_);
   if (from.password().size() > 0) {
     _internal_set_password(from._internal_password());
-  }
-  if (from.room_id() != 0) {
-    _internal_set_room_id(from._internal_room_id());
-  }
-  if (from.cur_bet() != 0) {
-    _internal_set_cur_bet(from._internal_cur_bet());
-  }
-  if (from.max_bet() != 0) {
-    _internal_set_max_bet(from._internal_max_bet());
-  }
-  if (from.min_bet() != 0) {
-    _internal_set_min_bet(from._internal_min_bet());
   }
   if (from.house_owner() != 0) {
     _internal_set_house_owner(from._internal_house_owner());
@@ -507,14 +370,8 @@ bool MsgSceneInfo::IsInitialized() const {
 void MsgSceneInfo::InternalSwap(MsgSceneInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  bet_.InternalSwap(&other->bet_);
   password_.Swap(&other->password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgSceneInfo, house_owner_)
-      + sizeof(MsgSceneInfo::house_owner_)
-      - PROTOBUF_FIELD_OFFSET(MsgSceneInfo, room_id_)>(
-          reinterpret_cast<char*>(&room_id_),
-          reinterpret_cast<char*>(&other->room_id_));
+  swap(house_owner_, other->house_owner_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgSceneInfo::GetMetadata() const {
@@ -537,17 +394,17 @@ MsgResult::MsgResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgResult::MsgResult(const MsgResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&gold_, &from.gold_,
+  ::memcpy(&is_end_, &from.is_end_,
     static_cast<size_t>(reinterpret_cast<char*>(&player_result_) -
-    reinterpret_cast<char*>(&gold_)) + sizeof(player_result_));
+    reinterpret_cast<char*>(&is_end_)) + sizeof(player_result_));
   // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgResult)
 }
 
 void MsgResult::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&gold_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&is_end_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&player_result_) -
-      reinterpret_cast<char*>(&gold_)) + sizeof(player_result_));
+      reinterpret_cast<char*>(&is_end_)) + sizeof(player_result_));
 }
 
 MsgResult::~MsgResult() {
@@ -581,9 +438,9 @@ void MsgResult::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&gold_, 0, static_cast<size_t>(
+  ::memset(&is_end_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&player_result_) -
-      reinterpret_cast<char*>(&gold_)) + sizeof(player_result_));
+      reinterpret_cast<char*>(&is_end_)) + sizeof(player_result_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -594,30 +451,37 @@ const char* MsgResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 result = 1;
+      // bool is_end = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          is_end_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 result = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           result_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 gold = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // int64 gold = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 banker_result = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 banker_result = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           banker_result_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 player_result = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 player_result = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           player_result_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -650,28 +514,34 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 result = 1;
+  // bool is_end = 1;
+  if (this->is_end() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_is_end(), target);
+  }
+
+  // int32 result = 2;
   if (this->result() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_result(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_result(), target);
   }
 
-  // int64 gold = 2;
+  // int64 gold = 3;
   if (this->gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_gold(), target);
   }
 
-  // int32 banker_result = 3;
+  // int32 banker_result = 4;
   if (this->banker_result() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_banker_result(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_banker_result(), target);
   }
 
-  // int32 player_result = 4;
+  // int32 player_result = 5;
   if (this->player_result() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_player_result(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_player_result(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -690,28 +560,33 @@ size_t MsgResult::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 gold = 2;
-  if (this->gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_gold());
+  // bool is_end = 1;
+  if (this->is_end() != 0) {
+    total_size += 1 + 1;
   }
 
-  // int32 result = 1;
+  // int32 result = 2;
   if (this->result() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_result());
   }
 
-  // int32 banker_result = 3;
+  // int64 gold = 3;
+  if (this->gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_gold());
+  }
+
+  // int32 banker_result = 4;
   if (this->banker_result() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_banker_result());
   }
 
-  // int32 player_result = 4;
+  // int32 player_result = 5;
   if (this->player_result() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -749,11 +624,14 @@ void MsgResult::MergeFrom(const MsgResult& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.gold() != 0) {
-    _internal_set_gold(from._internal_gold());
+  if (from.is_end() != 0) {
+    _internal_set_is_end(from._internal_is_end());
   }
   if (from.result() != 0) {
     _internal_set_result(from._internal_result());
+  }
+  if (from.gold() != 0) {
+    _internal_set_gold(from._internal_gold());
   }
   if (from.banker_result() != 0) {
     _internal_set_banker_result(from._internal_banker_result());
@@ -787,9 +665,9 @@ void MsgResult::InternalSwap(MsgResult* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgResult, player_result_)
       + sizeof(MsgResult::player_result_)
-      - PROTOBUF_FIELD_OFFSET(MsgResult, gold_)>(
-          reinterpret_cast<char*>(&gold_),
-          reinterpret_cast<char*>(&other->gold_));
+      - PROTOBUF_FIELD_OFFSET(MsgResult, is_end_)>(
+          reinterpret_cast<char*>(&is_end_),
+          reinterpret_cast<char*>(&other->is_end_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgResult::GetMetadata() const {
