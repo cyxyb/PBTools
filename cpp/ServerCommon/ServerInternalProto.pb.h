@@ -7337,7 +7337,6 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
     kBankerUserIdFieldNumber = 1,
     kPlayerUserIdFieldNumber = 2,
     kBetFieldNumber = 4,
-    kResultFieldNumber = 3,
   };
   // int32 banker_user_id = 1;
   void clear_banker_user_id();
@@ -7366,15 +7365,6 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
   void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 result = 3;
-  void clear_result();
-  ::PROTOBUF_NAMESPACE_ID::int32 result() const;
-  void set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_result() const;
-  void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgDBFingerGuessWriteScore)
  private:
   class _Internal;
@@ -7385,7 +7375,6 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 banker_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_;
-  ::PROTOBUF_NAMESPACE_ID::int32 result_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -7507,9 +7496,6 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
     kLoseUserIdFieldNumber = 2,
     kWinUserGoldFieldNumber = 3,
     kLoseUserGoldFieldNumber = 4,
-    kTimeFieldNumber = 5,
-    kResultFieldNumber = 6,
-    kBetFieldNumber = 7,
   };
   // int32 win_user_id = 1;
   void clear_win_user_id();
@@ -7547,33 +7533,6 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
   void _internal_set_lose_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 time = 5;
-  void clear_time();
-  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
-  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
-  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 result = 6;
-  void clear_result();
-  ::PROTOBUF_NAMESPACE_ID::int32 result() const;
-  void set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_result() const;
-  void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 bet = 7;
-  void clear_bet();
-  ::PROTOBUF_NAMESPACE_ID::int64 bet() const;
-  void set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet() const;
-  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgDBFingerGuessWriteScoreResp)
  private:
   class _Internal;
@@ -7585,9 +7544,6 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 lose_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_user_gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 lose_user_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 time_;
-  ::PROTOBUF_NAMESPACE_ID::int32 result_;
-  ::PROTOBUF_NAMESPACE_ID::int64 bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -18359,26 +18315,6 @@ inline void MsgDBFingerGuessWriteScore::set_player_user_id(::PROTOBUF_NAMESPACE_
   // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScore.player_user_id)
 }
 
-// int32 result = 3;
-inline void MsgDBFingerGuessWriteScore::clear_result() {
-  result_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::_internal_result() const {
-  return result_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::result() const {
-  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScore.result)
-  return _internal_result();
-}
-inline void MsgDBFingerGuessWriteScore::_internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  result_ = value;
-}
-inline void MsgDBFingerGuessWriteScore::set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_result(value);
-  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScore.result)
-}
-
 // int64 bet = 4;
 inline void MsgDBFingerGuessWriteScore::clear_bet() {
   bet_ = PROTOBUF_LONGLONG(0);
@@ -18481,66 +18417,6 @@ inline void MsgDBFingerGuessWriteScoreResp::_internal_set_lose_user_gold(::PROTO
 inline void MsgDBFingerGuessWriteScoreResp::set_lose_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_lose_user_gold(value);
   // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.lose_user_gold)
-}
-
-// int32 time = 5;
-inline void MsgDBFingerGuessWriteScoreResp::clear_time() {
-  time_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::_internal_time() const {
-  return time_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::time() const {
-  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.time)
-  return _internal_time();
-}
-inline void MsgDBFingerGuessWriteScoreResp::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  time_ = value;
-}
-inline void MsgDBFingerGuessWriteScoreResp::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_time(value);
-  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.time)
-}
-
-// int32 result = 6;
-inline void MsgDBFingerGuessWriteScoreResp::clear_result() {
-  result_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::_internal_result() const {
-  return result_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::result() const {
-  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.result)
-  return _internal_result();
-}
-inline void MsgDBFingerGuessWriteScoreResp::_internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  result_ = value;
-}
-inline void MsgDBFingerGuessWriteScoreResp::set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_result(value);
-  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.result)
-}
-
-// int64 bet = 7;
-inline void MsgDBFingerGuessWriteScoreResp::clear_bet() {
-  bet_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::_internal_bet() const {
-  return bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::bet() const {
-  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.bet)
-  return _internal_bet();
-}
-inline void MsgDBFingerGuessWriteScoreResp::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  bet_ = value;
-}
-inline void MsgDBFingerGuessWriteScoreResp::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_bet(value);
-  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.bet)
 }
 
 // -------------------------------------------------------------------

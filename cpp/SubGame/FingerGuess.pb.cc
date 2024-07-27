@@ -88,19 +88,18 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "ceneInfo\022\020\n\010password\030\001 \001(\t\022\023\n\013house_owne"
   "r\030\002 \001(\010\"g\n\tMsgResult\022\016\n\006is_end\030\001 \001(\010\022\016\n\006"
   "result\030\002 \001(\005\022\014\n\004gold\030\003 \001(\003\022\025\n\rbanker_res"
-  "ult\030\004 \001(\005\022\025\n\rplayer_result\030\005 \001(\005*\307\003\n\rEMs"
+  "ult\030\004 \001(\005\022\025\n\rplayer_result\030\005 \001(\005*\216\003\n\rEMs"
   "gIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030Msg"
   "IDSubGame_PlayerReady\020\001\022 \n\034MsgIDSubGame_"
   "PlayerReadyResp\020\002\022!\n\035MsgIDSubGame_Banker"
   "ConfirmBet\020\003\022%\n!MsgIDSubGame_BankerConfi"
   "rmBetResp\020\004\022!\n\035MsgIDSubGame_PlayerConfir"
   "mBet\020\005\022%\n!MsgIDSubGame_PlayerConfirmBetR"
-  "esp\020\006\022\032\n\026MsgIDSubGame_StartGame\020\007\022\033\n\027Msg"
-  "IDSubGame_ResultResp\020\010\022\033\n\027MsgIDSubGame_K"
-  "ickPlayer\020\t\022\027\n\023MsgIDSubGame_GiveUp\020\n\022\033\n\027"
-  "MsgIDSubGame_GiveUpResp\020\013\022!\n\035MsgIDSubGam"
-  "e_PlayerSendResult\020\014\022\034\n\030MsgIDSubGame_Not"
-  "ifyState\020\rb\006proto3"
+  "esp\020\006\022\033\n\027MsgIDSubGame_ResultResp\020\010\022\027\n\023Ms"
+  "gIDSubGame_GiveUp\020\t\022\033\n\027MsgIDSubGame_Give"
+  "UpResp\020\n\022!\n\035MsgIDSubGame_PlayerSendResul"
+  "t\020\013\022\034\n\030MsgIDSubGame_NotifyState\020\014b\006proto"
+  "3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FingerGuess_2eproto_deps[1] = {
 };
@@ -110,7 +109,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Fin
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FingerGuess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto = {
-  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 658,
+  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 601,
   &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_FingerGuess_2eproto::offsets,
   file_level_metadata_FingerGuess_2eproto, 2, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
@@ -132,13 +131,11 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 4:
     case 5:
     case 6:
-    case 7:
     case 8:
     case 9:
     case 10:
     case 11:
     case 12:
-    case 13:
       return true;
     default:
       return false;

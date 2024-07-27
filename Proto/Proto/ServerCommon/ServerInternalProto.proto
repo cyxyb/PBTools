@@ -371,7 +371,6 @@ message MsgDBFingerGuessWriteScore
 {
 	int32		banker_user_id			= 1;	//庄家玩家ID
 	int32		player_user_id			= 2;	//玩家ID
-	int32		result					= 3;	//游戏结果
 	int64		bet						= 4;	//下注
 }
 
@@ -382,9 +381,6 @@ message MsgDBFingerGuessWriteScoreResp
 	int32		lose_user_id		= 2;	//玩家ID
 	int64		win_user_gold		= 3;	//庄家金币
 	int64		lose_user_gold		= 4;	//玩家金币
-	int32		time				= 5;	//时间
-	int32		result				= 6;	//游戏结果
-	int64		bet					= 7;	//下注
 }
 
 //猜拳查询数据记录
