@@ -72,24 +72,23 @@ enum EMsgIDSubGame : int {
   MsgIDSubGame_Null = 0,
   MsgIDSubGame_PlayerReady = 1,
   MsgIDSubGame_PlayerReadyResp = 2,
-  MsgIDSubGame_BankerChangeBet = 3,
-  MsgIDSubGame_BankerChangeBetResp = 4,
+  MsgIDSubGame_BankerConfirmBet = 3,
+  MsgIDSubGame_BankerConfirmBetResp = 4,
   MsgIDSubGame_PlayerConfirmBet = 5,
   MsgIDSubGame_PlayerConfirmBetResp = 6,
   MsgIDSubGame_StartGame = 7,
   MsgIDSubGame_ResultResp = 8,
   MsgIDSubGame_KickPlayer = 9,
-  MsgIDSubGame_CancelReady = 10,
-  MsgIDSubGame_CancelReadyResp = 11,
-  MsgIDSubGame_GiveUp = 12,
-  MsgIDSubGame_GiveUpResp = 13,
-  MsgIDSubGame_PlayerSendResult = 14,
+  MsgIDSubGame_GiveUp = 10,
+  MsgIDSubGame_GiveUpResp = 11,
+  MsgIDSubGame_PlayerSendResult = 12,
+  MsgIDSubGame_NotifyState = 13,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_PlayerSendResult;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_NotifyState;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();

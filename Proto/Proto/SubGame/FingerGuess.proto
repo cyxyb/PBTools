@@ -5,21 +5,19 @@ package FingerGuess;
 enum EMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
-	MsgIDSubGame_PlayerReady			= 1;	//玩家准备(MsgCommonN32)
+	MsgIDSubGame_PlayerReady			= 1;	//玩家准备(MsgCommonEmpty)
 	MsgIDSubGame_PlayerReadyResp		= 2;	//玩家准备返回(MsgCommonN32)
-	MsgIDSubGame_BankerChangeBet		= 3;	//庄家更改下注(MsgCommonN64)
-	MsgIDSubGame_BankerChangeBetResp	= 4;	//庄家更改下注返回(MsgCommonN64)
-	MsgIDSubGame_PlayerConfirmBet		= 5;	//玩家确认更改下注值(MsgCommonN32)
-	MsgIDSubGame_PlayerConfirmBetResp	= 6;	//玩家确认更改下注值返回(MsgCommonN32 1:同意 2:取消准备)
+	MsgIDSubGame_BankerConfirmBet		= 3;	//庄家确认下注(MsgCommonN64)
+	MsgIDSubGame_BankerConfirmBetResp	= 4;	//庄家确认下注返回(MsgCommonN64)
+	MsgIDSubGame_PlayerConfirmBet		= 5;	//玩家确认下注值(MsgCommonN32)
+	MsgIDSubGame_PlayerConfirmBetResp	= 6;	//玩家确认下注值返回(MsgCommonN32 1:同意 2:不同意)
 	MsgIDSubGame_StartGame				= 7;	//开始游戏(MsgCommonEmpty)
 	MsgIDSubGame_ResultResp				= 8;	//游戏结果(MsgResult)
 	MsgIDSubGame_KickPlayer				= 9;	//踢出玩家(MsgCommonBool)
-	MsgIDSubGame_CancelReady			= 10;	//玩家取消准备(MsgCommonEmpty)
-	MsgIDSubGame_CancelReadyResp		= 11;	//玩家取消准备返回(MsgCommonN32)
-	MsgIDSubGame_GiveUp					= 12;	//玩家认输(MsgCommonEmpty)
-	MsgIDSubGame_GiveUpResp				= 13;	//玩家认输返回(MsgCommonBool)
-	MsgIDSubGame_PlayerSendResult		= 14;	//玩家发送结果(MsgCommonN32)
-	
+	MsgIDSubGame_GiveUp					= 10;	//玩家认输(MsgCommonEmpty)
+	MsgIDSubGame_GiveUpResp				= 11;	//玩家认输返回(MsgCommonBool)
+	MsgIDSubGame_PlayerSendResult		= 12;	//玩家发送结果(MsgCommonN32)
+	MsgIDSubGame_NotifyState			= 13;	//通知阶段(MsgCommonN32)
 }
 
 //场景消息

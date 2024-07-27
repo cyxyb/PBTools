@@ -28,18 +28,17 @@ namespace FingerGuess {
             "cyI1CgxNc2dTY2VuZUluZm8SEAoIcGFzc3dvcmQYASABKAkSEwoLaG91c2Vf",
             "b3duZXIYAiABKAgiZwoJTXNnUmVzdWx0Eg4KBmlzX2VuZBgBIAEoCBIOCgZy",
             "ZXN1bHQYAiABKAUSDAoEZ29sZBgDIAEoAxIVCg1iYW5rZXJfcmVzdWx0GAQg",
-            "ASgFEhUKDXBsYXllcl9yZXN1bHQYBSABKAUq5wMKDUVNc2dJRFN1YkdhbWUS",
+            "ASgFEhUKDXBsYXllcl9yZXN1bHQYBSABKAUqxwMKDUVNc2dJRFN1YkdhbWUS",
             "FQoRTXNnSURTdWJHYW1lX051bGwQABIcChhNc2dJRFN1YkdhbWVfUGxheWVy",
-            "UmVhZHkQARIgChxNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHlSZXNwEAISIAoc",
-            "TXNnSURTdWJHYW1lX0JhbmtlckNoYW5nZUJldBADEiQKIE1zZ0lEU3ViR2Ft",
-            "ZV9CYW5rZXJDaGFuZ2VCZXRSZXNwEAQSIQodTXNnSURTdWJHYW1lX1BsYXll",
-            "ckNvbmZpcm1CZXQQBRIlCiFNc2dJRFN1YkdhbWVfUGxheWVyQ29uZmlybUJl",
-            "dFJlc3AQBhIaChZNc2dJRFN1YkdhbWVfU3RhcnRHYW1lEAcSGwoXTXNnSURT",
-            "dWJHYW1lX1Jlc3VsdFJlc3AQCBIbChdNc2dJRFN1YkdhbWVfS2lja1BsYXll",
-            "chAJEhwKGE1zZ0lEU3ViR2FtZV9DYW5jZWxSZWFkeRAKEiAKHE1zZ0lEU3Vi",
-            "R2FtZV9DYW5jZWxSZWFkeVJlc3AQCxIXChNNc2dJRFN1YkdhbWVfR2l2ZVVw",
-            "EAwSGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJlc3AQDRIhCh1Nc2dJRFN1Ykdh",
-            "bWVfUGxheWVyU2VuZFJlc3VsdBAOYgZwcm90bzM="));
+            "UmVhZHkQARIgChxNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHlSZXNwEAISIQod",
+            "TXNnSURTdWJHYW1lX0JhbmtlckNvbmZpcm1CZXQQAxIlCiFNc2dJRFN1Ykdh",
+            "bWVfQmFua2VyQ29uZmlybUJldFJlc3AQBBIhCh1Nc2dJRFN1YkdhbWVfUGxh",
+            "eWVyQ29uZmlybUJldBAFEiUKIU1zZ0lEU3ViR2FtZV9QbGF5ZXJDb25maXJt",
+            "QmV0UmVzcBAGEhoKFk1zZ0lEU3ViR2FtZV9TdGFydEdhbWUQBxIbChdNc2dJ",
+            "RFN1YkdhbWVfUmVzdWx0UmVzcBAIEhsKF01zZ0lEU3ViR2FtZV9LaWNrUGxh",
+            "eWVyEAkSFwoTTXNnSURTdWJHYW1lX0dpdmVVcBAKEhsKF01zZ0lEU3ViR2Ft",
+            "ZV9HaXZlVXBSZXNwEAsSIQodTXNnSURTdWJHYW1lX1BsYXllclNlbmRSZXN1",
+            "bHQQDBIcChhNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGUQDWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FingerGuess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -54,7 +53,7 @@ namespace FingerGuess {
   public enum EMsgIDSubGame {
     [pbr::OriginalName("MsgIDSubGame_Null")] MsgIdsubGameNull = 0,
     /// <summary>
-    ///玩家准备(MsgCommonN32)
+    ///玩家准备(MsgCommonEmpty)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_PlayerReady")] MsgIdsubGamePlayerReady = 1,
     /// <summary>
@@ -62,19 +61,19 @@ namespace FingerGuess {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_PlayerReadyResp")] MsgIdsubGamePlayerReadyResp = 2,
     /// <summary>
-    ///庄家更改下注(MsgCommonN64)
+    ///庄家确认下注(MsgCommonN64)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_BankerChangeBet")] MsgIdsubGameBankerChangeBet = 3,
+    [pbr::OriginalName("MsgIDSubGame_BankerConfirmBet")] MsgIdsubGameBankerConfirmBet = 3,
     /// <summary>
-    ///庄家更改下注返回(MsgCommonN64)
+    ///庄家确认下注返回(MsgCommonN64)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_BankerChangeBetResp")] MsgIdsubGameBankerChangeBetResp = 4,
+    [pbr::OriginalName("MsgIDSubGame_BankerConfirmBetResp")] MsgIdsubGameBankerConfirmBetResp = 4,
     /// <summary>
-    ///玩家确认更改下注值(MsgCommonN32)
+    ///玩家确认下注值(MsgCommonN32)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_PlayerConfirmBet")] MsgIdsubGamePlayerConfirmBet = 5,
     /// <summary>
-    ///玩家确认更改下注值返回(MsgCommonN32 1:同意 2:取消准备)
+    ///玩家确认下注值返回(MsgCommonN32 1:同意 2:不同意)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_PlayerConfirmBetResp")] MsgIdsubGamePlayerConfirmBetResp = 6,
     /// <summary>
@@ -90,25 +89,21 @@ namespace FingerGuess {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_KickPlayer")] MsgIdsubGameKickPlayer = 9,
     /// <summary>
-    ///玩家取消准备(MsgCommonEmpty)
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_CancelReady")] MsgIdsubGameCancelReady = 10,
-    /// <summary>
-    ///玩家取消准备返回(MsgCommonN32)
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_CancelReadyResp")] MsgIdsubGameCancelReadyResp = 11,
-    /// <summary>
     ///玩家认输(MsgCommonEmpty)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GiveUp")] MsgIdsubGameGiveUp = 12,
+    [pbr::OriginalName("MsgIDSubGame_GiveUp")] MsgIdsubGameGiveUp = 10,
     /// <summary>
     ///玩家认输返回(MsgCommonBool)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GiveUpResp")] MsgIdsubGameGiveUpResp = 13,
+    [pbr::OriginalName("MsgIDSubGame_GiveUpResp")] MsgIdsubGameGiveUpResp = 11,
     /// <summary>
     ///玩家发送结果(MsgCommonN32)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_PlayerSendResult")] MsgIdsubGamePlayerSendResult = 14,
+    [pbr::OriginalName("MsgIDSubGame_PlayerSendResult")] MsgIdsubGamePlayerSendResult = 12,
+    /// <summary>
+    ///通知阶段(MsgCommonN32)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_NotifyState")] MsgIdsubGameNotifyState = 13,
   }
 
   #endregion
