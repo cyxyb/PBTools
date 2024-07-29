@@ -299,6 +299,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROT
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, table_no_),
   PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, is_add_),
+  PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, room_level_),
+  PROTOBUF_FIELD_OFFSET(::MsgModifyTableInfo, kind_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgGameServerInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -389,14 +391,14 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 17, -1, sizeof(::MsgCommonN64)},
   { 23, -1, sizeof(::MsgCommonStr)},
   { 29, -1, sizeof(::MsgModifyTableInfo)},
-  { 36, -1, sizeof(::MsgGameServerInfo)},
-  { 52, -1, sizeof(::MsgGameServerList)},
-  { 58, -1, sizeof(::MsgBroadcastZmdTip)},
-  { 74, -1, sizeof(::MsgNotifyChatNormalMsg)},
-  { 82, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
-  { 90, -1, sizeof(::MsgChatPlayerInfo)},
-  { 102, -1, sizeof(::MsgChatServerInfo)},
-  { 112, -1, sizeof(::MsgChatServerList)},
+  { 38, -1, sizeof(::MsgGameServerInfo)},
+  { 54, -1, sizeof(::MsgGameServerList)},
+  { 60, -1, sizeof(::MsgBroadcastZmdTip)},
+  { 76, -1, sizeof(::MsgNotifyChatNormalMsg)},
+  { 84, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
+  { 92, -1, sizeof(::MsgChatPlayerInfo)},
+  { 104, -1, sizeof(::MsgChatServerInfo)},
+  { 114, -1, sizeof(::MsgChatServerList)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -420,35 +422,36 @@ const char descriptor_table_protodef_Common_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\n\014Common.proto\"\020\n\016MsgCommonEmpty\"\036\n\rMsgC"
   "ommonBool\022\r\n\005value\030\001 \001(\010\"\035\n\014MsgCommonN32"
   "\022\r\n\005value\030\001 \001(\005\"\035\n\014MsgCommonN64\022\r\n\005value"
-  "\030\001 \001(\003\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"6\n"
+  "\030\001 \001(\003\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"[\n"
   "\022MsgModifyTableInfo\022\020\n\010table_No\030\001 \001(\005\022\016\n"
-  "\006is_add\030\002 \001(\010\"\341\001\n\021MsgGameServerInfo\022\n\n\002i"
-  "p\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005"
-  "\022\022\n\nonline_num\030\004 \001(\005\022\017\n\007kind_id\030\005 \001(\005\022\022\n"
-  "\nroom_level\030\006 \001(\005\022\022\n\nlimit_gold\030\007 \001(\005\022\022\n"
-  "\nmax_player\030\010 \001(\005\022\021\n\ttable_num\030\t \001(\005\022\021\n\t"
-  "chair_num\030\n \001(\005\022\030\n\020is_need_password\030\013 \001("
-  "\010\"A\n\021MsgGameServerList\022,\n\020game_server_li"
-  "st\030\001 \003(\0132\022.MsgGameServerInfo\"\345\001\n\022MsgBroa"
-  "dcastZmdTip\022\017\n\007user_id\030\001 \001(\005\022\017\n\007game_id\030"
-  "\002 \001(\005\022\022\n\nroom_level\030\003 \001(\005\022\020\n\010win_gold\030\004 "
-  "\001(\004\022\021\n\tnick_name\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t"
-  "\022\023\n\013language_id\030\007 \001(\005\022\023\n\013template_id\030\010 \001"
-  "(\005\022\021\n\tvip_level\030\t \001(\005\022\024\n\014avatar_frame\030\n "
-  "\001(\005\022\017\n\007content\030\013 \003(\t\"I\n\026MsgNotifyChatNor"
-  "malMsg\022\r\n\005index\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017"
-  "\n\007message\030\003 \001(\t\"b\n\027MsgNotifyChatTrumpetM"
-  "sg\022\r\n\005index\030\001 \001(\005\022\'\n\013player_info\030\002 \001(\0132\022"
-  ".MsgChatPlayerInfo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021"
-  "MsgChatPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014be"
-  "autiful_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006av"
-  "atar\030\004 \001(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_"
-  "frame\030\006 \001(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgC"
-  "hatServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022"
-  "\021\n\tserver_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022"
-  "\n\nmax_player\030\005 \001(\005\"A\n\021MsgChatServerList\022"
-  ",\n\020chat_server_list\030\001 \003(\0132\022.MsgChatServe"
-  "rInfob\006proto3"
+  "\006is_add\030\002 \001(\010\022\022\n\nroom_level\030\003 \001(\005\022\017\n\007kin"
+  "d_id\030\004 \001(\005\"\341\001\n\021MsgGameServerInfo\022\n\n\002ip\030\001"
+  " \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005\022\022\n"
+  "\nonline_num\030\004 \001(\005\022\017\n\007kind_id\030\005 \001(\005\022\022\n\nro"
+  "om_level\030\006 \001(\005\022\022\n\nlimit_gold\030\007 \001(\005\022\022\n\nma"
+  "x_player\030\010 \001(\005\022\021\n\ttable_num\030\t \001(\005\022\021\n\tcha"
+  "ir_num\030\n \001(\005\022\030\n\020is_need_password\030\013 \001(\010\"A"
+  "\n\021MsgGameServerList\022,\n\020game_server_list\030"
+  "\001 \003(\0132\022.MsgGameServerInfo\"\345\001\n\022MsgBroadca"
+  "stZmdTip\022\017\n\007user_id\030\001 \001(\005\022\017\n\007game_id\030\002 \001"
+  "(\005\022\022\n\nroom_level\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\004"
+  "\022\021\n\tnick_name\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t\022\023\n"
+  "\013language_id\030\007 \001(\005\022\023\n\013template_id\030\010 \001(\005\022"
+  "\021\n\tvip_level\030\t \001(\005\022\024\n\014avatar_frame\030\n \001(\005"
+  "\022\017\n\007content\030\013 \003(\t\"I\n\026MsgNotifyChatNormal"
+  "Msg\022\r\n\005index\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017\n\007m"
+  "essage\030\003 \001(\t\"b\n\027MsgNotifyChatTrumpetMsg\022"
+  "\r\n\005index\030\001 \001(\005\022\'\n\013player_info\030\002 \001(\0132\022.Ms"
+  "gChatPlayerInfo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021Msg"
+  "ChatPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beaut"
+  "iful_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avata"
+  "r\030\004 \001(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_fra"
+  "me\030\006 \001(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgChat"
+  "ServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\t"
+  "server_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nm"
+  "ax_player\030\005 \001(\005\"A\n\021MsgChatServerList\022,\n\020"
+  "chat_server_list\030\001 \003(\0132\022.MsgChatServerIn"
+  "fob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Common_2eproto_deps[1] = {
 };
@@ -470,7 +473,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Common_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto = {
-  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1253,
+  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1290,
   &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_Common_2eproto::offsets,
   file_level_metadata_Common_2eproto, 14, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
@@ -1443,16 +1446,16 @@ MsgModifyTableInfo::MsgModifyTableInfo(const MsgModifyTableInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&table_no_, &from.table_no_,
-    static_cast<size_t>(reinterpret_cast<char*>(&is_add_) -
-    reinterpret_cast<char*>(&table_no_)) + sizeof(is_add_));
+    static_cast<size_t>(reinterpret_cast<char*>(&kind_id_) -
+    reinterpret_cast<char*>(&table_no_)) + sizeof(kind_id_));
   // @@protoc_insertion_point(copy_constructor:MsgModifyTableInfo)
 }
 
 void MsgModifyTableInfo::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&table_no_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&is_add_) -
-      reinterpret_cast<char*>(&table_no_)) + sizeof(is_add_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&kind_id_) -
+      reinterpret_cast<char*>(&table_no_)) + sizeof(kind_id_));
 }
 
 MsgModifyTableInfo::~MsgModifyTableInfo() {
@@ -1487,8 +1490,8 @@ void MsgModifyTableInfo::Clear() {
   (void) cached_has_bits;
 
   ::memset(&table_no_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&is_add_) -
-      reinterpret_cast<char*>(&table_no_)) + sizeof(is_add_));
+      reinterpret_cast<char*>(&kind_id_) -
+      reinterpret_cast<char*>(&table_no_)) + sizeof(kind_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1510,6 +1513,20 @@ const char* MsgModifyTableInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           is_add_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 room_level = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          room_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 kind_id = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          kind_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1553,6 +1570,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_is_add(), target);
   }
 
+  // int32 room_level = 3;
+  if (this->room_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_room_level(), target);
+  }
+
+  // int32 kind_id = 4;
+  if (this->kind_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_kind_id(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1579,6 +1608,20 @@ size_t MsgModifyTableInfo::ByteSizeLong() const {
   // bool is_add = 2;
   if (this->is_add() != 0) {
     total_size += 1 + 1;
+  }
+
+  // int32 room_level = 3;
+  if (this->room_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_room_level());
+  }
+
+  // int32 kind_id = 4;
+  if (this->kind_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_kind_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1618,6 +1661,12 @@ void MsgModifyTableInfo::MergeFrom(const MsgModifyTableInfo& from) {
   if (from.is_add() != 0) {
     _internal_set_is_add(from._internal_is_add());
   }
+  if (from.room_level() != 0) {
+    _internal_set_room_level(from._internal_room_level());
+  }
+  if (from.kind_id() != 0) {
+    _internal_set_kind_id(from._internal_kind_id());
+  }
 }
 
 void MsgModifyTableInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1642,8 +1691,8 @@ void MsgModifyTableInfo::InternalSwap(MsgModifyTableInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgModifyTableInfo, is_add_)
-      + sizeof(MsgModifyTableInfo::is_add_)
+      PROTOBUF_FIELD_OFFSET(MsgModifyTableInfo, kind_id_)
+      + sizeof(MsgModifyTableInfo::kind_id_)
       - PROTOBUF_FIELD_OFFSET(MsgModifyTableInfo, table_no_)>(
           reinterpret_cast<char*>(&table_no_),
           reinterpret_cast<char*>(&other->table_no_));

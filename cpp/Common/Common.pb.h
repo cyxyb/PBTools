@@ -902,6 +902,8 @@ class MsgModifyTableInfo PROTOBUF_FINAL :
   enum : int {
     kTableNoFieldNumber = 1,
     kIsAddFieldNumber = 2,
+    kRoomLevelFieldNumber = 3,
+    kKindIdFieldNumber = 4,
   };
   // int32 table_No = 1;
   void clear_table_no();
@@ -921,6 +923,24 @@ class MsgModifyTableInfo PROTOBUF_FINAL :
   void _internal_set_is_add(bool value);
   public:
 
+  // int32 room_level = 3;
+  void clear_room_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 room_level() const;
+  void set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_room_level() const;
+  void _internal_set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 kind_id = 4;
+  void clear_kind_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_id() const;
+  void set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_kind_id() const;
+  void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgModifyTableInfo)
  private:
   class _Internal;
@@ -930,6 +950,8 @@ class MsgModifyTableInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
   bool is_add_;
+  ::PROTOBUF_NAMESPACE_ID::int32 room_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Common_2eproto;
 };
@@ -2669,6 +2691,46 @@ inline void MsgModifyTableInfo::_internal_set_is_add(bool value) {
 inline void MsgModifyTableInfo::set_is_add(bool value) {
   _internal_set_is_add(value);
   // @@protoc_insertion_point(field_set:MsgModifyTableInfo.is_add)
+}
+
+// int32 room_level = 3;
+inline void MsgModifyTableInfo::clear_room_level() {
+  room_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgModifyTableInfo::_internal_room_level() const {
+  return room_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgModifyTableInfo::room_level() const {
+  // @@protoc_insertion_point(field_get:MsgModifyTableInfo.room_level)
+  return _internal_room_level();
+}
+inline void MsgModifyTableInfo::_internal_set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  room_level_ = value;
+}
+inline void MsgModifyTableInfo::set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_room_level(value);
+  // @@protoc_insertion_point(field_set:MsgModifyTableInfo.room_level)
+}
+
+// int32 kind_id = 4;
+inline void MsgModifyTableInfo::clear_kind_id() {
+  kind_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgModifyTableInfo::_internal_kind_id() const {
+  return kind_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgModifyTableInfo::kind_id() const {
+  // @@protoc_insertion_point(field_get:MsgModifyTableInfo.kind_id)
+  return _internal_kind_id();
+}
+inline void MsgModifyTableInfo::_internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  kind_id_ = value;
+}
+inline void MsgModifyTableInfo::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_kind_id(value);
+  // @@protoc_insertion_point(field_set:MsgModifyTableInfo.kind_id)
 }
 
 // -------------------------------------------------------------------

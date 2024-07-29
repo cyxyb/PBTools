@@ -25,32 +25,32 @@ public static partial class CommonReflection {
           "ChlQcm90by9Db21tb24vQ29tbW9uLnByb3RvIhAKDk1zZ0NvbW1vbkVtcHR5",
           "Ih4KDU1zZ0NvbW1vbkJvb2wSDQoFdmFsdWUYASABKAgiHQoMTXNnQ29tbW9u",
           "TjMyEg0KBXZhbHVlGAEgASgFIh0KDE1zZ0NvbW1vbk42NBINCgV2YWx1ZRgB",
-          "IAEoAyIdCgxNc2dDb21tb25TdHISDQoFdmFsdWUYASABKAkiNgoSTXNnTW9k",
+          "IAEoAyIdCgxNc2dDb21tb25TdHISDQoFdmFsdWUYASABKAkiWwoSTXNnTW9k",
           "aWZ5VGFibGVJbmZvEhAKCHRhYmxlX05vGAEgASgFEg4KBmlzX2FkZBgCIAEo",
-          "CCLhAQoRTXNnR2FtZVNlcnZlckluZm8SCgoCaXAYASABKAUSDAoEcG9ydBgC",
-          "IAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoKb25saW5lX251bRgEIAEoBRIP",
-          "CgdraW5kX2lkGAUgASgFEhIKCnJvb21fbGV2ZWwYBiABKAUSEgoKbGltaXRf",
-          "Z29sZBgHIAEoBRISCgptYXhfcGxheWVyGAggASgFEhEKCXRhYmxlX251bRgJ",
-          "IAEoBRIRCgljaGFpcl9udW0YCiABKAUSGAoQaXNfbmVlZF9wYXNzd29yZBgL",
-          "IAEoCCJBChFNc2dHYW1lU2VydmVyTGlzdBIsChBnYW1lX3NlcnZlcl9saXN0",
-          "GAEgAygLMhIuTXNnR2FtZVNlcnZlckluZm8i5QEKEk1zZ0Jyb2FkY2FzdFpt",
-          "ZFRpcBIPCgd1c2VyX2lkGAEgASgFEg8KB2dhbWVfaWQYAiABKAUSEgoKcm9v",
-          "bV9sZXZlbBgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoBBIRCgluaWNrX25hbWUY",
-          "BSABKAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFuZ3VhZ2VfaWQYByABKAUS",
-          "EwoLdGVtcGxhdGVfaWQYCCABKAUSEQoJdmlwX2xldmVsGAkgASgFEhQKDGF2",
-          "YXRhcl9mcmFtZRgKIAEoBRIPCgdjb250ZW50GAsgAygJIkkKFk1zZ05vdGlm",
-          "eUNoYXROb3JtYWxNc2cSDQoFaW5kZXgYASABKAUSDwoHdXNlcl9pZBgCIAEo",
-          "BRIPCgdtZXNzYWdlGAMgASgJImIKF01zZ05vdGlmeUNoYXRUcnVtcGV0TXNn",
-          "Eg0KBWluZGV4GAEgASgFEicKC3BsYXllcl9pbmZvGAIgASgLMhIuTXNnQ2hh",
-          "dFBsYXllckluZm8SDwoHbWVzc2FnZRgDIAEoCSKaAQoRTXNnQ2hhdFBsYXll",
-          "ckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1dGlmdWxfaWQYAiABKAUS",
-          "EAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQgASgJEhEKCXZpcF9sZXZl",
-          "bBgFIAEoBRIUCgxhdmF0YXJfZnJhbWUYBiABKAUSEwoLY2xpZW50X3R5cGUY",
-          "ByABKAUiaAoRTXNnQ2hhdFNlcnZlckluZm8SCgoCaXAYASABKAUSDAoEcG9y",
-          "dBgCIAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoKb25saW5lX251bRgEIAEo",
-          "BRISCgptYXhfcGxheWVyGAUgASgFIkEKEU1zZ0NoYXRTZXJ2ZXJMaXN0EiwK",
-          "EGNoYXRfc2VydmVyX2xpc3QYASADKAsyEi5Nc2dDaGF0U2VydmVySW5mb2IG",
-          "cHJvdG8z"));
+          "CBISCgpyb29tX2xldmVsGAMgASgFEg8KB2tpbmRfaWQYBCABKAUi4QEKEU1z",
+          "Z0dhbWVTZXJ2ZXJJbmZvEgoKAmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJ",
+          "c2VydmVyX2lkGAMgASgFEhIKCm9ubGluZV9udW0YBCABKAUSDwoHa2luZF9p",
+          "ZBgFIAEoBRISCgpyb29tX2xldmVsGAYgASgFEhIKCmxpbWl0X2dvbGQYByAB",
+          "KAUSEgoKbWF4X3BsYXllchgIIAEoBRIRCgl0YWJsZV9udW0YCSABKAUSEQoJ",
+          "Y2hhaXJfbnVtGAogASgFEhgKEGlzX25lZWRfcGFzc3dvcmQYCyABKAgiQQoR",
+          "TXNnR2FtZVNlcnZlckxpc3QSLAoQZ2FtZV9zZXJ2ZXJfbGlzdBgBIAMoCzIS",
+          "Lk1zZ0dhbWVTZXJ2ZXJJbmZvIuUBChJNc2dCcm9hZGNhc3RabWRUaXASDwoH",
+          "dXNlcl9pZBgBIAEoBRIPCgdnYW1lX2lkGAIgASgFEhIKCnJvb21fbGV2ZWwY",
+          "AyABKAUSEAoId2luX2dvbGQYBCABKAQSEQoJbmlja19uYW1lGAUgASgJEhAK",
+          "CGhlYWRfdXJsGAYgASgJEhMKC2xhbmd1YWdlX2lkGAcgASgFEhMKC3RlbXBs",
+          "YXRlX2lkGAggASgFEhEKCXZpcF9sZXZlbBgJIAEoBRIUCgxhdmF0YXJfZnJh",
+          "bWUYCiABKAUSDwoHY29udGVudBgLIAMoCSJJChZNc2dOb3RpZnlDaGF0Tm9y",
+          "bWFsTXNnEg0KBWluZGV4GAEgASgFEg8KB3VzZXJfaWQYAiABKAUSDwoHbWVz",
+          "c2FnZRgDIAEoCSJiChdNc2dOb3RpZnlDaGF0VHJ1bXBldE1zZxINCgVpbmRl",
+          "eBgBIAEoBRInCgtwbGF5ZXJfaW5mbxgCIAEoCzISLk1zZ0NoYXRQbGF5ZXJJ",
+          "bmZvEg8KB21lc3NhZ2UYAyABKAkimgEKEU1zZ0NoYXRQbGF5ZXJJbmZvEg8K",
+          "B3VzZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lkGAIgASgFEhAKCG5pY2tu",
+          "YW1lGAMgASgJEg4KBmF2YXRhchgEIAEoCRIRCgl2aXBfbGV2ZWwYBSABKAUS",
+          "FAoMYXZhdGFyX2ZyYW1lGAYgASgFEhMKC2NsaWVudF90eXBlGAcgASgFImgK",
+          "EU1zZ0NoYXRTZXJ2ZXJJbmZvEgoKAmlwGAEgASgFEgwKBHBvcnQYAiABKAUS",
+          "EQoJc2VydmVyX2lkGAMgASgFEhIKCm9ubGluZV9udW0YBCABKAUSEgoKbWF4",
+          "X3BsYXllchgFIAEoBSJBChFNc2dDaGF0U2VydmVyTGlzdBIsChBjaGF0X3Nl",
+          "cnZlcl9saXN0GAEgAygLMhIuTXNnQ2hhdFNlcnZlckluZm9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -59,7 +59,7 @@ public static partial class CommonReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonN32), global::MsgCommonN32.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonN64), global::MsgCommonN64.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonStr), global::MsgCommonStr.Parser, new[]{ "Value" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyTableInfo), global::MsgModifyTableInfo.Parser, new[]{ "TableNo", "IsAdd" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyTableInfo), global::MsgModifyTableInfo.Parser, new[]{ "TableNo", "IsAdd", "RoomLevel", "KindId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerInfo), global::MsgGameServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "KindId", "RoomLevel", "LimitGold", "MaxPlayer", "TableNum", "ChairNum", "IsNeedPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerList), global::MsgGameServerList.Parser, new[]{ "GameServerList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBroadcastZmdTip), global::MsgBroadcastZmdTip.Parser, new[]{ "UserId", "GameId", "RoomLevel", "WinGold", "NickName", "HeadUrl", "LanguageId", "TemplateId", "VipLevel", "AvatarFrame", "Content" }, null, null, null, null),
@@ -932,6 +932,8 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
   public MsgModifyTableInfo(MsgModifyTableInfo other) : this() {
     tableNo_ = other.tableNo_;
     isAdd_ = other.isAdd_;
+    roomLevel_ = other.roomLevel_;
+    kindId_ = other.kindId_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -968,6 +970,34 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
     }
   }
 
+  /// <summary>Field number for the "room_level" field.</summary>
+  public const int RoomLevelFieldNumber = 3;
+  private int roomLevel_;
+  /// <summary>
+  ///房间等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RoomLevel {
+    get { return roomLevel_; }
+    set {
+      roomLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "kind_id" field.</summary>
+  public const int KindIdFieldNumber = 4;
+  private int kindId_;
+  /// <summary>
+  ///游戏ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int KindId {
+    get { return kindId_; }
+    set {
+      kindId_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgModifyTableInfo);
@@ -983,6 +1013,8 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
     }
     if (TableNo != other.TableNo) return false;
     if (IsAdd != other.IsAdd) return false;
+    if (RoomLevel != other.RoomLevel) return false;
+    if (KindId != other.KindId) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -991,6 +1023,8 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
     int hash = 1;
     if (TableNo != 0) hash ^= TableNo.GetHashCode();
     if (IsAdd != false) hash ^= IsAdd.GetHashCode();
+    if (RoomLevel != 0) hash ^= RoomLevel.GetHashCode();
+    if (KindId != 0) hash ^= KindId.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1015,6 +1049,14 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
       output.WriteRawTag(16);
       output.WriteBool(IsAdd);
     }
+    if (RoomLevel != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(RoomLevel);
+    }
+    if (KindId != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(KindId);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1032,6 +1074,14 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
       output.WriteRawTag(16);
       output.WriteBool(IsAdd);
     }
+    if (RoomLevel != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(RoomLevel);
+    }
+    if (KindId != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(KindId);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1046,6 +1096,12 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
     }
     if (IsAdd != false) {
       size += 1 + 1;
+    }
+    if (RoomLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoomLevel);
+    }
+    if (KindId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(KindId);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1063,6 +1119,12 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
     }
     if (other.IsAdd != false) {
       IsAdd = other.IsAdd;
+    }
+    if (other.RoomLevel != 0) {
+      RoomLevel = other.RoomLevel;
+    }
+    if (other.KindId != 0) {
+      KindId = other.KindId;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -1086,6 +1148,14 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
           IsAdd = input.ReadBool();
           break;
         }
+        case 24: {
+          RoomLevel = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          KindId = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -1106,6 +1176,14 @@ public sealed partial class MsgModifyTableInfo : pb::IMessage<MsgModifyTableInfo
         }
         case 16: {
           IsAdd = input.ReadBool();
+          break;
+        }
+        case 24: {
+          RoomLevel = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          KindId = input.ReadInt32();
           break;
         }
       }
