@@ -28,21 +28,23 @@ namespace FingerGuess {
             "cyI1CgxNc2dTY2VuZUluZm8SEAoIcGFzc3dvcmQYASABKAkSEwoLaG91c2Vf",
             "b3duZXIYAiABKAgiZwoJTXNnUmVzdWx0Eg4KBmlzX2VuZBgBIAEoCBIOCgZy",
             "ZXN1bHQYAiABKAUSDAoEZ29sZBgDIAEoAxIVCg1iYW5rZXJfcmVzdWx0GAQg",
-            "ASgFEhUKDXBsYXllcl9yZXN1bHQYBSABKAUqjgMKDUVNc2dJRFN1YkdhbWUS",
-            "FQoRTXNnSURTdWJHYW1lX051bGwQABIcChhNc2dJRFN1YkdhbWVfUGxheWVy",
-            "UmVhZHkQARIgChxNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHlSZXNwEAISIQod",
-            "TXNnSURTdWJHYW1lX0JhbmtlckNvbmZpcm1CZXQQAxIlCiFNc2dJRFN1Ykdh",
-            "bWVfQmFua2VyQ29uZmlybUJldFJlc3AQBBIhCh1Nc2dJRFN1YkdhbWVfUGxh",
-            "eWVyQ29uZmlybUJldBAFEiUKIU1zZ0lEU3ViR2FtZV9QbGF5ZXJDb25maXJt",
-            "QmV0UmVzcBAGEhsKF01zZ0lEU3ViR2FtZV9SZXN1bHRSZXNwEAgSFwoTTXNn",
-            "SURTdWJHYW1lX0dpdmVVcBAJEhsKF01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNw",
-            "EAoSIQodTXNnSURTdWJHYW1lX1BsYXllclNlbmRSZXN1bHQQCxIcChhNc2dJ",
-            "RFN1YkdhbWVfTm90aWZ5U3RhdGUQDGIGcHJvdG8z"));
+            "ASgFEhUKDXBsYXllcl9yZXN1bHQYBSABKAUiLQoOTXNnTm90aWZ5U3RhdGUS",
+            "DQoFc3RhdGUYASABKAUSDAoEdGltZRgCIAEoBSqOAwoNRU1zZ0lEU3ViR2Ft",
+            "ZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhwKGE1zZ0lEU3ViR2FtZV9QbGF5",
+            "ZXJSZWFkeRABEiAKHE1zZ0lEU3ViR2FtZV9QbGF5ZXJSZWFkeVJlc3AQAhIh",
+            "Ch1Nc2dJRFN1YkdhbWVfQmFua2VyQ29uZmlybUJldBADEiUKIU1zZ0lEU3Vi",
+            "R2FtZV9CYW5rZXJDb25maXJtQmV0UmVzcBAEEiEKHU1zZ0lEU3ViR2FtZV9Q",
+            "bGF5ZXJDb25maXJtQmV0EAUSJQohTXNnSURTdWJHYW1lX1BsYXllckNvbmZp",
+            "cm1CZXRSZXNwEAYSGwoXTXNnSURTdWJHYW1lX1Jlc3VsdFJlc3AQCBIXChNN",
+            "c2dJRFN1YkdhbWVfR2l2ZVVwEAkSGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJl",
+            "c3AQChIhCh1Nc2dJRFN1YkdhbWVfUGxheWVyU2VuZFJlc3VsdBALEhwKGE1z",
+            "Z0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZRAMYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FingerGuess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgSceneInfo), global::FingerGuess.MsgSceneInfo.Parser, new[]{ "Password", "HouseOwner" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "IsEnd", "Result", "Gold", "BankerResult", "PlayerResult" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "IsEnd", "Result", "Gold", "BankerResult", "PlayerResult" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgNotifyState), global::FingerGuess.MsgNotifyState.Parser, new[]{ "State", "Time" }, null, null, null, null)
           }));
     }
     #endregion
@@ -92,7 +94,7 @@ namespace FingerGuess {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_PlayerSendResult")] MsgIdsubGamePlayerSendResult = 11,
     /// <summary>
-    ///通知阶段(MsgCommonN32)
+    ///通知阶段(MsgNotifyState)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyState")] MsgIdsubGameNotifyState = 12,
   }
@@ -642,6 +644,216 @@ namespace FingerGuess {
           }
           case 40: {
             PlayerResult = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// </summary>
+  public sealed partial class MsgNotifyState : pb::IMessage<MsgNotifyState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgNotifyState> _parser = new pb::MessageParser<MsgNotifyState>(() => new MsgNotifyState());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MsgNotifyState> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::FingerGuess.FingerGuessReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgNotifyState() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgNotifyState(MsgNotifyState other) : this() {
+      state_ = other.state_;
+      time_ = other.time_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgNotifyState Clone() {
+      return new MsgNotifyState(this);
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 1;
+    private int state_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int State {
+      get { return state_; }
+      set {
+        state_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "time" field.</summary>
+    public const int TimeFieldNumber = 2;
+    private int time_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Time {
+      get { return time_; }
+      set {
+        time_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MsgNotifyState);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MsgNotifyState other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (State != other.State) return false;
+      if (Time != other.Time) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (State != 0) hash ^= State.GetHashCode();
+      if (Time != 0) hash ^= Time.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (State != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(State);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (State != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(State);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (State != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
+      }
+      if (Time != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Time);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MsgNotifyState other) {
+      if (other == null) {
+        return;
+      }
+      if (other.State != 0) {
+        State = other.State;
+      }
+      if (other.Time != 0) {
+        Time = other.Time;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            State = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Time = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            State = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Time = input.ReadInt32();
             break;
           }
         }

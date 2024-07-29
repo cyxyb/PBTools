@@ -47,7 +47,7 @@ struct TableStruct_FingerGuess_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[2]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,6 +55,9 @@ struct TableStruct_FingerGuess_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto;
 namespace FingerGuess {
+class MsgNotifyState;
+class MsgNotifyStateDefaultTypeInternal;
+extern MsgNotifyStateDefaultTypeInternal _MsgNotifyState_default_instance_;
 class MsgResult;
 class MsgResultDefaultTypeInternal;
 extern MsgResultDefaultTypeInternal _MsgResult_default_instance_;
@@ -63,6 +66,7 @@ class MsgSceneInfoDefaultTypeInternal;
 extern MsgSceneInfoDefaultTypeInternal _MsgSceneInfo_default_instance_;
 }  // namespace FingerGuess
 PROTOBUF_NAMESPACE_OPEN
+template<> ::FingerGuess::MsgNotifyState* Arena::CreateMaybeMessage<::FingerGuess::MsgNotifyState>(Arena*);
 template<> ::FingerGuess::MsgResult* Arena::CreateMaybeMessage<::FingerGuess::MsgResult>(Arena*);
 template<> ::FingerGuess::MsgSceneInfo* Arena::CreateMaybeMessage<::FingerGuess::MsgSceneInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -437,6 +441,153 @@ class MsgResult PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_FingerGuess_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgNotifyState PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FingerGuess.MsgNotifyState) */ {
+ public:
+  inline MsgNotifyState() : MsgNotifyState(nullptr) {}
+  virtual ~MsgNotifyState();
+
+  MsgNotifyState(const MsgNotifyState& from);
+  MsgNotifyState(MsgNotifyState&& from) noexcept
+    : MsgNotifyState() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgNotifyState& operator=(const MsgNotifyState& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgNotifyState& operator=(MsgNotifyState&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgNotifyState& default_instance();
+
+  static inline const MsgNotifyState* internal_default_instance() {
+    return reinterpret_cast<const MsgNotifyState*>(
+               &_MsgNotifyState_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  friend void swap(MsgNotifyState& a, MsgNotifyState& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgNotifyState* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgNotifyState* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgNotifyState* New() const final {
+    return CreateMaybeMessage<MsgNotifyState>(nullptr);
+  }
+
+  MsgNotifyState* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgNotifyState>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgNotifyState& from);
+  void MergeFrom(const MsgNotifyState& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgNotifyState* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "FingerGuess.MsgNotifyState";
+  }
+  protected:
+  explicit MsgNotifyState(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_FingerGuess_2eproto);
+    return ::descriptor_table_FingerGuess_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kStateFieldNumber = 1,
+    kTimeFieldNumber = 2,
+  };
+  // int32 state = 1;
+  void clear_state();
+  ::PROTOBUF_NAMESPACE_ID::int32 state() const;
+  void set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_state() const;
+  void _internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 time = 2;
+  void clear_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
+  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
+  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:FingerGuess.MsgNotifyState)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 time_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_FingerGuess_2eproto;
+};
 // ===================================================================
 
 
@@ -633,9 +784,55 @@ inline void MsgResult::set_player_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.player_result)
 }
 
+// -------------------------------------------------------------------
+
+// MsgNotifyState
+
+// int32 state = 1;
+inline void MsgNotifyState::clear_state() {
+  state_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNotifyState::_internal_state() const {
+  return state_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNotifyState::state() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgNotifyState.state)
+  return _internal_state();
+}
+inline void MsgNotifyState::_internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  state_ = value;
+}
+inline void MsgNotifyState::set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_state(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgNotifyState.state)
+}
+
+// int32 time = 2;
+inline void MsgNotifyState::clear_time() {
+  time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNotifyState::_internal_time() const {
+  return time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNotifyState::time() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgNotifyState.time)
+  return _internal_time();
+}
+inline void MsgNotifyState::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  time_ = value;
+}
+inline void MsgNotifyState::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_time(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgNotifyState.time)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 

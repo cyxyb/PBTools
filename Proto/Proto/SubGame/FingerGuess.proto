@@ -15,7 +15,7 @@ enum EMsgIDSubGame
 	MsgIDSubGame_GiveUp					= 9;	//玩家认输(MsgCommonEmpty)
 	MsgIDSubGame_GiveUpResp				= 10;	//玩家认输返回(MsgCommonBool)
 	MsgIDSubGame_PlayerSendResult		= 11;	//玩家发送结果(MsgCommonN32)
-	MsgIDSubGame_NotifyState			= 12;	//通知阶段(MsgCommonN32)
+	MsgIDSubGame_NotifyState			= 12;	//通知阶段(MsgNotifyState)
 }
 
 //场景消息
@@ -33,5 +33,12 @@ message MsgResult
 	int64			gold			= 3;			//金币
 	int32			banker_result 	= 4;			//庄家结果
 	int32			player_result 	= 5;			//玩家结果
+}
+
+//
+message MsgNotifyState
+{
+	int32			state			= 1;
+	int32			time			= 2;
 }
 

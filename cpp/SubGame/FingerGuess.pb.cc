@@ -23,7 +23,24 @@ class MsgResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgResult> _instance;
 } _MsgResult_default_instance_;
+class MsgNotifyStateDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgNotifyState> _instance;
+} _MsgNotifyState_default_instance_;
 }  // namespace FingerGuess
+static void InitDefaultsscc_info_MsgNotifyState_FingerGuess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::FingerGuess::_MsgNotifyState_default_instance_;
+    new (ptr) ::FingerGuess::MsgNotifyState();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgNotifyState_FingerGuess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgNotifyState_FingerGuess_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgResult_FingerGuess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -50,7 +67,7 @@ static void InitDefaultsscc_info_MsgSceneInfo_FingerGuess_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgSceneInfo_FingerGuess_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgSceneInfo_FingerGuess_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_FingerGuess_2eproto[2];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_FingerGuess_2eproto[3];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_FingerGuess_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_FingerGuess_2eproto = nullptr;
 
@@ -72,15 +89,24 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, gold_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, banker_result_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, player_result_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgNotifyState, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgNotifyState, state_),
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgNotifyState, time_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::FingerGuess::MsgSceneInfo)},
   { 7, -1, sizeof(::FingerGuess::MsgResult)},
+  { 17, -1, sizeof(::FingerGuess::MsgNotifyState)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::FingerGuess::_MsgSceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::FingerGuess::_MsgResult_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::FingerGuess::_MsgNotifyState_default_instance_),
 };
 
 const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -88,31 +114,33 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "ceneInfo\022\020\n\010password\030\001 \001(\t\022\023\n\013house_owne"
   "r\030\002 \001(\010\"g\n\tMsgResult\022\016\n\006is_end\030\001 \001(\010\022\016\n\006"
   "result\030\002 \001(\005\022\014\n\004gold\030\003 \001(\003\022\025\n\rbanker_res"
-  "ult\030\004 \001(\005\022\025\n\rplayer_result\030\005 \001(\005*\216\003\n\rEMs"
-  "gIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030Msg"
-  "IDSubGame_PlayerReady\020\001\022 \n\034MsgIDSubGame_"
-  "PlayerReadyResp\020\002\022!\n\035MsgIDSubGame_Banker"
-  "ConfirmBet\020\003\022%\n!MsgIDSubGame_BankerConfi"
-  "rmBetResp\020\004\022!\n\035MsgIDSubGame_PlayerConfir"
-  "mBet\020\005\022%\n!MsgIDSubGame_PlayerConfirmBetR"
-  "esp\020\006\022\033\n\027MsgIDSubGame_ResultResp\020\010\022\027\n\023Ms"
-  "gIDSubGame_GiveUp\020\t\022\033\n\027MsgIDSubGame_Give"
-  "UpResp\020\n\022!\n\035MsgIDSubGame_PlayerSendResul"
-  "t\020\013\022\034\n\030MsgIDSubGame_NotifyState\020\014b\006proto"
-  "3"
+  "ult\030\004 \001(\005\022\025\n\rplayer_result\030\005 \001(\005\"-\n\016MsgN"
+  "otifyState\022\r\n\005state\030\001 \001(\005\022\014\n\004time\030\002 \001(\005*"
+  "\216\003\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000"
+  "\022\034\n\030MsgIDSubGame_PlayerReady\020\001\022 \n\034MsgIDS"
+  "ubGame_PlayerReadyResp\020\002\022!\n\035MsgIDSubGame"
+  "_BankerConfirmBet\020\003\022%\n!MsgIDSubGame_Bank"
+  "erConfirmBetResp\020\004\022!\n\035MsgIDSubGame_Playe"
+  "rConfirmBet\020\005\022%\n!MsgIDSubGame_PlayerConf"
+  "irmBetResp\020\006\022\033\n\027MsgIDSubGame_ResultResp\020"
+  "\010\022\027\n\023MsgIDSubGame_GiveUp\020\t\022\033\n\027MsgIDSubGa"
+  "me_GiveUpResp\020\n\022!\n\035MsgIDSubGame_PlayerSe"
+  "ndResult\020\013\022\034\n\030MsgIDSubGame_NotifyState\020\014"
+  "b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FingerGuess_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_FingerGuess_2eproto_sccs[2] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_FingerGuess_2eproto_sccs[3] = {
+  &scc_info_MsgNotifyState_FingerGuess_2eproto.base,
   &scc_info_MsgResult_FingerGuess_2eproto.base,
   &scc_info_MsgSceneInfo_FingerGuess_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FingerGuess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto = {
-  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 601,
-  &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 2, 0,
+  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 648,
+  &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_FingerGuess_2eproto::offsets,
-  file_level_metadata_FingerGuess_2eproto, 2, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
+  file_level_metadata_FingerGuess_2eproto, 3, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -670,6 +698,235 @@ void MsgResult::InternalSwap(MsgResult* other) {
 }
 
 
+// ===================================================================
+
+class MsgNotifyState::_Internal {
+ public:
+};
+
+MsgNotifyState::MsgNotifyState(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:FingerGuess.MsgNotifyState)
+}
+MsgNotifyState::MsgNotifyState(const MsgNotifyState& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&state_, &from.state_,
+    static_cast<size_t>(reinterpret_cast<char*>(&time_) -
+    reinterpret_cast<char*>(&state_)) + sizeof(time_));
+  // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgNotifyState)
+}
+
+void MsgNotifyState::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&state_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&state_)) + sizeof(time_));
+}
+
+MsgNotifyState::~MsgNotifyState() {
+  // @@protoc_insertion_point(destructor:FingerGuess.MsgNotifyState)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgNotifyState::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgNotifyState::ArenaDtor(void* object) {
+  MsgNotifyState* _this = reinterpret_cast< MsgNotifyState* >(object);
+  (void)_this;
+}
+void MsgNotifyState::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgNotifyState::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgNotifyState& MsgNotifyState::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgNotifyState_FingerGuess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgNotifyState::Clear() {
+// @@protoc_insertion_point(message_clear_start:FingerGuess.MsgNotifyState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&state_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&state_)) + sizeof(time_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgNotifyState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 state = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 time = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgNotifyState::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:FingerGuess.MsgNotifyState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 state = 1;
+  if (this->state() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_state(), target);
+  }
+
+  // int32 time = 2;
+  if (this->time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_time(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:FingerGuess.MsgNotifyState)
+  return target;
+}
+
+size_t MsgNotifyState::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:FingerGuess.MsgNotifyState)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 state = 1;
+  if (this->state() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_state());
+  }
+
+  // int32 time = 2;
+  if (this->time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_time());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgNotifyState::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:FingerGuess.MsgNotifyState)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgNotifyState* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgNotifyState>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FingerGuess.MsgNotifyState)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:FingerGuess.MsgNotifyState)
+    MergeFrom(*source);
+  }
+}
+
+void MsgNotifyState::MergeFrom(const MsgNotifyState& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:FingerGuess.MsgNotifyState)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.state() != 0) {
+    _internal_set_state(from._internal_state());
+  }
+  if (from.time() != 0) {
+    _internal_set_time(from._internal_time());
+  }
+}
+
+void MsgNotifyState::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:FingerGuess.MsgNotifyState)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgNotifyState::CopyFrom(const MsgNotifyState& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:FingerGuess.MsgNotifyState)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgNotifyState::IsInitialized() const {
+  return true;
+}
+
+void MsgNotifyState::InternalSwap(MsgNotifyState* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgNotifyState, time_)
+      + sizeof(MsgNotifyState::time_)
+      - PROTOBUF_FIELD_OFFSET(MsgNotifyState, state_)>(
+          reinterpret_cast<char*>(&state_),
+          reinterpret_cast<char*>(&other->state_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgNotifyState::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace FingerGuess
 PROTOBUF_NAMESPACE_OPEN
@@ -678,6 +935,9 @@ template<> PROTOBUF_NOINLINE ::FingerGuess::MsgSceneInfo* Arena::CreateMaybeMess
 }
 template<> PROTOBUF_NOINLINE ::FingerGuess::MsgResult* Arena::CreateMaybeMessage< ::FingerGuess::MsgResult >(Arena* arena) {
   return Arena::CreateMessageInternal< ::FingerGuess::MsgResult >(arena);
+}
+template<> PROTOBUF_NOINLINE ::FingerGuess::MsgNotifyState* Arena::CreateMaybeMessage< ::FingerGuess::MsgNotifyState >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::FingerGuess::MsgNotifyState >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
