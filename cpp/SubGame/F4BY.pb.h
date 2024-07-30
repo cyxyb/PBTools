@@ -5073,6 +5073,7 @@ class CSUserShoot PROTOBUF_FINAL :
     kIsOffsetFieldNumber = 5,
     kChairIdFieldNumber = 6,
     kExtraMulFieldNumber = 7,
+    kScoreFieldNumber = 8,
   };
   // repeated int32 bullet_id = 2;
   int bullet_id_size() const;
@@ -5150,6 +5151,15 @@ class CSUserShoot PROTOBUF_FINAL :
   void _internal_set_extra_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 score = 8;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSUserShoot)
  private:
   class _Internal;
@@ -5165,6 +5175,7 @@ class CSUserShoot PROTOBUF_FINAL :
   bool is_offset_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 extra_mul_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -5306,13 +5317,13 @@ class SCUserShoot PROTOBUF_FINAL :
   void _internal_set_angle(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 score = 3;
+  // int64 score = 3;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 bullet_type = 4;
@@ -5342,7 +5353,7 @@ class SCUserShoot PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 angle_;
-  ::PROTOBUF_NAMESPACE_ID::int32 score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 bullet_type_;
   bool bullet_offset_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -41477,6 +41488,26 @@ inline void CSUserShoot::set_extra_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.CSUserShoot.extra_mul)
 }
 
+// int64 score = 8;
+inline void CSUserShoot::clear_score() {
+  score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 CSUserShoot::_internal_score() const {
+  return score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 CSUserShoot::score() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSUserShoot.score)
+  return _internal_score();
+}
+inline void CSUserShoot::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  score_ = value;
+}
+inline void CSUserShoot::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_score(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSUserShoot.score)
+}
+
 // -------------------------------------------------------------------
 
 // SCUserShoot
@@ -41521,22 +41552,22 @@ inline void SCUserShoot::set_angle(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCUserShoot.angle)
 }
 
-// int32 score = 3;
+// int64 score = 3;
 inline void SCUserShoot::clear_score() {
-  score_ = 0;
+  score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCUserShoot::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCUserShoot::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCUserShoot::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCUserShoot::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCUserShoot.score)
   return _internal_score();
 }
-inline void SCUserShoot::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCUserShoot::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   score_ = value;
 }
-inline void SCUserShoot::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCUserShoot::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCUserShoot.score)
 }

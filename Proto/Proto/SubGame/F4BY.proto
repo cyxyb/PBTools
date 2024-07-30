@@ -377,13 +377,14 @@ message CSUserShoot
 	bool is_offset = 5;
 	int32 chair_id = 6;
 	int32 extra_mul = 7;
+	int64 score = 8;
 }
 
 message SCUserShoot
 {
 	int32 chair_idx = 1;
 	int32 angle = 2;
-	int32 score = 3;
+	int64 score = 3;
 	int32 bullet_type = 4;
 	bool bullet_offset = 5;
 }
