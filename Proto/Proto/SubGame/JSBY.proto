@@ -85,6 +85,7 @@ enum EMsgIDSubGame
 	Push_DropCard 					= 1142;
 	Push_AcquireMxlSeal 			= 1143;
 	Req_SealConvertMoney 			= 1144;
+	ErrorSubScore					= 1145;
 }
 
 enum ErrCode

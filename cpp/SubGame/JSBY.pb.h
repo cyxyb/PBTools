@@ -670,12 +670,13 @@ enum EMsgIDSubGame : int {
   Push_DropCard = 1142,
   Push_AcquireMxlSeal = 1143,
   Req_SealConvertMoney = 1144,
+  ErrorSubScore = 1145,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = Req_Invalid;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = Req_SealConvertMoney;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = ErrorSubScore;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();

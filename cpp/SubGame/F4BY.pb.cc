@@ -6874,7 +6874,7 @@ const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "t\022\021\n\textra_mul\030\001 \001(\005\"(\n\016CSFreePoolInfo\022\026"
   "\n\016prepareLottery\030\001 \001(\010\"\"\n\021CSFreePoolLott"
   "ery\022\r\n\005level\030\001 \001(\005\"&\n\016CSFreePoolOpen\022\024\n\014"
-  "openFreePool\030\001 \001(\010*\226\023\n\rEMsgIDSubGame\022\010\n\004"
+  "openFreePool\030\001 \001(\010*\252\023\n\rEMsgIDSubGame\022\010\n\004"
   "None\020\000\022\016\n\tHeartBeat\020\350\007\022\027\n\022LoginGameWithT"
   "oken\020\351\007\022\016\n\tUserReady\020\352\007\022\023\n\016SetProbabilit"
   "y\020\353\007\022\023\n\016FishTracesList\020\354\007\022\020\n\013ChangeScene"
@@ -6935,46 +6935,46 @@ const char descriptor_table_protodef_F4BY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\024\n\017NotifyActStatus\020\317\t\022\023\n\016SetDoubleShoot\020"
   "\320\t\022\027\n\021LotteryResult3002\020\241\234\001\022\027\n\021LotteryRe"
   "sult3005\020\242\234\001\022\022\n\014FreePoolInfo\020\211\244\001\022\025\n\017Free"
-  "PoolLottery\020\212\244\001\022\022\n\014FreePoolOpen\020\213\244\001*\373\007\n\007"
-  "ErrCode\022\010\n\004Succ\020\000\022\027\n\022AlreadyInOtherGame\020"
-  "\361\001\022\t\n\004Fail\020\350\007\022\030\n\023LoadPropsDataFailed\020\221N\022"
-  "\032\n\025CanNotFindPlayerPoint\020\222N\022\025\n\020Parameter"
-  "IsWrong\020\223N\022\020\n\013LackOfMoney\020\224N\022\031\n\024FreeTime"
-  "sChangeRatio\020\225N\022\r\n\010IsNotSup\020\226N\022\026\n\021Deseri"
-  "alizeFailed\020\227N\022\023\n\016PlayerNotExist\020\230N\022\027\n\022P"
-  "layerAlreadyLogin\020\231N\022\031\n\024LoadPlayerDataFa"
-  "iled\020\232N\022\025\n\020AllocTableFailed\020\233N\022\021\n\014Defend"
-  "PlugIn\020\234N\022\026\n\021QPEnterRoomFailed\020\235N\022\034\n\027QPB"
-  "aseUserInfoGetFailed\020\236N\022\025\n\020QPReadGoldFai"
-  "led\020\237N\022\024\n\017ThisTableIsFull\020\240N\022\021\n\014PropNoEn"
-  "ough\020\241N\022\022\n\rPropRoomLimit\020\242N\022\016\n\tPropUsing"
-  "\020\243N\022\021\n\014PropNotExist\020\244N\022\024\n\017PropUsingSetGu"
-  "n\020\245N\022\023\n\016ThisRoomIsFull\020\246N\022\021\n\014ServerClose"
-  "d\020\247N\022\r\n\010PropHave\020\250N\022\022\n\rPropCanNotBuy\020\251N\022"
-  "\023\n\016UserPoolNoMeet\020\256N\022\025\n\020UserPoolToHigher"
-  "\020\257N\022\027\n\022CallFishTideComing\020\260N\022\021\n\014CallFish"
-  "Full\020\261N\022\025\n\020UserPoolLoadFail\020\262N\022\031\n\024Frozen"
-  "FishTideComing\020\263N\022\024\n\017FrozenNotEnough\020\264N\022"
-  "\021\n\014FrozenWaitCD\020\265N\022\023\n\016FrozenFishTide\020\266N\022"
-  "\021\n\014IllegalParam\020\270N\022\020\n\013ConfigError\020\271N\022\030\n\023"
-  "PreventCheatWarning\020\272N\022\022\n\rOpenChestFail\020"
-  "\302N\022\032\n\025SelectChestRewardFail\020\303N\022\035\n\030NotMet"
-  "TaskConditionError\020\304N\022\021\n\014DrawNumError\020\305N"
-  "\022\027\n\022PurchaseLimitError\020\306N\022\036\n\031TreasureHun"
-  "tNotStartError\020\307N*\347\001\n\rUserEventType\022\031\n\025U"
-  "serEventTypeHideIcon\020\000\022\033\n\027UserEventTypeC"
-  "razySkill\020\001\022\031\n\025UserEventTypeUserPool\020\002\022\033"
-  "\n\027UserEventTypeMultiShoot\020\003\022\026\n\022UserEvent"
-  "TypeStore\020\004\022\034\n\030UserEventTypeCustomTable\020"
-  "\005\022\034\n\030UserEventTypeChangeTable\020\006\022\022\n\016UserL"
-  "ogTypeMax\020\007*7\n\014CallFishType\022\022\n\016CallTypeN"
-  "ormal\020\000\022\023\n\017CallTypeSpecial\020\001*s\n\tChestTyp"
-  "e\022\021\n\rChestTypeNone\020\000\022\026\n\022ChestTypePorcela"
-  "in\020\001\022\023\n\017ChestTypeBronze\020\002\022\023\n\017ChestTypeSi"
-  "lver\020\003\022\021\n\rChestTypeGold\020\004*V\n\025ChestAutoSe"
-  "lectOption\022\035\n\031ChestAutoSelectOptionNone\020"
-  "\000\022\023\n\017RedPacketTicket\020\001\022\t\n\005Money\020\002b\006proto"
-  "3"
+  "PoolLottery\020\212\244\001\022\022\n\014FreePoolOpen\020\213\244\001\022\022\n\rE"
+  "rrorSubScore\020\321\t*\373\007\n\007ErrCode\022\010\n\004Succ\020\000\022\027\n"
+  "\022AlreadyInOtherGame\020\361\001\022\t\n\004Fail\020\350\007\022\030\n\023Loa"
+  "dPropsDataFailed\020\221N\022\032\n\025CanNotFindPlayerP"
+  "oint\020\222N\022\025\n\020ParameterIsWrong\020\223N\022\020\n\013LackOf"
+  "Money\020\224N\022\031\n\024FreeTimesChangeRatio\020\225N\022\r\n\010I"
+  "sNotSup\020\226N\022\026\n\021DeserializeFailed\020\227N\022\023\n\016Pl"
+  "ayerNotExist\020\230N\022\027\n\022PlayerAlreadyLogin\020\231N"
+  "\022\031\n\024LoadPlayerDataFailed\020\232N\022\025\n\020AllocTabl"
+  "eFailed\020\233N\022\021\n\014DefendPlugIn\020\234N\022\026\n\021QPEnter"
+  "RoomFailed\020\235N\022\034\n\027QPBaseUserInfoGetFailed"
+  "\020\236N\022\025\n\020QPReadGoldFailed\020\237N\022\024\n\017ThisTableI"
+  "sFull\020\240N\022\021\n\014PropNoEnough\020\241N\022\022\n\rPropRoomL"
+  "imit\020\242N\022\016\n\tPropUsing\020\243N\022\021\n\014PropNotExist\020"
+  "\244N\022\024\n\017PropUsingSetGun\020\245N\022\023\n\016ThisRoomIsFu"
+  "ll\020\246N\022\021\n\014ServerClosed\020\247N\022\r\n\010PropHave\020\250N\022"
+  "\022\n\rPropCanNotBuy\020\251N\022\023\n\016UserPoolNoMeet\020\256N"
+  "\022\025\n\020UserPoolToHigher\020\257N\022\027\n\022CallFishTideC"
+  "oming\020\260N\022\021\n\014CallFishFull\020\261N\022\025\n\020UserPoolL"
+  "oadFail\020\262N\022\031\n\024FrozenFishTideComing\020\263N\022\024\n"
+  "\017FrozenNotEnough\020\264N\022\021\n\014FrozenWaitCD\020\265N\022\023"
+  "\n\016FrozenFishTide\020\266N\022\021\n\014IllegalParam\020\270N\022\020"
+  "\n\013ConfigError\020\271N\022\030\n\023PreventCheatWarning\020"
+  "\272N\022\022\n\rOpenChestFail\020\302N\022\032\n\025SelectChestRew"
+  "ardFail\020\303N\022\035\n\030NotMetTaskConditionError\020\304"
+  "N\022\021\n\014DrawNumError\020\305N\022\027\n\022PurchaseLimitErr"
+  "or\020\306N\022\036\n\031TreasureHuntNotStartError\020\307N*\347\001"
+  "\n\rUserEventType\022\031\n\025UserEventTypeHideIcon"
+  "\020\000\022\033\n\027UserEventTypeCrazySkill\020\001\022\031\n\025UserE"
+  "ventTypeUserPool\020\002\022\033\n\027UserEventTypeMulti"
+  "Shoot\020\003\022\026\n\022UserEventTypeStore\020\004\022\034\n\030UserE"
+  "ventTypeCustomTable\020\005\022\034\n\030UserEventTypeCh"
+  "angeTable\020\006\022\022\n\016UserLogTypeMax\020\007*7\n\014CallF"
+  "ishType\022\022\n\016CallTypeNormal\020\000\022\023\n\017CallTypeS"
+  "pecial\020\001*s\n\tChestType\022\021\n\rChestTypeNone\020\000"
+  "\022\026\n\022ChestTypePorcelain\020\001\022\023\n\017ChestTypeBro"
+  "nze\020\002\022\023\n\017ChestTypeSilver\020\003\022\021\n\rChestTypeG"
+  "old\020\004*V\n\025ChestAutoSelectOption\022\035\n\031ChestA"
+  "utoSelectOptionNone\020\000\022\023\n\017RedPacketTicket"
+  "\020\001\022\t\n\005Money\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_F4BY_2eproto_deps[1] = {
 };
@@ -7211,7 +7211,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_F4B
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_F4BY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_F4BY_2eproto = {
-  false, false, descriptor_table_protodef_F4BY_2eproto, "F4BY.proto", 23361,
+  false, false, descriptor_table_protodef_F4BY_2eproto, "F4BY.proto", 23381,
   &descriptor_table_F4BY_2eproto_once, descriptor_table_F4BY_2eproto_sccs, descriptor_table_F4BY_2eproto_deps, 229, 0,
   schemas, file_default_instances, TableStruct_F4BY_2eproto::offsets,
   file_level_metadata_F4BY_2eproto, 229, file_level_enum_descriptors_F4BY_2eproto, file_level_service_descriptors_F4BY_2eproto,
@@ -7342,6 +7342,7 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 1230:
     case 1231:
     case 1232:
+    case 1233:
     case 20001:
     case 20002:
     case 21001:

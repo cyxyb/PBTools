@@ -120,6 +120,7 @@ enum EMsgIDSubGame
 	FinishRecoverScore					= 123;
 	MissileScore						= 124;
 	ExtraMul							= 125;
+	ErrorSubScore						= 126;
 }
 
 enum ErrorCode
