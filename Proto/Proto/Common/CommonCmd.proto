@@ -169,6 +169,12 @@ enum EMsgIDLogin
 	MsgIDProp_GetPropInfo						= 155;		//获取道具信息(MsgCommonBool)
 	MsgIDProp_GetPropInfoResp					= 156;		//获取道具信息返回(MsgPlayerPropInfo)
 	MsgIDMail_DeleteMail						= 157;		//删除邮件(MsgCommonN32)
+	MsgIDBank_GoldOperate						= 158;		//银行操作(MsgBankOperate)
+	MsgIDBank_GoldOperateResp					= 159;		//银行操作返回(MsgBankOperateResp)
+	MsgIDBank_GetRecord							= 160;		//获取银行操作记录(MsgCommonEmpty)
+	MsgIDBank_GetRecordResp						= 161;		//获取银行操作记录返回(MsgBankOperateRecordResp)
+	MsgIDBank_ModifyPassword					= 162;		//修改银行密码(MsgModifyBankPassword)
+	MsgIDBank_ModifyPasswordResp				= 163;		//修改银行密码返回(MsgCommonN32)
 }
 
 enum EMsgIDGame

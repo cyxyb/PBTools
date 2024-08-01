@@ -242,12 +242,18 @@ enum EMsgIDLogin : int {
   MsgIDProp_GetPropInfo = 155,
   MsgIDProp_GetPropInfoResp = 156,
   MsgIDMail_DeleteMail = 157,
+  MsgIDBank_GoldOperate = 158,
+  MsgIDBank_GoldOperateResp = 159,
+  MsgIDBank_GetRecord = 160,
+  MsgIDBank_GetRecordResp = 161,
+  MsgIDBank_ModifyPassword = 162,
+  MsgIDBank_ModifyPasswordResp = 163,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDMail_DeleteMail;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDBank_ModifyPasswordResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();

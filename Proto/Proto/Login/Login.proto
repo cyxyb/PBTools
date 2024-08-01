@@ -738,3 +738,41 @@ message MsgTranferRecallResp
 	int32 code 			= 1;			//0成功，非0多语言码
 	int64 cur_gold		= 2;			//玩家当前金币
 }
+
+//银行操作
+message MsgBankOperateRecord
+{
+	int32 	type 		= 1;			//0:存 1:取
+	int64 	gold		= 2;			//操作金额
+	int64	time		= 3;			//时间
+}
+
+//银行操作
+message MsgBankOperate
+{
+	int32 	type 		= 1;			//0:存 1:取
+	int64 	gold		= 2;			//操作金额
+	string	password	= 3;			//银行密码
+	int32	user_id		= 4;			//玩家ID
+}
+
+//银行操作返回
+message MsgBankOperateResp
+{
+	int32	code		= 1;			//0:成功 非0失败
+	MsgBankOperateRecord record = 2;	//操作记录
+}
+
+//银行操作记录
+message MsgBankOperateRecordResp
+{
+	repeated MsgBankOperateRecord record = 1;	//操作记录
+}
+
+//修改银行密码
+message MsgModifyBankPassword
+{
+	int32 	code 		= 1;			//验证码
+	string	password	= 2;			//银行密码
+	int32	user_id		= 3;			//玩家ID
+}
