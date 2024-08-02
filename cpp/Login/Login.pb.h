@@ -16065,6 +16065,7 @@ class MsgModifyBankPassword PROTOBUF_FINAL :
 
   enum : int {
     kPasswordFieldNumber = 2,
+    kPhoneFieldNumber = 4,
     kCodeFieldNumber = 1,
     kUserIdFieldNumber = 3,
   };
@@ -16082,6 +16083,22 @@ class MsgModifyBankPassword PROTOBUF_FINAL :
   const std::string& _internal_password() const;
   void _internal_set_password(const std::string& value);
   std::string* _internal_mutable_password();
+  public:
+
+  // string phone = 4;
+  void clear_phone();
+  const std::string& phone() const;
+  void set_phone(const std::string& value);
+  void set_phone(std::string&& value);
+  void set_phone(const char* value);
+  void set_phone(const char* value, size_t size);
+  std::string* mutable_phone();
+  std::string* release_phone();
+  void set_allocated_phone(std::string* phone);
+  private:
+  const std::string& _internal_phone() const;
+  void _internal_set_phone(const std::string& value);
+  std::string* _internal_mutable_phone();
   public:
 
   // int32 code = 1;
@@ -16110,6 +16127,7 @@ class MsgModifyBankPassword PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -27015,6 +27033,67 @@ inline void MsgModifyBankPassword::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID
 inline void MsgModifyBankPassword::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_user_id(value);
   // @@protoc_insertion_point(field_set:MsgModifyBankPassword.user_id)
+}
+
+// string phone = 4;
+inline void MsgModifyBankPassword::clear_phone() {
+  phone_.ClearToEmpty();
+}
+inline const std::string& MsgModifyBankPassword::phone() const {
+  // @@protoc_insertion_point(field_get:MsgModifyBankPassword.phone)
+  return _internal_phone();
+}
+inline void MsgModifyBankPassword::set_phone(const std::string& value) {
+  _internal_set_phone(value);
+  // @@protoc_insertion_point(field_set:MsgModifyBankPassword.phone)
+}
+inline std::string* MsgModifyBankPassword::mutable_phone() {
+  // @@protoc_insertion_point(field_mutable:MsgModifyBankPassword.phone)
+  return _internal_mutable_phone();
+}
+inline const std::string& MsgModifyBankPassword::_internal_phone() const {
+  return phone_.Get();
+}
+inline void MsgModifyBankPassword::_internal_set_phone(const std::string& value) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgModifyBankPassword::set_phone(std::string&& value) {
+  
+  phone_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgModifyBankPassword.phone)
+}
+inline void MsgModifyBankPassword::set_phone(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgModifyBankPassword.phone)
+}
+inline void MsgModifyBankPassword::set_phone(const char* value,
+    size_t size) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgModifyBankPassword.phone)
+}
+inline std::string* MsgModifyBankPassword::_internal_mutable_phone() {
+  
+  return phone_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgModifyBankPassword::release_phone() {
+  // @@protoc_insertion_point(field_release:MsgModifyBankPassword.phone)
+  return phone_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgModifyBankPassword::set_allocated_phone(std::string* phone) {
+  if (phone != nullptr) {
+    
+  } else {
+    
+  }
+  phone_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), phone,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgModifyBankPassword.phone)
 }
 
 #ifdef __GNUC__

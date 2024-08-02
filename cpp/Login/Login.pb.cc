@@ -2363,6 +2363,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgModifyBankPassword, code_),
   PROTOBUF_FIELD_OFFSET(::MsgModifyBankPassword, password_),
   PROTOBUF_FIELD_OFFSET(::MsgModifyBankPassword, user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgModifyBankPassword, phone_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -2776,9 +2777,9 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "p\022\014\n\004code\030\001 \001(\005\022%\n\006record\030\002 \001(\0132\025.MsgBan"
   "kOperateRecord\"A\n\030MsgBankOperateRecordRe"
   "sp\022%\n\006record\030\001 \003(\0132\025.MsgBankOperateRecor"
-  "d\"H\n\025MsgModifyBankPassword\022\014\n\004code\030\001 \001(\005"
-  "\022\020\n\010password\030\002 \001(\t\022\017\n\007user_id\030\003 \001(\005b\006pro"
-  "to3"
+  "d\"W\n\025MsgModifyBankPassword\022\014\n\004code\030\001 \001(\005"
+  "\022\020\n\010password\030\002 \001(\t\022\017\n\007user_id\030\003 \001(\005\022\r\n\005p"
+  "hone\030\004 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2874,7 +2875,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 9243,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 9258,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 88, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 88, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -27902,6 +27903,11 @@ MsgModifyBankPassword::MsgModifyBankPassword(const MsgModifyBankPassword& from)
     password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_password(), 
       GetArena());
   }
+  phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_phone().empty()) {
+    phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_phone(), 
+      GetArena());
+  }
   ::memcpy(&code_, &from.code_,
     static_cast<size_t>(reinterpret_cast<char*>(&user_id_) -
     reinterpret_cast<char*>(&code_)) + sizeof(user_id_));
@@ -27911,6 +27917,7 @@ MsgModifyBankPassword::MsgModifyBankPassword(const MsgModifyBankPassword& from)
 void MsgModifyBankPassword::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgModifyBankPassword_Login_2eproto.base);
   password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&user_id_) -
@@ -27926,6 +27933,7 @@ MsgModifyBankPassword::~MsgModifyBankPassword() {
 void MsgModifyBankPassword::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   password_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  phone_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgModifyBankPassword::ArenaDtor(void* object) {
@@ -27950,6 +27958,7 @@ void MsgModifyBankPassword::Clear() {
   (void) cached_has_bits;
 
   password_.ClearToEmpty();
+  phone_.ClearToEmpty();
   ::memset(&code_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) -
       reinterpret_cast<char*>(&code_)) + sizeof(user_id_));
@@ -27983,6 +27992,15 @@ const char* MsgModifyBankPassword::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string phone = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          auto str = _internal_mutable_phone();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgModifyBankPassword.phone"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -28036,6 +28054,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_user_id(), target);
   }
 
+  // string phone = 4;
+  if (this->phone().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_phone().data(), static_cast<int>(this->_internal_phone().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgModifyBankPassword.phone");
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_phone(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -28057,6 +28085,13 @@ size_t MsgModifyBankPassword::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_password());
+  }
+
+  // string phone = 4;
+  if (this->phone().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_phone());
   }
 
   // int32 code = 1;
@@ -28107,6 +28142,9 @@ void MsgModifyBankPassword::MergeFrom(const MsgModifyBankPassword& from) {
   if (from.password().size() > 0) {
     _internal_set_password(from._internal_password());
   }
+  if (from.phone().size() > 0) {
+    _internal_set_phone(from._internal_phone());
+  }
   if (from.code() != 0) {
     _internal_set_code(from._internal_code());
   }
@@ -28137,6 +28175,7 @@ void MsgModifyBankPassword::InternalSwap(MsgModifyBankPassword* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   password_.Swap(&other->password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  phone_.Swap(&other->phone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgModifyBankPassword, user_id_)
       + sizeof(MsgModifyBankPassword::user_id_)

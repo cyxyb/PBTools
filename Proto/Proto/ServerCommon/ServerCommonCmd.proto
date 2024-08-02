@@ -248,6 +248,13 @@ enum EMsgIDDB
 	LOGIN2DB_GetPropInfo					= 1118;	//获取道具信息
 	DB2LOGIN_GetPropInfoResp				= 1119;	//获取道具信息返回
 	LOGIN2DB_DeleteMail						= 1120;	//删除邮件
+	LOGIN2DB_GoldOperate					= 1121;	//银行操作
+	DB2LOGIN_GoldOperateResp				= 1122;	//银行操作返回
+	LOGIN2DB_GetGoldOperateRecord			= 1123;	//获取银行操作记录
+	DB2LOGIN_GetGoldOperateRecordResp		= 1124;	//获取银行操作记录返回
+	LOGIN2DB_ModifyBankPassword				= 1125;	//修改银行密码
+	DB2LOGIN_ModifyBankPasswordResp			= 1126;	//修改银行密码返回
+	
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp						= 2002;	//玩家登录游戏返回

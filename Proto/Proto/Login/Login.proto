@@ -775,4 +775,5 @@ message MsgModifyBankPassword
 	int32 	code 		= 1;			//验证码
 	string	password	= 2;			//银行密码
 	int32	user_id		= 3;			//玩家ID
+	string	phone		= 4;			//玩家手机号
 }

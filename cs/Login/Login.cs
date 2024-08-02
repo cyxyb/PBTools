@@ -225,9 +225,9 @@ public static partial class LoginReflection {
           "cGFzc3dvcmQYAyABKAkSDwoHdXNlcl9pZBgEIAEoBSJJChJNc2dCYW5rT3Bl",
           "cmF0ZVJlc3ASDAoEY29kZRgBIAEoBRIlCgZyZWNvcmQYAiABKAsyFS5Nc2dC",
           "YW5rT3BlcmF0ZVJlY29yZCJBChhNc2dCYW5rT3BlcmF0ZVJlY29yZFJlc3AS",
-          "JQoGcmVjb3JkGAEgAygLMhUuTXNnQmFua09wZXJhdGVSZWNvcmQiSAoVTXNn",
+          "JQoGcmVjb3JkGAEgAygLMhUuTXNnQmFua09wZXJhdGVSZWNvcmQiVwoVTXNn",
           "TW9kaWZ5QmFua1Bhc3N3b3JkEgwKBGNvZGUYASABKAUSEAoIcGFzc3dvcmQY",
-          "AiABKAkSDwoHdXNlcl9pZBgDIAEoBWIGcHJvdG8z"));
+          "AiABKAkSDwoHdXNlcl9pZBgDIAEoBRINCgVwaG9uZRgEIAEoCWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -318,7 +318,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperate), global::MsgBankOperate.Parser, new[]{ "Type", "Gold", "Password", "UserId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperateResp), global::MsgBankOperateResp.Parser, new[]{ "Code", "Record" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperateRecordResp), global::MsgBankOperateRecordResp.Parser, new[]{ "Record" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyBankPassword), global::MsgModifyBankPassword.Parser, new[]{ "Code", "Password", "UserId" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyBankPassword), global::MsgModifyBankPassword.Parser, new[]{ "Code", "Password", "UserId", "Phone" }, null, null, null, null)
         }));
   }
   #endregion
@@ -25970,6 +25970,7 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
     code_ = other.code_;
     password_ = other.password_;
     userId_ = other.userId_;
+    phone_ = other.phone_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -26020,6 +26021,20 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
     }
   }
 
+  /// <summary>Field number for the "phone" field.</summary>
+  public const int PhoneFieldNumber = 4;
+  private string phone_ = "";
+  /// <summary>
+  ///玩家手机号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Phone {
+    get { return phone_; }
+    set {
+      phone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgModifyBankPassword);
@@ -26036,6 +26051,7 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
     if (Code != other.Code) return false;
     if (Password != other.Password) return false;
     if (UserId != other.UserId) return false;
+    if (Phone != other.Phone) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -26045,6 +26061,7 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
     if (Code != 0) hash ^= Code.GetHashCode();
     if (Password.Length != 0) hash ^= Password.GetHashCode();
     if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (Phone.Length != 0) hash ^= Phone.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -26073,6 +26090,10 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
       output.WriteRawTag(24);
       output.WriteInt32(UserId);
     }
+    if (Phone.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Phone);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -26094,6 +26115,10 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
       output.WriteRawTag(24);
       output.WriteInt32(UserId);
     }
+    if (Phone.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Phone);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -26111,6 +26136,9 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
     }
     if (UserId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (Phone.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -26131,6 +26159,9 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
     }
     if (other.UserId != 0) {
       UserId = other.UserId;
+    }
+    if (other.Phone.Length != 0) {
+      Phone = other.Phone;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -26158,6 +26189,10 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
           UserId = input.ReadInt32();
           break;
         }
+        case 34: {
+          Phone = input.ReadString();
+          break;
+        }
       }
     }
   #endif
@@ -26182,6 +26217,10 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
         }
         case 24: {
           UserId = input.ReadInt32();
+          break;
+        }
+        case 34: {
+          Phone = input.ReadString();
           break;
         }
       }
