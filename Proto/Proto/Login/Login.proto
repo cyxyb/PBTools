@@ -49,6 +49,7 @@ message MsgPlayerLoginResp
 	int32		kind_id			= 25;	//断线游戏IDkind_id
 	int32		register_gold	= 26;	//注册奖励金币
 	int32		tranfer_type	= 27;	//转账类型
+	int64		bank_gold		= 28;	//银行金币
 }
 
 //请求房间桌子数据

@@ -4357,6 +4357,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kKindIdFieldNumber = 32,
     kRegisterGoldFieldNumber = 33,
     kTransferTypeFieldNumber = 34,
+    kBankGoldFieldNumber = 35,
   };
   // string account = 4;
   void clear_account();
@@ -4737,6 +4738,15 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_transfer_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 bank_gold = 35;
+  void clear_bank_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 bank_gold() const;
+  void set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bank_gold() const;
+  void _internal_set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgLoginPlayerInfo)
  private:
   class _Internal;
@@ -4776,6 +4786,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 register_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 transfer_type_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bank_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -15976,6 +15987,26 @@ inline void MsgLoginPlayerInfo::_internal_set_transfer_type(::PROTOBUF_NAMESPACE
 inline void MsgLoginPlayerInfo::set_transfer_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_transfer_type(value);
   // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.transfer_type)
+}
+
+// int64 bank_gold = 35;
+inline void MsgLoginPlayerInfo::clear_bank_gold() {
+  bank_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoginPlayerInfo::_internal_bank_gold() const {
+  return bank_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoginPlayerInfo::bank_gold() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.bank_gold)
+  return _internal_bank_gold();
+}
+inline void MsgLoginPlayerInfo::_internal_set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bank_gold_ = value;
+}
+inline void MsgLoginPlayerInfo::set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bank_gold(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.bank_gold)
 }
 
 // -------------------------------------------------------------------

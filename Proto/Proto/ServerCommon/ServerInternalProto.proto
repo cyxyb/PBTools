@@ -229,6 +229,7 @@ message MsgLoginPlayerInfo
 	int32		kind_id				= 32;	//断线游戏IDkind_id
 	int32		register_gold		= 33;	//注册奖励金币
 	int32		transfer_type		= 34;	//转账类型
+	int64		bank_gold			= 35;	//银行金币
 }
 
 //游戏服务器玩家信息
