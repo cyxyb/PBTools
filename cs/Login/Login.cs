@@ -455,7 +455,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
   public const int LoginTypeFieldNumber = 6;
   private int loginType_;
   /// <summary>
-  ///1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆
+  ///1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆 6:注册自定义账号
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int LoginType {

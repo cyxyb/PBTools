@@ -3610,7 +3610,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\030\002 \001(\005\"[\n\016SCQueenDieData\022\014\n\004type\030\001 \001(\005\022\020"
   "\n\010rand_mul\030\002 \001(\005\022\024\n\014base_outside\030\003 \003(\005\022\023"
   "\n\013base_inside\030\004 \003(\005\"\254\003\n\013SCSyncMoney\022\r\n\005M"
-  "oney\030\001 \001(\005\022\021\n\tMonsterId\030\002 \001(\005\022\022\n\nPositio"
+  "oney\030\001 \001(\003\022\021\n\tMonsterId\030\002 \001(\005\022\022\n\nPositio"
   "nId\030\003 \001(\005\022\014\n\004Type\030\004 \001(\005\022\r\n\005Ratio\030\005 \001(\005\022\020"
   "\n\010PlayerId\030\006 \001(\005\022\026\n\016MoneyVariation\030\007 \001(\005"
   "\022\037\n\003Bom\030\010 \001(\0132\022.JSBY.UserBomTimes\022\024\n\014Her"
@@ -7222,7 +7222,7 @@ const char* SCSyncMoney::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 Money = 1;
+      // int64 Money = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           money_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -7379,10 +7379,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 Money = 1;
+  // int64 Money = 1;
   if (this->money() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_money(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_money(), target);
   }
 
   // int32 MonsterId = 2;
@@ -7548,10 +7548,10 @@ size_t SCSyncMoney::ByteSizeLong() const {
         *others_);
   }
 
-  // int32 Money = 1;
+  // int64 Money = 1;
   if (this->money() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_money());
   }
 

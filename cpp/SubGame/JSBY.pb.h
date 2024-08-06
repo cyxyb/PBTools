@@ -2887,13 +2887,13 @@ class SCSyncMoney PROTOBUF_FINAL :
       ::JSBY::SCQueenDieData* others);
   ::JSBY::SCQueenDieData* unsafe_arena_release_others();
 
-  // int32 Money = 1;
+  // int64 Money = 1;
   void clear_money();
-  ::PROTOBUF_NAMESPACE_ID::int32 money() const;
-  void set_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 money() const;
+  void set_money(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_money() const;
-  void _internal_set_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_money() const;
+  void _internal_set_money(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 MonsterId = 2;
@@ -3025,7 +3025,7 @@ class SCSyncMoney PROTOBUF_FINAL :
   ::JSBY::UserBomTimes* bom_;
   ::JSBY::SpecialAttackInfo* attackinfo_;
   ::JSBY::SCQueenDieData* others_;
-  ::PROTOBUF_NAMESPACE_ID::int32 money_;
+  ::PROTOBUF_NAMESPACE_ID::int64 money_;
   ::PROTOBUF_NAMESPACE_ID::int32 monsterid_;
   ::PROTOBUF_NAMESPACE_ID::int32 positionid_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
@@ -22489,22 +22489,22 @@ SCQueenDieData::mutable_base_inside() {
 
 // SCSyncMoney
 
-// int32 Money = 1;
+// int64 Money = 1;
 inline void SCSyncMoney::clear_money() {
-  money_ = 0;
+  money_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncMoney::_internal_money() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncMoney::_internal_money() const {
   return money_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncMoney::money() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncMoney::money() const {
   // @@protoc_insertion_point(field_get:JSBY.SCSyncMoney.Money)
   return _internal_money();
 }
-inline void SCSyncMoney::_internal_set_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCSyncMoney::_internal_set_money(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   money_ = value;
 }
-inline void SCSyncMoney::set_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCSyncMoney::set_money(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_money(value);
   // @@protoc_insertion_point(field_set:JSBY.SCSyncMoney.Money)
 }

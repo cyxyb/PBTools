@@ -8,7 +8,7 @@ message MsgPlayerLogin
 	int32		platform_id			= 3;		//平台id 0苹果 1安卓 2其他
 	int32		channel_id			= 4;		//渠道id
 	int32		client_type			= 5;		//包id
-	int32		login_type			= 6;		//1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆
+	int32		login_type			= 6;		//1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆 6:注册自定义账号
 	string		machine_num			= 7;		//机器码
 	string		user_ip				= 8;		//玩家IP
 	int32		is_drain			= 9;		//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接 3：网红用户

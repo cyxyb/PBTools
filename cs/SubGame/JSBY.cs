@@ -44,7 +44,7 @@ namespace JSBY {
             "Y2siMwoRU3BlY2lhbEF0dGFja0luZm8SDgoGS2lsbElEGAEgASgFEg4KBlNl",
             "bGZJRBgCIAEoBSJbCg5TQ1F1ZWVuRGllRGF0YRIMCgR0eXBlGAEgASgFEhAK",
             "CHJhbmRfbXVsGAIgASgFEhQKDGJhc2Vfb3V0c2lkZRgDIAMoBRITCgtiYXNl",
-            "X2luc2lkZRgEIAMoBSKsAwoLU0NTeW5jTW9uZXkSDQoFTW9uZXkYASABKAUS",
+            "X2luc2lkZRgEIAMoBSKsAwoLU0NTeW5jTW9uZXkSDQoFTW9uZXkYASABKAMS",
             "EQoJTW9uc3RlcklkGAIgASgFEhIKClBvc2l0aW9uSWQYAyABKAUSDAoEVHlw",
             "ZRgEIAEoBRINCgVSYXRpbxgFIAEoBRIQCghQbGF5ZXJJZBgGIAEoBRIWCg5N",
             "b25leVZhcmlhdGlvbhgHIAEoBRIfCgNCb20YCCABKAsyEi5KU0JZLlVzZXJC",
@@ -3433,9 +3433,9 @@ namespace JSBY {
 
     /// <summary>Field number for the "Money" field.</summary>
     public const int MoneyFieldNumber = 1;
-    private int money_;
+    private long money_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Money {
+    public long Money {
       get { return money_; }
       set {
         money_ = value;
@@ -3665,7 +3665,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Money != 0) hash ^= Money.GetHashCode();
+      if (Money != 0L) hash ^= Money.GetHashCode();
       if (MonsterId != 0) hash ^= MonsterId.GetHashCode();
       if (PositionId != 0) hash ^= PositionId.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
@@ -3699,9 +3699,9 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Money != 0) {
+      if (Money != 0L) {
         output.WriteRawTag(8);
-        output.WriteInt32(Money);
+        output.WriteInt64(Money);
       }
       if (MonsterId != 0) {
         output.WriteRawTag(16);
@@ -3777,9 +3777,9 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Money != 0) {
+      if (Money != 0L) {
         output.WriteRawTag(8);
-        output.WriteInt32(Money);
+        output.WriteInt64(Money);
       }
       if (MonsterId != 0) {
         output.WriteRawTag(16);
@@ -3855,8 +3855,8 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Money != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Money);
+      if (Money != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Money);
       }
       if (MonsterId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MonsterId);
@@ -3918,7 +3918,7 @@ namespace JSBY {
       if (other == null) {
         return;
       }
-      if (other.Money != 0) {
+      if (other.Money != 0L) {
         Money = other.Money;
       }
       if (other.MonsterId != 0) {
@@ -3994,7 +3994,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Money = input.ReadInt32();
+            Money = input.ReadInt64();
             break;
           }
           case 16: {
@@ -4090,7 +4090,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Money = input.ReadInt32();
+            Money = input.ReadInt64();
             break;
           }
           case 16: {

@@ -332,7 +332,7 @@ message SCQueenDieData
 
 message SCSyncMoney
 {
-	 int32 Money = 1;
+	 int64 Money = 1;
 	 int32 MonsterId = 2;
 	 int32 PositionId = 3;
 	 int32 Type = 4;
