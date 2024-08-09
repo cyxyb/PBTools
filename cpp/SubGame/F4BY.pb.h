@@ -1790,6 +1790,7 @@ class Object PROTOBUF_FINAL :
     kUidFieldNumber = 6,
     kOriginIdFieldNumber = 7,
     kOriginUidFieldNumber = 9,
+    kIsDoubleFieldNumber = 10,
   };
   // repeated .F4BY.MultiInfo multi_list = 8;
   int multi_list_size() const;
@@ -1881,6 +1882,15 @@ class Object PROTOBUF_FINAL :
   void _internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool is_double = 10;
+  void clear_is_double();
+  bool is_double() const;
+  void set_is_double(bool value);
+  private:
+  bool _internal_is_double() const;
+  void _internal_set_is_double(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.Object)
  private:
   class _Internal;
@@ -1897,6 +1907,7 @@ class Object PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 uid_;
   ::PROTOBUF_NAMESPACE_ID::int32 originid_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
+  bool is_double_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -39688,6 +39699,26 @@ inline void Object::_internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 valu
 inline void Object::set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_origin_uid(value);
   // @@protoc_insertion_point(field_set:F4BY.Object.origin_uid)
+}
+
+// bool is_double = 10;
+inline void Object::clear_is_double() {
+  is_double_ = false;
+}
+inline bool Object::_internal_is_double() const {
+  return is_double_;
+}
+inline bool Object::is_double() const {
+  // @@protoc_insertion_point(field_get:F4BY.Object.is_double)
+  return _internal_is_double();
+}
+inline void Object::_internal_set_is_double(bool value) {
+  
+  is_double_ = value;
+}
+inline void Object::set_is_double(bool value) {
+  _internal_set_is_double(value);
+  // @@protoc_insertion_point(field_set:F4BY.Object.is_double)
 }
 
 // -------------------------------------------------------------------

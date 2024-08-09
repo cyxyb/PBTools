@@ -237,6 +237,7 @@ message Object
     int32 originId = 7;
     repeated MultiInfo multi_list = 8;
 	int32 origin_uid  = 9;
+	bool is_double = 10;
 }
 
 message Obj
