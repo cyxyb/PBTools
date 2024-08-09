@@ -1099,6 +1099,7 @@ enum EMsgIDSubGame : int {
   FreePoolLottery = 21002,
   FreePoolOpen = 21003,
   ErrorSubScore = 1233,
+  OpenDouble = 1234,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

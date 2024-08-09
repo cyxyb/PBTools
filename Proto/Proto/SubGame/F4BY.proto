@@ -125,6 +125,7 @@ enum EMsgIDSubGame
 	FreePoolLottery			= 21002;
 	FreePoolOpen			= 21003;
 	ErrorSubScore			= 1233;
+	OpenDouble				= 1234;
 }
 enum ErrCode
 {
