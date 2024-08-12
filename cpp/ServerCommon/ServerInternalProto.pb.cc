@@ -1789,6 +1789,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgDBModifyProp, code_),
   PROTOBUF_FIELD_OFFSET(::MsgDBModifyProp, userid_),
   PROTOBUF_FIELD_OFFSET(::MsgDBModifyProp, prop_id_),
   PROTOBUF_FIELD_OFFSET(::MsgDBModifyProp, prop_num_),
@@ -1908,12 +1909,12 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 566, -1, sizeof(::MsgDBGetPlayerGold)},
   { 573, -1, sizeof(::MsgDBControlUser)},
   { 582, -1, sizeof(::MsgDBModifyProp)},
-  { 590, -1, sizeof(::MsgErrorCode)},
-  { 597, -1, sizeof(::MsgDeleteFrequentlyPhone)},
-  { 604, -1, sizeof(::MsgDBVerifyAgentrelation)},
-  { 613, -1, sizeof(::MsgPvpSerTableInfo)},
-  { 627, -1, sizeof(::MsgPvpAddTable)},
-  { 634, -1, sizeof(::MsgPvpDelTable)},
+  { 591, -1, sizeof(::MsgErrorCode)},
+  { 598, -1, sizeof(::MsgDeleteFrequentlyPhone)},
+  { 605, -1, sizeof(::MsgDBVerifyAgentrelation)},
+  { 614, -1, sizeof(::MsgPvpSerTableInfo)},
+  { 628, -1, sizeof(::MsgPvpAddTable)},
+  { 635, -1, sizeof(::MsgPvpDelTable)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2154,23 +2155,23 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "3\n\022MsgDBGetPlayerGold\022\017\n\007user_id\030\001 \001(\005\022\014"
   "\n\004coin\030\002 \001(\003\"^\n\020MsgDBControlUser\022\016\n\006user"
   "id\030\001 \001(\005\022\026\n\016control_userid\030\002 \001(\005\022\014\n\004type"
-  "\030\003 \001(\005\022\024\n\014control_gold\030\004 \001(\003\"D\n\017MsgDBMod"
-  "ifyProp\022\016\n\006userid\030\001 \001(\005\022\017\n\007prop_id\030\002 \001(\005"
-  "\022\020\n\010prop_num\030\003 \001(\005\"+\n\014MsgErrorCode\022\014\n\004ty"
-  "pe\030\001 \001(\005\022\r\n\005value\030\002 \001(\005\"L\n\030MsgDeleteFreq"
-  "uentlyPhone\022!\n\nerror_code\030\001 \001(\0132\r.MsgErr"
-  "orCode\022\r\n\005phone\030\002 \001(\t\"c\n\030MsgDBVerifyAgen"
-  "trelation\022\014\n\004code\030\001 \001(\005\022\020\n\010table_no\030\002 \001("
-  "\005\022\026\n\016sitdown_userid\030\003 \001(\005\022\017\n\007user_id\030\004 \001"
-  "(\005\"\303\001\n\022MsgPvpSerTableInfo\022\020\n\010table_id\030\001 "
-  "\001(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001"
-  "(\005\022\021\n\tenter_num\030\004 \001(\005\022\022\n\nbase_score\030\005 \001("
-  "\005\022\023\n\013is_activate\030\006 \001(\010\022\022\n\nis_private\030\007 \001"
-  "(\010\022\022\n\nowner_nick\030\t \001(\t\022\020\n\010table_no\030\n \001(\005"
-  "\"L\n\016MsgPvpAddTable\022\021\n\tgame_type\030\001 \001(\005\022\'\n"
-  "\ntable_list\030\002 \003(\0132\023.MsgPvpSerTableInfo\"5"
-  "\n\016MsgPvpDelTable\022\021\n\tgame_type\030\001 \001(\005\022\020\n\010t"
-  "able_id\030\002 \001(\005b\006proto3"
+  "\030\003 \001(\005\022\024\n\014control_gold\030\004 \001(\003\"R\n\017MsgDBMod"
+  "ifyProp\022\014\n\004code\030\001 \001(\005\022\016\n\006userid\030\002 \001(\005\022\017\n"
+  "\007prop_id\030\003 \001(\005\022\020\n\010prop_num\030\004 \001(\005\"+\n\014MsgE"
+  "rrorCode\022\014\n\004type\030\001 \001(\005\022\r\n\005value\030\002 \001(\005\"L\n"
+  "\030MsgDeleteFrequentlyPhone\022!\n\nerror_code\030"
+  "\001 \001(\0132\r.MsgErrorCode\022\r\n\005phone\030\002 \001(\t\"c\n\030M"
+  "sgDBVerifyAgentrelation\022\014\n\004code\030\001 \001(\005\022\020\n"
+  "\010table_no\030\002 \001(\005\022\026\n\016sitdown_userid\030\003 \001(\005\022"
+  "\017\n\007user_id\030\004 \001(\005\"\303\001\n\022MsgPvpSerTableInfo\022"
+  "\020\n\010table_id\030\001 \001(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n"
+  "\tchair_num\030\003 \001(\005\022\021\n\tenter_num\030\004 \001(\005\022\022\n\nb"
+  "ase_score\030\005 \001(\005\022\023\n\013is_activate\030\006 \001(\010\022\022\n\n"
+  "is_private\030\007 \001(\010\022\022\n\nowner_nick\030\t \001(\t\022\020\n\010"
+  "table_no\030\n \001(\005\"L\n\016MsgPvpAddTable\022\021\n\tgame"
+  "_type\030\001 \001(\005\022\'\n\ntable_list\030\002 \003(\0132\023.MsgPvp"
+  "SerTableInfo\"5\n\016MsgPvpDelTable\022\021\n\tgame_t"
+  "ype\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -2247,7 +2248,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 7261,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 7275,
   &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 69, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
   file_level_metadata_ServerInternalProto_2eproto, 69, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
@@ -20597,17 +20598,17 @@ MsgDBModifyProp::MsgDBModifyProp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgDBModifyProp::MsgDBModifyProp(const MsgDBModifyProp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&userid_, &from.userid_,
+  ::memcpy(&code_, &from.code_,
     static_cast<size_t>(reinterpret_cast<char*>(&prop_num_) -
-    reinterpret_cast<char*>(&userid_)) + sizeof(prop_num_));
+    reinterpret_cast<char*>(&code_)) + sizeof(prop_num_));
   // @@protoc_insertion_point(copy_constructor:MsgDBModifyProp)
 }
 
 void MsgDBModifyProp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&userid_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&prop_num_) -
-      reinterpret_cast<char*>(&userid_)) + sizeof(prop_num_));
+      reinterpret_cast<char*>(&code_)) + sizeof(prop_num_));
 }
 
 MsgDBModifyProp::~MsgDBModifyProp() {
@@ -20641,9 +20642,9 @@ void MsgDBModifyProp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&userid_, 0, static_cast<size_t>(
+  ::memset(&code_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&prop_num_) -
-      reinterpret_cast<char*>(&userid_)) + sizeof(prop_num_));
+      reinterpret_cast<char*>(&code_)) + sizeof(prop_num_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -20654,23 +20655,30 @@ const char* MsgDBModifyProp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 userid = 1;
+      // int32 code = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 userid = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 prop_id = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // int32 prop_id = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           prop_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 prop_num = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 prop_num = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           prop_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -20703,22 +20711,28 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 userid = 1;
+  // int32 code = 1;
+  if (this->code() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+  }
+
+  // int32 userid = 2;
   if (this->userid() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_userid(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_userid(), target);
   }
 
-  // int32 prop_id = 2;
+  // int32 prop_id = 3;
   if (this->prop_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_prop_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_prop_id(), target);
   }
 
-  // int32 prop_num = 3;
+  // int32 prop_num = 4;
   if (this->prop_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_prop_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_prop_num(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -20737,21 +20751,28 @@ size_t MsgDBModifyProp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 userid = 1;
+  // int32 code = 1;
+  if (this->code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_code());
+  }
+
+  // int32 userid = 2;
   if (this->userid() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_userid());
   }
 
-  // int32 prop_id = 2;
+  // int32 prop_id = 3;
   if (this->prop_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_prop_id());
   }
 
-  // int32 prop_num = 3;
+  // int32 prop_num = 4;
   if (this->prop_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -20789,6 +20810,9 @@ void MsgDBModifyProp::MergeFrom(const MsgDBModifyProp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.code() != 0) {
+    _internal_set_code(from._internal_code());
+  }
   if (from.userid() != 0) {
     _internal_set_userid(from._internal_userid());
   }
@@ -20824,9 +20848,9 @@ void MsgDBModifyProp::InternalSwap(MsgDBModifyProp* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgDBModifyProp, prop_num_)
       + sizeof(MsgDBModifyProp::prop_num_)
-      - PROTOBUF_FIELD_OFFSET(MsgDBModifyProp, userid_)>(
-          reinterpret_cast<char*>(&userid_),
-          reinterpret_cast<char*>(&other->userid_));
+      - PROTOBUF_FIELD_OFFSET(MsgDBModifyProp, code_)>(
+          reinterpret_cast<char*>(&code_),
+          reinterpret_cast<char*>(&other->code_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgDBModifyProp::GetMetadata() const {

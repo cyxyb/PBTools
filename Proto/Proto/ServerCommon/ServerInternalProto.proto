@@ -575,9 +575,10 @@ message MsgDBControlUser
 //控制玩家
 message MsgDBModifyProp
 {
-	int32 userid		= 1;		//玩家id
-	int32 prop_id 		= 2;		//道具ID
-	int32 prop_num 		= 3;		//道具数量
+	int32 code 			= 1;
+	int32 userid		= 2;		//玩家id
+	int32 prop_id 		= 3;		//道具ID
+	int32 prop_num 		= 4;		//道具数量
 }
 
 //短信状态

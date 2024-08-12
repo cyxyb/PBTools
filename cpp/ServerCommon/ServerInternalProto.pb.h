@@ -11621,11 +11621,21 @@ class MsgDBModifyProp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUseridFieldNumber = 1,
-    kPropIdFieldNumber = 2,
-    kPropNumFieldNumber = 3,
+    kCodeFieldNumber = 1,
+    kUseridFieldNumber = 2,
+    kPropIdFieldNumber = 3,
+    kPropNumFieldNumber = 4,
   };
-  // int32 userid = 1;
+  // int32 code = 1;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 userid = 2;
   void clear_userid();
   ::PROTOBUF_NAMESPACE_ID::int32 userid() const;
   void set_userid(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -11634,7 +11644,7 @@ class MsgDBModifyProp PROTOBUF_FINAL :
   void _internal_set_userid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 prop_id = 2;
+  // int32 prop_id = 3;
   void clear_prop_id();
   ::PROTOBUF_NAMESPACE_ID::int32 prop_id() const;
   void set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -11643,7 +11653,7 @@ class MsgDBModifyProp PROTOBUF_FINAL :
   void _internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 prop_num = 3;
+  // int32 prop_num = 4;
   void clear_prop_num();
   ::PROTOBUF_NAMESPACE_ID::int32 prop_num() const;
   void set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -11659,6 +11669,7 @@ class MsgDBModifyProp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
   ::PROTOBUF_NAMESPACE_ID::int32 userid_;
   ::PROTOBUF_NAMESPACE_ID::int32 prop_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 prop_num_;
@@ -20643,7 +20654,27 @@ inline void MsgDBControlUser::set_control_gold(::PROTOBUF_NAMESPACE_ID::int64 va
 
 // MsgDBModifyProp
 
-// int32 userid = 1;
+// int32 code = 1;
+inline void MsgDBModifyProp::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::code() const {
+  // @@protoc_insertion_point(field_get:MsgDBModifyProp.code)
+  return _internal_code();
+}
+inline void MsgDBModifyProp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgDBModifyProp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgDBModifyProp.code)
+}
+
+// int32 userid = 2;
 inline void MsgDBModifyProp::clear_userid() {
   userid_ = 0;
 }
@@ -20663,7 +20694,7 @@ inline void MsgDBModifyProp::set_userid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgDBModifyProp.userid)
 }
 
-// int32 prop_id = 2;
+// int32 prop_id = 3;
 inline void MsgDBModifyProp::clear_prop_id() {
   prop_id_ = 0;
 }
@@ -20683,7 +20714,7 @@ inline void MsgDBModifyProp::set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgDBModifyProp.prop_id)
 }
 
-// int32 prop_num = 3;
+// int32 prop_num = 4;
 inline void MsgDBModifyProp::clear_prop_num() {
   prop_num_ = 0;
 }
