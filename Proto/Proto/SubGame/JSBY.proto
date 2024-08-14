@@ -360,6 +360,7 @@ message SCPoisonBomTimes
 	 int32 KillPlayerId = 5;
 	 int32 HeroUniqueId = 6;
 	 SpecialAttackInfo AttackInfo = 7;
+	 int32 AddRatio = 8;
 }
 message CSChangePoisonBomTimes
 {

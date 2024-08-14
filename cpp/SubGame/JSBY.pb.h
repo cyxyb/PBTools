@@ -3163,6 +3163,7 @@ class SCPoisonBomTimes PROTOBUF_FINAL :
     kRatioFieldNumber = 3,
     kKillPlayerIdFieldNumber = 5,
     kHeroUniqueIdFieldNumber = 6,
+    kAddRatioFieldNumber = 8,
   };
   // repeated int32 AddTimes = 4;
   int addtimes_size() const;
@@ -3249,6 +3250,15 @@ class SCPoisonBomTimes PROTOBUF_FINAL :
   void _internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 AddRatio = 8;
+  void clear_addratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 addratio() const;
+  void set_addratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_addratio() const;
+  void _internal_set_addratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:JSBY.SCPoisonBomTimes)
  private:
   class _Internal;
@@ -3264,6 +3274,7 @@ class SCPoisonBomTimes PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 killplayerid_;
   ::PROTOBUF_NAMESPACE_ID::int32 herouniqueid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 addratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -23297,6 +23308,26 @@ inline void SCPoisonBomTimes::set_allocated_attackinfo(::JSBY::SpecialAttackInfo
   }
   attackinfo_ = attackinfo;
   // @@protoc_insertion_point(field_set_allocated:JSBY.SCPoisonBomTimes.AttackInfo)
+}
+
+// int32 AddRatio = 8;
+inline void SCPoisonBomTimes::clear_addratio() {
+  addratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCPoisonBomTimes::_internal_addratio() const {
+  return addratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCPoisonBomTimes::addratio() const {
+  // @@protoc_insertion_point(field_get:JSBY.SCPoisonBomTimes.AddRatio)
+  return _internal_addratio();
+}
+inline void SCPoisonBomTimes::_internal_set_addratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  addratio_ = value;
+}
+inline void SCPoisonBomTimes::set_addratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_addratio(value);
+  // @@protoc_insertion_point(field_set:JSBY.SCPoisonBomTimes.AddRatio)
 }
 
 // -------------------------------------------------------------------
