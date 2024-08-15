@@ -2402,6 +2402,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_JSBY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::JSBY::CSRequestAttack, specialinfo_),
   PROTOBUF_FIELD_OFFSET(::JSBY::CSRequestAttack, dragonend_),
   PROTOBUF_FIELD_OFFSET(::JSBY::CSRequestAttack, herouniqueid_),
+  PROTOBUF_FIELD_OFFSET(::JSBY::CSRequestAttack, kill_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::JSBY::SCRequestAttack, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -3325,131 +3326,131 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 31, -1, sizeof(::JSBY::UserBomTimes)},
   { 40, -1, sizeof(::JSBY::SpecialMonsterAttack)},
   { 49, -1, sizeof(::JSBY::CSRequestAttack)},
-  { 64, -1, sizeof(::JSBY::SCRequestAttack)},
-  { 69, -1, sizeof(::JSBY::SpecialAttackInfo)},
-  { 76, -1, sizeof(::JSBY::SCQueenDieData)},
-  { 85, -1, sizeof(::JSBY::SCSyncMoney)},
-  { 108, -1, sizeof(::JSBY::SCPoisonBomTimes)},
-  { 121, -1, sizeof(::JSBY::CSChangePoisonBomTimes)},
-  { 129, -1, sizeof(::JSBY::SCChangePoisonBomTimes)},
-  { 134, -1, sizeof(::JSBY::CSEnterStage)},
-  { 141, -1, sizeof(::JSBY::SCEnterStage)},
-  { 147, -1, sizeof(::JSBY::CSKeepRatio)},
-  { 153, -1, sizeof(::JSBY::SCKeepRatio)},
-  { 158, -1, sizeof(::JSBY::TrusteeshipInfo)},
-  { 170, -1, sizeof(::JSBY::CSGetTrusteeship)},
-  { 175, -1, sizeof(::JSBY::SCGetTrusteeship)},
-  { 183, -1, sizeof(::JSBY::CSSetTrusteeship)},
-  { 189, -1, sizeof(::JSBY::SCSetTrusteeship)},
-  { 194, -1, sizeof(::JSBY::TrusteeshipMoney)},
-  { 201, -1, sizeof(::JSBY::CSEndTrusteeship)},
-  { 207, -1, sizeof(::JSBY::SCEndTrusteeship)},
-  { 215, -1, sizeof(::JSBY::CSGetVersion)},
-  { 220, -1, sizeof(::JSBY::SCGetVersion)},
-  { 226, -1, sizeof(::JSBY::ActivityInfo)},
-  { 236, -1, sizeof(::JSBY::CSActivityInfo)},
-  { 241, -1, sizeof(::JSBY::SCActivityInfo)},
-  { 250, -1, sizeof(::JSBY::SCNotifyActivityInfo)},
-  { 259, -1, sizeof(::JSBY::CSGetActivityAward)},
-  { 265, -1, sizeof(::JSBY::SCGetActivityAward)},
-  { 272, -1, sizeof(::JSBY::CSButtonRecords)},
-  { 279, -1, sizeof(::JSBY::SCButtonRecords)},
-  { 284, -1, sizeof(::JSBY::TowerHeroInfo)},
-  { 295, -1, sizeof(::JSBY::TowerHeroAtkInfo)},
-  { 302, -1, sizeof(::JSBY::TablePlayerInfo)},
-  { 319, -1, sizeof(::JSBY::SCNotifyTowerTablePlayer)},
-  { 326, -1, sizeof(::JSBY::SCLeaveTowerTable)},
-  { 333, -1, sizeof(::JSBY::TowerMonster)},
-  { 345, -1, sizeof(::JSBY::ChannelTowerMonster)},
-  { 352, -1, sizeof(::JSBY::SCGetTowerMonster)},
-  { 358, -1, sizeof(::JSBY::CSGetTowerMonster)},
-  { 365, -1, sizeof(::JSBY::SCSyncGetTowerMonster)},
-  { 372, -1, sizeof(::JSBY::SCTowerMonster)},
-  { 379, -1, sizeof(::JSBY::CSTowerHeroAtkInfo)},
-  { 385, -1, sizeof(::JSBY::SCTowerHeroAtkInfo)},
-  { 391, -1, sizeof(::JSBY::CSTowerUpdateHero)},
-  { 398, -1, sizeof(::JSBY::SCTowerUpdateHero)},
-  { 404, -1, sizeof(::JSBY::SCPushTowerUpdateHero)},
-  { 412, -1, sizeof(::JSBY::LockTargetInfo)},
-  { 419, -1, sizeof(::JSBY::CSTowerPlayerLockTarget)},
-  { 425, -1, sizeof(::JSBY::SCTowerPlayerLockTarget)},
-  { 431, -1, sizeof(::JSBY::CSChangeBackground)},
-  { 437, -1, sizeof(::JSBY::SCChangeBackground)},
-  { 442, -1, sizeof(::JSBY::CSTowerMonsterExit)},
-  { 448, -1, sizeof(::JSBY::SCTowerMonsterExit)},
-  { 453, -1, sizeof(::JSBY::CSGetCurrentTime)},
-  { 458, -1, sizeof(::JSBY::SCGetCurrentTime)},
-  { 464, -1, sizeof(::JSBY::TowerGuideInfo)},
-  { 471, -1, sizeof(::JSBY::CSGetTowerStep)},
-  { 476, -1, sizeof(::JSBY::SCGetTowerGuide)},
-  { 482, -1, sizeof(::JSBY::CSSetTowerStep)},
-  { 488, -1, sizeof(::JSBY::SCSetTowerStep)},
-  { 493, -1, sizeof(::JSBY::CSTowerExchangeHero)},
-  { 500, -1, sizeof(::JSBY::SCTowerExchangeHero)},
-  { 508, -1, sizeof(::JSBY::SCLeaveTowerTableCountdown)},
-  { 514, -1, sizeof(::JSBY::PoisonBombLocation)},
-  { 523, -1, sizeof(::JSBY::CSPoisonBombLocation)},
-  { 529, -1, sizeof(::JSBY::SCPoisonBombLocation)},
-  { 535, -1, sizeof(::JSBY::PoisonbombConvert)},
-  { 543, -1, sizeof(::JSBY::SCPoisonBombConvert)},
-  { 551, -1, sizeof(::JSBY::PoisonbombType)},
-  { 562, -1, sizeof(::JSBY::SCPoisonbombTypes)},
-  { 568, -1, sizeof(::JSBY::CSDragonRelease)},
-  { 575, -1, sizeof(::JSBY::SCDragonRelease)},
-  { 583, -1, sizeof(::JSBY::SCPushDragonRelease)},
-  { 591, -1, sizeof(::JSBY::SCPushDragonEnd)},
-  { 597, -1, sizeof(::JSBY::SCPushSelfDragonState)},
-  { 605, -1, sizeof(::JSBY::CSOneKeyUpdateHero)},
-  { 611, -1, sizeof(::JSBY::SCOneKeyUpdateHero)},
-  { 620, -1, sizeof(::JSBY::SCPushGhostDragonRelease)},
-  { 632, -1, sizeof(::JSBY::SCPushGhostDragonEnd)},
-  { 639, -1, sizeof(::JSBY::SCPushSelfGhostDragonState)},
-  { 645, -1, sizeof(::JSBY::HeroMoney)},
-  { 653, -1, sizeof(::JSBY::SCPushSyncHeroMoney)},
-  { 659, -1, sizeof(::JSBY::SCPushMonsterDead)},
-  { 666, -1, sizeof(::JSBY::CSDebugData)},
-  { 672, -1, sizeof(::JSBY::SCDebugData)},
-  { 677, -1, sizeof(::JSBY::SCPushMonsterBuff)},
-  { 685, -1, sizeof(::JSBY::TableState)},
-  { 692, -1, sizeof(::JSBY::CSGetTableId)},
-  { 697, -1, sizeof(::JSBY::SCGetTableId)},
-  { 703, -1, sizeof(::JSBY::SCPlayerVipLevel)},
-  { 711, -1, sizeof(::JSBY::DragonProps)},
-  { 719, -1, sizeof(::JSBY::CSGetDragonProps)},
-  { 724, -1, sizeof(::JSBY::SCGetDragonProps)},
-  { 730, -1, sizeof(::JSBY::CSEquipDragonProps)},
-  { 736, -1, sizeof(::JSBY::SCEquipDragonProps)},
-  { 742, -1, sizeof(::JSBY::SCPushDragonProps)},
-  { 748, -1, sizeof(::JSBY::ShopInfo)},
-  { 759, -1, sizeof(::JSBY::CSGetShopInfo)},
-  { 765, -1, sizeof(::JSBY::SCGetShopInfo)},
-  { 771, -1, sizeof(::JSBY::PropsInfo)},
-  { 779, -1, sizeof(::JSBY::SCPushPropsInfo)},
-  { 785, -1, sizeof(::JSBY::CSGetMaterialsInfo)},
-  { 790, -1, sizeof(::JSBY::SCGetMaterialsInfo)},
-  { 796, -1, sizeof(::JSBY::CSExchangeBox)},
-  { 802, -1, sizeof(::JSBY::RewardInfo)},
-  { 809, -1, sizeof(::JSBY::SCExchangeBox)},
-  { 819, -1, sizeof(::JSBY::CSDoublingBox)},
-  { 825, -1, sizeof(::JSBY::SCDoublingBox)},
-  { 834, -1, sizeof(::JSBY::CSShopBuy)},
-  { 841, -1, sizeof(::JSBY::SCShopBuy)},
-  { 848, -1, sizeof(::JSBY::MaterialsInfo)},
-  { 856, -1, sizeof(::JSBY::SCPushDropMaterials)},
-  { 862, -1, sizeof(::JSBY::SCPushBalloonTimes)},
-  { 875, -1, sizeof(::JSBY::SwitchInfo)},
-  { 882, -1, sizeof(::JSBY::SCFunctionSwitch)},
-  { 888, -1, sizeof(::JSBY::CSSealConvertMoney)},
-  { 893, -1, sizeof(::JSBY::SCSealConvertMoney)},
-  { 901, -1, sizeof(::JSBY::ConnectMonster)},
-  { 908, -1, sizeof(::JSBY::SCPushConnectMonster)},
-  { 916, -1, sizeof(::JSBY::SCGiantUpgrade)},
-  { 928, -1, sizeof(::JSBY::SCPushGiantEnd)},
-  { 935, -1, sizeof(::JSBY::SCDropCard)},
-  { 947, -1, sizeof(::JSBY::SCAcquireSeal)},
-  { 955, -1, sizeof(::JSBY::FreshMoney)},
-  { 964, -1, sizeof(::JSBY::ShutdownService)},
-  { 972, -1, sizeof(::JSBY::SCLogoutGame)},
+  { 65, -1, sizeof(::JSBY::SCRequestAttack)},
+  { 70, -1, sizeof(::JSBY::SpecialAttackInfo)},
+  { 77, -1, sizeof(::JSBY::SCQueenDieData)},
+  { 86, -1, sizeof(::JSBY::SCSyncMoney)},
+  { 109, -1, sizeof(::JSBY::SCPoisonBomTimes)},
+  { 122, -1, sizeof(::JSBY::CSChangePoisonBomTimes)},
+  { 130, -1, sizeof(::JSBY::SCChangePoisonBomTimes)},
+  { 135, -1, sizeof(::JSBY::CSEnterStage)},
+  { 142, -1, sizeof(::JSBY::SCEnterStage)},
+  { 148, -1, sizeof(::JSBY::CSKeepRatio)},
+  { 154, -1, sizeof(::JSBY::SCKeepRatio)},
+  { 159, -1, sizeof(::JSBY::TrusteeshipInfo)},
+  { 171, -1, sizeof(::JSBY::CSGetTrusteeship)},
+  { 176, -1, sizeof(::JSBY::SCGetTrusteeship)},
+  { 184, -1, sizeof(::JSBY::CSSetTrusteeship)},
+  { 190, -1, sizeof(::JSBY::SCSetTrusteeship)},
+  { 195, -1, sizeof(::JSBY::TrusteeshipMoney)},
+  { 202, -1, sizeof(::JSBY::CSEndTrusteeship)},
+  { 208, -1, sizeof(::JSBY::SCEndTrusteeship)},
+  { 216, -1, sizeof(::JSBY::CSGetVersion)},
+  { 221, -1, sizeof(::JSBY::SCGetVersion)},
+  { 227, -1, sizeof(::JSBY::ActivityInfo)},
+  { 237, -1, sizeof(::JSBY::CSActivityInfo)},
+  { 242, -1, sizeof(::JSBY::SCActivityInfo)},
+  { 251, -1, sizeof(::JSBY::SCNotifyActivityInfo)},
+  { 260, -1, sizeof(::JSBY::CSGetActivityAward)},
+  { 266, -1, sizeof(::JSBY::SCGetActivityAward)},
+  { 273, -1, sizeof(::JSBY::CSButtonRecords)},
+  { 280, -1, sizeof(::JSBY::SCButtonRecords)},
+  { 285, -1, sizeof(::JSBY::TowerHeroInfo)},
+  { 296, -1, sizeof(::JSBY::TowerHeroAtkInfo)},
+  { 303, -1, sizeof(::JSBY::TablePlayerInfo)},
+  { 320, -1, sizeof(::JSBY::SCNotifyTowerTablePlayer)},
+  { 327, -1, sizeof(::JSBY::SCLeaveTowerTable)},
+  { 334, -1, sizeof(::JSBY::TowerMonster)},
+  { 346, -1, sizeof(::JSBY::ChannelTowerMonster)},
+  { 353, -1, sizeof(::JSBY::SCGetTowerMonster)},
+  { 359, -1, sizeof(::JSBY::CSGetTowerMonster)},
+  { 366, -1, sizeof(::JSBY::SCSyncGetTowerMonster)},
+  { 373, -1, sizeof(::JSBY::SCTowerMonster)},
+  { 380, -1, sizeof(::JSBY::CSTowerHeroAtkInfo)},
+  { 386, -1, sizeof(::JSBY::SCTowerHeroAtkInfo)},
+  { 392, -1, sizeof(::JSBY::CSTowerUpdateHero)},
+  { 399, -1, sizeof(::JSBY::SCTowerUpdateHero)},
+  { 405, -1, sizeof(::JSBY::SCPushTowerUpdateHero)},
+  { 413, -1, sizeof(::JSBY::LockTargetInfo)},
+  { 420, -1, sizeof(::JSBY::CSTowerPlayerLockTarget)},
+  { 426, -1, sizeof(::JSBY::SCTowerPlayerLockTarget)},
+  { 432, -1, sizeof(::JSBY::CSChangeBackground)},
+  { 438, -1, sizeof(::JSBY::SCChangeBackground)},
+  { 443, -1, sizeof(::JSBY::CSTowerMonsterExit)},
+  { 449, -1, sizeof(::JSBY::SCTowerMonsterExit)},
+  { 454, -1, sizeof(::JSBY::CSGetCurrentTime)},
+  { 459, -1, sizeof(::JSBY::SCGetCurrentTime)},
+  { 465, -1, sizeof(::JSBY::TowerGuideInfo)},
+  { 472, -1, sizeof(::JSBY::CSGetTowerStep)},
+  { 477, -1, sizeof(::JSBY::SCGetTowerGuide)},
+  { 483, -1, sizeof(::JSBY::CSSetTowerStep)},
+  { 489, -1, sizeof(::JSBY::SCSetTowerStep)},
+  { 494, -1, sizeof(::JSBY::CSTowerExchangeHero)},
+  { 501, -1, sizeof(::JSBY::SCTowerExchangeHero)},
+  { 509, -1, sizeof(::JSBY::SCLeaveTowerTableCountdown)},
+  { 515, -1, sizeof(::JSBY::PoisonBombLocation)},
+  { 524, -1, sizeof(::JSBY::CSPoisonBombLocation)},
+  { 530, -1, sizeof(::JSBY::SCPoisonBombLocation)},
+  { 536, -1, sizeof(::JSBY::PoisonbombConvert)},
+  { 544, -1, sizeof(::JSBY::SCPoisonBombConvert)},
+  { 552, -1, sizeof(::JSBY::PoisonbombType)},
+  { 563, -1, sizeof(::JSBY::SCPoisonbombTypes)},
+  { 569, -1, sizeof(::JSBY::CSDragonRelease)},
+  { 576, -1, sizeof(::JSBY::SCDragonRelease)},
+  { 584, -1, sizeof(::JSBY::SCPushDragonRelease)},
+  { 592, -1, sizeof(::JSBY::SCPushDragonEnd)},
+  { 598, -1, sizeof(::JSBY::SCPushSelfDragonState)},
+  { 606, -1, sizeof(::JSBY::CSOneKeyUpdateHero)},
+  { 612, -1, sizeof(::JSBY::SCOneKeyUpdateHero)},
+  { 621, -1, sizeof(::JSBY::SCPushGhostDragonRelease)},
+  { 633, -1, sizeof(::JSBY::SCPushGhostDragonEnd)},
+  { 640, -1, sizeof(::JSBY::SCPushSelfGhostDragonState)},
+  { 646, -1, sizeof(::JSBY::HeroMoney)},
+  { 654, -1, sizeof(::JSBY::SCPushSyncHeroMoney)},
+  { 660, -1, sizeof(::JSBY::SCPushMonsterDead)},
+  { 667, -1, sizeof(::JSBY::CSDebugData)},
+  { 673, -1, sizeof(::JSBY::SCDebugData)},
+  { 678, -1, sizeof(::JSBY::SCPushMonsterBuff)},
+  { 686, -1, sizeof(::JSBY::TableState)},
+  { 693, -1, sizeof(::JSBY::CSGetTableId)},
+  { 698, -1, sizeof(::JSBY::SCGetTableId)},
+  { 704, -1, sizeof(::JSBY::SCPlayerVipLevel)},
+  { 712, -1, sizeof(::JSBY::DragonProps)},
+  { 720, -1, sizeof(::JSBY::CSGetDragonProps)},
+  { 725, -1, sizeof(::JSBY::SCGetDragonProps)},
+  { 731, -1, sizeof(::JSBY::CSEquipDragonProps)},
+  { 737, -1, sizeof(::JSBY::SCEquipDragonProps)},
+  { 743, -1, sizeof(::JSBY::SCPushDragonProps)},
+  { 749, -1, sizeof(::JSBY::ShopInfo)},
+  { 760, -1, sizeof(::JSBY::CSGetShopInfo)},
+  { 766, -1, sizeof(::JSBY::SCGetShopInfo)},
+  { 772, -1, sizeof(::JSBY::PropsInfo)},
+  { 780, -1, sizeof(::JSBY::SCPushPropsInfo)},
+  { 786, -1, sizeof(::JSBY::CSGetMaterialsInfo)},
+  { 791, -1, sizeof(::JSBY::SCGetMaterialsInfo)},
+  { 797, -1, sizeof(::JSBY::CSExchangeBox)},
+  { 803, -1, sizeof(::JSBY::RewardInfo)},
+  { 810, -1, sizeof(::JSBY::SCExchangeBox)},
+  { 820, -1, sizeof(::JSBY::CSDoublingBox)},
+  { 826, -1, sizeof(::JSBY::SCDoublingBox)},
+  { 835, -1, sizeof(::JSBY::CSShopBuy)},
+  { 842, -1, sizeof(::JSBY::SCShopBuy)},
+  { 849, -1, sizeof(::JSBY::MaterialsInfo)},
+  { 857, -1, sizeof(::JSBY::SCPushDropMaterials)},
+  { 863, -1, sizeof(::JSBY::SCPushBalloonTimes)},
+  { 876, -1, sizeof(::JSBY::SwitchInfo)},
+  { 883, -1, sizeof(::JSBY::SCFunctionSwitch)},
+  { 889, -1, sizeof(::JSBY::CSSealConvertMoney)},
+  { 894, -1, sizeof(::JSBY::SCSealConvertMoney)},
+  { 902, -1, sizeof(::JSBY::ConnectMonster)},
+  { 909, -1, sizeof(::JSBY::SCPushConnectMonster)},
+  { 917, -1, sizeof(::JSBY::SCGiantUpgrade)},
+  { 929, -1, sizeof(::JSBY::SCPushGiantEnd)},
+  { 936, -1, sizeof(::JSBY::SCDropCard)},
+  { 948, -1, sizeof(::JSBY::SCAcquireSeal)},
+  { 956, -1, sizeof(::JSBY::FreshMoney)},
+  { 965, -1, sizeof(::JSBY::ShutdownService)},
+  { 973, -1, sizeof(::JSBY::SCLogoutGame)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -3600,376 +3601,376 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\030\003 \001(\010\022\017\n\007AllOver\030\004 \001(\010\"e\n\024SpecialMonste"
   "rAttack\022\022\n\nPositionId\030\001 \001(\005\022\021\n\tMonsterId"
   "\030\002 \001(\005\022\021\n\tChannelId\030\003 \001(\005\022\023\n\013ProcessTime"
-  "\030\004 \001(\005\"\365\001\n\017CSRequestAttack\022\r\n\005Ratio\030\001 \001("
+  "\030\004 \001(\005\"\206\002\n\017CSRequestAttack\022\r\n\005Ratio\030\001 \001("
   "\005\022\014\n\004Mode\030\002 \001(\005\022\021\n\tMonsterId\030\003 \001(\005\022\022\n\nPo"
   "sitionId\030\004 \001(\005\022\025\n\rUsePositionId\030\005 \001(\005\022\030\n"
   "\020UsePositionTimes\030\006 \001(\005\022\023\n\013SpecialType\030\007"
   " \001(\005\022/\n\013SpecialInfo\030\010 \003(\0132\032.JSBY.Special"
   "MonsterAttack\022\021\n\tDragonEnd\030\t \001(\010\022\024\n\014Hero"
-  "UniqueId\030\n \001(\005\"\021\n\017SCRequestAttack\"3\n\021Spe"
-  "cialAttackInfo\022\016\n\006KillID\030\001 \001(\005\022\016\n\006SelfID"
-  "\030\002 \001(\005\"[\n\016SCQueenDieData\022\014\n\004type\030\001 \001(\005\022\020"
-  "\n\010rand_mul\030\002 \001(\005\022\024\n\014base_outside\030\003 \003(\005\022\023"
-  "\n\013base_inside\030\004 \003(\005\"\254\003\n\013SCSyncMoney\022\r\n\005M"
-  "oney\030\001 \001(\003\022\021\n\tMonsterId\030\002 \001(\005\022\022\n\nPositio"
-  "nId\030\003 \001(\005\022\014\n\004Type\030\004 \001(\005\022\r\n\005Ratio\030\005 \001(\005\022\020"
-  "\n\010PlayerId\030\006 \001(\005\022\026\n\016MoneyVariation\030\007 \001(\005"
-  "\022\037\n\003Bom\030\010 \001(\0132\022.JSBY.UserBomTimes\022\024\n\014Her"
-  "oUniqueId\030\t \001(\005\022+\n\nAttackInfo\030\n \001(\0132\027.JS"
-  "BY.SpecialAttackInfo\022\r\n\005Eared\030\013 \001(\005\022\020\n\010A"
-  "ddRatio\030\014 \001(\005\022\024\n\014BalloonRatio\030\r \001(\005\022$\n\006O"
-  "thers\030\016 \001(\0132\024.JSBY.SCQueenDieData\022\025\n\rGia"
-  "ntHitPower\030\017 \001(\005\022\024\n\014MxlSealMoney\030\020 \001(\005\022\034"
-  "\n\024MxlSealAddAwardRatio\030\021 \001(\005\022\024\n\014BearMult"
-  "iple\030\022 \003(\005\"\301\001\n\020SCPoisonBomTimes\022\022\n\nPosit"
-  "ionId\030\001 \001(\005\022\r\n\005Times\030\002 \001(\005\022\r\n\005Ratio\030\003 \001("
-  "\005\022\020\n\010AddTimes\030\004 \003(\005\022\024\n\014KillPlayerId\030\005 \001("
-  "\005\022\024\n\014HeroUniqueId\030\006 \001(\005\022+\n\nAttackInfo\030\007 "
-  "\001(\0132\027.JSBY.SpecialAttackInfo\022\020\n\010AddRatio"
-  "\030\010 \001(\005\"]\n\026CSChangePoisonBomTimes\022\022\n\nPosi"
-  "tionId\030\001 \001(\005\022\030\n\020UsePositionTimes\030\002 \001(\005\022\025"
-  "\n\rNewPositionId\030\003 \001(\005\"\030\n\026SCChangePoisonB"
-  "omTimes\";\n\014CSEnterStage\022\r\n\005Enter\030\001 \001(\010\022\034"
-  "\n\004Mode\030\002 \001(\0162\016.JSBY.ModeType\" \n\014SCEnterS"
-  "tage\022\020\n\010UseRatio\030\001 \001(\005\"\034\n\013CSKeepRatio\022\r\n"
-  "\005Ratio\030\001 \001(\005\"\r\n\013SCKeepRatio\"\247\001\n\017Trustees"
-  "hipInfo\022\025\n\rIsTrusteeship\030\001 \001(\010\022\024\n\014HighSe"
-  "tValue\030\002 \001(\005\022\023\n\013HighSetOpen\030\003 \001(\010\022\023\n\013Low"
-  "SetValue\030\004 \001(\005\022\022\n\nLowSetOpen\030\005 \001(\010\022\024\n\014Ti"
-  "meSetValue\030\006 \001(\002\022\023\n\013TimeSetOpen\030\007 \001(\010\"\022\n"
-  "\020CSGetTrusteeship\"[\n\020SCGetTrusteeship\022#\n"
-  "\004Info\030\001 \001(\0132\025.JSBY.TrusteeshipInfo\022\020\n\010Le"
-  "ftTime\030\002 \001(\005\022\020\n\010VIPLevel\030\003 \001(\005\"7\n\020CSSetT"
-  "rusteeship\022#\n\004Info\030\001 \001(\0132\025.JSBY.Trustees"
-  "hipInfo\"\022\n\020SCSetTrusteeship\"6\n\020Trusteesh"
-  "ipMoney\022\023\n\013MonsterType\030\001 \001(\005\022\r\n\005Money\030\002 "
-  "\001(\005\"\"\n\020CSEndTrusteeship\022\016\n\006Notify\030\001 \001(\010\""
-  "_\n\020SCEndTrusteeship\022$\n\004Info\030\001 \001(\0132\026.JSBY"
-  ".TrusteeshipMoney\022\022\n\nTotalMoney\030\002 \001(\005\022\021\n"
-  "\tTotalTime\030\003 \001(\005\"\016\n\014CSGetVersion\"\035\n\014SCGe"
-  "tVersion\022\r\n\005IsNew\030\001 \001(\010\"U\n\014ActivityInfo\022"
-  "\n\n\002ID\030\001 \001(\005\022\r\n\005Money\030\002 \001(\005\022\016\n\006Enzyme\030\003 \001"
-  "(\005\022\014\n\004Name\030\004 \001(\t\022\014\n\004Flag\030\005 \001(\005\"\020\n\016CSActi"
-  "vityInfo\"j\n\016SCActivityInfo\022 \n\004Info\030\001 \001(\013"
-  "2\022.JSBY.ActivityInfo\022\020\n\010LeftTime\030\002 \001(\005\022\023"
-  "\n\013Begint32ime\030\003 \001(\t\022\017\n\007EndTime\030\004 \001(\t\"p\n\024"
-  "SCNotifyActivityInfo\022 \n\004Info\030\001 \001(\0132\022.JSB"
-  "Y.ActivityInfo\022\020\n\010LeftTime\030\002 \001(\005\022\023\n\013Begi"
-  "nt32ime\030\003 \001(\t\022\017\n\007EndTime\030\004 \001(\t\" \n\022CSGetA"
-  "ctivityAward\022\n\n\002ID\030\001 \001(\005\".\n\022SCGetActivit"
-  "yAward\022\n\n\002ID\030\001 \001(\005\022\014\n\004Flag\030\002 \001(\005\"+\n\017CSBu"
-  "ttonRecords\022\n\n\002ID\030\001 \001(\005\022\014\n\004Mode\030\002 \001(\005\"\021\n"
-  "\017SCButtonRecords\"\201\001\n\rTowerHeroInfo\022\016\n\006He"
-  "roId\030\001 \001(\005\022\022\n\nPositionId\030\002 \001(\005\022\r\n\005IsAtk\030"
-  "\003 \001(\010\022\021\n\tTimestamp\030\004 \001(\005\022\030\n\020TargetPositi"
-  "onId\030\005 \001(\005\022\020\n\010UniqueId\030\006 \001(\005\"9\n\020TowerHer"
-  "oAtkInfo\022\026\n\016HeroPositionId\030\001 \001(\005\022\r\n\005IsAt"
-  "k\030\002 \001(\010\"\354\001\n\017TablePlayerInfo\022\017\n\007ChairId\030\001"
-  " \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022\r\n\005Money\030\003 \001(\003\022\013\n"
-  "\003Sex\030\004 \001(\005\022\014\n\004Name\030\005 \001(\t\022\014\n\004Head\030\006 \001(\t\022!"
-  "\n\004Info\030\007 \003(\0132\023.JSBY.TowerHeroInfo\022\026\n\016Mon"
-  "eyVariation\030\010 \001(\005\022\020\n\010VipLevel\030\t \001(\005\022\r\n\005I"
-  "sVip\030\n \001(\010\022\022\n\nBackground\030\013 \001(\005\022\016\n\006Effect"
-  "\030\014 \001(\005\"P\n\030SCNotifyTowerTablePlayer\022#\n\004In"
-  "fo\030\001 \003(\0132\025.JSBY.TablePlayerInfo\022\017\n\007Table"
-  "ID\030\002 \001(\005\";\n\021SCLeaveTowerTable\022\020\n\010PlayerI"
-  "d\030\001 \001(\005\022\024\n\014IsAgainEnter\030\002 \001(\010\"\213\001\n\014TowerM"
-  "onster\022\020\n\010Position\030\001 \001(\005\022\023\n\013ProcessTime\030"
-  "\002 \001(\005\022\021\n\tReadyTime\030\003 \001(\005\022\021\n\tMonsterID\030\004 "
-  "\001(\005\022\014\n\004Buff\030\005 \003(\005\022\021\n\tIsConnect\030\006 \001(\010\022\r\n\005"
-  "Level\030\007 \001(\005\"Q\n\023ChannelTowerMonster\022\021\n\tCh"
-  "annelId\030\001 \001(\005\022\'\n\013ChannelInfo\030\002 \003(\0132\022.JSB"
-  "Y.TowerMonster\"(\n\021SCGetTowerMonster\022\023\n\013R"
-  "eqPlayerId\030\001 \001(\005\"Q\n\021CSGetTowerMonster\022\023\n"
-  "\013ReqPlayerId\030\001 \001(\005\022\'\n\004Info\030\002 \001(\0132\031.JSBY."
-  "ChannelTowerMonster\"Q\n\025SCSyncGetTowerMon"
-  "ster\022\017\n\007TableID\030\001 \001(\005\022\'\n\004Info\030\002 \003(\0132\031.JS"
-  "BY.ChannelTowerMonster\"J\n\016SCTowerMonster"
-  "\022\017\n\007TableID\030\001 \001(\005\022\'\n\004Info\030\002 \003(\0132\031.JSBY.C"
-  "hannelTowerMonster\":\n\022CSTowerHeroAtkInfo"
-  "\022$\n\004Info\030\001 \003(\0132\026.JSBY.TowerHeroAtkInfo\":"
-  "\n\022SCTowerHeroAtkInfo\022$\n\004Info\030\001 \003(\0132\026.JSB"
-  "Y.TowerHeroAtkInfo\"E\n\021CSTowerUpdateHero\022"
-  "!\n\004Info\030\001 \001(\0132\023.JSBY.TowerHeroInfo\022\r\n\005Le"
-  "ave\030\002 \001(\010\"%\n\021SCTowerUpdateHero\022\020\n\010Unique"
-  "Id\030\001 \001(\005\"^\n\025SCPushTowerUpdateHero\022!\n\004Inf"
-  "o\030\001 \001(\0132\023.JSBY.TowerHeroInfo\022\023\n\013ReqPlaye"
-  "rId\030\002 \001(\005\022\r\n\005Leave\030\003 \001(\010\">\n\016LockTargetIn"
-  "fo\022\022\n\nPositionId\030\001 \001(\005\022\030\n\020TargetPosition"
-  "Id\030\002 \001(\005\"A\n\027CSTowerPlayerLockTarget\022&\n\010L"
-  "ockInfo\030\001 \003(\0132\024.JSBY.LockTargetInfo\"A\n\027S"
-  "CTowerPlayerLockTarget\022&\n\010LockInfo\030\001 \003(\013"
-  "2\024.JSBY.LockTargetInfo\"$\n\022CSChangeBackgr"
-  "ound\022\016\n\006IsBack\030\001 \001(\010\"\024\n\022SCChangeBackgrou"
-  "nd\"(\n\022CSTowerMonsterExit\022\022\n\nPositionId\030\001"
-  " \001(\005\"\024\n\022SCTowerMonsterExit\"\022\n\020CSGetCurre"
-  "ntTime\"%\n\020SCGetCurrentTime\022\021\n\tTimestamp\030"
-  "\001 \001(\005\"4\n\016TowerGuideInfo\022\021\n\tGuideStep\030\001 \001"
-  "(\005\022\017\n\007IsFinsh\030\002 \001(\010\"\020\n\016CSGetTowerStep\":\n"
-  "\017SCGetTowerGuide\022\'\n\tGuideInfo\030\001 \001(\0132\024.JS"
-  "BY.TowerGuideInfo\"9\n\016CSSetTowerStep\022\'\n\tG"
-  "uideInfo\030\001 \001(\0132\024.JSBY.TowerGuideInfo\"\020\n\016"
-  "SCSetTowerStep\"C\n\023CSTowerExchangeHero\022\025\n"
-  "\rNewPositionId\030\001 \001(\005\022\025\n\rOldPositionId\030\002 "
-  "\001(\005\"X\n\023SCTowerExchangeHero\022\025\n\rNewPositio"
-  "nId\030\001 \001(\005\022\025\n\rOldPositionId\030\002 \001(\005\022\023\n\013ReqP"
-  "layerId\030\003 \001(\005\"-\n\032SCLeaveTowerTableCountd"
-  "own\022\017\n\007TableID\030\001 \001(\005\"E\n\022PoisonBombLocati"
-  "on\022\n\n\002ID\030\001 \001(\005\022\t\n\001X\030\002 \001(\005\022\t\n\001Y\030\003 \001(\005\022\r\n\005"
-  "Angle\030\004 \001(\005\">\n\024CSPoisonBombLocation\022&\n\004I"
-  "nfo\030\001 \003(\0132\030.JSBY.PoisonBombLocation\">\n\024S"
-  "CPoisonBombLocation\022&\n\004Info\030\001 \003(\0132\030.JSBY"
-  ".PoisonBombLocation\"P\n\021PoisonbombConvert"
-  "\022\021\n\tMonsterId\030\001 \001(\005\022\022\n\nPositionId\030\002 \001(\005\022"
-  "\024\n\014PoisonBombId\030\003 \001(\005\"h\n\023SCPoisonBombCon"
-  "vert\022\024\n\014PoisonBombId\030\001 \001(\005\022%\n\004Info\030\002 \003(\013"
-  "2\027.JSBY.PoisonbombConvert\022\024\n\014KillPlayerI"
-  "D\030\003 \001(\005\"\223\001\n\016PoisonbombType\022\021\n\tMonsterId\030"
-  "\001 \001(\005\022\032\n\022MasterPoisonBombId\030\002 \001(\005\022\024\n\014Poi"
-  "sonBombId\030\003 \001(\005\022\024\n\014KillPlayerId\030\004 \001(\005\022\021\n"
-  "\tChannelId\030\005 \001(\005\022\023\n\013ProcessTime\030\006 \001(\005\"7\n"
-  "\021SCPoisonbombTypes\022\"\n\004Info\030\001 \003(\0132\024.JSBY."
-  "PoisonbombType\"1\n\017CSDragonRelease\022\r\n\005Rat"
-  "io\030\001 \001(\002\022\017\n\007PropsID\030\002 \001(\005\"c\n\017SCDragonRel"
-  "ease\022\021\n\tStartTime\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001("
-  "\005\022+\n\nAttackInfo\030\003 \001(\0132\027.JSBY.SpecialAtta"
-  "ckInfo\"g\n\023SCPushDragonRelease\022\021\n\tStartTi"
-  "me\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022+\n\nAttackInfo"
-  "\030\003 \001(\0132\027.JSBY.SpecialAttackInfo\"#\n\017SCPus"
-  "hDragonEnd\022\020\n\010PlayerId\030\001 \001(\005\"W\n\025SCPushSe"
-  "lfDragonState\022\030\n\020ProgressBarCount\030\001 \001(\005\022"
-  "\023\n\013ProgressBar\030\002 \001(\005\022\017\n\007PropsID\030\003 \001(\005\"$\n"
-  "\022CSOneKeyUpdateHero\022\016\n\006HeroId\030\001 \003(\005\"\210\001\n\022"
-  "SCOneKeyUpdateHero\022\020\n\010PlayerId\030\001 \001(\005\022&\n\t"
-  "LeaveInfo\030\002 \003(\0132\023.JSBY.TowerHeroInfo\022\'\n\n"
-  "updateInfo\030\003 \003(\0132\023.JSBY.TowerHeroInfo\022\017\n"
-  "\007TableId\030\004 \001(\005\"\266\001\n\030SCPushGhostDragonRele"
-  "ase\022\021\n\tStartTime\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005"
-  "\022\022\n\nPositionId\030\003 \001(\005\022\023\n\013AttackCount\030\004 \001("
-  "\005\022\020\n\010UseCount\030\005 \001(\005\022\r\n\005Ratio\030\006 \001(\005\022+\n\nAt"
-  "tackInfo\030\007 \001(\0132\027.JSBY.SpecialAttackInfo\""
-  "9\n\024SCPushGhostDragonEnd\022\020\n\010PlayerId\030\001 \001("
-  "\005\022\017\n\007TableID\030\002 \001(\005\"+\n\032SCPushSelfGhostDra"
-  "gonState\022\r\n\005Count\030\001 \001(\005\">\n\tHeroMoney\022\020\n\010"
-  "UniqueId\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022\r\n\005Mone"
-  "y\030\003 \001(\005\"9\n\023SCPushSyncHeroMoney\022\"\n\tHeroMo"
-  "ney\030\001 \003(\0132\017.JSBY.HeroMoney\"8\n\021SCPushMons"
-  "terDead\022\022\n\nPositionID\030\001 \001(\005\022\017\n\007TableID\030\002"
-  " \001(\005\" \n\013CSDebugData\022\021\n\tDebugData\030\001 \001(\t\"\r"
-  "\n\013SCDebugData\"H\n\021SCPushMonsterBuff\022\022\n\nPo"
-  "sitionID\030\001 \001(\005\022\020\n\010BuffType\030\002 \001(\005\022\r\n\005Stat"
-  "e\030\003 \001(\005\"2\n\nTableState\022\017\n\007TableId\030\001 \001(\005\022\023"
-  "\n\013TablePlayer\030\002 \001(\005\"\016\n\014CSGetTableId\"1\n\014S"
-  "CGetTableId\022!\n\007TableId\030\001 \001(\0132\020.JSBY.Tabl"
-  "eState\"B\n\020SCPlayerVipLevel\022\020\n\010PlayerId\030\001"
-  " \001(\005\022\r\n\005Level\030\002 \001(\005\022\r\n\005IsVip\030\003 \001(\010\"M\n\013Dr"
-  "agonProps\022\030\n\020ProgressBarCount\030\001 \001(\005\022\023\n\013P"
-  "rogressBar\030\002 \001(\005\022\017\n\007PropsID\030\003 \001(\005\"\022\n\020CSG"
-  "etDragonProps\"3\n\020SCGetDragonProps\022\037\n\004Inf"
-  "o\030\001 \003(\0132\021.JSBY.DragonProps\"%\n\022CSEquipDra"
-  "gonProps\022\017\n\007PropsID\030\001 \001(\005\"5\n\022SCEquipDrag"
-  "onProps\022\037\n\004Info\030\001 \001(\0132\021.JSBY.DragonProps"
-  "\"4\n\021SCPushDragonProps\022\037\n\004Info\030\001 \003(\0132\021.JS"
-  "BY.DragonProps\"i\n\010ShopInfo\022\016\n\006ShopID\030\001 \001"
-  "(\005\022\014\n\004Name\030\002 \001(\t\022\r\n\005Value\030\003 \001(\005\022\024\n\014Curre"
-  "ncyType\030\004 \001(\005\022\r\n\005Price\030\005 \001(\005\022\013\n\003Num\030\006 \001("
-  "\005\"5\n\rCSGetShopInfo\022$\n\014ShopInfoType\030\001 \001(\016"
-  "2\016.JSBY.ShopType\"-\n\rSCGetShopInfo\022\034\n\004Inf"
-  "o\030\001 \003(\0132\016.JSBY.ShopInfo\">\n\tPropsInfo\022\017\n\007"
-  "PropsID\030\001 \001(\005\022\020\n\010TotalNum\030\002 \001(\005\022\016\n\006AddNu"
-  "m\030\003 \001(\005\"0\n\017SCPushPropsInfo\022\035\n\004Info\030\001 \003(\013"
-  "2\017.JSBY.PropsInfo\"\024\n\022CSGetMaterialsInfo\""
-  "3\n\022SCGetMaterialsInfo\022\035\n\004Info\030\001 \003(\0132\017.JS"
-  "BY.PropsInfo\"\037\n\rCSExchangeBox\022\016\n\006TypeID\030"
-  "\001 \001(\005\"-\n\nRewardInfo\022\016\n\006PropID\030\001 \001(\005\022\017\n\007P"
-  "ropNum\030\002 \001(\005\"\210\001\n\rSCExchangeBox\022\016\n\006TypeID"
-  "\030\001 \001(\005\022\n\n\002ID\030\002 \001(\005\022 \n\006Reward\030\003 \001(\0132\020.JSB"
-  "Y.RewardInfo\022#\n\tAddReward\030\004 \001(\0132\020.JSBY.R"
-  "ewardInfo\022\024\n\014DoublingCost\030\005 \001(\005\"#\n\rCSDou"
-  "blingBox\022\022\n\nIsDoubling\030\001 \001(\010\"t\n\rSCDoubli"
-  "ngBox\022\020\n\010IsDouble\030\001 \001(\010\022\n\n\002ID\030\002 \001(\005\022 \n\006R"
+  "UniqueId\030\n \001(\005\022\017\n\007kill_id\030\013 \001(\005\"\021\n\017SCReq"
+  "uestAttack\"3\n\021SpecialAttackInfo\022\016\n\006KillI"
+  "D\030\001 \001(\005\022\016\n\006SelfID\030\002 \001(\005\"[\n\016SCQueenDieDat"
+  "a\022\014\n\004type\030\001 \001(\005\022\020\n\010rand_mul\030\002 \001(\005\022\024\n\014bas"
+  "e_outside\030\003 \003(\005\022\023\n\013base_inside\030\004 \003(\005\"\254\003\n"
+  "\013SCSyncMoney\022\r\n\005Money\030\001 \001(\003\022\021\n\tMonsterId"
+  "\030\002 \001(\005\022\022\n\nPositionId\030\003 \001(\005\022\014\n\004Type\030\004 \001(\005"
+  "\022\r\n\005Ratio\030\005 \001(\005\022\020\n\010PlayerId\030\006 \001(\005\022\026\n\016Mon"
+  "eyVariation\030\007 \001(\005\022\037\n\003Bom\030\010 \001(\0132\022.JSBY.Us"
+  "erBomTimes\022\024\n\014HeroUniqueId\030\t \001(\005\022+\n\nAtta"
+  "ckInfo\030\n \001(\0132\027.JSBY.SpecialAttackInfo\022\r\n"
+  "\005Eared\030\013 \001(\005\022\020\n\010AddRatio\030\014 \001(\005\022\024\n\014Balloo"
+  "nRatio\030\r \001(\005\022$\n\006Others\030\016 \001(\0132\024.JSBY.SCQu"
+  "eenDieData\022\025\n\rGiantHitPower\030\017 \001(\005\022\024\n\014Mxl"
+  "SealMoney\030\020 \001(\005\022\034\n\024MxlSealAddAwardRatio\030"
+  "\021 \001(\005\022\024\n\014BearMultiple\030\022 \003(\005\"\301\001\n\020SCPoison"
+  "BomTimes\022\022\n\nPositionId\030\001 \001(\005\022\r\n\005Times\030\002 "
+  "\001(\005\022\r\n\005Ratio\030\003 \001(\005\022\020\n\010AddTimes\030\004 \003(\005\022\024\n\014"
+  "KillPlayerId\030\005 \001(\005\022\024\n\014HeroUniqueId\030\006 \001(\005"
+  "\022+\n\nAttackInfo\030\007 \001(\0132\027.JSBY.SpecialAttac"
+  "kInfo\022\020\n\010AddRatio\030\010 \001(\005\"]\n\026CSChangePoiso"
+  "nBomTimes\022\022\n\nPositionId\030\001 \001(\005\022\030\n\020UsePosi"
+  "tionTimes\030\002 \001(\005\022\025\n\rNewPositionId\030\003 \001(\005\"\030"
+  "\n\026SCChangePoisonBomTimes\";\n\014CSEnterStage"
+  "\022\r\n\005Enter\030\001 \001(\010\022\034\n\004Mode\030\002 \001(\0162\016.JSBY.Mod"
+  "eType\" \n\014SCEnterStage\022\020\n\010UseRatio\030\001 \001(\005\""
+  "\034\n\013CSKeepRatio\022\r\n\005Ratio\030\001 \001(\005\"\r\n\013SCKeepR"
+  "atio\"\247\001\n\017TrusteeshipInfo\022\025\n\rIsTrusteeshi"
+  "p\030\001 \001(\010\022\024\n\014HighSetValue\030\002 \001(\005\022\023\n\013HighSet"
+  "Open\030\003 \001(\010\022\023\n\013LowSetValue\030\004 \001(\005\022\022\n\nLowSe"
+  "tOpen\030\005 \001(\010\022\024\n\014TimeSetValue\030\006 \001(\002\022\023\n\013Tim"
+  "eSetOpen\030\007 \001(\010\"\022\n\020CSGetTrusteeship\"[\n\020SC"
+  "GetTrusteeship\022#\n\004Info\030\001 \001(\0132\025.JSBY.Trus"
+  "teeshipInfo\022\020\n\010LeftTime\030\002 \001(\005\022\020\n\010VIPLeve"
+  "l\030\003 \001(\005\"7\n\020CSSetTrusteeship\022#\n\004Info\030\001 \001("
+  "\0132\025.JSBY.TrusteeshipInfo\"\022\n\020SCSetTrustee"
+  "ship\"6\n\020TrusteeshipMoney\022\023\n\013MonsterType\030"
+  "\001 \001(\005\022\r\n\005Money\030\002 \001(\005\"\"\n\020CSEndTrusteeship"
+  "\022\016\n\006Notify\030\001 \001(\010\"_\n\020SCEndTrusteeship\022$\n\004"
+  "Info\030\001 \001(\0132\026.JSBY.TrusteeshipMoney\022\022\n\nTo"
+  "talMoney\030\002 \001(\005\022\021\n\tTotalTime\030\003 \001(\005\"\016\n\014CSG"
+  "etVersion\"\035\n\014SCGetVersion\022\r\n\005IsNew\030\001 \001(\010"
+  "\"U\n\014ActivityInfo\022\n\n\002ID\030\001 \001(\005\022\r\n\005Money\030\002 "
+  "\001(\005\022\016\n\006Enzyme\030\003 \001(\005\022\014\n\004Name\030\004 \001(\t\022\014\n\004Fla"
+  "g\030\005 \001(\005\"\020\n\016CSActivityInfo\"j\n\016SCActivityI"
+  "nfo\022 \n\004Info\030\001 \001(\0132\022.JSBY.ActivityInfo\022\020\n"
+  "\010LeftTime\030\002 \001(\005\022\023\n\013Begint32ime\030\003 \001(\t\022\017\n\007"
+  "EndTime\030\004 \001(\t\"p\n\024SCNotifyActivityInfo\022 \n"
+  "\004Info\030\001 \001(\0132\022.JSBY.ActivityInfo\022\020\n\010LeftT"
+  "ime\030\002 \001(\005\022\023\n\013Begint32ime\030\003 \001(\t\022\017\n\007EndTim"
+  "e\030\004 \001(\t\" \n\022CSGetActivityAward\022\n\n\002ID\030\001 \001("
+  "\005\".\n\022SCGetActivityAward\022\n\n\002ID\030\001 \001(\005\022\014\n\004F"
+  "lag\030\002 \001(\005\"+\n\017CSButtonRecords\022\n\n\002ID\030\001 \001(\005"
+  "\022\014\n\004Mode\030\002 \001(\005\"\021\n\017SCButtonRecords\"\201\001\n\rTo"
+  "werHeroInfo\022\016\n\006HeroId\030\001 \001(\005\022\022\n\nPositionI"
+  "d\030\002 \001(\005\022\r\n\005IsAtk\030\003 \001(\010\022\021\n\tTimestamp\030\004 \001("
+  "\005\022\030\n\020TargetPositionId\030\005 \001(\005\022\020\n\010UniqueId\030"
+  "\006 \001(\005\"9\n\020TowerHeroAtkInfo\022\026\n\016HeroPositio"
+  "nId\030\001 \001(\005\022\r\n\005IsAtk\030\002 \001(\010\"\354\001\n\017TablePlayer"
+  "Info\022\017\n\007ChairId\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022"
+  "\r\n\005Money\030\003 \001(\003\022\013\n\003Sex\030\004 \001(\005\022\014\n\004Name\030\005 \001("
+  "\t\022\014\n\004Head\030\006 \001(\t\022!\n\004Info\030\007 \003(\0132\023.JSBY.Tow"
+  "erHeroInfo\022\026\n\016MoneyVariation\030\010 \001(\005\022\020\n\010Vi"
+  "pLevel\030\t \001(\005\022\r\n\005IsVip\030\n \001(\010\022\022\n\nBackgroun"
+  "d\030\013 \001(\005\022\016\n\006Effect\030\014 \001(\005\"P\n\030SCNotifyTower"
+  "TablePlayer\022#\n\004Info\030\001 \003(\0132\025.JSBY.TablePl"
+  "ayerInfo\022\017\n\007TableID\030\002 \001(\005\";\n\021SCLeaveTowe"
+  "rTable\022\020\n\010PlayerId\030\001 \001(\005\022\024\n\014IsAgainEnter"
+  "\030\002 \001(\010\"\213\001\n\014TowerMonster\022\020\n\010Position\030\001 \001("
+  "\005\022\023\n\013ProcessTime\030\002 \001(\005\022\021\n\tReadyTime\030\003 \001("
+  "\005\022\021\n\tMonsterID\030\004 \001(\005\022\014\n\004Buff\030\005 \003(\005\022\021\n\tIs"
+  "Connect\030\006 \001(\010\022\r\n\005Level\030\007 \001(\005\"Q\n\023ChannelT"
+  "owerMonster\022\021\n\tChannelId\030\001 \001(\005\022\'\n\013Channe"
+  "lInfo\030\002 \003(\0132\022.JSBY.TowerMonster\"(\n\021SCGet"
+  "TowerMonster\022\023\n\013ReqPlayerId\030\001 \001(\005\"Q\n\021CSG"
+  "etTowerMonster\022\023\n\013ReqPlayerId\030\001 \001(\005\022\'\n\004I"
+  "nfo\030\002 \001(\0132\031.JSBY.ChannelTowerMonster\"Q\n\025"
+  "SCSyncGetTowerMonster\022\017\n\007TableID\030\001 \001(\005\022\'"
+  "\n\004Info\030\002 \003(\0132\031.JSBY.ChannelTowerMonster\""
+  "J\n\016SCTowerMonster\022\017\n\007TableID\030\001 \001(\005\022\'\n\004In"
+  "fo\030\002 \003(\0132\031.JSBY.ChannelTowerMonster\":\n\022C"
+  "STowerHeroAtkInfo\022$\n\004Info\030\001 \003(\0132\026.JSBY.T"
+  "owerHeroAtkInfo\":\n\022SCTowerHeroAtkInfo\022$\n"
+  "\004Info\030\001 \003(\0132\026.JSBY.TowerHeroAtkInfo\"E\n\021C"
+  "STowerUpdateHero\022!\n\004Info\030\001 \001(\0132\023.JSBY.To"
+  "werHeroInfo\022\r\n\005Leave\030\002 \001(\010\"%\n\021SCTowerUpd"
+  "ateHero\022\020\n\010UniqueId\030\001 \001(\005\"^\n\025SCPushTower"
+  "UpdateHero\022!\n\004Info\030\001 \001(\0132\023.JSBY.TowerHer"
+  "oInfo\022\023\n\013ReqPlayerId\030\002 \001(\005\022\r\n\005Leave\030\003 \001("
+  "\010\">\n\016LockTargetInfo\022\022\n\nPositionId\030\001 \001(\005\022"
+  "\030\n\020TargetPositionId\030\002 \001(\005\"A\n\027CSTowerPlay"
+  "erLockTarget\022&\n\010LockInfo\030\001 \003(\0132\024.JSBY.Lo"
+  "ckTargetInfo\"A\n\027SCTowerPlayerLockTarget\022"
+  "&\n\010LockInfo\030\001 \003(\0132\024.JSBY.LockTargetInfo\""
+  "$\n\022CSChangeBackground\022\016\n\006IsBack\030\001 \001(\010\"\024\n"
+  "\022SCChangeBackground\"(\n\022CSTowerMonsterExi"
+  "t\022\022\n\nPositionId\030\001 \001(\005\"\024\n\022SCTowerMonsterE"
+  "xit\"\022\n\020CSGetCurrentTime\"%\n\020SCGetCurrentT"
+  "ime\022\021\n\tTimestamp\030\001 \001(\005\"4\n\016TowerGuideInfo"
+  "\022\021\n\tGuideStep\030\001 \001(\005\022\017\n\007IsFinsh\030\002 \001(\010\"\020\n\016"
+  "CSGetTowerStep\":\n\017SCGetTowerGuide\022\'\n\tGui"
+  "deInfo\030\001 \001(\0132\024.JSBY.TowerGuideInfo\"9\n\016CS"
+  "SetTowerStep\022\'\n\tGuideInfo\030\001 \001(\0132\024.JSBY.T"
+  "owerGuideInfo\"\020\n\016SCSetTowerStep\"C\n\023CSTow"
+  "erExchangeHero\022\025\n\rNewPositionId\030\001 \001(\005\022\025\n"
+  "\rOldPositionId\030\002 \001(\005\"X\n\023SCTowerExchangeH"
+  "ero\022\025\n\rNewPositionId\030\001 \001(\005\022\025\n\rOldPositio"
+  "nId\030\002 \001(\005\022\023\n\013ReqPlayerId\030\003 \001(\005\"-\n\032SCLeav"
+  "eTowerTableCountdown\022\017\n\007TableID\030\001 \001(\005\"E\n"
+  "\022PoisonBombLocation\022\n\n\002ID\030\001 \001(\005\022\t\n\001X\030\002 \001"
+  "(\005\022\t\n\001Y\030\003 \001(\005\022\r\n\005Angle\030\004 \001(\005\">\n\024CSPoison"
+  "BombLocation\022&\n\004Info\030\001 \003(\0132\030.JSBY.Poison"
+  "BombLocation\">\n\024SCPoisonBombLocation\022&\n\004"
+  "Info\030\001 \003(\0132\030.JSBY.PoisonBombLocation\"P\n\021"
+  "PoisonbombConvert\022\021\n\tMonsterId\030\001 \001(\005\022\022\n\n"
+  "PositionId\030\002 \001(\005\022\024\n\014PoisonBombId\030\003 \001(\005\"h"
+  "\n\023SCPoisonBombConvert\022\024\n\014PoisonBombId\030\001 "
+  "\001(\005\022%\n\004Info\030\002 \003(\0132\027.JSBY.PoisonbombConve"
+  "rt\022\024\n\014KillPlayerID\030\003 \001(\005\"\223\001\n\016PoisonbombT"
+  "ype\022\021\n\tMonsterId\030\001 \001(\005\022\032\n\022MasterPoisonBo"
+  "mbId\030\002 \001(\005\022\024\n\014PoisonBombId\030\003 \001(\005\022\024\n\014Kill"
+  "PlayerId\030\004 \001(\005\022\021\n\tChannelId\030\005 \001(\005\022\023\n\013Pro"
+  "cessTime\030\006 \001(\005\"7\n\021SCPoisonbombTypes\022\"\n\004I"
+  "nfo\030\001 \003(\0132\024.JSBY.PoisonbombType\"1\n\017CSDra"
+  "gonRelease\022\r\n\005Ratio\030\001 \001(\002\022\017\n\007PropsID\030\002 \001"
+  "(\005\"c\n\017SCDragonRelease\022\021\n\tStartTime\030\001 \001(\005"
+  "\022\020\n\010PlayerId\030\002 \001(\005\022+\n\nAttackInfo\030\003 \001(\0132\027"
+  ".JSBY.SpecialAttackInfo\"g\n\023SCPushDragonR"
+  "elease\022\021\n\tStartTime\030\001 \001(\005\022\020\n\010PlayerId\030\002 "
+  "\001(\005\022+\n\nAttackInfo\030\003 \001(\0132\027.JSBY.SpecialAt"
+  "tackInfo\"#\n\017SCPushDragonEnd\022\020\n\010PlayerId\030"
+  "\001 \001(\005\"W\n\025SCPushSelfDragonState\022\030\n\020Progre"
+  "ssBarCount\030\001 \001(\005\022\023\n\013ProgressBar\030\002 \001(\005\022\017\n"
+  "\007PropsID\030\003 \001(\005\"$\n\022CSOneKeyUpdateHero\022\016\n\006"
+  "HeroId\030\001 \003(\005\"\210\001\n\022SCOneKeyUpdateHero\022\020\n\010P"
+  "layerId\030\001 \001(\005\022&\n\tLeaveInfo\030\002 \003(\0132\023.JSBY."
+  "TowerHeroInfo\022\'\n\nupdateInfo\030\003 \003(\0132\023.JSBY"
+  ".TowerHeroInfo\022\017\n\007TableId\030\004 \001(\005\"\266\001\n\030SCPu"
+  "shGhostDragonRelease\022\021\n\tStartTime\030\001 \001(\005\022"
+  "\020\n\010PlayerId\030\002 \001(\005\022\022\n\nPositionId\030\003 \001(\005\022\023\n"
+  "\013AttackCount\030\004 \001(\005\022\020\n\010UseCount\030\005 \001(\005\022\r\n\005"
+  "Ratio\030\006 \001(\005\022+\n\nAttackInfo\030\007 \001(\0132\027.JSBY.S"
+  "pecialAttackInfo\"9\n\024SCPushGhostDragonEnd"
+  "\022\020\n\010PlayerId\030\001 \001(\005\022\017\n\007TableID\030\002 \001(\005\"+\n\032S"
+  "CPushSelfGhostDragonState\022\r\n\005Count\030\001 \001(\005"
+  "\">\n\tHeroMoney\022\020\n\010UniqueId\030\001 \001(\005\022\020\n\010Playe"
+  "rId\030\002 \001(\005\022\r\n\005Money\030\003 \001(\005\"9\n\023SCPushSyncHe"
+  "roMoney\022\"\n\tHeroMoney\030\001 \003(\0132\017.JSBY.HeroMo"
+  "ney\"8\n\021SCPushMonsterDead\022\022\n\nPositionID\030\001"
+  " \001(\005\022\017\n\007TableID\030\002 \001(\005\" \n\013CSDebugData\022\021\n\t"
+  "DebugData\030\001 \001(\t\"\r\n\013SCDebugData\"H\n\021SCPush"
+  "MonsterBuff\022\022\n\nPositionID\030\001 \001(\005\022\020\n\010BuffT"
+  "ype\030\002 \001(\005\022\r\n\005State\030\003 \001(\005\"2\n\nTableState\022\017"
+  "\n\007TableId\030\001 \001(\005\022\023\n\013TablePlayer\030\002 \001(\005\"\016\n\014"
+  "CSGetTableId\"1\n\014SCGetTableId\022!\n\007TableId\030"
+  "\001 \001(\0132\020.JSBY.TableState\"B\n\020SCPlayerVipLe"
+  "vel\022\020\n\010PlayerId\030\001 \001(\005\022\r\n\005Level\030\002 \001(\005\022\r\n\005"
+  "IsVip\030\003 \001(\010\"M\n\013DragonProps\022\030\n\020ProgressBa"
+  "rCount\030\001 \001(\005\022\023\n\013ProgressBar\030\002 \001(\005\022\017\n\007Pro"
+  "psID\030\003 \001(\005\"\022\n\020CSGetDragonProps\"3\n\020SCGetD"
+  "ragonProps\022\037\n\004Info\030\001 \003(\0132\021.JSBY.DragonPr"
+  "ops\"%\n\022CSEquipDragonProps\022\017\n\007PropsID\030\001 \001"
+  "(\005\"5\n\022SCEquipDragonProps\022\037\n\004Info\030\001 \001(\0132\021"
+  ".JSBY.DragonProps\"4\n\021SCPushDragonProps\022\037"
+  "\n\004Info\030\001 \003(\0132\021.JSBY.DragonProps\"i\n\010ShopI"
+  "nfo\022\016\n\006ShopID\030\001 \001(\005\022\014\n\004Name\030\002 \001(\t\022\r\n\005Val"
+  "ue\030\003 \001(\005\022\024\n\014CurrencyType\030\004 \001(\005\022\r\n\005Price\030"
+  "\005 \001(\005\022\013\n\003Num\030\006 \001(\005\"5\n\rCSGetShopInfo\022$\n\014S"
+  "hopInfoType\030\001 \001(\0162\016.JSBY.ShopType\"-\n\rSCG"
+  "etShopInfo\022\034\n\004Info\030\001 \003(\0132\016.JSBY.ShopInfo"
+  "\">\n\tPropsInfo\022\017\n\007PropsID\030\001 \001(\005\022\020\n\010TotalN"
+  "um\030\002 \001(\005\022\016\n\006AddNum\030\003 \001(\005\"0\n\017SCPushPropsI"
+  "nfo\022\035\n\004Info\030\001 \003(\0132\017.JSBY.PropsInfo\"\024\n\022CS"
+  "GetMaterialsInfo\"3\n\022SCGetMaterialsInfo\022\035"
+  "\n\004Info\030\001 \003(\0132\017.JSBY.PropsInfo\"\037\n\rCSExcha"
+  "ngeBox\022\016\n\006TypeID\030\001 \001(\005\"-\n\nRewardInfo\022\016\n\006"
+  "PropID\030\001 \001(\005\022\017\n\007PropNum\030\002 \001(\005\"\210\001\n\rSCExch"
+  "angeBox\022\016\n\006TypeID\030\001 \001(\005\022\n\n\002ID\030\002 \001(\005\022 \n\006R"
   "eward\030\003 \001(\0132\020.JSBY.RewardInfo\022#\n\tAddRewa"
-  "rd\030\004 \001(\0132\020.JSBY.RewardInfo\".\n\tCSShopBuy\022"
-  "\017\n\007PropsID\030\001 \001(\005\022\020\n\010PropsNum\030\002 \001(\005\".\n\tSC"
-  "ShopBuy\022\017\n\007PropsID\030\001 \001(\005\022\020\n\010PropsNum\030\002 \001"
-  "(\005\"A\n\rMaterialsInfo\022\022\n\nPositionId\030\001 \001(\005\022"
-  "\017\n\007PropsID\030\002 \001(\005\022\013\n\003Num\030\003 \001(\005\"8\n\023SCPushD"
-  "ropMaterials\022!\n\004Info\030\001 \003(\0132\023.JSBY.Materi"
-  "alsInfo\"\307\001\n\022SCPushBalloonTimes\022\022\n\nPositi"
-  "onId\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022\021\n\tFreeTime"
-  "s\030\003 \001(\005\022\r\n\005Ratio\030\004 \001(\005\022\021\n\tStartTime\030\005 \001("
-  "\005\022\023\n\013AttackCount\030\006 \001(\005\022+\n\nAttackInfo\030\007 \001"
-  "(\0132\027.JSBY.SpecialAttackInfo\022\024\n\014HeroUniqu"
-  "eId\030\010 \001(\005\"&\n\nSwitchInfo\022\n\n\002Id\030\001 \001(\005\022\014\n\004O"
-  "pen\030\002 \001(\010\"2\n\020SCFunctionSwitch\022\036\n\004Info\030\001 "
-  "\003(\0132\020.JSBY.SwitchInfo\"\024\n\022CSSealConvertMo"
-  "ney\"C\n\022SCSealConvertMoney\022\020\n\010PlayerId\030\001 "
-  "\001(\005\022\014\n\004Seal\030\002 \001(\005\022\r\n\005Money\030\003 \001(\005\"7\n\016Conn"
-  "ectMonster\022\022\n\nPositionID\030\001 \001(\005\022\021\n\tMonste"
-  "rID\030\002 \001(\005\"j\n\024SCPushConnectMonster\022%\n\007Con"
-  "nect\030\001 \003(\0132\024.JSBY.ConnectMonster\022\021\n\tConn"
-  "ectID\030\002 \001(\005\022\030\n\020AttackPositionID\030\003 \001(\005\"\246\001"
-  "\n\016SCGiantUpgrade\022\020\n\010PlayerId\030\001 \001(\005\022\022\n\nPo"
-  "sitionId\030\002 \001(\005\022\r\n\005Level\030\003 \001(\005\022\023\n\013AttackT"
-  "imes\030\004 \001(\005\022+\n\nAttackInfo\030\005 \001(\0132\027.JSBY.Sp"
-  "ecialAttackInfo\022\016\n\006IsOver\030\006 \001(\010\022\r\n\005Ratio"
-  "\030\007 \001(\005\"6\n\016SCPushGiantEnd\022\020\n\010PlayerId\030\001 \001"
-  "(\005\022\022\n\nPositionId\030\002 \001(\005\"\204\001\n\nSCDropCard\022\n\n"
-  "\002ID\030\001 \001(\005\022\016\n\006TypeID\030\002 \001(\005\022\017\n\007Quality\030\003 \001"
-  "(\005\022\021\n\tBasePower\030\004 \001(\005\022\023\n\013ExtendPower\030\005 \001"
-  "(\005\022\r\n\005Equip\030\006 \001(\005\022\022\n\nPositionID\030\007 \001(\005\"W\n"
-  "\rSCAcquireSeal\022\020\n\010PlayerId\030\001 \001(\005\022\034\n\024MxlS"
-  "ealAddAwardRatio\030\002 \001(\005\022\026\n\016HeroPositionId"
-  "\030\003 \001(\005\"L\n\nFreshMoney\022\020\n\010PlayerId\030\001 \001(\005\022\013"
-  "\n\003Fee\030\002 \001(\005\022\016\n\006GameID\030\003 \001(\005\022\017\n\007CYMoney\030\004"
-  " \001(\005\"D\n\017ShutdownService\022\016\n\006GameID\030\001 \001(\005\022"
-  "\017\n\007ArenaID\030\002 \001(\005\022\020\n\010ServerID\030\003 \001(\005\"\"\n\014SC"
-  "LogoutGame\022\022\n\nlogoutType\030\001 \001(\005*\276\020\n\rEMsgI"
-  "DSubGame\022\017\n\013Req_Invalid\020\000\022\r\n\010Req_Ping\020\350\007"
-  "\022\033\n\026Req_LoginGameWithToken\020\351\007\022\023\n\016Req_Log"
-  "outGame\020\352\007\022\024\n\017Push_LogoutGame\020\353\007\022\026\n\021Req_"
-  "RequestAttack\020\354\007\022\023\n\016Push_SyncMoney\020\355\007\022\027\n"
-  "\022Push_SyncFreeTimes\020\356\007\022\027\n\022Req_UpdateHero"
-  "Info\020\357\007\022\030\n\023Req_UpgradeHeroInfo\020\360\007\022\023\n\016Req"
-  "_EnterStage\020\361\007\022\030\n\023Push_PoisonBomTimes\020\204\010"
-  "\022\027\n\022Req_GetTrusteeship\020\205\010\022\027\n\022Req_SetTrus"
-  "teeship\020\206\010\022\027\n\022Req_EndTrusteeship\020\207\010\022\030\n\023P"
-  "ush_EndTrusteeship\020\210\010\022\023\n\016Req_GetVersion\020"
-  "\217\010\022\035\n\030Req_ChangePoisonBomTimes\020\220\010\022\022\n\rReq"
-  "_KeepRatio\020\224\010\022\031\n\024Push_LeaveTowerTable\020\226\010"
-  "\022 \n\033Push_NotifyTowerTablePlayer\020\227\010\022\031\n\024Pu"
-  "sh_GetTowerMonster\020\230\010\022\030\n\023Req_GetTowerMon"
-  "ster\020\231\010\022\026\n\021Push_TowerMonster\020\232\010\022\031\n\024Req_T"
-  "owerHeroAtkInfo\020\233\010\022\032\n\025Push_TowerHeroAtkI"
-  "nfo\020\234\010\022\030\n\023Req_TowerUpdateHero\020\235\010\022\031\n\024Push"
-  "_TowerUpdateHero\020\236\010\022\036\n\031Req_TowerPlayerLo"
-  "ckTarget\020\237\010\022\037\n\032Push_TowerPlayerLockTarge"
-  "t\020\240\010\022\031\n\024Req_ChangeBackground\020\241\010\022\027\n\022Req_G"
-  "etCurrentTime\020\242\010\022\035\n\030Push_SyncGetTowerMon"
-  "ster\020\256\010\022\031\n\024Req_TowerMonsterExit\020\267\010\022\031\n\024Re"
-  "q_GetTowerNewGuide\020\271\010\022\031\n\024Req_SetTowerNew"
-  "Guide\020\272\010\022\025\n\020Req_ActivityInfo\020\273\010\022\034\n\027Push_"
-  "NotifyActivityInfo\020\274\010\022\031\n\024Req_GetActivity"
-  "Award\020\275\010\022\032\n\025Req_TowerExchangeHero\020\301\010\022\033\n\026"
-  "Push_TowerExchangeHero\020\313\010\022\026\n\021Req_ButtonR"
-  "ecords\020\314\010\022\033\n\026Push_SyncBatBulletInfo\020\315\010\022\""
-  "\n\035Push_LeaveTowerTableCountdown\020\316\010\022\033\n\026Re"
-  "q_PoisonBombLocation\020\317\010\022\034\n\027Push_PoisonBo"
-  "mbLocation\020\320\010\022\033\n\026Push_PoisonBombConvert\020"
-  "\321\010\022\030\n\023Push_PoisonBombType\020\322\010\022\026\n\021Req_Drag"
-  "onRelease\020\323\010\022\027\n\022Push_DragonRelease\020\324\010\022\023\n"
-  "\016Push_DragonEnd\020\325\010\022\031\n\024Push_SelfDragonSta"
-  "te\020\326\010\022\031\n\024Req_OneKeyUpdateHero\020\327\010\022\032\n\025Push"
-  "_OneKeyUpdateHero\020\330\010\022\034\n\027Push_GhostDragon"
-  "Release\020\331\010\022\030\n\023Push_GhostDragonEnd\020\332\010\022\036\n\031"
-  "Push_SelfGhostDragonState\020\333\010\022\027\n\022Push_Syn"
-  "cHeroMoney\020\334\010\022\031\n\024Push_PushMonsterDead\020\335\010"
-  "\022\022\n\rReq_DebugData\020\336\010\022\031\n\024Push_PushMonster"
-  "Buff\020\337\010\022\023\n\016Req_GetTableId\020\340\010\022\030\n\023Push_Pla"
-  "yerVipLevel\020\341\010\022\027\n\022Req_GetDragonProps\020\342\010\022"
-  "\031\n\024Req_EquipDragonProps\020\343\010\022\025\n\020Push_Drago"
-  "nProps\020\344\010\022\024\n\017Req_GetShopInfo\020\345\010\022\023\n\016Push_"
-  "PropsInfo\020\346\010\022\031\n\024Req_GetMaterialsInfo\020\347\010\022"
-  "\024\n\017Req_ExchangeBox\020\350\010\022\024\n\017Req_DoublingBox"
-  "\020\351\010\022\020\n\013Req_ShopBuy\020\352\010\022\027\n\022Push_DropMateri"
-  "als\020\353\010\022\026\n\021Push_BalloonTimes\020\354\010\022\030\n\023Push_F"
-  "unctionSwitch\020\355\010\022\030\n\023Push_ConnectMonster\020"
-  "\356\010\022\026\n\021Push_GiantUpgrade\020\364\010\022\026\n\021Push_PushG"
-  "iantEnd\020\365\010\022\022\n\rPush_DropCard\020\366\010\022\030\n\023Push_A"
-  "cquireMxlSeal\020\367\010\022\031\n\024Req_SealConvertMoney"
-  "\020\370\010\022\022\n\rErrorSubScore\020\371\010*\246\025\n\007ErrCode\022\013\n\007S"
-  "uccess\020\000\022\027\n\022EnterRoomIsClosing\020\347\007\022\026\n\021QPE"
-  "nterRoomFailed\020\221N\022\034\n\027QPBaseUserInfoGetFa"
-  "iled\020\222N\022\025\n\020QPReadGoldFailed\020\223N\022\026\n\021LackMo"
-  "neyInServer\020\224N\022\031\n\024LoadPlayerDataFailed\020\225"
-  "N\022\025\n\020ParameterIsWrong\020\226N\022\020\n\013LackOfMoney\020"
-  "\227N\022\026\n\021DeserializeFailed\020\230N\022\027\n\022CreatePlay"
-  "erFailed\020\231N\022\023\n\016PlayerNotExist\020\232N\022\027\n\022Play"
-  "erAlreadyLogin\020\233N\022\024\n\017ConfigNoHasHero\020\234N\022"
-  "\024\n\017PlayerNoHasHero\020\235N\022\026\n\021HeroPositionErr"
-  "or\020\236N\022\033\n\026HeroHasUpgradeMaxLevel\020\237N\022\027\n\022Ha"
-  "sNotEnoughEnzyme\020\240N\022\027\n\022ConfigNoHasMonste"
-  "r\020\241N\022\025\n\020HeroUpdateFailed\020\242N\022\021\n\014HeroHasEx"
-  "ist\020\243N\022\030\n\023AttackMonsterFailed\020\244N\022\024\n\017Mons"
-  "terScoreErr\020\245N\022\032\n\025NotFindLiquidMedicine\020"
-  "\246N\022\037\n\032HasNotEnoughLiquidMedicine\020\247N\022\026\n\021N"
-  "otFindLaboratory\020\250N\022\036\n\031LaboratoryUpgrade"
-  "MaxLevel\020\251N\022\037\n\032NotFindLevelUnlockEquatio"
-  "n\020\252N\022\031\n\024UnlockParameterError\020\253N\022\030\n\023Labor"
-  "atoryNotUnlock\020\254N\022\032\n\025NotFindEnzymeEquati"
-  "on\020\255N\022\"\n\035LaboratoryNotReachUnlockLevel\020\256"
-  "N\022\030\n\023LaboratoryHasUnlock\020\257N\022\025\n\020NotFindDa"
-  "ilyTask\020\260N\022\030\n\023NotFindDailyTaskCfg\020\261N\022\031\n\024"
-  "HasGetDailyTaskAward\020\262N\022\036\n\031NoReachDailyT"
-  "askCondition\020\263N\022\035\n\030NoReachDailyTaskSched"
-  "ule\020\264N\022\025\n\020DailyTaskIDError\020\265N\022\027\n\022ReachDa"
-  "ilyTaskOver\020\266N\022\023\n\016IsNotStageMode\020\267N\022\027\n\022M"
-  "odeNotExistMoster\020\270N\022\026\n\021NoExistGhostLoon"
-  "g\020\271N\022\036\n\031BuyLiquidMedicineMaxTimes\020\272N\022\034\n\027"
-  "HighModeMonsterSetError\020\273N\022\023\n\016MonsterHas"
-  "Kill\020\274N\022\025\n\020TrusteeshipIsEnd\020\275N\022\030\n\023Truste"
-  "eshipCfgError\020\276N\022\032\n\025TrusteeshipNoVIPLeve"
-  "l\020\277N\022\025\n\020NotUseSameLiquid\020\300N\022\031\n\024PlayerNot"
-  "Trusteeship\020\301N\022\024\n\017ExistWaitPlayer\020\302N\022\030\n\023"
-  "SendProtoFrequently\020\303N\022\035\n\030PoisonBomPosit"
-  "ionIdError\020\304N\022\032\n\025PoisonBomTimesNotFind\020\305"
-  "N\022\035\n\030NotReachUnlockConditions\020\306N\022\030\n\023HasG"
-  "etScheduleAward\020\307N\022\027\n\022NotFindScheduleCfg"
-  "\020\310N\022\034\n\027BuyNostrumLiquidOnlyOne\020\311N\022\027\n\022Her"
-  "oLevelNotUnlock\020\312N\022\026\n\021NoExistMergeSkill\020"
-  "\313N\022\026\n\021HasNotEnoughStone\020\314N\022\035\n\030HasNotEnou"
-  "ghCrystalStone\020\315N\022\035\n\030NotKillingEnoughMon"
-  "sters\020\316N\022\025\n\020Notint32owerMode\020\317N\022\024\n\017Notin"
-  "t32hisMode\020\320N\022\024\n\017NotExistMonster\020\321N\022\032\n\025H"
-  "asHeroOfOtherPlayers\020\322N\022\026\n\021HasNotEnoughS"
-  "core\020\323N\022\026\n\021PositionNoHasHero\020\324N\022\023\n\016PassN"
-  "oNotExist\020\325N\022\023\n\016NotInMultiMode\020\326N\022\031\n\024Hig"
-  "hModeMonsterNoCfg\020\327N\022\030\n\023NightKingBossHas"
-  "Max\020\330N\022\026\n\021HeroAppearedIsMax\020\331N\022\030\n\023Failur"
-  "eToEnterStage\020\332N\022\032\n\025PositionIsOtherPlaye"
-  "r\020\333N\022\031\n\024MultiTableStateError\020\334N\022\020\n\013InOth"
-  "erMode\020\335N\022\026\n\021NotEnoughStageNum\020\336N\022\031\n\024New"
-  "GuideHasCompleted\020\337N\022\025\n\020ActivityNotExist"
-  "\020\340N\022\031\n\024ActivityNotCondition\020\341N\022\030\n\023Activi"
-  "tyHasGetAward\020\342N\022\030\n\023ActivityIsNotWeChat\020"
-  "\343N\022\021\n\014HasOtherHero\020\344N\022\025\n\020BatBulletNotFin"
-  "d\020\345N\022\025\n\020DragonNotRelease\020\346N\022\025\n\020DragonNow"
-  "Release\020\347N\022\023\n\016DragonCoolDown\020\350N\022\037\n\032Trust"
-  "eeshipDragonNotRealse\020\351N\022\033\n\026DragonAttack"
-  "ConfigWron\020\352N\022\032\n\025GhostDragonNotRelease\020\353"
-  "N\022\021\n\014InvalidToken\020\354N\022\036\n\031LoadPlayerWithPr"
-  "opsFailed\020\355N\022\025\n\020PlayerDataFailed\020\356N\022\030\n\023E"
-  "nterGameNotifyHall\020\357N\022\023\n\016NotDragonProps\020"
-  "\360N\022\024\n\017VipPropsExpired\020\361N\022\030\n\023UseHeroNeedV"
-  "ipProps\020\362N\022\026\n\021NotEnoughVipLevel\020\363N\022\027\n\022No"
-  "tEnoughMaterials\020\364N\022\026\n\021NotEnoughDiamonds"
-  "\020\365N\022\025\n\020NotFindGragonBox\020\366N\022\021\n\014NotFindGoo"
-  "ds\020\367N\022\022\n\rGoodsNumError\020\370N\022\026\n\021NotAttackSa"
-  "meType\020\371N\022\025\n\020HeroMxlOverLimit\020\372N*H\n\010Mode"
-  "Type\022\t\n\005Stage\020\000\022\010\n\004High\020\001\022\t\n\005Tower\020\002\022\t\n\005"
-  "Multi\020\003\022\010\n\004None\020\004\022\007\n\003Max\020\005*N\n\010StepType\022\014"
-  "\n\010StepHigh\020\000\022\023\n\017StepUpgradeHero\020\001\022\022\n\016Ste"
-  "pGhostLoong\020\002\022\013\n\007StepMax\020\003*8\n\010ShopType\022\014"
-  "\n\010NoneType\020\000\022\r\n\tMaterials\020\001\022\017\n\013MaxShopTy"
-  "pe\020\002*\211\004\n\013HallMsgCode\022\017\n\013HMC_Invalid\020\000\022\014\n"
-  "\010HMC_CHat\020\001\022\024\n\020HMC_ServerUpdate\020\002\022\023\n\017HMC"
-  "_MailPublish\020\007\022\027\n\023HMC_AwardGoldUpdate\020\010\022"
-  "\035\n\031HMC_TriggerArenaAwardGold\020\t\022\037\n\033HMC_Aw"
-  "ardGoldPoolTriggerLog\020\n\022\022\n\016HMC_FreshMone"
-  "y\020\013\022\034\n\030HMC_BplUpdateJackpotPool\020\014\022\036\n\032HMC"
-  "_BplInsertJackpotRecord\020\r\022#\n\037HMC_AddAren"
-  "aAwardGoldPoolNotify\020\016\022\014\n\010HMC_Ping\020\017\022\027\n\023"
-  "HMC_ShutdownService\020\020\022\032\n\026HMC_TransferToC"
-  "elint32\020\021\022\030\n\024HMC_CheckWeChatLogin\020\022\022\035\n\031H"
-  "MC_UserInfoUserEnterGame\020\023\022\034\n\030HMC_UserIn"
-  "foUserExitGame\020\024\022\022\n\016HMC_AntinDulge\020\025\022\027\n\023"
-  "HMC_TurntableRecord\020\026\022\031\n\025HMC_GetAwardGol"
-  "dValue\020\027*\274\001\n\020HallMsgErrorCode\022\020\n\014HMEC_In"
-  "valid\020\000\022\016\n\nHMEC_Param\020\001\022\021\n\rHMEC_Register"
-  "\020\002\022\017\n\013HMEC_Sucess\020\003\022\027\n\023HMEC_PlayerNotExi"
-  "st\020\004\022\032\n\026HMEC_DeserializeFailed\020\005\022\027\n\023HMEC"
-  "_FreshUserMoney\020\006\022\024\n\020HMEC_SystemError\020\007b"
-  "\006proto3"
+  "rd\030\004 \001(\0132\020.JSBY.RewardInfo\022\024\n\014DoublingCo"
+  "st\030\005 \001(\005\"#\n\rCSDoublingBox\022\022\n\nIsDoubling\030"
+  "\001 \001(\010\"t\n\rSCDoublingBox\022\020\n\010IsDouble\030\001 \001(\010"
+  "\022\n\n\002ID\030\002 \001(\005\022 \n\006Reward\030\003 \001(\0132\020.JSBY.Rewa"
+  "rdInfo\022#\n\tAddReward\030\004 \001(\0132\020.JSBY.RewardI"
+  "nfo\".\n\tCSShopBuy\022\017\n\007PropsID\030\001 \001(\005\022\020\n\010Pro"
+  "psNum\030\002 \001(\005\".\n\tSCShopBuy\022\017\n\007PropsID\030\001 \001("
+  "\005\022\020\n\010PropsNum\030\002 \001(\005\"A\n\rMaterialsInfo\022\022\n\n"
+  "PositionId\030\001 \001(\005\022\017\n\007PropsID\030\002 \001(\005\022\013\n\003Num"
+  "\030\003 \001(\005\"8\n\023SCPushDropMaterials\022!\n\004Info\030\001 "
+  "\003(\0132\023.JSBY.MaterialsInfo\"\307\001\n\022SCPushBallo"
+  "onTimes\022\022\n\nPositionId\030\001 \001(\005\022\020\n\010PlayerId\030"
+  "\002 \001(\005\022\021\n\tFreeTimes\030\003 \001(\005\022\r\n\005Ratio\030\004 \001(\005\022"
+  "\021\n\tStartTime\030\005 \001(\005\022\023\n\013AttackCount\030\006 \001(\005\022"
+  "+\n\nAttackInfo\030\007 \001(\0132\027.JSBY.SpecialAttack"
+  "Info\022\024\n\014HeroUniqueId\030\010 \001(\005\"&\n\nSwitchInfo"
+  "\022\n\n\002Id\030\001 \001(\005\022\014\n\004Open\030\002 \001(\010\"2\n\020SCFunction"
+  "Switch\022\036\n\004Info\030\001 \003(\0132\020.JSBY.SwitchInfo\"\024"
+  "\n\022CSSealConvertMoney\"C\n\022SCSealConvertMon"
+  "ey\022\020\n\010PlayerId\030\001 \001(\005\022\014\n\004Seal\030\002 \001(\005\022\r\n\005Mo"
+  "ney\030\003 \001(\005\"7\n\016ConnectMonster\022\022\n\nPositionI"
+  "D\030\001 \001(\005\022\021\n\tMonsterID\030\002 \001(\005\"j\n\024SCPushConn"
+  "ectMonster\022%\n\007Connect\030\001 \003(\0132\024.JSBY.Conne"
+  "ctMonster\022\021\n\tConnectID\030\002 \001(\005\022\030\n\020AttackPo"
+  "sitionID\030\003 \001(\005\"\246\001\n\016SCGiantUpgrade\022\020\n\010Pla"
+  "yerId\030\001 \001(\005\022\022\n\nPositionId\030\002 \001(\005\022\r\n\005Level"
+  "\030\003 \001(\005\022\023\n\013AttackTimes\030\004 \001(\005\022+\n\nAttackInf"
+  "o\030\005 \001(\0132\027.JSBY.SpecialAttackInfo\022\016\n\006IsOv"
+  "er\030\006 \001(\010\022\r\n\005Ratio\030\007 \001(\005\"6\n\016SCPushGiantEn"
+  "d\022\020\n\010PlayerId\030\001 \001(\005\022\022\n\nPositionId\030\002 \001(\005\""
+  "\204\001\n\nSCDropCard\022\n\n\002ID\030\001 \001(\005\022\016\n\006TypeID\030\002 \001"
+  "(\005\022\017\n\007Quality\030\003 \001(\005\022\021\n\tBasePower\030\004 \001(\005\022\023"
+  "\n\013ExtendPower\030\005 \001(\005\022\r\n\005Equip\030\006 \001(\005\022\022\n\nPo"
+  "sitionID\030\007 \001(\005\"W\n\rSCAcquireSeal\022\020\n\010Playe"
+  "rId\030\001 \001(\005\022\034\n\024MxlSealAddAwardRatio\030\002 \001(\005\022"
+  "\026\n\016HeroPositionId\030\003 \001(\005\"L\n\nFreshMoney\022\020\n"
+  "\010PlayerId\030\001 \001(\005\022\013\n\003Fee\030\002 \001(\005\022\016\n\006GameID\030\003"
+  " \001(\005\022\017\n\007CYMoney\030\004 \001(\005\"D\n\017ShutdownService"
+  "\022\016\n\006GameID\030\001 \001(\005\022\017\n\007ArenaID\030\002 \001(\005\022\020\n\010Ser"
+  "verID\030\003 \001(\005\"\"\n\014SCLogoutGame\022\022\n\nlogoutTyp"
+  "e\030\001 \001(\005*\276\020\n\rEMsgIDSubGame\022\017\n\013Req_Invalid"
+  "\020\000\022\r\n\010Req_Ping\020\350\007\022\033\n\026Req_LoginGameWithTo"
+  "ken\020\351\007\022\023\n\016Req_LogoutGame\020\352\007\022\024\n\017Push_Logo"
+  "utGame\020\353\007\022\026\n\021Req_RequestAttack\020\354\007\022\023\n\016Pus"
+  "h_SyncMoney\020\355\007\022\027\n\022Push_SyncFreeTimes\020\356\007\022"
+  "\027\n\022Req_UpdateHeroInfo\020\357\007\022\030\n\023Req_UpgradeH"
+  "eroInfo\020\360\007\022\023\n\016Req_EnterStage\020\361\007\022\030\n\023Push_"
+  "PoisonBomTimes\020\204\010\022\027\n\022Req_GetTrusteeship\020"
+  "\205\010\022\027\n\022Req_SetTrusteeship\020\206\010\022\027\n\022Req_EndTr"
+  "usteeship\020\207\010\022\030\n\023Push_EndTrusteeship\020\210\010\022\023"
+  "\n\016Req_GetVersion\020\217\010\022\035\n\030Req_ChangePoisonB"
+  "omTimes\020\220\010\022\022\n\rReq_KeepRatio\020\224\010\022\031\n\024Push_L"
+  "eaveTowerTable\020\226\010\022 \n\033Push_NotifyTowerTab"
+  "lePlayer\020\227\010\022\031\n\024Push_GetTowerMonster\020\230\010\022\030"
+  "\n\023Req_GetTowerMonster\020\231\010\022\026\n\021Push_TowerMo"
+  "nster\020\232\010\022\031\n\024Req_TowerHeroAtkInfo\020\233\010\022\032\n\025P"
+  "ush_TowerHeroAtkInfo\020\234\010\022\030\n\023Req_TowerUpda"
+  "teHero\020\235\010\022\031\n\024Push_TowerUpdateHero\020\236\010\022\036\n\031"
+  "Req_TowerPlayerLockTarget\020\237\010\022\037\n\032Push_Tow"
+  "erPlayerLockTarget\020\240\010\022\031\n\024Req_ChangeBackg"
+  "round\020\241\010\022\027\n\022Req_GetCurrentTime\020\242\010\022\035\n\030Pus"
+  "h_SyncGetTowerMonster\020\256\010\022\031\n\024Req_TowerMon"
+  "sterExit\020\267\010\022\031\n\024Req_GetTowerNewGuide\020\271\010\022\031"
+  "\n\024Req_SetTowerNewGuide\020\272\010\022\025\n\020Req_Activit"
+  "yInfo\020\273\010\022\034\n\027Push_NotifyActivityInfo\020\274\010\022\031"
+  "\n\024Req_GetActivityAward\020\275\010\022\032\n\025Req_TowerEx"
+  "changeHero\020\301\010\022\033\n\026Push_TowerExchangeHero\020"
+  "\313\010\022\026\n\021Req_ButtonRecords\020\314\010\022\033\n\026Push_SyncB"
+  "atBulletInfo\020\315\010\022\"\n\035Push_LeaveTowerTableC"
+  "ountdown\020\316\010\022\033\n\026Req_PoisonBombLocation\020\317\010"
+  "\022\034\n\027Push_PoisonBombLocation\020\320\010\022\033\n\026Push_P"
+  "oisonBombConvert\020\321\010\022\030\n\023Push_PoisonBombTy"
+  "pe\020\322\010\022\026\n\021Req_DragonRelease\020\323\010\022\027\n\022Push_Dr"
+  "agonRelease\020\324\010\022\023\n\016Push_DragonEnd\020\325\010\022\031\n\024P"
+  "ush_SelfDragonState\020\326\010\022\031\n\024Req_OneKeyUpda"
+  "teHero\020\327\010\022\032\n\025Push_OneKeyUpdateHero\020\330\010\022\034\n"
+  "\027Push_GhostDragonRelease\020\331\010\022\030\n\023Push_Ghos"
+  "tDragonEnd\020\332\010\022\036\n\031Push_SelfGhostDragonSta"
+  "te\020\333\010\022\027\n\022Push_SyncHeroMoney\020\334\010\022\031\n\024Push_P"
+  "ushMonsterDead\020\335\010\022\022\n\rReq_DebugData\020\336\010\022\031\n"
+  "\024Push_PushMonsterBuff\020\337\010\022\023\n\016Req_GetTable"
+  "Id\020\340\010\022\030\n\023Push_PlayerVipLevel\020\341\010\022\027\n\022Req_G"
+  "etDragonProps\020\342\010\022\031\n\024Req_EquipDragonProps"
+  "\020\343\010\022\025\n\020Push_DragonProps\020\344\010\022\024\n\017Req_GetSho"
+  "pInfo\020\345\010\022\023\n\016Push_PropsInfo\020\346\010\022\031\n\024Req_Get"
+  "MaterialsInfo\020\347\010\022\024\n\017Req_ExchangeBox\020\350\010\022\024"
+  "\n\017Req_DoublingBox\020\351\010\022\020\n\013Req_ShopBuy\020\352\010\022\027"
+  "\n\022Push_DropMaterials\020\353\010\022\026\n\021Push_BalloonT"
+  "imes\020\354\010\022\030\n\023Push_FunctionSwitch\020\355\010\022\030\n\023Pus"
+  "h_ConnectMonster\020\356\010\022\026\n\021Push_GiantUpgrade"
+  "\020\364\010\022\026\n\021Push_PushGiantEnd\020\365\010\022\022\n\rPush_Drop"
+  "Card\020\366\010\022\030\n\023Push_AcquireMxlSeal\020\367\010\022\031\n\024Req"
+  "_SealConvertMoney\020\370\010\022\022\n\rErrorSubScore\020\371\010"
+  "*\246\025\n\007ErrCode\022\013\n\007Success\020\000\022\027\n\022EnterRoomIs"
+  "Closing\020\347\007\022\026\n\021QPEnterRoomFailed\020\221N\022\034\n\027QP"
+  "BaseUserInfoGetFailed\020\222N\022\025\n\020QPReadGoldFa"
+  "iled\020\223N\022\026\n\021LackMoneyInServer\020\224N\022\031\n\024LoadP"
+  "layerDataFailed\020\225N\022\025\n\020ParameterIsWrong\020\226"
+  "N\022\020\n\013LackOfMoney\020\227N\022\026\n\021DeserializeFailed"
+  "\020\230N\022\027\n\022CreatePlayerFailed\020\231N\022\023\n\016PlayerNo"
+  "tExist\020\232N\022\027\n\022PlayerAlreadyLogin\020\233N\022\024\n\017Co"
+  "nfigNoHasHero\020\234N\022\024\n\017PlayerNoHasHero\020\235N\022\026"
+  "\n\021HeroPositionError\020\236N\022\033\n\026HeroHasUpgrade"
+  "MaxLevel\020\237N\022\027\n\022HasNotEnoughEnzyme\020\240N\022\027\n\022"
+  "ConfigNoHasMonster\020\241N\022\025\n\020HeroUpdateFaile"
+  "d\020\242N\022\021\n\014HeroHasExist\020\243N\022\030\n\023AttackMonster"
+  "Failed\020\244N\022\024\n\017MonsterScoreErr\020\245N\022\032\n\025NotFi"
+  "ndLiquidMedicine\020\246N\022\037\n\032HasNotEnoughLiqui"
+  "dMedicine\020\247N\022\026\n\021NotFindLaboratory\020\250N\022\036\n\031"
+  "LaboratoryUpgradeMaxLevel\020\251N\022\037\n\032NotFindL"
+  "evelUnlockEquation\020\252N\022\031\n\024UnlockParameter"
+  "Error\020\253N\022\030\n\023LaboratoryNotUnlock\020\254N\022\032\n\025No"
+  "tFindEnzymeEquation\020\255N\022\"\n\035LaboratoryNotR"
+  "eachUnlockLevel\020\256N\022\030\n\023LaboratoryHasUnloc"
+  "k\020\257N\022\025\n\020NotFindDailyTask\020\260N\022\030\n\023NotFindDa"
+  "ilyTaskCfg\020\261N\022\031\n\024HasGetDailyTaskAward\020\262N"
+  "\022\036\n\031NoReachDailyTaskCondition\020\263N\022\035\n\030NoRe"
+  "achDailyTaskSchedule\020\264N\022\025\n\020DailyTaskIDEr"
+  "ror\020\265N\022\027\n\022ReachDailyTaskOver\020\266N\022\023\n\016IsNot"
+  "StageMode\020\267N\022\027\n\022ModeNotExistMoster\020\270N\022\026\n"
+  "\021NoExistGhostLoong\020\271N\022\036\n\031BuyLiquidMedici"
+  "neMaxTimes\020\272N\022\034\n\027HighModeMonsterSetError"
+  "\020\273N\022\023\n\016MonsterHasKill\020\274N\022\025\n\020TrusteeshipI"
+  "sEnd\020\275N\022\030\n\023TrusteeshipCfgError\020\276N\022\032\n\025Tru"
+  "steeshipNoVIPLevel\020\277N\022\025\n\020NotUseSameLiqui"
+  "d\020\300N\022\031\n\024PlayerNotTrusteeship\020\301N\022\024\n\017Exist"
+  "WaitPlayer\020\302N\022\030\n\023SendProtoFrequently\020\303N\022"
+  "\035\n\030PoisonBomPositionIdError\020\304N\022\032\n\025Poison"
+  "BomTimesNotFind\020\305N\022\035\n\030NotReachUnlockCond"
+  "itions\020\306N\022\030\n\023HasGetScheduleAward\020\307N\022\027\n\022N"
+  "otFindScheduleCfg\020\310N\022\034\n\027BuyNostrumLiquid"
+  "OnlyOne\020\311N\022\027\n\022HeroLevelNotUnlock\020\312N\022\026\n\021N"
+  "oExistMergeSkill\020\313N\022\026\n\021HasNotEnoughStone"
+  "\020\314N\022\035\n\030HasNotEnoughCrystalStone\020\315N\022\035\n\030No"
+  "tKillingEnoughMonsters\020\316N\022\025\n\020Notint32owe"
+  "rMode\020\317N\022\024\n\017Notint32hisMode\020\320N\022\024\n\017NotExi"
+  "stMonster\020\321N\022\032\n\025HasHeroOfOtherPlayers\020\322N"
+  "\022\026\n\021HasNotEnoughScore\020\323N\022\026\n\021PositionNoHa"
+  "sHero\020\324N\022\023\n\016PassNoNotExist\020\325N\022\023\n\016NotInMu"
+  "ltiMode\020\326N\022\031\n\024HighModeMonsterNoCfg\020\327N\022\030\n"
+  "\023NightKingBossHasMax\020\330N\022\026\n\021HeroAppearedI"
+  "sMax\020\331N\022\030\n\023FailureToEnterStage\020\332N\022\032\n\025Pos"
+  "itionIsOtherPlayer\020\333N\022\031\n\024MultiTableState"
+  "Error\020\334N\022\020\n\013InOtherMode\020\335N\022\026\n\021NotEnoughS"
+  "tageNum\020\336N\022\031\n\024NewGuideHasCompleted\020\337N\022\025\n"
+  "\020ActivityNotExist\020\340N\022\031\n\024ActivityNotCondi"
+  "tion\020\341N\022\030\n\023ActivityHasGetAward\020\342N\022\030\n\023Act"
+  "ivityIsNotWeChat\020\343N\022\021\n\014HasOtherHero\020\344N\022\025"
+  "\n\020BatBulletNotFind\020\345N\022\025\n\020DragonNotReleas"
+  "e\020\346N\022\025\n\020DragonNowRelease\020\347N\022\023\n\016DragonCoo"
+  "lDown\020\350N\022\037\n\032TrusteeshipDragonNotRealse\020\351"
+  "N\022\033\n\026DragonAttackConfigWron\020\352N\022\032\n\025GhostD"
+  "ragonNotRelease\020\353N\022\021\n\014InvalidToken\020\354N\022\036\n"
+  "\031LoadPlayerWithPropsFailed\020\355N\022\025\n\020PlayerD"
+  "ataFailed\020\356N\022\030\n\023EnterGameNotifyHall\020\357N\022\023"
+  "\n\016NotDragonProps\020\360N\022\024\n\017VipPropsExpired\020\361"
+  "N\022\030\n\023UseHeroNeedVipProps\020\362N\022\026\n\021NotEnough"
+  "VipLevel\020\363N\022\027\n\022NotEnoughMaterials\020\364N\022\026\n\021"
+  "NotEnoughDiamonds\020\365N\022\025\n\020NotFindGragonBox"
+  "\020\366N\022\021\n\014NotFindGoods\020\367N\022\022\n\rGoodsNumError\020"
+  "\370N\022\026\n\021NotAttackSameType\020\371N\022\025\n\020HeroMxlOve"
+  "rLimit\020\372N*H\n\010ModeType\022\t\n\005Stage\020\000\022\010\n\004High"
+  "\020\001\022\t\n\005Tower\020\002\022\t\n\005Multi\020\003\022\010\n\004None\020\004\022\007\n\003Ma"
+  "x\020\005*N\n\010StepType\022\014\n\010StepHigh\020\000\022\023\n\017StepUpg"
+  "radeHero\020\001\022\022\n\016StepGhostLoong\020\002\022\013\n\007StepMa"
+  "x\020\003*8\n\010ShopType\022\014\n\010NoneType\020\000\022\r\n\tMateria"
+  "ls\020\001\022\017\n\013MaxShopType\020\002*\211\004\n\013HallMsgCode\022\017\n"
+  "\013HMC_Invalid\020\000\022\014\n\010HMC_CHat\020\001\022\024\n\020HMC_Serv"
+  "erUpdate\020\002\022\023\n\017HMC_MailPublish\020\007\022\027\n\023HMC_A"
+  "wardGoldUpdate\020\010\022\035\n\031HMC_TriggerArenaAwar"
+  "dGold\020\t\022\037\n\033HMC_AwardGoldPoolTriggerLog\020\n"
+  "\022\022\n\016HMC_FreshMoney\020\013\022\034\n\030HMC_BplUpdateJac"
+  "kpotPool\020\014\022\036\n\032HMC_BplInsertJackpotRecord"
+  "\020\r\022#\n\037HMC_AddArenaAwardGoldPoolNotify\020\016\022"
+  "\014\n\010HMC_Ping\020\017\022\027\n\023HMC_ShutdownService\020\020\022\032"
+  "\n\026HMC_TransferToCelint32\020\021\022\030\n\024HMC_CheckW"
+  "eChatLogin\020\022\022\035\n\031HMC_UserInfoUserEnterGam"
+  "e\020\023\022\034\n\030HMC_UserInfoUserExitGame\020\024\022\022\n\016HMC"
+  "_AntinDulge\020\025\022\027\n\023HMC_TurntableRecord\020\026\022\031"
+  "\n\025HMC_GetAwardGoldValue\020\027*\274\001\n\020HallMsgErr"
+  "orCode\022\020\n\014HMEC_Invalid\020\000\022\016\n\nHMEC_Param\020\001"
+  "\022\021\n\rHMEC_Register\020\002\022\017\n\013HMEC_Sucess\020\003\022\027\n\023"
+  "HMEC_PlayerNotExist\020\004\022\032\n\026HMEC_Deserializ"
+  "eFailed\020\005\022\027\n\023HMEC_FreshUserMoney\020\006\022\024\n\020HM"
+  "EC_SystemError\020\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_JSBY_2eproto_deps[1] = {
 };
@@ -4109,7 +4110,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_JSB
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_JSBY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_JSBY_2eproto = {
-  false, false, descriptor_table_protodef_JSBY_2eproto, "JSBY.proto", 15247,
+  false, false, descriptor_table_protodef_JSBY_2eproto, "JSBY.proto", 15264,
   &descriptor_table_JSBY_2eproto_once, descriptor_table_JSBY_2eproto_sccs, descriptor_table_JSBY_2eproto_deps, 132, 0,
   schemas, file_default_instances, TableStruct_JSBY_2eproto::offsets,
   file_level_metadata_JSBY_2eproto, 132, file_level_enum_descriptors_JSBY_2eproto, file_level_service_descriptors_JSBY_2eproto,
@@ -6002,8 +6003,8 @@ CSRequestAttack::CSRequestAttack(const CSRequestAttack& from)
       specialinfo_(from.specialinfo_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&ratio_, &from.ratio_,
-    static_cast<size_t>(reinterpret_cast<char*>(&herouniqueid_) -
-    reinterpret_cast<char*>(&ratio_)) + sizeof(herouniqueid_));
+    static_cast<size_t>(reinterpret_cast<char*>(&kill_id_) -
+    reinterpret_cast<char*>(&ratio_)) + sizeof(kill_id_));
   // @@protoc_insertion_point(copy_constructor:JSBY.CSRequestAttack)
 }
 
@@ -6011,8 +6012,8 @@ void CSRequestAttack::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CSRequestAttack_JSBY_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&ratio_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&herouniqueid_) -
-      reinterpret_cast<char*>(&ratio_)) + sizeof(herouniqueid_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&kill_id_) -
+      reinterpret_cast<char*>(&ratio_)) + sizeof(kill_id_));
 }
 
 CSRequestAttack::~CSRequestAttack() {
@@ -6048,8 +6049,8 @@ void CSRequestAttack::Clear() {
 
   specialinfo_.Clear();
   ::memset(&ratio_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&herouniqueid_) -
-      reinterpret_cast<char*>(&ratio_)) + sizeof(herouniqueid_));
+      reinterpret_cast<char*>(&kill_id_) -
+      reinterpret_cast<char*>(&ratio_)) + sizeof(kill_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -6132,6 +6133,13 @@ const char* CSRequestAttack::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           herouniqueid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 kill_id = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          kill_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6225,6 +6233,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_herouniqueid(), target);
   }
 
+  // int32 kill_id = 11;
+  if (this->kill_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_kill_id(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -6309,6 +6323,13 @@ size_t CSRequestAttack::ByteSizeLong() const {
         this->_internal_herouniqueid());
   }
 
+  // int32 kill_id = 11;
+  if (this->kill_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_kill_id());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -6368,6 +6389,9 @@ void CSRequestAttack::MergeFrom(const CSRequestAttack& from) {
   if (from.herouniqueid() != 0) {
     _internal_set_herouniqueid(from._internal_herouniqueid());
   }
+  if (from.kill_id() != 0) {
+    _internal_set_kill_id(from._internal_kill_id());
+  }
 }
 
 void CSRequestAttack::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -6393,8 +6417,8 @@ void CSRequestAttack::InternalSwap(CSRequestAttack* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   specialinfo_.InternalSwap(&other->specialinfo_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSRequestAttack, herouniqueid_)
-      + sizeof(CSRequestAttack::herouniqueid_)
+      PROTOBUF_FIELD_OFFSET(CSRequestAttack, kill_id_)
+      + sizeof(CSRequestAttack::kill_id_)
       - PROTOBUF_FIELD_OFFSET(CSRequestAttack, ratio_)>(
           reinterpret_cast<char*>(&ratio_),
           reinterpret_cast<char*>(&other->ratio_));

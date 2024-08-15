@@ -2091,6 +2091,7 @@ class CSRequestAttack PROTOBUF_FINAL :
     kSpecialTypeFieldNumber = 7,
     kDragonEndFieldNumber = 9,
     kHeroUniqueIdFieldNumber = 10,
+    kKillIdFieldNumber = 11,
   };
   // repeated .JSBY.SpecialMonsterAttack SpecialInfo = 8;
   int specialinfo_size() const;
@@ -2191,6 +2192,15 @@ class CSRequestAttack PROTOBUF_FINAL :
   void _internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 kill_id = 11;
+  void clear_kill_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 kill_id() const;
+  void set_kill_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_kill_id() const;
+  void _internal_set_kill_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:JSBY.CSRequestAttack)
  private:
   class _Internal;
@@ -2208,6 +2218,7 @@ class CSRequestAttack PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 specialtype_;
   bool dragonend_;
   ::PROTOBUF_NAMESPACE_ID::int32 herouniqueid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 kill_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -22308,6 +22319,26 @@ inline void CSRequestAttack::_internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID:
 inline void CSRequestAttack::set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_herouniqueid(value);
   // @@protoc_insertion_point(field_set:JSBY.CSRequestAttack.HeroUniqueId)
+}
+
+// int32 kill_id = 11;
+inline void CSRequestAttack::clear_kill_id() {
+  kill_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSRequestAttack::_internal_kill_id() const {
+  return kill_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSRequestAttack::kill_id() const {
+  // @@protoc_insertion_point(field_get:JSBY.CSRequestAttack.kill_id)
+  return _internal_kill_id();
+}
+inline void CSRequestAttack::_internal_set_kill_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  kill_id_ = value;
+}
+inline void CSRequestAttack::set_kill_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_kill_id(value);
+  // @@protoc_insertion_point(field_set:JSBY.CSRequestAttack.kill_id)
 }
 
 // -------------------------------------------------------------------

@@ -312,6 +312,7 @@ message CSRequestAttack
 	 repeated SpecialMonsterAttack SpecialInfo = 8;
 	 bool DragonEnd = 9;				//
 	 int32 HeroUniqueId = 10;			//英雄唯一ID
+	 int32 kill_id = 11;				//杀死鱼的id
 }
 message SCRequestAttack
 {
