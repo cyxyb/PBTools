@@ -443,7 +443,7 @@ namespace BYDLD {
             "CGNvbmZMaXN0GAUgAygLMhEuQllETEQuUmV3YXJkQ29uZiInChJDU1Jld2Fy",
             "ZENoYW5nZUF1dG8SEQoJYXV0b1RpbWVzGAEgASgFIjEKD1NDUmV3YXJkQXV0",
             "b1JlcBIOCgZzdGF0dXMYASABKAUSDgoGYWNjZXB0GAIgASgIIjMKD1NDU2Vh",
-            "Q3JhYkNyZWF0ZRIQCghjaGFpcl9pZBgBIAEoBRIOCgZzdGF0dXMYAiABKAgi",
+            "Q3JhYkNyZWF0ZRIQCghjaGFpcl9pZBgBIAEoBRIOCgZzdGF0dXMYAiABKAUi",
             "EgoQQ1NTeW5jQ3JhYlN0YXR1cyJcChBTQ1N5bmNDcmFiU3RhdHVzEg4KBnN0",
             "YXR1cxgBIAEoBRIQCghjaGFpcl9pZBgCIAEoBRISCgptdWx0aXBsZV8xGAMg",
             "ASgFEhIKCm11bHRpcGxlXzIYBCABKAUiEQoPQ1NEcmFnb25CYWxsRW5kImAK",
@@ -56034,9 +56034,9 @@ namespace BYDLD {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 2;
-    private bool status_;
+    private int status_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Status {
+    public int Status {
       get { return status_; }
       set {
         status_ = value;
@@ -56065,7 +56065,7 @@ namespace BYDLD {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (Status != false) hash ^= Status.GetHashCode();
+      if (Status != 0) hash ^= Status.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -56086,9 +56086,9 @@ namespace BYDLD {
         output.WriteRawTag(8);
         output.WriteInt32(ChairId);
       }
-      if (Status != false) {
+      if (Status != 0) {
         output.WriteRawTag(16);
-        output.WriteBool(Status);
+        output.WriteInt32(Status);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -56103,9 +56103,9 @@ namespace BYDLD {
         output.WriteRawTag(8);
         output.WriteInt32(ChairId);
       }
-      if (Status != false) {
+      if (Status != 0) {
         output.WriteRawTag(16);
-        output.WriteBool(Status);
+        output.WriteInt32(Status);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -56119,8 +56119,8 @@ namespace BYDLD {
       if (ChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
       }
-      if (Status != false) {
-        size += 1 + 1;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Status);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -56136,7 +56136,7 @@ namespace BYDLD {
       if (other.ChairId != 0) {
         ChairId = other.ChairId;
       }
-      if (other.Status != false) {
+      if (other.Status != 0) {
         Status = other.Status;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -56158,7 +56158,7 @@ namespace BYDLD {
             break;
           }
           case 16: {
-            Status = input.ReadBool();
+            Status = input.ReadInt32();
             break;
           }
         }
@@ -56180,7 +56180,7 @@ namespace BYDLD {
             break;
           }
           case 16: {
-            Status = input.ReadBool();
+            Status = input.ReadInt32();
             break;
           }
         }

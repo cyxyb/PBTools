@@ -38864,13 +38864,13 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool status = 2;
+  // int32 status = 2;
   void clear_status();
-  bool status() const;
-  void set_status(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 status() const;
+  void set_status(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  bool _internal_status() const;
-  void _internal_set_status(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_status() const;
+  void _internal_set_status(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:BYDLD.SCSeaCrabCreate)
@@ -38881,7 +38881,7 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  bool status_;
+  ::PROTOBUF_NAMESPACE_ID::int32 status_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -64779,22 +64779,22 @@ inline void SCSeaCrabCreate::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:BYDLD.SCSeaCrabCreate.chair_id)
 }
 
-// bool status = 2;
+// int32 status = 2;
 inline void SCSeaCrabCreate::clear_status() {
-  status_ = false;
+  status_ = 0;
 }
-inline bool SCSeaCrabCreate::_internal_status() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSeaCrabCreate::_internal_status() const {
   return status_;
 }
-inline bool SCSeaCrabCreate::status() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSeaCrabCreate::status() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCSeaCrabCreate.status)
   return _internal_status();
 }
-inline void SCSeaCrabCreate::_internal_set_status(bool value) {
+inline void SCSeaCrabCreate::_internal_set_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   status_ = value;
 }
-inline void SCSeaCrabCreate::set_status(bool value) {
+inline void SCSeaCrabCreate::set_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_status(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCSeaCrabCreate.status)
 }

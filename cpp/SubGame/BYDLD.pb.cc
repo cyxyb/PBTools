@@ -7746,7 +7746,7 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "to\022\021\n\tautoTimes\030\001 \001(\005\"1\n\017SCRewardAutoRep"
   "\022\016\n\006status\030\001 \001(\005\022\016\n\006accept\030\002 \001(\010\"3\n\017SCSe"
   "aCrabCreate\022\020\n\010chair_id\030\001 \001(\005\022\016\n\006status\030"
-  "\002 \001(\010\"\022\n\020CSSyncCrabStatus\"\\\n\020SCSyncCrabS"
+  "\002 \001(\005\"\022\n\020CSSyncCrabStatus\"\\\n\020SCSyncCrabS"
   "tatus\022\016\n\006status\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022"
   "\022\n\nmultiple_1\030\003 \001(\005\022\022\n\nmultiple_2\030\004 \001(\005\""
   "\021\n\017CSDragonBallEnd\"`\n\017SCDragonBallRes\022\020\n"
@@ -66226,7 +66226,7 @@ const char* SCSeaCrabCreate::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool status = 2;
+      // int32 status = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -66267,10 +66267,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // bool status = 2;
+  // int32 status = 2;
   if (this->status() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_status(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_status(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -66296,9 +66296,11 @@ size_t SCSeaCrabCreate::ByteSizeLong() const {
         this->_internal_chair_id());
   }
 
-  // bool status = 2;
+  // int32 status = 2;
   if (this->status() != 0) {
-    total_size += 1 + 1;
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_status());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {

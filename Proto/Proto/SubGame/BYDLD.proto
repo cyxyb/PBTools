@@ -1801,7 +1801,7 @@ message SCRewardAutoRep
 message SCSeaCrabCreate
 {
 	int32 chair_id = 1;
-	bool status = 2;
+	int32 status = 2;
 }
 
 message CSSyncCrabStatus
