@@ -346,7 +346,7 @@ message SCPropsTrident
 {	
 		bool enable = 1;
 		int32 single_score = 2;
-		int32 cur_score = 3;
+		int64 cur_score = 3;
 		bool rank_enable = 4;
 }
 
@@ -392,7 +392,7 @@ message SCShootTorpedo
 		int32 chair_idx = 1;
 		string torpedo_id = 2;
 		int32 award = 3;
-		int32 score = 4;
+		int64 score = 4;
 		repeated ObjectData objects = 5;
 }
 
@@ -545,7 +545,7 @@ message SCUserShootMulti
 {
 	int32 chair_idx = 1;
 	repeated UserShootRsp bullet_info = 2;
-	int32 score = 3;
+	int64 score = 3;
 }
 
 message HitFish
@@ -746,7 +746,7 @@ message SCHitMultiFish
 	int32 chair_idx = 1;
 	int32 invalid = 2;
 	repeated Capturefish capture_info = 3;
-	int32 score = 4;
+	int64 score = 4;
 	int32 earn = 5;
 	SpecEffect specEffect = 6;
 }
@@ -760,7 +760,7 @@ message CSSyncMoney
 message SCSyncMoney
 {
 	int32 chair_idx = 1;
-	int32 score = 2;
+	int64 score = 2;
 	int32 type = 3;
 	int32 delta = 4;
 	int32 invalid_score = 5;
@@ -949,6 +949,10 @@ message UserScoreRecord
 	string score = 3;
 }
 
+message CSFreeTimeEnd
+{
+}
+
 message SCSyncFreeTimes
 {
 	int32 times = 1;
@@ -1088,7 +1092,7 @@ message SCScratchNewYearCard
 {
 	int32 result = 1;
 	int32 chair_idx = 2;
-	int32 cur_score = 3;
+	int64 cur_score = 3;
 	int32 base = 4;
 	int32 count = 5;
 	repeated NewYearCardMultiple multiples = 6;
@@ -1114,7 +1118,7 @@ message SCNewYearCardExchange
 	int32 chair_idx = 1;
 	int32 result = 2;
 	repeated NewYearCardAward awards = 3;
-	int32 score = 4;
+	int64 score = 4;
 	int32 count = 5;
 	bool exchange_all = 6;
 	int32 req_id = 7;
