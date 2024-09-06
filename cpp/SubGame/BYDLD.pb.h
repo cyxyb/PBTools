@@ -47,7 +47,7 @@ struct TableStruct_BYDLD_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[263]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[261]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -793,18 +793,12 @@ extern SSAwardPoolMsgDefaultTypeInternal _SSAwardPoolMsg_default_instance_;
 class SkillTime;
 class SkillTimeDefaultTypeInternal;
 extern SkillTimeDefaultTypeInternal _SkillTime_default_instance_;
-class SmallFish;
-class SmallFishDefaultTypeInternal;
-extern SmallFishDefaultTypeInternal _SmallFish_default_instance_;
 class SpecEffect;
 class SpecEffectDefaultTypeInternal;
 extern SpecEffectDefaultTypeInternal _SpecEffect_default_instance_;
 class StationBase;
 class StationBaseDefaultTypeInternal;
 extern StationBaseDefaultTypeInternal _StationBase_default_instance_;
-class SyncFishTraces;
-class SyncFishTracesDefaultTypeInternal;
-extern SyncFishTracesDefaultTypeInternal _SyncFishTraces_default_instance_;
 class TridentRankList;
 class TridentRankListDefaultTypeInternal;
 extern TridentRankListDefaultTypeInternal _TridentRankList_default_instance_;
@@ -1092,10 +1086,8 @@ template<> ::BYDLD::SCWaterDropInfo* Arena::CreateMaybeMessage<::BYDLD::SCWaterD
 template<> ::BYDLD::SCWingsInfo* Arena::CreateMaybeMessage<::BYDLD::SCWingsInfo>(Arena*);
 template<> ::BYDLD::SSAwardPoolMsg* Arena::CreateMaybeMessage<::BYDLD::SSAwardPoolMsg>(Arena*);
 template<> ::BYDLD::SkillTime* Arena::CreateMaybeMessage<::BYDLD::SkillTime>(Arena*);
-template<> ::BYDLD::SmallFish* Arena::CreateMaybeMessage<::BYDLD::SmallFish>(Arena*);
 template<> ::BYDLD::SpecEffect* Arena::CreateMaybeMessage<::BYDLD::SpecEffect>(Arena*);
 template<> ::BYDLD::StationBase* Arena::CreateMaybeMessage<::BYDLD::StationBase>(Arena*);
-template<> ::BYDLD::SyncFishTraces* Arena::CreateMaybeMessage<::BYDLD::SyncFishTraces>(Arena*);
 template<> ::BYDLD::TridentRankList* Arena::CreateMaybeMessage<::BYDLD::TridentRankList>(Arena*);
 template<> ::BYDLD::UserAwardItem* Arena::CreateMaybeMessage<::BYDLD::UserAwardItem>(Arena*);
 template<> ::BYDLD::UserPoolActivityInfo* Arena::CreateMaybeMessage<::BYDLD::UserPoolActivityInfo>(Arena*);
@@ -4703,13 +4695,13 @@ class SCPropsTrident PROTOBUF_FINAL :
   void _internal_set_rank_enable(bool value);
   public:
 
-  // int64 cur_score = 3;
+  // int32 cur_score = 3;
   void clear_cur_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 cur_score() const;
-  void set_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_score() const;
+  void set_cur_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cur_score() const;
-  void _internal_set_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_score() const;
+  void _internal_set_cur_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:BYDLD.SCPropsTrident)
@@ -4722,7 +4714,7 @@ class SCPropsTrident PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 single_score_;
   bool enable_;
   bool rank_enable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 cur_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -4988,7 +4980,7 @@ class SCBigSmallChoose PROTOBUF_FINAL :
 
   enum : int {
     kChairIdxFieldNumber = 1,
-    kEnterOrExitFieldNumber = 2,
+    kEnterExitFieldNumber = 2,
     kAwardFieldNumber = 3,
     kScoreFieldNumber = 4,
   };
@@ -5001,13 +4993,13 @@ class SCBigSmallChoose PROTOBUF_FINAL :
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 enter_or_exit = 2;
-  void clear_enter_or_exit();
-  ::PROTOBUF_NAMESPACE_ID::int32 enter_or_exit() const;
-  void set_enter_or_exit(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 enter_exit = 2;
+  void clear_enter_exit();
+  ::PROTOBUF_NAMESPACE_ID::int32 enter_exit() const;
+  void set_enter_exit(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_enter_or_exit() const;
-  void _internal_set_enter_or_exit(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_enter_exit() const;
+  void _internal_set_enter_exit(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 award = 3;
@@ -5036,7 +5028,7 @@ class SCBigSmallChoose PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
-  ::PROTOBUF_NAMESPACE_ID::int32 enter_or_exit_;
+  ::PROTOBUF_NAMESPACE_ID::int32 enter_exit_;
   ::PROTOBUF_NAMESPACE_ID::int32 award_;
   ::PROTOBUF_NAMESPACE_ID::int32 score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -14556,23 +14548,23 @@ class FishTrace PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class SmallFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BYDLD.SmallFish) */ {
+class SCFishTracesList PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BYDLD.SCFishTracesList) */ {
  public:
-  inline SmallFish() : SmallFish(nullptr) {}
-  virtual ~SmallFish();
+  inline SCFishTracesList() : SCFishTracesList(nullptr) {}
+  virtual ~SCFishTracesList();
 
-  SmallFish(const SmallFish& from);
-  SmallFish(SmallFish&& from) noexcept
-    : SmallFish() {
+  SCFishTracesList(const SCFishTracesList& from);
+  SCFishTracesList(SCFishTracesList&& from) noexcept
+    : SCFishTracesList() {
     *this = ::std::move(from);
   }
 
-  inline SmallFish& operator=(const SmallFish& from) {
+  inline SCFishTracesList& operator=(const SCFishTracesList& from) {
     CopyFrom(from);
     return *this;
   }
-  inline SmallFish& operator=(SmallFish&& from) noexcept {
+  inline SCFishTracesList& operator=(SCFishTracesList&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -14590,19 +14582,19 @@ class SmallFish PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const SmallFish& default_instance();
+  static const SCFishTracesList& default_instance();
 
-  static inline const SmallFish* internal_default_instance() {
-    return reinterpret_cast<const SmallFish*>(
-               &_SmallFish_default_instance_);
+  static inline const SCFishTracesList* internal_default_instance() {
+    return reinterpret_cast<const SCFishTracesList*>(
+               &_SCFishTracesList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     76;
 
-  friend void swap(SmallFish& a, SmallFish& b) {
+  friend void swap(SCFishTracesList& a, SCFishTracesList& b) {
     a.Swap(&b);
   }
-  inline void Swap(SmallFish* other) {
+  inline void Swap(SCFishTracesList* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -14610,7 +14602,7 @@ class SmallFish PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(SmallFish* other) {
+  void UnsafeArenaSwap(SCFishTracesList* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -14618,17 +14610,17 @@ class SmallFish PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline SmallFish* New() const final {
-    return CreateMaybeMessage<SmallFish>(nullptr);
+  inline SCFishTracesList* New() const final {
+    return CreateMaybeMessage<SCFishTracesList>(nullptr);
   }
 
-  SmallFish* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<SmallFish>(arena);
+  SCFishTracesList* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SCFishTracesList>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const SmallFish& from);
-  void MergeFrom(const SmallFish& from);
+  void CopyFrom(const SCFishTracesList& from);
+  void MergeFrom(const SCFishTracesList& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -14642,13 +14634,13 @@ class SmallFish PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(SmallFish* other);
+  void InternalSwap(SCFishTracesList* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "BYDLD.SmallFish";
+    return "BYDLD.SCFishTracesList";
   }
   protected:
-  explicit SmallFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit SCFishTracesList(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -14668,69 +14660,45 @@ class SmallFish PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kFishUidFieldNumber = 1,
-    kFishIdFieldNumber = 2,
-    kXFieldNumber = 3,
-    kYFieldNumber = 4,
-    kTimeFieldNumber = 5,
+    kFishTracesFieldNumber = 1,
+    kAccelerateFlagFieldNumber = 2,
   };
-  // int32 fish_uid = 1;
-  void clear_fish_uid();
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_uid() const;
-  void set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // repeated .BYDLD.FishTraces fish_traces = 1;
+  int fish_traces_size() const;
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_uid() const;
-  void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  int _internal_fish_traces_size() const;
+  public:
+  void clear_fish_traces();
+  ::BYDLD::FishTraces* mutable_fish_traces(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
+      mutable_fish_traces();
+  private:
+  const ::BYDLD::FishTraces& _internal_fish_traces(int index) const;
+  ::BYDLD::FishTraces* _internal_add_fish_traces();
+  public:
+  const ::BYDLD::FishTraces& fish_traces(int index) const;
+  ::BYDLD::FishTraces* add_fish_traces();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
+      fish_traces() const;
+
+  // bool accelerate_flag = 2;
+  void clear_accelerate_flag();
+  bool accelerate_flag() const;
+  void set_accelerate_flag(bool value);
+  private:
+  bool _internal_accelerate_flag() const;
+  void _internal_set_accelerate_flag(bool value);
   public:
 
-  // int32 fish_id = 2;
-  void clear_fish_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_id() const;
-  void set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_id() const;
-  void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // float x = 3;
-  void clear_x();
-  float x() const;
-  void set_x(float value);
-  private:
-  float _internal_x() const;
-  void _internal_set_x(float value);
-  public:
-
-  // float y = 4;
-  void clear_y();
-  float y() const;
-  void set_y(float value);
-  private:
-  float _internal_y() const;
-  void _internal_set_y(float value);
-  public:
-
-  // float time = 5;
-  void clear_time();
-  float time() const;
-  void set_time(float value);
-  private:
-  float _internal_time() const;
-  void _internal_set_time(float value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:BYDLD.SmallFish)
+  // @@protoc_insertion_point(class_scope:BYDLD.SCFishTracesList)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_id_;
-  float x_;
-  float y_;
-  float time_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces > fish_traces_;
+  bool accelerate_flag_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -14848,394 +14816,8 @@ class FishTraces PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kFishTraceFieldNumber = 5,
-    kSmallFishListFieldNumber = 6,
-    kFishUidFieldNumber = 1,
-    kFishIdFieldNumber = 2,
-    kLiveTimeFieldNumber = 3,
-    kSpeedFieldNumber = 4,
-    kRouteTypeFieldNumber = 7,
-    kFishGenderFieldNumber = 8,
-  };
-  // repeated .BYDLD.FishTrace fish_trace = 5;
-  int fish_trace_size() const;
-  private:
-  int _internal_fish_trace_size() const;
-  public:
-  void clear_fish_trace();
-  ::BYDLD::FishTrace* mutable_fish_trace(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace >*
-      mutable_fish_trace();
-  private:
-  const ::BYDLD::FishTrace& _internal_fish_trace(int index) const;
-  ::BYDLD::FishTrace* _internal_add_fish_trace();
-  public:
-  const ::BYDLD::FishTrace& fish_trace(int index) const;
-  ::BYDLD::FishTrace* add_fish_trace();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace >&
-      fish_trace() const;
-
-  // repeated .BYDLD.SmallFish small_fish_list = 6;
-  int small_fish_list_size() const;
-  private:
-  int _internal_small_fish_list_size() const;
-  public:
-  void clear_small_fish_list();
-  ::BYDLD::SmallFish* mutable_small_fish_list(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SmallFish >*
-      mutable_small_fish_list();
-  private:
-  const ::BYDLD::SmallFish& _internal_small_fish_list(int index) const;
-  ::BYDLD::SmallFish* _internal_add_small_fish_list();
-  public:
-  const ::BYDLD::SmallFish& small_fish_list(int index) const;
-  ::BYDLD::SmallFish* add_small_fish_list();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SmallFish >&
-      small_fish_list() const;
-
-  // int32 fish_uid = 1;
-  void clear_fish_uid();
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_uid() const;
-  void set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_uid() const;
-  void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 fish_id = 2;
-  void clear_fish_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_id() const;
-  void set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_id() const;
-  void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 live_time = 3;
-  void clear_live_time();
-  ::PROTOBUF_NAMESPACE_ID::int32 live_time() const;
-  void set_live_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_live_time() const;
-  void _internal_set_live_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // float speed = 4;
-  void clear_speed();
-  float speed() const;
-  void set_speed(float value);
-  private:
-  float _internal_speed() const;
-  void _internal_set_speed(float value);
-  public:
-
-  // int32 route_type = 7;
-  void clear_route_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 route_type() const;
-  void set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_route_type() const;
-  void _internal_set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 fish_gender = 8;
-  void clear_fish_gender();
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_gender() const;
-  void set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_gender() const;
-  void _internal_set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:BYDLD.FishTraces)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace > fish_trace_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SmallFish > small_fish_list_;
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 live_time_;
-  float speed_;
-  ::PROTOBUF_NAMESPACE_ID::int32 route_type_;
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_gender_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_BYDLD_2eproto;
-};
-// -------------------------------------------------------------------
-
-class SCFishTracesList PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BYDLD.SCFishTracesList) */ {
- public:
-  inline SCFishTracesList() : SCFishTracesList(nullptr) {}
-  virtual ~SCFishTracesList();
-
-  SCFishTracesList(const SCFishTracesList& from);
-  SCFishTracesList(SCFishTracesList&& from) noexcept
-    : SCFishTracesList() {
-    *this = ::std::move(from);
-  }
-
-  inline SCFishTracesList& operator=(const SCFishTracesList& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline SCFishTracesList& operator=(SCFishTracesList&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const SCFishTracesList& default_instance();
-
-  static inline const SCFishTracesList* internal_default_instance() {
-    return reinterpret_cast<const SCFishTracesList*>(
-               &_SCFishTracesList_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    78;
-
-  friend void swap(SCFishTracesList& a, SCFishTracesList& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(SCFishTracesList* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(SCFishTracesList* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline SCFishTracesList* New() const final {
-    return CreateMaybeMessage<SCFishTracesList>(nullptr);
-  }
-
-  SCFishTracesList* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<SCFishTracesList>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const SCFishTracesList& from);
-  void MergeFrom(const SCFishTracesList& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(SCFishTracesList* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "BYDLD.SCFishTracesList";
-  }
-  protected:
-  explicit SCFishTracesList(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_BYDLD_2eproto);
-    return ::descriptor_table_BYDLD_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kFishTracesFieldNumber = 1,
-    kAccelerateFlagFieldNumber = 2,
-  };
-  // repeated .BYDLD.FishTraces fish_traces = 1;
-  int fish_traces_size() const;
-  private:
-  int _internal_fish_traces_size() const;
-  public:
-  void clear_fish_traces();
-  ::BYDLD::FishTraces* mutable_fish_traces(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
-      mutable_fish_traces();
-  private:
-  const ::BYDLD::FishTraces& _internal_fish_traces(int index) const;
-  ::BYDLD::FishTraces* _internal_add_fish_traces();
-  public:
-  const ::BYDLD::FishTraces& fish_traces(int index) const;
-  ::BYDLD::FishTraces* add_fish_traces();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
-      fish_traces() const;
-
-  // bool accelerate_flag = 2;
-  void clear_accelerate_flag();
-  bool accelerate_flag() const;
-  void set_accelerate_flag(bool value);
-  private:
-  bool _internal_accelerate_flag() const;
-  void _internal_set_accelerate_flag(bool value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:BYDLD.SCFishTracesList)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces > fish_traces_;
-  bool accelerate_flag_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_BYDLD_2eproto;
-};
-// -------------------------------------------------------------------
-
-class SyncFishTraces PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BYDLD.SyncFishTraces) */ {
- public:
-  inline SyncFishTraces() : SyncFishTraces(nullptr) {}
-  virtual ~SyncFishTraces();
-
-  SyncFishTraces(const SyncFishTraces& from);
-  SyncFishTraces(SyncFishTraces&& from) noexcept
-    : SyncFishTraces() {
-    *this = ::std::move(from);
-  }
-
-  inline SyncFishTraces& operator=(const SyncFishTraces& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline SyncFishTraces& operator=(SyncFishTraces&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const SyncFishTraces& default_instance();
-
-  static inline const SyncFishTraces* internal_default_instance() {
-    return reinterpret_cast<const SyncFishTraces*>(
-               &_SyncFishTraces_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    79;
-
-  friend void swap(SyncFishTraces& a, SyncFishTraces& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(SyncFishTraces* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(SyncFishTraces* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline SyncFishTraces* New() const final {
-    return CreateMaybeMessage<SyncFishTraces>(nullptr);
-  }
-
-  SyncFishTraces* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<SyncFishTraces>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const SyncFishTraces& from);
-  void MergeFrom(const SyncFishTraces& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(SyncFishTraces* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "BYDLD.SyncFishTraces";
-  }
-  protected:
-  explicit SyncFishTraces(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_BYDLD_2eproto);
-    return ::descriptor_table_BYDLD_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
     kFishTraceFieldNumber = 6,
+    kSmallFishListFieldNumber = 17,
     kFishUidFieldNumber = 1,
     kFishIdFieldNumber = 2,
     kLiveTimeFieldNumber = 3,
@@ -15269,6 +14851,24 @@ class SyncFishTraces PROTOBUF_FINAL :
   ::BYDLD::FishTrace* add_fish_trace();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace >&
       fish_trace() const;
+
+  // repeated .BYDLD.FishTraces small_fish_list = 17;
+  int small_fish_list_size() const;
+  private:
+  int _internal_small_fish_list_size() const;
+  public:
+  void clear_small_fish_list();
+  ::BYDLD::FishTraces* mutable_small_fish_list(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
+      mutable_small_fish_list();
+  private:
+  const ::BYDLD::FishTraces& _internal_small_fish_list(int index) const;
+  ::BYDLD::FishTraces* _internal_add_small_fish_list();
+  public:
+  const ::BYDLD::FishTraces& small_fish_list(int index) const;
+  ::BYDLD::FishTraces* add_small_fish_list();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
+      small_fish_list() const;
 
   // int32 fish_uid = 1;
   void clear_fish_uid();
@@ -15405,7 +15005,7 @@ class SyncFishTraces PROTOBUF_FINAL :
   void _internal_set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:BYDLD.SyncFishTraces)
+  // @@protoc_insertion_point(class_scope:BYDLD.FishTraces)
  private:
   class _Internal;
 
@@ -15413,6 +15013,7 @@ class SyncFishTraces PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace > fish_trace_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces > small_fish_list_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 live_time_;
@@ -15474,7 +15075,7 @@ class CSSyncFishReq PROTOBUF_FINAL :
                &_CSSyncFishReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    80;
+    78;
 
   friend void swap(CSSyncFishReq& a, CSSyncFishReq& b) {
     a.Swap(&b);
@@ -15610,7 +15211,7 @@ class SCSyncFishReq PROTOBUF_FINAL :
                &_SCSyncFishReq_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    81;
+    79;
 
   friend void swap(SCSyncFishReq& a, SCSyncFishReq& b) {
     a.Swap(&b);
@@ -15746,7 +15347,7 @@ class CSSyncFishRsp PROTOBUF_FINAL :
                &_CSSyncFishRsp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    82;
+    80;
 
   friend void swap(CSSyncFishRsp& a, CSSyncFishRsp& b) {
     a.Swap(&b);
@@ -15820,22 +15421,22 @@ class CSSyncFishRsp PROTOBUF_FINAL :
     kFishTracesFieldNumber = 1,
     kAccelerateFlagFieldNumber = 2,
   };
-  // repeated .BYDLD.SyncFishTraces fish_traces = 1;
+  // repeated .BYDLD.FishTraces fish_traces = 1;
   int fish_traces_size() const;
   private:
   int _internal_fish_traces_size() const;
   public:
   void clear_fish_traces();
-  ::BYDLD::SyncFishTraces* mutable_fish_traces(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >*
+  ::BYDLD::FishTraces* mutable_fish_traces(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
       mutable_fish_traces();
   private:
-  const ::BYDLD::SyncFishTraces& _internal_fish_traces(int index) const;
-  ::BYDLD::SyncFishTraces* _internal_add_fish_traces();
+  const ::BYDLD::FishTraces& _internal_fish_traces(int index) const;
+  ::BYDLD::FishTraces* _internal_add_fish_traces();
   public:
-  const ::BYDLD::SyncFishTraces& fish_traces(int index) const;
-  ::BYDLD::SyncFishTraces* add_fish_traces();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >&
+  const ::BYDLD::FishTraces& fish_traces(int index) const;
+  ::BYDLD::FishTraces* add_fish_traces();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
       fish_traces() const;
 
   // bool accelerate_flag = 2;
@@ -15854,7 +15455,7 @@ class CSSyncFishRsp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces > fish_traces_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces > fish_traces_;
   bool accelerate_flag_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
@@ -15902,7 +15503,7 @@ class SCSyncFishRsp PROTOBUF_FINAL :
                &_SCSyncFishRsp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    83;
+    81;
 
   friend void swap(SCSyncFishRsp& a, SCSyncFishRsp& b) {
     a.Swap(&b);
@@ -15976,22 +15577,22 @@ class SCSyncFishRsp PROTOBUF_FINAL :
     kFishTracesFieldNumber = 1,
     kAccelerateFlagFieldNumber = 2,
   };
-  // repeated .BYDLD.SyncFishTraces fish_traces = 1;
+  // repeated .BYDLD.FishTraces fish_traces = 1;
   int fish_traces_size() const;
   private:
   int _internal_fish_traces_size() const;
   public:
   void clear_fish_traces();
-  ::BYDLD::SyncFishTraces* mutable_fish_traces(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >*
+  ::BYDLD::FishTraces* mutable_fish_traces(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
       mutable_fish_traces();
   private:
-  const ::BYDLD::SyncFishTraces& _internal_fish_traces(int index) const;
-  ::BYDLD::SyncFishTraces* _internal_add_fish_traces();
+  const ::BYDLD::FishTraces& _internal_fish_traces(int index) const;
+  ::BYDLD::FishTraces* _internal_add_fish_traces();
   public:
-  const ::BYDLD::SyncFishTraces& fish_traces(int index) const;
-  ::BYDLD::SyncFishTraces* add_fish_traces();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >&
+  const ::BYDLD::FishTraces& fish_traces(int index) const;
+  ::BYDLD::FishTraces* add_fish_traces();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
       fish_traces() const;
 
   // bool accelerate_flag = 2;
@@ -16010,7 +15611,7 @@ class SCSyncFishRsp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces > fish_traces_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces > fish_traces_;
   bool accelerate_flag_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
@@ -16058,7 +15659,7 @@ class SCChangeScene PROTOBUF_FINAL :
                &_SCChangeScene_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    84;
+    82;
 
   friend void swap(SCChangeScene& a, SCChangeScene& b) {
     a.Swap(&b);
@@ -16194,7 +15795,7 @@ class CSFishOutsideScreen PROTOBUF_FINAL :
                &_CSFishOutsideScreen_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    85;
+    83;
 
   friend void swap(CSFishOutsideScreen& a, CSFishOutsideScreen& b) {
     a.Swap(&b);
@@ -16330,7 +15931,7 @@ class CSLockFish PROTOBUF_FINAL :
                &_CSLockFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    86;
+    84;
 
   friend void swap(CSLockFish& a, CSLockFish& b) {
     a.Swap(&b);
@@ -16488,7 +16089,7 @@ class SCLockFish PROTOBUF_FINAL :
                &_SCLockFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    87;
+    85;
 
   friend void swap(SCLockFish& a, SCLockFish& b) {
     a.Swap(&b);
@@ -16646,7 +16247,7 @@ class CSSetSkill PROTOBUF_FINAL :
                &_CSSetSkill_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    88;
+    86;
 
   friend void swap(CSSetSkill& a, CSSetSkill& b) {
     a.Swap(&b);
@@ -16815,7 +16416,7 @@ class SCSetSkill PROTOBUF_FINAL :
                &_SCSetSkill_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    89;
+    87;
 
   friend void swap(SCSetSkill& a, SCSetSkill& b) {
     a.Swap(&b);
@@ -16973,7 +16574,7 @@ class SCUserTimeoutKick PROTOBUF_FINAL :
                &_SCUserTimeoutKick_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    90;
+    88;
 
   friend void swap(SCUserTimeoutKick& a, SCUserTimeoutKick& b) {
     a.Swap(&b);
@@ -17109,7 +16710,7 @@ class CSUserRunBackground PROTOBUF_FINAL :
                &_CSUserRunBackground_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    91;
+    89;
 
   friend void swap(CSUserRunBackground& a, CSUserRunBackground& b) {
     a.Swap(&b);
@@ -17256,7 +16857,7 @@ class SCUserRunBackground PROTOBUF_FINAL :
                &_SCUserRunBackground_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    92;
+    90;
 
   friend void swap(SCUserRunBackground& a, SCUserRunBackground& b) {
     a.Swap(&b);
@@ -17401,7 +17002,7 @@ class CSUpdateHallProp PROTOBUF_FINAL :
                &_CSUpdateHallProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    93;
+    91;
 
   friend void swap(CSUpdateHallProp& a, CSUpdateHallProp& b) {
     a.Swap(&b);
@@ -17548,7 +17149,7 @@ class CSHeartBeat PROTOBUF_FINAL :
                &_CSHeartBeat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    94;
+    92;
 
   friend void swap(CSHeartBeat& a, CSHeartBeat& b) {
     a.Swap(&b);
@@ -17684,7 +17285,7 @@ class SCHeartBeat PROTOBUF_FINAL :
                &_SCHeartBeat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    95;
+    93;
 
   friend void swap(SCHeartBeat& a, SCHeartBeat& b) {
     a.Swap(&b);
@@ -17820,7 +17421,7 @@ class SCComTask PROTOBUF_FINAL :
                &_SCComTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    96;
+    94;
 
   friend void swap(SCComTask& a, SCComTask& b) {
     a.Swap(&b);
@@ -17989,7 +17590,7 @@ class CSTaskInfo PROTOBUF_FINAL :
                &_CSTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    97;
+    95;
 
   friend void swap(CSTaskInfo& a, CSTaskInfo& b) {
     a.Swap(&b);
@@ -18112,7 +17713,7 @@ class SCTaskInfo PROTOBUF_FINAL :
                &_SCTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    98;
+    96;
 
   friend void swap(SCTaskInfo& a, SCTaskInfo& b) {
     a.Swap(&b);
@@ -18336,7 +17937,7 @@ class UserScoreRecord PROTOBUF_FINAL :
                &_UserScoreRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    99;
+    97;
 
   friend void swap(UserScoreRecord& a, UserScoreRecord& b) {
     a.Swap(&b);
@@ -18508,7 +18109,7 @@ class CSFreeTimeEnd PROTOBUF_FINAL :
                &_CSFreeTimeEnd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    100;
+    98;
 
   friend void swap(CSFreeTimeEnd& a, CSFreeTimeEnd& b) {
     a.Swap(&b);
@@ -18631,7 +18232,7 @@ class SCSyncFreeTimes PROTOBUF_FINAL :
                &_SCSyncFreeTimes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    101;
+    99;
 
   friend void swap(SCSyncFreeTimes& a, SCSyncFreeTimes& b) {
     a.Swap(&b);
@@ -18811,7 +18412,7 @@ class CSClickStatistic PROTOBUF_FINAL :
                &_CSClickStatistic_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    102;
+    100;
 
   friend void swap(CSClickStatistic& a, CSClickStatistic& b) {
     a.Swap(&b);
@@ -18954,7 +18555,7 @@ class JumpHighArena PROTOBUF_FINAL :
                &_JumpHighArena_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    103;
+    101;
 
   friend void swap(JumpHighArena& a, JumpHighArena& b) {
     a.Swap(&b);
@@ -19148,7 +18749,7 @@ class GiftBag PROTOBUF_FINAL :
                &_GiftBag_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    104;
+    102;
 
   friend void swap(GiftBag& a, GiftBag& b) {
     a.Swap(&b);
@@ -19309,7 +18910,7 @@ class NewYearCardActivityInfo PROTOBUF_FINAL :
                &_NewYearCardActivityInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    105;
+    103;
 
   friend void swap(NewYearCardActivityInfo& a, NewYearCardActivityInfo& b) {
     a.Swap(&b);
@@ -19467,7 +19068,7 @@ class UserPoolActivityInfo PROTOBUF_FINAL :
                &_UserPoolActivityInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    106;
+    104;
 
   friend void swap(UserPoolActivityInfo& a, UserPoolActivityInfo& b) {
     a.Swap(&b);
@@ -19648,7 +19249,7 @@ class DragonBallConfig PROTOBUF_FINAL :
                &_DragonBallConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    107;
+    105;
 
   friend void swap(DragonBallConfig& a, DragonBallConfig& b) {
     a.Swap(&b);
@@ -19795,7 +19396,7 @@ class SCActivityInfo PROTOBUF_FINAL :
                &_SCActivityInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    108;
+    106;
 
   friend void swap(SCActivityInfo& a, SCActivityInfo& b) {
     a.Swap(&b);
@@ -20107,7 +19708,7 @@ class SCPropEndNotify PROTOBUF_FINAL :
                &_SCPropEndNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    109;
+    107;
 
   friend void swap(SCPropEndNotify& a, SCPropEndNotify& b) {
     a.Swap(&b);
@@ -20287,7 +19888,7 @@ class SCPropDropNotify PROTOBUF_FINAL :
                &_SCPropDropNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    110;
+    108;
 
   friend void swap(SCPropDropNotify& a, SCPropDropNotify& b) {
     a.Swap(&b);
@@ -20467,7 +20068,7 @@ class Prop PROTOBUF_FINAL :
                &_Prop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    111;
+    109;
 
   friend void swap(Prop& a, Prop& b) {
     a.Swap(&b);
@@ -20757,7 +20358,7 @@ class UserProp PROTOBUF_FINAL :
                &_UserProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    112;
+    110;
 
   friend void swap(UserProp& a, UserProp& b) {
     a.Swap(&b);
@@ -20913,7 +20514,7 @@ class UsersProp PROTOBUF_FINAL :
                &_UsersProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    113;
+    111;
 
   friend void swap(UsersProp& a, UsersProp& b) {
     a.Swap(&b);
@@ -21058,7 +20659,7 @@ class SSAwardPoolMsg PROTOBUF_FINAL :
                &_SSAwardPoolMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    114;
+    112;
 
   friend void swap(SSAwardPoolMsg& a, SSAwardPoolMsg& b) {
     a.Swap(&b);
@@ -21227,7 +20828,7 @@ class CSScratchNewYearCard PROTOBUF_FINAL :
                &_CSScratchNewYearCard_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    115;
+    113;
 
   friend void swap(CSScratchNewYearCard& a, CSScratchNewYearCard& b) {
     a.Swap(&b);
@@ -21363,7 +20964,7 @@ class CSBuyNewYearCard PROTOBUF_FINAL :
                &_CSBuyNewYearCard_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    116;
+    114;
 
   friend void swap(CSBuyNewYearCard& a, CSBuyNewYearCard& b) {
     a.Swap(&b);
@@ -21499,7 +21100,7 @@ class NewYearCardMultiple PROTOBUF_FINAL :
                &_NewYearCardMultiple_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    117;
+    115;
 
   friend void swap(NewYearCardMultiple& a, NewYearCardMultiple& b) {
     a.Swap(&b);
@@ -21653,7 +21254,7 @@ class SCScratchNewYearCard PROTOBUF_FINAL :
                &_SCScratchNewYearCard_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    118;
+    116;
 
   friend void swap(SCScratchNewYearCard& a, SCScratchNewYearCard& b) {
     a.Swap(&b);
@@ -21853,7 +21454,7 @@ class CSNewYearCardExchange PROTOBUF_FINAL :
                &_CSNewYearCardExchange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    119;
+    117;
 
   friend void swap(CSNewYearCardExchange& a, CSNewYearCardExchange& b) {
     a.Swap(&b);
@@ -22000,7 +21601,7 @@ class NewYearCardAward PROTOBUF_FINAL :
                &_NewYearCardAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    120;
+    118;
 
   friend void swap(NewYearCardAward& a, NewYearCardAward& b) {
     a.Swap(&b);
@@ -22189,7 +21790,7 @@ class SCNewYearCardExchange PROTOBUF_FINAL :
                &_SCNewYearCardExchange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    121;
+    119;
 
   friend void swap(SCNewYearCardExchange& a, SCNewYearCardExchange& b) {
     a.Swap(&b);
@@ -22400,7 +22001,7 @@ class CSNewYearCardAwardRecord PROTOBUF_FINAL :
                &_CSNewYearCardAwardRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    122;
+    120;
 
   friend void swap(CSNewYearCardAwardRecord& a, CSNewYearCardAwardRecord& b) {
     a.Swap(&b);
@@ -22523,7 +22124,7 @@ class NewYearCardAwardRecord PROTOBUF_FINAL :
                &_NewYearCardAwardRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    123;
+    121;
 
   friend void swap(NewYearCardAwardRecord& a, NewYearCardAwardRecord& b) {
     a.Swap(&b);
@@ -22681,7 +22282,7 @@ class SCNewYearCardAwardRecord PROTOBUF_FINAL :
                &_SCNewYearCardAwardRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    124;
+    122;
 
   friend void swap(SCNewYearCardAwardRecord& a, SCNewYearCardAwardRecord& b) {
     a.Swap(&b);
@@ -22837,7 +22438,7 @@ class SkillTime PROTOBUF_FINAL :
                &_SkillTime_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    125;
+    123;
 
   friend void swap(SkillTime& a, SkillTime& b) {
     a.Swap(&b);
@@ -22984,7 +22585,7 @@ class CSSaveSkillTime PROTOBUF_FINAL :
                &_CSSaveSkillTime_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    126;
+    124;
 
   friend void swap(CSSaveSkillTime& a, CSSaveSkillTime& b) {
     a.Swap(&b);
@@ -23129,7 +22730,7 @@ class CSSuperTridentShoot PROTOBUF_FINAL :
                &_CSSuperTridentShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    127;
+    125;
 
   friend void swap(CSSuperTridentShoot& a, CSSuperTridentShoot& b) {
     a.Swap(&b);
@@ -23252,7 +22853,7 @@ class SCSuperTridentShoot PROTOBUF_FINAL :
                &_SCSuperTridentShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    128;
+    126;
 
   friend void swap(SCSuperTridentShoot& a, SCSuperTridentShoot& b) {
     a.Swap(&b);
@@ -23388,7 +22989,7 @@ class CSSuperTridentAttack PROTOBUF_FINAL :
                &_CSSuperTridentAttack_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    129;
+    127;
 
   friend void swap(CSSuperTridentAttack& a, CSSuperTridentAttack& b) {
     a.Swap(&b);
@@ -23538,7 +23139,7 @@ class CommonResp PROTOBUF_FINAL :
                &_CommonResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    130;
+    128;
 
   friend void swap(CommonResp& a, CommonResp& b) {
     a.Swap(&b);
@@ -23692,7 +23293,7 @@ class CSAwardPoolRecord PROTOBUF_FINAL :
                &_CSAwardPoolRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    131;
+    129;
 
   friend void swap(CSAwardPoolRecord& a, CSAwardPoolRecord& b) {
     a.Swap(&b);
@@ -23815,7 +23416,7 @@ class AwardPoolRecord PROTOBUF_FINAL :
                &_AwardPoolRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    132;
+    130;
 
   friend void swap(AwardPoolRecord& a, AwardPoolRecord& b) {
     a.Swap(&b);
@@ -24009,7 +23610,7 @@ class SCAwardPoolRecord PROTOBUF_FINAL :
                &_SCAwardPoolRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    133;
+    131;
 
   friend void swap(SCAwardPoolRecord& a, SCAwardPoolRecord& b) {
     a.Swap(&b);
@@ -24154,7 +23755,7 @@ class CSFortuneShoot PROTOBUF_FINAL :
                &_CSFortuneShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    134;
+    132;
 
   friend void swap(CSFortuneShoot& a, CSFortuneShoot& b) {
     a.Swap(&b);
@@ -24277,7 +23878,7 @@ class SCFortuneShoot PROTOBUF_FINAL :
                &_SCFortuneShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    135;
+    133;
 
   friend void swap(SCFortuneShoot& a, SCFortuneShoot& b) {
     a.Swap(&b);
@@ -24424,7 +24025,7 @@ class IngotInfo PROTOBUF_FINAL :
                &_IngotInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    136;
+    134;
 
   friend void swap(IngotInfo& a, IngotInfo& b) {
     a.Swap(&b);
@@ -24582,7 +24183,7 @@ class SCSyncFortune PROTOBUF_FINAL :
                &_SCSyncFortune_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    137;
+    135;
 
   friend void swap(SCSyncFortune& a, SCSyncFortune& b) {
     a.Swap(&b);
@@ -24727,7 +24328,7 @@ class CSUserPoolInfo PROTOBUF_FINAL :
                &_CSUserPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    136;
 
   friend void swap(CSUserPoolInfo& a, CSUserPoolInfo& b) {
     a.Swap(&b);
@@ -24863,7 +24464,7 @@ class UserAwardItem PROTOBUF_FINAL :
                &_UserAwardItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    137;
 
   friend void swap(UserAwardItem& a, UserAwardItem& b) {
     a.Swap(&b);
@@ -25048,7 +24649,7 @@ class SCUserPoolInfo PROTOBUF_FINAL :
                &_SCUserPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    138;
 
   friend void swap(SCUserPoolInfo& a, SCUserPoolInfo& b) {
     a.Swap(&b);
@@ -25248,7 +24849,7 @@ class CSUserPoolStatus PROTOBUF_FINAL :
                &_CSUserPoolStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    139;
 
   friend void swap(CSUserPoolStatus& a, CSUserPoolStatus& b) {
     a.Swap(&b);
@@ -25384,7 +24985,7 @@ class SCUserPoolStatus PROTOBUF_FINAL :
                &_SCUserPoolStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    140;
 
   friend void swap(SCUserPoolStatus& a, SCUserPoolStatus& b) {
     a.Swap(&b);
@@ -25520,7 +25121,7 @@ class CSUserPoolPreDraw PROTOBUF_FINAL :
                &_CSUserPoolPreDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    141;
 
   friend void swap(CSUserPoolPreDraw& a, CSUserPoolPreDraw& b) {
     a.Swap(&b);
@@ -25656,7 +25257,7 @@ class SCUserPoolPreDraw PROTOBUF_FINAL :
                &_SCUserPoolPreDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    142;
 
   friend void swap(SCUserPoolPreDraw& a, SCUserPoolPreDraw& b) {
     a.Swap(&b);
@@ -25821,7 +25422,7 @@ class SCUserPoolDraw PROTOBUF_FINAL :
                &_SCUserPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    143;
 
   friend void swap(SCUserPoolDraw& a, SCUserPoolDraw& b) {
     a.Swap(&b);
@@ -26017,7 +25618,7 @@ class SCUserPoolAdd PROTOBUF_FINAL :
                &_SCUserPoolAdd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    144;
 
   friend void swap(SCUserPoolAdd& a, SCUserPoolAdd& b) {
     a.Swap(&b);
@@ -26215,7 +25816,7 @@ class ResultRank PROTOBUF_FINAL :
                &_ResultRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    147;
+    145;
 
   friend void swap(ResultRank& a, ResultRank& b) {
     a.Swap(&b);
@@ -26387,7 +25988,7 @@ class SCMatchResult PROTOBUF_FINAL :
                &_SCMatchResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    148;
+    146;
 
   friend void swap(SCMatchResult& a, SCMatchResult& b) {
     a.Swap(&b);
@@ -26647,7 +26248,7 @@ class MatchPackAddition PROTOBUF_FINAL :
                &_MatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    149;
+    147;
 
   friend void swap(MatchPackAddition& a, MatchPackAddition& b) {
     a.Swap(&b);
@@ -26845,7 +26446,7 @@ class CSMatchPackAddition PROTOBUF_FINAL :
                &_CSMatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    150;
+    148;
 
   friend void swap(CSMatchPackAddition& a, CSMatchPackAddition& b) {
     a.Swap(&b);
@@ -26968,7 +26569,7 @@ class SCMatchPackAddition PROTOBUF_FINAL :
                &_SCMatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    151;
+    149;
 
   friend void swap(SCMatchPackAddition& a, SCMatchPackAddition& b) {
     a.Swap(&b);
@@ -27113,7 +26714,7 @@ class SCMatchPackInvail PROTOBUF_FINAL :
                &_SCMatchPackInvail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    152;
+    150;
 
   friend void swap(SCMatchPackInvail& a, SCMatchPackInvail& b) {
     a.Swap(&b);
@@ -27256,7 +26857,7 @@ class HttpResult PROTOBUF_FINAL :
                &_HttpResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    153;
+    151;
 
   friend void swap(HttpResult& a, HttpResult& b) {
     a.Swap(&b);
@@ -27410,7 +27011,7 @@ class CSHBonusPool PROTOBUF_FINAL :
                &_CSHBonusPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    154;
+    152;
 
   friend void swap(CSHBonusPool& a, CSHBonusPool& b) {
     a.Swap(&b);
@@ -27568,7 +27169,7 @@ class HBonusPool PROTOBUF_FINAL :
                &_HBonusPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    155;
+    153;
 
   friend void swap(HBonusPool& a, HBonusPool& b) {
     a.Swap(&b);
@@ -27733,7 +27334,7 @@ class SCHBonusPool PROTOBUF_FINAL :
                &_SCHBonusPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    156;
+    154;
 
   friend void swap(SCHBonusPool& a, SCHBonusPool& b) {
     a.Swap(&b);
@@ -27878,7 +27479,7 @@ class CSHRankBar PROTOBUF_FINAL :
                &_CSHRankBar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    157;
+    155;
 
   friend void swap(CSHRankBar& a, CSHRankBar& b) {
     a.Swap(&b);
@@ -28036,7 +27637,7 @@ class SCHRankBar PROTOBUF_FINAL :
                &_SCHRankBar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    158;
+    156;
 
   friend void swap(SCHRankBar& a, SCHRankBar& b) {
     a.Swap(&b);
@@ -28194,7 +27795,7 @@ class RealRank PROTOBUF_FINAL :
                &_RealRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    159;
+    157;
 
   friend void swap(RealRank& a, RealRank& b) {
     a.Swap(&b);
@@ -28397,7 +27998,7 @@ class CSHRealRank PROTOBUF_FINAL :
                &_CSHRealRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    160;
+    158;
 
   friend void swap(CSHRealRank& a, CSHRealRank& b) {
     a.Swap(&b);
@@ -28555,7 +28156,7 @@ class SCHRealRank PROTOBUF_FINAL :
                &_SCHRealRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    161;
+    159;
 
   friend void swap(SCHRealRank& a, SCHRealRank& b) {
     a.Swap(&b);
@@ -28775,7 +28376,7 @@ class Reward PROTOBUF_FINAL :
                &_Reward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    162;
+    160;
 
   friend void swap(Reward& a, Reward& b) {
     a.Swap(&b);
@@ -28960,7 +28561,7 @@ class CSHReward PROTOBUF_FINAL :
                &_CSHReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    163;
+    161;
 
   friend void swap(CSHReward& a, CSHReward& b) {
     a.Swap(&b);
@@ -29107,7 +28708,7 @@ class SCHReward PROTOBUF_FINAL :
                &_SCHReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    164;
+    162;
 
   friend void swap(SCHReward& a, SCHReward& b) {
     a.Swap(&b);
@@ -29243,7 +28844,7 @@ class CSHMatchInfoTip PROTOBUF_FINAL :
                &_CSHMatchInfoTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    165;
+    163;
 
   friend void swap(CSHMatchInfoTip& a, CSHMatchInfoTip& b) {
     a.Swap(&b);
@@ -29366,7 +28967,7 @@ class MatchInfoTip PROTOBUF_FINAL :
                &_MatchInfoTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    166;
+    164;
 
   friend void swap(MatchInfoTip& a, MatchInfoTip& b) {
     a.Swap(&b);
@@ -29558,7 +29159,7 @@ class SCHMatchInfoTip PROTOBUF_FINAL :
                &_SCHMatchInfoTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    167;
+    165;
 
   friend void swap(SCHMatchInfoTip& a, SCHMatchInfoTip& b) {
     a.Swap(&b);
@@ -29703,7 +29304,7 @@ class CSHMatchInfo PROTOBUF_FINAL :
                &_CSHMatchInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    168;
+    166;
 
   friend void swap(CSHMatchInfo& a, CSHMatchInfo& b) {
     a.Swap(&b);
@@ -29839,7 +29440,7 @@ class SCHMatchInfo PROTOBUF_FINAL :
                &_SCHMatchInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    169;
+    167;
 
   friend void swap(SCHMatchInfo& a, SCHMatchInfo& b) {
     a.Swap(&b);
@@ -30044,7 +29645,7 @@ class HistoryRank PROTOBUF_FINAL :
                &_HistoryRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    170;
+    168;
 
   friend void swap(HistoryRank& a, HistoryRank& b) {
     a.Swap(&b);
@@ -30298,7 +29899,7 @@ class CSHHistoryRank PROTOBUF_FINAL :
                &_CSHHistoryRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    171;
+    169;
 
   friend void swap(CSHHistoryRank& a, CSHHistoryRank& b) {
     a.Swap(&b);
@@ -30445,7 +30046,7 @@ class SCHHistoryRank PROTOBUF_FINAL :
                &_SCHHistoryRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    172;
+    170;
 
   friend void swap(SCHHistoryRank& a, SCHHistoryRank& b) {
     a.Swap(&b);
@@ -30621,7 +30222,7 @@ class CSHLuckyInfo PROTOBUF_FINAL :
                &_CSHLuckyInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    173;
+    171;
 
   friend void swap(CSHLuckyInfo& a, CSHLuckyInfo& b) {
     a.Swap(&b);
@@ -30757,7 +30358,7 @@ class LuckyInfo PROTOBUF_FINAL :
                &_LuckyInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    174;
+    172;
 
   friend void swap(LuckyInfo& a, LuckyInfo& b) {
     a.Swap(&b);
@@ -30904,7 +30505,7 @@ class SCHLuckyInfo PROTOBUF_FINAL :
                &_SCHLuckyInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    175;
+    173;
 
   friend void swap(SCHLuckyInfo& a, SCHLuckyInfo& b) {
     a.Swap(&b);
@@ -31060,7 +30661,7 @@ class AwardDetail PROTOBUF_FINAL :
                &_AwardDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    176;
+    174;
 
   friend void swap(AwardDetail& a, AwardDetail& b) {
     a.Swap(&b);
@@ -31265,7 +30866,7 @@ class SCLuckyAwardNotify PROTOBUF_FINAL :
                &_SCLuckyAwardNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    177;
+    175;
 
   friend void swap(SCLuckyAwardNotify& a, SCLuckyAwardNotify& b) {
     a.Swap(&b);
@@ -31421,7 +31022,7 @@ class AwardProp PROTOBUF_FINAL :
                &_AwardProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    178;
+    176;
 
   friend void swap(AwardProp& a, AwardProp& b) {
     a.Swap(&b);
@@ -31568,7 +31169,7 @@ class LuckyTaskInfo PROTOBUF_FINAL :
                &_LuckyTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    179;
+    177;
 
   friend void swap(LuckyTaskInfo& a, LuckyTaskInfo& b) {
     a.Swap(&b);
@@ -31777,7 +31378,7 @@ class CSLuckyDrawInfo PROTOBUF_FINAL :
                &_CSLuckyDrawInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    180;
+    178;
 
   friend void swap(CSLuckyDrawInfo& a, CSLuckyDrawInfo& b) {
     a.Swap(&b);
@@ -31900,7 +31501,7 @@ class SCLuckyDrawInfo PROTOBUF_FINAL :
                &_SCLuckyDrawInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    181;
+    179;
 
   friend void swap(SCLuckyDrawInfo& a, SCLuckyDrawInfo& b) {
     a.Swap(&b);
@@ -32245,7 +31846,7 @@ class CSGetLuckyTaskAward PROTOBUF_FINAL :
                &_CSGetLuckyTaskAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    182;
+    180;
 
   friend void swap(CSGetLuckyTaskAward& a, CSGetLuckyTaskAward& b) {
     a.Swap(&b);
@@ -32381,7 +31982,7 @@ class SCLuckyTaskInfo PROTOBUF_FINAL :
                &_SCLuckyTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    183;
+    181;
 
   friend void swap(SCLuckyTaskInfo& a, SCLuckyTaskInfo& b) {
     a.Swap(&b);
@@ -32548,7 +32149,7 @@ class CSGetLuckyNum PROTOBUF_FINAL :
                &_CSGetLuckyNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    184;
+    182;
 
   friend void swap(CSGetLuckyNum& a, CSGetLuckyNum& b) {
     a.Swap(&b);
@@ -32684,7 +32285,7 @@ class SCGetLuckyNum PROTOBUF_FINAL :
                &_SCGetLuckyNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    185;
+    183;
 
   friend void swap(SCGetLuckyNum& a, SCGetLuckyNum& b) {
     a.Swap(&b);
@@ -32856,7 +32457,7 @@ class CSLuckyRedDot PROTOBUF_FINAL :
                &_CSLuckyRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    186;
+    184;
 
   friend void swap(CSLuckyRedDot& a, CSLuckyRedDot& b) {
     a.Swap(&b);
@@ -32979,7 +32580,7 @@ class SCLuckyRedDot PROTOBUF_FINAL :
                &_SCLuckyRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    187;
+    185;
 
   friend void swap(SCLuckyRedDot& a, SCLuckyRedDot& b) {
     a.Swap(&b);
@@ -33115,7 +32716,7 @@ class LuckyRecord PROTOBUF_FINAL :
                &_LuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    188;
+    186;
 
   friend void swap(LuckyRecord& a, LuckyRecord& b) {
     a.Swap(&b);
@@ -33302,7 +32903,7 @@ class OwnRecord PROTOBUF_FINAL :
                &_OwnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    189;
+    187;
 
   friend void swap(OwnRecord& a, OwnRecord& b) {
     a.Swap(&b);
@@ -33480,7 +33081,7 @@ class CSLuckyRecord PROTOBUF_FINAL :
                &_CSLuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    190;
+    188;
 
   friend void swap(CSLuckyRecord& a, CSLuckyRecord& b) {
     a.Swap(&b);
@@ -33616,7 +33217,7 @@ class SCLuckyRecord PROTOBUF_FINAL :
                &_SCLuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    191;
+    189;
 
   friend void swap(SCLuckyRecord& a, SCLuckyRecord& b) {
     a.Swap(&b);
@@ -33772,7 +33373,7 @@ class SCOwnRecord PROTOBUF_FINAL :
                &_SCOwnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    192;
+    190;
 
   friend void swap(SCOwnRecord& a, SCOwnRecord& b) {
     a.Swap(&b);
@@ -33917,7 +33518,7 @@ class CSDragonWheelStart PROTOBUF_FINAL :
                &_CSDragonWheelStart_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    193;
+    191;
 
   friend void swap(CSDragonWheelStart& a, CSDragonWheelStart& b) {
     a.Swap(&b);
@@ -34053,7 +33654,7 @@ class SCDragonWheelStop PROTOBUF_FINAL :
                &_SCDragonWheelStop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    194;
+    192;
 
   friend void swap(SCDragonWheelStop& a, SCDragonWheelStop& b) {
     a.Swap(&b);
@@ -34299,7 +33900,7 @@ class SCSyncHallProp PROTOBUF_FINAL :
                &_SCSyncHallProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    195;
+    193;
 
   friend void swap(SCSyncHallProp& a, SCSyncHallProp& b) {
     a.Swap(&b);
@@ -34444,7 +34045,7 @@ class CSCheckDragonWheelProp PROTOBUF_FINAL :
                &_CSCheckDragonWheelProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    196;
+    194;
 
   friend void swap(CSCheckDragonWheelProp& a, CSCheckDragonWheelProp& b) {
     a.Swap(&b);
@@ -34580,7 +34181,7 @@ class SCCheckDragonWheelProp PROTOBUF_FINAL :
                &_SCCheckDragonWheelProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    197;
+    195;
 
   friend void swap(SCCheckDragonWheelProp& a, SCCheckDragonWheelProp& b) {
     a.Swap(&b);
@@ -34749,7 +34350,7 @@ class CSUserPoolDoubleInfo PROTOBUF_FINAL :
                &_CSUserPoolDoubleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    198;
+    196;
 
   friend void swap(CSUserPoolDoubleInfo& a, CSUserPoolDoubleInfo& b) {
     a.Swap(&b);
@@ -34872,7 +34473,7 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
                &_SCUserPoolDoubleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    199;
+    197;
 
   friend void swap(SCUserPoolDoubleInfo& a, SCUserPoolDoubleInfo& b) {
     a.Swap(&b);
@@ -35048,7 +34649,7 @@ class CSUserPoolDouble PROTOBUF_FINAL :
                &_CSUserPoolDouble_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    200;
+    198;
 
   friend void swap(CSUserPoolDouble& a, CSUserPoolDouble& b) {
     a.Swap(&b);
@@ -35184,7 +34785,7 @@ class SCUserPoolDouble PROTOBUF_FINAL :
                &_SCUserPoolDouble_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    201;
+    199;
 
   friend void swap(SCUserPoolDouble& a, SCUserPoolDouble& b) {
     a.Swap(&b);
@@ -35382,7 +34983,7 @@ class CSLuckyPoolInfo PROTOBUF_FINAL :
                &_CSLuckyPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    202;
+    200;
 
   friend void swap(CSLuckyPoolInfo& a, CSLuckyPoolInfo& b) {
     a.Swap(&b);
@@ -35505,7 +35106,7 @@ class SCLuckyPoolInfo PROTOBUF_FINAL :
                &_SCLuckyPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    203;
+    201;
 
   friend void swap(SCLuckyPoolInfo& a, SCLuckyPoolInfo& b) {
     a.Swap(&b);
@@ -35652,7 +35253,7 @@ class CSLuckyPoolDraw PROTOBUF_FINAL :
                &_CSLuckyPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    204;
+    202;
 
   friend void swap(CSLuckyPoolDraw& a, CSLuckyPoolDraw& b) {
     a.Swap(&b);
@@ -35775,7 +35376,7 @@ class SCLuckyPoolDraw PROTOBUF_FINAL :
                &_SCLuckyPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    205;
+    203;
 
   friend void swap(SCLuckyPoolDraw& a, SCLuckyPoolDraw& b) {
     a.Swap(&b);
@@ -35920,7 +35521,7 @@ class TridentRankList PROTOBUF_FINAL :
                &_TridentRankList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    206;
+    204;
 
   friend void swap(TridentRankList& a, TridentRankList& b) {
     a.Swap(&b);
@@ -36114,7 +35715,7 @@ class SCTridentRankResult PROTOBUF_FINAL :
                &_SCTridentRankResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    207;
+    205;
 
   friend void swap(SCTridentRankResult& a, SCTridentRankResult& b) {
     a.Swap(&b);
@@ -36279,7 +35880,7 @@ class CSBigSmallWinInfo PROTOBUF_FINAL :
                &_CSBigSmallWinInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    208;
+    206;
 
   friend void swap(CSBigSmallWinInfo& a, CSBigSmallWinInfo& b) {
     a.Swap(&b);
@@ -36415,7 +36016,7 @@ class SCBigSmallWinInfo PROTOBUF_FINAL :
                &_SCBigSmallWinInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    209;
+    207;
 
   friend void swap(SCBigSmallWinInfo& a, SCBigSmallWinInfo& b) {
     a.Swap(&b);
@@ -36580,7 +36181,7 @@ class CSBigSmallRecord PROTOBUF_FINAL :
                &_CSBigSmallRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    210;
+    208;
 
   friend void swap(CSBigSmallRecord& a, CSBigSmallRecord& b) {
     a.Swap(&b);
@@ -36716,7 +36317,7 @@ class BigSmallRecord PROTOBUF_FINAL :
                &_BigSmallRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    211;
+    209;
 
   friend void swap(BigSmallRecord& a, BigSmallRecord& b) {
     a.Swap(&b);
@@ -36866,7 +36467,7 @@ class SCBigSmallRecord PROTOBUF_FINAL :
                &_SCBigSmallRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    212;
+    210;
 
   friend void swap(SCBigSmallRecord& a, SCBigSmallRecord& b) {
     a.Swap(&b);
@@ -37011,7 +36612,7 @@ class ItemEnableInfo PROTOBUF_FINAL :
                &_ItemEnableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    213;
+    211;
 
   friend void swap(ItemEnableInfo& a, ItemEnableInfo& b) {
     a.Swap(&b);
@@ -37158,7 +36759,7 @@ class ItemEnableNotice PROTOBUF_FINAL :
                &_ItemEnableNotice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    214;
+    212;
 
   friend void swap(ItemEnableNotice& a, ItemEnableNotice& b) {
     a.Swap(&b);
@@ -37303,7 +36904,7 @@ class RewardTask PROTOBUF_FINAL :
                &_RewardTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    215;
+    213;
 
   friend void swap(RewardTask& a, RewardTask& b) {
     a.Swap(&b);
@@ -37450,7 +37051,7 @@ class RewardConf PROTOBUF_FINAL :
                &_RewardConf_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    216;
+    214;
 
   friend void swap(RewardConf& a, RewardConf& b) {
     a.Swap(&b);
@@ -37597,7 +37198,7 @@ class CSReqRewardAddTask PROTOBUF_FINAL :
                &_CSReqRewardAddTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    217;
+    215;
 
   friend void swap(CSReqRewardAddTask& a, CSReqRewardAddTask& b) {
     a.Swap(&b);
@@ -37744,7 +37345,7 @@ class SCRepRewardTaskList PROTOBUF_FINAL :
                &_SCRepRewardTaskList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    218;
+    216;
 
   friend void swap(SCRepRewardTaskList& a, SCRepRewardTaskList& b) {
     a.Swap(&b);
@@ -37900,7 +37501,7 @@ class SCRewardTaskFinish PROTOBUF_FINAL :
                &_SCRewardTaskFinish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    219;
+    217;
 
   friend void swap(SCRewardTaskFinish& a, SCRewardTaskFinish& b) {
     a.Swap(&b);
@@ -38067,7 +37668,7 @@ class SCSyncRewardTaskResult PROTOBUF_FINAL :
                &_SCSyncRewardTaskResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    220;
+    218;
 
   friend void swap(SCSyncRewardTaskResult& a, SCSyncRewardTaskResult& b) {
     a.Swap(&b);
@@ -38300,7 +37901,7 @@ class CSReqRewardRecord PROTOBUF_FINAL :
                &_CSReqRewardRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    221;
+    219;
 
   friend void swap(CSReqRewardRecord& a, CSReqRewardRecord& b) {
     a.Swap(&b);
@@ -38436,7 +38037,7 @@ class SCRepRewardTaskRecord PROTOBUF_FINAL :
                &_SCRepRewardTaskRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    222;
+    220;
 
   friend void swap(SCRepRewardTaskRecord& a, SCRepRewardTaskRecord& b) {
     a.Swap(&b);
@@ -38625,7 +38226,7 @@ class CSRewardChangeAuto PROTOBUF_FINAL :
                &_CSRewardChangeAuto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    223;
+    221;
 
   friend void swap(CSRewardChangeAuto& a, CSRewardChangeAuto& b) {
     a.Swap(&b);
@@ -38761,7 +38362,7 @@ class SCRewardAutoRep PROTOBUF_FINAL :
                &_SCRewardAutoRep_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    224;
+    222;
 
   friend void swap(SCRewardAutoRep& a, SCRewardAutoRep& b) {
     a.Swap(&b);
@@ -38908,7 +38509,7 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
                &_SCSeaCrabCreate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    225;
+    223;
 
   friend void swap(SCSeaCrabCreate& a, SCSeaCrabCreate& b) {
     a.Swap(&b);
@@ -39055,7 +38656,7 @@ class CSSyncCrabStatus PROTOBUF_FINAL :
                &_CSSyncCrabStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    226;
+    224;
 
   friend void swap(CSSyncCrabStatus& a, CSSyncCrabStatus& b) {
     a.Swap(&b);
@@ -39178,7 +38779,7 @@ class SCSyncCrabStatus PROTOBUF_FINAL :
                &_SCSyncCrabStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    227;
+    225;
 
   friend void swap(SCSyncCrabStatus& a, SCSyncCrabStatus& b) {
     a.Swap(&b);
@@ -39347,7 +38948,7 @@ class CSDragonBallEnd PROTOBUF_FINAL :
                &_CSDragonBallEnd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    228;
+    226;
 
   friend void swap(CSDragonBallEnd& a, CSDragonBallEnd& b) {
     a.Swap(&b);
@@ -39470,7 +39071,7 @@ class SCDragonBallRes PROTOBUF_FINAL :
                &_SCDragonBallRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    229;
+    227;
 
   friend void swap(SCDragonBallRes& a, SCDragonBallRes& b) {
     a.Swap(&b);
@@ -39639,7 +39240,7 @@ class DevouredFish PROTOBUF_FINAL :
                &_DevouredFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    230;
+    228;
 
   friend void swap(DevouredFish& a, DevouredFish& b) {
     a.Swap(&b);
@@ -39786,7 +39387,7 @@ class CSDevourHit PROTOBUF_FINAL :
                &_CSDevourHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    231;
+    229;
 
   friend void swap(CSDevourHit& a, CSDevourHit& b) {
     a.Swap(&b);
@@ -39936,7 +39537,7 @@ class SCDevourHit PROTOBUF_FINAL :
                &_SCDevourHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    232;
+    230;
 
   friend void swap(SCDevourHit& a, SCDevourHit& b) {
     a.Swap(&b);
@@ -40114,7 +39715,7 @@ class OpenChestReward PROTOBUF_FINAL :
                &_OpenChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    233;
+    231;
 
   friend void swap(OpenChestReward& a, OpenChestReward& b) {
     a.Swap(&b);
@@ -40270,7 +39871,7 @@ class SCUpdateChestStatus PROTOBUF_FINAL :
                &_SCUpdateChestStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    234;
+    232;
 
   friend void swap(SCUpdateChestStatus& a, SCUpdateChestStatus& b) {
     a.Swap(&b);
@@ -40461,7 +40062,7 @@ class CSChestConfig PROTOBUF_FINAL :
                &_CSChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    235;
+    233;
 
   friend void swap(CSChestConfig& a, CSChestConfig& b) {
     a.Swap(&b);
@@ -40584,7 +40185,7 @@ class ChestBrief PROTOBUF_FINAL :
                &_ChestBrief_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    236;
+    234;
 
   friend void swap(ChestBrief& a, ChestBrief& b) {
     a.Swap(&b);
@@ -40740,7 +40341,7 @@ class SCChestConfig PROTOBUF_FINAL :
                &_SCChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    237;
+    235;
 
   friend void swap(SCChestConfig& a, SCChestConfig& b) {
     a.Swap(&b);
@@ -40940,7 +40541,7 @@ class CSOpenChest PROTOBUF_FINAL :
                &_CSOpenChest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    238;
+    236;
 
   friend void swap(CSOpenChest& a, CSOpenChest& b) {
     a.Swap(&b);
@@ -41063,7 +40664,7 @@ class SCOpenChest PROTOBUF_FINAL :
                &_SCOpenChest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    239;
+    237;
 
   friend void swap(SCOpenChest& a, SCOpenChest& b) {
     a.Swap(&b);
@@ -41228,7 +40829,7 @@ class CSSelectChestReward PROTOBUF_FINAL :
                &_CSSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    240;
+    238;
 
   friend void swap(CSSelectChestReward& a, CSSelectChestReward& b) {
     a.Swap(&b);
@@ -41364,7 +40965,7 @@ class SCSelectChestReward PROTOBUF_FINAL :
                &_SCSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    241;
+    239;
 
   friend void swap(SCSelectChestReward& a, SCSelectChestReward& b) {
     a.Swap(&b);
@@ -41509,7 +41110,7 @@ class CSChestSetAutoSelect PROTOBUF_FINAL :
                &_CSChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    242;
+    240;
 
   friend void swap(CSChestSetAutoSelect& a, CSChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -41656,7 +41257,7 @@ class SCChestSetAutoSelect PROTOBUF_FINAL :
                &_SCChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    243;
+    241;
 
   friend void swap(SCChestSetAutoSelect& a, SCChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -41803,7 +41404,7 @@ class CSChestSetEnable PROTOBUF_FINAL :
                &_CSChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    244;
+    242;
 
   friend void swap(CSChestSetEnable& a, CSChestSetEnable& b) {
     a.Swap(&b);
@@ -41939,7 +41540,7 @@ class SCChestSetEnable PROTOBUF_FINAL :
                &_SCChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    245;
+    243;
 
   friend void swap(SCChestSetEnable& a, SCChestSetEnable& b) {
     a.Swap(&b);
@@ -42075,7 +41676,7 @@ class CSSyncAnimation PROTOBUF_FINAL :
                &_CSSyncAnimation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    246;
+    244;
 
   friend void swap(CSSyncAnimation& a, CSSyncAnimation& b) {
     a.Swap(&b);
@@ -42251,7 +41852,7 @@ class SCSyncAnimation PROTOBUF_FINAL :
                &_SCSyncAnimation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    247;
+    245;
 
   friend void swap(SCSyncAnimation& a, SCSyncAnimation& b) {
     a.Swap(&b);
@@ -42427,7 +42028,7 @@ class CSMagicCardList PROTOBUF_FINAL :
                &_CSMagicCardList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    248;
+    246;
 
   friend void swap(CSMagicCardList& a, CSMagicCardList& b) {
     a.Swap(&b);
@@ -42550,7 +42151,7 @@ class SCMagicCardList PROTOBUF_FINAL :
                &_SCMagicCardList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    249;
+    247;
 
   friend void swap(SCMagicCardList& a, SCMagicCardList& b) {
     a.Swap(&b);
@@ -42695,7 +42296,7 @@ class SCTortoiseExplode PROTOBUF_FINAL :
                &_SCTortoiseExplode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    250;
+    248;
 
   friend void swap(SCTortoiseExplode& a, SCTortoiseExplode& b) {
     a.Swap(&b);
@@ -42886,7 +42487,7 @@ class CSBuyGun PROTOBUF_FINAL :
                &_CSBuyGun_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    251;
+    249;
 
   friend void swap(CSBuyGun& a, CSBuyGun& b) {
     a.Swap(&b);
@@ -43022,7 +42623,7 @@ class SCBuyGun PROTOBUF_FINAL :
                &_SCBuyGun_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    252;
+    250;
 
   friend void swap(SCBuyGun& a, SCBuyGun& b) {
     a.Swap(&b);
@@ -43169,7 +42770,7 @@ class SCWaterDropInfo PROTOBUF_FINAL :
                &_SCWaterDropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    253;
+    251;
 
   friend void swap(SCWaterDropInfo& a, SCWaterDropInfo& b) {
     a.Swap(&b);
@@ -43327,7 +42928,7 @@ class CSBuyWings PROTOBUF_FINAL :
                &_CSBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    254;
+    252;
 
   friend void swap(CSBuyWings& a, CSBuyWings& b) {
     a.Swap(&b);
@@ -43463,7 +43064,7 @@ class SCBuyWings PROTOBUF_FINAL :
                &_SCBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    255;
+    253;
 
   friend void swap(SCBuyWings& a, SCBuyWings& b) {
     a.Swap(&b);
@@ -43610,7 +43211,7 @@ class CSSetWings PROTOBUF_FINAL :
                &_CSSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    256;
+    254;
 
   friend void swap(CSSetWings& a, CSSetWings& b) {
     a.Swap(&b);
@@ -43746,7 +43347,7 @@ class SCSetWings PROTOBUF_FINAL :
                &_SCSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    257;
+    255;
 
   friend void swap(SCSetWings& a, SCSetWings& b) {
     a.Swap(&b);
@@ -43904,7 +43505,7 @@ class SCBeKicked PROTOBUF_FINAL :
                &_SCBeKicked_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    258;
+    256;
 
   friend void swap(SCBeKicked& a, SCBeKicked& b) {
     a.Swap(&b);
@@ -44040,7 +43641,7 @@ class CSClientTimeValidate PROTOBUF_FINAL :
                &_CSClientTimeValidate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    259;
+    257;
 
   friend void swap(CSClientTimeValidate& a, CSClientTimeValidate& b) {
     a.Swap(&b);
@@ -44176,7 +43777,7 @@ class SCClientTimeValidate PROTOBUF_FINAL :
                &_SCClientTimeValidate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    260;
+    258;
 
   friend void swap(SCClientTimeValidate& a, SCClientTimeValidate& b) {
     a.Swap(&b);
@@ -44299,7 +43900,7 @@ class CSChangeTable PROTOBUF_FINAL :
                &_CSChangeTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    261;
+    259;
 
   friend void swap(CSChangeTable& a, CSChangeTable& b) {
     a.Swap(&b);
@@ -44422,7 +44023,7 @@ class SCChangeTable PROTOBUF_FINAL :
                &_SCChangeTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    262;
+    260;
 
   friend void swap(SCChangeTable& a, SCChangeTable& b) {
     a.Swap(&b);
@@ -46386,22 +45987,22 @@ inline void SCPropsTrident::set_single_score(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:BYDLD.SCPropsTrident.single_score)
 }
 
-// int64 cur_score = 3;
+// int32 cur_score = 3;
 inline void SCPropsTrident::clear_cur_score() {
-  cur_score_ = PROTOBUF_LONGLONG(0);
+  cur_score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCPropsTrident::_internal_cur_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCPropsTrident::_internal_cur_score() const {
   return cur_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCPropsTrident::cur_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCPropsTrident::cur_score() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCPropsTrident.cur_score)
   return _internal_cur_score();
 }
-inline void SCPropsTrident::_internal_set_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCPropsTrident::_internal_set_cur_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   cur_score_ = value;
 }
-inline void SCPropsTrident::set_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCPropsTrident::set_cur_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_cur_score(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCPropsTrident.cur_score)
 }
@@ -46494,24 +46095,24 @@ inline void SCBigSmallChoose::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallChoose.chair_idx)
 }
 
-// int32 enter_or_exit = 2;
-inline void SCBigSmallChoose::clear_enter_or_exit() {
-  enter_or_exit_ = 0;
+// int32 enter_exit = 2;
+inline void SCBigSmallChoose::clear_enter_exit() {
+  enter_exit_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallChoose::_internal_enter_or_exit() const {
-  return enter_or_exit_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallChoose::_internal_enter_exit() const {
+  return enter_exit_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallChoose::enter_or_exit() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SCBigSmallChoose.enter_or_exit)
-  return _internal_enter_or_exit();
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallChoose::enter_exit() const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCBigSmallChoose.enter_exit)
+  return _internal_enter_exit();
 }
-inline void SCBigSmallChoose::_internal_set_enter_or_exit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCBigSmallChoose::_internal_set_enter_exit(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  enter_or_exit_ = value;
+  enter_exit_ = value;
 }
-inline void SCBigSmallChoose::set_enter_or_exit(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_enter_or_exit(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallChoose.enter_or_exit)
+inline void SCBigSmallChoose::set_enter_exit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_enter_exit(value);
+  // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallChoose.enter_exit)
 }
 
 // int32 award = 3;
@@ -52234,106 +51835,65 @@ inline void FishTrace::set_wait_time(float value) {
 
 // -------------------------------------------------------------------
 
-// SmallFish
+// SCFishTracesList
 
-// int32 fish_uid = 1;
-inline void SmallFish::clear_fish_uid() {
-  fish_uid_ = 0;
+// repeated .BYDLD.FishTraces fish_traces = 1;
+inline int SCFishTracesList::_internal_fish_traces_size() const {
+  return fish_traces_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SmallFish::_internal_fish_uid() const {
-  return fish_uid_;
+inline int SCFishTracesList::fish_traces_size() const {
+  return _internal_fish_traces_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SmallFish::fish_uid() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SmallFish.fish_uid)
-  return _internal_fish_uid();
+inline void SCFishTracesList::clear_fish_traces() {
+  fish_traces_.Clear();
 }
-inline void SmallFish::_internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  fish_uid_ = value;
+inline ::BYDLD::FishTraces* SCFishTracesList::mutable_fish_traces(int index) {
+  // @@protoc_insertion_point(field_mutable:BYDLD.SCFishTracesList.fish_traces)
+  return fish_traces_.Mutable(index);
 }
-inline void SmallFish::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_fish_uid(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SmallFish.fish_uid)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
+SCFishTracesList::mutable_fish_traces() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCFishTracesList.fish_traces)
+  return &fish_traces_;
 }
-
-// int32 fish_id = 2;
-inline void SmallFish::clear_fish_id() {
-  fish_id_ = 0;
+inline const ::BYDLD::FishTraces& SCFishTracesList::_internal_fish_traces(int index) const {
+  return fish_traces_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SmallFish::_internal_fish_id() const {
-  return fish_id_;
+inline const ::BYDLD::FishTraces& SCFishTracesList::fish_traces(int index) const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCFishTracesList.fish_traces)
+  return _internal_fish_traces(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SmallFish::fish_id() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SmallFish.fish_id)
-  return _internal_fish_id();
+inline ::BYDLD::FishTraces* SCFishTracesList::_internal_add_fish_traces() {
+  return fish_traces_.Add();
 }
-inline void SmallFish::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  fish_id_ = value;
+inline ::BYDLD::FishTraces* SCFishTracesList::add_fish_traces() {
+  // @@protoc_insertion_point(field_add:BYDLD.SCFishTracesList.fish_traces)
+  return _internal_add_fish_traces();
 }
-inline void SmallFish::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SmallFish.fish_id)
-}
-
-// float x = 3;
-inline void SmallFish::clear_x() {
-  x_ = 0;
-}
-inline float SmallFish::_internal_x() const {
-  return x_;
-}
-inline float SmallFish::x() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SmallFish.x)
-  return _internal_x();
-}
-inline void SmallFish::_internal_set_x(float value) {
-  
-  x_ = value;
-}
-inline void SmallFish::set_x(float value) {
-  _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SmallFish.x)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
+SCFishTracesList::fish_traces() const {
+  // @@protoc_insertion_point(field_list:BYDLD.SCFishTracesList.fish_traces)
+  return fish_traces_;
 }
 
-// float y = 4;
-inline void SmallFish::clear_y() {
-  y_ = 0;
+// bool accelerate_flag = 2;
+inline void SCFishTracesList::clear_accelerate_flag() {
+  accelerate_flag_ = false;
 }
-inline float SmallFish::_internal_y() const {
-  return y_;
+inline bool SCFishTracesList::_internal_accelerate_flag() const {
+  return accelerate_flag_;
 }
-inline float SmallFish::y() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SmallFish.y)
-  return _internal_y();
+inline bool SCFishTracesList::accelerate_flag() const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCFishTracesList.accelerate_flag)
+  return _internal_accelerate_flag();
 }
-inline void SmallFish::_internal_set_y(float value) {
+inline void SCFishTracesList::_internal_set_accelerate_flag(bool value) {
   
-  y_ = value;
+  accelerate_flag_ = value;
 }
-inline void SmallFish::set_y(float value) {
-  _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SmallFish.y)
-}
-
-// float time = 5;
-inline void SmallFish::clear_time() {
-  time_ = 0;
-}
-inline float SmallFish::_internal_time() const {
-  return time_;
-}
-inline float SmallFish::time() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SmallFish.time)
-  return _internal_time();
-}
-inline void SmallFish::_internal_set_time(float value) {
-  
-  time_ = value;
-}
-inline void SmallFish::set_time(float value) {
-  _internal_set_time(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SmallFish.time)
+inline void SCFishTracesList::set_accelerate_flag(bool value) {
+  _internal_set_accelerate_flag(value);
+  // @@protoc_insertion_point(field_set:BYDLD.SCFishTracesList.accelerate_flag)
 }
 
 // -------------------------------------------------------------------
@@ -52420,7 +51980,27 @@ inline void FishTraces::set_speed(float value) {
   // @@protoc_insertion_point(field_set:BYDLD.FishTraces.speed)
 }
 
-// repeated .BYDLD.FishTrace fish_trace = 5;
+// int32 route_type = 5;
+inline void FishTraces::clear_route_type() {
+  route_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_route_type() const {
+  return route_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::route_type() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.route_type)
+  return _internal_route_type();
+}
+inline void FishTraces::_internal_set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  route_type_ = value;
+}
+inline void FishTraces::set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_route_type(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.route_type)
+}
+
+// repeated .BYDLD.FishTrace fish_trace = 6;
 inline int FishTraces::_internal_fish_trace_size() const {
   return fish_trace_.size();
 }
@@ -52459,66 +52039,187 @@ FishTraces::fish_trace() const {
   return fish_trace_;
 }
 
-// repeated .BYDLD.SmallFish small_fish_list = 6;
-inline int FishTraces::_internal_small_fish_list_size() const {
-  return small_fish_list_.size();
+// int32 fish_cur_point = 7;
+inline void FishTraces::clear_fish_cur_point() {
+  fish_cur_point_ = 0;
 }
-inline int FishTraces::small_fish_list_size() const {
-  return _internal_small_fish_list_size();
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_fish_cur_point() const {
+  return fish_cur_point_;
 }
-inline void FishTraces::clear_small_fish_list() {
-  small_fish_list_.Clear();
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::fish_cur_point() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.fish_cur_point)
+  return _internal_fish_cur_point();
 }
-inline ::BYDLD::SmallFish* FishTraces::mutable_small_fish_list(int index) {
-  // @@protoc_insertion_point(field_mutable:BYDLD.FishTraces.small_fish_list)
-  return small_fish_list_.Mutable(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SmallFish >*
-FishTraces::mutable_small_fish_list() {
-  // @@protoc_insertion_point(field_mutable_list:BYDLD.FishTraces.small_fish_list)
-  return &small_fish_list_;
-}
-inline const ::BYDLD::SmallFish& FishTraces::_internal_small_fish_list(int index) const {
-  return small_fish_list_.Get(index);
-}
-inline const ::BYDLD::SmallFish& FishTraces::small_fish_list(int index) const {
-  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.small_fish_list)
-  return _internal_small_fish_list(index);
-}
-inline ::BYDLD::SmallFish* FishTraces::_internal_add_small_fish_list() {
-  return small_fish_list_.Add();
-}
-inline ::BYDLD::SmallFish* FishTraces::add_small_fish_list() {
-  // @@protoc_insertion_point(field_add:BYDLD.FishTraces.small_fish_list)
-  return _internal_add_small_fish_list();
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SmallFish >&
-FishTraces::small_fish_list() const {
-  // @@protoc_insertion_point(field_list:BYDLD.FishTraces.small_fish_list)
-  return small_fish_list_;
-}
-
-// int32 route_type = 7;
-inline void FishTraces::clear_route_type() {
-  route_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_route_type() const {
-  return route_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::route_type() const {
-  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.route_type)
-  return _internal_route_type();
-}
-inline void FishTraces::_internal_set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void FishTraces::_internal_set_fish_cur_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  route_type_ = value;
+  fish_cur_point_ = value;
 }
-inline void FishTraces::set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_route_type(value);
-  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.route_type)
+inline void FishTraces::set_fish_cur_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_fish_cur_point(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.fish_cur_point)
 }
 
-// int32 fish_gender = 8;
+// bool already_move = 8;
+inline void FishTraces::clear_already_move() {
+  already_move_ = false;
+}
+inline bool FishTraces::_internal_already_move() const {
+  return already_move_;
+}
+inline bool FishTraces::already_move() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.already_move)
+  return _internal_already_move();
+}
+inline void FishTraces::_internal_set_already_move(bool value) {
+  
+  already_move_ = value;
+}
+inline void FishTraces::set_already_move(bool value) {
+  _internal_set_already_move(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.already_move)
+}
+
+// float x = 9;
+inline void FishTraces::clear_x() {
+  x_ = 0;
+}
+inline float FishTraces::_internal_x() const {
+  return x_;
+}
+inline float FishTraces::x() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.x)
+  return _internal_x();
+}
+inline void FishTraces::_internal_set_x(float value) {
+  
+  x_ = value;
+}
+inline void FishTraces::set_x(float value) {
+  _internal_set_x(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.x)
+}
+
+// float y = 10;
+inline void FishTraces::clear_y() {
+  y_ = 0;
+}
+inline float FishTraces::_internal_y() const {
+  return y_;
+}
+inline float FishTraces::y() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.y)
+  return _internal_y();
+}
+inline void FishTraces::_internal_set_y(float value) {
+  
+  y_ = value;
+}
+inline void FishTraces::set_y(float value) {
+  _internal_set_y(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.y)
+}
+
+// float time = 11;
+inline void FishTraces::clear_time() {
+  time_ = 0;
+}
+inline float FishTraces::_internal_time() const {
+  return time_;
+}
+inline float FishTraces::time() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.time)
+  return _internal_time();
+}
+inline void FishTraces::_internal_set_time(float value) {
+  
+  time_ = value;
+}
+inline void FishTraces::set_time(float value) {
+  _internal_set_time(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.time)
+}
+
+// int32 stage = 12;
+inline void FishTraces::clear_stage() {
+  stage_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_stage() const {
+  return stage_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::stage() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.stage)
+  return _internal_stage();
+}
+inline void FishTraces::_internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  stage_ = value;
+}
+inline void FishTraces::set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_stage(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.stage)
+}
+
+// int32 sub_stage = 13;
+inline void FishTraces::clear_sub_stage() {
+  sub_stage_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_sub_stage() const {
+  return sub_stage_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::sub_stage() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.sub_stage)
+  return _internal_sub_stage();
+}
+inline void FishTraces::_internal_set_sub_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  sub_stage_ = value;
+}
+inline void FishTraces::set_sub_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_sub_stage(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.sub_stage)
+}
+
+// int32 lifespan = 14;
+inline void FishTraces::clear_lifespan() {
+  lifespan_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_lifespan() const {
+  return lifespan_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::lifespan() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.lifespan)
+  return _internal_lifespan();
+}
+inline void FishTraces::_internal_set_lifespan(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  lifespan_ = value;
+}
+inline void FishTraces::set_lifespan(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_lifespan(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.lifespan)
+}
+
+// int32 frozen_time = 15;
+inline void FishTraces::clear_frozen_time() {
+  frozen_time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::_internal_frozen_time() const {
+  return frozen_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTraces::frozen_time() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.frozen_time)
+  return _internal_frozen_time();
+}
+inline void FishTraces::_internal_set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  frozen_time_ = value;
+}
+inline void FishTraces::set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_frozen_time(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.frozen_time)
+}
+
+// int32 fish_gender = 16;
 inline void FishTraces::clear_fish_gender() {
   fish_gender_ = 0;
 }
@@ -52538,410 +52239,43 @@ inline void FishTraces::set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:BYDLD.FishTraces.fish_gender)
 }
 
-// -------------------------------------------------------------------
-
-// SCFishTracesList
-
-// repeated .BYDLD.FishTraces fish_traces = 1;
-inline int SCFishTracesList::_internal_fish_traces_size() const {
-  return fish_traces_.size();
+// repeated .BYDLD.FishTraces small_fish_list = 17;
+inline int FishTraces::_internal_small_fish_list_size() const {
+  return small_fish_list_.size();
 }
-inline int SCFishTracesList::fish_traces_size() const {
-  return _internal_fish_traces_size();
+inline int FishTraces::small_fish_list_size() const {
+  return _internal_small_fish_list_size();
 }
-inline void SCFishTracesList::clear_fish_traces() {
-  fish_traces_.Clear();
+inline void FishTraces::clear_small_fish_list() {
+  small_fish_list_.Clear();
 }
-inline ::BYDLD::FishTraces* SCFishTracesList::mutable_fish_traces(int index) {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SCFishTracesList.fish_traces)
-  return fish_traces_.Mutable(index);
+inline ::BYDLD::FishTraces* FishTraces::mutable_small_fish_list(int index) {
+  // @@protoc_insertion_point(field_mutable:BYDLD.FishTraces.small_fish_list)
+  return small_fish_list_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
-SCFishTracesList::mutable_fish_traces() {
-  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCFishTracesList.fish_traces)
-  return &fish_traces_;
+FishTraces::mutable_small_fish_list() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.FishTraces.small_fish_list)
+  return &small_fish_list_;
 }
-inline const ::BYDLD::FishTraces& SCFishTracesList::_internal_fish_traces(int index) const {
-  return fish_traces_.Get(index);
+inline const ::BYDLD::FishTraces& FishTraces::_internal_small_fish_list(int index) const {
+  return small_fish_list_.Get(index);
 }
-inline const ::BYDLD::FishTraces& SCFishTracesList::fish_traces(int index) const {
-  // @@protoc_insertion_point(field_get:BYDLD.SCFishTracesList.fish_traces)
-  return _internal_fish_traces(index);
+inline const ::BYDLD::FishTraces& FishTraces::small_fish_list(int index) const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.small_fish_list)
+  return _internal_small_fish_list(index);
 }
-inline ::BYDLD::FishTraces* SCFishTracesList::_internal_add_fish_traces() {
-  return fish_traces_.Add();
+inline ::BYDLD::FishTraces* FishTraces::_internal_add_small_fish_list() {
+  return small_fish_list_.Add();
 }
-inline ::BYDLD::FishTraces* SCFishTracesList::add_fish_traces() {
-  // @@protoc_insertion_point(field_add:BYDLD.SCFishTracesList.fish_traces)
-  return _internal_add_fish_traces();
+inline ::BYDLD::FishTraces* FishTraces::add_small_fish_list() {
+  // @@protoc_insertion_point(field_add:BYDLD.FishTraces.small_fish_list)
+  return _internal_add_small_fish_list();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
-SCFishTracesList::fish_traces() const {
-  // @@protoc_insertion_point(field_list:BYDLD.SCFishTracesList.fish_traces)
-  return fish_traces_;
-}
-
-// bool accelerate_flag = 2;
-inline void SCFishTracesList::clear_accelerate_flag() {
-  accelerate_flag_ = false;
-}
-inline bool SCFishTracesList::_internal_accelerate_flag() const {
-  return accelerate_flag_;
-}
-inline bool SCFishTracesList::accelerate_flag() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SCFishTracesList.accelerate_flag)
-  return _internal_accelerate_flag();
-}
-inline void SCFishTracesList::_internal_set_accelerate_flag(bool value) {
-  
-  accelerate_flag_ = value;
-}
-inline void SCFishTracesList::set_accelerate_flag(bool value) {
-  _internal_set_accelerate_flag(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SCFishTracesList.accelerate_flag)
-}
-
-// -------------------------------------------------------------------
-
-// SyncFishTraces
-
-// int32 fish_uid = 1;
-inline void SyncFishTraces::clear_fish_uid() {
-  fish_uid_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_fish_uid() const {
-  return fish_uid_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::fish_uid() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.fish_uid)
-  return _internal_fish_uid();
-}
-inline void SyncFishTraces::_internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  fish_uid_ = value;
-}
-inline void SyncFishTraces::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_fish_uid(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.fish_uid)
-}
-
-// int32 fish_id = 2;
-inline void SyncFishTraces::clear_fish_id() {
-  fish_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_fish_id() const {
-  return fish_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::fish_id() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.fish_id)
-  return _internal_fish_id();
-}
-inline void SyncFishTraces::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  fish_id_ = value;
-}
-inline void SyncFishTraces::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.fish_id)
-}
-
-// int32 live_time = 3;
-inline void SyncFishTraces::clear_live_time() {
-  live_time_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_live_time() const {
-  return live_time_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::live_time() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.live_time)
-  return _internal_live_time();
-}
-inline void SyncFishTraces::_internal_set_live_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  live_time_ = value;
-}
-inline void SyncFishTraces::set_live_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_live_time(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.live_time)
-}
-
-// float speed = 4;
-inline void SyncFishTraces::clear_speed() {
-  speed_ = 0;
-}
-inline float SyncFishTraces::_internal_speed() const {
-  return speed_;
-}
-inline float SyncFishTraces::speed() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.speed)
-  return _internal_speed();
-}
-inline void SyncFishTraces::_internal_set_speed(float value) {
-  
-  speed_ = value;
-}
-inline void SyncFishTraces::set_speed(float value) {
-  _internal_set_speed(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.speed)
-}
-
-// int32 route_type = 5;
-inline void SyncFishTraces::clear_route_type() {
-  route_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_route_type() const {
-  return route_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::route_type() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.route_type)
-  return _internal_route_type();
-}
-inline void SyncFishTraces::_internal_set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  route_type_ = value;
-}
-inline void SyncFishTraces::set_route_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_route_type(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.route_type)
-}
-
-// repeated .BYDLD.FishTrace fish_trace = 6;
-inline int SyncFishTraces::_internal_fish_trace_size() const {
-  return fish_trace_.size();
-}
-inline int SyncFishTraces::fish_trace_size() const {
-  return _internal_fish_trace_size();
-}
-inline void SyncFishTraces::clear_fish_trace() {
-  fish_trace_.Clear();
-}
-inline ::BYDLD::FishTrace* SyncFishTraces::mutable_fish_trace(int index) {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SyncFishTraces.fish_trace)
-  return fish_trace_.Mutable(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace >*
-SyncFishTraces::mutable_fish_trace() {
-  // @@protoc_insertion_point(field_mutable_list:BYDLD.SyncFishTraces.fish_trace)
-  return &fish_trace_;
-}
-inline const ::BYDLD::FishTrace& SyncFishTraces::_internal_fish_trace(int index) const {
-  return fish_trace_.Get(index);
-}
-inline const ::BYDLD::FishTrace& SyncFishTraces::fish_trace(int index) const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.fish_trace)
-  return _internal_fish_trace(index);
-}
-inline ::BYDLD::FishTrace* SyncFishTraces::_internal_add_fish_trace() {
-  return fish_trace_.Add();
-}
-inline ::BYDLD::FishTrace* SyncFishTraces::add_fish_trace() {
-  // @@protoc_insertion_point(field_add:BYDLD.SyncFishTraces.fish_trace)
-  return _internal_add_fish_trace();
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTrace >&
-SyncFishTraces::fish_trace() const {
-  // @@protoc_insertion_point(field_list:BYDLD.SyncFishTraces.fish_trace)
-  return fish_trace_;
-}
-
-// int32 fish_cur_point = 7;
-inline void SyncFishTraces::clear_fish_cur_point() {
-  fish_cur_point_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_fish_cur_point() const {
-  return fish_cur_point_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::fish_cur_point() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.fish_cur_point)
-  return _internal_fish_cur_point();
-}
-inline void SyncFishTraces::_internal_set_fish_cur_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  fish_cur_point_ = value;
-}
-inline void SyncFishTraces::set_fish_cur_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_fish_cur_point(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.fish_cur_point)
-}
-
-// bool already_move = 8;
-inline void SyncFishTraces::clear_already_move() {
-  already_move_ = false;
-}
-inline bool SyncFishTraces::_internal_already_move() const {
-  return already_move_;
-}
-inline bool SyncFishTraces::already_move() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.already_move)
-  return _internal_already_move();
-}
-inline void SyncFishTraces::_internal_set_already_move(bool value) {
-  
-  already_move_ = value;
-}
-inline void SyncFishTraces::set_already_move(bool value) {
-  _internal_set_already_move(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.already_move)
-}
-
-// float x = 9;
-inline void SyncFishTraces::clear_x() {
-  x_ = 0;
-}
-inline float SyncFishTraces::_internal_x() const {
-  return x_;
-}
-inline float SyncFishTraces::x() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.x)
-  return _internal_x();
-}
-inline void SyncFishTraces::_internal_set_x(float value) {
-  
-  x_ = value;
-}
-inline void SyncFishTraces::set_x(float value) {
-  _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.x)
-}
-
-// float y = 10;
-inline void SyncFishTraces::clear_y() {
-  y_ = 0;
-}
-inline float SyncFishTraces::_internal_y() const {
-  return y_;
-}
-inline float SyncFishTraces::y() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.y)
-  return _internal_y();
-}
-inline void SyncFishTraces::_internal_set_y(float value) {
-  
-  y_ = value;
-}
-inline void SyncFishTraces::set_y(float value) {
-  _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.y)
-}
-
-// float time = 11;
-inline void SyncFishTraces::clear_time() {
-  time_ = 0;
-}
-inline float SyncFishTraces::_internal_time() const {
-  return time_;
-}
-inline float SyncFishTraces::time() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.time)
-  return _internal_time();
-}
-inline void SyncFishTraces::_internal_set_time(float value) {
-  
-  time_ = value;
-}
-inline void SyncFishTraces::set_time(float value) {
-  _internal_set_time(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.time)
-}
-
-// int32 stage = 12;
-inline void SyncFishTraces::clear_stage() {
-  stage_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_stage() const {
-  return stage_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::stage() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.stage)
-  return _internal_stage();
-}
-inline void SyncFishTraces::_internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  stage_ = value;
-}
-inline void SyncFishTraces::set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_stage(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.stage)
-}
-
-// int32 sub_stage = 13;
-inline void SyncFishTraces::clear_sub_stage() {
-  sub_stage_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_sub_stage() const {
-  return sub_stage_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::sub_stage() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.sub_stage)
-  return _internal_sub_stage();
-}
-inline void SyncFishTraces::_internal_set_sub_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  sub_stage_ = value;
-}
-inline void SyncFishTraces::set_sub_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_sub_stage(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.sub_stage)
-}
-
-// int32 lifespan = 14;
-inline void SyncFishTraces::clear_lifespan() {
-  lifespan_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_lifespan() const {
-  return lifespan_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::lifespan() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.lifespan)
-  return _internal_lifespan();
-}
-inline void SyncFishTraces::_internal_set_lifespan(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  lifespan_ = value;
-}
-inline void SyncFishTraces::set_lifespan(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_lifespan(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.lifespan)
-}
-
-// int32 frozen_time = 15;
-inline void SyncFishTraces::clear_frozen_time() {
-  frozen_time_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_frozen_time() const {
-  return frozen_time_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::frozen_time() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.frozen_time)
-  return _internal_frozen_time();
-}
-inline void SyncFishTraces::_internal_set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  frozen_time_ = value;
-}
-inline void SyncFishTraces::set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_frozen_time(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.frozen_time)
-}
-
-// int32 fish_gender = 16;
-inline void SyncFishTraces::clear_fish_gender() {
-  fish_gender_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::_internal_fish_gender() const {
-  return fish_gender_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SyncFishTraces::fish_gender() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SyncFishTraces.fish_gender)
-  return _internal_fish_gender();
-}
-inline void SyncFishTraces::_internal_set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  fish_gender_ = value;
-}
-inline void SyncFishTraces::set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_fish_gender(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SyncFishTraces.fish_gender)
+FishTraces::small_fish_list() const {
+  // @@protoc_insertion_point(field_list:BYDLD.FishTraces.small_fish_list)
+  return small_fish_list_;
 }
 
 // -------------------------------------------------------------------
@@ -52996,7 +52330,7 @@ inline void SCSyncFishReq::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // CSSyncFishRsp
 
-// repeated .BYDLD.SyncFishTraces fish_traces = 1;
+// repeated .BYDLD.FishTraces fish_traces = 1;
 inline int CSSyncFishRsp::_internal_fish_traces_size() const {
   return fish_traces_.size();
 }
@@ -53006,30 +52340,30 @@ inline int CSSyncFishRsp::fish_traces_size() const {
 inline void CSSyncFishRsp::clear_fish_traces() {
   fish_traces_.Clear();
 }
-inline ::BYDLD::SyncFishTraces* CSSyncFishRsp::mutable_fish_traces(int index) {
+inline ::BYDLD::FishTraces* CSSyncFishRsp::mutable_fish_traces(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.CSSyncFishRsp.fish_traces)
   return fish_traces_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
 CSSyncFishRsp::mutable_fish_traces() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.CSSyncFishRsp.fish_traces)
   return &fish_traces_;
 }
-inline const ::BYDLD::SyncFishTraces& CSSyncFishRsp::_internal_fish_traces(int index) const {
+inline const ::BYDLD::FishTraces& CSSyncFishRsp::_internal_fish_traces(int index) const {
   return fish_traces_.Get(index);
 }
-inline const ::BYDLD::SyncFishTraces& CSSyncFishRsp::fish_traces(int index) const {
+inline const ::BYDLD::FishTraces& CSSyncFishRsp::fish_traces(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.CSSyncFishRsp.fish_traces)
   return _internal_fish_traces(index);
 }
-inline ::BYDLD::SyncFishTraces* CSSyncFishRsp::_internal_add_fish_traces() {
+inline ::BYDLD::FishTraces* CSSyncFishRsp::_internal_add_fish_traces() {
   return fish_traces_.Add();
 }
-inline ::BYDLD::SyncFishTraces* CSSyncFishRsp::add_fish_traces() {
+inline ::BYDLD::FishTraces* CSSyncFishRsp::add_fish_traces() {
   // @@protoc_insertion_point(field_add:BYDLD.CSSyncFishRsp.fish_traces)
   return _internal_add_fish_traces();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
 CSSyncFishRsp::fish_traces() const {
   // @@protoc_insertion_point(field_list:BYDLD.CSSyncFishRsp.fish_traces)
   return fish_traces_;
@@ -53059,7 +52393,7 @@ inline void CSSyncFishRsp::set_accelerate_flag(bool value) {
 
 // SCSyncFishRsp
 
-// repeated .BYDLD.SyncFishTraces fish_traces = 1;
+// repeated .BYDLD.FishTraces fish_traces = 1;
 inline int SCSyncFishRsp::_internal_fish_traces_size() const {
   return fish_traces_.size();
 }
@@ -53069,30 +52403,30 @@ inline int SCSyncFishRsp::fish_traces_size() const {
 inline void SCSyncFishRsp::clear_fish_traces() {
   fish_traces_.Clear();
 }
-inline ::BYDLD::SyncFishTraces* SCSyncFishRsp::mutable_fish_traces(int index) {
+inline ::BYDLD::FishTraces* SCSyncFishRsp::mutable_fish_traces(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCSyncFishRsp.fish_traces)
   return fish_traces_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >*
 SCSyncFishRsp::mutable_fish_traces() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.SCSyncFishRsp.fish_traces)
   return &fish_traces_;
 }
-inline const ::BYDLD::SyncFishTraces& SCSyncFishRsp::_internal_fish_traces(int index) const {
+inline const ::BYDLD::FishTraces& SCSyncFishRsp::_internal_fish_traces(int index) const {
   return fish_traces_.Get(index);
 }
-inline const ::BYDLD::SyncFishTraces& SCSyncFishRsp::fish_traces(int index) const {
+inline const ::BYDLD::FishTraces& SCSyncFishRsp::fish_traces(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCSyncFishRsp.fish_traces)
   return _internal_fish_traces(index);
 }
-inline ::BYDLD::SyncFishTraces* SCSyncFishRsp::_internal_add_fish_traces() {
+inline ::BYDLD::FishTraces* SCSyncFishRsp::_internal_add_fish_traces() {
   return fish_traces_.Add();
 }
-inline ::BYDLD::SyncFishTraces* SCSyncFishRsp::add_fish_traces() {
+inline ::BYDLD::FishTraces* SCSyncFishRsp::add_fish_traces() {
   // @@protoc_insertion_point(field_add:BYDLD.SCSyncFishRsp.fish_traces)
   return _internal_add_fish_traces();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SyncFishTraces >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
 SCSyncFishRsp::fish_traces() const {
   // @@protoc_insertion_point(field_list:BYDLD.SCSyncFishRsp.fish_traces)
   return fish_traces_;
@@ -66854,10 +66188,6 @@ inline void CSClientTimeValidate::set_timestamp(::PROTOBUF_NAMESPACE_ID::int32 v
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

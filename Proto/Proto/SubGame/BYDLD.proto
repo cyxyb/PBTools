@@ -346,7 +346,7 @@ message SCPropsTrident
 {	
 		bool enable = 1;
 		int32 single_score = 2;
-		int64 cur_score = 3;
+		int32 cur_score = 3;
 		bool rank_enable = 4;
 }
 
@@ -359,7 +359,7 @@ message CSBigSmallChoose
 message SCBigSmallChoose
 {	
 		int32 chair_idx = 1;
-		int32 enter_or_exit = 2;
+		int32 enter_exit = 2;
 		int32 award = 3;
 		int32 score = 4;
 }
@@ -777,34 +777,13 @@ message FishTrace
 	float wait_time = 4;
 }
 
-message SmallFish
-{
-	int32 fish_uid = 1;
-	int32 fish_id = 2;
-	float x = 3;
-	float y = 4;
-	float time = 5;
-}
-
-message FishTraces
-{
-	int32 fish_uid = 1;
-	int32 fish_id = 2;
-	int32 live_time = 3;
-	float speed = 4;
-	repeated FishTrace fish_trace = 5;
-	repeated SmallFish small_fish_list = 6;
-	int32 route_type = 7;
-	int32 fish_gender = 8;
-}
-
 message SCFishTracesList
 {
 	repeated FishTraces fish_traces = 1;
 	bool accelerate_flag = 2;
 }
 
-message SyncFishTraces
+message FishTraces
 {
 	int32 fish_uid = 1;
 	int32 fish_id = 2;
@@ -822,6 +801,7 @@ message SyncFishTraces
 	int32 lifespan = 14;
 	int32 frozen_time = 15;
 	int32 fish_gender = 16;
+	repeated FishTraces small_fish_list = 17;
 }
 
 message CSSyncFishReq
@@ -836,13 +816,13 @@ message SCSyncFishReq
 
 message CSSyncFishRsp
 {
-	repeated SyncFishTraces fish_traces = 1;
+	repeated FishTraces fish_traces = 1;
 	bool accelerate_flag = 2;
 }
 
 message SCSyncFishRsp
 {
-	repeated SyncFishTraces fish_traces = 1;
+	repeated FishTraces fish_traces = 1;
 	bool accelerate_flag = 2;
 }
 
