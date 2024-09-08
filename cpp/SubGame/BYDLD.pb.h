@@ -19467,17 +19467,71 @@ class SCActivityInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kDragonWheelFieldNumber = 7,
+    kTridentWheelFieldNumber = 8,
+    kDragonBallFieldNumber = 9,
     kToadMultiFieldNumber = 10,
     kJumpFieldNumber = 1,
     kConfigFieldNumber = 2,
     kCardFieldNumber = 3,
     kUserPoolFieldNumber = 5,
-    kDragonWheelFieldNumber = 7,
-    kTridentWheelFieldNumber = 8,
-    kDragonBallFieldNumber = 9,
     kAwardPoolRankFieldNumber = 4,
     kLuckyDrawFieldNumber = 6,
   };
+  // repeated .BYDLD.Object4 dragon_wheel = 7;
+  int dragon_wheel_size() const;
+  private:
+  int _internal_dragon_wheel_size() const;
+  public:
+  void clear_dragon_wheel();
+  ::BYDLD::Object4* mutable_dragon_wheel(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object4 >*
+      mutable_dragon_wheel();
+  private:
+  const ::BYDLD::Object4& _internal_dragon_wheel(int index) const;
+  ::BYDLD::Object4* _internal_add_dragon_wheel();
+  public:
+  const ::BYDLD::Object4& dragon_wheel(int index) const;
+  ::BYDLD::Object4* add_dragon_wheel();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object4 >&
+      dragon_wheel() const;
+
+  // repeated .BYDLD.Object3 trident_wheel = 8;
+  int trident_wheel_size() const;
+  private:
+  int _internal_trident_wheel_size() const;
+  public:
+  void clear_trident_wheel();
+  ::BYDLD::Object3* mutable_trident_wheel(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
+      mutable_trident_wheel();
+  private:
+  const ::BYDLD::Object3& _internal_trident_wheel(int index) const;
+  ::BYDLD::Object3* _internal_add_trident_wheel();
+  public:
+  const ::BYDLD::Object3& trident_wheel(int index) const;
+  ::BYDLD::Object3* add_trident_wheel();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
+      trident_wheel() const;
+
+  // repeated .BYDLD.DragonBallConfig dragon_ball = 9;
+  int dragon_ball_size() const;
+  private:
+  int _internal_dragon_ball_size() const;
+  public:
+  void clear_dragon_ball();
+  ::BYDLD::DragonBallConfig* mutable_dragon_ball(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::DragonBallConfig >*
+      mutable_dragon_ball();
+  private:
+  const ::BYDLD::DragonBallConfig& _internal_dragon_ball(int index) const;
+  ::BYDLD::DragonBallConfig* _internal_add_dragon_ball();
+  public:
+  const ::BYDLD::DragonBallConfig& dragon_ball(int index) const;
+  ::BYDLD::DragonBallConfig* add_dragon_ball();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::DragonBallConfig >&
+      dragon_ball() const;
+
   // repeated int32 toad_multi = 10;
   int toad_multi_size() const;
   private:
@@ -19572,60 +19626,6 @@ class SCActivityInfo PROTOBUF_FINAL :
       ::BYDLD::UserPoolActivityInfo* user_pool);
   ::BYDLD::UserPoolActivityInfo* unsafe_arena_release_user_pool();
 
-  // .BYDLD.Object4 dragon_wheel = 7;
-  bool has_dragon_wheel() const;
-  private:
-  bool _internal_has_dragon_wheel() const;
-  public:
-  void clear_dragon_wheel();
-  const ::BYDLD::Object4& dragon_wheel() const;
-  ::BYDLD::Object4* release_dragon_wheel();
-  ::BYDLD::Object4* mutable_dragon_wheel();
-  void set_allocated_dragon_wheel(::BYDLD::Object4* dragon_wheel);
-  private:
-  const ::BYDLD::Object4& _internal_dragon_wheel() const;
-  ::BYDLD::Object4* _internal_mutable_dragon_wheel();
-  public:
-  void unsafe_arena_set_allocated_dragon_wheel(
-      ::BYDLD::Object4* dragon_wheel);
-  ::BYDLD::Object4* unsafe_arena_release_dragon_wheel();
-
-  // .BYDLD.Object3 trident_wheel = 8;
-  bool has_trident_wheel() const;
-  private:
-  bool _internal_has_trident_wheel() const;
-  public:
-  void clear_trident_wheel();
-  const ::BYDLD::Object3& trident_wheel() const;
-  ::BYDLD::Object3* release_trident_wheel();
-  ::BYDLD::Object3* mutable_trident_wheel();
-  void set_allocated_trident_wheel(::BYDLD::Object3* trident_wheel);
-  private:
-  const ::BYDLD::Object3& _internal_trident_wheel() const;
-  ::BYDLD::Object3* _internal_mutable_trident_wheel();
-  public:
-  void unsafe_arena_set_allocated_trident_wheel(
-      ::BYDLD::Object3* trident_wheel);
-  ::BYDLD::Object3* unsafe_arena_release_trident_wheel();
-
-  // .BYDLD.DragonBallConfig dragon_ball = 9;
-  bool has_dragon_ball() const;
-  private:
-  bool _internal_has_dragon_ball() const;
-  public:
-  void clear_dragon_ball();
-  const ::BYDLD::DragonBallConfig& dragon_ball() const;
-  ::BYDLD::DragonBallConfig* release_dragon_ball();
-  ::BYDLD::DragonBallConfig* mutable_dragon_ball();
-  void set_allocated_dragon_ball(::BYDLD::DragonBallConfig* dragon_ball);
-  private:
-  const ::BYDLD::DragonBallConfig& _internal_dragon_ball() const;
-  ::BYDLD::DragonBallConfig* _internal_mutable_dragon_ball();
-  public:
-  void unsafe_arena_set_allocated_dragon_ball(
-      ::BYDLD::DragonBallConfig* dragon_ball);
-  ::BYDLD::DragonBallConfig* unsafe_arena_release_dragon_ball();
-
   // bool award_pool_rank = 4;
   void clear_award_pool_rank();
   bool award_pool_rank() const;
@@ -19651,15 +19651,15 @@ class SCActivityInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object4 > dragon_wheel_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 > trident_wheel_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::DragonBallConfig > dragon_ball_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > toad_multi_;
   mutable std::atomic<int> _toad_multi_cached_byte_size_;
   ::BYDLD::JumpHighArena* jump_;
   ::BYDLD::GiftBag* config_;
   ::BYDLD::NewYearCardActivityInfo* card_;
   ::BYDLD::UserPoolActivityInfo* user_pool_;
-  ::BYDLD::Object4* dragon_wheel_;
-  ::BYDLD::Object3* trident_wheel_;
-  ::BYDLD::DragonBallConfig* dragon_ball_;
   bool award_pool_rank_;
   bool lucky_draw_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -54366,253 +54366,121 @@ inline void SCActivityInfo::set_lucky_draw(bool value) {
   // @@protoc_insertion_point(field_set:BYDLD.SCActivityInfo.lucky_draw)
 }
 
-// .BYDLD.Object4 dragon_wheel = 7;
-inline bool SCActivityInfo::_internal_has_dragon_wheel() const {
-  return this != internal_default_instance() && dragon_wheel_ != nullptr;
+// repeated .BYDLD.Object4 dragon_wheel = 7;
+inline int SCActivityInfo::_internal_dragon_wheel_size() const {
+  return dragon_wheel_.size();
 }
-inline bool SCActivityInfo::has_dragon_wheel() const {
-  return _internal_has_dragon_wheel();
+inline int SCActivityInfo::dragon_wheel_size() const {
+  return _internal_dragon_wheel_size();
 }
 inline void SCActivityInfo::clear_dragon_wheel() {
-  if (GetArena() == nullptr && dragon_wheel_ != nullptr) {
-    delete dragon_wheel_;
-  }
-  dragon_wheel_ = nullptr;
+  dragon_wheel_.Clear();
 }
-inline const ::BYDLD::Object4& SCActivityInfo::_internal_dragon_wheel() const {
-  const ::BYDLD::Object4* p = dragon_wheel_;
-  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::Object4&>(
-      ::BYDLD::_Object4_default_instance_);
+inline ::BYDLD::Object4* SCActivityInfo::mutable_dragon_wheel(int index) {
+  // @@protoc_insertion_point(field_mutable:BYDLD.SCActivityInfo.dragon_wheel)
+  return dragon_wheel_.Mutable(index);
 }
-inline const ::BYDLD::Object4& SCActivityInfo::dragon_wheel() const {
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object4 >*
+SCActivityInfo::mutable_dragon_wheel() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCActivityInfo.dragon_wheel)
+  return &dragon_wheel_;
+}
+inline const ::BYDLD::Object4& SCActivityInfo::_internal_dragon_wheel(int index) const {
+  return dragon_wheel_.Get(index);
+}
+inline const ::BYDLD::Object4& SCActivityInfo::dragon_wheel(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCActivityInfo.dragon_wheel)
-  return _internal_dragon_wheel();
+  return _internal_dragon_wheel(index);
 }
-inline void SCActivityInfo::unsafe_arena_set_allocated_dragon_wheel(
-    ::BYDLD::Object4* dragon_wheel) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(dragon_wheel_);
-  }
-  dragon_wheel_ = dragon_wheel;
-  if (dragon_wheel) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCActivityInfo.dragon_wheel)
+inline ::BYDLD::Object4* SCActivityInfo::_internal_add_dragon_wheel() {
+  return dragon_wheel_.Add();
 }
-inline ::BYDLD::Object4* SCActivityInfo::release_dragon_wheel() {
-  
-  ::BYDLD::Object4* temp = dragon_wheel_;
-  dragon_wheel_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
+inline ::BYDLD::Object4* SCActivityInfo::add_dragon_wheel() {
+  // @@protoc_insertion_point(field_add:BYDLD.SCActivityInfo.dragon_wheel)
+  return _internal_add_dragon_wheel();
 }
-inline ::BYDLD::Object4* SCActivityInfo::unsafe_arena_release_dragon_wheel() {
-  // @@protoc_insertion_point(field_release:BYDLD.SCActivityInfo.dragon_wheel)
-  
-  ::BYDLD::Object4* temp = dragon_wheel_;
-  dragon_wheel_ = nullptr;
-  return temp;
-}
-inline ::BYDLD::Object4* SCActivityInfo::_internal_mutable_dragon_wheel() {
-  
-  if (dragon_wheel_ == nullptr) {
-    auto* p = CreateMaybeMessage<::BYDLD::Object4>(GetArena());
-    dragon_wheel_ = p;
-  }
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object4 >&
+SCActivityInfo::dragon_wheel() const {
+  // @@protoc_insertion_point(field_list:BYDLD.SCActivityInfo.dragon_wheel)
   return dragon_wheel_;
 }
-inline ::BYDLD::Object4* SCActivityInfo::mutable_dragon_wheel() {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SCActivityInfo.dragon_wheel)
-  return _internal_mutable_dragon_wheel();
-}
-inline void SCActivityInfo::set_allocated_dragon_wheel(::BYDLD::Object4* dragon_wheel) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete dragon_wheel_;
-  }
-  if (dragon_wheel) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(dragon_wheel);
-    if (message_arena != submessage_arena) {
-      dragon_wheel = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, dragon_wheel, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  dragon_wheel_ = dragon_wheel;
-  // @@protoc_insertion_point(field_set_allocated:BYDLD.SCActivityInfo.dragon_wheel)
-}
 
-// .BYDLD.Object3 trident_wheel = 8;
-inline bool SCActivityInfo::_internal_has_trident_wheel() const {
-  return this != internal_default_instance() && trident_wheel_ != nullptr;
+// repeated .BYDLD.Object3 trident_wheel = 8;
+inline int SCActivityInfo::_internal_trident_wheel_size() const {
+  return trident_wheel_.size();
 }
-inline bool SCActivityInfo::has_trident_wheel() const {
-  return _internal_has_trident_wheel();
+inline int SCActivityInfo::trident_wheel_size() const {
+  return _internal_trident_wheel_size();
 }
 inline void SCActivityInfo::clear_trident_wheel() {
-  if (GetArena() == nullptr && trident_wheel_ != nullptr) {
-    delete trident_wheel_;
-  }
-  trident_wheel_ = nullptr;
+  trident_wheel_.Clear();
 }
-inline const ::BYDLD::Object3& SCActivityInfo::_internal_trident_wheel() const {
-  const ::BYDLD::Object3* p = trident_wheel_;
-  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::Object3&>(
-      ::BYDLD::_Object3_default_instance_);
+inline ::BYDLD::Object3* SCActivityInfo::mutable_trident_wheel(int index) {
+  // @@protoc_insertion_point(field_mutable:BYDLD.SCActivityInfo.trident_wheel)
+  return trident_wheel_.Mutable(index);
 }
-inline const ::BYDLD::Object3& SCActivityInfo::trident_wheel() const {
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
+SCActivityInfo::mutable_trident_wheel() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCActivityInfo.trident_wheel)
+  return &trident_wheel_;
+}
+inline const ::BYDLD::Object3& SCActivityInfo::_internal_trident_wheel(int index) const {
+  return trident_wheel_.Get(index);
+}
+inline const ::BYDLD::Object3& SCActivityInfo::trident_wheel(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCActivityInfo.trident_wheel)
-  return _internal_trident_wheel();
+  return _internal_trident_wheel(index);
 }
-inline void SCActivityInfo::unsafe_arena_set_allocated_trident_wheel(
-    ::BYDLD::Object3* trident_wheel) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(trident_wheel_);
-  }
-  trident_wheel_ = trident_wheel;
-  if (trident_wheel) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCActivityInfo.trident_wheel)
+inline ::BYDLD::Object3* SCActivityInfo::_internal_add_trident_wheel() {
+  return trident_wheel_.Add();
 }
-inline ::BYDLD::Object3* SCActivityInfo::release_trident_wheel() {
-  
-  ::BYDLD::Object3* temp = trident_wheel_;
-  trident_wheel_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
+inline ::BYDLD::Object3* SCActivityInfo::add_trident_wheel() {
+  // @@protoc_insertion_point(field_add:BYDLD.SCActivityInfo.trident_wheel)
+  return _internal_add_trident_wheel();
 }
-inline ::BYDLD::Object3* SCActivityInfo::unsafe_arena_release_trident_wheel() {
-  // @@protoc_insertion_point(field_release:BYDLD.SCActivityInfo.trident_wheel)
-  
-  ::BYDLD::Object3* temp = trident_wheel_;
-  trident_wheel_ = nullptr;
-  return temp;
-}
-inline ::BYDLD::Object3* SCActivityInfo::_internal_mutable_trident_wheel() {
-  
-  if (trident_wheel_ == nullptr) {
-    auto* p = CreateMaybeMessage<::BYDLD::Object3>(GetArena());
-    trident_wheel_ = p;
-  }
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
+SCActivityInfo::trident_wheel() const {
+  // @@protoc_insertion_point(field_list:BYDLD.SCActivityInfo.trident_wheel)
   return trident_wheel_;
 }
-inline ::BYDLD::Object3* SCActivityInfo::mutable_trident_wheel() {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SCActivityInfo.trident_wheel)
-  return _internal_mutable_trident_wheel();
-}
-inline void SCActivityInfo::set_allocated_trident_wheel(::BYDLD::Object3* trident_wheel) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete trident_wheel_;
-  }
-  if (trident_wheel) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(trident_wheel);
-    if (message_arena != submessage_arena) {
-      trident_wheel = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, trident_wheel, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  trident_wheel_ = trident_wheel;
-  // @@protoc_insertion_point(field_set_allocated:BYDLD.SCActivityInfo.trident_wheel)
-}
 
-// .BYDLD.DragonBallConfig dragon_ball = 9;
-inline bool SCActivityInfo::_internal_has_dragon_ball() const {
-  return this != internal_default_instance() && dragon_ball_ != nullptr;
+// repeated .BYDLD.DragonBallConfig dragon_ball = 9;
+inline int SCActivityInfo::_internal_dragon_ball_size() const {
+  return dragon_ball_.size();
 }
-inline bool SCActivityInfo::has_dragon_ball() const {
-  return _internal_has_dragon_ball();
+inline int SCActivityInfo::dragon_ball_size() const {
+  return _internal_dragon_ball_size();
 }
 inline void SCActivityInfo::clear_dragon_ball() {
-  if (GetArena() == nullptr && dragon_ball_ != nullptr) {
-    delete dragon_ball_;
-  }
-  dragon_ball_ = nullptr;
+  dragon_ball_.Clear();
 }
-inline const ::BYDLD::DragonBallConfig& SCActivityInfo::_internal_dragon_ball() const {
-  const ::BYDLD::DragonBallConfig* p = dragon_ball_;
-  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::DragonBallConfig&>(
-      ::BYDLD::_DragonBallConfig_default_instance_);
-}
-inline const ::BYDLD::DragonBallConfig& SCActivityInfo::dragon_ball() const {
-  // @@protoc_insertion_point(field_get:BYDLD.SCActivityInfo.dragon_ball)
-  return _internal_dragon_ball();
-}
-inline void SCActivityInfo::unsafe_arena_set_allocated_dragon_ball(
-    ::BYDLD::DragonBallConfig* dragon_ball) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(dragon_ball_);
-  }
-  dragon_ball_ = dragon_ball;
-  if (dragon_ball) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCActivityInfo.dragon_ball)
-}
-inline ::BYDLD::DragonBallConfig* SCActivityInfo::release_dragon_ball() {
-  
-  ::BYDLD::DragonBallConfig* temp = dragon_ball_;
-  dragon_ball_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::BYDLD::DragonBallConfig* SCActivityInfo::unsafe_arena_release_dragon_ball() {
-  // @@protoc_insertion_point(field_release:BYDLD.SCActivityInfo.dragon_ball)
-  
-  ::BYDLD::DragonBallConfig* temp = dragon_ball_;
-  dragon_ball_ = nullptr;
-  return temp;
-}
-inline ::BYDLD::DragonBallConfig* SCActivityInfo::_internal_mutable_dragon_ball() {
-  
-  if (dragon_ball_ == nullptr) {
-    auto* p = CreateMaybeMessage<::BYDLD::DragonBallConfig>(GetArena());
-    dragon_ball_ = p;
-  }
-  return dragon_ball_;
-}
-inline ::BYDLD::DragonBallConfig* SCActivityInfo::mutable_dragon_ball() {
+inline ::BYDLD::DragonBallConfig* SCActivityInfo::mutable_dragon_ball(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCActivityInfo.dragon_ball)
-  return _internal_mutable_dragon_ball();
+  return dragon_ball_.Mutable(index);
 }
-inline void SCActivityInfo::set_allocated_dragon_ball(::BYDLD::DragonBallConfig* dragon_ball) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete dragon_ball_;
-  }
-  if (dragon_ball) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(dragon_ball);
-    if (message_arena != submessage_arena) {
-      dragon_ball = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, dragon_ball, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  dragon_ball_ = dragon_ball;
-  // @@protoc_insertion_point(field_set_allocated:BYDLD.SCActivityInfo.dragon_ball)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::DragonBallConfig >*
+SCActivityInfo::mutable_dragon_ball() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCActivityInfo.dragon_ball)
+  return &dragon_ball_;
+}
+inline const ::BYDLD::DragonBallConfig& SCActivityInfo::_internal_dragon_ball(int index) const {
+  return dragon_ball_.Get(index);
+}
+inline const ::BYDLD::DragonBallConfig& SCActivityInfo::dragon_ball(int index) const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCActivityInfo.dragon_ball)
+  return _internal_dragon_ball(index);
+}
+inline ::BYDLD::DragonBallConfig* SCActivityInfo::_internal_add_dragon_ball() {
+  return dragon_ball_.Add();
+}
+inline ::BYDLD::DragonBallConfig* SCActivityInfo::add_dragon_ball() {
+  // @@protoc_insertion_point(field_add:BYDLD.SCActivityInfo.dragon_ball)
+  return _internal_add_dragon_ball();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::DragonBallConfig >&
+SCActivityInfo::dragon_ball() const {
+  // @@protoc_insertion_point(field_list:BYDLD.SCActivityInfo.dragon_ball)
+  return dragon_ball_;
 }
 
 // repeated int32 toad_multi = 10;

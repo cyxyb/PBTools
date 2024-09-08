@@ -239,9 +239,9 @@ namespace BYDLD {
             "GAMgASgLMh4uQllETEQuTmV3WWVhckNhcmRBY3Rpdml0eUluZm8SFwoPYXdh",
             "cmRfcG9vbF9yYW5rGAQgASgIEi4KCXVzZXJfcG9vbBgFIAEoCzIbLkJZRExE",
             "LlVzZXJQb29sQWN0aXZpdHlJbmZvEhIKCmx1Y2t5X2RyYXcYBiABKAgSJAoM",
-            "ZHJhZ29uX3doZWVsGAcgASgLMg4uQllETEQuT2JqZWN0NBIlCg10cmlkZW50",
-            "X3doZWVsGAggASgLMg4uQllETEQuT2JqZWN0MxIsCgtkcmFnb25fYmFsbBgJ",
-            "IAEoCzIXLkJZRExELkRyYWdvbkJhbGxDb25maWcSEgoKdG9hZF9tdWx0aRgK",
+            "ZHJhZ29uX3doZWVsGAcgAygLMg4uQllETEQuT2JqZWN0NBIlCg10cmlkZW50",
+            "X3doZWVsGAggAygLMg4uQllETEQuT2JqZWN0MxIsCgtkcmFnb25fYmFsbBgJ",
+            "IAMoCzIXLkJZRExELkRyYWdvbkJhbGxDb25maWcSEgoKdG9hZF9tdWx0aRgK",
             "IAMoBSJtCg9TQ1Byb3BFbmROb3RpZnkSEQoJY2hhaXJfaWR4GAEgASgFEg8K",
             "B3Byb3BfaWQYAiABKAUSDgoGc3RhdHVzGAMgASgFEhIKCmZyZWVfbGV2ZWwY",
             "BCABKAUSEgoKZnJlZV90aW1lcxgFIAEoBSJrChBTQ1Byb3BEcm9wTm90aWZ5",
@@ -27982,9 +27982,9 @@ namespace BYDLD {
       awardPoolRank_ = other.awardPoolRank_;
       userPool_ = other.userPool_ != null ? other.userPool_.Clone() : null;
       luckyDraw_ = other.luckyDraw_;
-      dragonWheel_ = other.dragonWheel_ != null ? other.dragonWheel_.Clone() : null;
-      tridentWheel_ = other.tridentWheel_ != null ? other.tridentWheel_.Clone() : null;
-      dragonBall_ = other.dragonBall_ != null ? other.dragonBall_.Clone() : null;
+      dragonWheel_ = other.dragonWheel_.Clone();
+      tridentWheel_ = other.tridentWheel_.Clone();
+      dragonBall_ = other.dragonBall_.Clone();
       toadMulti_ = other.toadMulti_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -28062,35 +28062,32 @@ namespace BYDLD {
 
     /// <summary>Field number for the "dragon_wheel" field.</summary>
     public const int DragonWheelFieldNumber = 7;
-    private global::BYDLD.Object4 dragonWheel_;
+    private static readonly pb::FieldCodec<global::BYDLD.Object4> _repeated_dragonWheel_codec
+        = pb::FieldCodec.ForMessage(58, global::BYDLD.Object4.Parser);
+    private readonly pbc::RepeatedField<global::BYDLD.Object4> dragonWheel_ = new pbc::RepeatedField<global::BYDLD.Object4>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::BYDLD.Object4 DragonWheel {
+    public pbc::RepeatedField<global::BYDLD.Object4> DragonWheel {
       get { return dragonWheel_; }
-      set {
-        dragonWheel_ = value;
-      }
     }
 
     /// <summary>Field number for the "trident_wheel" field.</summary>
     public const int TridentWheelFieldNumber = 8;
-    private global::BYDLD.Object3 tridentWheel_;
+    private static readonly pb::FieldCodec<global::BYDLD.Object3> _repeated_tridentWheel_codec
+        = pb::FieldCodec.ForMessage(66, global::BYDLD.Object3.Parser);
+    private readonly pbc::RepeatedField<global::BYDLD.Object3> tridentWheel_ = new pbc::RepeatedField<global::BYDLD.Object3>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::BYDLD.Object3 TridentWheel {
+    public pbc::RepeatedField<global::BYDLD.Object3> TridentWheel {
       get { return tridentWheel_; }
-      set {
-        tridentWheel_ = value;
-      }
     }
 
     /// <summary>Field number for the "dragon_ball" field.</summary>
     public const int DragonBallFieldNumber = 9;
-    private global::BYDLD.DragonBallConfig dragonBall_;
+    private static readonly pb::FieldCodec<global::BYDLD.DragonBallConfig> _repeated_dragonBall_codec
+        = pb::FieldCodec.ForMessage(74, global::BYDLD.DragonBallConfig.Parser);
+    private readonly pbc::RepeatedField<global::BYDLD.DragonBallConfig> dragonBall_ = new pbc::RepeatedField<global::BYDLD.DragonBallConfig>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::BYDLD.DragonBallConfig DragonBall {
+    public pbc::RepeatedField<global::BYDLD.DragonBallConfig> DragonBall {
       get { return dragonBall_; }
-      set {
-        dragonBall_ = value;
-      }
     }
 
     /// <summary>Field number for the "toad_multi" field.</summary>
@@ -28122,9 +28119,9 @@ namespace BYDLD {
       if (AwardPoolRank != other.AwardPoolRank) return false;
       if (!object.Equals(UserPool, other.UserPool)) return false;
       if (LuckyDraw != other.LuckyDraw) return false;
-      if (!object.Equals(DragonWheel, other.DragonWheel)) return false;
-      if (!object.Equals(TridentWheel, other.TridentWheel)) return false;
-      if (!object.Equals(DragonBall, other.DragonBall)) return false;
+      if(!dragonWheel_.Equals(other.dragonWheel_)) return false;
+      if(!tridentWheel_.Equals(other.tridentWheel_)) return false;
+      if(!dragonBall_.Equals(other.dragonBall_)) return false;
       if(!toadMulti_.Equals(other.toadMulti_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -28138,9 +28135,9 @@ namespace BYDLD {
       if (AwardPoolRank != false) hash ^= AwardPoolRank.GetHashCode();
       if (userPool_ != null) hash ^= UserPool.GetHashCode();
       if (LuckyDraw != false) hash ^= LuckyDraw.GetHashCode();
-      if (dragonWheel_ != null) hash ^= DragonWheel.GetHashCode();
-      if (tridentWheel_ != null) hash ^= TridentWheel.GetHashCode();
-      if (dragonBall_ != null) hash ^= DragonBall.GetHashCode();
+      hash ^= dragonWheel_.GetHashCode();
+      hash ^= tridentWheel_.GetHashCode();
+      hash ^= dragonBall_.GetHashCode();
       hash ^= toadMulti_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -28182,18 +28179,9 @@ namespace BYDLD {
         output.WriteRawTag(48);
         output.WriteBool(LuckyDraw);
       }
-      if (dragonWheel_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(DragonWheel);
-      }
-      if (tridentWheel_ != null) {
-        output.WriteRawTag(66);
-        output.WriteMessage(TridentWheel);
-      }
-      if (dragonBall_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(DragonBall);
-      }
+      dragonWheel_.WriteTo(output, _repeated_dragonWheel_codec);
+      tridentWheel_.WriteTo(output, _repeated_tridentWheel_codec);
+      dragonBall_.WriteTo(output, _repeated_dragonBall_codec);
       toadMulti_.WriteTo(output, _repeated_toadMulti_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -28228,18 +28216,9 @@ namespace BYDLD {
         output.WriteRawTag(48);
         output.WriteBool(LuckyDraw);
       }
-      if (dragonWheel_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(DragonWheel);
-      }
-      if (tridentWheel_ != null) {
-        output.WriteRawTag(66);
-        output.WriteMessage(TridentWheel);
-      }
-      if (dragonBall_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(DragonBall);
-      }
+      dragonWheel_.WriteTo(ref output, _repeated_dragonWheel_codec);
+      tridentWheel_.WriteTo(ref output, _repeated_tridentWheel_codec);
+      dragonBall_.WriteTo(ref output, _repeated_dragonBall_codec);
       toadMulti_.WriteTo(ref output, _repeated_toadMulti_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -28268,15 +28247,9 @@ namespace BYDLD {
       if (LuckyDraw != false) {
         size += 1 + 1;
       }
-      if (dragonWheel_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DragonWheel);
-      }
-      if (tridentWheel_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TridentWheel);
-      }
-      if (dragonBall_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DragonBall);
-      }
+      size += dragonWheel_.CalculateSize(_repeated_dragonWheel_codec);
+      size += tridentWheel_.CalculateSize(_repeated_tridentWheel_codec);
+      size += dragonBall_.CalculateSize(_repeated_dragonBall_codec);
       size += toadMulti_.CalculateSize(_repeated_toadMulti_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -28319,24 +28292,9 @@ namespace BYDLD {
       if (other.LuckyDraw != false) {
         LuckyDraw = other.LuckyDraw;
       }
-      if (other.dragonWheel_ != null) {
-        if (dragonWheel_ == null) {
-          DragonWheel = new global::BYDLD.Object4();
-        }
-        DragonWheel.MergeFrom(other.DragonWheel);
-      }
-      if (other.tridentWheel_ != null) {
-        if (tridentWheel_ == null) {
-          TridentWheel = new global::BYDLD.Object3();
-        }
-        TridentWheel.MergeFrom(other.TridentWheel);
-      }
-      if (other.dragonBall_ != null) {
-        if (dragonBall_ == null) {
-          DragonBall = new global::BYDLD.DragonBallConfig();
-        }
-        DragonBall.MergeFrom(other.DragonBall);
-      }
+      dragonWheel_.Add(other.dragonWheel_);
+      tridentWheel_.Add(other.tridentWheel_);
+      dragonBall_.Add(other.dragonBall_);
       toadMulti_.Add(other.toadMulti_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -28389,24 +28347,15 @@ namespace BYDLD {
             break;
           }
           case 58: {
-            if (dragonWheel_ == null) {
-              DragonWheel = new global::BYDLD.Object4();
-            }
-            input.ReadMessage(DragonWheel);
+            dragonWheel_.AddEntriesFrom(input, _repeated_dragonWheel_codec);
             break;
           }
           case 66: {
-            if (tridentWheel_ == null) {
-              TridentWheel = new global::BYDLD.Object3();
-            }
-            input.ReadMessage(TridentWheel);
+            tridentWheel_.AddEntriesFrom(input, _repeated_tridentWheel_codec);
             break;
           }
           case 74: {
-            if (dragonBall_ == null) {
-              DragonBall = new global::BYDLD.DragonBallConfig();
-            }
-            input.ReadMessage(DragonBall);
+            dragonBall_.AddEntriesFrom(input, _repeated_dragonBall_codec);
             break;
           }
           case 82:
@@ -28465,24 +28414,15 @@ namespace BYDLD {
             break;
           }
           case 58: {
-            if (dragonWheel_ == null) {
-              DragonWheel = new global::BYDLD.Object4();
-            }
-            input.ReadMessage(DragonWheel);
+            dragonWheel_.AddEntriesFrom(ref input, _repeated_dragonWheel_codec);
             break;
           }
           case 66: {
-            if (tridentWheel_ == null) {
-              TridentWheel = new global::BYDLD.Object3();
-            }
-            input.ReadMessage(TridentWheel);
+            tridentWheel_.AddEntriesFrom(ref input, _repeated_tridentWheel_codec);
             break;
           }
           case 74: {
-            if (dragonBall_ == null) {
-              DragonBall = new global::BYDLD.DragonBallConfig();
-            }
-            input.ReadMessage(DragonBall);
+            dragonBall_.AddEntriesFrom(ref input, _repeated_dragonBall_codec);
             break;
           }
           case 82:

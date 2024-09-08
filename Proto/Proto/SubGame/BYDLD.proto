@@ -990,9 +990,9 @@ message SCActivityInfo
 	bool award_pool_rank = 4;
 	UserPoolActivityInfo user_pool = 5;
 	bool lucky_draw = 6;
-	Object4 dragon_wheel = 7;
-	Object3 trident_wheel = 8;
-	DragonBallConfig dragon_ball = 9;
+	repeated Object4 dragon_wheel = 7;
+	repeated Object3 trident_wheel = 8;
+	repeated DragonBallConfig dragon_ball = 9;
 	repeated int32 toad_multi = 10;
 }
 

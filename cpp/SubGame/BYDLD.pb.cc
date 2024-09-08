@@ -7475,9 +7475,9 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\n\004card\030\003 \001(\0132\036.BYDLD.NewYearCardActivity"
   "Info\022\027\n\017award_pool_rank\030\004 \001(\010\022.\n\tuser_po"
   "ol\030\005 \001(\0132\033.BYDLD.UserPoolActivityInfo\022\022\n"
-  "\nlucky_draw\030\006 \001(\010\022$\n\014dragon_wheel\030\007 \001(\0132"
-  "\016.BYDLD.Object4\022%\n\rtrident_wheel\030\010 \001(\0132\016"
-  ".BYDLD.Object3\022,\n\013dragon_ball\030\t \001(\0132\027.BY"
+  "\nlucky_draw\030\006 \001(\010\022$\n\014dragon_wheel\030\007 \003(\0132"
+  "\016.BYDLD.Object4\022%\n\rtrident_wheel\030\010 \003(\0132\016"
+  ".BYDLD.Object3\022,\n\013dragon_ball\030\t \003(\0132\027.BY"
   "DLD.DragonBallConfig\022\022\n\ntoad_multi\030\n \003(\005"
   "\"m\n\017SCPropEndNotify\022\021\n\tchair_idx\030\001 \001(\005\022\017"
   "\n\007prop_id\030\002 \001(\005\022\016\n\006status\030\003 \001(\005\022\022\n\nfree_"
@@ -36233,9 +36233,6 @@ class SCActivityInfo::_Internal {
   static const ::BYDLD::GiftBag& config(const SCActivityInfo* msg);
   static const ::BYDLD::NewYearCardActivityInfo& card(const SCActivityInfo* msg);
   static const ::BYDLD::UserPoolActivityInfo& user_pool(const SCActivityInfo* msg);
-  static const ::BYDLD::Object4& dragon_wheel(const SCActivityInfo* msg);
-  static const ::BYDLD::Object3& trident_wheel(const SCActivityInfo* msg);
-  static const ::BYDLD::DragonBallConfig& dragon_ball(const SCActivityInfo* msg);
 };
 
 const ::BYDLD::JumpHighArena&
@@ -36254,20 +36251,11 @@ const ::BYDLD::UserPoolActivityInfo&
 SCActivityInfo::_Internal::user_pool(const SCActivityInfo* msg) {
   return *msg->user_pool_;
 }
-const ::BYDLD::Object4&
-SCActivityInfo::_Internal::dragon_wheel(const SCActivityInfo* msg) {
-  return *msg->dragon_wheel_;
-}
-const ::BYDLD::Object3&
-SCActivityInfo::_Internal::trident_wheel(const SCActivityInfo* msg) {
-  return *msg->trident_wheel_;
-}
-const ::BYDLD::DragonBallConfig&
-SCActivityInfo::_Internal::dragon_ball(const SCActivityInfo* msg) {
-  return *msg->dragon_ball_;
-}
 SCActivityInfo::SCActivityInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  dragon_wheel_(arena),
+  trident_wheel_(arena),
+  dragon_ball_(arena),
   toad_multi_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -36275,6 +36263,9 @@ SCActivityInfo::SCActivityInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 SCActivityInfo::SCActivityInfo(const SCActivityInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      dragon_wheel_(from.dragon_wheel_),
+      trident_wheel_(from.trident_wheel_),
+      dragon_ball_(from.dragon_ball_),
       toad_multi_(from.toad_multi_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_jump()) {
@@ -36296,21 +36287,6 @@ SCActivityInfo::SCActivityInfo(const SCActivityInfo& from)
     user_pool_ = new ::BYDLD::UserPoolActivityInfo(*from.user_pool_);
   } else {
     user_pool_ = nullptr;
-  }
-  if (from._internal_has_dragon_wheel()) {
-    dragon_wheel_ = new ::BYDLD::Object4(*from.dragon_wheel_);
-  } else {
-    dragon_wheel_ = nullptr;
-  }
-  if (from._internal_has_trident_wheel()) {
-    trident_wheel_ = new ::BYDLD::Object3(*from.trident_wheel_);
-  } else {
-    trident_wheel_ = nullptr;
-  }
-  if (from._internal_has_dragon_ball()) {
-    dragon_ball_ = new ::BYDLD::DragonBallConfig(*from.dragon_ball_);
-  } else {
-    dragon_ball_ = nullptr;
   }
   ::memcpy(&award_pool_rank_, &from.award_pool_rank_,
     static_cast<size_t>(reinterpret_cast<char*>(&lucky_draw_) -
@@ -36338,9 +36314,6 @@ void SCActivityInfo::SharedDtor() {
   if (this != internal_default_instance()) delete config_;
   if (this != internal_default_instance()) delete card_;
   if (this != internal_default_instance()) delete user_pool_;
-  if (this != internal_default_instance()) delete dragon_wheel_;
-  if (this != internal_default_instance()) delete trident_wheel_;
-  if (this != internal_default_instance()) delete dragon_ball_;
 }
 
 void SCActivityInfo::ArenaDtor(void* object) {
@@ -36364,6 +36337,9 @@ void SCActivityInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  dragon_wheel_.Clear();
+  trident_wheel_.Clear();
+  dragon_ball_.Clear();
   toad_multi_.Clear();
   if (GetArena() == nullptr && jump_ != nullptr) {
     delete jump_;
@@ -36381,18 +36357,6 @@ void SCActivityInfo::Clear() {
     delete user_pool_;
   }
   user_pool_ = nullptr;
-  if (GetArena() == nullptr && dragon_wheel_ != nullptr) {
-    delete dragon_wheel_;
-  }
-  dragon_wheel_ = nullptr;
-  if (GetArena() == nullptr && trident_wheel_ != nullptr) {
-    delete trident_wheel_;
-  }
-  trident_wheel_ = nullptr;
-  if (GetArena() == nullptr && dragon_ball_ != nullptr) {
-    delete dragon_ball_;
-  }
-  dragon_ball_ = nullptr;
   ::memset(&award_pool_rank_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&lucky_draw_) -
       reinterpret_cast<char*>(&award_pool_rank_)) + sizeof(lucky_draw_));
@@ -36448,25 +36412,40 @@ const char* SCActivityInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .BYDLD.Object4 dragon_wheel = 7;
+      // repeated .BYDLD.Object4 dragon_wheel = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          ptr = ctx->ParseMessage(_internal_mutable_dragon_wheel(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_dragon_wheel(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
         } else goto handle_unusual;
         continue;
-      // .BYDLD.Object3 trident_wheel = 8;
+      // repeated .BYDLD.Object3 trident_wheel = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
-          ptr = ctx->ParseMessage(_internal_mutable_trident_wheel(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_trident_wheel(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
         } else goto handle_unusual;
         continue;
-      // .BYDLD.DragonBallConfig dragon_ball = 9;
+      // repeated .BYDLD.DragonBallConfig dragon_ball = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          ptr = ctx->ParseMessage(_internal_mutable_dragon_ball(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_dragon_ball(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<74>(ptr));
         } else goto handle_unusual;
         continue;
       // repeated int32 toad_multi = 10;
@@ -36551,28 +36530,28 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_lucky_draw(), target);
   }
 
-  // .BYDLD.Object4 dragon_wheel = 7;
-  if (this->has_dragon_wheel()) {
+  // repeated .BYDLD.Object4 dragon_wheel = 7;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_dragon_wheel_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::dragon_wheel(this), target, stream);
+      InternalWriteMessage(7, this->_internal_dragon_wheel(i), target, stream);
   }
 
-  // .BYDLD.Object3 trident_wheel = 8;
-  if (this->has_trident_wheel()) {
+  // repeated .BYDLD.Object3 trident_wheel = 8;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_trident_wheel_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        8, _Internal::trident_wheel(this), target, stream);
+      InternalWriteMessage(8, this->_internal_trident_wheel(i), target, stream);
   }
 
-  // .BYDLD.DragonBallConfig dragon_ball = 9;
-  if (this->has_dragon_ball()) {
+  // repeated .BYDLD.DragonBallConfig dragon_ball = 9;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_dragon_ball_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::dragon_ball(this), target, stream);
+      InternalWriteMessage(9, this->_internal_dragon_ball(i), target, stream);
   }
 
   // repeated int32 toad_multi = 10;
@@ -36599,6 +36578,27 @@ size_t SCActivityInfo::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated .BYDLD.Object4 dragon_wheel = 7;
+  total_size += 1UL * this->_internal_dragon_wheel_size();
+  for (const auto& msg : this->dragon_wheel_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .BYDLD.Object3 trident_wheel = 8;
+  total_size += 1UL * this->_internal_trident_wheel_size();
+  for (const auto& msg : this->trident_wheel_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .BYDLD.DragonBallConfig dragon_ball = 9;
+  total_size += 1UL * this->_internal_dragon_ball_size();
+  for (const auto& msg : this->dragon_ball_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
 
   // repeated int32 toad_multi = 10;
   {
@@ -36643,27 +36643,6 @@ size_t SCActivityInfo::ByteSizeLong() const {
         *user_pool_);
   }
 
-  // .BYDLD.Object4 dragon_wheel = 7;
-  if (this->has_dragon_wheel()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *dragon_wheel_);
-  }
-
-  // .BYDLD.Object3 trident_wheel = 8;
-  if (this->has_trident_wheel()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *trident_wheel_);
-  }
-
-  // .BYDLD.DragonBallConfig dragon_ball = 9;
-  if (this->has_dragon_ball()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *dragon_ball_);
-  }
-
   // bool award_pool_rank = 4;
   if (this->award_pool_rank() != 0) {
     total_size += 1 + 1;
@@ -36705,6 +36684,9 @@ void SCActivityInfo::MergeFrom(const SCActivityInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  dragon_wheel_.MergeFrom(from.dragon_wheel_);
+  trident_wheel_.MergeFrom(from.trident_wheel_);
+  dragon_ball_.MergeFrom(from.dragon_ball_);
   toad_multi_.MergeFrom(from.toad_multi_);
   if (from.has_jump()) {
     _internal_mutable_jump()->::BYDLD::JumpHighArena::MergeFrom(from._internal_jump());
@@ -36717,15 +36699,6 @@ void SCActivityInfo::MergeFrom(const SCActivityInfo& from) {
   }
   if (from.has_user_pool()) {
     _internal_mutable_user_pool()->::BYDLD::UserPoolActivityInfo::MergeFrom(from._internal_user_pool());
-  }
-  if (from.has_dragon_wheel()) {
-    _internal_mutable_dragon_wheel()->::BYDLD::Object4::MergeFrom(from._internal_dragon_wheel());
-  }
-  if (from.has_trident_wheel()) {
-    _internal_mutable_trident_wheel()->::BYDLD::Object3::MergeFrom(from._internal_trident_wheel());
-  }
-  if (from.has_dragon_ball()) {
-    _internal_mutable_dragon_ball()->::BYDLD::DragonBallConfig::MergeFrom(from._internal_dragon_ball());
   }
   if (from.award_pool_rank() != 0) {
     _internal_set_award_pool_rank(from._internal_award_pool_rank());
@@ -36756,6 +36729,9 @@ bool SCActivityInfo::IsInitialized() const {
 void SCActivityInfo::InternalSwap(SCActivityInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  dragon_wheel_.InternalSwap(&other->dragon_wheel_);
+  trident_wheel_.InternalSwap(&other->trident_wheel_);
+  dragon_ball_.InternalSwap(&other->dragon_ball_);
   toad_multi_.InternalSwap(&other->toad_multi_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SCActivityInfo, lucky_draw_)
