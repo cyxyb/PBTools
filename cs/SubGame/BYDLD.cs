@@ -152,7 +152,7 @@ namespace BYDLD {
             "Z0l0ZW0SIQoEdHlwZRgCIAEoDjITLkJZRExELkF6dGVjR2VtVHlwZSISChBD",
             "U0F6dGVjR2VtQ29uZmlnIjoKEFNDQXp0ZWNHZW1Db25maWcSJgoHY29uZmln",
             "cxgBIAMoCzIVLkJZRExELkF6dGVjR2VtQ29uZmlnIkQKEEF6dGVjQ2xlYXJS",
-            "ZXdhcmQSIQoEdHlwZRgBIAMoDjITLkJZRExELkF6dGVjR2VtVHlwZRINCgV2",
+            "ZXdhcmQSIQoEdHlwZRgBIAEoDjITLkJZRExELkF6dGVjR2VtVHlwZRINCgV2",
             "YWx1ZRgCIAEoBSJZCgpBenRlY1RhYmxlEiEKBGdlbXMYASADKA4yEy5CWURM",
             "RC5BenRlY0dlbVR5cGUSKAoHcmV3YXJkcxgCIAMoCzIXLkJZRExELkF6dGVj",
             "Q2xlYXJSZXdhcmQiLgoJQXp0ZWNTdGVwEiEKBnRhYmxlcxgBIAMoCzIRLkJZ",
@@ -17757,7 +17757,7 @@ namespace BYDLD {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public AztecClearReward(AztecClearReward other) : this() {
-      type_ = other.type_.Clone();
+      type_ = other.type_;
       value_ = other.value_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -17769,12 +17769,13 @@ namespace BYDLD {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::BYDLD.AztecGemType> _repeated_type_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::BYDLD.AztecGemType) x);
-    private readonly pbc::RepeatedField<global::BYDLD.AztecGemType> type_ = new pbc::RepeatedField<global::BYDLD.AztecGemType>();
+    private global::BYDLD.AztecGemType type_ = global::BYDLD.AztecGemType.Null;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::BYDLD.AztecGemType> Type {
+    public global::BYDLD.AztecGemType Type {
       get { return type_; }
+      set {
+        type_ = value;
+      }
     }
 
     /// <summary>Field number for the "value" field.</summary>
@@ -17801,7 +17802,7 @@ namespace BYDLD {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!type_.Equals(other.type_)) return false;
+      if (Type != other.Type) return false;
       if (Value != other.Value) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -17809,7 +17810,7 @@ namespace BYDLD {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= type_.GetHashCode();
+      if (Type != global::BYDLD.AztecGemType.Null) hash ^= Type.GetHashCode();
       if (Value != 0) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -17827,7 +17828,10 @@ namespace BYDLD {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      type_.WriteTo(output, _repeated_type_codec);
+      if (Type != global::BYDLD.AztecGemType.Null) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
       if (Value != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(Value);
@@ -17841,7 +17845,10 @@ namespace BYDLD {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      type_.WriteTo(ref output, _repeated_type_codec);
+      if (Type != global::BYDLD.AztecGemType.Null) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
       if (Value != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(Value);
@@ -17855,7 +17862,9 @@ namespace BYDLD {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += type_.CalculateSize(_repeated_type_codec);
+      if (Type != global::BYDLD.AztecGemType.Null) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
       if (Value != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Value);
       }
@@ -17870,7 +17879,9 @@ namespace BYDLD {
       if (other == null) {
         return;
       }
-      type_.Add(other.type_);
+      if (other.Type != global::BYDLD.AztecGemType.Null) {
+        Type = other.Type;
+      }
       if (other.Value != 0) {
         Value = other.Value;
       }
@@ -17888,9 +17899,8 @@ namespace BYDLD {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10:
           case 8: {
-            type_.AddEntriesFrom(input, _repeated_type_codec);
+            Type = (global::BYDLD.AztecGemType) input.ReadEnum();
             break;
           }
           case 16: {
@@ -17911,9 +17921,8 @@ namespace BYDLD {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10:
           case 8: {
-            type_.AddEntriesFrom(ref input, _repeated_type_codec);
+            Type = (global::BYDLD.AztecGemType) input.ReadEnum();
             break;
           }
           case 16: {

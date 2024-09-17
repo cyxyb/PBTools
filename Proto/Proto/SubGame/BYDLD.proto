@@ -688,7 +688,7 @@ message SCAztecGemConfig
 
 message AztecClearReward
 {
-	repeated AztecGemType type = 1;
+	AztecGemType type = 1;
 	int32 value = 2;
 }
 

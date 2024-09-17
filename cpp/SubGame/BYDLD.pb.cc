@@ -7378,7 +7378,7 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ztecGemType\"\022\n\020CSAztecGemConfig\":\n\020SCAzt"
   "ecGemConfig\022&\n\007configs\030\001 \003(\0132\025.BYDLD.Azt"
   "ecGemConfig\"D\n\020AztecClearReward\022!\n\004type\030"
-  "\001 \003(\0162\023.BYDLD.AztecGemType\022\r\n\005value\030\002 \001("
+  "\001 \001(\0162\023.BYDLD.AztecGemType\022\r\n\005value\030\002 \001("
   "\005\"Y\n\nAztecTable\022!\n\004gems\030\001 \003(\0162\023.BYDLD.Az"
   "tecGemType\022(\n\007rewards\030\002 \003(\0132\027.BYDLD.Azte"
   "cClearReward\".\n\tAztecStep\022!\n\006tables\030\001 \003("
@@ -25825,22 +25825,25 @@ class AztecClearReward::_Internal {
 };
 
 AztecClearReward::AztecClearReward(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  type_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:BYDLD.AztecClearReward)
 }
 AztecClearReward::AztecClearReward(const AztecClearReward& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      type_(from.type_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  value_ = from.value_;
+  ::memcpy(&type_, &from.type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&value_) -
+    reinterpret_cast<char*>(&type_)) + sizeof(value_));
   // @@protoc_insertion_point(copy_constructor:BYDLD.AztecClearReward)
 }
 
 void AztecClearReward::SharedCtor() {
-  value_ = 0;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&value_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(value_));
 }
 
 AztecClearReward::~AztecClearReward() {
@@ -25874,8 +25877,9 @@ void AztecClearReward::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  type_.Clear();
-  value_ = 0;
+  ::memset(&type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&value_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(value_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -25886,15 +25890,12 @@ const char* AztecClearReward::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .BYDLD.AztecGemType type = 1;
+      // .BYDLD.AztecGemType type = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedEnumParser(_internal_mutable_type(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_add_type(static_cast<::BYDLD::AztecGemType>(val));
+          _internal_set_type(static_cast<::BYDLD::AztecGemType>(val));
         } else goto handle_unusual;
         continue;
       // int32 value = 2;
@@ -25932,13 +25933,11 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .BYDLD.AztecGemType type = 1;
-  {
-    int byte_size = _type_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteEnumPacked(
-          1, type_, byte_size, target);
-    }
+  // .BYDLD.AztecGemType type = 1;
+  if (this->type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+      1, this->_internal_type(), target);
   }
 
   // int32 value = 2;
@@ -25963,22 +25962,10 @@ size_t AztecClearReward::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .BYDLD.AztecGemType type = 1;
-  {
-    size_t data_size = 0;
-    unsigned int count = static_cast<unsigned int>(this->_internal_type_size());for (unsigned int i = 0; i < count; i++) {
-      data_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(
-        this->_internal_type(static_cast<int>(i)));
-    }
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _type_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
+  // .BYDLD.AztecGemType type = 1;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_type());
   }
 
   // int32 value = 2;
@@ -26019,7 +26006,9 @@ void AztecClearReward::MergeFrom(const AztecClearReward& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  type_.MergeFrom(from.type_);
+  if (from.type() != 0) {
+    _internal_set_type(from._internal_type());
+  }
   if (from.value() != 0) {
     _internal_set_value(from._internal_value());
   }
@@ -26046,8 +26035,12 @@ bool AztecClearReward::IsInitialized() const {
 void AztecClearReward::InternalSwap(AztecClearReward* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  type_.InternalSwap(&other->type_);
-  swap(value_, other->value_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AztecClearReward, value_)
+      + sizeof(AztecClearReward::value_)
+      - PROTOBUF_FIELD_OFFSET(AztecClearReward, type_)>(
+          reinterpret_cast<char*>(&type_),
+          reinterpret_cast<char*>(&other->type_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AztecClearReward::GetMetadata() const {

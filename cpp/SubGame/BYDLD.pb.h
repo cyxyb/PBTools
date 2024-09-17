@@ -12798,22 +12798,14 @@ class AztecClearReward PROTOBUF_FINAL :
     kTypeFieldNumber = 1,
     kValueFieldNumber = 2,
   };
-  // repeated .BYDLD.AztecGemType type = 1;
-  int type_size() const;
-  private:
-  int _internal_type_size() const;
-  public:
+  // .BYDLD.AztecGemType type = 1;
   void clear_type();
+  ::BYDLD::AztecGemType type() const;
+  void set_type(::BYDLD::AztecGemType value);
   private:
-  ::BYDLD::AztecGemType _internal_type(int index) const;
-  void _internal_add_type(::BYDLD::AztecGemType value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>* _internal_mutable_type();
+  ::BYDLD::AztecGemType _internal_type() const;
+  void _internal_set_type(::BYDLD::AztecGemType value);
   public:
-  ::BYDLD::AztecGemType type(int index) const;
-  void set_type(int index, ::BYDLD::AztecGemType value);
-  void add_type(::BYDLD::AztecGemType value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>& type() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>* mutable_type();
 
   // int32 value = 2;
   void clear_value();
@@ -12831,8 +12823,7 @@ class AztecClearReward PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField<int> type_;
-  mutable std::atomic<int> _type_cached_byte_size_;
+  int type_;
   ::PROTOBUF_NAMESPACE_ID::int32 value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
@@ -50100,47 +50091,24 @@ SCAztecGemConfig::configs() const {
 
 // AztecClearReward
 
-// repeated .BYDLD.AztecGemType type = 1;
-inline int AztecClearReward::_internal_type_size() const {
-  return type_.size();
-}
-inline int AztecClearReward::type_size() const {
-  return _internal_type_size();
-}
+// .BYDLD.AztecGemType type = 1;
 inline void AztecClearReward::clear_type() {
-  type_.Clear();
+  type_ = 0;
 }
-inline ::BYDLD::AztecGemType AztecClearReward::_internal_type(int index) const {
-  return static_cast< ::BYDLD::AztecGemType >(type_.Get(index));
+inline ::BYDLD::AztecGemType AztecClearReward::_internal_type() const {
+  return static_cast< ::BYDLD::AztecGemType >(type_);
 }
-inline ::BYDLD::AztecGemType AztecClearReward::type(int index) const {
+inline ::BYDLD::AztecGemType AztecClearReward::type() const {
   // @@protoc_insertion_point(field_get:BYDLD.AztecClearReward.type)
-  return _internal_type(index);
+  return _internal_type();
 }
-inline void AztecClearReward::set_type(int index, ::BYDLD::AztecGemType value) {
-  type_.Set(index, value);
+inline void AztecClearReward::_internal_set_type(::BYDLD::AztecGemType value) {
+  
+  type_ = value;
+}
+inline void AztecClearReward::set_type(::BYDLD::AztecGemType value) {
+  _internal_set_type(value);
   // @@protoc_insertion_point(field_set:BYDLD.AztecClearReward.type)
-}
-inline void AztecClearReward::_internal_add_type(::BYDLD::AztecGemType value) {
-  type_.Add(value);
-}
-inline void AztecClearReward::add_type(::BYDLD::AztecGemType value) {
-  // @@protoc_insertion_point(field_add:BYDLD.AztecClearReward.type)
-  _internal_add_type(value);
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>&
-AztecClearReward::type() const {
-  // @@protoc_insertion_point(field_list:BYDLD.AztecClearReward.type)
-  return type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>*
-AztecClearReward::_internal_mutable_type() {
-  return &type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField<int>*
-AztecClearReward::mutable_type() {
-  // @@protoc_insertion_point(field_mutable_list:BYDLD.AztecClearReward.type)
-  return _internal_mutable_type();
 }
 
 // int32 value = 2;
