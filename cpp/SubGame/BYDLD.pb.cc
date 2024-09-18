@@ -7532,7 +7532,7 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "SCFortuneShoot\022\021\n\tchair_idx\030\001 \001(\005\022\021\n\tcan"
   "_shoot\030\002 \001(\010\"<\n\tIngotInfo\022\020\n\010ingot_id\030\001 "
   "\001(\005\022\016\n\006remain\030\002 \001(\005\022\r\n\005total\030\003 \001(\005\"5\n\rSC"
-  "SyncFortune\022$\n\ningot_info\030\001 \003(\0132\020.BYDLD."
+  "SyncFortune\022$\n\ningot_info\030\001 \001(\0132\020.BYDLD."
   "IngotInfo\"#\n\016CSUserPoolInfo\022\021\n\topen_page"
   "\030\001 \001(\010\"]\n\rUserAwardItem\022\r\n\005index\030\001 \001(\005\022\020"
   "\n\010item_max\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\035\n\005goods\030"
@@ -7664,7 +7664,7 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   " \003(\0132\016.BYDLD.Object3\"\021\n\017CSLuckyPoolInfo\""
   "-\n\017SCLuckyPoolInfo\022\r\n\005count\030\001 \001(\005\022\013\n\003max"
   "\030\002 \001(\005\"\021\n\017CSLuckyPoolDraw\"/\n\017SCLuckyPool"
-  "Draw\022\034\n\004item\030\001 \003(\0132\016.BYDLD.Object3\"p\n\017Tr"
+  "Draw\022\034\n\004item\030\001 \001(\0132\016.BYDLD.Object3\"p\n\017Tr"
   "identRankList\022\021\n\tuser_dbid\030\001 \001(\005\022\021\n\tnick"
   "_name\030\002 \001(\t\022\026\n\016continue_times\030\003 \001(\005\022\021\n\td"
   "ate_time\030\004 \001(\t\022\014\n\004rank\030\005 \001(\005\"k\n\023SCTriden"
@@ -43599,24 +43599,33 @@ void IngotInfo::InternalSwap(IngotInfo* other) {
 
 class SCSyncFortune::_Internal {
  public:
+  static const ::BYDLD::IngotInfo& ingot_info(const SCSyncFortune* msg);
 };
 
+const ::BYDLD::IngotInfo&
+SCSyncFortune::_Internal::ingot_info(const SCSyncFortune* msg) {
+  return *msg->ingot_info_;
+}
 SCSyncFortune::SCSyncFortune(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  ingot_info_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:BYDLD.SCSyncFortune)
 }
 SCSyncFortune::SCSyncFortune(const SCSyncFortune& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      ingot_info_(from.ingot_info_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_ingot_info()) {
+    ingot_info_ = new ::BYDLD::IngotInfo(*from.ingot_info_);
+  } else {
+    ingot_info_ = nullptr;
+  }
   // @@protoc_insertion_point(copy_constructor:BYDLD.SCSyncFortune)
 }
 
 void SCSyncFortune::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCSyncFortune_BYDLD_2eproto.base);
+  ingot_info_ = nullptr;
 }
 
 SCSyncFortune::~SCSyncFortune() {
@@ -43627,6 +43636,7 @@ SCSyncFortune::~SCSyncFortune() {
 
 void SCSyncFortune::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete ingot_info_;
 }
 
 void SCSyncFortune::ArenaDtor(void* object) {
@@ -43650,7 +43660,10 @@ void SCSyncFortune::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ingot_info_.Clear();
+  if (GetArena() == nullptr && ingot_info_ != nullptr) {
+    delete ingot_info_;
+  }
+  ingot_info_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -43661,16 +43674,11 @@ const char* SCSyncFortune::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .BYDLD.IngotInfo ingot_info = 1;
+      // .BYDLD.IngotInfo ingot_info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_ingot_info(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          ptr = ctx->ParseMessage(_internal_mutable_ingot_info(), ptr);
+          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       default: {
@@ -43701,12 +43709,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .BYDLD.IngotInfo ingot_info = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_ingot_info_size()); i < n; i++) {
+  // .BYDLD.IngotInfo ingot_info = 1;
+  if (this->has_ingot_info()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_ingot_info(i), target, stream);
+      InternalWriteMessage(
+        1, _Internal::ingot_info(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -43725,11 +43733,11 @@ size_t SCSyncFortune::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .BYDLD.IngotInfo ingot_info = 1;
-  total_size += 1UL * this->_internal_ingot_info_size();
-  for (const auto& msg : this->ingot_info_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  // .BYDLD.IngotInfo ingot_info = 1;
+  if (this->has_ingot_info()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *ingot_info_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -43763,7 +43771,9 @@ void SCSyncFortune::MergeFrom(const SCSyncFortune& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  ingot_info_.MergeFrom(from.ingot_info_);
+  if (from.has_ingot_info()) {
+    _internal_mutable_ingot_info()->::BYDLD::IngotInfo::MergeFrom(from._internal_ingot_info());
+  }
 }
 
 void SCSyncFortune::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -43787,7 +43797,7 @@ bool SCSyncFortune::IsInitialized() const {
 void SCSyncFortune::InternalSwap(SCSyncFortune* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ingot_info_.InternalSwap(&other->ingot_info_);
+  swap(ingot_info_, other->ingot_info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCSyncFortune::GetMetadata() const {
@@ -60834,24 +60844,33 @@ void CSLuckyPoolDraw::InternalSwap(CSLuckyPoolDraw* other) {
 
 class SCLuckyPoolDraw::_Internal {
  public:
+  static const ::BYDLD::Object3& item(const SCLuckyPoolDraw* msg);
 };
 
+const ::BYDLD::Object3&
+SCLuckyPoolDraw::_Internal::item(const SCLuckyPoolDraw* msg) {
+  return *msg->item_;
+}
 SCLuckyPoolDraw::SCLuckyPoolDraw(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  item_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:BYDLD.SCLuckyPoolDraw)
 }
 SCLuckyPoolDraw::SCLuckyPoolDraw(const SCLuckyPoolDraw& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      item_(from.item_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_item()) {
+    item_ = new ::BYDLD::Object3(*from.item_);
+  } else {
+    item_ = nullptr;
+  }
   // @@protoc_insertion_point(copy_constructor:BYDLD.SCLuckyPoolDraw)
 }
 
 void SCLuckyPoolDraw::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCLuckyPoolDraw_BYDLD_2eproto.base);
+  item_ = nullptr;
 }
 
 SCLuckyPoolDraw::~SCLuckyPoolDraw() {
@@ -60862,6 +60881,7 @@ SCLuckyPoolDraw::~SCLuckyPoolDraw() {
 
 void SCLuckyPoolDraw::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete item_;
 }
 
 void SCLuckyPoolDraw::ArenaDtor(void* object) {
@@ -60885,7 +60905,10 @@ void SCLuckyPoolDraw::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  item_.Clear();
+  if (GetArena() == nullptr && item_ != nullptr) {
+    delete item_;
+  }
+  item_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -60896,16 +60919,11 @@ const char* SCLuckyPoolDraw::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .BYDLD.Object3 item = 1;
+      // .BYDLD.Object3 item = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_item(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          ptr = ctx->ParseMessage(_internal_mutable_item(), ptr);
+          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       default: {
@@ -60936,12 +60954,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .BYDLD.Object3 item = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_item_size()); i < n; i++) {
+  // .BYDLD.Object3 item = 1;
+  if (this->has_item()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_item(i), target, stream);
+      InternalWriteMessage(
+        1, _Internal::item(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -60960,11 +60978,11 @@ size_t SCLuckyPoolDraw::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .BYDLD.Object3 item = 1;
-  total_size += 1UL * this->_internal_item_size();
-  for (const auto& msg : this->item_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  // .BYDLD.Object3 item = 1;
+  if (this->has_item()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *item_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -60998,7 +61016,9 @@ void SCLuckyPoolDraw::MergeFrom(const SCLuckyPoolDraw& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  item_.MergeFrom(from.item_);
+  if (from.has_item()) {
+    _internal_mutable_item()->::BYDLD::Object3::MergeFrom(from._internal_item());
+  }
 }
 
 void SCLuckyPoolDraw::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -61022,7 +61042,7 @@ bool SCLuckyPoolDraw::IsInitialized() const {
 void SCLuckyPoolDraw::InternalSwap(SCLuckyPoolDraw* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  item_.InternalSwap(&other->item_);
+  swap(item_, other->item_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCLuckyPoolDraw::GetMetadata() const {

@@ -1188,7 +1188,7 @@ message IngotInfo
 
 message SCSyncFortune
 {
-	repeated IngotInfo ingot_info = 1;
+	IngotInfo ingot_info = 1;
 }
 
 message CSUserPoolInfo
@@ -1657,7 +1657,7 @@ message CSLuckyPoolDraw
 
 message SCLuckyPoolDraw
 {
-	repeated Object3 item = 1;
+	Object3 item = 1;
 }
 
 message TridentRankList

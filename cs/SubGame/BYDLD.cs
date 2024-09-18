@@ -289,7 +289,7 @@ namespace BYDLD {
             "cmQiEAoOQ1NGb3J0dW5lU2hvb3QiNgoOU0NGb3J0dW5lU2hvb3QSEQoJY2hh",
             "aXJfaWR4GAEgASgFEhEKCWNhbl9zaG9vdBgCIAEoCCI8CglJbmdvdEluZm8S",
             "EAoIaW5nb3RfaWQYASABKAUSDgoGcmVtYWluGAIgASgFEg0KBXRvdGFsGAMg",
-            "ASgFIjUKDVNDU3luY0ZvcnR1bmUSJAoKaW5nb3RfaW5mbxgBIAMoCzIQLkJZ",
+            "ASgFIjUKDVNDU3luY0ZvcnR1bmUSJAoKaW5nb3RfaW5mbxgBIAEoCzIQLkJZ",
             "RExELkluZ290SW5mbyIjCg5DU1VzZXJQb29sSW5mbxIRCglvcGVuX3BhZ2UY",
             "ASABKAgiXQoNVXNlckF3YXJkSXRlbRINCgVpbmRleBgBIAEoBRIQCghpdGVt",
             "X21heBgCIAEoBRIMCgRuYW1lGAMgASgJEh0KBWdvb2RzGAQgAygLMg4uQllE",
@@ -406,7 +406,7 @@ namespace BYDLD {
             "bRgEIAMoCzIOLkJZRExELk9iamVjdDMSIgoKZXh0cmFfaXRlbRgFIAMoCzIO",
             "LkJZRExELk9iamVjdDMiEQoPQ1NMdWNreVBvb2xJbmZvIi0KD1NDTHVja3lQ",
             "b29sSW5mbxINCgVjb3VudBgBIAEoBRILCgNtYXgYAiABKAUiEQoPQ1NMdWNr",
-            "eVBvb2xEcmF3Ii8KD1NDTHVja3lQb29sRHJhdxIcCgRpdGVtGAEgAygLMg4u",
+            "eVBvb2xEcmF3Ii8KD1NDTHVja3lQb29sRHJhdxIcCgRpdGVtGAEgASgLMg4u",
             "QllETEQuT2JqZWN0MyJwCg9UcmlkZW50UmFua0xpc3QSEQoJdXNlcl9kYmlk",
             "GAEgASgFEhEKCW5pY2tfbmFtZRgCIAEoCRIWCg5jb250aW51ZV90aW1lcxgD",
             "IAEoBRIRCglkYXRlX3RpbWUYBCABKAkSDAoEcmFuaxgFIAEoBSJrChNTQ1Ry",
@@ -35030,7 +35030,7 @@ namespace BYDLD {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SCSyncFortune(SCSyncFortune other) : this() {
-      ingotInfo_ = other.ingotInfo_.Clone();
+      ingotInfo_ = other.ingotInfo_ != null ? other.ingotInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -35041,12 +35041,13 @@ namespace BYDLD {
 
     /// <summary>Field number for the "ingot_info" field.</summary>
     public const int IngotInfoFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::BYDLD.IngotInfo> _repeated_ingotInfo_codec
-        = pb::FieldCodec.ForMessage(10, global::BYDLD.IngotInfo.Parser);
-    private readonly pbc::RepeatedField<global::BYDLD.IngotInfo> ingotInfo_ = new pbc::RepeatedField<global::BYDLD.IngotInfo>();
+    private global::BYDLD.IngotInfo ingotInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::BYDLD.IngotInfo> IngotInfo {
+    public global::BYDLD.IngotInfo IngotInfo {
       get { return ingotInfo_; }
+      set {
+        ingotInfo_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -35062,14 +35063,14 @@ namespace BYDLD {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!ingotInfo_.Equals(other.ingotInfo_)) return false;
+      if (!object.Equals(IngotInfo, other.IngotInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= ingotInfo_.GetHashCode();
+      if (ingotInfo_ != null) hash ^= IngotInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -35086,7 +35087,10 @@ namespace BYDLD {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      ingotInfo_.WriteTo(output, _repeated_ingotInfo_codec);
+      if (ingotInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(IngotInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -35096,7 +35100,10 @@ namespace BYDLD {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      ingotInfo_.WriteTo(ref output, _repeated_ingotInfo_codec);
+      if (ingotInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(IngotInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -35106,7 +35113,9 @@ namespace BYDLD {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += ingotInfo_.CalculateSize(_repeated_ingotInfo_codec);
+      if (ingotInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IngotInfo);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -35118,7 +35127,12 @@ namespace BYDLD {
       if (other == null) {
         return;
       }
-      ingotInfo_.Add(other.ingotInfo_);
+      if (other.ingotInfo_ != null) {
+        if (ingotInfo_ == null) {
+          IngotInfo = new global::BYDLD.IngotInfo();
+        }
+        IngotInfo.MergeFrom(other.IngotInfo);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -35134,7 +35148,10 @@ namespace BYDLD {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            ingotInfo_.AddEntriesFrom(input, _repeated_ingotInfo_codec);
+            if (ingotInfo_ == null) {
+              IngotInfo = new global::BYDLD.IngotInfo();
+            }
+            input.ReadMessage(IngotInfo);
             break;
           }
         }
@@ -35152,7 +35169,10 @@ namespace BYDLD {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            ingotInfo_.AddEntriesFrom(ref input, _repeated_ingotInfo_codec);
+            if (ingotInfo_ == null) {
+              IngotInfo = new global::BYDLD.IngotInfo();
+            }
+            input.ReadMessage(IngotInfo);
             break;
           }
         }
@@ -51072,7 +51092,7 @@ namespace BYDLD {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SCLuckyPoolDraw(SCLuckyPoolDraw other) : this() {
-      item_ = other.item_.Clone();
+      item_ = other.item_ != null ? other.item_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -51083,12 +51103,13 @@ namespace BYDLD {
 
     /// <summary>Field number for the "item" field.</summary>
     public const int ItemFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::BYDLD.Object3> _repeated_item_codec
-        = pb::FieldCodec.ForMessage(10, global::BYDLD.Object3.Parser);
-    private readonly pbc::RepeatedField<global::BYDLD.Object3> item_ = new pbc::RepeatedField<global::BYDLD.Object3>();
+    private global::BYDLD.Object3 item_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::BYDLD.Object3> Item {
+    public global::BYDLD.Object3 Item {
       get { return item_; }
+      set {
+        item_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -51104,14 +51125,14 @@ namespace BYDLD {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!item_.Equals(other.item_)) return false;
+      if (!object.Equals(Item, other.Item)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= item_.GetHashCode();
+      if (item_ != null) hash ^= Item.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -51128,7 +51149,10 @@ namespace BYDLD {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      item_.WriteTo(output, _repeated_item_codec);
+      if (item_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Item);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -51138,7 +51162,10 @@ namespace BYDLD {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      item_.WriteTo(ref output, _repeated_item_codec);
+      if (item_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Item);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -51148,7 +51175,9 @@ namespace BYDLD {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += item_.CalculateSize(_repeated_item_codec);
+      if (item_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Item);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -51160,7 +51189,12 @@ namespace BYDLD {
       if (other == null) {
         return;
       }
-      item_.Add(other.item_);
+      if (other.item_ != null) {
+        if (item_ == null) {
+          Item = new global::BYDLD.Object3();
+        }
+        Item.MergeFrom(other.Item);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -51176,7 +51210,10 @@ namespace BYDLD {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            item_.AddEntriesFrom(input, _repeated_item_codec);
+            if (item_ == null) {
+              Item = new global::BYDLD.Object3();
+            }
+            input.ReadMessage(Item);
             break;
           }
         }
@@ -51194,7 +51231,10 @@ namespace BYDLD {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            item_.AddEntriesFrom(ref input, _repeated_item_codec);
+            if (item_ == null) {
+              Item = new global::BYDLD.Object3();
+            }
+            input.ReadMessage(Item);
             break;
           }
         }

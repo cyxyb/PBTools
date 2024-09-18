@@ -24247,23 +24247,23 @@ class SCSyncFortune PROTOBUF_FINAL :
   enum : int {
     kIngotInfoFieldNumber = 1,
   };
-  // repeated .BYDLD.IngotInfo ingot_info = 1;
-  int ingot_info_size() const;
+  // .BYDLD.IngotInfo ingot_info = 1;
+  bool has_ingot_info() const;
   private:
-  int _internal_ingot_info_size() const;
+  bool _internal_has_ingot_info() const;
   public:
   void clear_ingot_info();
-  ::BYDLD::IngotInfo* mutable_ingot_info(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::IngotInfo >*
-      mutable_ingot_info();
+  const ::BYDLD::IngotInfo& ingot_info() const;
+  ::BYDLD::IngotInfo* release_ingot_info();
+  ::BYDLD::IngotInfo* mutable_ingot_info();
+  void set_allocated_ingot_info(::BYDLD::IngotInfo* ingot_info);
   private:
-  const ::BYDLD::IngotInfo& _internal_ingot_info(int index) const;
-  ::BYDLD::IngotInfo* _internal_add_ingot_info();
+  const ::BYDLD::IngotInfo& _internal_ingot_info() const;
+  ::BYDLD::IngotInfo* _internal_mutable_ingot_info();
   public:
-  const ::BYDLD::IngotInfo& ingot_info(int index) const;
-  ::BYDLD::IngotInfo* add_ingot_info();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::IngotInfo >&
-      ingot_info() const;
+  void unsafe_arena_set_allocated_ingot_info(
+      ::BYDLD::IngotInfo* ingot_info);
+  ::BYDLD::IngotInfo* unsafe_arena_release_ingot_info();
 
   // @@protoc_insertion_point(class_scope:BYDLD.SCSyncFortune)
  private:
@@ -24272,7 +24272,7 @@ class SCSyncFortune PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::IngotInfo > ingot_info_;
+  ::BYDLD::IngotInfo* ingot_info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -35440,23 +35440,23 @@ class SCLuckyPoolDraw PROTOBUF_FINAL :
   enum : int {
     kItemFieldNumber = 1,
   };
-  // repeated .BYDLD.Object3 item = 1;
-  int item_size() const;
+  // .BYDLD.Object3 item = 1;
+  bool has_item() const;
   private:
-  int _internal_item_size() const;
+  bool _internal_has_item() const;
   public:
   void clear_item();
-  ::BYDLD::Object3* mutable_item(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
-      mutable_item();
+  const ::BYDLD::Object3& item() const;
+  ::BYDLD::Object3* release_item();
+  ::BYDLD::Object3* mutable_item();
+  void set_allocated_item(::BYDLD::Object3* item);
   private:
-  const ::BYDLD::Object3& _internal_item(int index) const;
-  ::BYDLD::Object3* _internal_add_item();
+  const ::BYDLD::Object3& _internal_item() const;
+  ::BYDLD::Object3* _internal_mutable_item();
   public:
-  const ::BYDLD::Object3& item(int index) const;
-  ::BYDLD::Object3* add_item();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
-      item() const;
+  void unsafe_arena_set_allocated_item(
+      ::BYDLD::Object3* item);
+  ::BYDLD::Object3* unsafe_arena_release_item();
 
   // @@protoc_insertion_point(class_scope:BYDLD.SCLuckyPoolDraw)
  private:
@@ -35465,7 +35465,7 @@ class SCLuckyPoolDraw PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 > item_;
+  ::BYDLD::Object3* item_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -56537,43 +56537,87 @@ inline void IngotInfo::set_total(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // SCSyncFortune
 
-// repeated .BYDLD.IngotInfo ingot_info = 1;
-inline int SCSyncFortune::_internal_ingot_info_size() const {
-  return ingot_info_.size();
+// .BYDLD.IngotInfo ingot_info = 1;
+inline bool SCSyncFortune::_internal_has_ingot_info() const {
+  return this != internal_default_instance() && ingot_info_ != nullptr;
 }
-inline int SCSyncFortune::ingot_info_size() const {
-  return _internal_ingot_info_size();
+inline bool SCSyncFortune::has_ingot_info() const {
+  return _internal_has_ingot_info();
 }
 inline void SCSyncFortune::clear_ingot_info() {
-  ingot_info_.Clear();
+  if (GetArena() == nullptr && ingot_info_ != nullptr) {
+    delete ingot_info_;
+  }
+  ingot_info_ = nullptr;
 }
-inline ::BYDLD::IngotInfo* SCSyncFortune::mutable_ingot_info(int index) {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SCSyncFortune.ingot_info)
-  return ingot_info_.Mutable(index);
+inline const ::BYDLD::IngotInfo& SCSyncFortune::_internal_ingot_info() const {
+  const ::BYDLD::IngotInfo* p = ingot_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::IngotInfo&>(
+      ::BYDLD::_IngotInfo_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::IngotInfo >*
-SCSyncFortune::mutable_ingot_info() {
-  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCSyncFortune.ingot_info)
-  return &ingot_info_;
-}
-inline const ::BYDLD::IngotInfo& SCSyncFortune::_internal_ingot_info(int index) const {
-  return ingot_info_.Get(index);
-}
-inline const ::BYDLD::IngotInfo& SCSyncFortune::ingot_info(int index) const {
+inline const ::BYDLD::IngotInfo& SCSyncFortune::ingot_info() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCSyncFortune.ingot_info)
-  return _internal_ingot_info(index);
+  return _internal_ingot_info();
 }
-inline ::BYDLD::IngotInfo* SCSyncFortune::_internal_add_ingot_info() {
-  return ingot_info_.Add();
+inline void SCSyncFortune::unsafe_arena_set_allocated_ingot_info(
+    ::BYDLD::IngotInfo* ingot_info) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(ingot_info_);
+  }
+  ingot_info_ = ingot_info;
+  if (ingot_info) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCSyncFortune.ingot_info)
 }
-inline ::BYDLD::IngotInfo* SCSyncFortune::add_ingot_info() {
-  // @@protoc_insertion_point(field_add:BYDLD.SCSyncFortune.ingot_info)
-  return _internal_add_ingot_info();
+inline ::BYDLD::IngotInfo* SCSyncFortune::release_ingot_info() {
+  
+  ::BYDLD::IngotInfo* temp = ingot_info_;
+  ingot_info_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::IngotInfo >&
-SCSyncFortune::ingot_info() const {
-  // @@protoc_insertion_point(field_list:BYDLD.SCSyncFortune.ingot_info)
+inline ::BYDLD::IngotInfo* SCSyncFortune::unsafe_arena_release_ingot_info() {
+  // @@protoc_insertion_point(field_release:BYDLD.SCSyncFortune.ingot_info)
+  
+  ::BYDLD::IngotInfo* temp = ingot_info_;
+  ingot_info_ = nullptr;
+  return temp;
+}
+inline ::BYDLD::IngotInfo* SCSyncFortune::_internal_mutable_ingot_info() {
+  
+  if (ingot_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::BYDLD::IngotInfo>(GetArena());
+    ingot_info_ = p;
+  }
   return ingot_info_;
+}
+inline ::BYDLD::IngotInfo* SCSyncFortune::mutable_ingot_info() {
+  // @@protoc_insertion_point(field_mutable:BYDLD.SCSyncFortune.ingot_info)
+  return _internal_mutable_ingot_info();
+}
+inline void SCSyncFortune::set_allocated_ingot_info(::BYDLD::IngotInfo* ingot_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete ingot_info_;
+  }
+  if (ingot_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(ingot_info);
+    if (message_arena != submessage_arena) {
+      ingot_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, ingot_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  ingot_info_ = ingot_info;
+  // @@protoc_insertion_point(field_set_allocated:BYDLD.SCSyncFortune.ingot_info)
 }
 
 // -------------------------------------------------------------------
@@ -62675,43 +62719,87 @@ inline void SCLuckyPoolInfo::set_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // SCLuckyPoolDraw
 
-// repeated .BYDLD.Object3 item = 1;
-inline int SCLuckyPoolDraw::_internal_item_size() const {
-  return item_.size();
+// .BYDLD.Object3 item = 1;
+inline bool SCLuckyPoolDraw::_internal_has_item() const {
+  return this != internal_default_instance() && item_ != nullptr;
 }
-inline int SCLuckyPoolDraw::item_size() const {
-  return _internal_item_size();
+inline bool SCLuckyPoolDraw::has_item() const {
+  return _internal_has_item();
 }
 inline void SCLuckyPoolDraw::clear_item() {
-  item_.Clear();
+  if (GetArena() == nullptr && item_ != nullptr) {
+    delete item_;
+  }
+  item_ = nullptr;
 }
-inline ::BYDLD::Object3* SCLuckyPoolDraw::mutable_item(int index) {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SCLuckyPoolDraw.item)
-  return item_.Mutable(index);
+inline const ::BYDLD::Object3& SCLuckyPoolDraw::_internal_item() const {
+  const ::BYDLD::Object3* p = item_;
+  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::Object3&>(
+      ::BYDLD::_Object3_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
-SCLuckyPoolDraw::mutable_item() {
-  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCLuckyPoolDraw.item)
-  return &item_;
-}
-inline const ::BYDLD::Object3& SCLuckyPoolDraw::_internal_item(int index) const {
-  return item_.Get(index);
-}
-inline const ::BYDLD::Object3& SCLuckyPoolDraw::item(int index) const {
+inline const ::BYDLD::Object3& SCLuckyPoolDraw::item() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCLuckyPoolDraw.item)
-  return _internal_item(index);
+  return _internal_item();
 }
-inline ::BYDLD::Object3* SCLuckyPoolDraw::_internal_add_item() {
-  return item_.Add();
+inline void SCLuckyPoolDraw::unsafe_arena_set_allocated_item(
+    ::BYDLD::Object3* item) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(item_);
+  }
+  item_ = item;
+  if (item) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCLuckyPoolDraw.item)
 }
-inline ::BYDLD::Object3* SCLuckyPoolDraw::add_item() {
-  // @@protoc_insertion_point(field_add:BYDLD.SCLuckyPoolDraw.item)
-  return _internal_add_item();
+inline ::BYDLD::Object3* SCLuckyPoolDraw::release_item() {
+  
+  ::BYDLD::Object3* temp = item_;
+  item_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
-SCLuckyPoolDraw::item() const {
-  // @@protoc_insertion_point(field_list:BYDLD.SCLuckyPoolDraw.item)
+inline ::BYDLD::Object3* SCLuckyPoolDraw::unsafe_arena_release_item() {
+  // @@protoc_insertion_point(field_release:BYDLD.SCLuckyPoolDraw.item)
+  
+  ::BYDLD::Object3* temp = item_;
+  item_ = nullptr;
+  return temp;
+}
+inline ::BYDLD::Object3* SCLuckyPoolDraw::_internal_mutable_item() {
+  
+  if (item_ == nullptr) {
+    auto* p = CreateMaybeMessage<::BYDLD::Object3>(GetArena());
+    item_ = p;
+  }
   return item_;
+}
+inline ::BYDLD::Object3* SCLuckyPoolDraw::mutable_item() {
+  // @@protoc_insertion_point(field_mutable:BYDLD.SCLuckyPoolDraw.item)
+  return _internal_mutable_item();
+}
+inline void SCLuckyPoolDraw::set_allocated_item(::BYDLD::Object3* item) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete item_;
+  }
+  if (item) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(item);
+    if (message_arena != submessage_arena) {
+      item = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, item, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  item_ = item;
+  // @@protoc_insertion_point(field_set_allocated:BYDLD.SCLuckyPoolDraw.item)
 }
 
 // -------------------------------------------------------------------
