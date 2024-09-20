@@ -661,7 +661,7 @@ message CritWheel
 message GoldenJadeInfo
 {
 	repeated ItemWheel item_wheels = 1;
-	repeated CritWheel crit_wheel = 2;
+	CritWheel crit_wheel = 2;
 	int32 total_multi = 3;
 }
 
@@ -1236,6 +1236,11 @@ message SCUserPoolPreDraw
 	string msg = 3;
 }
 
+message CSUserPoolDraw
+{
+
+}
+
 message SCUserPoolDraw
 {
 	int32 chair_idx = 1;
@@ -1623,8 +1628,8 @@ message CSUserPoolDoubleInfo
 message SCUserPoolDoubleInfo
 {
 	int32 cost = 1;
-	repeated Object2 item_before = 2;
-	repeated Object2 item_double = 3;
+	Object2 item_before = 2;
+	Object2 item_double = 3;
 }
 
 message CSUserPoolDouble
@@ -1637,8 +1642,8 @@ message SCUserPoolDouble
 	int32 code = 1;
 	int32 result = 2;
 	int32 chair_idx = 3;
-	repeated Object3 item = 4;
-	repeated Object3 extra_item = 5;
+	Object3 item = 4;
+	Object3 extra_item = 5;
 }
 
 message CSLuckyPoolInfo
@@ -1874,7 +1879,7 @@ message CSOpenChest
 message SCOpenChest
 {
 	repeated OpenChestReward reward_list = 1;
-	repeated ChestAutoSelectOption auto_option = 2;
+	ChestAutoSelectOption auto_option = 2;
 }
 
 message CSSelectChestReward
