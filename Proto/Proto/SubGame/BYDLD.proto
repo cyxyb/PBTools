@@ -280,6 +280,7 @@ message GunDetail
 		int32	discount_price = 10;
 		int32	start_time = 11;
 		int32	end_time = 12;
+		repeated int32 ratio_list = 13;
 }
 message SCWingsInfo
 {	

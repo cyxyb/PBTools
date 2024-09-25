@@ -2808,6 +2808,7 @@ class GunDetail PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kRatioListFieldNumber = 13,
     kGunSpecEffectFieldNumber = 9,
     kGunLevelFieldNumber = 1,
     kEnableFieldNumber = 2,
@@ -2821,6 +2822,28 @@ class GunDetail PROTOBUF_FINAL :
     kStartTimeFieldNumber = 11,
     kEndTimeFieldNumber = 12,
   };
+  // repeated int32 ratio_list = 13;
+  int ratio_list_size() const;
+  private:
+  int _internal_ratio_list_size() const;
+  public:
+  void clear_ratio_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_ratio_list() const;
+  void _internal_add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_ratio_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_list(int index) const;
+  void set_ratio_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      ratio_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_ratio_list();
+
   // .BYDLD.GunSpecEffect gunSpecEffect = 9;
   bool has_gunspeceffect() const;
   private:
@@ -2945,6 +2968,8 @@ class GunDetail PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > ratio_list_;
+  mutable std::atomic<int> _ratio_list_cached_byte_size_;
   ::BYDLD::GunSpecEffect* gunspeceffect_;
   ::PROTOBUF_NAMESPACE_ID::int32 gun_level_;
   bool enable_;
@@ -45743,6 +45768,53 @@ inline void GunDetail::_internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int32 val
 inline void GunDetail::set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_end_time(value);
   // @@protoc_insertion_point(field_set:BYDLD.GunDetail.end_time)
+}
+
+// repeated int32 ratio_list = 13;
+inline int GunDetail::_internal_ratio_list_size() const {
+  return ratio_list_.size();
+}
+inline int GunDetail::ratio_list_size() const {
+  return _internal_ratio_list_size();
+}
+inline void GunDetail::clear_ratio_list() {
+  ratio_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GunDetail::_internal_ratio_list(int index) const {
+  return ratio_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GunDetail::ratio_list(int index) const {
+  // @@protoc_insertion_point(field_get:BYDLD.GunDetail.ratio_list)
+  return _internal_ratio_list(index);
+}
+inline void GunDetail::set_ratio_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  ratio_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:BYDLD.GunDetail.ratio_list)
+}
+inline void GunDetail::_internal_add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  ratio_list_.Add(value);
+}
+inline void GunDetail::add_ratio_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_ratio_list(value);
+  // @@protoc_insertion_point(field_add:BYDLD.GunDetail.ratio_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+GunDetail::_internal_ratio_list() const {
+  return ratio_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+GunDetail::ratio_list() const {
+  // @@protoc_insertion_point(field_list:BYDLD.GunDetail.ratio_list)
+  return _internal_ratio_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+GunDetail::_internal_mutable_ratio_list() {
+  return &ratio_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+GunDetail::mutable_ratio_list() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.GunDetail.ratio_list)
+  return _internal_mutable_ratio_list();
 }
 
 // -------------------------------------------------------------------
