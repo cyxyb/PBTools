@@ -200,6 +200,16 @@ enum BeKickedReason
 		Cheat								= 4;
 }
 
+message SC_SceneInfo
+{
+	repeated StationBase station_base_list = 1;
+	int32 timestamp = 2;
+	int32 gun_ratio_num = 3;
+	int32 gun_level_num = 4;
+	repeated int32 ratio_list = 5;
+	repeated GunDetail gun_list = 6;
+}
+
 message GunSpecEffect
 {
 		int32 	ratioLimit  				= 1 ;
@@ -451,7 +461,7 @@ message StationBase
 		int32 gun_ratio = 1;
 		int32 gun_level = 2;
 		bool is_online = 3;
-		int32 user_socre = 4;
+		int64 user_score = 4;
 		int32 chair_idx = 5;
 		string player_name = 6;
 		bool through_flag = 7;
