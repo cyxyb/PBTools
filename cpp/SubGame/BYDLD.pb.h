@@ -8563,17 +8563,17 @@ class CSSetProbability PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kAddOrDelFieldNumber = 1,
+    kGunRatioFieldNumber = 1,
     kGunLevelFieldNumber = 2,
     kIsUseAutoFieldNumber = 3,
   };
-  // int32 add_or_del = 1;
-  void clear_add_or_del();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_or_del() const;
-  void set_add_or_del(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 gun_ratio = 1;
+  void clear_gun_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_ratio() const;
+  void set_gun_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_or_del() const;
-  void _internal_set_add_or_del(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_gun_ratio() const;
+  void _internal_set_gun_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 gun_level = 2;
@@ -8601,7 +8601,7 @@ class CSSetProbability PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_or_del_;
+  ::PROTOBUF_NAMESPACE_ID::int32 gun_ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 gun_level_;
   bool is_use_auto_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -48512,24 +48512,24 @@ inline void SCNotifyLogout::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) 
 
 // CSSetProbability
 
-// int32 add_or_del = 1;
-inline void CSSetProbability::clear_add_or_del() {
-  add_or_del_ = 0;
+// int32 gun_ratio = 1;
+inline void CSSetProbability::clear_gun_ratio() {
+  gun_ratio_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSSetProbability::_internal_add_or_del() const {
-  return add_or_del_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSSetProbability::_internal_gun_ratio() const {
+  return gun_ratio_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSSetProbability::add_or_del() const {
-  // @@protoc_insertion_point(field_get:BYDLD.CSSetProbability.add_or_del)
-  return _internal_add_or_del();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSSetProbability::gun_ratio() const {
+  // @@protoc_insertion_point(field_get:BYDLD.CSSetProbability.gun_ratio)
+  return _internal_gun_ratio();
 }
-inline void CSSetProbability::_internal_set_add_or_del(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CSSetProbability::_internal_set_gun_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  add_or_del_ = value;
+  gun_ratio_ = value;
 }
-inline void CSSetProbability::set_add_or_del(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_or_del(value);
-  // @@protoc_insertion_point(field_set:BYDLD.CSSetProbability.add_or_del)
+inline void CSSetProbability::set_gun_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_gun_ratio(value);
+  // @@protoc_insertion_point(field_set:BYDLD.CSSetProbability.gun_ratio)
 }
 
 // int32 gun_level = 2;
