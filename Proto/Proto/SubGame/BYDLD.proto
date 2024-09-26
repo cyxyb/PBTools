@@ -571,7 +571,9 @@ message HitFish
 
 message CSHitMultiFish
 {
-	repeated HitFish hit_info = 1;
+	int32 ratio = 1;
+	int32 bullet_type = 2;
+	repeated HitFish hit_info = 3;
 }
 
 message EffectFish
