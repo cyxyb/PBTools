@@ -9601,6 +9601,8 @@ class HitFish PROTOBUF_FINAL :
     kThroughIdxFieldNumber = 3,
     kFishIdFieldNumber = 4,
     kRoundFieldNumber = 6,
+    kRatioFieldNumber = 7,
+    kBulletTypeFieldNumber = 8,
   };
   // repeated int32 effect_fish_uid = 5;
   int effect_fish_uid_size() const;
@@ -9669,6 +9671,24 @@ class HitFish PROTOBUF_FINAL :
   void _internal_set_round(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 ratio = 7;
+  void clear_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 bullet_type = 8;
+  void clear_bullet_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 bullet_type() const;
+  void set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bullet_type() const;
+  void _internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:BYDLD.HitFish)
  private:
   class _Internal;
@@ -9683,6 +9703,8 @@ class HitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 through_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 round_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bullet_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -9800,11 +9822,9 @@ class CSHitMultiFish PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHitInfoFieldNumber = 3,
-    kRatioFieldNumber = 1,
-    kBulletTypeFieldNumber = 2,
+    kHitInfoFieldNumber = 1,
   };
-  // repeated .BYDLD.HitFish hit_info = 3;
+  // repeated .BYDLD.HitFish hit_info = 1;
   int hit_info_size() const;
   private:
   int _internal_hit_info_size() const;
@@ -9822,24 +9842,6 @@ class CSHitMultiFish PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::HitFish >&
       hit_info() const;
 
-  // int32 ratio = 1;
-  void clear_ratio();
-  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
-  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
-  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 bullet_type = 2;
-  void clear_bullet_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 bullet_type() const;
-  void set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bullet_type() const;
-  void _internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:BYDLD.CSHitMultiFish)
  private:
   class _Internal;
@@ -9848,8 +9850,6 @@ class CSHitMultiFish PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::HitFish > hit_info_;
-  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
-  ::PROTOBUF_NAMESPACE_ID::int32 bullet_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -49223,51 +49223,51 @@ inline void HitFish::set_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:BYDLD.HitFish.round)
 }
 
+// int32 ratio = 7;
+inline void HitFish::clear_ratio() {
+  ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 HitFish::_internal_ratio() const {
+  return ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 HitFish::ratio() const {
+  // @@protoc_insertion_point(field_get:BYDLD.HitFish.ratio)
+  return _internal_ratio();
+}
+inline void HitFish::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ratio_ = value;
+}
+inline void HitFish::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ratio(value);
+  // @@protoc_insertion_point(field_set:BYDLD.HitFish.ratio)
+}
+
+// int32 bullet_type = 8;
+inline void HitFish::clear_bullet_type() {
+  bullet_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 HitFish::_internal_bullet_type() const {
+  return bullet_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 HitFish::bullet_type() const {
+  // @@protoc_insertion_point(field_get:BYDLD.HitFish.bullet_type)
+  return _internal_bullet_type();
+}
+inline void HitFish::_internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bullet_type_ = value;
+}
+inline void HitFish::set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bullet_type(value);
+  // @@protoc_insertion_point(field_set:BYDLD.HitFish.bullet_type)
+}
+
 // -------------------------------------------------------------------
 
 // CSHitMultiFish
 
-// int32 ratio = 1;
-inline void CSHitMultiFish::clear_ratio() {
-  ratio_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitMultiFish::_internal_ratio() const {
-  return ratio_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitMultiFish::ratio() const {
-  // @@protoc_insertion_point(field_get:BYDLD.CSHitMultiFish.ratio)
-  return _internal_ratio();
-}
-inline void CSHitMultiFish::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  ratio_ = value;
-}
-inline void CSHitMultiFish::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_ratio(value);
-  // @@protoc_insertion_point(field_set:BYDLD.CSHitMultiFish.ratio)
-}
-
-// int32 bullet_type = 2;
-inline void CSHitMultiFish::clear_bullet_type() {
-  bullet_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitMultiFish::_internal_bullet_type() const {
-  return bullet_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSHitMultiFish::bullet_type() const {
-  // @@protoc_insertion_point(field_get:BYDLD.CSHitMultiFish.bullet_type)
-  return _internal_bullet_type();
-}
-inline void CSHitMultiFish::_internal_set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  bullet_type_ = value;
-}
-inline void CSHitMultiFish::set_bullet_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_bullet_type(value);
-  // @@protoc_insertion_point(field_set:BYDLD.CSHitMultiFish.bullet_type)
-}
-
-// repeated .BYDLD.HitFish hit_info = 3;
+// repeated .BYDLD.HitFish hit_info = 1;
 inline int CSHitMultiFish::_internal_hit_info_size() const {
   return hit_info_.size();
 }

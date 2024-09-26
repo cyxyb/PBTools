@@ -567,13 +567,13 @@ message HitFish
 	int32 fish_id = 4;
 	repeated int32 effect_fish_uid = 5;
 	int32 round = 6;
+	int32 ratio = 7;
+	int32 bullet_type = 8;
 }
 
 message CSHitMultiFish
 {
-	int32 ratio = 1;
-	int32 bullet_type = 2;
-	repeated HitFish hit_info = 3;
+	repeated HitFish hit_info = 1;
 }
 
 message EffectFish
