@@ -1785,7 +1785,7 @@ message SCRepRewardTaskRecord
 	int32 ID = 1;
 	int32 nRecord = 2;
 	int32 cost = 3;
-	int32 record = 4;
+	repeated SCRewardTaskFinish record = 4;
 	repeated RewardConf confList = 5;
 }
 

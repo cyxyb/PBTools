@@ -38500,12 +38500,30 @@ class SCRepRewardTaskRecord PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kRecordFieldNumber = 4,
     kConfListFieldNumber = 5,
     kIDFieldNumber = 1,
     kNRecordFieldNumber = 2,
     kCostFieldNumber = 3,
-    kRecordFieldNumber = 4,
   };
+  // repeated .BYDLD.SCRewardTaskFinish record = 4;
+  int record_size() const;
+  private:
+  int _internal_record_size() const;
+  public:
+  void clear_record();
+  ::BYDLD::SCRewardTaskFinish* mutable_record(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SCRewardTaskFinish >*
+      mutable_record();
+  private:
+  const ::BYDLD::SCRewardTaskFinish& _internal_record(int index) const;
+  ::BYDLD::SCRewardTaskFinish* _internal_add_record();
+  public:
+  const ::BYDLD::SCRewardTaskFinish& record(int index) const;
+  ::BYDLD::SCRewardTaskFinish* add_record();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SCRewardTaskFinish >&
+      record() const;
+
   // repeated .BYDLD.RewardConf confList = 5;
   int conflist_size() const;
   private:
@@ -38551,15 +38569,6 @@ class SCRepRewardTaskRecord PROTOBUF_FINAL :
   void _internal_set_cost(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 record = 4;
-  void clear_record();
-  ::PROTOBUF_NAMESPACE_ID::int32 record() const;
-  void set_record(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_record() const;
-  void _internal_set_record(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:BYDLD.SCRepRewardTaskRecord)
  private:
   class _Internal;
@@ -38567,11 +38576,11 @@ class SCRepRewardTaskRecord PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SCRewardTaskFinish > record_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::RewardConf > conflist_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 nrecord_;
   ::PROTOBUF_NAMESPACE_ID::int32 cost_;
-  ::PROTOBUF_NAMESPACE_ID::int32 record_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -64909,24 +64918,43 @@ inline void SCRepRewardTaskRecord::set_cost(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:BYDLD.SCRepRewardTaskRecord.cost)
 }
 
-// int32 record = 4;
+// repeated .BYDLD.SCRewardTaskFinish record = 4;
+inline int SCRepRewardTaskRecord::_internal_record_size() const {
+  return record_.size();
+}
+inline int SCRepRewardTaskRecord::record_size() const {
+  return _internal_record_size();
+}
 inline void SCRepRewardTaskRecord::clear_record() {
-  record_ = 0;
+  record_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCRepRewardTaskRecord::_internal_record() const {
-  return record_;
+inline ::BYDLD::SCRewardTaskFinish* SCRepRewardTaskRecord::mutable_record(int index) {
+  // @@protoc_insertion_point(field_mutable:BYDLD.SCRepRewardTaskRecord.record)
+  return record_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCRepRewardTaskRecord::record() const {
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SCRewardTaskFinish >*
+SCRepRewardTaskRecord::mutable_record() {
+  // @@protoc_insertion_point(field_mutable_list:BYDLD.SCRepRewardTaskRecord.record)
+  return &record_;
+}
+inline const ::BYDLD::SCRewardTaskFinish& SCRepRewardTaskRecord::_internal_record(int index) const {
+  return record_.Get(index);
+}
+inline const ::BYDLD::SCRewardTaskFinish& SCRepRewardTaskRecord::record(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCRepRewardTaskRecord.record)
-  return _internal_record();
+  return _internal_record(index);
 }
-inline void SCRepRewardTaskRecord::_internal_set_record(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  record_ = value;
+inline ::BYDLD::SCRewardTaskFinish* SCRepRewardTaskRecord::_internal_add_record() {
+  return record_.Add();
 }
-inline void SCRepRewardTaskRecord::set_record(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_record(value);
-  // @@protoc_insertion_point(field_set:BYDLD.SCRepRewardTaskRecord.record)
+inline ::BYDLD::SCRewardTaskFinish* SCRepRewardTaskRecord::add_record() {
+  // @@protoc_insertion_point(field_add:BYDLD.SCRepRewardTaskRecord.record)
+  return _internal_add_record();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::SCRewardTaskFinish >&
+SCRepRewardTaskRecord::record() const {
+  // @@protoc_insertion_point(field_list:BYDLD.SCRepRewardTaskRecord.record)
+  return record_;
 }
 
 // repeated .BYDLD.RewardConf confList = 5;
