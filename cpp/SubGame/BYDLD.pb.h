@@ -13719,22 +13719,22 @@ class Capturefish PROTOBUF_FINAL :
     kScratchCardFieldNumber = 21,
     kIsRewardFieldNumber = 24,
   };
-  // repeated .BYDLD.ObjectData torpedoes = 4;
+  // repeated .BYDLD.Object3 torpedoes = 4;
   int torpedoes_size() const;
   private:
   int _internal_torpedoes_size() const;
   public:
   void clear_torpedoes();
-  ::BYDLD::ObjectData* mutable_torpedoes(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >*
+  ::BYDLD::Object3* mutable_torpedoes(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
       mutable_torpedoes();
   private:
-  const ::BYDLD::ObjectData& _internal_torpedoes(int index) const;
-  ::BYDLD::ObjectData* _internal_add_torpedoes();
+  const ::BYDLD::Object3& _internal_torpedoes(int index) const;
+  ::BYDLD::Object3* _internal_add_torpedoes();
   public:
-  const ::BYDLD::ObjectData& torpedoes(int index) const;
-  ::BYDLD::ObjectData* add_torpedoes();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >&
+  const ::BYDLD::Object3& torpedoes(int index) const;
+  ::BYDLD::Object3* add_torpedoes();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
       torpedoes() const;
 
   // repeated .BYDLD.EffectFish effect_fish = 7;
@@ -14050,7 +14050,7 @@ class Capturefish PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData > torpedoes_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 > torpedoes_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::EffectFish > effect_fish_;
   ::BYDLD::DragonBallInfo* ball_info_;
   ::BYDLD::OctopusKingInfo* octopus_king_;
@@ -51292,7 +51292,7 @@ inline void Capturefish::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:BYDLD.Capturefish.fish_id)
 }
 
-// repeated .BYDLD.ObjectData torpedoes = 4;
+// repeated .BYDLD.Object3 torpedoes = 4;
 inline int Capturefish::_internal_torpedoes_size() const {
   return torpedoes_.size();
 }
@@ -51302,30 +51302,30 @@ inline int Capturefish::torpedoes_size() const {
 inline void Capturefish::clear_torpedoes() {
   torpedoes_.Clear();
 }
-inline ::BYDLD::ObjectData* Capturefish::mutable_torpedoes(int index) {
+inline ::BYDLD::Object3* Capturefish::mutable_torpedoes(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.Capturefish.torpedoes)
   return torpedoes_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
 Capturefish::mutable_torpedoes() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.Capturefish.torpedoes)
   return &torpedoes_;
 }
-inline const ::BYDLD::ObjectData& Capturefish::_internal_torpedoes(int index) const {
+inline const ::BYDLD::Object3& Capturefish::_internal_torpedoes(int index) const {
   return torpedoes_.Get(index);
 }
-inline const ::BYDLD::ObjectData& Capturefish::torpedoes(int index) const {
+inline const ::BYDLD::Object3& Capturefish::torpedoes(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.Capturefish.torpedoes)
   return _internal_torpedoes(index);
 }
-inline ::BYDLD::ObjectData* Capturefish::_internal_add_torpedoes() {
+inline ::BYDLD::Object3* Capturefish::_internal_add_torpedoes() {
   return torpedoes_.Add();
 }
-inline ::BYDLD::ObjectData* Capturefish::add_torpedoes() {
+inline ::BYDLD::Object3* Capturefish::add_torpedoes() {
   // @@protoc_insertion_point(field_add:BYDLD.Capturefish.torpedoes)
   return _internal_add_torpedoes();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
 Capturefish::torpedoes() const {
   // @@protoc_insertion_point(field_list:BYDLD.Capturefish.torpedoes)
   return torpedoes_;

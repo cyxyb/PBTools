@@ -727,7 +727,7 @@ message Capturefish
 	int32 fish_uid = 1;
 	int32 get_score = 2;
 	int32 fish_id = 3;
-	repeated ObjectData torpedoes = 4;
+	repeated Object3 torpedoes = 4;
 	int32 lucky_ratio = 5;
 	int32 trident_score = 6;
 	repeated EffectFish effect_fish = 7;
