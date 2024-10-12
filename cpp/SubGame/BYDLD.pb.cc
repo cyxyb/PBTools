@@ -4300,7 +4300,7 @@ static void InitDefaultsscc_info_SCUserPoolDraw_BYDLD_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SCUserPoolDraw_BYDLD_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SCUserPoolDraw_BYDLD_2eproto}, {
-      &scc_info_Object2_BYDLD_2eproto.base,
+      &scc_info_GoodsInfo_BYDLD_2eproto.base,
       &scc_info_Object3_BYDLD_2eproto.base,}};
 
 static void InitDefaultsscc_info_SCUserPoolInfo_BYDLD_2eproto() {
@@ -5905,6 +5905,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_BYDLD_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::BYDLD::SCUserPoolDraw, goods_),
   PROTOBUF_FIELD_OFFSET(::BYDLD::SCUserPoolDraw, award_),
   PROTOBUF_FIELD_OFFSET(::BYDLD::SCUserPoolDraw, award_cnt_),
+  PROTOBUF_FIELD_OFFSET(::BYDLD::SCUserPoolDraw, upgradecost_),
+  PROTOBUF_FIELD_OFFSET(::BYDLD::SCUserPoolDraw, index_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::BYDLD::SCUserPoolAdd, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -6935,123 +6937,123 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 1195, -1, sizeof(::BYDLD::SCUserPoolPreDraw)},
   { 1203, -1, sizeof(::BYDLD::CSUserPoolDraw)},
   { 1208, -1, sizeof(::BYDLD::SCUserPoolDraw)},
-  { 1217, -1, sizeof(::BYDLD::SCUserPoolAdd)},
-  { 1228, -1, sizeof(::BYDLD::ResultRank)},
-  { 1236, -1, sizeof(::BYDLD::SCMatchResult)},
-  { 1250, -1, sizeof(::BYDLD::MatchPackAddition)},
-  { 1261, -1, sizeof(::BYDLD::CSMatchPackAddition)},
-  { 1266, -1, sizeof(::BYDLD::SCMatchPackAddition)},
-  { 1272, -1, sizeof(::BYDLD::SCMatchPackInvail)},
-  { 1278, -1, sizeof(::BYDLD::HttpResult)},
-  { 1285, -1, sizeof(::BYDLD::CSHBonusPool)},
-  { 1293, -1, sizeof(::BYDLD::HBonusPool)},
-  { 1301, -1, sizeof(::BYDLD::SCHBonusPool)},
-  { 1307, -1, sizeof(::BYDLD::CSHRankBar)},
-  { 1315, -1, sizeof(::BYDLD::SCHRankBar)},
-  { 1323, -1, sizeof(::BYDLD::RealRank)},
-  { 1333, -1, sizeof(::BYDLD::CSHRealRank)},
-  { 1341, -1, sizeof(::BYDLD::SCHRealRank)},
-  { 1353, -1, sizeof(::BYDLD::Reward)},
-  { 1362, -1, sizeof(::BYDLD::CSHReward)},
-  { 1369, -1, sizeof(::BYDLD::SCHReward)},
-  { 1375, -1, sizeof(::BYDLD::CSHMatchInfoTip)},
-  { 1380, -1, sizeof(::BYDLD::MatchInfoTip)},
-  { 1389, -1, sizeof(::BYDLD::SCHMatchInfoTip)},
-  { 1395, -1, sizeof(::BYDLD::CSHMatchInfo)},
-  { 1401, -1, sizeof(::BYDLD::SCHMatchInfo)},
-  { 1412, -1, sizeof(::BYDLD::HistoryRank)},
-  { 1425, -1, sizeof(::BYDLD::CSHHistoryRank)},
-  { 1432, -1, sizeof(::BYDLD::SCHHistoryRank)},
-  { 1440, -1, sizeof(::BYDLD::CSHLuckyInfo)},
-  { 1446, -1, sizeof(::BYDLD::LuckyInfo)},
-  { 1453, -1, sizeof(::BYDLD::SCHLuckyInfo)},
-  { 1460, -1, sizeof(::BYDLD::AwardDetail)},
-  { 1471, -1, sizeof(::BYDLD::SCLuckyAwardNotify)},
-  { 1478, -1, sizeof(::BYDLD::AwardProp)},
-  { 1485, -1, sizeof(::BYDLD::LuckyTaskInfo)},
-  { 1497, -1, sizeof(::BYDLD::CSLuckyDrawInfo)},
-  { 1502, -1, sizeof(::BYDLD::SCLuckyDrawInfo)},
-  { 1522, -1, sizeof(::BYDLD::CSGetLuckyTaskAward)},
-  { 1528, -1, sizeof(::BYDLD::SCLuckyTaskInfo)},
-  { 1536, -1, sizeof(::BYDLD::CSGetLuckyNum)},
-  { 1542, -1, sizeof(::BYDLD::SCGetLuckyNum)},
-  { 1550, -1, sizeof(::BYDLD::CSLuckyRedDot)},
-  { 1555, -1, sizeof(::BYDLD::SCLuckyRedDot)},
-  { 1561, -1, sizeof(::BYDLD::LuckyRecord)},
-  { 1571, -1, sizeof(::BYDLD::OwnRecord)},
-  { 1580, -1, sizeof(::BYDLD::CSLuckyRecord)},
-  { 1586, -1, sizeof(::BYDLD::SCLuckyRecord)},
-  { 1593, -1, sizeof(::BYDLD::SCOwnRecord)},
-  { 1599, -1, sizeof(::BYDLD::CSDragonWheelStart)},
-  { 1605, -1, sizeof(::BYDLD::SCDragonWheelStop)},
-  { 1621, -1, sizeof(::BYDLD::SCSyncHallProp)},
-  { 1627, -1, sizeof(::BYDLD::CSCheckDragonWheelProp)},
-  { 1633, -1, sizeof(::BYDLD::SCCheckDragonWheelProp)},
-  { 1642, -1, sizeof(::BYDLD::CSUserPoolDoubleInfo)},
-  { 1647, -1, sizeof(::BYDLD::SCUserPoolDoubleInfo)},
-  { 1655, -1, sizeof(::BYDLD::CSUserPoolDouble)},
-  { 1661, -1, sizeof(::BYDLD::SCUserPoolDouble)},
-  { 1671, -1, sizeof(::BYDLD::CSLuckyPoolInfo)},
-  { 1676, -1, sizeof(::BYDLD::SCLuckyPoolInfo)},
-  { 1683, -1, sizeof(::BYDLD::CSLuckyPoolDraw)},
-  { 1688, -1, sizeof(::BYDLD::SCLuckyPoolDraw)},
-  { 1694, -1, sizeof(::BYDLD::TridentRankList)},
-  { 1704, -1, sizeof(::BYDLD::SCTridentRankResult)},
-  { 1711, -1, sizeof(::BYDLD::CSBigSmallWinInfo)},
-  { 1717, -1, sizeof(::BYDLD::SCBigSmallWinInfo)},
-  { 1725, -1, sizeof(::BYDLD::CSBigSmallRecord)},
-  { 1731, -1, sizeof(::BYDLD::BigSmallRecord)},
-  { 1737, -1, sizeof(::BYDLD::SCBigSmallRecord)},
-  { 1743, -1, sizeof(::BYDLD::ItemEnableInfo)},
-  { 1750, -1, sizeof(::BYDLD::ItemEnableNotice)},
-  { 1756, -1, sizeof(::BYDLD::RewardTask)},
-  { 1763, -1, sizeof(::BYDLD::RewardConf)},
-  { 1770, -1, sizeof(::BYDLD::CSReqRewardAddTask)},
-  { 1777, -1, sizeof(::BYDLD::SCRepRewardTaskList)},
-  { 1784, -1, sizeof(::BYDLD::SCRewardTaskFinish)},
-  { 1792, -1, sizeof(::BYDLD::SCSyncRewardTaskResult)},
-  { 1806, -1, sizeof(::BYDLD::CSReqRewardRecord)},
-  { 1812, -1, sizeof(::BYDLD::SCRepRewardTaskRecord)},
-  { 1822, -1, sizeof(::BYDLD::CSRewardChangeAuto)},
-  { 1828, -1, sizeof(::BYDLD::SCRewardAutoRep)},
-  { 1835, -1, sizeof(::BYDLD::SCSeaCrabCreate)},
-  { 1842, -1, sizeof(::BYDLD::CSSyncCrabStatus)},
-  { 1847, -1, sizeof(::BYDLD::SCSyncCrabStatus)},
-  { 1856, -1, sizeof(::BYDLD::CSDragonBallEnd)},
-  { 1861, -1, sizeof(::BYDLD::SCDragonBallRes)},
-  { 1870, -1, sizeof(::BYDLD::DevouredFish)},
-  { 1877, -1, sizeof(::BYDLD::CSDevourHit)},
-  { 1883, -1, sizeof(::BYDLD::SCDevourHit)},
-  { 1892, -1, sizeof(::BYDLD::OpenChestReward)},
-  { 1899, -1, sizeof(::BYDLD::SCUpdateChestStatus)},
-  { 1910, -1, sizeof(::BYDLD::CSChestConfig)},
-  { 1915, -1, sizeof(::BYDLD::ChestBrief)},
-  { 1922, -1, sizeof(::BYDLD::SCChestConfig)},
-  { 1933, -1, sizeof(::BYDLD::CSOpenChest)},
-  { 1938, -1, sizeof(::BYDLD::SCOpenChest)},
-  { 1945, -1, sizeof(::BYDLD::CSSelectChestReward)},
-  { 1951, -1, sizeof(::BYDLD::SCSelectChestReward)},
-  { 1957, -1, sizeof(::BYDLD::CSChestSetAutoSelect)},
-  { 1964, -1, sizeof(::BYDLD::SCChestSetAutoSelect)},
-  { 1971, -1, sizeof(::BYDLD::CSChestSetEnable)},
-  { 1977, -1, sizeof(::BYDLD::SCChestSetEnable)},
-  { 1983, -1, sizeof(::BYDLD::CSSyncAnimation)},
-  { 1992, -1, sizeof(::BYDLD::SCSyncAnimation)},
-  { 2001, -1, sizeof(::BYDLD::CSMagicCardList)},
-  { 2006, -1, sizeof(::BYDLD::SCMagicCardList)},
-  { 2012, -1, sizeof(::BYDLD::SCTortoiseExplode)},
-  { 2023, -1, sizeof(::BYDLD::CSBuyGun)},
-  { 2029, -1, sizeof(::BYDLD::SCBuyGun)},
-  { 2036, -1, sizeof(::BYDLD::SCWaterDropInfo)},
-  { 2044, -1, sizeof(::BYDLD::CSBuyWings)},
-  { 2050, -1, sizeof(::BYDLD::SCBuyWings)},
-  { 2057, -1, sizeof(::BYDLD::CSSetWings)},
-  { 2063, -1, sizeof(::BYDLD::SCSetWings)},
-  { 2071, -1, sizeof(::BYDLD::SCBeKicked)},
-  { 2077, -1, sizeof(::BYDLD::CSClientTimeValidate)},
-  { 2083, -1, sizeof(::BYDLD::SCClientTimeValidate)},
-  { 2088, -1, sizeof(::BYDLD::CSChangeTable)},
-  { 2093, -1, sizeof(::BYDLD::SCChangeTable)},
+  { 1219, -1, sizeof(::BYDLD::SCUserPoolAdd)},
+  { 1230, -1, sizeof(::BYDLD::ResultRank)},
+  { 1238, -1, sizeof(::BYDLD::SCMatchResult)},
+  { 1252, -1, sizeof(::BYDLD::MatchPackAddition)},
+  { 1263, -1, sizeof(::BYDLD::CSMatchPackAddition)},
+  { 1268, -1, sizeof(::BYDLD::SCMatchPackAddition)},
+  { 1274, -1, sizeof(::BYDLD::SCMatchPackInvail)},
+  { 1280, -1, sizeof(::BYDLD::HttpResult)},
+  { 1287, -1, sizeof(::BYDLD::CSHBonusPool)},
+  { 1295, -1, sizeof(::BYDLD::HBonusPool)},
+  { 1303, -1, sizeof(::BYDLD::SCHBonusPool)},
+  { 1309, -1, sizeof(::BYDLD::CSHRankBar)},
+  { 1317, -1, sizeof(::BYDLD::SCHRankBar)},
+  { 1325, -1, sizeof(::BYDLD::RealRank)},
+  { 1335, -1, sizeof(::BYDLD::CSHRealRank)},
+  { 1343, -1, sizeof(::BYDLD::SCHRealRank)},
+  { 1355, -1, sizeof(::BYDLD::Reward)},
+  { 1364, -1, sizeof(::BYDLD::CSHReward)},
+  { 1371, -1, sizeof(::BYDLD::SCHReward)},
+  { 1377, -1, sizeof(::BYDLD::CSHMatchInfoTip)},
+  { 1382, -1, sizeof(::BYDLD::MatchInfoTip)},
+  { 1391, -1, sizeof(::BYDLD::SCHMatchInfoTip)},
+  { 1397, -1, sizeof(::BYDLD::CSHMatchInfo)},
+  { 1403, -1, sizeof(::BYDLD::SCHMatchInfo)},
+  { 1414, -1, sizeof(::BYDLD::HistoryRank)},
+  { 1427, -1, sizeof(::BYDLD::CSHHistoryRank)},
+  { 1434, -1, sizeof(::BYDLD::SCHHistoryRank)},
+  { 1442, -1, sizeof(::BYDLD::CSHLuckyInfo)},
+  { 1448, -1, sizeof(::BYDLD::LuckyInfo)},
+  { 1455, -1, sizeof(::BYDLD::SCHLuckyInfo)},
+  { 1462, -1, sizeof(::BYDLD::AwardDetail)},
+  { 1473, -1, sizeof(::BYDLD::SCLuckyAwardNotify)},
+  { 1480, -1, sizeof(::BYDLD::AwardProp)},
+  { 1487, -1, sizeof(::BYDLD::LuckyTaskInfo)},
+  { 1499, -1, sizeof(::BYDLD::CSLuckyDrawInfo)},
+  { 1504, -1, sizeof(::BYDLD::SCLuckyDrawInfo)},
+  { 1524, -1, sizeof(::BYDLD::CSGetLuckyTaskAward)},
+  { 1530, -1, sizeof(::BYDLD::SCLuckyTaskInfo)},
+  { 1538, -1, sizeof(::BYDLD::CSGetLuckyNum)},
+  { 1544, -1, sizeof(::BYDLD::SCGetLuckyNum)},
+  { 1552, -1, sizeof(::BYDLD::CSLuckyRedDot)},
+  { 1557, -1, sizeof(::BYDLD::SCLuckyRedDot)},
+  { 1563, -1, sizeof(::BYDLD::LuckyRecord)},
+  { 1573, -1, sizeof(::BYDLD::OwnRecord)},
+  { 1582, -1, sizeof(::BYDLD::CSLuckyRecord)},
+  { 1588, -1, sizeof(::BYDLD::SCLuckyRecord)},
+  { 1595, -1, sizeof(::BYDLD::SCOwnRecord)},
+  { 1601, -1, sizeof(::BYDLD::CSDragonWheelStart)},
+  { 1607, -1, sizeof(::BYDLD::SCDragonWheelStop)},
+  { 1623, -1, sizeof(::BYDLD::SCSyncHallProp)},
+  { 1629, -1, sizeof(::BYDLD::CSCheckDragonWheelProp)},
+  { 1635, -1, sizeof(::BYDLD::SCCheckDragonWheelProp)},
+  { 1644, -1, sizeof(::BYDLD::CSUserPoolDoubleInfo)},
+  { 1649, -1, sizeof(::BYDLD::SCUserPoolDoubleInfo)},
+  { 1657, -1, sizeof(::BYDLD::CSUserPoolDouble)},
+  { 1663, -1, sizeof(::BYDLD::SCUserPoolDouble)},
+  { 1673, -1, sizeof(::BYDLD::CSLuckyPoolInfo)},
+  { 1678, -1, sizeof(::BYDLD::SCLuckyPoolInfo)},
+  { 1685, -1, sizeof(::BYDLD::CSLuckyPoolDraw)},
+  { 1690, -1, sizeof(::BYDLD::SCLuckyPoolDraw)},
+  { 1696, -1, sizeof(::BYDLD::TridentRankList)},
+  { 1706, -1, sizeof(::BYDLD::SCTridentRankResult)},
+  { 1713, -1, sizeof(::BYDLD::CSBigSmallWinInfo)},
+  { 1719, -1, sizeof(::BYDLD::SCBigSmallWinInfo)},
+  { 1727, -1, sizeof(::BYDLD::CSBigSmallRecord)},
+  { 1733, -1, sizeof(::BYDLD::BigSmallRecord)},
+  { 1739, -1, sizeof(::BYDLD::SCBigSmallRecord)},
+  { 1745, -1, sizeof(::BYDLD::ItemEnableInfo)},
+  { 1752, -1, sizeof(::BYDLD::ItemEnableNotice)},
+  { 1758, -1, sizeof(::BYDLD::RewardTask)},
+  { 1765, -1, sizeof(::BYDLD::RewardConf)},
+  { 1772, -1, sizeof(::BYDLD::CSReqRewardAddTask)},
+  { 1779, -1, sizeof(::BYDLD::SCRepRewardTaskList)},
+  { 1786, -1, sizeof(::BYDLD::SCRewardTaskFinish)},
+  { 1794, -1, sizeof(::BYDLD::SCSyncRewardTaskResult)},
+  { 1808, -1, sizeof(::BYDLD::CSReqRewardRecord)},
+  { 1814, -1, sizeof(::BYDLD::SCRepRewardTaskRecord)},
+  { 1824, -1, sizeof(::BYDLD::CSRewardChangeAuto)},
+  { 1830, -1, sizeof(::BYDLD::SCRewardAutoRep)},
+  { 1837, -1, sizeof(::BYDLD::SCSeaCrabCreate)},
+  { 1844, -1, sizeof(::BYDLD::CSSyncCrabStatus)},
+  { 1849, -1, sizeof(::BYDLD::SCSyncCrabStatus)},
+  { 1858, -1, sizeof(::BYDLD::CSDragonBallEnd)},
+  { 1863, -1, sizeof(::BYDLD::SCDragonBallRes)},
+  { 1872, -1, sizeof(::BYDLD::DevouredFish)},
+  { 1879, -1, sizeof(::BYDLD::CSDevourHit)},
+  { 1885, -1, sizeof(::BYDLD::SCDevourHit)},
+  { 1894, -1, sizeof(::BYDLD::OpenChestReward)},
+  { 1901, -1, sizeof(::BYDLD::SCUpdateChestStatus)},
+  { 1912, -1, sizeof(::BYDLD::CSChestConfig)},
+  { 1917, -1, sizeof(::BYDLD::ChestBrief)},
+  { 1924, -1, sizeof(::BYDLD::SCChestConfig)},
+  { 1935, -1, sizeof(::BYDLD::CSOpenChest)},
+  { 1940, -1, sizeof(::BYDLD::SCOpenChest)},
+  { 1947, -1, sizeof(::BYDLD::CSSelectChestReward)},
+  { 1953, -1, sizeof(::BYDLD::SCSelectChestReward)},
+  { 1959, -1, sizeof(::BYDLD::CSChestSetAutoSelect)},
+  { 1966, -1, sizeof(::BYDLD::SCChestSetAutoSelect)},
+  { 1973, -1, sizeof(::BYDLD::CSChestSetEnable)},
+  { 1979, -1, sizeof(::BYDLD::SCChestSetEnable)},
+  { 1985, -1, sizeof(::BYDLD::CSSyncAnimation)},
+  { 1994, -1, sizeof(::BYDLD::SCSyncAnimation)},
+  { 2003, -1, sizeof(::BYDLD::CSMagicCardList)},
+  { 2008, -1, sizeof(::BYDLD::SCMagicCardList)},
+  { 2014, -1, sizeof(::BYDLD::SCTortoiseExplode)},
+  { 2025, -1, sizeof(::BYDLD::CSBuyGun)},
+  { 2031, -1, sizeof(::BYDLD::SCBuyGun)},
+  { 2038, -1, sizeof(::BYDLD::SCWaterDropInfo)},
+  { 2046, -1, sizeof(::BYDLD::CSBuyWings)},
+  { 2052, -1, sizeof(::BYDLD::SCBuyWings)},
+  { 2059, -1, sizeof(::BYDLD::CSSetWings)},
+  { 2065, -1, sizeof(::BYDLD::SCSetWings)},
+  { 2073, -1, sizeof(::BYDLD::SCBeKicked)},
+  { 2079, -1, sizeof(::BYDLD::CSClientTimeValidate)},
+  { 2085, -1, sizeof(::BYDLD::SCClientTimeValidate)},
+  { 2090, -1, sizeof(::BYDLD::CSChangeTable)},
+  { 2095, -1, sizeof(::BYDLD::SCChangeTable)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -7640,10 +7642,11 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "olStatus\022\014\n\004open\030\001 \001(\010\"\"\n\021CSUserPoolPreD"
   "raw\022\r\n\005level\030\001 \001(\005\"=\n\021SCUserPoolPreDraw\022"
   "\014\n\004code\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\013\n\003msg\030\003 \001("
-  "\t\"\020\n\016CSUserPoolDraw\"\204\001\n\016SCUserPoolDraw\022\021"
-  "\n\tchair_idx\030\001 \001(\005\022\035\n\005goods\030\002 \003(\0132\016.BYDLD"
-  ".Object2\022\035\n\005award\030\003 \001(\0132\016.BYDLD.Object2\022"
-  "!\n\taward_cnt\030\004 \001(\0132\016.BYDLD.Object3\"t\n\rSC"
+  "\t\"\020\n\016CSUserPoolDraw\"\254\001\n\016SCUserPoolDraw\022\021"
+  "\n\tchair_idx\030\001 \001(\005\022\037\n\005goods\030\002 \003(\0132\020.BYDLD"
+  ".GoodsInfo\022\037\n\005award\030\003 \001(\0132\020.BYDLD.GoodsI"
+  "nfo\022!\n\taward_cnt\030\004 \001(\0132\016.BYDLD.Object3\022\023"
+  "\n\013upgradecost\030\005 \001(\005\022\r\n\005index\030\006 \001(\005\"t\n\rSC"
   "UserPoolAdd\022\013\n\003add\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022"
   "\021\n\tfirst_max\030\003 \001(\005\022\020\n\010pool_max\030\004 \001(\005\022\016\n\006"
   "status\030\005 \001(\010\022\022\n\nlevel_name\030\006 \001(\t\"5\n\nResu"
@@ -8227,7 +8230,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_BYD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_BYDLD_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_BYDLD_2eproto = {
-  false, false, descriptor_table_protodef_BYDLD_2eproto, "BYDLD.proto", 25357,
+  false, false, descriptor_table_protodef_BYDLD_2eproto, "BYDLD.proto", 25397,
   &descriptor_table_BYDLD_2eproto_once, descriptor_table_BYDLD_2eproto_sccs, descriptor_table_BYDLD_2eproto_deps, 264, 0,
   schemas, file_default_instances, TableStruct_BYDLD_2eproto::offsets,
   file_level_metadata_BYDLD_2eproto, 264, file_level_enum_descriptors_BYDLD_2eproto, file_level_service_descriptors_BYDLD_2eproto,
@@ -46444,11 +46447,11 @@ void CSUserPoolDraw::InternalSwap(CSUserPoolDraw* other) {
 
 class SCUserPoolDraw::_Internal {
  public:
-  static const ::BYDLD::Object2& award(const SCUserPoolDraw* msg);
+  static const ::BYDLD::GoodsInfo& award(const SCUserPoolDraw* msg);
   static const ::BYDLD::Object3& award_cnt(const SCUserPoolDraw* msg);
 };
 
-const ::BYDLD::Object2&
+const ::BYDLD::GoodsInfo&
 SCUserPoolDraw::_Internal::award(const SCUserPoolDraw* msg) {
   return *msg->award_;
 }
@@ -46468,7 +46471,7 @@ SCUserPoolDraw::SCUserPoolDraw(const SCUserPoolDraw& from)
       goods_(from.goods_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_award()) {
-    award_ = new ::BYDLD::Object2(*from.award_);
+    award_ = new ::BYDLD::GoodsInfo(*from.award_);
   } else {
     award_ = nullptr;
   }
@@ -46477,7 +46480,9 @@ SCUserPoolDraw::SCUserPoolDraw(const SCUserPoolDraw& from)
   } else {
     award_cnt_ = nullptr;
   }
-  chair_idx_ = from.chair_idx_;
+  ::memcpy(&chair_idx_, &from.chair_idx_,
+    static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+    reinterpret_cast<char*>(&chair_idx_)) + sizeof(index_));
   // @@protoc_insertion_point(copy_constructor:BYDLD.SCUserPoolDraw)
 }
 
@@ -46485,8 +46490,8 @@ void SCUserPoolDraw::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCUserPoolDraw_BYDLD_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&award_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_idx_) -
-      reinterpret_cast<char*>(&award_)) + sizeof(chair_idx_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&award_)) + sizeof(index_));
 }
 
 SCUserPoolDraw::~SCUserPoolDraw() {
@@ -46531,7 +46536,9 @@ void SCUserPoolDraw::Clear() {
     delete award_cnt_;
   }
   award_cnt_ = nullptr;
-  chair_idx_ = 0;
+  ::memset(&chair_idx_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&chair_idx_)) + sizeof(index_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -46549,7 +46556,7 @@ const char* SCUserPoolDraw::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .BYDLD.Object2 goods = 2;
+      // repeated .BYDLD.GoodsInfo goods = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
@@ -46561,7 +46568,7 @@ const char* SCUserPoolDraw::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
-      // .BYDLD.Object2 award = 3;
+      // .BYDLD.GoodsInfo award = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_award(), ptr);
@@ -46572,6 +46579,20 @@ const char* SCUserPoolDraw::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_award_cnt(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 upgradecost = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          upgradecost_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 index = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -46609,7 +46630,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_idx(), target);
   }
 
-  // repeated .BYDLD.Object2 goods = 2;
+  // repeated .BYDLD.GoodsInfo goods = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_goods_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -46617,7 +46638,7 @@ failure:
       InternalWriteMessage(2, this->_internal_goods(i), target, stream);
   }
 
-  // .BYDLD.Object2 award = 3;
+  // .BYDLD.GoodsInfo award = 3;
   if (this->has_award()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -46631,6 +46652,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
         4, _Internal::award_cnt(this), target, stream);
+  }
+
+  // int32 upgradecost = 5;
+  if (this->upgradecost() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_upgradecost(), target);
+  }
+
+  // int32 index = 6;
+  if (this->index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -46649,14 +46682,14 @@ size_t SCUserPoolDraw::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .BYDLD.Object2 goods = 2;
+  // repeated .BYDLD.GoodsInfo goods = 2;
   total_size += 1UL * this->_internal_goods_size();
   for (const auto& msg : this->goods_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // .BYDLD.Object2 award = 3;
+  // .BYDLD.GoodsInfo award = 3;
   if (this->has_award()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -46675,6 +46708,20 @@ size_t SCUserPoolDraw::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_chair_idx());
+  }
+
+  // int32 upgradecost = 5;
+  if (this->upgradecost() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_upgradecost());
+  }
+
+  // int32 index = 6;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_index());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -46710,13 +46757,19 @@ void SCUserPoolDraw::MergeFrom(const SCUserPoolDraw& from) {
 
   goods_.MergeFrom(from.goods_);
   if (from.has_award()) {
-    _internal_mutable_award()->::BYDLD::Object2::MergeFrom(from._internal_award());
+    _internal_mutable_award()->::BYDLD::GoodsInfo::MergeFrom(from._internal_award());
   }
   if (from.has_award_cnt()) {
     _internal_mutable_award_cnt()->::BYDLD::Object3::MergeFrom(from._internal_award_cnt());
   }
   if (from.chair_idx() != 0) {
     _internal_set_chair_idx(from._internal_chair_idx());
+  }
+  if (from.upgradecost() != 0) {
+    _internal_set_upgradecost(from._internal_upgradecost());
+  }
+  if (from.index() != 0) {
+    _internal_set_index(from._internal_index());
   }
 }
 
@@ -46743,8 +46796,8 @@ void SCUserPoolDraw::InternalSwap(SCUserPoolDraw* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   goods_.InternalSwap(&other->goods_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SCUserPoolDraw, chair_idx_)
-      + sizeof(SCUserPoolDraw::chair_idx_)
+      PROTOBUF_FIELD_OFFSET(SCUserPoolDraw, index_)
+      + sizeof(SCUserPoolDraw::index_)
       - PROTOBUF_FIELD_OFFSET(SCUserPoolDraw, award_)>(
           reinterpret_cast<char*>(&award_),
           reinterpret_cast<char*>(&other->award_));

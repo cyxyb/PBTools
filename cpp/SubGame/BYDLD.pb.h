@@ -26051,42 +26051,44 @@ class SCUserPoolDraw PROTOBUF_FINAL :
     kAwardFieldNumber = 3,
     kAwardCntFieldNumber = 4,
     kChairIdxFieldNumber = 1,
+    kUpgradecostFieldNumber = 5,
+    kIndexFieldNumber = 6,
   };
-  // repeated .BYDLD.Object2 goods = 2;
+  // repeated .BYDLD.GoodsInfo goods = 2;
   int goods_size() const;
   private:
   int _internal_goods_size() const;
   public:
   void clear_goods();
-  ::BYDLD::Object2* mutable_goods(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >*
+  ::BYDLD::GoodsInfo* mutable_goods(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >*
       mutable_goods();
   private:
-  const ::BYDLD::Object2& _internal_goods(int index) const;
-  ::BYDLD::Object2* _internal_add_goods();
+  const ::BYDLD::GoodsInfo& _internal_goods(int index) const;
+  ::BYDLD::GoodsInfo* _internal_add_goods();
   public:
-  const ::BYDLD::Object2& goods(int index) const;
-  ::BYDLD::Object2* add_goods();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >&
+  const ::BYDLD::GoodsInfo& goods(int index) const;
+  ::BYDLD::GoodsInfo* add_goods();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >&
       goods() const;
 
-  // .BYDLD.Object2 award = 3;
+  // .BYDLD.GoodsInfo award = 3;
   bool has_award() const;
   private:
   bool _internal_has_award() const;
   public:
   void clear_award();
-  const ::BYDLD::Object2& award() const;
-  ::BYDLD::Object2* release_award();
-  ::BYDLD::Object2* mutable_award();
-  void set_allocated_award(::BYDLD::Object2* award);
+  const ::BYDLD::GoodsInfo& award() const;
+  ::BYDLD::GoodsInfo* release_award();
+  ::BYDLD::GoodsInfo* mutable_award();
+  void set_allocated_award(::BYDLD::GoodsInfo* award);
   private:
-  const ::BYDLD::Object2& _internal_award() const;
-  ::BYDLD::Object2* _internal_mutable_award();
+  const ::BYDLD::GoodsInfo& _internal_award() const;
+  ::BYDLD::GoodsInfo* _internal_mutable_award();
   public:
   void unsafe_arena_set_allocated_award(
-      ::BYDLD::Object2* award);
-  ::BYDLD::Object2* unsafe_arena_release_award();
+      ::BYDLD::GoodsInfo* award);
+  ::BYDLD::GoodsInfo* unsafe_arena_release_award();
 
   // .BYDLD.Object3 award_cnt = 4;
   bool has_award_cnt() const;
@@ -26115,6 +26117,24 @@ class SCUserPoolDraw PROTOBUF_FINAL :
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 upgradecost = 5;
+  void clear_upgradecost();
+  ::PROTOBUF_NAMESPACE_ID::int32 upgradecost() const;
+  void set_upgradecost(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_upgradecost() const;
+  void _internal_set_upgradecost(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 index = 6;
+  void clear_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 index() const;
+  void set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_index() const;
+  void _internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:BYDLD.SCUserPoolDraw)
  private:
   class _Internal;
@@ -26122,10 +26142,12 @@ class SCUserPoolDraw PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 > goods_;
-  ::BYDLD::Object2* award_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo > goods_;
+  ::BYDLD::GoodsInfo* award_;
   ::BYDLD::Object3* award_cnt_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 upgradecost_;
+  ::PROTOBUF_NAMESPACE_ID::int32 index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -58083,7 +58105,7 @@ inline void SCUserPoolDraw::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:BYDLD.SCUserPoolDraw.chair_idx)
 }
 
-// repeated .BYDLD.Object2 goods = 2;
+// repeated .BYDLD.GoodsInfo goods = 2;
 inline int SCUserPoolDraw::_internal_goods_size() const {
   return goods_.size();
 }
@@ -58093,36 +58115,36 @@ inline int SCUserPoolDraw::goods_size() const {
 inline void SCUserPoolDraw::clear_goods() {
   goods_.Clear();
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::mutable_goods(int index) {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::mutable_goods(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCUserPoolDraw.goods)
   return goods_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >*
 SCUserPoolDraw::mutable_goods() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.SCUserPoolDraw.goods)
   return &goods_;
 }
-inline const ::BYDLD::Object2& SCUserPoolDraw::_internal_goods(int index) const {
+inline const ::BYDLD::GoodsInfo& SCUserPoolDraw::_internal_goods(int index) const {
   return goods_.Get(index);
 }
-inline const ::BYDLD::Object2& SCUserPoolDraw::goods(int index) const {
+inline const ::BYDLD::GoodsInfo& SCUserPoolDraw::goods(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCUserPoolDraw.goods)
   return _internal_goods(index);
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::_internal_add_goods() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::_internal_add_goods() {
   return goods_.Add();
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::add_goods() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::add_goods() {
   // @@protoc_insertion_point(field_add:BYDLD.SCUserPoolDraw.goods)
   return _internal_add_goods();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >&
 SCUserPoolDraw::goods() const {
   // @@protoc_insertion_point(field_list:BYDLD.SCUserPoolDraw.goods)
   return goods_;
 }
 
-// .BYDLD.Object2 award = 3;
+// .BYDLD.GoodsInfo award = 3;
 inline bool SCUserPoolDraw::_internal_has_award() const {
   return this != internal_default_instance() && award_ != nullptr;
 }
@@ -58135,17 +58157,17 @@ inline void SCUserPoolDraw::clear_award() {
   }
   award_ = nullptr;
 }
-inline const ::BYDLD::Object2& SCUserPoolDraw::_internal_award() const {
-  const ::BYDLD::Object2* p = award_;
-  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::Object2&>(
-      ::BYDLD::_Object2_default_instance_);
+inline const ::BYDLD::GoodsInfo& SCUserPoolDraw::_internal_award() const {
+  const ::BYDLD::GoodsInfo* p = award_;
+  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::GoodsInfo&>(
+      ::BYDLD::_GoodsInfo_default_instance_);
 }
-inline const ::BYDLD::Object2& SCUserPoolDraw::award() const {
+inline const ::BYDLD::GoodsInfo& SCUserPoolDraw::award() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCUserPoolDraw.award)
   return _internal_award();
 }
 inline void SCUserPoolDraw::unsafe_arena_set_allocated_award(
-    ::BYDLD::Object2* award) {
+    ::BYDLD::GoodsInfo* award) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(award_);
   }
@@ -58157,35 +58179,35 @@ inline void SCUserPoolDraw::unsafe_arena_set_allocated_award(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCUserPoolDraw.award)
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::release_award() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::release_award() {
   
-  ::BYDLD::Object2* temp = award_;
+  ::BYDLD::GoodsInfo* temp = award_;
   award_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::unsafe_arena_release_award() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::unsafe_arena_release_award() {
   // @@protoc_insertion_point(field_release:BYDLD.SCUserPoolDraw.award)
   
-  ::BYDLD::Object2* temp = award_;
+  ::BYDLD::GoodsInfo* temp = award_;
   award_ = nullptr;
   return temp;
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::_internal_mutable_award() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::_internal_mutable_award() {
   
   if (award_ == nullptr) {
-    auto* p = CreateMaybeMessage<::BYDLD::Object2>(GetArena());
+    auto* p = CreateMaybeMessage<::BYDLD::GoodsInfo>(GetArena());
     award_ = p;
   }
   return award_;
 }
-inline ::BYDLD::Object2* SCUserPoolDraw::mutable_award() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDraw::mutable_award() {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCUserPoolDraw.award)
   return _internal_mutable_award();
 }
-inline void SCUserPoolDraw::set_allocated_award(::BYDLD::Object2* award) {
+inline void SCUserPoolDraw::set_allocated_award(::BYDLD::GoodsInfo* award) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete award_;
@@ -58286,6 +58308,46 @@ inline void SCUserPoolDraw::set_allocated_award_cnt(::BYDLD::Object3* award_cnt)
   }
   award_cnt_ = award_cnt;
   // @@protoc_insertion_point(field_set_allocated:BYDLD.SCUserPoolDraw.award_cnt)
+}
+
+// int32 upgradecost = 5;
+inline void SCUserPoolDraw::clear_upgradecost() {
+  upgradecost_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCUserPoolDraw::_internal_upgradecost() const {
+  return upgradecost_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCUserPoolDraw::upgradecost() const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCUserPoolDraw.upgradecost)
+  return _internal_upgradecost();
+}
+inline void SCUserPoolDraw::_internal_set_upgradecost(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  upgradecost_ = value;
+}
+inline void SCUserPoolDraw::set_upgradecost(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_upgradecost(value);
+  // @@protoc_insertion_point(field_set:BYDLD.SCUserPoolDraw.upgradecost)
+}
+
+// int32 index = 6;
+inline void SCUserPoolDraw::clear_index() {
+  index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCUserPoolDraw::_internal_index() const {
+  return index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCUserPoolDraw::index() const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCUserPoolDraw.index)
+  return _internal_index();
+}
+inline void SCUserPoolDraw::_internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  index_ = value;
+}
+inline void SCUserPoolDraw::set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_index(value);
+  // @@protoc_insertion_point(field_set:BYDLD.SCUserPoolDraw.index)
 }
 
 // -------------------------------------------------------------------
