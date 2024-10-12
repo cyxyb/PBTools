@@ -5760,26 +5760,10 @@ class CSShootTorpedo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTorpedoIdFieldNumber = 2,
     kChairIdxFieldNumber = 1,
+    kTorpedoIdFieldNumber = 2,
     kShootAllFieldNumber = 3,
   };
-  // string torpedo_id = 2;
-  void clear_torpedo_id();
-  const std::string& torpedo_id() const;
-  void set_torpedo_id(const std::string& value);
-  void set_torpedo_id(std::string&& value);
-  void set_torpedo_id(const char* value);
-  void set_torpedo_id(const char* value, size_t size);
-  std::string* mutable_torpedo_id();
-  std::string* release_torpedo_id();
-  void set_allocated_torpedo_id(std::string* torpedo_id);
-  private:
-  const std::string& _internal_torpedo_id() const;
-  void _internal_set_torpedo_id(const std::string& value);
-  std::string* _internal_mutable_torpedo_id();
-  public:
-
   // int32 chair_idx = 1;
   void clear_chair_idx();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx() const;
@@ -5787,6 +5771,15 @@ class CSShootTorpedo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_idx() const;
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 torpedo_id = 2;
+  void clear_torpedo_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 torpedo_id() const;
+  void set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_torpedo_id() const;
+  void _internal_set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // bool shoot_all = 3;
@@ -5805,8 +5798,8 @@ class CSShootTorpedo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr torpedo_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 torpedo_id_;
   bool shoot_all_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
@@ -5926,44 +5919,28 @@ class SCShootTorpedo PROTOBUF_FINAL :
 
   enum : int {
     kObjectsFieldNumber = 5,
-    kTorpedoIdFieldNumber = 2,
     kChairIdxFieldNumber = 1,
-    kAwardFieldNumber = 3,
+    kTorpedoIdFieldNumber = 2,
     kScoreFieldNumber = 4,
+    kAwardFieldNumber = 3,
   };
-  // repeated .BYDLD.ObjectData objects = 5;
+  // repeated .BYDLD.Object3 objects = 5;
   int objects_size() const;
   private:
   int _internal_objects_size() const;
   public:
   void clear_objects();
-  ::BYDLD::ObjectData* mutable_objects(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >*
+  ::BYDLD::Object3* mutable_objects(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
       mutable_objects();
   private:
-  const ::BYDLD::ObjectData& _internal_objects(int index) const;
-  ::BYDLD::ObjectData* _internal_add_objects();
+  const ::BYDLD::Object3& _internal_objects(int index) const;
+  ::BYDLD::Object3* _internal_add_objects();
   public:
-  const ::BYDLD::ObjectData& objects(int index) const;
-  ::BYDLD::ObjectData* add_objects();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >&
+  const ::BYDLD::Object3& objects(int index) const;
+  ::BYDLD::Object3* add_objects();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
       objects() const;
-
-  // string torpedo_id = 2;
-  void clear_torpedo_id();
-  const std::string& torpedo_id() const;
-  void set_torpedo_id(const std::string& value);
-  void set_torpedo_id(std::string&& value);
-  void set_torpedo_id(const char* value);
-  void set_torpedo_id(const char* value, size_t size);
-  std::string* mutable_torpedo_id();
-  std::string* release_torpedo_id();
-  void set_allocated_torpedo_id(std::string* torpedo_id);
-  private:
-  const std::string& _internal_torpedo_id() const;
-  void _internal_set_torpedo_id(const std::string& value);
-  std::string* _internal_mutable_torpedo_id();
-  public:
 
   // int32 chair_idx = 1;
   void clear_chair_idx();
@@ -5974,13 +5951,13 @@ class SCShootTorpedo PROTOBUF_FINAL :
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 award = 3;
-  void clear_award();
-  ::PROTOBUF_NAMESPACE_ID::int32 award() const;
-  void set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 torpedo_id = 2;
+  void clear_torpedo_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 torpedo_id() const;
+  void set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_award() const;
-  void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_torpedo_id() const;
+  void _internal_set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int64 score = 4;
@@ -5992,6 +5969,15 @@ class SCShootTorpedo PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 award = 3;
+  void clear_award();
+  ::PROTOBUF_NAMESPACE_ID::int32 award() const;
+  void set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_award() const;
+  void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:BYDLD.SCShootTorpedo)
  private:
   class _Internal;
@@ -5999,11 +5985,11 @@ class SCShootTorpedo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData > objects_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr torpedo_id_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 > objects_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
-  ::PROTOBUF_NAMESPACE_ID::int32 award_;
+  ::PROTOBUF_NAMESPACE_ID::int32 torpedo_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 award_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -6124,22 +6110,22 @@ class SCPropsTorpedo PROTOBUF_FINAL :
     kObjectsFieldNumber = 2,
     kEnableFieldNumber = 1,
   };
-  // repeated .BYDLD.ObjectData objects = 2;
+  // repeated .BYDLD.Object3 objects = 2;
   int objects_size() const;
   private:
   int _internal_objects_size() const;
   public:
   void clear_objects();
-  ::BYDLD::ObjectData* mutable_objects(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >*
+  ::BYDLD::Object3* mutable_objects(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
       mutable_objects();
   private:
-  const ::BYDLD::ObjectData& _internal_objects(int index) const;
-  ::BYDLD::ObjectData* _internal_add_objects();
+  const ::BYDLD::Object3& _internal_objects(int index) const;
+  ::BYDLD::Object3* _internal_add_objects();
   public:
-  const ::BYDLD::ObjectData& objects(int index) const;
-  ::BYDLD::ObjectData* add_objects();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >&
+  const ::BYDLD::Object3& objects(int index) const;
+  ::BYDLD::Object3* add_objects();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
       objects() const;
 
   // bool enable = 1;
@@ -6158,7 +6144,7 @@ class SCPropsTorpedo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData > objects_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 > objects_;
   bool enable_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
@@ -47186,65 +47172,24 @@ inline void CSShootTorpedo::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:BYDLD.CSShootTorpedo.chair_idx)
 }
 
-// string torpedo_id = 2;
+// int32 torpedo_id = 2;
 inline void CSShootTorpedo::clear_torpedo_id() {
-  torpedo_id_.ClearToEmpty();
+  torpedo_id_ = 0;
 }
-inline const std::string& CSShootTorpedo::torpedo_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSShootTorpedo::_internal_torpedo_id() const {
+  return torpedo_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSShootTorpedo::torpedo_id() const {
   // @@protoc_insertion_point(field_get:BYDLD.CSShootTorpedo.torpedo_id)
   return _internal_torpedo_id();
 }
-inline void CSShootTorpedo::set_torpedo_id(const std::string& value) {
+inline void CSShootTorpedo::_internal_set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  torpedo_id_ = value;
+}
+inline void CSShootTorpedo::set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_torpedo_id(value);
   // @@protoc_insertion_point(field_set:BYDLD.CSShootTorpedo.torpedo_id)
-}
-inline std::string* CSShootTorpedo::mutable_torpedo_id() {
-  // @@protoc_insertion_point(field_mutable:BYDLD.CSShootTorpedo.torpedo_id)
-  return _internal_mutable_torpedo_id();
-}
-inline const std::string& CSShootTorpedo::_internal_torpedo_id() const {
-  return torpedo_id_.Get();
-}
-inline void CSShootTorpedo::_internal_set_torpedo_id(const std::string& value) {
-  
-  torpedo_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void CSShootTorpedo::set_torpedo_id(std::string&& value) {
-  
-  torpedo_id_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:BYDLD.CSShootTorpedo.torpedo_id)
-}
-inline void CSShootTorpedo::set_torpedo_id(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  torpedo_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:BYDLD.CSShootTorpedo.torpedo_id)
-}
-inline void CSShootTorpedo::set_torpedo_id(const char* value,
-    size_t size) {
-  
-  torpedo_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:BYDLD.CSShootTorpedo.torpedo_id)
-}
-inline std::string* CSShootTorpedo::_internal_mutable_torpedo_id() {
-  
-  return torpedo_id_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* CSShootTorpedo::release_torpedo_id() {
-  // @@protoc_insertion_point(field_release:BYDLD.CSShootTorpedo.torpedo_id)
-  return torpedo_id_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void CSShootTorpedo::set_allocated_torpedo_id(std::string* torpedo_id) {
-  if (torpedo_id != nullptr) {
-    
-  } else {
-    
-  }
-  torpedo_id_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), torpedo_id,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:BYDLD.CSShootTorpedo.torpedo_id)
 }
 
 // bool shoot_all = 3;
@@ -47291,65 +47236,24 @@ inline void SCShootTorpedo::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:BYDLD.SCShootTorpedo.chair_idx)
 }
 
-// string torpedo_id = 2;
+// int32 torpedo_id = 2;
 inline void SCShootTorpedo::clear_torpedo_id() {
-  torpedo_id_.ClearToEmpty();
+  torpedo_id_ = 0;
 }
-inline const std::string& SCShootTorpedo::torpedo_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCShootTorpedo::_internal_torpedo_id() const {
+  return torpedo_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCShootTorpedo::torpedo_id() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCShootTorpedo.torpedo_id)
   return _internal_torpedo_id();
 }
-inline void SCShootTorpedo::set_torpedo_id(const std::string& value) {
+inline void SCShootTorpedo::_internal_set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  torpedo_id_ = value;
+}
+inline void SCShootTorpedo::set_torpedo_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_torpedo_id(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCShootTorpedo.torpedo_id)
-}
-inline std::string* SCShootTorpedo::mutable_torpedo_id() {
-  // @@protoc_insertion_point(field_mutable:BYDLD.SCShootTorpedo.torpedo_id)
-  return _internal_mutable_torpedo_id();
-}
-inline const std::string& SCShootTorpedo::_internal_torpedo_id() const {
-  return torpedo_id_.Get();
-}
-inline void SCShootTorpedo::_internal_set_torpedo_id(const std::string& value) {
-  
-  torpedo_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void SCShootTorpedo::set_torpedo_id(std::string&& value) {
-  
-  torpedo_id_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:BYDLD.SCShootTorpedo.torpedo_id)
-}
-inline void SCShootTorpedo::set_torpedo_id(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  torpedo_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:BYDLD.SCShootTorpedo.torpedo_id)
-}
-inline void SCShootTorpedo::set_torpedo_id(const char* value,
-    size_t size) {
-  
-  torpedo_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:BYDLD.SCShootTorpedo.torpedo_id)
-}
-inline std::string* SCShootTorpedo::_internal_mutable_torpedo_id() {
-  
-  return torpedo_id_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* SCShootTorpedo::release_torpedo_id() {
-  // @@protoc_insertion_point(field_release:BYDLD.SCShootTorpedo.torpedo_id)
-  return torpedo_id_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void SCShootTorpedo::set_allocated_torpedo_id(std::string* torpedo_id) {
-  if (torpedo_id != nullptr) {
-    
-  } else {
-    
-  }
-  torpedo_id_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), torpedo_id,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:BYDLD.SCShootTorpedo.torpedo_id)
 }
 
 // int32 award = 3;
@@ -47392,7 +47296,7 @@ inline void SCShootTorpedo::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:BYDLD.SCShootTorpedo.score)
 }
 
-// repeated .BYDLD.ObjectData objects = 5;
+// repeated .BYDLD.Object3 objects = 5;
 inline int SCShootTorpedo::_internal_objects_size() const {
   return objects_.size();
 }
@@ -47402,30 +47306,30 @@ inline int SCShootTorpedo::objects_size() const {
 inline void SCShootTorpedo::clear_objects() {
   objects_.Clear();
 }
-inline ::BYDLD::ObjectData* SCShootTorpedo::mutable_objects(int index) {
+inline ::BYDLD::Object3* SCShootTorpedo::mutable_objects(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCShootTorpedo.objects)
   return objects_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
 SCShootTorpedo::mutable_objects() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.SCShootTorpedo.objects)
   return &objects_;
 }
-inline const ::BYDLD::ObjectData& SCShootTorpedo::_internal_objects(int index) const {
+inline const ::BYDLD::Object3& SCShootTorpedo::_internal_objects(int index) const {
   return objects_.Get(index);
 }
-inline const ::BYDLD::ObjectData& SCShootTorpedo::objects(int index) const {
+inline const ::BYDLD::Object3& SCShootTorpedo::objects(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCShootTorpedo.objects)
   return _internal_objects(index);
 }
-inline ::BYDLD::ObjectData* SCShootTorpedo::_internal_add_objects() {
+inline ::BYDLD::Object3* SCShootTorpedo::_internal_add_objects() {
   return objects_.Add();
 }
-inline ::BYDLD::ObjectData* SCShootTorpedo::add_objects() {
+inline ::BYDLD::Object3* SCShootTorpedo::add_objects() {
   // @@protoc_insertion_point(field_add:BYDLD.SCShootTorpedo.objects)
   return _internal_add_objects();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
 SCShootTorpedo::objects() const {
   // @@protoc_insertion_point(field_list:BYDLD.SCShootTorpedo.objects)
   return objects_;
@@ -47455,7 +47359,7 @@ inline void SCPropsTorpedo::set_enable(bool value) {
   // @@protoc_insertion_point(field_set:BYDLD.SCPropsTorpedo.enable)
 }
 
-// repeated .BYDLD.ObjectData objects = 2;
+// repeated .BYDLD.Object3 objects = 2;
 inline int SCPropsTorpedo::_internal_objects_size() const {
   return objects_.size();
 }
@@ -47465,30 +47369,30 @@ inline int SCPropsTorpedo::objects_size() const {
 inline void SCPropsTorpedo::clear_objects() {
   objects_.Clear();
 }
-inline ::BYDLD::ObjectData* SCPropsTorpedo::mutable_objects(int index) {
+inline ::BYDLD::Object3* SCPropsTorpedo::mutable_objects(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCPropsTorpedo.objects)
   return objects_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >*
 SCPropsTorpedo::mutable_objects() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.SCPropsTorpedo.objects)
   return &objects_;
 }
-inline const ::BYDLD::ObjectData& SCPropsTorpedo::_internal_objects(int index) const {
+inline const ::BYDLD::Object3& SCPropsTorpedo::_internal_objects(int index) const {
   return objects_.Get(index);
 }
-inline const ::BYDLD::ObjectData& SCPropsTorpedo::objects(int index) const {
+inline const ::BYDLD::Object3& SCPropsTorpedo::objects(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.SCPropsTorpedo.objects)
   return _internal_objects(index);
 }
-inline ::BYDLD::ObjectData* SCPropsTorpedo::_internal_add_objects() {
+inline ::BYDLD::Object3* SCPropsTorpedo::_internal_add_objects() {
   return objects_.Add();
 }
-inline ::BYDLD::ObjectData* SCPropsTorpedo::add_objects() {
+inline ::BYDLD::Object3* SCPropsTorpedo::add_objects() {
   // @@protoc_insertion_point(field_add:BYDLD.SCPropsTorpedo.objects)
   return _internal_add_objects();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::ObjectData >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object3 >&
 SCPropsTorpedo::objects() const {
   // @@protoc_insertion_point(field_list:BYDLD.SCPropsTorpedo.objects)
   return objects_;
