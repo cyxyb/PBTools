@@ -35124,41 +35124,41 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
     kItemDoubleFieldNumber = 3,
     kCostFieldNumber = 1,
   };
-  // .BYDLD.Object2 item_before = 2;
+  // .BYDLD.GoodsInfo item_before = 2;
   bool has_item_before() const;
   private:
   bool _internal_has_item_before() const;
   public:
   void clear_item_before();
-  const ::BYDLD::Object2& item_before() const;
-  ::BYDLD::Object2* release_item_before();
-  ::BYDLD::Object2* mutable_item_before();
-  void set_allocated_item_before(::BYDLD::Object2* item_before);
+  const ::BYDLD::GoodsInfo& item_before() const;
+  ::BYDLD::GoodsInfo* release_item_before();
+  ::BYDLD::GoodsInfo* mutable_item_before();
+  void set_allocated_item_before(::BYDLD::GoodsInfo* item_before);
   private:
-  const ::BYDLD::Object2& _internal_item_before() const;
-  ::BYDLD::Object2* _internal_mutable_item_before();
+  const ::BYDLD::GoodsInfo& _internal_item_before() const;
+  ::BYDLD::GoodsInfo* _internal_mutable_item_before();
   public:
   void unsafe_arena_set_allocated_item_before(
-      ::BYDLD::Object2* item_before);
-  ::BYDLD::Object2* unsafe_arena_release_item_before();
+      ::BYDLD::GoodsInfo* item_before);
+  ::BYDLD::GoodsInfo* unsafe_arena_release_item_before();
 
-  // .BYDLD.Object2 item_double = 3;
+  // .BYDLD.GoodsInfo item_double = 3;
   bool has_item_double() const;
   private:
   bool _internal_has_item_double() const;
   public:
   void clear_item_double();
-  const ::BYDLD::Object2& item_double() const;
-  ::BYDLD::Object2* release_item_double();
-  ::BYDLD::Object2* mutable_item_double();
-  void set_allocated_item_double(::BYDLD::Object2* item_double);
+  const ::BYDLD::GoodsInfo& item_double() const;
+  ::BYDLD::GoodsInfo* release_item_double();
+  ::BYDLD::GoodsInfo* mutable_item_double();
+  void set_allocated_item_double(::BYDLD::GoodsInfo* item_double);
   private:
-  const ::BYDLD::Object2& _internal_item_double() const;
-  ::BYDLD::Object2* _internal_mutable_item_double();
+  const ::BYDLD::GoodsInfo& _internal_item_double() const;
+  ::BYDLD::GoodsInfo* _internal_mutable_item_double();
   public:
   void unsafe_arena_set_allocated_item_double(
-      ::BYDLD::Object2* item_double);
-  ::BYDLD::Object2* unsafe_arena_release_item_double();
+      ::BYDLD::GoodsInfo* item_double);
+  ::BYDLD::GoodsInfo* unsafe_arena_release_item_double();
 
   // int32 cost = 1;
   void clear_cost();
@@ -35176,8 +35176,8 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::BYDLD::Object2* item_before_;
-  ::BYDLD::Object2* item_double_;
+  ::BYDLD::GoodsInfo* item_before_;
+  ::BYDLD::GoodsInfo* item_double_;
   ::PROTOBUF_NAMESPACE_ID::int32 cost_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
@@ -63432,7 +63432,7 @@ inline void SCUserPoolDoubleInfo::set_cost(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:BYDLD.SCUserPoolDoubleInfo.cost)
 }
 
-// .BYDLD.Object2 item_before = 2;
+// .BYDLD.GoodsInfo item_before = 2;
 inline bool SCUserPoolDoubleInfo::_internal_has_item_before() const {
   return this != internal_default_instance() && item_before_ != nullptr;
 }
@@ -63445,17 +63445,17 @@ inline void SCUserPoolDoubleInfo::clear_item_before() {
   }
   item_before_ = nullptr;
 }
-inline const ::BYDLD::Object2& SCUserPoolDoubleInfo::_internal_item_before() const {
-  const ::BYDLD::Object2* p = item_before_;
-  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::Object2&>(
-      ::BYDLD::_Object2_default_instance_);
+inline const ::BYDLD::GoodsInfo& SCUserPoolDoubleInfo::_internal_item_before() const {
+  const ::BYDLD::GoodsInfo* p = item_before_;
+  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::GoodsInfo&>(
+      ::BYDLD::_GoodsInfo_default_instance_);
 }
-inline const ::BYDLD::Object2& SCUserPoolDoubleInfo::item_before() const {
+inline const ::BYDLD::GoodsInfo& SCUserPoolDoubleInfo::item_before() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCUserPoolDoubleInfo.item_before)
   return _internal_item_before();
 }
 inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_before(
-    ::BYDLD::Object2* item_before) {
+    ::BYDLD::GoodsInfo* item_before) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(item_before_);
   }
@@ -63467,35 +63467,35 @@ inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_before(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCUserPoolDoubleInfo.item_before)
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::release_item_before() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::release_item_before() {
   
-  ::BYDLD::Object2* temp = item_before_;
+  ::BYDLD::GoodsInfo* temp = item_before_;
   item_before_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::unsafe_arena_release_item_before() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::unsafe_arena_release_item_before() {
   // @@protoc_insertion_point(field_release:BYDLD.SCUserPoolDoubleInfo.item_before)
   
-  ::BYDLD::Object2* temp = item_before_;
+  ::BYDLD::GoodsInfo* temp = item_before_;
   item_before_ = nullptr;
   return temp;
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::_internal_mutable_item_before() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::_internal_mutable_item_before() {
   
   if (item_before_ == nullptr) {
-    auto* p = CreateMaybeMessage<::BYDLD::Object2>(GetArena());
+    auto* p = CreateMaybeMessage<::BYDLD::GoodsInfo>(GetArena());
     item_before_ = p;
   }
   return item_before_;
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::mutable_item_before() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::mutable_item_before() {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCUserPoolDoubleInfo.item_before)
   return _internal_mutable_item_before();
 }
-inline void SCUserPoolDoubleInfo::set_allocated_item_before(::BYDLD::Object2* item_before) {
+inline void SCUserPoolDoubleInfo::set_allocated_item_before(::BYDLD::GoodsInfo* item_before) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete item_before_;
@@ -63515,7 +63515,7 @@ inline void SCUserPoolDoubleInfo::set_allocated_item_before(::BYDLD::Object2* it
   // @@protoc_insertion_point(field_set_allocated:BYDLD.SCUserPoolDoubleInfo.item_before)
 }
 
-// .BYDLD.Object2 item_double = 3;
+// .BYDLD.GoodsInfo item_double = 3;
 inline bool SCUserPoolDoubleInfo::_internal_has_item_double() const {
   return this != internal_default_instance() && item_double_ != nullptr;
 }
@@ -63528,17 +63528,17 @@ inline void SCUserPoolDoubleInfo::clear_item_double() {
   }
   item_double_ = nullptr;
 }
-inline const ::BYDLD::Object2& SCUserPoolDoubleInfo::_internal_item_double() const {
-  const ::BYDLD::Object2* p = item_double_;
-  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::Object2&>(
-      ::BYDLD::_Object2_default_instance_);
+inline const ::BYDLD::GoodsInfo& SCUserPoolDoubleInfo::_internal_item_double() const {
+  const ::BYDLD::GoodsInfo* p = item_double_;
+  return p != nullptr ? *p : reinterpret_cast<const ::BYDLD::GoodsInfo&>(
+      ::BYDLD::_GoodsInfo_default_instance_);
 }
-inline const ::BYDLD::Object2& SCUserPoolDoubleInfo::item_double() const {
+inline const ::BYDLD::GoodsInfo& SCUserPoolDoubleInfo::item_double() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCUserPoolDoubleInfo.item_double)
   return _internal_item_double();
 }
 inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_double(
-    ::BYDLD::Object2* item_double) {
+    ::BYDLD::GoodsInfo* item_double) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(item_double_);
   }
@@ -63550,35 +63550,35 @@ inline void SCUserPoolDoubleInfo::unsafe_arena_set_allocated_item_double(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:BYDLD.SCUserPoolDoubleInfo.item_double)
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::release_item_double() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::release_item_double() {
   
-  ::BYDLD::Object2* temp = item_double_;
+  ::BYDLD::GoodsInfo* temp = item_double_;
   item_double_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::unsafe_arena_release_item_double() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::unsafe_arena_release_item_double() {
   // @@protoc_insertion_point(field_release:BYDLD.SCUserPoolDoubleInfo.item_double)
   
-  ::BYDLD::Object2* temp = item_double_;
+  ::BYDLD::GoodsInfo* temp = item_double_;
   item_double_ = nullptr;
   return temp;
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::_internal_mutable_item_double() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::_internal_mutable_item_double() {
   
   if (item_double_ == nullptr) {
-    auto* p = CreateMaybeMessage<::BYDLD::Object2>(GetArena());
+    auto* p = CreateMaybeMessage<::BYDLD::GoodsInfo>(GetArena());
     item_double_ = p;
   }
   return item_double_;
 }
-inline ::BYDLD::Object2* SCUserPoolDoubleInfo::mutable_item_double() {
+inline ::BYDLD::GoodsInfo* SCUserPoolDoubleInfo::mutable_item_double() {
   // @@protoc_insertion_point(field_mutable:BYDLD.SCUserPoolDoubleInfo.item_double)
   return _internal_mutable_item_double();
 }
-inline void SCUserPoolDoubleInfo::set_allocated_item_double(::BYDLD::Object2* item_double) {
+inline void SCUserPoolDoubleInfo::set_allocated_item_double(::BYDLD::GoodsInfo* item_double) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete item_double_;

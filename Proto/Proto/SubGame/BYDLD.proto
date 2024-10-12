@@ -1650,8 +1650,8 @@ message CSUserPoolDoubleInfo
 message SCUserPoolDoubleInfo
 {
 	int32 cost = 1;
-	Object2 item_before = 2;
-	Object2 item_double = 3;
+	GoodsInfo item_before = 2;
+	GoodsInfo item_double = 3;
 }
 
 message CSUserPoolDouble
