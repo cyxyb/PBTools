@@ -47,7 +47,7 @@ struct TableStruct_BYDLD_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[263]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[264]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -370,6 +370,9 @@ extern GiftBagDefaultTypeInternal _GiftBag_default_instance_;
 class GoldenJadeInfo;
 class GoldenJadeInfoDefaultTypeInternal;
 extern GoldenJadeInfoDefaultTypeInternal _GoldenJadeInfo_default_instance_;
+class GoodsInfo;
+class GoodsInfoDefaultTypeInternal;
+extern GoodsInfoDefaultTypeInternal _GoodsInfo_default_instance_;
 class GunDetail;
 class GunDetailDefaultTypeInternal;
 extern GunDetailDefaultTypeInternal _GunDetail_default_instance_;
@@ -951,6 +954,7 @@ template<> ::BYDLD::FishTraces* Arena::CreateMaybeMessage<::BYDLD::FishTraces>(A
 template<> ::BYDLD::GemConfig* Arena::CreateMaybeMessage<::BYDLD::GemConfig>(Arena*);
 template<> ::BYDLD::GiftBag* Arena::CreateMaybeMessage<::BYDLD::GiftBag>(Arena*);
 template<> ::BYDLD::GoldenJadeInfo* Arena::CreateMaybeMessage<::BYDLD::GoldenJadeInfo>(Arena*);
+template<> ::BYDLD::GoodsInfo* Arena::CreateMaybeMessage<::BYDLD::GoodsInfo>(Arena*);
 template<> ::BYDLD::GunDetail* Arena::CreateMaybeMessage<::BYDLD::GunDetail>(Arena*);
 template<> ::BYDLD::GunSpecEffect* Arena::CreateMaybeMessage<::BYDLD::GunSpecEffect>(Arena*);
 template<> ::BYDLD::HBonusPool* Arena::CreateMaybeMessage<::BYDLD::HBonusPool>(Arena*);
@@ -24692,6 +24696,164 @@ class CSUserPoolInfo PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class GoodsInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BYDLD.GoodsInfo) */ {
+ public:
+  inline GoodsInfo() : GoodsInfo(nullptr) {}
+  virtual ~GoodsInfo();
+
+  GoodsInfo(const GoodsInfo& from);
+  GoodsInfo(GoodsInfo&& from) noexcept
+    : GoodsInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline GoodsInfo& operator=(const GoodsInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GoodsInfo& operator=(GoodsInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const GoodsInfo& default_instance();
+
+  static inline const GoodsInfo* internal_default_instance() {
+    return reinterpret_cast<const GoodsInfo*>(
+               &_GoodsInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    138;
+
+  friend void swap(GoodsInfo& a, GoodsInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GoodsInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GoodsInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GoodsInfo* New() const final {
+    return CreateMaybeMessage<GoodsInfo>(nullptr);
+  }
+
+  GoodsInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<GoodsInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const GoodsInfo& from);
+  void MergeFrom(const GoodsInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GoodsInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "BYDLD.GoodsInfo";
+  }
+  protected:
+  explicit GoodsInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_BYDLD_2eproto);
+    return ::descriptor_table_BYDLD_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPropIdFieldNumber = 1,
+    kPropNumFieldNumber = 2,
+    kClientIdFieldNumber = 3,
+  };
+  // int32 prop_id = 1;
+  void clear_prop_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_id() const;
+  void set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_prop_id() const;
+  void _internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 prop_num = 2;
+  void clear_prop_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_num() const;
+  void set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_prop_num() const;
+  void _internal_set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 client_id = 3;
+  void clear_client_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 client_id() const;
+  void set_client_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_client_id() const;
+  void _internal_set_client_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:BYDLD.GoodsInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 client_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_BYDLD_2eproto;
+};
+// -------------------------------------------------------------------
+
 class UserAwardItem PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BYDLD.UserAwardItem) */ {
  public:
@@ -24733,7 +24895,7 @@ class UserAwardItem PROTOBUF_FINAL :
                &_UserAwardItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    139;
 
   friend void swap(UserAwardItem& a, UserAwardItem& b) {
     a.Swap(&b);
@@ -24809,22 +24971,22 @@ class UserAwardItem PROTOBUF_FINAL :
     kIndexFieldNumber = 1,
     kItemMaxFieldNumber = 2,
   };
-  // repeated .BYDLD.Object2 goods = 4;
+  // repeated .BYDLD.GoodsInfo goods = 4;
   int goods_size() const;
   private:
   int _internal_goods_size() const;
   public:
   void clear_goods();
-  ::BYDLD::Object2* mutable_goods(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >*
+  ::BYDLD::GoodsInfo* mutable_goods(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >*
       mutable_goods();
   private:
-  const ::BYDLD::Object2& _internal_goods(int index) const;
-  ::BYDLD::Object2* _internal_add_goods();
+  const ::BYDLD::GoodsInfo& _internal_goods(int index) const;
+  ::BYDLD::GoodsInfo* _internal_add_goods();
   public:
-  const ::BYDLD::Object2& goods(int index) const;
-  ::BYDLD::Object2* add_goods();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >&
+  const ::BYDLD::GoodsInfo& goods(int index) const;
+  ::BYDLD::GoodsInfo* add_goods();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >&
       goods() const;
 
   // string name = 3;
@@ -24868,7 +25030,7 @@ class UserAwardItem PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 > goods_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo > goods_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::int32 index_;
   ::PROTOBUF_NAMESPACE_ID::int32 item_max_;
@@ -24918,7 +25080,7 @@ class SCUserPoolInfo PROTOBUF_FINAL :
                &_SCUserPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    140;
 
   friend void swap(SCUserPoolInfo& a, SCUserPoolInfo& b) {
     a.Swap(&b);
@@ -25118,7 +25280,7 @@ class CSUserPoolStatus PROTOBUF_FINAL :
                &_CSUserPoolStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    141;
 
   friend void swap(CSUserPoolStatus& a, CSUserPoolStatus& b) {
     a.Swap(&b);
@@ -25254,7 +25416,7 @@ class SCUserPoolStatus PROTOBUF_FINAL :
                &_SCUserPoolStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    142;
 
   friend void swap(SCUserPoolStatus& a, SCUserPoolStatus& b) {
     a.Swap(&b);
@@ -25390,7 +25552,7 @@ class CSUserPoolPreDraw PROTOBUF_FINAL :
                &_CSUserPoolPreDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    143;
 
   friend void swap(CSUserPoolPreDraw& a, CSUserPoolPreDraw& b) {
     a.Swap(&b);
@@ -25526,7 +25688,7 @@ class SCUserPoolPreDraw PROTOBUF_FINAL :
                &_SCUserPoolPreDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    144;
 
   friend void swap(SCUserPoolPreDraw& a, SCUserPoolPreDraw& b) {
     a.Swap(&b);
@@ -25691,7 +25853,7 @@ class CSUserPoolDraw PROTOBUF_FINAL :
                &_CSUserPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    145;
 
   friend void swap(CSUserPoolDraw& a, CSUserPoolDraw& b) {
     a.Swap(&b);
@@ -25814,7 +25976,7 @@ class SCUserPoolDraw PROTOBUF_FINAL :
                &_SCUserPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    146;
 
   friend void swap(SCUserPoolDraw& a, SCUserPoolDraw& b) {
     a.Swap(&b);
@@ -26010,7 +26172,7 @@ class SCUserPoolAdd PROTOBUF_FINAL :
                &_SCUserPoolAdd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    147;
 
   friend void swap(SCUserPoolAdd& a, SCUserPoolAdd& b) {
     a.Swap(&b);
@@ -26208,7 +26370,7 @@ class ResultRank PROTOBUF_FINAL :
                &_ResultRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    147;
+    148;
 
   friend void swap(ResultRank& a, ResultRank& b) {
     a.Swap(&b);
@@ -26380,7 +26542,7 @@ class SCMatchResult PROTOBUF_FINAL :
                &_SCMatchResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    148;
+    149;
 
   friend void swap(SCMatchResult& a, SCMatchResult& b) {
     a.Swap(&b);
@@ -26640,7 +26802,7 @@ class MatchPackAddition PROTOBUF_FINAL :
                &_MatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    149;
+    150;
 
   friend void swap(MatchPackAddition& a, MatchPackAddition& b) {
     a.Swap(&b);
@@ -26838,7 +27000,7 @@ class CSMatchPackAddition PROTOBUF_FINAL :
                &_CSMatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    150;
+    151;
 
   friend void swap(CSMatchPackAddition& a, CSMatchPackAddition& b) {
     a.Swap(&b);
@@ -26961,7 +27123,7 @@ class SCMatchPackAddition PROTOBUF_FINAL :
                &_SCMatchPackAddition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    151;
+    152;
 
   friend void swap(SCMatchPackAddition& a, SCMatchPackAddition& b) {
     a.Swap(&b);
@@ -27106,7 +27268,7 @@ class SCMatchPackInvail PROTOBUF_FINAL :
                &_SCMatchPackInvail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    152;
+    153;
 
   friend void swap(SCMatchPackInvail& a, SCMatchPackInvail& b) {
     a.Swap(&b);
@@ -27249,7 +27411,7 @@ class HttpResult PROTOBUF_FINAL :
                &_HttpResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    153;
+    154;
 
   friend void swap(HttpResult& a, HttpResult& b) {
     a.Swap(&b);
@@ -27403,7 +27565,7 @@ class CSHBonusPool PROTOBUF_FINAL :
                &_CSHBonusPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    154;
+    155;
 
   friend void swap(CSHBonusPool& a, CSHBonusPool& b) {
     a.Swap(&b);
@@ -27561,7 +27723,7 @@ class HBonusPool PROTOBUF_FINAL :
                &_HBonusPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    155;
+    156;
 
   friend void swap(HBonusPool& a, HBonusPool& b) {
     a.Swap(&b);
@@ -27726,7 +27888,7 @@ class SCHBonusPool PROTOBUF_FINAL :
                &_SCHBonusPool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    156;
+    157;
 
   friend void swap(SCHBonusPool& a, SCHBonusPool& b) {
     a.Swap(&b);
@@ -27871,7 +28033,7 @@ class CSHRankBar PROTOBUF_FINAL :
                &_CSHRankBar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    157;
+    158;
 
   friend void swap(CSHRankBar& a, CSHRankBar& b) {
     a.Swap(&b);
@@ -28029,7 +28191,7 @@ class SCHRankBar PROTOBUF_FINAL :
                &_SCHRankBar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    158;
+    159;
 
   friend void swap(SCHRankBar& a, SCHRankBar& b) {
     a.Swap(&b);
@@ -28187,7 +28349,7 @@ class RealRank PROTOBUF_FINAL :
                &_RealRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    159;
+    160;
 
   friend void swap(RealRank& a, RealRank& b) {
     a.Swap(&b);
@@ -28390,7 +28552,7 @@ class CSHRealRank PROTOBUF_FINAL :
                &_CSHRealRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    160;
+    161;
 
   friend void swap(CSHRealRank& a, CSHRealRank& b) {
     a.Swap(&b);
@@ -28548,7 +28710,7 @@ class SCHRealRank PROTOBUF_FINAL :
                &_SCHRealRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    161;
+    162;
 
   friend void swap(SCHRealRank& a, SCHRealRank& b) {
     a.Swap(&b);
@@ -28768,7 +28930,7 @@ class Reward PROTOBUF_FINAL :
                &_Reward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    162;
+    163;
 
   friend void swap(Reward& a, Reward& b) {
     a.Swap(&b);
@@ -28953,7 +29115,7 @@ class CSHReward PROTOBUF_FINAL :
                &_CSHReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    163;
+    164;
 
   friend void swap(CSHReward& a, CSHReward& b) {
     a.Swap(&b);
@@ -29100,7 +29262,7 @@ class SCHReward PROTOBUF_FINAL :
                &_SCHReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    164;
+    165;
 
   friend void swap(SCHReward& a, SCHReward& b) {
     a.Swap(&b);
@@ -29236,7 +29398,7 @@ class CSHMatchInfoTip PROTOBUF_FINAL :
                &_CSHMatchInfoTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    165;
+    166;
 
   friend void swap(CSHMatchInfoTip& a, CSHMatchInfoTip& b) {
     a.Swap(&b);
@@ -29359,7 +29521,7 @@ class MatchInfoTip PROTOBUF_FINAL :
                &_MatchInfoTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    166;
+    167;
 
   friend void swap(MatchInfoTip& a, MatchInfoTip& b) {
     a.Swap(&b);
@@ -29551,7 +29713,7 @@ class SCHMatchInfoTip PROTOBUF_FINAL :
                &_SCHMatchInfoTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    167;
+    168;
 
   friend void swap(SCHMatchInfoTip& a, SCHMatchInfoTip& b) {
     a.Swap(&b);
@@ -29696,7 +29858,7 @@ class CSHMatchInfo PROTOBUF_FINAL :
                &_CSHMatchInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    168;
+    169;
 
   friend void swap(CSHMatchInfo& a, CSHMatchInfo& b) {
     a.Swap(&b);
@@ -29832,7 +29994,7 @@ class SCHMatchInfo PROTOBUF_FINAL :
                &_SCHMatchInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    169;
+    170;
 
   friend void swap(SCHMatchInfo& a, SCHMatchInfo& b) {
     a.Swap(&b);
@@ -30037,7 +30199,7 @@ class HistoryRank PROTOBUF_FINAL :
                &_HistoryRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    170;
+    171;
 
   friend void swap(HistoryRank& a, HistoryRank& b) {
     a.Swap(&b);
@@ -30291,7 +30453,7 @@ class CSHHistoryRank PROTOBUF_FINAL :
                &_CSHHistoryRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    171;
+    172;
 
   friend void swap(CSHHistoryRank& a, CSHHistoryRank& b) {
     a.Swap(&b);
@@ -30438,7 +30600,7 @@ class SCHHistoryRank PROTOBUF_FINAL :
                &_SCHHistoryRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    172;
+    173;
 
   friend void swap(SCHHistoryRank& a, SCHHistoryRank& b) {
     a.Swap(&b);
@@ -30614,7 +30776,7 @@ class CSHLuckyInfo PROTOBUF_FINAL :
                &_CSHLuckyInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    173;
+    174;
 
   friend void swap(CSHLuckyInfo& a, CSHLuckyInfo& b) {
     a.Swap(&b);
@@ -30750,7 +30912,7 @@ class LuckyInfo PROTOBUF_FINAL :
                &_LuckyInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    174;
+    175;
 
   friend void swap(LuckyInfo& a, LuckyInfo& b) {
     a.Swap(&b);
@@ -30897,7 +31059,7 @@ class SCHLuckyInfo PROTOBUF_FINAL :
                &_SCHLuckyInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    175;
+    176;
 
   friend void swap(SCHLuckyInfo& a, SCHLuckyInfo& b) {
     a.Swap(&b);
@@ -31053,7 +31215,7 @@ class AwardDetail PROTOBUF_FINAL :
                &_AwardDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    176;
+    177;
 
   friend void swap(AwardDetail& a, AwardDetail& b) {
     a.Swap(&b);
@@ -31258,7 +31420,7 @@ class SCLuckyAwardNotify PROTOBUF_FINAL :
                &_SCLuckyAwardNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    177;
+    178;
 
   friend void swap(SCLuckyAwardNotify& a, SCLuckyAwardNotify& b) {
     a.Swap(&b);
@@ -31414,7 +31576,7 @@ class AwardProp PROTOBUF_FINAL :
                &_AwardProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    178;
+    179;
 
   friend void swap(AwardProp& a, AwardProp& b) {
     a.Swap(&b);
@@ -31561,7 +31723,7 @@ class LuckyTaskInfo PROTOBUF_FINAL :
                &_LuckyTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    179;
+    180;
 
   friend void swap(LuckyTaskInfo& a, LuckyTaskInfo& b) {
     a.Swap(&b);
@@ -31770,7 +31932,7 @@ class CSLuckyDrawInfo PROTOBUF_FINAL :
                &_CSLuckyDrawInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    180;
+    181;
 
   friend void swap(CSLuckyDrawInfo& a, CSLuckyDrawInfo& b) {
     a.Swap(&b);
@@ -31893,7 +32055,7 @@ class SCLuckyDrawInfo PROTOBUF_FINAL :
                &_SCLuckyDrawInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    181;
+    182;
 
   friend void swap(SCLuckyDrawInfo& a, SCLuckyDrawInfo& b) {
     a.Swap(&b);
@@ -32238,7 +32400,7 @@ class CSGetLuckyTaskAward PROTOBUF_FINAL :
                &_CSGetLuckyTaskAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    182;
+    183;
 
   friend void swap(CSGetLuckyTaskAward& a, CSGetLuckyTaskAward& b) {
     a.Swap(&b);
@@ -32374,7 +32536,7 @@ class SCLuckyTaskInfo PROTOBUF_FINAL :
                &_SCLuckyTaskInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    183;
+    184;
 
   friend void swap(SCLuckyTaskInfo& a, SCLuckyTaskInfo& b) {
     a.Swap(&b);
@@ -32541,7 +32703,7 @@ class CSGetLuckyNum PROTOBUF_FINAL :
                &_CSGetLuckyNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    184;
+    185;
 
   friend void swap(CSGetLuckyNum& a, CSGetLuckyNum& b) {
     a.Swap(&b);
@@ -32677,7 +32839,7 @@ class SCGetLuckyNum PROTOBUF_FINAL :
                &_SCGetLuckyNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    185;
+    186;
 
   friend void swap(SCGetLuckyNum& a, SCGetLuckyNum& b) {
     a.Swap(&b);
@@ -32849,7 +33011,7 @@ class CSLuckyRedDot PROTOBUF_FINAL :
                &_CSLuckyRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    186;
+    187;
 
   friend void swap(CSLuckyRedDot& a, CSLuckyRedDot& b) {
     a.Swap(&b);
@@ -32972,7 +33134,7 @@ class SCLuckyRedDot PROTOBUF_FINAL :
                &_SCLuckyRedDot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    187;
+    188;
 
   friend void swap(SCLuckyRedDot& a, SCLuckyRedDot& b) {
     a.Swap(&b);
@@ -33108,7 +33270,7 @@ class LuckyRecord PROTOBUF_FINAL :
                &_LuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    188;
+    189;
 
   friend void swap(LuckyRecord& a, LuckyRecord& b) {
     a.Swap(&b);
@@ -33295,7 +33457,7 @@ class OwnRecord PROTOBUF_FINAL :
                &_OwnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    189;
+    190;
 
   friend void swap(OwnRecord& a, OwnRecord& b) {
     a.Swap(&b);
@@ -33473,7 +33635,7 @@ class CSLuckyRecord PROTOBUF_FINAL :
                &_CSLuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    190;
+    191;
 
   friend void swap(CSLuckyRecord& a, CSLuckyRecord& b) {
     a.Swap(&b);
@@ -33609,7 +33771,7 @@ class SCLuckyRecord PROTOBUF_FINAL :
                &_SCLuckyRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    191;
+    192;
 
   friend void swap(SCLuckyRecord& a, SCLuckyRecord& b) {
     a.Swap(&b);
@@ -33765,7 +33927,7 @@ class SCOwnRecord PROTOBUF_FINAL :
                &_SCOwnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    192;
+    193;
 
   friend void swap(SCOwnRecord& a, SCOwnRecord& b) {
     a.Swap(&b);
@@ -33910,7 +34072,7 @@ class CSDragonWheelStart PROTOBUF_FINAL :
                &_CSDragonWheelStart_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    193;
+    194;
 
   friend void swap(CSDragonWheelStart& a, CSDragonWheelStart& b) {
     a.Swap(&b);
@@ -34046,7 +34208,7 @@ class SCDragonWheelStop PROTOBUF_FINAL :
                &_SCDragonWheelStop_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    194;
+    195;
 
   friend void swap(SCDragonWheelStop& a, SCDragonWheelStop& b) {
     a.Swap(&b);
@@ -34292,7 +34454,7 @@ class SCSyncHallProp PROTOBUF_FINAL :
                &_SCSyncHallProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    195;
+    196;
 
   friend void swap(SCSyncHallProp& a, SCSyncHallProp& b) {
     a.Swap(&b);
@@ -34437,7 +34599,7 @@ class CSCheckDragonWheelProp PROTOBUF_FINAL :
                &_CSCheckDragonWheelProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    196;
+    197;
 
   friend void swap(CSCheckDragonWheelProp& a, CSCheckDragonWheelProp& b) {
     a.Swap(&b);
@@ -34573,7 +34735,7 @@ class SCCheckDragonWheelProp PROTOBUF_FINAL :
                &_SCCheckDragonWheelProp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    197;
+    198;
 
   friend void swap(SCCheckDragonWheelProp& a, SCCheckDragonWheelProp& b) {
     a.Swap(&b);
@@ -34742,7 +34904,7 @@ class CSUserPoolDoubleInfo PROTOBUF_FINAL :
                &_CSUserPoolDoubleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    198;
+    199;
 
   friend void swap(CSUserPoolDoubleInfo& a, CSUserPoolDoubleInfo& b) {
     a.Swap(&b);
@@ -34865,7 +35027,7 @@ class SCUserPoolDoubleInfo PROTOBUF_FINAL :
                &_SCUserPoolDoubleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    199;
+    200;
 
   friend void swap(SCUserPoolDoubleInfo& a, SCUserPoolDoubleInfo& b) {
     a.Swap(&b);
@@ -35041,7 +35203,7 @@ class CSUserPoolDouble PROTOBUF_FINAL :
                &_CSUserPoolDouble_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    200;
+    201;
 
   friend void swap(CSUserPoolDouble& a, CSUserPoolDouble& b) {
     a.Swap(&b);
@@ -35177,7 +35339,7 @@ class SCUserPoolDouble PROTOBUF_FINAL :
                &_SCUserPoolDouble_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    201;
+    202;
 
   friend void swap(SCUserPoolDouble& a, SCUserPoolDouble& b) {
     a.Swap(&b);
@@ -35375,7 +35537,7 @@ class CSLuckyPoolInfo PROTOBUF_FINAL :
                &_CSLuckyPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    202;
+    203;
 
   friend void swap(CSLuckyPoolInfo& a, CSLuckyPoolInfo& b) {
     a.Swap(&b);
@@ -35498,7 +35660,7 @@ class SCLuckyPoolInfo PROTOBUF_FINAL :
                &_SCLuckyPoolInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    203;
+    204;
 
   friend void swap(SCLuckyPoolInfo& a, SCLuckyPoolInfo& b) {
     a.Swap(&b);
@@ -35645,7 +35807,7 @@ class CSLuckyPoolDraw PROTOBUF_FINAL :
                &_CSLuckyPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    204;
+    205;
 
   friend void swap(CSLuckyPoolDraw& a, CSLuckyPoolDraw& b) {
     a.Swap(&b);
@@ -35768,7 +35930,7 @@ class SCLuckyPoolDraw PROTOBUF_FINAL :
                &_SCLuckyPoolDraw_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    205;
+    206;
 
   friend void swap(SCLuckyPoolDraw& a, SCLuckyPoolDraw& b) {
     a.Swap(&b);
@@ -35913,7 +36075,7 @@ class TridentRankList PROTOBUF_FINAL :
                &_TridentRankList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    206;
+    207;
 
   friend void swap(TridentRankList& a, TridentRankList& b) {
     a.Swap(&b);
@@ -36107,7 +36269,7 @@ class SCTridentRankResult PROTOBUF_FINAL :
                &_SCTridentRankResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    207;
+    208;
 
   friend void swap(SCTridentRankResult& a, SCTridentRankResult& b) {
     a.Swap(&b);
@@ -36272,7 +36434,7 @@ class CSBigSmallWinInfo PROTOBUF_FINAL :
                &_CSBigSmallWinInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    208;
+    209;
 
   friend void swap(CSBigSmallWinInfo& a, CSBigSmallWinInfo& b) {
     a.Swap(&b);
@@ -36408,7 +36570,7 @@ class SCBigSmallWinInfo PROTOBUF_FINAL :
                &_SCBigSmallWinInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    209;
+    210;
 
   friend void swap(SCBigSmallWinInfo& a, SCBigSmallWinInfo& b) {
     a.Swap(&b);
@@ -36573,7 +36735,7 @@ class CSBigSmallRecord PROTOBUF_FINAL :
                &_CSBigSmallRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    210;
+    211;
 
   friend void swap(CSBigSmallRecord& a, CSBigSmallRecord& b) {
     a.Swap(&b);
@@ -36709,7 +36871,7 @@ class BigSmallRecord PROTOBUF_FINAL :
                &_BigSmallRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    211;
+    212;
 
   friend void swap(BigSmallRecord& a, BigSmallRecord& b) {
     a.Swap(&b);
@@ -36859,7 +37021,7 @@ class SCBigSmallRecord PROTOBUF_FINAL :
                &_SCBigSmallRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    212;
+    213;
 
   friend void swap(SCBigSmallRecord& a, SCBigSmallRecord& b) {
     a.Swap(&b);
@@ -37004,7 +37166,7 @@ class ItemEnableInfo PROTOBUF_FINAL :
                &_ItemEnableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    213;
+    214;
 
   friend void swap(ItemEnableInfo& a, ItemEnableInfo& b) {
     a.Swap(&b);
@@ -37151,7 +37313,7 @@ class ItemEnableNotice PROTOBUF_FINAL :
                &_ItemEnableNotice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    214;
+    215;
 
   friend void swap(ItemEnableNotice& a, ItemEnableNotice& b) {
     a.Swap(&b);
@@ -37296,7 +37458,7 @@ class RewardTask PROTOBUF_FINAL :
                &_RewardTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    215;
+    216;
 
   friend void swap(RewardTask& a, RewardTask& b) {
     a.Swap(&b);
@@ -37443,7 +37605,7 @@ class RewardConf PROTOBUF_FINAL :
                &_RewardConf_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    216;
+    217;
 
   friend void swap(RewardConf& a, RewardConf& b) {
     a.Swap(&b);
@@ -37590,7 +37752,7 @@ class CSReqRewardAddTask PROTOBUF_FINAL :
                &_CSReqRewardAddTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    217;
+    218;
 
   friend void swap(CSReqRewardAddTask& a, CSReqRewardAddTask& b) {
     a.Swap(&b);
@@ -37737,7 +37899,7 @@ class SCRepRewardTaskList PROTOBUF_FINAL :
                &_SCRepRewardTaskList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    218;
+    219;
 
   friend void swap(SCRepRewardTaskList& a, SCRepRewardTaskList& b) {
     a.Swap(&b);
@@ -37893,7 +38055,7 @@ class SCRewardTaskFinish PROTOBUF_FINAL :
                &_SCRewardTaskFinish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    219;
+    220;
 
   friend void swap(SCRewardTaskFinish& a, SCRewardTaskFinish& b) {
     a.Swap(&b);
@@ -38060,7 +38222,7 @@ class SCSyncRewardTaskResult PROTOBUF_FINAL :
                &_SCSyncRewardTaskResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    220;
+    221;
 
   friend void swap(SCSyncRewardTaskResult& a, SCSyncRewardTaskResult& b) {
     a.Swap(&b);
@@ -38293,7 +38455,7 @@ class CSReqRewardRecord PROTOBUF_FINAL :
                &_CSReqRewardRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    221;
+    222;
 
   friend void swap(CSReqRewardRecord& a, CSReqRewardRecord& b) {
     a.Swap(&b);
@@ -38429,7 +38591,7 @@ class SCRepRewardTaskRecord PROTOBUF_FINAL :
                &_SCRepRewardTaskRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    222;
+    223;
 
   friend void swap(SCRepRewardTaskRecord& a, SCRepRewardTaskRecord& b) {
     a.Swap(&b);
@@ -38627,7 +38789,7 @@ class CSRewardChangeAuto PROTOBUF_FINAL :
                &_CSRewardChangeAuto_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    223;
+    224;
 
   friend void swap(CSRewardChangeAuto& a, CSRewardChangeAuto& b) {
     a.Swap(&b);
@@ -38763,7 +38925,7 @@ class SCRewardAutoRep PROTOBUF_FINAL :
                &_SCRewardAutoRep_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    224;
+    225;
 
   friend void swap(SCRewardAutoRep& a, SCRewardAutoRep& b) {
     a.Swap(&b);
@@ -38910,7 +39072,7 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
                &_SCSeaCrabCreate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    225;
+    226;
 
   friend void swap(SCSeaCrabCreate& a, SCSeaCrabCreate& b) {
     a.Swap(&b);
@@ -39057,7 +39219,7 @@ class CSSyncCrabStatus PROTOBUF_FINAL :
                &_CSSyncCrabStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    226;
+    227;
 
   friend void swap(CSSyncCrabStatus& a, CSSyncCrabStatus& b) {
     a.Swap(&b);
@@ -39180,7 +39342,7 @@ class SCSyncCrabStatus PROTOBUF_FINAL :
                &_SCSyncCrabStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    227;
+    228;
 
   friend void swap(SCSyncCrabStatus& a, SCSyncCrabStatus& b) {
     a.Swap(&b);
@@ -39349,7 +39511,7 @@ class CSDragonBallEnd PROTOBUF_FINAL :
                &_CSDragonBallEnd_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    228;
+    229;
 
   friend void swap(CSDragonBallEnd& a, CSDragonBallEnd& b) {
     a.Swap(&b);
@@ -39472,7 +39634,7 @@ class SCDragonBallRes PROTOBUF_FINAL :
                &_SCDragonBallRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    229;
+    230;
 
   friend void swap(SCDragonBallRes& a, SCDragonBallRes& b) {
     a.Swap(&b);
@@ -39641,7 +39803,7 @@ class DevouredFish PROTOBUF_FINAL :
                &_DevouredFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    230;
+    231;
 
   friend void swap(DevouredFish& a, DevouredFish& b) {
     a.Swap(&b);
@@ -39788,7 +39950,7 @@ class CSDevourHit PROTOBUF_FINAL :
                &_CSDevourHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    231;
+    232;
 
   friend void swap(CSDevourHit& a, CSDevourHit& b) {
     a.Swap(&b);
@@ -39938,7 +40100,7 @@ class SCDevourHit PROTOBUF_FINAL :
                &_SCDevourHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    232;
+    233;
 
   friend void swap(SCDevourHit& a, SCDevourHit& b) {
     a.Swap(&b);
@@ -40116,7 +40278,7 @@ class OpenChestReward PROTOBUF_FINAL :
                &_OpenChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    233;
+    234;
 
   friend void swap(OpenChestReward& a, OpenChestReward& b) {
     a.Swap(&b);
@@ -40272,7 +40434,7 @@ class SCUpdateChestStatus PROTOBUF_FINAL :
                &_SCUpdateChestStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    234;
+    235;
 
   friend void swap(SCUpdateChestStatus& a, SCUpdateChestStatus& b) {
     a.Swap(&b);
@@ -40463,7 +40625,7 @@ class CSChestConfig PROTOBUF_FINAL :
                &_CSChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    235;
+    236;
 
   friend void swap(CSChestConfig& a, CSChestConfig& b) {
     a.Swap(&b);
@@ -40586,7 +40748,7 @@ class ChestBrief PROTOBUF_FINAL :
                &_ChestBrief_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    236;
+    237;
 
   friend void swap(ChestBrief& a, ChestBrief& b) {
     a.Swap(&b);
@@ -40742,7 +40904,7 @@ class SCChestConfig PROTOBUF_FINAL :
                &_SCChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    237;
+    238;
 
   friend void swap(SCChestConfig& a, SCChestConfig& b) {
     a.Swap(&b);
@@ -40942,7 +41104,7 @@ class CSOpenChest PROTOBUF_FINAL :
                &_CSOpenChest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    238;
+    239;
 
   friend void swap(CSOpenChest& a, CSOpenChest& b) {
     a.Swap(&b);
@@ -41065,7 +41227,7 @@ class SCOpenChest PROTOBUF_FINAL :
                &_SCOpenChest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    239;
+    240;
 
   friend void swap(SCOpenChest& a, SCOpenChest& b) {
     a.Swap(&b);
@@ -41221,7 +41383,7 @@ class CSSelectChestReward PROTOBUF_FINAL :
                &_CSSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    240;
+    241;
 
   friend void swap(CSSelectChestReward& a, CSSelectChestReward& b) {
     a.Swap(&b);
@@ -41357,7 +41519,7 @@ class SCSelectChestReward PROTOBUF_FINAL :
                &_SCSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    241;
+    242;
 
   friend void swap(SCSelectChestReward& a, SCSelectChestReward& b) {
     a.Swap(&b);
@@ -41502,7 +41664,7 @@ class CSChestSetAutoSelect PROTOBUF_FINAL :
                &_CSChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    242;
+    243;
 
   friend void swap(CSChestSetAutoSelect& a, CSChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -41649,7 +41811,7 @@ class SCChestSetAutoSelect PROTOBUF_FINAL :
                &_SCChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    243;
+    244;
 
   friend void swap(SCChestSetAutoSelect& a, SCChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -41796,7 +41958,7 @@ class CSChestSetEnable PROTOBUF_FINAL :
                &_CSChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    244;
+    245;
 
   friend void swap(CSChestSetEnable& a, CSChestSetEnable& b) {
     a.Swap(&b);
@@ -41932,7 +42094,7 @@ class SCChestSetEnable PROTOBUF_FINAL :
                &_SCChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    245;
+    246;
 
   friend void swap(SCChestSetEnable& a, SCChestSetEnable& b) {
     a.Swap(&b);
@@ -42068,7 +42230,7 @@ class CSSyncAnimation PROTOBUF_FINAL :
                &_CSSyncAnimation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    246;
+    247;
 
   friend void swap(CSSyncAnimation& a, CSSyncAnimation& b) {
     a.Swap(&b);
@@ -42244,7 +42406,7 @@ class SCSyncAnimation PROTOBUF_FINAL :
                &_SCSyncAnimation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    247;
+    248;
 
   friend void swap(SCSyncAnimation& a, SCSyncAnimation& b) {
     a.Swap(&b);
@@ -42420,7 +42582,7 @@ class CSMagicCardList PROTOBUF_FINAL :
                &_CSMagicCardList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    248;
+    249;
 
   friend void swap(CSMagicCardList& a, CSMagicCardList& b) {
     a.Swap(&b);
@@ -42543,7 +42705,7 @@ class SCMagicCardList PROTOBUF_FINAL :
                &_SCMagicCardList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    249;
+    250;
 
   friend void swap(SCMagicCardList& a, SCMagicCardList& b) {
     a.Swap(&b);
@@ -42688,7 +42850,7 @@ class SCTortoiseExplode PROTOBUF_FINAL :
                &_SCTortoiseExplode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    250;
+    251;
 
   friend void swap(SCTortoiseExplode& a, SCTortoiseExplode& b) {
     a.Swap(&b);
@@ -42879,7 +43041,7 @@ class CSBuyGun PROTOBUF_FINAL :
                &_CSBuyGun_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    251;
+    252;
 
   friend void swap(CSBuyGun& a, CSBuyGun& b) {
     a.Swap(&b);
@@ -43015,7 +43177,7 @@ class SCBuyGun PROTOBUF_FINAL :
                &_SCBuyGun_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    252;
+    253;
 
   friend void swap(SCBuyGun& a, SCBuyGun& b) {
     a.Swap(&b);
@@ -43162,7 +43324,7 @@ class SCWaterDropInfo PROTOBUF_FINAL :
                &_SCWaterDropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    253;
+    254;
 
   friend void swap(SCWaterDropInfo& a, SCWaterDropInfo& b) {
     a.Swap(&b);
@@ -43320,7 +43482,7 @@ class CSBuyWings PROTOBUF_FINAL :
                &_CSBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    254;
+    255;
 
   friend void swap(CSBuyWings& a, CSBuyWings& b) {
     a.Swap(&b);
@@ -43456,7 +43618,7 @@ class SCBuyWings PROTOBUF_FINAL :
                &_SCBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    255;
+    256;
 
   friend void swap(SCBuyWings& a, SCBuyWings& b) {
     a.Swap(&b);
@@ -43603,7 +43765,7 @@ class CSSetWings PROTOBUF_FINAL :
                &_CSSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    256;
+    257;
 
   friend void swap(CSSetWings& a, CSSetWings& b) {
     a.Swap(&b);
@@ -43739,7 +43901,7 @@ class SCSetWings PROTOBUF_FINAL :
                &_SCSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    257;
+    258;
 
   friend void swap(SCSetWings& a, SCSetWings& b) {
     a.Swap(&b);
@@ -43897,7 +44059,7 @@ class SCBeKicked PROTOBUF_FINAL :
                &_SCBeKicked_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    258;
+    259;
 
   friend void swap(SCBeKicked& a, SCBeKicked& b) {
     a.Swap(&b);
@@ -44033,7 +44195,7 @@ class CSClientTimeValidate PROTOBUF_FINAL :
                &_CSClientTimeValidate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    259;
+    260;
 
   friend void swap(CSClientTimeValidate& a, CSClientTimeValidate& b) {
     a.Swap(&b);
@@ -44169,7 +44331,7 @@ class SCClientTimeValidate PROTOBUF_FINAL :
                &_SCClientTimeValidate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    260;
+    261;
 
   friend void swap(SCClientTimeValidate& a, SCClientTimeValidate& b) {
     a.Swap(&b);
@@ -44292,7 +44454,7 @@ class CSChangeTable PROTOBUF_FINAL :
                &_CSChangeTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    261;
+    262;
 
   friend void swap(CSChangeTable& a, CSChangeTable& b) {
     a.Swap(&b);
@@ -44415,7 +44577,7 @@ class SCChangeTable PROTOBUF_FINAL :
                &_SCChangeTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    262;
+    263;
 
   friend void swap(SCChangeTable& a, SCChangeTable& b) {
     a.Swap(&b);
@@ -57367,6 +57529,70 @@ inline void CSUserPoolInfo::set_open_page(bool value) {
 
 // -------------------------------------------------------------------
 
+// GoodsInfo
+
+// int32 prop_id = 1;
+inline void GoodsInfo::clear_prop_id() {
+  prop_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoodsInfo::_internal_prop_id() const {
+  return prop_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoodsInfo::prop_id() const {
+  // @@protoc_insertion_point(field_get:BYDLD.GoodsInfo.prop_id)
+  return _internal_prop_id();
+}
+inline void GoodsInfo::_internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  prop_id_ = value;
+}
+inline void GoodsInfo::set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_prop_id(value);
+  // @@protoc_insertion_point(field_set:BYDLD.GoodsInfo.prop_id)
+}
+
+// int32 prop_num = 2;
+inline void GoodsInfo::clear_prop_num() {
+  prop_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoodsInfo::_internal_prop_num() const {
+  return prop_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoodsInfo::prop_num() const {
+  // @@protoc_insertion_point(field_get:BYDLD.GoodsInfo.prop_num)
+  return _internal_prop_num();
+}
+inline void GoodsInfo::_internal_set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  prop_num_ = value;
+}
+inline void GoodsInfo::set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_prop_num(value);
+  // @@protoc_insertion_point(field_set:BYDLD.GoodsInfo.prop_num)
+}
+
+// int32 client_id = 3;
+inline void GoodsInfo::clear_client_id() {
+  client_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoodsInfo::_internal_client_id() const {
+  return client_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoodsInfo::client_id() const {
+  // @@protoc_insertion_point(field_get:BYDLD.GoodsInfo.client_id)
+  return _internal_client_id();
+}
+inline void GoodsInfo::_internal_set_client_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  client_id_ = value;
+}
+inline void GoodsInfo::set_client_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_client_id(value);
+  // @@protoc_insertion_point(field_set:BYDLD.GoodsInfo.client_id)
+}
+
+// -------------------------------------------------------------------
+
 // UserAwardItem
 
 // int32 index = 1;
@@ -57470,7 +57696,7 @@ inline void UserAwardItem::set_allocated_name(std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:BYDLD.UserAwardItem.name)
 }
 
-// repeated .BYDLD.Object2 goods = 4;
+// repeated .BYDLD.GoodsInfo goods = 4;
 inline int UserAwardItem::_internal_goods_size() const {
   return goods_.size();
 }
@@ -57480,30 +57706,30 @@ inline int UserAwardItem::goods_size() const {
 inline void UserAwardItem::clear_goods() {
   goods_.Clear();
 }
-inline ::BYDLD::Object2* UserAwardItem::mutable_goods(int index) {
+inline ::BYDLD::GoodsInfo* UserAwardItem::mutable_goods(int index) {
   // @@protoc_insertion_point(field_mutable:BYDLD.UserAwardItem.goods)
   return goods_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >*
 UserAwardItem::mutable_goods() {
   // @@protoc_insertion_point(field_mutable_list:BYDLD.UserAwardItem.goods)
   return &goods_;
 }
-inline const ::BYDLD::Object2& UserAwardItem::_internal_goods(int index) const {
+inline const ::BYDLD::GoodsInfo& UserAwardItem::_internal_goods(int index) const {
   return goods_.Get(index);
 }
-inline const ::BYDLD::Object2& UserAwardItem::goods(int index) const {
+inline const ::BYDLD::GoodsInfo& UserAwardItem::goods(int index) const {
   // @@protoc_insertion_point(field_get:BYDLD.UserAwardItem.goods)
   return _internal_goods(index);
 }
-inline ::BYDLD::Object2* UserAwardItem::_internal_add_goods() {
+inline ::BYDLD::GoodsInfo* UserAwardItem::_internal_add_goods() {
   return goods_.Add();
 }
-inline ::BYDLD::Object2* UserAwardItem::add_goods() {
+inline ::BYDLD::GoodsInfo* UserAwardItem::add_goods() {
   // @@protoc_insertion_point(field_add:BYDLD.UserAwardItem.goods)
   return _internal_add_goods();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::Object2 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::GoodsInfo >&
 UserAwardItem::goods() const {
   // @@protoc_insertion_point(field_list:BYDLD.UserAwardItem.goods)
   return goods_;
@@ -67009,6 +67235,8 @@ inline void CSClientTimeValidate::set_timestamp(::PROTOBUF_NAMESPACE_ID::int32 v
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

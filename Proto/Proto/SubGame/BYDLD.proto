@@ -1209,12 +1209,19 @@ message CSUserPoolInfo
 	bool open_page = 1;
 }
 
+message GoodsInfo
+{
+	int32 prop_id = 1;
+	int32 prop_num = 2;
+	int32 client_id = 3;
+}
+
 message UserAwardItem
 {
 	int32 index = 1;
 	int32 item_max = 2;
 	string name = 3;
-	repeated Object2 goods = 4;
+	repeated GoodsInfo goods = 4;
 }
 
 message SCUserPoolInfo
