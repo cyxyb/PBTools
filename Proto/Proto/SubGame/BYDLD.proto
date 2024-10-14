@@ -348,7 +348,7 @@ message SCTridentBet
 {	
 		int32 chair_idx = 1;
 		int32 award = 2;
-		int32 score = 3;
+		int64 score = 3;
 		int32 bet = 4;
 		bool is_big_small = 5;
 }
@@ -372,7 +372,7 @@ message SCBigSmallChoose
 		int32 chair_idx = 1;
 		int32 enter_exit = 2;
 		int32 award = 3;
-		int32 score = 4;
+		int64 score = 4;
 }
 
 message CSBigSmallBet
@@ -387,7 +387,7 @@ message SCBigSmallBet
 		repeated int32 dices = 2;
 		bool is_bet_big = 3;
 		int32 award = 4;
-		int32 score = 5;
+		int64 score = 5;
 		bool is_end = 6;
 }
 

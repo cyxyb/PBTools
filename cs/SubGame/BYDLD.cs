@@ -66,16 +66,16 @@ namespace BYDLD {
             "EgwKBGJldHMYASADKAUSDwoHaXNfZnVsbBgCIAEoCBIRCgljdXJfcG9pbnQY",
             "AyABKAUiGwoMQ1NUcmlkZW50QmV0EgsKA2JldBgBIAEoBSJiCgxTQ1RyaWRl",
             "bnRCZXQSEQoJY2hhaXJfaWR4GAEgASgFEg0KBWF3YXJkGAIgASgFEg0KBXNj",
-            "b3JlGAMgASgFEgsKA2JldBgEIAEoBRIUCgxpc19iaWdfc21hbGwYBSABKAgi",
+            "b3JlGAMgASgDEgsKA2JldBgEIAEoBRIUCgxpc19iaWdfc21hbGwYBSABKAgi",
             "XgoOU0NQcm9wc1RyaWRlbnQSDgoGZW5hYmxlGAEgASgIEhQKDHNpbmdsZV9z",
             "Y29yZRgCIAEoBRIRCgljdXJfc2NvcmUYAyABKAUSEwoLcmFua19lbmFibGUY",
             "BCABKAgiPAoQQ1NCaWdTbWFsbENob29zZRIRCgljaGFpcl9pZHgYASABKAUS",
             "FQoNZW50ZXJfb3JfZXhpdBgCIAEoBSJXChBTQ0JpZ1NtYWxsQ2hvb3NlEhEK",
             "CWNoYWlyX2lkeBgBIAEoBRISCgplbnRlcl9leGl0GAIgASgFEg0KBWF3YXJk",
-            "GAMgASgFEg0KBXNjb3JlGAQgASgFIjIKDUNTQmlnU21hbGxCZXQSEgoKaXNf",
+            "GAMgASgFEg0KBXNjb3JlGAQgASgDIjIKDUNTQmlnU21hbGxCZXQSEgoKaXNf",
             "YmV0X2JpZxgBIAEoCBINCgV0aW1lcxgCIAEoBSJzCg1TQ0JpZ1NtYWxsQmV0",
             "EhEKCWNoYWlyX2lkeBgBIAEoBRINCgVkaWNlcxgCIAMoBRISCgppc19iZXRf",
-            "YmlnGAMgASgIEg0KBWF3YXJkGAQgASgFEg0KBXNjb3JlGAUgASgFEg4KBmlz",
+            "YmlnGAMgASgIEg0KBWF3YXJkGAQgASgFEg0KBXNjb3JlGAUgASgDEg4KBmlz",
             "X2VuZBgGIAEoCCJKCg5DU1Nob290VG9ycGVkbxIRCgljaGFpcl9pZHgYASAB",
             "KAUSEgoKdG9ycGVkb19pZBgCIAEoBRIRCglzaG9vdF9hbGwYAyABKAgidgoO",
             "U0NTaG9vdFRvcnBlZG8SEQoJY2hhaXJfaWR4GAEgASgFEhIKCnRvcnBlZG9f",
@@ -6134,9 +6134,9 @@ namespace BYDLD {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 3;
-    private int score_;
+    private long score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Score {
+    public long Score {
       get { return score_; }
       set {
         score_ = value;
@@ -6191,7 +6191,7 @@ namespace BYDLD {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (Award != 0) hash ^= Award.GetHashCode();
-      if (Score != 0) hash ^= Score.GetHashCode();
+      if (Score != 0L) hash ^= Score.GetHashCode();
       if (Bet != 0) hash ^= Bet.GetHashCode();
       if (IsBigSmall != false) hash ^= IsBigSmall.GetHashCode();
       if (_unknownFields != null) {
@@ -6218,9 +6218,9 @@ namespace BYDLD {
         output.WriteRawTag(16);
         output.WriteInt32(Award);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (Bet != 0) {
         output.WriteRawTag(32);
@@ -6247,9 +6247,9 @@ namespace BYDLD {
         output.WriteRawTag(16);
         output.WriteInt32(Award);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (Bet != 0) {
         output.WriteRawTag(32);
@@ -6274,8 +6274,8 @@ namespace BYDLD {
       if (Award != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Award);
       }
-      if (Score != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      if (Score != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
       }
       if (Bet != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Bet);
@@ -6300,7 +6300,7 @@ namespace BYDLD {
       if (other.Award != 0) {
         Award = other.Award;
       }
-      if (other.Score != 0) {
+      if (other.Score != 0L) {
         Score = other.Score;
       }
       if (other.Bet != 0) {
@@ -6332,7 +6332,7 @@ namespace BYDLD {
             break;
           }
           case 24: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
           case 32: {
@@ -6366,7 +6366,7 @@ namespace BYDLD {
             break;
           }
           case 24: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
           case 32: {
@@ -6948,9 +6948,9 @@ namespace BYDLD {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 4;
-    private int score_;
+    private long score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Score {
+    public long Score {
       get { return score_; }
       set {
         score_ = value;
@@ -6983,7 +6983,7 @@ namespace BYDLD {
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (EnterExit != 0) hash ^= EnterExit.GetHashCode();
       if (Award != 0) hash ^= Award.GetHashCode();
-      if (Score != 0) hash ^= Score.GetHashCode();
+      if (Score != 0L) hash ^= Score.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7012,9 +7012,9 @@ namespace BYDLD {
         output.WriteRawTag(24);
         output.WriteInt32(Award);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -7037,9 +7037,9 @@ namespace BYDLD {
         output.WriteRawTag(24);
         output.WriteInt32(Award);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -7059,8 +7059,8 @@ namespace BYDLD {
       if (Award != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Award);
       }
-      if (Score != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      if (Score != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7082,7 +7082,7 @@ namespace BYDLD {
       if (other.Award != 0) {
         Award = other.Award;
       }
-      if (other.Score != 0) {
+      if (other.Score != 0L) {
         Score = other.Score;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -7112,7 +7112,7 @@ namespace BYDLD {
             break;
           }
           case 32: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
         }
@@ -7142,7 +7142,7 @@ namespace BYDLD {
             break;
           }
           case 32: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
         }
@@ -7448,9 +7448,9 @@ namespace BYDLD {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 5;
-    private int score_;
+    private long score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Score {
+    public long Score {
       get { return score_; }
       set {
         score_ = value;
@@ -7497,7 +7497,7 @@ namespace BYDLD {
       hash ^= dices_.GetHashCode();
       if (IsBetBig != false) hash ^= IsBetBig.GetHashCode();
       if (Award != 0) hash ^= Award.GetHashCode();
-      if (Score != 0) hash ^= Score.GetHashCode();
+      if (Score != 0L) hash ^= Score.GetHashCode();
       if (IsEnd != false) hash ^= IsEnd.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -7528,9 +7528,9 @@ namespace BYDLD {
         output.WriteRawTag(32);
         output.WriteInt32(Award);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(40);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (IsEnd != false) {
         output.WriteRawTag(48);
@@ -7558,9 +7558,9 @@ namespace BYDLD {
         output.WriteRawTag(32);
         output.WriteInt32(Award);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(40);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (IsEnd != false) {
         output.WriteRawTag(48);
@@ -7585,8 +7585,8 @@ namespace BYDLD {
       if (Award != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Award);
       }
-      if (Score != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      if (Score != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
       }
       if (IsEnd != false) {
         size += 1 + 1;
@@ -7612,7 +7612,7 @@ namespace BYDLD {
       if (other.Award != 0) {
         Award = other.Award;
       }
-      if (other.Score != 0) {
+      if (other.Score != 0L) {
         Score = other.Score;
       }
       if (other.IsEnd != false) {
@@ -7650,7 +7650,7 @@ namespace BYDLD {
             break;
           }
           case 40: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
           case 48: {
@@ -7689,7 +7689,7 @@ namespace BYDLD {
             break;
           }
           case 40: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
           case 48: {

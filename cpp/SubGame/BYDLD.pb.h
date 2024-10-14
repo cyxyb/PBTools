@@ -4767,13 +4767,13 @@ class SCTridentBet PROTOBUF_FINAL :
   void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 score = 3;
+  // int64 score = 3;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 bet = 4;
@@ -4803,7 +4803,7 @@ class SCTridentBet PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 award_;
-  ::PROTOBUF_NAMESPACE_ID::int32 score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 bet_;
   bool is_big_small_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -5241,8 +5241,8 @@ class SCBigSmallChoose PROTOBUF_FINAL :
   enum : int {
     kChairIdxFieldNumber = 1,
     kEnterExitFieldNumber = 2,
-    kAwardFieldNumber = 3,
     kScoreFieldNumber = 4,
+    kAwardFieldNumber = 3,
   };
   // int32 chair_idx = 1;
   void clear_chair_idx();
@@ -5262,6 +5262,15 @@ class SCBigSmallChoose PROTOBUF_FINAL :
   void _internal_set_enter_exit(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 score = 4;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 award = 3;
   void clear_award();
   ::PROTOBUF_NAMESPACE_ID::int32 award() const;
@@ -5269,15 +5278,6 @@ class SCBigSmallChoose PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_award() const;
   void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 score = 4;
-  void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:BYDLD.SCBigSmallChoose)
@@ -5289,8 +5289,8 @@ class SCBigSmallChoose PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 enter_exit_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 award_;
-  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -5558,9 +5558,9 @@ class SCBigSmallBet PROTOBUF_FINAL :
     kDicesFieldNumber = 2,
     kChairIdxFieldNumber = 1,
     kAwardFieldNumber = 4,
+    kScoreFieldNumber = 5,
     kIsBetBigFieldNumber = 3,
     kIsEndFieldNumber = 6,
-    kScoreFieldNumber = 5,
   };
   // repeated int32 dices = 2;
   int dices_size() const;
@@ -5602,6 +5602,15 @@ class SCBigSmallBet PROTOBUF_FINAL :
   void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 score = 5;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // bool is_bet_big = 3;
   void clear_is_bet_big();
   bool is_bet_big() const;
@@ -5620,15 +5629,6 @@ class SCBigSmallBet PROTOBUF_FINAL :
   void _internal_set_is_end(bool value);
   public:
 
-  // int32 score = 5;
-  void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:BYDLD.SCBigSmallBet)
  private:
   class _Internal;
@@ -5640,9 +5640,9 @@ class SCBigSmallBet PROTOBUF_FINAL :
   mutable std::atomic<int> _dices_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 award_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   bool is_bet_big_;
   bool is_end_;
-  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -46681,22 +46681,22 @@ inline void SCTridentBet::set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:BYDLD.SCTridentBet.award)
 }
 
-// int32 score = 3;
+// int64 score = 3;
 inline void SCTridentBet::clear_score() {
-  score_ = 0;
+  score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCTridentBet::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCTridentBet::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCTridentBet::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCTridentBet::score() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCTridentBet.score)
   return _internal_score();
 }
-inline void SCTridentBet::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCTridentBet::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   score_ = value;
 }
-inline void SCTridentBet::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCTridentBet::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCTridentBet.score)
 }
@@ -46933,22 +46933,22 @@ inline void SCBigSmallChoose::set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallChoose.award)
 }
 
-// int32 score = 4;
+// int64 score = 4;
 inline void SCBigSmallChoose::clear_score() {
-  score_ = 0;
+  score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallChoose::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCBigSmallChoose::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallChoose::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCBigSmallChoose::score() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCBigSmallChoose.score)
   return _internal_score();
 }
-inline void SCBigSmallChoose::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCBigSmallChoose::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   score_ = value;
 }
-inline void SCBigSmallChoose::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCBigSmallChoose::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallChoose.score)
 }
@@ -47108,22 +47108,22 @@ inline void SCBigSmallBet::set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallBet.award)
 }
 
-// int32 score = 5;
+// int64 score = 5;
 inline void SCBigSmallBet::clear_score() {
-  score_ = 0;
+  score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallBet::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCBigSmallBet::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCBigSmallBet::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 SCBigSmallBet::score() const {
   // @@protoc_insertion_point(field_get:BYDLD.SCBigSmallBet.score)
   return _internal_score();
 }
-inline void SCBigSmallBet::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCBigSmallBet::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   score_ = value;
 }
-inline void SCBigSmallBet::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCBigSmallBet::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCBigSmallBet.score)
 }

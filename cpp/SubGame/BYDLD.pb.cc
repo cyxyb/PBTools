@@ -7369,17 +7369,17 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "s_full\030\002 \001(\010\022\021\n\tcur_point\030\003 \001(\005\"\033\n\014CSTri"
   "dentBet\022\013\n\003bet\030\001 \001(\005\"b\n\014SCTridentBet\022\021\n\t"
   "chair_idx\030\001 \001(\005\022\r\n\005award\030\002 \001(\005\022\r\n\005score\030"
-  "\003 \001(\005\022\013\n\003bet\030\004 \001(\005\022\024\n\014is_big_small\030\005 \001(\010"
+  "\003 \001(\003\022\013\n\003bet\030\004 \001(\005\022\024\n\014is_big_small\030\005 \001(\010"
   "\"^\n\016SCPropsTrident\022\016\n\006enable\030\001 \001(\010\022\024\n\014si"
   "ngle_score\030\002 \001(\005\022\021\n\tcur_score\030\003 \001(\005\022\023\n\013r"
   "ank_enable\030\004 \001(\010\"<\n\020CSBigSmallChoose\022\021\n\t"
   "chair_idx\030\001 \001(\005\022\025\n\renter_or_exit\030\002 \001(\005\"W"
   "\n\020SCBigSmallChoose\022\021\n\tchair_idx\030\001 \001(\005\022\022\n"
   "\nenter_exit\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\r\n\005scor"
-  "e\030\004 \001(\005\"2\n\rCSBigSmallBet\022\022\n\nis_bet_big\030\001"
+  "e\030\004 \001(\003\"2\n\rCSBigSmallBet\022\022\n\nis_bet_big\030\001"
   " \001(\010\022\r\n\005times\030\002 \001(\005\"s\n\rSCBigSmallBet\022\021\n\t"
   "chair_idx\030\001 \001(\005\022\r\n\005dices\030\002 \003(\005\022\022\n\nis_bet"
-  "_big\030\003 \001(\010\022\r\n\005award\030\004 \001(\005\022\r\n\005score\030\005 \001(\005"
+  "_big\030\003 \001(\010\022\r\n\005award\030\004 \001(\005\022\r\n\005score\030\005 \001(\003"
   "\022\016\n\006is_end\030\006 \001(\010\"J\n\016CSShootTorpedo\022\021\n\tch"
   "air_idx\030\001 \001(\005\022\022\n\ntorpedo_id\030\002 \001(\005\022\021\n\tsho"
   "ot_all\030\003 \001(\010\"v\n\016SCShootTorpedo\022\021\n\tchair_"
@@ -13599,7 +13599,7 @@ const char* SCTridentBet::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 score = 3;
+      // int64 score = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -13660,10 +13660,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_award(), target);
   }
 
-  // int32 score = 3;
+  // int64 score = 3;
   if (this->score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_score(), target);
   }
 
   // int32 bet = 4;
@@ -13708,10 +13708,10 @@ size_t SCTridentBet::ByteSizeLong() const {
         this->_internal_award());
   }
 
-  // int32 score = 3;
+  // int64 score = 3;
   if (this->score() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_score());
   }
 
@@ -14325,16 +14325,16 @@ SCBigSmallChoose::SCBigSmallChoose(const SCBigSmallChoose& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_idx_, &from.chair_idx_,
-    static_cast<size_t>(reinterpret_cast<char*>(&score_) -
-    reinterpret_cast<char*>(&chair_idx_)) + sizeof(score_));
+    static_cast<size_t>(reinterpret_cast<char*>(&award_) -
+    reinterpret_cast<char*>(&chair_idx_)) + sizeof(award_));
   // @@protoc_insertion_point(copy_constructor:BYDLD.SCBigSmallChoose)
 }
 
 void SCBigSmallChoose::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_idx_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&score_) -
-      reinterpret_cast<char*>(&chair_idx_)) + sizeof(score_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&award_) -
+      reinterpret_cast<char*>(&chair_idx_)) + sizeof(award_));
 }
 
 SCBigSmallChoose::~SCBigSmallChoose() {
@@ -14369,8 +14369,8 @@ void SCBigSmallChoose::Clear() {
   (void) cached_has_bits;
 
   ::memset(&chair_idx_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&score_) -
-      reinterpret_cast<char*>(&chair_idx_)) + sizeof(score_));
+      reinterpret_cast<char*>(&award_) -
+      reinterpret_cast<char*>(&chair_idx_)) + sizeof(award_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -14402,7 +14402,7 @@ const char* SCBigSmallChoose::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 score = 4;
+      // int64 score = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -14455,10 +14455,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_award(), target);
   }
 
-  // int32 score = 4;
+  // int64 score = 4;
   if (this->score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_score(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -14491,18 +14491,18 @@ size_t SCBigSmallChoose::ByteSizeLong() const {
         this->_internal_enter_exit());
   }
 
+  // int64 score = 4;
+  if (this->score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_score());
+  }
+
   // int32 award = 3;
   if (this->award() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_award());
-  }
-
-  // int32 score = 4;
-  if (this->score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_score());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -14542,11 +14542,11 @@ void SCBigSmallChoose::MergeFrom(const SCBigSmallChoose& from) {
   if (from.enter_exit() != 0) {
     _internal_set_enter_exit(from._internal_enter_exit());
   }
-  if (from.award() != 0) {
-    _internal_set_award(from._internal_award());
-  }
   if (from.score() != 0) {
     _internal_set_score(from._internal_score());
+  }
+  if (from.award() != 0) {
+    _internal_set_award(from._internal_award());
   }
 }
 
@@ -14572,8 +14572,8 @@ void SCBigSmallChoose::InternalSwap(SCBigSmallChoose* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SCBigSmallChoose, score_)
-      + sizeof(SCBigSmallChoose::score_)
+      PROTOBUF_FIELD_OFFSET(SCBigSmallChoose, award_)
+      + sizeof(SCBigSmallChoose::award_)
       - PROTOBUF_FIELD_OFFSET(SCBigSmallChoose, chair_idx_)>(
           reinterpret_cast<char*>(&chair_idx_),
           reinterpret_cast<char*>(&other->chair_idx_));
@@ -14829,16 +14829,16 @@ SCBigSmallBet::SCBigSmallBet(const SCBigSmallBet& from)
       dices_(from.dices_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_idx_, &from.chair_idx_,
-    static_cast<size_t>(reinterpret_cast<char*>(&score_) -
-    reinterpret_cast<char*>(&chair_idx_)) + sizeof(score_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_end_) -
+    reinterpret_cast<char*>(&chair_idx_)) + sizeof(is_end_));
   // @@protoc_insertion_point(copy_constructor:BYDLD.SCBigSmallBet)
 }
 
 void SCBigSmallBet::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_idx_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&score_) -
-      reinterpret_cast<char*>(&chair_idx_)) + sizeof(score_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_end_) -
+      reinterpret_cast<char*>(&chair_idx_)) + sizeof(is_end_));
 }
 
 SCBigSmallBet::~SCBigSmallBet() {
@@ -14874,8 +14874,8 @@ void SCBigSmallBet::Clear() {
 
   dices_.Clear();
   ::memset(&chair_idx_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&score_) -
-      reinterpret_cast<char*>(&chair_idx_)) + sizeof(score_));
+      reinterpret_cast<char*>(&is_end_) -
+      reinterpret_cast<char*>(&chair_idx_)) + sizeof(is_end_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -14917,7 +14917,7 @@ const char* SCBigSmallBet::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 score = 5;
+      // int64 score = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -14986,10 +14986,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_award(), target);
   }
 
-  // int32 score = 5;
+  // int64 score = 5;
   if (this->score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_score(), target);
   }
 
   // bool is_end = 6;
@@ -15043,6 +15043,13 @@ size_t SCBigSmallBet::ByteSizeLong() const {
         this->_internal_award());
   }
 
+  // int64 score = 5;
+  if (this->score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_score());
+  }
+
   // bool is_bet_big = 3;
   if (this->is_bet_big() != 0) {
     total_size += 1 + 1;
@@ -15051,13 +15058,6 @@ size_t SCBigSmallBet::ByteSizeLong() const {
   // bool is_end = 6;
   if (this->is_end() != 0) {
     total_size += 1 + 1;
-  }
-
-  // int32 score = 5;
-  if (this->score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_score());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -15098,14 +15098,14 @@ void SCBigSmallBet::MergeFrom(const SCBigSmallBet& from) {
   if (from.award() != 0) {
     _internal_set_award(from._internal_award());
   }
+  if (from.score() != 0) {
+    _internal_set_score(from._internal_score());
+  }
   if (from.is_bet_big() != 0) {
     _internal_set_is_bet_big(from._internal_is_bet_big());
   }
   if (from.is_end() != 0) {
     _internal_set_is_end(from._internal_is_end());
-  }
-  if (from.score() != 0) {
-    _internal_set_score(from._internal_score());
   }
 }
 
@@ -15132,8 +15132,8 @@ void SCBigSmallBet::InternalSwap(SCBigSmallBet* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   dices_.InternalSwap(&other->dices_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SCBigSmallBet, score_)
-      + sizeof(SCBigSmallBet::score_)
+      PROTOBUF_FIELD_OFFSET(SCBigSmallBet, is_end_)
+      + sizeof(SCBigSmallBet::is_end_)
       - PROTOBUF_FIELD_OFFSET(SCBigSmallBet, chair_idx_)>(
           reinterpret_cast<char*>(&chair_idx_),
           reinterpret_cast<char*>(&other->chair_idx_));
