@@ -6532,6 +6532,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_BYDLD_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::BYDLD::SCSeaCrabCreate, chair_id_),
   PROTOBUF_FIELD_OFFSET(::BYDLD::SCSeaCrabCreate, status_),
+  PROTOBUF_FIELD_OFFSET(::BYDLD::SCSeaCrabCreate, ratio_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::BYDLD::CSSyncCrabStatus, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -7017,43 +7018,43 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 1826, -1, sizeof(::BYDLD::CSRewardChangeAuto)},
   { 1832, -1, sizeof(::BYDLD::SCRewardAutoRep)},
   { 1839, -1, sizeof(::BYDLD::SCSeaCrabCreate)},
-  { 1846, -1, sizeof(::BYDLD::CSSyncCrabStatus)},
-  { 1851, -1, sizeof(::BYDLD::SCSyncCrabStatus)},
-  { 1860, -1, sizeof(::BYDLD::CSDragonBallEnd)},
-  { 1865, -1, sizeof(::BYDLD::SCDragonBallRes)},
-  { 1874, -1, sizeof(::BYDLD::DevouredFish)},
-  { 1881, -1, sizeof(::BYDLD::CSDevourHit)},
-  { 1887, -1, sizeof(::BYDLD::SCDevourHit)},
-  { 1896, -1, sizeof(::BYDLD::OpenChestReward)},
-  { 1903, -1, sizeof(::BYDLD::SCUpdateChestStatus)},
-  { 1914, -1, sizeof(::BYDLD::CSChestConfig)},
-  { 1919, -1, sizeof(::BYDLD::ChestBrief)},
-  { 1926, -1, sizeof(::BYDLD::SCChestConfig)},
-  { 1937, -1, sizeof(::BYDLD::CSOpenChest)},
-  { 1942, -1, sizeof(::BYDLD::SCOpenChest)},
-  { 1949, -1, sizeof(::BYDLD::CSSelectChestReward)},
-  { 1955, -1, sizeof(::BYDLD::SCSelectChestReward)},
-  { 1961, -1, sizeof(::BYDLD::CSChestSetAutoSelect)},
-  { 1968, -1, sizeof(::BYDLD::SCChestSetAutoSelect)},
-  { 1975, -1, sizeof(::BYDLD::CSChestSetEnable)},
-  { 1981, -1, sizeof(::BYDLD::SCChestSetEnable)},
-  { 1987, -1, sizeof(::BYDLD::CSSyncAnimation)},
-  { 1996, -1, sizeof(::BYDLD::SCSyncAnimation)},
-  { 2005, -1, sizeof(::BYDLD::CSMagicCardList)},
-  { 2010, -1, sizeof(::BYDLD::SCMagicCardList)},
-  { 2016, -1, sizeof(::BYDLD::SCTortoiseExplode)},
-  { 2027, -1, sizeof(::BYDLD::CSBuyGun)},
-  { 2033, -1, sizeof(::BYDLD::SCBuyGun)},
-  { 2040, -1, sizeof(::BYDLD::SCWaterDropInfo)},
-  { 2048, -1, sizeof(::BYDLD::CSBuyWings)},
-  { 2054, -1, sizeof(::BYDLD::SCBuyWings)},
-  { 2061, -1, sizeof(::BYDLD::CSSetWings)},
-  { 2067, -1, sizeof(::BYDLD::SCSetWings)},
-  { 2075, -1, sizeof(::BYDLD::SCBeKicked)},
-  { 2081, -1, sizeof(::BYDLD::CSClientTimeValidate)},
-  { 2087, -1, sizeof(::BYDLD::SCClientTimeValidate)},
-  { 2092, -1, sizeof(::BYDLD::CSChangeTable)},
-  { 2097, -1, sizeof(::BYDLD::SCChangeTable)},
+  { 1847, -1, sizeof(::BYDLD::CSSyncCrabStatus)},
+  { 1852, -1, sizeof(::BYDLD::SCSyncCrabStatus)},
+  { 1861, -1, sizeof(::BYDLD::CSDragonBallEnd)},
+  { 1866, -1, sizeof(::BYDLD::SCDragonBallRes)},
+  { 1875, -1, sizeof(::BYDLD::DevouredFish)},
+  { 1882, -1, sizeof(::BYDLD::CSDevourHit)},
+  { 1888, -1, sizeof(::BYDLD::SCDevourHit)},
+  { 1897, -1, sizeof(::BYDLD::OpenChestReward)},
+  { 1904, -1, sizeof(::BYDLD::SCUpdateChestStatus)},
+  { 1915, -1, sizeof(::BYDLD::CSChestConfig)},
+  { 1920, -1, sizeof(::BYDLD::ChestBrief)},
+  { 1927, -1, sizeof(::BYDLD::SCChestConfig)},
+  { 1938, -1, sizeof(::BYDLD::CSOpenChest)},
+  { 1943, -1, sizeof(::BYDLD::SCOpenChest)},
+  { 1950, -1, sizeof(::BYDLD::CSSelectChestReward)},
+  { 1956, -1, sizeof(::BYDLD::SCSelectChestReward)},
+  { 1962, -1, sizeof(::BYDLD::CSChestSetAutoSelect)},
+  { 1969, -1, sizeof(::BYDLD::SCChestSetAutoSelect)},
+  { 1976, -1, sizeof(::BYDLD::CSChestSetEnable)},
+  { 1982, -1, sizeof(::BYDLD::SCChestSetEnable)},
+  { 1988, -1, sizeof(::BYDLD::CSSyncAnimation)},
+  { 1997, -1, sizeof(::BYDLD::SCSyncAnimation)},
+  { 2006, -1, sizeof(::BYDLD::CSMagicCardList)},
+  { 2011, -1, sizeof(::BYDLD::SCMagicCardList)},
+  { 2017, -1, sizeof(::BYDLD::SCTortoiseExplode)},
+  { 2028, -1, sizeof(::BYDLD::CSBuyGun)},
+  { 2034, -1, sizeof(::BYDLD::SCBuyGun)},
+  { 2041, -1, sizeof(::BYDLD::SCWaterDropInfo)},
+  { 2049, -1, sizeof(::BYDLD::CSBuyWings)},
+  { 2055, -1, sizeof(::BYDLD::SCBuyWings)},
+  { 2062, -1, sizeof(::BYDLD::CSSetWings)},
+  { 2068, -1, sizeof(::BYDLD::SCSetWings)},
+  { 2076, -1, sizeof(::BYDLD::SCBeKicked)},
+  { 2082, -1, sizeof(::BYDLD::CSClientTimeValidate)},
+  { 2088, -1, sizeof(::BYDLD::SCClientTimeValidate)},
+  { 2093, -1, sizeof(::BYDLD::CSChangeTable)},
+  { 2098, -1, sizeof(::BYDLD::SCChangeTable)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -7799,167 +7800,167 @@ const char descriptor_table_protodef_BYDLD_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\022#\n\010confList\030\005 \003(\0132\021.BYDLD.RewardConf\"\'\n"
   "\022CSRewardChangeAuto\022\021\n\tautoTimes\030\001 \001(\005\"1"
   "\n\017SCRewardAutoRep\022\016\n\006status\030\001 \001(\005\022\016\n\006acc"
-  "ept\030\002 \001(\010\"3\n\017SCSeaCrabCreate\022\020\n\010chair_id"
-  "\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\"\022\n\020CSSyncCrabStat"
-  "us\"\\\n\020SCSyncCrabStatus\022\016\n\006status\030\001 \001(\005\022\020"
-  "\n\010chair_id\030\002 \001(\005\022\022\n\nmultiple_1\030\003 \001(\005\022\022\n\n"
-  "multiple_2\030\004 \001(\005\"\021\n\017CSDragonBallEnd\"`\n\017S"
-  "CDragonBallRes\022\020\n\010chair_id\030\001 \001(\005\022\022\n\nlock"
-  "_ratio\030\002 \001(\005\022\022\n\nbase_ratio\030\003 \001(\005\022\023\n\013tota"
-  "l_award\030\004 \001(\005\".\n\014DevouredFish\022\020\n\010fish_ui"
-  "d\030\001 \001(\005\022\014\n\004earn\030\002 \001(\005\"$\n\013CSDevourHit\022\025\n\r"
-  "screen_fishes\030\001 \003(\005\"n\n\013SCDevourHit\022*\n\rde"
-  "vour_fishes\030\001 \003(\0132\023.BYDLD.DevouredFish\022\014"
-  "\n\004crit\030\002 \001(\005\022\020\n\010multiple\030\003 \001(\005\022\023\n\013ingot_"
-  "multi\030\004 \001(\005\":\n\017OpenChestReward\022\n\n\002id\030\001 \001"
-  "(\005\022\033\n\003num\030\002 \001(\0132\016.BYDLD.Decimal\"\250\001\n\023SCUp"
-  "dateChestStatus\022\021\n\tis_active\030\001 \001(\010\022$\n\nch"
-  "est_type\030\002 \001(\0162\020.BYDLD.ChestType\022\026\n\016tota"
-  "l_progress\030\003 \001(\005\022\027\n\017remain_progress\030\004 \001("
-  "\005\022\r\n\005guide\030\005 \001(\010\022\030\n\020available_reward\030\006 \001"
-  "(\005\"\017\n\rCSChestConfig\"Z\n\nChestBrief\022$\n\nche"
-  "st_type\030\001 \001(\0162\020.BYDLD.ChestType\022&\n\006rewar"
-  "d\030\002 \003(\0132\026.BYDLD.OpenChestReward\"\272\001\n\rSCCh"
-  "estConfig\022\020\n\010end_time\030\001 \001(\005\022+\n\020chest_bri"
-  "ef_list\030\002 \003(\0132\021.BYDLD.ChestBrief\022\021\n\tmin_"
-  "ratio\030\003 \001(\005\022\021\n\tauto_open\030\004 \001(\010\0221\n\013auto_o"
-  "ption\030\005 \001(\0162\034.BYDLD.ChestAutoSelectOptio"
-  "n\022\021\n\tis_enable\030\006 \001(\010\"\r\n\013CSOpenChest\"m\n\013S"
-  "COpenChest\022+\n\013reward_list\030\001 \003(\0132\026.BYDLD."
-  "OpenChestReward\0221\n\013auto_option\030\002 \001(\0162\034.B"
-  "YDLD.ChestAutoSelectOption\"+\n\023CSSelectCh"
-  "estReward\022\024\n\014select_index\030\001 \001(\005\"=\n\023SCSel"
-  "ectChestReward\022&\n\006reward\030\001 \001(\0132\026.BYDLD.O"
-  "penChestReward\"\\\n\024CSChestSetAutoSelect\0221"
-  "\n\013auto_option\030\001 \001(\0162\034.BYDLD.ChestAutoSel"
-  "ectOption\022\021\n\tauto_open\030\002 \001(\010\"\\\n\024SCChestS"
-  "etAutoSelect\0221\n\013auto_option\030\001 \001(\0162\034.BYDL"
-  "D.ChestAutoSelectOption\022\021\n\tauto_open\030\002 \001"
-  "(\010\"%\n\020CSChestSetEnable\022\021\n\tis_enable\030\001 \001("
-  "\010\"%\n\020SCChestSetEnable\022\021\n\tis_enable\030\001 \001(\010"
-  "\"W\n\017CSSyncAnimation\022\023\n\013animationId\030\001 \001(\005"
-  "\022\014\n\004step\030\002 \001(\005\022\020\n\010complete\030\003 \001(\010\022\017\n\007cont"
-  "ent\030\004 \001(\t\"W\n\017SCSyncAnimation\022\023\n\013animatio"
-  "nId\030\001 \001(\005\022\014\n\004step\030\002 \001(\005\022\020\n\010complete\030\003 \001("
-  "\010\022\017\n\007content\030\004 \001(\t\"\021\n\017CSMagicCardList\">\n"
-  "\017SCMagicCardList\022+\n\rmagicCardList\030\001 \003(\0132"
-  "\024.BYDLD.MagicCardInfo\"\201\001\n\021SCTortoiseExpl"
-  "ode\022\021\n\tchair_idx\030\001 \001(\005\022\020\n\010fish_uid\030\002 \001(\005"
-  "\022\021\n\tbullet_id\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022\022\n\nma"
-  "x_effect\030\005 \001(\005\022\021\n\tis_double\030\006 \001(\010\"\035\n\010CSB"
-  "uyGun\022\021\n\tgun_level\030\001 \001(\005\"-\n\010SCBuyGun\022\016\n\006"
-  "is_buy\030\001 \001(\010\022\021\n\tgun_level\030\002 \001(\005\"M\n\017SCWat"
-  "erDropInfo\022\016\n\006enable\030\001 \001(\010\022\022\n\ndrop_count"
-  "\030\002 \001(\005\022\026\n\016fragment_count\030\003 \001(\005\"\036\n\nCSBuyW"
-  "ings\022\020\n\010wings_id\030\001 \001(\005\".\n\nSCBuyWings\022\020\n\010"
-  "wings_id\030\001 \001(\005\022\016\n\006is_buy\030\002 \001(\010\"#\n\nCSSetW"
-  "ings\022\025\n\rwings_prop_id\030\001 \001(\005\"D\n\nSCSetWing"
-  "s\022\021\n\tchair_idx\030\001 \001(\005\022\025\n\rwings_prop_id\030\002 "
-  "\001(\005\022\014\n\004code\030\003 \001(\005\"3\n\nSCBeKicked\022%\n\006reaso"
-  "n\030\001 \001(\0162\025.BYDLD.BeKickedReason\")\n\024CSClie"
-  "ntTimeValidate\022\021\n\ttimestamp\030\001 \001(\005\"\026\n\024SCC"
-  "lientTimeValidate\"\017\n\rCSChangeTable\"\017\n\rSC"
-  "ChangeTable*\230\024\n\013GameCommand\022\017\n\013Req_Inval"
-  "id\020\000\022\022\n\rReq_HeartBeat\020\350\007\022\033\n\026Req_LoginGam"
-  "eWithToken\020\351\007\022\022\n\rReq_UserReady\020\352\007\022\027\n\022Req"
-  "_SetProbability\020\353\007\022\027\n\022Req_FishTracesList"
-  "\020\354\007\022\023\n\016Req_ChangeScen\020\355\007\022\032\n\025Req_FishOuts"
-  "ideScreen\020\356\007\022\021\n\014Req_LockFish\020\357\007\022\027\n\022Req_U"
-  "serShootMulti\020\360\007\022\025\n\020Req_HitMultiFish\020\361\007\022"
-  "\021\n\014Req_SetSkill\020\362\007\022\022\n\rReq_SyncMoney\020\363\007\022\025"
-  "\n\020Req_NotifyLogout\020\364\007\022\024\n\017Req_SyncFishReq"
-  "\020\365\007\022\024\n\017Req_SyncFishRsp\020\366\007\022\030\n\023Req_UserTim"
-  "eoutKick\020\367\007\022\032\n\025Req_UserRunBackground\020\370\007\022"
-  "\027\n\022Req_UpdateHallProp\020\371\007\022\025\n\020Req_PropsTri"
-  "dent\020\372\007\022\025\n\020Req_PropsTorpedo\020\373\007\022\027\n\022Req_Pr"
-  "opsAwardPool\020\374\007\022\024\n\017Req_TridentInfo\020\375\007\022\023\n"
-  "\016Req_TridentBet\020\376\007\022\027\n\022Req_BigSmallChoose"
-  "\020\377\007\022\024\n\017Req_BigSmallBet\020\200\010\022\025\n\020Req_ShootTo"
-  "rpedo\020\201\010\022\020\n\013Req_VipInfo\020\202\010\022\026\n\021Req_Purcha"
-  "seCheck\020\203\010\022\020\n\013Req_ComTask\020\204\010\022\021\n\014Req_Task"
-  "Info\020\205\010\022\030\n\023Req_UserScoreRecord\020\206\010\022\024\n\017Req"
-  "_FreeTimeEnd\020\207\010\022\026\n\021Req_SyncFreeTimes\020\210\010\022"
-  "\027\n\022Req_ClickStatistic\020\211\010\022\025\n\020Req_Activity"
-  "Info\020\212\010\022\027\n\022Req_PropDropNotify\020\213\010\022\026\n\021Req_"
-  "PropEndNotify\020\214\010\022\022\n\rReq_UsersProp\020\215\010\022\033\n\026"
-  "Req_ScratchNewYearCard\020\216\010\022\027\n\022Req_BuyNewY"
-  "earCard\020\217\010\022\034\n\027Req_NewYearCardExchange\020\220\010"
-  "\022\037\n\032Req_NewYearCardAwardRecord\020\221\010\022\026\n\021Req"
-  "_SaveSkillTime\020\222\010\022\032\n\025Req_SuperTridentSho"
-  "ot\020\223\010\022\033\n\026Req_SuperTridentAttack\020\224\010\022\024\n\017Re"
-  "q_MatchResult\020\225\010\022\032\n\025Req_MatchPackAdditio"
-  "n\020\226\010\022\031\n\024Req_MatchPackInvalid\020\227\010\022\030\n\023Req_A"
-  "wardPoolRecord\020\230\010\022\025\n\020Req_FortuneShoot\020\231\010"
-  "\022\024\n\017Req_SyncFortune\020\232\010\022\025\n\020Req_UserPoolIn"
-  "fo\020\233\010\022\027\n\022Req_UserPoolStatus\020\234\010\022\030\n\023Req_Us"
-  "erPoolPreDraw\020\235\010\022\025\n\020Req_UserPoolDraw\020\236\010\022"
-  "\024\n\017Req_UserPoolAdd\020\237\010\022\026\n\021Req_LuckyDrawIn"
-  "fo\020\240\010\022\032\n\025Req_GetLuckyTaskAward\020\241\010\022\024\n\017Req"
-  "_LuckyRedDot\020\242\010\022\024\n\017Req_GetLuckyNum\020\243\010\022\024\n"
-  "\017Req_LuckyRecord\020\244\010\022\022\n\rReq_OwnRecord\020\245\010\022"
-  "\024\n\017Req_DragonWheel\020\246\010\022\025\n\020Req_SyncHallPro"
-  "p\020\247\010\022\035\n\030Req_CheckDragonWheelProp\020\250\010\022\033\n\026R"
-  "eq_UserPoolDoubleInfo\020\314\010\022\027\n\022Req_UserPool"
-  "Double\020\315\010\022\026\n\021Req_LuckyPoolInfo\020\316\010\022\026\n\021Req"
-  "_LuckyPoolDraw\020\317\010\022\030\n\023Req_BigSmallWinInfo"
-  "\020\340\010\022\032\n\025Req_TridentRankResult\020\341\010\022\027\n\022Req_B"
-  "igSmallRecord\020\342\010\022\031\n\024Req_RewardTaskRecord"
-  "\020\352\010\022\026\n\021Req_RewardAddTask\020\353\010\022\031\n\024Req_Rewar"
-  "dChangeAuto\020\354\010\022\031\n\024Req_RewardAddTaskRep\020\355"
-  "\010\022\030\n\023Req_RewardRecordRep\020\356\010\022\026\n\021Req_Rewar"
-  "dAutoRep\020\357\010\022\026\n\021Req_RewardFishGet\020\360\010\022\030\n\023R"
-  "eq_SendItemsSwitch\020\361\010\022\036\n\031Req_DealSyncSea"
-  "CrabCreate\020\362\010\022\036\n\031Req_DealSyncCrabHitStat"
-  "us\020\363\010\022\026\n\021DealDragonBallEnd\020\364\010\022\022\n\rReq_Dev"
-  "ourHit\020\365\010\022\032\n\025Req_UpdateChestStatus\020\371\010\022\024\n"
-  "\017Req_ChestConfig\020\372\010\022\022\n\rReq_OpenChest\020\373\010\022"
-  "\032\n\025Req_SelectChestReward\020\374\010\022\033\n\026Req_Chest"
-  "SetAutoSelect\020\375\010\022\027\n\022Req_ChestSetEnable\020\376"
-  "\010\022\026\n\021Req_SyncAnimation\020\377\010\022\026\n\021Req_MagicCa"
-  "rdList\020\200\t\022\017\n\nReq_BuyGun\020\201\t\022\020\n\013Req_GunInf"
-  "o\020\202\t\022\021\n\014Req_BuyWings\020\203\t\022\022\n\rReq_WingsInfo"
-  "\020\204\t\022\026\n\021Req_GemConfigList\020\205\t\022\026\n\021Req_JadeA"
-  "wardInfo\020\206\t\022\027\n\022Req_AztecGemConfig\020\207\t\022\021\n\014"
-  "Req_SetWings\020\273\t\022\030\n\023Req_TortoiseExplode\020\260"
-  "\t\022\026\n\021Req_WaterDropInfo\020\272\t\022\021\n\014Req_BeKicke"
-  "d\020\304\t\022\033\n\026Req_ClientTimeValidate\020\305\t\022\024\n\017Req"
-  "_ChangeTable\020\306\t\022\025\n\017Req_AwardNotify\020\241\234\001*\240"
-  "\006\n\007ErrCode\022\013\n\007Success\020\000\022\030\n\023LoadPropsData"
-  "Failed\020\221N\022\032\n\025CanNotFindPlayerPoint\020\222N\022\025\n"
-  "\020ParameterIsWrong\020\223N\022\020\n\013LackOfMoney\020\224N\022\031"
-  "\n\024FreeTimesChangeRatio\020\225N\022\r\n\010IsNotSup\020\226N"
-  "\022\026\n\021DeserializeFailed\020\227N\022\023\n\016PlayerNotExi"
-  "st\020\230N\022\027\n\022PlayerAlreadyLogin\020\231N\022\031\n\024LoadPl"
-  "ayerDataFailed\020\232N\022\025\n\020AllocTableFailed\020\233N"
-  "\022\021\n\014DefendPlugIn\020\234N\022\026\n\021QPEnterRoomFailed"
-  "\020\235N\022\034\n\027QPBaseUserInfoGetFailed\020\236N\022\025\n\020QPR"
-  "eadGoldFailed\020\237N\022\026\n\021LackMoneyInServer\020\240N"
-  "\022\027\n\022AlreadyInOtherGame\020\241N\022\023\n\016ThisRoomIsF"
-  "ull\020\242N\022\023\n\016UserPoolNoMeet\020\243N\022\025\n\020UserPoolT"
-  "oHigher\020\244N\022\024\n\017ThisTableIsFull\020\245N\022\021\n\014Serv"
-  "erClosed\020\246N\022\025\n\020PlayerNotInTable\020\247N\022\021\n\014Pr"
-  "opNoEnough\020\256N\022\022\n\rPropRoomLimit\020\257N\022\016\n\tPro"
-  "pUsing\020\260N\022\021\n\014PropNotExist\020\261N\022\024\n\017PropUsin"
-  "gSetGun\020\262N\022\031\n\024ReqAddTaskSettlement\020\270N\022\030\n"
-  "\023ReqAddTaskMoneyLess\020\271N\022\026\n\021ReqAddTaskAlr"
-  "eady\020\272N\022\030\n\023ReqAddTaskIDInvalid\020\273N\022\022\n\rOpe"
-  "nChestFail\020\302N\022\032\n\025SelectChestRewardFail\020\303"
-  "N* \n\010ItemName\022\024\n\020RewardTaskEnable\020\000*\263\002\n\014"
-  "AztecGemType\022\025\n\021AztecGemType_Null\020\000\022\027\n\023A"
-  "ztecGemType_Orange\020\001\022\024\n\020AztecGemType_Red"
-  "\020\002\022\025\n\021AztecGemType_Pink\020\003\022\027\n\023AztecGemTyp"
-  "e_Purple\020\004\022\025\n\021AztecGemType_Blue\020\005\022\026\n\022Azt"
-  "ecGemType_Green\020\006\022\022\n\016AztecGemType_A\020\007\022\022\n"
-  "\016AztecGemType_K\020\010\022\022\n\016AztecGemType_Q\020\t\022\022\n"
-  "\016AztecGemType_J\020\n\022\023\n\017AztecGemType_10\020\013\022\031"
-  "\n\025AztecGemType_Critical\020\014*`\n\tChestType\022\026"
-  "\n\022ChestTypePorcelain\020\000\022\023\n\017ChestTypeBronz"
-  "e\020\001\022\023\n\017ChestTypeSilver\020\002\022\021\n\rChestTypeGol"
-  "d\020\003*A\n\025ChestAutoSelectOption\022\010\n\004None\020\000\022\023"
-  "\n\017RedPacketTicket\020\001\022\t\n\005Money\020\002*f\n\016BeKick"
-  "edReason\022\014\n\010NoReason\020\000\022\022\n\016ServerIsClosed"
-  "\020\001\022\017\n\013HallCommand\020\002\022\026\n\022NoOperationTimeou"
-  "t\020\003\022\t\n\005Cheat\020\004b\006proto3"
+  "ept\030\002 \001(\010\"B\n\017SCSeaCrabCreate\022\020\n\010chair_id"
+  "\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\"\022\n"
+  "\020CSSyncCrabStatus\"\\\n\020SCSyncCrabStatus\022\016\n"
+  "\006status\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\022\n\nmulti"
+  "ple_1\030\003 \001(\005\022\022\n\nmultiple_2\030\004 \001(\005\"\021\n\017CSDra"
+  "gonBallEnd\"`\n\017SCDragonBallRes\022\020\n\010chair_i"
+  "d\030\001 \001(\005\022\022\n\nlock_ratio\030\002 \001(\005\022\022\n\nbase_rati"
+  "o\030\003 \001(\005\022\023\n\013total_award\030\004 \001(\005\".\n\014Devoured"
+  "Fish\022\020\n\010fish_uid\030\001 \001(\005\022\014\n\004earn\030\002 \001(\005\"$\n\013"
+  "CSDevourHit\022\025\n\rscreen_fishes\030\001 \003(\005\"n\n\013SC"
+  "DevourHit\022*\n\rdevour_fishes\030\001 \003(\0132\023.BYDLD"
+  ".DevouredFish\022\014\n\004crit\030\002 \001(\005\022\020\n\010multiple\030"
+  "\003 \001(\005\022\023\n\013ingot_multi\030\004 \001(\005\":\n\017OpenChestR"
+  "eward\022\n\n\002id\030\001 \001(\005\022\033\n\003num\030\002 \001(\0132\016.BYDLD.D"
+  "ecimal\"\250\001\n\023SCUpdateChestStatus\022\021\n\tis_act"
+  "ive\030\001 \001(\010\022$\n\nchest_type\030\002 \001(\0162\020.BYDLD.Ch"
+  "estType\022\026\n\016total_progress\030\003 \001(\005\022\027\n\017remai"
+  "n_progress\030\004 \001(\005\022\r\n\005guide\030\005 \001(\010\022\030\n\020avail"
+  "able_reward\030\006 \001(\005\"\017\n\rCSChestConfig\"Z\n\nCh"
+  "estBrief\022$\n\nchest_type\030\001 \001(\0162\020.BYDLD.Che"
+  "stType\022&\n\006reward\030\002 \003(\0132\026.BYDLD.OpenChest"
+  "Reward\"\272\001\n\rSCChestConfig\022\020\n\010end_time\030\001 \001"
+  "(\005\022+\n\020chest_brief_list\030\002 \003(\0132\021.BYDLD.Che"
+  "stBrief\022\021\n\tmin_ratio\030\003 \001(\005\022\021\n\tauto_open\030"
+  "\004 \001(\010\0221\n\013auto_option\030\005 \001(\0162\034.BYDLD.Chest"
+  "AutoSelectOption\022\021\n\tis_enable\030\006 \001(\010\"\r\n\013C"
+  "SOpenChest\"m\n\013SCOpenChest\022+\n\013reward_list"
+  "\030\001 \003(\0132\026.BYDLD.OpenChestReward\0221\n\013auto_o"
+  "ption\030\002 \001(\0162\034.BYDLD.ChestAutoSelectOptio"
+  "n\"+\n\023CSSelectChestReward\022\024\n\014select_index"
+  "\030\001 \001(\005\"=\n\023SCSelectChestReward\022&\n\006reward\030"
+  "\001 \001(\0132\026.BYDLD.OpenChestReward\"\\\n\024CSChest"
+  "SetAutoSelect\0221\n\013auto_option\030\001 \001(\0162\034.BYD"
+  "LD.ChestAutoSelectOption\022\021\n\tauto_open\030\002 "
+  "\001(\010\"\\\n\024SCChestSetAutoSelect\0221\n\013auto_opti"
+  "on\030\001 \001(\0162\034.BYDLD.ChestAutoSelectOption\022\021"
+  "\n\tauto_open\030\002 \001(\010\"%\n\020CSChestSetEnable\022\021\n"
+  "\tis_enable\030\001 \001(\010\"%\n\020SCChestSetEnable\022\021\n\t"
+  "is_enable\030\001 \001(\010\"W\n\017CSSyncAnimation\022\023\n\013an"
+  "imationId\030\001 \001(\005\022\014\n\004step\030\002 \001(\005\022\020\n\010complet"
+  "e\030\003 \001(\010\022\017\n\007content\030\004 \001(\t\"W\n\017SCSyncAnimat"
+  "ion\022\023\n\013animationId\030\001 \001(\005\022\014\n\004step\030\002 \001(\005\022\020"
+  "\n\010complete\030\003 \001(\010\022\017\n\007content\030\004 \001(\t\"\021\n\017CSM"
+  "agicCardList\">\n\017SCMagicCardList\022+\n\rmagic"
+  "CardList\030\001 \003(\0132\024.BYDLD.MagicCardInfo\"\201\001\n"
+  "\021SCTortoiseExplode\022\021\n\tchair_idx\030\001 \001(\005\022\020\n"
+  "\010fish_uid\030\002 \001(\005\022\021\n\tbullet_id\030\003 \001(\005\022\r\n\005ra"
+  "tio\030\004 \001(\005\022\022\n\nmax_effect\030\005 \001(\005\022\021\n\tis_doub"
+  "le\030\006 \001(\010\"\035\n\010CSBuyGun\022\021\n\tgun_level\030\001 \001(\005\""
+  "-\n\010SCBuyGun\022\016\n\006is_buy\030\001 \001(\010\022\021\n\tgun_level"
+  "\030\002 \001(\005\"M\n\017SCWaterDropInfo\022\016\n\006enable\030\001 \001("
+  "\010\022\022\n\ndrop_count\030\002 \001(\005\022\026\n\016fragment_count\030"
+  "\003 \001(\005\"\036\n\nCSBuyWings\022\020\n\010wings_id\030\001 \001(\005\".\n"
+  "\nSCBuyWings\022\020\n\010wings_id\030\001 \001(\005\022\016\n\006is_buy\030"
+  "\002 \001(\010\"#\n\nCSSetWings\022\025\n\rwings_prop_id\030\001 \001"
+  "(\005\"D\n\nSCSetWings\022\021\n\tchair_idx\030\001 \001(\005\022\025\n\rw"
+  "ings_prop_id\030\002 \001(\005\022\014\n\004code\030\003 \001(\005\"3\n\nSCBe"
+  "Kicked\022%\n\006reason\030\001 \001(\0162\025.BYDLD.BeKickedR"
+  "eason\")\n\024CSClientTimeValidate\022\021\n\ttimesta"
+  "mp\030\001 \001(\005\"\026\n\024SCClientTimeValidate\"\017\n\rCSCh"
+  "angeTable\"\017\n\rSCChangeTable*\230\024\n\013GameComma"
+  "nd\022\017\n\013Req_Invalid\020\000\022\022\n\rReq_HeartBeat\020\350\007\022"
+  "\033\n\026Req_LoginGameWithToken\020\351\007\022\022\n\rReq_User"
+  "Ready\020\352\007\022\027\n\022Req_SetProbability\020\353\007\022\027\n\022Req"
+  "_FishTracesList\020\354\007\022\023\n\016Req_ChangeScen\020\355\007\022"
+  "\032\n\025Req_FishOutsideScreen\020\356\007\022\021\n\014Req_LockF"
+  "ish\020\357\007\022\027\n\022Req_UserShootMulti\020\360\007\022\025\n\020Req_H"
+  "itMultiFish\020\361\007\022\021\n\014Req_SetSkill\020\362\007\022\022\n\rReq"
+  "_SyncMoney\020\363\007\022\025\n\020Req_NotifyLogout\020\364\007\022\024\n\017"
+  "Req_SyncFishReq\020\365\007\022\024\n\017Req_SyncFishRsp\020\366\007"
+  "\022\030\n\023Req_UserTimeoutKick\020\367\007\022\032\n\025Req_UserRu"
+  "nBackground\020\370\007\022\027\n\022Req_UpdateHallProp\020\371\007\022"
+  "\025\n\020Req_PropsTrident\020\372\007\022\025\n\020Req_PropsTorpe"
+  "do\020\373\007\022\027\n\022Req_PropsAwardPool\020\374\007\022\024\n\017Req_Tr"
+  "identInfo\020\375\007\022\023\n\016Req_TridentBet\020\376\007\022\027\n\022Req"
+  "_BigSmallChoose\020\377\007\022\024\n\017Req_BigSmallBet\020\200\010"
+  "\022\025\n\020Req_ShootTorpedo\020\201\010\022\020\n\013Req_VipInfo\020\202"
+  "\010\022\026\n\021Req_PurchaseCheck\020\203\010\022\020\n\013Req_ComTask"
+  "\020\204\010\022\021\n\014Req_TaskInfo\020\205\010\022\030\n\023Req_UserScoreR"
+  "ecord\020\206\010\022\024\n\017Req_FreeTimeEnd\020\207\010\022\026\n\021Req_Sy"
+  "ncFreeTimes\020\210\010\022\027\n\022Req_ClickStatistic\020\211\010\022"
+  "\025\n\020Req_ActivityInfo\020\212\010\022\027\n\022Req_PropDropNo"
+  "tify\020\213\010\022\026\n\021Req_PropEndNotify\020\214\010\022\022\n\rReq_U"
+  "sersProp\020\215\010\022\033\n\026Req_ScratchNewYearCard\020\216\010"
+  "\022\027\n\022Req_BuyNewYearCard\020\217\010\022\034\n\027Req_NewYear"
+  "CardExchange\020\220\010\022\037\n\032Req_NewYearCardAwardR"
+  "ecord\020\221\010\022\026\n\021Req_SaveSkillTime\020\222\010\022\032\n\025Req_"
+  "SuperTridentShoot\020\223\010\022\033\n\026Req_SuperTrident"
+  "Attack\020\224\010\022\024\n\017Req_MatchResult\020\225\010\022\032\n\025Req_M"
+  "atchPackAddition\020\226\010\022\031\n\024Req_MatchPackInva"
+  "lid\020\227\010\022\030\n\023Req_AwardPoolRecord\020\230\010\022\025\n\020Req_"
+  "FortuneShoot\020\231\010\022\024\n\017Req_SyncFortune\020\232\010\022\025\n"
+  "\020Req_UserPoolInfo\020\233\010\022\027\n\022Req_UserPoolStat"
+  "us\020\234\010\022\030\n\023Req_UserPoolPreDraw\020\235\010\022\025\n\020Req_U"
+  "serPoolDraw\020\236\010\022\024\n\017Req_UserPoolAdd\020\237\010\022\026\n\021"
+  "Req_LuckyDrawInfo\020\240\010\022\032\n\025Req_GetLuckyTask"
+  "Award\020\241\010\022\024\n\017Req_LuckyRedDot\020\242\010\022\024\n\017Req_Ge"
+  "tLuckyNum\020\243\010\022\024\n\017Req_LuckyRecord\020\244\010\022\022\n\rRe"
+  "q_OwnRecord\020\245\010\022\024\n\017Req_DragonWheel\020\246\010\022\025\n\020"
+  "Req_SyncHallProp\020\247\010\022\035\n\030Req_CheckDragonWh"
+  "eelProp\020\250\010\022\033\n\026Req_UserPoolDoubleInfo\020\314\010\022"
+  "\027\n\022Req_UserPoolDouble\020\315\010\022\026\n\021Req_LuckyPoo"
+  "lInfo\020\316\010\022\026\n\021Req_LuckyPoolDraw\020\317\010\022\030\n\023Req_"
+  "BigSmallWinInfo\020\340\010\022\032\n\025Req_TridentRankRes"
+  "ult\020\341\010\022\027\n\022Req_BigSmallRecord\020\342\010\022\031\n\024Req_R"
+  "ewardTaskRecord\020\352\010\022\026\n\021Req_RewardAddTask\020"
+  "\353\010\022\031\n\024Req_RewardChangeAuto\020\354\010\022\031\n\024Req_Rew"
+  "ardAddTaskRep\020\355\010\022\030\n\023Req_RewardRecordRep\020"
+  "\356\010\022\026\n\021Req_RewardAutoRep\020\357\010\022\026\n\021Req_Reward"
+  "FishGet\020\360\010\022\030\n\023Req_SendItemsSwitch\020\361\010\022\036\n\031"
+  "Req_DealSyncSeaCrabCreate\020\362\010\022\036\n\031Req_Deal"
+  "SyncCrabHitStatus\020\363\010\022\026\n\021DealDragonBallEn"
+  "d\020\364\010\022\022\n\rReq_DevourHit\020\365\010\022\032\n\025Req_UpdateCh"
+  "estStatus\020\371\010\022\024\n\017Req_ChestConfig\020\372\010\022\022\n\rRe"
+  "q_OpenChest\020\373\010\022\032\n\025Req_SelectChestReward\020"
+  "\374\010\022\033\n\026Req_ChestSetAutoSelect\020\375\010\022\027\n\022Req_C"
+  "hestSetEnable\020\376\010\022\026\n\021Req_SyncAnimation\020\377\010"
+  "\022\026\n\021Req_MagicCardList\020\200\t\022\017\n\nReq_BuyGun\020\201"
+  "\t\022\020\n\013Req_GunInfo\020\202\t\022\021\n\014Req_BuyWings\020\203\t\022\022"
+  "\n\rReq_WingsInfo\020\204\t\022\026\n\021Req_GemConfigList\020"
+  "\205\t\022\026\n\021Req_JadeAwardInfo\020\206\t\022\027\n\022Req_AztecG"
+  "emConfig\020\207\t\022\021\n\014Req_SetWings\020\273\t\022\030\n\023Req_To"
+  "rtoiseExplode\020\260\t\022\026\n\021Req_WaterDropInfo\020\272\t"
+  "\022\021\n\014Req_BeKicked\020\304\t\022\033\n\026Req_ClientTimeVal"
+  "idate\020\305\t\022\024\n\017Req_ChangeTable\020\306\t\022\025\n\017Req_Aw"
+  "ardNotify\020\241\234\001*\240\006\n\007ErrCode\022\013\n\007Success\020\000\022\030"
+  "\n\023LoadPropsDataFailed\020\221N\022\032\n\025CanNotFindPl"
+  "ayerPoint\020\222N\022\025\n\020ParameterIsWrong\020\223N\022\020\n\013L"
+  "ackOfMoney\020\224N\022\031\n\024FreeTimesChangeRatio\020\225N"
+  "\022\r\n\010IsNotSup\020\226N\022\026\n\021DeserializeFailed\020\227N\022"
+  "\023\n\016PlayerNotExist\020\230N\022\027\n\022PlayerAlreadyLog"
+  "in\020\231N\022\031\n\024LoadPlayerDataFailed\020\232N\022\025\n\020Allo"
+  "cTableFailed\020\233N\022\021\n\014DefendPlugIn\020\234N\022\026\n\021QP"
+  "EnterRoomFailed\020\235N\022\034\n\027QPBaseUserInfoGetF"
+  "ailed\020\236N\022\025\n\020QPReadGoldFailed\020\237N\022\026\n\021LackM"
+  "oneyInServer\020\240N\022\027\n\022AlreadyInOtherGame\020\241N"
+  "\022\023\n\016ThisRoomIsFull\020\242N\022\023\n\016UserPoolNoMeet\020"
+  "\243N\022\025\n\020UserPoolToHigher\020\244N\022\024\n\017ThisTableIs"
+  "Full\020\245N\022\021\n\014ServerClosed\020\246N\022\025\n\020PlayerNotI"
+  "nTable\020\247N\022\021\n\014PropNoEnough\020\256N\022\022\n\rPropRoom"
+  "Limit\020\257N\022\016\n\tPropUsing\020\260N\022\021\n\014PropNotExist"
+  "\020\261N\022\024\n\017PropUsingSetGun\020\262N\022\031\n\024ReqAddTaskS"
+  "ettlement\020\270N\022\030\n\023ReqAddTaskMoneyLess\020\271N\022\026"
+  "\n\021ReqAddTaskAlready\020\272N\022\030\n\023ReqAddTaskIDIn"
+  "valid\020\273N\022\022\n\rOpenChestFail\020\302N\022\032\n\025SelectCh"
+  "estRewardFail\020\303N* \n\010ItemName\022\024\n\020RewardTa"
+  "skEnable\020\000*\263\002\n\014AztecGemType\022\025\n\021AztecGemT"
+  "ype_Null\020\000\022\027\n\023AztecGemType_Orange\020\001\022\024\n\020A"
+  "ztecGemType_Red\020\002\022\025\n\021AztecGemType_Pink\020\003"
+  "\022\027\n\023AztecGemType_Purple\020\004\022\025\n\021AztecGemTyp"
+  "e_Blue\020\005\022\026\n\022AztecGemType_Green\020\006\022\022\n\016Azte"
+  "cGemType_A\020\007\022\022\n\016AztecGemType_K\020\010\022\022\n\016Azte"
+  "cGemType_Q\020\t\022\022\n\016AztecGemType_J\020\n\022\023\n\017Azte"
+  "cGemType_10\020\013\022\031\n\025AztecGemType_Critical\020\014"
+  "*`\n\tChestType\022\026\n\022ChestTypePorcelain\020\000\022\023\n"
+  "\017ChestTypeBronze\020\001\022\023\n\017ChestTypeSilver\020\002\022"
+  "\021\n\rChestTypeGold\020\003*A\n\025ChestAutoSelectOpt"
+  "ion\022\010\n\004None\020\000\022\023\n\017RedPacketTicket\020\001\022\t\n\005Mo"
+  "ney\020\002*f\n\016BeKickedReason\022\014\n\010NoReason\020\000\022\022\n"
+  "\016ServerIsClosed\020\001\022\017\n\013HallCommand\020\002\022\026\n\022No"
+  "OperationTimeout\020\003\022\t\n\005Cheat\020\004b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_BYDLD_2eproto_deps[1] = {
 };
@@ -8231,7 +8232,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_BYD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_BYDLD_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_BYDLD_2eproto = {
-  false, false, descriptor_table_protodef_BYDLD_2eproto, "BYDLD.proto", 25422,
+  false, false, descriptor_table_protodef_BYDLD_2eproto, "BYDLD.proto", 25437,
   &descriptor_table_BYDLD_2eproto_once, descriptor_table_BYDLD_2eproto_sccs, descriptor_table_BYDLD_2eproto_deps, 264, 0,
   schemas, file_default_instances, TableStruct_BYDLD_2eproto::offsets,
   file_level_metadata_BYDLD_2eproto, 264, file_level_enum_descriptors_BYDLD_2eproto, file_level_service_descriptors_BYDLD_2eproto,
@@ -66707,16 +66708,16 @@ SCSeaCrabCreate::SCSeaCrabCreate(const SCSeaCrabCreate& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&status_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(status_));
+    static_cast<size_t>(reinterpret_cast<char*>(&ratio_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(ratio_));
   // @@protoc_insertion_point(copy_constructor:BYDLD.SCSeaCrabCreate)
 }
 
 void SCSeaCrabCreate::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&status_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(status_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&ratio_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(ratio_));
 }
 
 SCSeaCrabCreate::~SCSeaCrabCreate() {
@@ -66751,8 +66752,8 @@ void SCSeaCrabCreate::Clear() {
   (void) cached_has_bits;
 
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&status_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(status_));
+      reinterpret_cast<char*>(&ratio_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(ratio_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -66774,6 +66775,13 @@ const char* SCSeaCrabCreate::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 ratio = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -66817,6 +66825,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_status(), target);
   }
 
+  // int32 ratio = 3;
+  if (this->ratio() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_ratio(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -66845,6 +66859,13 @@ size_t SCSeaCrabCreate::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_status());
+  }
+
+  // int32 ratio = 3;
+  if (this->ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ratio());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -66884,6 +66905,9 @@ void SCSeaCrabCreate::MergeFrom(const SCSeaCrabCreate& from) {
   if (from.status() != 0) {
     _internal_set_status(from._internal_status());
   }
+  if (from.ratio() != 0) {
+    _internal_set_ratio(from._internal_ratio());
+  }
 }
 
 void SCSeaCrabCreate::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -66908,8 +66932,8 @@ void SCSeaCrabCreate::InternalSwap(SCSeaCrabCreate* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SCSeaCrabCreate, status_)
-      + sizeof(SCSeaCrabCreate::status_)
+      PROTOBUF_FIELD_OFFSET(SCSeaCrabCreate, ratio_)
+      + sizeof(SCSeaCrabCreate::ratio_)
       - PROTOBUF_FIELD_OFFSET(SCSeaCrabCreate, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));

@@ -1815,6 +1815,7 @@ message SCSeaCrabCreate
 {
 	int32 chair_id = 1;
 	int32 status = 2;
+	int32 ratio = 3;
 }
 
 message CSSyncCrabStatus

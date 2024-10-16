@@ -39175,6 +39175,7 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
   enum : int {
     kChairIdFieldNumber = 1,
     kStatusFieldNumber = 2,
+    kRatioFieldNumber = 3,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -39194,6 +39195,15 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
   void _internal_set_status(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 ratio = 3;
+  void clear_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:BYDLD.SCSeaCrabCreate)
  private:
   class _Internal;
@@ -39203,6 +39213,7 @@ class SCSeaCrabCreate PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 status_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -65360,6 +65371,26 @@ inline void SCSeaCrabCreate::_internal_set_status(::PROTOBUF_NAMESPACE_ID::int32
 inline void SCSeaCrabCreate::set_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_status(value);
   // @@protoc_insertion_point(field_set:BYDLD.SCSeaCrabCreate.status)
+}
+
+// int32 ratio = 3;
+inline void SCSeaCrabCreate::clear_ratio() {
+  ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSeaCrabCreate::_internal_ratio() const {
+  return ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSeaCrabCreate::ratio() const {
+  // @@protoc_insertion_point(field_get:BYDLD.SCSeaCrabCreate.ratio)
+  return _internal_ratio();
+}
+inline void SCSeaCrabCreate::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ratio_ = value;
+}
+inline void SCSeaCrabCreate::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ratio(value);
+  // @@protoc_insertion_point(field_set:BYDLD.SCSeaCrabCreate.ratio)
 }
 
 // -------------------------------------------------------------------
