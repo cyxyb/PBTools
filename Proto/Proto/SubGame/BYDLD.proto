@@ -815,6 +815,8 @@ message FishTraces
 	int32 frozen_time = 15;
 	int32 fish_gender = 16;
 	repeated FishTraces small_fish_list = 17;
+	float syncX = 18;
+	float syncY = 19;
 }
 
 message CSSyncFishReq

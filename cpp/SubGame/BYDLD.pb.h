@@ -15092,6 +15092,8 @@ class FishTraces PROTOBUF_FINAL :
     kLifespanFieldNumber = 14,
     kFrozenTimeFieldNumber = 15,
     kFishGenderFieldNumber = 16,
+    kSyncXFieldNumber = 18,
+    kSyncYFieldNumber = 19,
   };
   // repeated .BYDLD.FishTrace fish_trace = 6;
   int fish_trace_size() const;
@@ -15264,6 +15266,24 @@ class FishTraces PROTOBUF_FINAL :
   void _internal_set_fish_gender(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // float syncX = 18;
+  void clear_syncx();
+  float syncx() const;
+  void set_syncx(float value);
+  private:
+  float _internal_syncx() const;
+  void _internal_set_syncx(float value);
+  public:
+
+  // float syncY = 19;
+  void clear_syncy();
+  float syncy() const;
+  void set_syncy(float value);
+  private:
+  float _internal_syncy() const;
+  void _internal_set_syncy(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:BYDLD.FishTraces)
  private:
   class _Internal;
@@ -15288,6 +15308,8 @@ class FishTraces PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 lifespan_;
   ::PROTOBUF_NAMESPACE_ID::int32 frozen_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_gender_;
+  float syncx_;
+  float syncy_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_BYDLD_2eproto;
 };
@@ -53053,6 +53075,46 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BYDLD::FishTraces >&
 FishTraces::small_fish_list() const {
   // @@protoc_insertion_point(field_list:BYDLD.FishTraces.small_fish_list)
   return small_fish_list_;
+}
+
+// float syncX = 18;
+inline void FishTraces::clear_syncx() {
+  syncx_ = 0;
+}
+inline float FishTraces::_internal_syncx() const {
+  return syncx_;
+}
+inline float FishTraces::syncx() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.syncX)
+  return _internal_syncx();
+}
+inline void FishTraces::_internal_set_syncx(float value) {
+  
+  syncx_ = value;
+}
+inline void FishTraces::set_syncx(float value) {
+  _internal_set_syncx(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.syncX)
+}
+
+// float syncY = 19;
+inline void FishTraces::clear_syncy() {
+  syncy_ = 0;
+}
+inline float FishTraces::_internal_syncy() const {
+  return syncy_;
+}
+inline float FishTraces::syncy() const {
+  // @@protoc_insertion_point(field_get:BYDLD.FishTraces.syncY)
+  return _internal_syncy();
+}
+inline void FishTraces::_internal_set_syncy(float value) {
+  
+  syncy_ = value;
+}
+inline void FishTraces::set_syncy(float value) {
+  _internal_set_syncy(value);
+  // @@protoc_insertion_point(field_set:BYDLD.FishTraces.syncY)
 }
 
 // -------------------------------------------------------------------
