@@ -353,6 +353,7 @@ message CSSetProbability
 	int32 gun_ratio = 1;
 	int32 gun_level = 2;
 	bool is_use_auto = 3;
+	int32 chair_id = 4;
 }
 
 message SCSetProbability
