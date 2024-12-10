@@ -126,6 +126,8 @@ enum EMsgIDSubGame
 	FreePoolOpen			= 21003;
 	ErrorSubScore			= 1233;
 	OpenDouble				= 1234;
+	RobotList				= 1235;
+	RobotCome				= 1236;
 }
 enum ErrCode
 {
@@ -208,6 +210,11 @@ enum ChestAutoSelectOption
     ChestAutoSelectOptionNone       = 0;
     RedPacketTicket                 = 1;
     Money                           = 2;
+}
+
+message SCRobotList
+{
+	repeated bool is_robot	= 1;
 }
 
 message SC_SceneInfo
