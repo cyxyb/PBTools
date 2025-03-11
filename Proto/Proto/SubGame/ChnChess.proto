@@ -1,0 +1,109 @@
+syntax = "proto3";
+
+package ChnChess;
+
+enum EMsgIDSubGame
+{
+	CMD_Chess_SUB_C_REGRET_REQ = 0; 		//悔棋(MsgCommonEmpty)
+	CMD_Chess_SUB_C_REGRET_ANSWER = 1; 		//悔棋应答(MsgCommonBool)
+	CMD_Chess_SUB_C_GIVEUP_REQ = 2;			//认输请求(MsgCommonEmpty)
+	CMD_Chess_SUB_C_PEACE_REQ = 3;  		//和棋请求(MsgCommonEmpty)
+	CMD_Chess_SUB_C_PEACE_ANSWER = 4;  		//和棋应答(MsgCommonBool)
+	CMD_Chess_SUB_C_MOVE_CHESS = 5;			//移动棋子(CMD_Chess_MOVE_CHESS)
+	CMD_Chess_SUB_C_KICK_PLAYER = 6;		//房主踢人(MsgCommonN32)
+	CMD_Chess_SUB_C_SET_RULE = 7;			//玩家设置规则(MsgCommonN64)
+	CMD_Chess_SUB_C_MAKE_RULE = 8;			//玩家确定下注(MsgCommonN64)
+	CMD_Chess_SUB_C_NOTIFY_READY = 9;		//玩家选择准备(MsgCommonEmpty)
+	CMD_Chess_SUB_C_NOTIFY_START = 10;		//玩家选择开始(MsgCommonEmpty)
+	CMD_Chess_SUB_C_CONTINUE = 11;			//玩家选择继续(MsgCommonEmpty)
+	CMD_Chess_SUB_S_GAME_START = 12;		//游戏开始(MsgCommonEmpty)
+	CMD_Chess_SUB_S_MOVE_CHESS = 13;		//移动棋子(CMD_Chess_MOVE_CHESS)
+	CMD_Chess_SUB_S_REGRET_REQ = 14;		//悔棋请求(MsgCommonN32)
+	CMD_Chess_SUB_S_REGRET_FAILE = 15;		//悔棋失败(MsgCommonN32)
+	CMD_Chess_SUB_S_REGRET_RESULT = 16;		//悔棋结果(RegretResult)
+	CMD_Chess_SUB_S_PEACE_REQ = 17;			//和棋请求(CMD_Common)
+	CMD_Chess_SUB_S_PEACE_ANSWER = 18;		//悔棋失败(MsgCommonEmpty)
+	CMD_Chess_SUB_S_GAME_END = 19;			//游戏结束(GameEnd)
+	CMD_Chess_SUB_S_CHESS_MANUAL = 20;		//棋谱信息(Chess_Manual)
+	CMD_Chess_SUB_S_REQ_SET_RULE = 21;		//请求设置
+	CMD_Chess_SUB_S_REQ_AGREE_RULE = 22;	//请求同意
+	CMD_Chess_SUB_S_KICK_PLAYER = 23;		//房主踢人(MsgCommonEmpty)
+	CMD_Chess_SUB_S_NOTIFY_TIMER = 24;		//等待时间通知(Notify_Timer)
+	CMD_Chess_SUB_S_NOTIFY_ROOM_OWNER = 25;	//通知谁是房主(MsgCommonN32)
+	CMD_Chess_SUB_S_NOTIFY_SET_RULE = 26;	//通知玩家设置规则(CMD_Common)
+	CMD_Chess_SUB_S_SET_RULE = 27;			//玩家设置规则
+	CMD_Chess_SUB_S_MAKE_RULE = 28;			//玩家确定下注(CMD_Make_Rule)
+	CMD_Chess_SUB_S_NOTIFY_READY = 29;		//通知玩家选择准备(CMD_Common)
+	CMD_Chess_SUB_S_NOTIFY_START = 30;		//通知玩家选择开始(CMD_Common)
+	CMD_Chess_SUB_S_CONTINUE = 31;			//玩家选择继续(MsgCommonN32)
+}
+
+//场景消息
+message SC_SceneInfo
+{
+	int32 free_count =1;		// 免费次数
+	int32 curren_bet = 2;   	// 当前下注
+	repeated int32 bet = 3; 	// 下注配置
+	int32 rerun = 4;        	// 重转次数
+}
+
+//移动棋子
+message CMD_Chess_MOVE_CHESS
+{
+	int32	cbXSourcePos = 1;
+	int32	cbYSourcePos = 2;
+	int32	cbXTargetPos = 3;
+	int32	cbYTargetPos = 4;
+	int32 	wCurrentUser = 5;
+}	
+
+//悔棋结果
+message RegretResult
+{
+	int32	wRegretUser = 1;		//悔棋操作玩家
+	int32	wCurrentUser = 2;		//当前玩家
+	int32	cbRegretCount = 3;		//悔棋次数
+}	
+
+//通用请求和回复
+message CMD_Common
+{
+	int32	opIndex = 1;		//操作玩家
+	int32	waitTime = 2;		//操作时间
+}	
+
+//游戏结束
+message GameEnd
+{
+	int32	wWinUser = 1;		//赢家，和局为65535
+	repeated int64 lUserScore = 2;		//玩家金币
+}	
+
+message Chess_Manual_Item
+{
+	int32 cbXSourceChessPos = 1;
+	int32 cbYSourceChessPos = 2;
+	int32 cbXTargetChessPos = 3;
+	int32 cbYTargetChessPos = 4;
+	int32 cbUniteChess = 5;
+	int32 cbSourceColor = 6;
+}
+
+//棋谱信息，操作历史记录
+message Chess_Manual
+{
+	repeated Chess_Manual_Item items = 1;
+}
+
+
+message Notify_Timer
+{
+	int32 waitTime = 1;			//等待时间
+	int32 roomType = 2;			//阶段,2:等待玩家加入,4:设置金额中,6:准备中,8:准备开始,9:时间到,10:结算中,11:求和中,12:悔棋中
+}
+
+message CMD_Make_Rule
+{
+	int32 errorID = 1;			//确认状态码，0成功，1设置金额小于最小下注，2设置金额大于最大下注，3红方金币不足，4黑方金币不足
+	int64 score = 2;			//下注金币
+}
