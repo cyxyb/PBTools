@@ -38,13 +38,45 @@ enum EMsgIDSubGame
 	CMD_Chess_SUB_S_CONTINUE = 31;			//玩家选择继续(MsgCommonN32)
 }
 
+message Scene_ChessItem
+{
+	int32 cbXPos = 1; //255被吃
+	int32 cbYPos = 2;
+	int32 cbChess = 3;
+	int32 cbColor = 4;
+}
+
+message Scene_Chess
+{
+	repeated Scene_ChessItem items = 1;
+}
+
+message Scene_GameRuleInfo
+{
+	int32 lBetMin = 1;
+	int32 lBetMax = 2;
+	repeated int32 szChip = 3;
+	int32 dwBet = 4;
+	int32 wRuleLimitTime = 5;
+	int32 wRuleStepTime = 6;
+}
+
+message Scene_Detail
+{
+	int32 wCurrentUser = 1;
+	repeated int32 wChessStepCount = 2;
+	Scene_GameRuleInfo GameRuleInfo = 3;
+	repeated int32 cbPeaceCount = 4;
+	repeated int32 cbRegretCount = 5;
+	Scene_Chess ChessItemArray = 6;
+}
+
 //场景消息
 message SC_SceneInfo
 {
-	int32 free_count =1;		// 免费次数
-	int32 curren_bet = 2;   	// 当前下注
-	repeated int32 bet = 3; 	// 下注配置
-	int32 rerun = 4;        	// 重转次数
+	int32 status = 1;		// 免费次数
+	Scene_Detail free = 2;   	// 当前下注
+	Scene_Detail play = 3;   	// 当前下注
 }
 
 //移动棋子
