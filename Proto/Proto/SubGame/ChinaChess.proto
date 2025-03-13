@@ -36,6 +36,126 @@ enum EMsgIDSubGame
 	CMD_Chess_SUB_S_NOTIFY_READY = 29;		//通知玩家选择准备(CMD_Common)
 	CMD_Chess_SUB_S_NOTIFY_START = 30;		//通知玩家选择开始(CMD_Common)
 	CMD_Chess_SUB_S_CONTINUE = 31;			//玩家选择继续(MsgCommonN32)
+    CMD_ChatOrFaceReq       = 32;
+    CMD_ChatOrFaceRsp       = 33;
+    CMD_RoomSetReq       = 34;				//房间设置(RoomSetReq)
+    CMD_RoomSetRsp       = 35;					//房间设置返回(MsgCommonN32)
+}
+
+message CommonRsp
+{
+	int32 code = 1;
+	string content = 2;
+	int32 applyUserID = 3;
+	int32 handleTime = 4;
+}
+
+message LoginReq
+{
+	int32 UserDBID = 1;
+	string Token = 2;
+}
+
+message LoginRsp
+{
+	int32 UserDBID = 1;
+	int32 tableID = 2;
+	int32 chairID = 3;
+	int32 code = 4;
+	string content = 5;
+}
+
+message LogoutReq
+{
+	int32 UserDBID = 1;
+}
+
+message LogoutRsp
+{
+	int32 code = 1;
+	string content = 2;
+}
+
+message ExitRsp
+{
+	int32 code = 1;
+	string content = 2;
+	int32 userID = 3;
+}
+
+message SitDownRsp
+{
+	int32 code = 1;
+	int32 user_dbid = 2;
+	int32 chair = 3;
+}
+
+message CustomLoginReq
+{
+	int32 UserDBID = 1;
+	int32 sn = 2;
+	int32 rule = 3;
+	string Token = 4;
+}
+
+message CustomLoginRsp
+{
+	int32 UserDBID = 1;
+	int32 tableID = 2;
+	int32 chairID = 3;
+	int32 code = 4;
+	string content = 5;
+	int32 sn = 6;
+	string password = 7;
+	int32 RoomId = 8;
+}
+
+message PlayerResult
+{
+	int32 pid = 1;
+	int32 chairId = 2;
+	int64 score = 3;
+	repeated int32 winState = 4;
+	int64 money = 5;
+}
+
+message ResultPush
+{
+	repeated PlayerResult players = 1;
+	int32 winnerID = 2;
+}
+
+message ConfigPush
+{
+	bool isOpenTakeIn = 1;
+	int32 taiFee = 2;
+	bool SettlePay = 3;
+	int32 SettlePayFactor = 4;
+	int32 RoundTime = 5;
+	int32 StepTime = 6;
+	int32 StepTime2 = 7;
+	int32 DingTime = 8;
+	int64 BaseScore = 9;
+}
+
+message Scene_GameRuleInfo
+{
+	int32 lBetMin = 1;
+	int32 lBetMax = 2;
+	repeated int32 szChip = 3;
+	int32 dwBet = 4;
+	int32 wRuleLimitTime = 5;
+	int32 wRuleStepTime = 6;
+}
+
+message ChessMap
+{
+	int32 wCurrentUser = 1;
+	repeated int32 wChessStepCount = 2;
+	Scene_GameRuleInfo GameRuleInfo = 3;
+	repeated int32 cbPeaceCount = 4;
+	repeated int32 cbRegretCount = 5;
+	repeated Scene_Chess ChessItemArray = 6;
 }
 
 message Scene_ChessItem
@@ -51,68 +171,193 @@ message Scene_Chess
 	repeated Scene_ChessItem items = 1;
 }
 
-message Scene_GameRuleInfo
-{
-	int32 lBetMin = 1;
-	int32 lBetMax = 2;
-	repeated int32 szChip = 3;
-	int32 dwBet = 4;
-	int32 wRuleLimitTime = 5;
-	int32 wRuleStepTime = 6;
-}
-
-message Scene_Detail
-{
-	int32 wCurrentUser = 1;
-	repeated int32 wChessStepCount = 2;
-	Scene_GameRuleInfo GameRuleInfo = 3;
-	repeated int32 cbPeaceCount = 4;
-	repeated int32 cbRegretCount = 5;
-	Scene_Chess ChessItemArray = 6;
-}
-
-//场景消息
-message SC_SceneInfo
+message SceneRsp
 {
 	int32 status = 1;		// 免费次数
-	Scene_Detail free = 2;   	// 当前下注
-	Scene_Detail play = 3;   	// 当前下注
+	ChessMap free = 2;   	// 普通模式
+	ChessMap play = 3;   	// 残局
+	int32 campSide = 4;		//红1，黑2
+}
+//房间设置，放到场景消息请求前
+message RoomSetReq
+{
+	int32 mode = 1;
+	int32 campSide = 2;//红1，黑2
 }
 
-//移动棋子
-message CMD_Chess_MOVE_CHESS
+message EmojiReq
+{
+	int32 sender = 1;
+	int32 sendee = 2;
+	int32 ieID = 3;
+}
+
+message EmojiRsp
+{
+	int32 sender = 1;
+	int32 sendee = 2;
+	int32 ieID = 3;
+	int32 ret = 4;
+}
+
+message ExtendCoin
+{
+	int32 id = 1;
+	int64 amount = 2;
+}
+
+message UserInfoPush
+{
+	int32 table_id = 1;
+	int32 index = 2;
+	int32 user_dbid = 3;
+	GameScore Score = 4;
+	int32 chair_id = 5;
+	int32 face_id = 6;
+	int32 status = 7;
+	int32 vip_left_days = 8;
+	int32 user_name_len = 9;
+	string user_name = 10;
+	string partner = 11;
+	string ip = 12;
+	string location = 13;
+}
+
+message GameScore
+{
+	int64 score = 1;
+	int64 money = 2;
+	int32 tax = 3;
+	repeated int32 result = 4;
+	int32 ticket = 5;
+	repeated ExtendCoin extendCoin = 6;
+}
+
+message ReadyAgainReq
+{
+	int32 user_dbid = 1;
+}
+
+message ReadyAgainRsp
+{
+	int32 status = 1;
+	string errMsg = 2;
+}
+
+message EmojiInfo
+{
+	int32 id = 1;
+	int32 price = 2;
+}
+
+message EmojiConfigPush
+{
+	repeated EmojiInfo emojiList = 1;
+}
+
+message ChatOrFaceReq
+{
+	int32 user_dbid = 1;
+	int32 opType = 2;
+	int32 faceID = 3;
+}
+
+message ChatOrFaceRsp
+{
+	int32 user_dbid = 1;
+	int32 opType = 2;
+	int32 faceID = 3;
+}
+
+message OpRsp
+{
+	int32	opIndex = 1;		//操作玩家
+	int32	waitTime = 2;		//操作时间
+}
+
+//悔棋结果
+message RegretRsp
+{
+	int32	wRegretUser = 1;		//悔棋操作玩家
+	int32	wCurrentUser = 2;		//当前玩家
+	int32	cbRegretCount = 3;		//悔棋次数
+}
+
+message AgreeReq
+{
+	int32 userID = 1;	
+	int32 kind = 2;
+	bool agree = 3;	
+}
+
+message AgreeRsp
+{
+	int32 code = 1;
+	string content = 2;
+	int32 applyUserID = 3;	
+	int32 handleUserID = 4;	
+	int32 kind = 5;
+	bool agree = 6;
+	int32 leftTime = 7;
+	int32 start_x0 = 8;
+	int32 start_y0 = 9;
+	int32 end_x0 = 10;
+	int32 end_y0 = 11;
+	int32 start_x = 12;
+	int32 start_y = 13;
+	int32 end_x = 14;
+	int32 end_y = 15;
+	int32 kill = 16;
+	repeated TimerPush timer = 17;
+}
+
+message CounterPush
+{
+	bool canAdmit = 1;
+	bool canRegret = 2;
+	int32 regretLeftCount = 3;	
+	bool canDraw = 4;	
+	int32 drawLeftCount = 5;
+}
+
+message MoveReq
+{
+	int32	cbXSourcePos = 1;
+	int32	cbYSourcePos = 2;
+	int32	cbXTargetPos = 3;
+	int32	cbYTargetPos = 4;
+}
+
+message MoveRsp
 {
 	int32	cbXSourcePos = 1;
 	int32	cbYSourcePos = 2;
 	int32	cbXTargetPos = 3;
 	int32	cbYTargetPos = 4;
 	int32 	wCurrentUser = 5;
-}	
+}
 
-//悔棋结果
-message RegretResult
+message TimerPush
 {
-	int32	wRegretUser = 1;		//悔棋操作玩家
-	int32	wCurrentUser = 2;		//当前玩家
-	int32	cbRegretCount = 3;		//悔棋次数
-}	
+	int32 chair = 1;
+	int32 roundLeftTime = 2;
+	int32 stepLeftTime = 3;	
+	int32 stepTime = 4;	
+}
 
-//通用请求和回复
-message CMD_Common
-{
-	int32	opIndex = 1;		//操作玩家
-	int32	waitTime = 2;		//操作时间
-}	
-
-//游戏结束
-message GameEnd
+message GameResult
 {
 	int32	wWinUser = 1;		//赢家，和局为65535
 	repeated int64 lUserScore = 2;		//玩家金币
-}	
+}
+
+message	Chess_Manual
+{
+	repeated Chess_Manual_Item items = 1;	
+}
 
 message Chess_Manual_Item
-{
+{	
 	int32 cbXSourceChessPos = 1;
 	int32 cbYSourceChessPos = 2;
 	int32 cbXTargetChessPos = 3;
@@ -121,20 +366,14 @@ message Chess_Manual_Item
 	int32 cbSourceColor = 6;
 }
 
-//棋谱信息，操作历史记录
-message Chess_Manual
-{
-	repeated Chess_Manual_Item items = 1;
-}
-
-
-message Notify_Timer
+message NotifyRsp
 {
 	int32 waitTime = 1;			//等待时间
 	int32 roomType = 2;			//阶段,2:等待玩家加入,4:设置金额中,6:准备中,8:准备开始,9:时间到,10:结算中,11:求和中,12:悔棋中
+	int32 index = 3;			//椅子号
 }
 
-message CMD_Make_Rule
+message MakeRuleRsp
 {
 	int32 errorID = 1;			//确认状态码，0成功，1设置金额小于最小下注，2设置金额大于最大下注，3红方金币不足，4黑方金币不足
 	int64 score = 2;			//下注金币
