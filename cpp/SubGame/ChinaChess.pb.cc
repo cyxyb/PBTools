@@ -14,12 +14,15 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ChessMap_ChinaChess_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CounterPush_ChinaChess_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ChessMap_ChinaChess_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Chess_Manual_Item_ChinaChess_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EmojiInfo_ChinaChess_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ExtendCoin_ChinaChess_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameScore_ChinaChess_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PlayerResult_ChinaChess_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Scene_Chess_ChinaChess_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Scene_ChessItem_ChinaChess_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Scene_GameRuleInfo_ChinaChess_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ChinaChess_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TimerPush_ChinaChess_2eproto;
 namespace ChinaChess {
 class CommonRspDefaultTypeInternal {
@@ -42,6 +45,14 @@ class LogoutRspDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LogoutRsp> _instance;
 } _LogoutRsp_default_instance_;
+class ExitRspDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ExitRsp> _instance;
+} _ExitRsp_default_instance_;
+class SitDownRspDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SitDownRsp> _instance;
+} _SitDownRsp_default_instance_;
 class CustomLoginReqDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CustomLoginReq> _instance;
@@ -62,14 +73,30 @@ class ConfigPushDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ConfigPush> _instance;
 } _ConfigPush_default_instance_;
+class Scene_GameRuleInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Scene_GameRuleInfo> _instance;
+} _Scene_GameRuleInfo_default_instance_;
 class ChessMapDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ChessMap> _instance;
 } _ChessMap_default_instance_;
+class Scene_ChessItemDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Scene_ChessItem> _instance;
+} _Scene_ChessItem_default_instance_;
+class Scene_ChessDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Scene_Chess> _instance;
+} _Scene_Chess_default_instance_;
 class SceneRspDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SceneRsp> _instance;
 } _SceneRsp_default_instance_;
+class RoomSetReqDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RoomSetReq> _instance;
+} _RoomSetReq_default_instance_;
 class EmojiReqDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<EmojiReq> _instance;
@@ -114,26 +141,14 @@ class ChatOrFaceRspDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ChatOrFaceRsp> _instance;
 } _ChatOrFaceRsp_default_instance_;
-class AdmitReqDefaultTypeInternal {
+class OpRspDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AdmitReq> _instance;
-} _AdmitReq_default_instance_;
-class AdmitRspDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AdmitRsp> _instance;
-} _AdmitRsp_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OpRsp> _instance;
+} _OpRsp_default_instance_;
 class RegretRspDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RegretRsp> _instance;
 } _RegretRsp_default_instance_;
-class DrawReqDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<DrawReq> _instance;
-} _DrawReq_default_instance_;
-class DrawRspDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<DrawRsp> _instance;
-} _DrawRsp_default_instance_;
 class AgreeReqDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AgreeReq> _instance;
@@ -158,33 +173,27 @@ class TimerPushDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TimerPush> _instance;
 } _TimerPush_default_instance_;
+class GameResultDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameResult> _instance;
+} _GameResult_default_instance_;
+class Chess_ManualDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Chess_Manual> _instance;
+} _Chess_Manual_default_instance_;
+class Chess_Manual_ItemDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Chess_Manual_Item> _instance;
+} _Chess_Manual_Item_default_instance_;
+class NotifyRspDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<NotifyRsp> _instance;
+} _NotifyRsp_default_instance_;
+class MakeRuleRspDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MakeRuleRsp> _instance;
+} _MakeRuleRsp_default_instance_;
 }  // namespace ChinaChess
-static void InitDefaultsscc_info_AdmitReq_ChinaChess_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::ChinaChess::_AdmitReq_default_instance_;
-    new (ptr) ::ChinaChess::AdmitReq();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AdmitReq_ChinaChess_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AdmitReq_ChinaChess_2eproto}, {}};
-
-static void InitDefaultsscc_info_AdmitRsp_ChinaChess_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::ChinaChess::_AdmitRsp_default_instance_;
-    new (ptr) ::ChinaChess::AdmitRsp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AdmitRsp_ChinaChess_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AdmitRsp_ChinaChess_2eproto}, {}};
-
 static void InitDefaultsscc_info_AgreeReq_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -248,8 +257,37 @@ static void InitDefaultsscc_info_ChessMap_ChinaChess_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ChessMap_ChinaChess_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ChessMap_ChinaChess_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ChessMap_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ChessMap_ChinaChess_2eproto}, {
+      &scc_info_Scene_GameRuleInfo_ChinaChess_2eproto.base,
+      &scc_info_Scene_Chess_ChinaChess_2eproto.base,}};
+
+static void InitDefaultsscc_info_Chess_Manual_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_Chess_Manual_default_instance_;
+    new (ptr) ::ChinaChess::Chess_Manual();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Chess_Manual_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Chess_Manual_ChinaChess_2eproto}, {
+      &scc_info_Chess_Manual_Item_ChinaChess_2eproto.base,}};
+
+static void InitDefaultsscc_info_Chess_Manual_Item_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_Chess_Manual_Item_default_instance_;
+    new (ptr) ::ChinaChess::Chess_Manual_Item();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Chess_Manual_Item_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Chess_Manual_Item_ChinaChess_2eproto}, {}};
 
 static void InitDefaultsscc_info_CommonRsp_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -316,32 +354,6 @@ static void InitDefaultsscc_info_CustomLoginRsp_ChinaChess_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CustomLoginRsp_ChinaChess_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CustomLoginRsp_ChinaChess_2eproto}, {}};
 
-static void InitDefaultsscc_info_DrawReq_ChinaChess_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::ChinaChess::_DrawReq_default_instance_;
-    new (ptr) ::ChinaChess::DrawReq();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DrawReq_ChinaChess_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DrawReq_ChinaChess_2eproto}, {}};
-
-static void InitDefaultsscc_info_DrawRsp_ChinaChess_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::ChinaChess::_DrawRsp_default_instance_;
-    new (ptr) ::ChinaChess::DrawRsp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DrawRsp_ChinaChess_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DrawRsp_ChinaChess_2eproto}, {}};
-
 static void InitDefaultsscc_info_EmojiConfigPush_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -395,6 +407,19 @@ static void InitDefaultsscc_info_EmojiRsp_ChinaChess_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EmojiRsp_ChinaChess_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_EmojiRsp_ChinaChess_2eproto}, {}};
 
+static void InitDefaultsscc_info_ExitRsp_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_ExitRsp_default_instance_;
+    new (ptr) ::ChinaChess::ExitRsp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ExitRsp_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ExitRsp_ChinaChess_2eproto}, {}};
+
 static void InitDefaultsscc_info_ExtendCoin_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -407,6 +432,19 @@ static void InitDefaultsscc_info_ExtendCoin_ChinaChess_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ExtendCoin_ChinaChess_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ExtendCoin_ChinaChess_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameResult_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_GameResult_default_instance_;
+    new (ptr) ::ChinaChess::GameResult();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameResult_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameResult_ChinaChess_2eproto}, {}};
 
 static void InitDefaultsscc_info_GameScore_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -474,6 +512,19 @@ static void InitDefaultsscc_info_LogoutRsp_ChinaChess_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LogoutRsp_ChinaChess_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LogoutRsp_ChinaChess_2eproto}, {}};
 
+static void InitDefaultsscc_info_MakeRuleRsp_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_MakeRuleRsp_default_instance_;
+    new (ptr) ::ChinaChess::MakeRuleRsp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MakeRuleRsp_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MakeRuleRsp_ChinaChess_2eproto}, {}};
+
 static void InitDefaultsscc_info_MoveReq_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -499,6 +550,32 @@ static void InitDefaultsscc_info_MoveRsp_ChinaChess_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MoveRsp_ChinaChess_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MoveRsp_ChinaChess_2eproto}, {}};
+
+static void InitDefaultsscc_info_NotifyRsp_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_NotifyRsp_default_instance_;
+    new (ptr) ::ChinaChess::NotifyRsp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_NotifyRsp_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_NotifyRsp_ChinaChess_2eproto}, {}};
+
+static void InitDefaultsscc_info_OpRsp_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_OpRsp_default_instance_;
+    new (ptr) ::ChinaChess::OpRsp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OpRsp_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_OpRsp_ChinaChess_2eproto}, {}};
 
 static void InitDefaultsscc_info_PlayerResult_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -566,6 +643,19 @@ static void InitDefaultsscc_info_ResultPush_ChinaChess_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ResultPush_ChinaChess_2eproto}, {
       &scc_info_PlayerResult_ChinaChess_2eproto.base,}};
 
+static void InitDefaultsscc_info_RoomSetReq_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_RoomSetReq_default_instance_;
+    new (ptr) ::ChinaChess::RoomSetReq();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RoomSetReq_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RoomSetReq_ChinaChess_2eproto}, {}};
+
 static void InitDefaultsscc_info_SceneRsp_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -576,11 +666,62 @@ static void InitDefaultsscc_info_SceneRsp_ChinaChess_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_SceneRsp_ChinaChess_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_SceneRsp_ChinaChess_2eproto}, {
-      &scc_info_ChessMap_ChinaChess_2eproto.base,
-      &scc_info_CounterPush_ChinaChess_2eproto.base,
-      &scc_info_TimerPush_ChinaChess_2eproto.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_SceneRsp_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_SceneRsp_ChinaChess_2eproto}, {
+      &scc_info_ChessMap_ChinaChess_2eproto.base,}};
+
+static void InitDefaultsscc_info_Scene_Chess_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_Scene_Chess_default_instance_;
+    new (ptr) ::ChinaChess::Scene_Chess();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Scene_Chess_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Scene_Chess_ChinaChess_2eproto}, {
+      &scc_info_Scene_ChessItem_ChinaChess_2eproto.base,}};
+
+static void InitDefaultsscc_info_Scene_ChessItem_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_Scene_ChessItem_default_instance_;
+    new (ptr) ::ChinaChess::Scene_ChessItem();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Scene_ChessItem_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Scene_ChessItem_ChinaChess_2eproto}, {}};
+
+static void InitDefaultsscc_info_Scene_GameRuleInfo_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_Scene_GameRuleInfo_default_instance_;
+    new (ptr) ::ChinaChess::Scene_GameRuleInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Scene_GameRuleInfo_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Scene_GameRuleInfo_ChinaChess_2eproto}, {}};
+
+static void InitDefaultsscc_info_SitDownRsp_ChinaChess_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ChinaChess::_SitDownRsp_default_instance_;
+    new (ptr) ::ChinaChess::SitDownRsp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SitDownRsp_ChinaChess_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SitDownRsp_ChinaChess_2eproto}, {}};
 
 static void InitDefaultsscc_info_TimerPush_ChinaChess_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -609,7 +750,7 @@ static void InitDefaultsscc_info_UserInfoPush_ChinaChess_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_UserInfoPush_ChinaChess_2eproto}, {
       &scc_info_GameScore_ChinaChess_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ChinaChess_2eproto[34];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ChinaChess_2eproto[42];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_ChinaChess_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ChinaChess_2eproto = nullptr;
 
@@ -621,6 +762,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::CommonRsp, code_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::CommonRsp, content_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::CommonRsp, applyuserid_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::CommonRsp, handletime_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::LoginReq, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -651,6 +794,22 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::LogoutRsp, code_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::LogoutRsp, content_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ExitRsp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ExitRsp, code_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ExitRsp, content_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ExitRsp, userid_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SitDownRsp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SitDownRsp, code_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SitDownRsp, user_dbid_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SitDownRsp, chair_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::CustomLoginReq, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -705,28 +864,58 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::ChinaChess::ConfigPush, dingtime_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::ConfigPush, basescore_),
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, lbetmin_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, lbetmax_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, szchip_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, dwbet_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, wrulelimittime_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_GameRuleInfo, wrulesteptime_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, mapy_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, wcurrentuser_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, wchessstepcount_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, gameruleinfo_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, cbpeacecount_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, cbregretcount_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::ChessMap, chessitemarray_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_ChessItem, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_ChessItem, cbxpos_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_ChessItem, cbypos_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_ChessItem, cbchess_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_ChessItem, cbcolor_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_Chess, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Scene_Chess, items_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, stage_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, timeout_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, activechairid_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, map_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, counter_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, timer_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, isredside_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, start_x0_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, start_y0_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, end_x0_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, end_y0_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, isgamebegin_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, status_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, free_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, play_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::SceneRsp, campside_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::RoomSetReq, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::RoomSetReq, mode_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::RoomSetReq, campside_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::EmojiReq, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -823,19 +1012,12 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::ChinaChess::ChatOrFaceRsp, optype_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::ChatOrFaceRsp, faceid_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::AdmitReq, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::OpRsp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::AdmitReq, userid_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::AdmitRsp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::AdmitRsp, code_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::AdmitRsp, content_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::AdmitRsp, applyuserid_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::OpRsp, opindex_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::OpRsp, waittime_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::RegretRsp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -844,21 +1026,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::ChinaChess::RegretRsp, wregretuser_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::RegretRsp, wcurrentuser_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::RegretRsp, cbregretcount_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawReq, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawReq, userid_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawRsp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawRsp, code_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawRsp, content_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawRsp, applyuserid_),
-  PROTOBUF_FIELD_OFFSET(::ChinaChess::DrawRsp, handletime_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::AgreeReq, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -918,6 +1085,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::ChinaChess::MoveRsp, cbxtargetpos_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::MoveRsp, cbytargetpos_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::MoveRsp, wcurrentuser_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::MoveRsp, result_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::TimerPush, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -927,42 +1095,89 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::ChinaChess::TimerPush, roundlefttime_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::TimerPush, steplefttime_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::TimerPush, steptime_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::GameResult, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::GameResult, wwinuser_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::GameResult, luserscore_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual, items_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, cbxsourcechesspos_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, cbysourcechesspos_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, cbxtargetchesspos_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, cbytargetchesspos_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, cbunitechess_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual_Item, cbsourcecolor_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::NotifyRsp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::NotifyRsp, waittime_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::NotifyRsp, roomtype_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::NotifyRsp, index_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::MakeRuleRsp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::MakeRuleRsp, errorid_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::MakeRuleRsp, score_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::ChinaChess::CommonRsp)},
-  { 7, -1, sizeof(::ChinaChess::LoginReq)},
-  { 14, -1, sizeof(::ChinaChess::LoginRsp)},
-  { 24, -1, sizeof(::ChinaChess::LogoutReq)},
-  { 30, -1, sizeof(::ChinaChess::LogoutRsp)},
-  { 37, -1, sizeof(::ChinaChess::CustomLoginReq)},
-  { 46, -1, sizeof(::ChinaChess::CustomLoginRsp)},
-  { 59, -1, sizeof(::ChinaChess::PlayerResult)},
-  { 69, -1, sizeof(::ChinaChess::ResultPush)},
-  { 76, -1, sizeof(::ChinaChess::ConfigPush)},
-  { 90, -1, sizeof(::ChinaChess::ChessMap)},
-  { 96, -1, sizeof(::ChinaChess::SceneRsp)},
-  { 113, -1, sizeof(::ChinaChess::EmojiReq)},
-  { 121, -1, sizeof(::ChinaChess::EmojiRsp)},
-  { 130, -1, sizeof(::ChinaChess::ExtendCoin)},
-  { 137, -1, sizeof(::ChinaChess::UserInfoPush)},
-  { 155, -1, sizeof(::ChinaChess::GameScore)},
-  { 166, -1, sizeof(::ChinaChess::ReadyAgainReq)},
-  { 172, -1, sizeof(::ChinaChess::ReadyAgainRsp)},
-  { 179, -1, sizeof(::ChinaChess::EmojiInfo)},
-  { 186, -1, sizeof(::ChinaChess::EmojiConfigPush)},
-  { 192, -1, sizeof(::ChinaChess::ChatOrFaceReq)},
-  { 200, -1, sizeof(::ChinaChess::ChatOrFaceRsp)},
-  { 208, -1, sizeof(::ChinaChess::AdmitReq)},
-  { 214, -1, sizeof(::ChinaChess::AdmitRsp)},
-  { 222, -1, sizeof(::ChinaChess::RegretRsp)},
-  { 230, -1, sizeof(::ChinaChess::DrawReq)},
-  { 236, -1, sizeof(::ChinaChess::DrawRsp)},
-  { 245, -1, sizeof(::ChinaChess::AgreeReq)},
-  { 253, -1, sizeof(::ChinaChess::AgreeRsp)},
-  { 275, -1, sizeof(::ChinaChess::CounterPush)},
-  { 285, -1, sizeof(::ChinaChess::MoveReq)},
-  { 294, -1, sizeof(::ChinaChess::MoveRsp)},
-  { 304, -1, sizeof(::ChinaChess::TimerPush)},
+  { 9, -1, sizeof(::ChinaChess::LoginReq)},
+  { 16, -1, sizeof(::ChinaChess::LoginRsp)},
+  { 26, -1, sizeof(::ChinaChess::LogoutReq)},
+  { 32, -1, sizeof(::ChinaChess::LogoutRsp)},
+  { 39, -1, sizeof(::ChinaChess::ExitRsp)},
+  { 47, -1, sizeof(::ChinaChess::SitDownRsp)},
+  { 55, -1, sizeof(::ChinaChess::CustomLoginReq)},
+  { 64, -1, sizeof(::ChinaChess::CustomLoginRsp)},
+  { 77, -1, sizeof(::ChinaChess::PlayerResult)},
+  { 87, -1, sizeof(::ChinaChess::ResultPush)},
+  { 94, -1, sizeof(::ChinaChess::ConfigPush)},
+  { 108, -1, sizeof(::ChinaChess::Scene_GameRuleInfo)},
+  { 119, -1, sizeof(::ChinaChess::ChessMap)},
+  { 130, -1, sizeof(::ChinaChess::Scene_ChessItem)},
+  { 139, -1, sizeof(::ChinaChess::Scene_Chess)},
+  { 145, -1, sizeof(::ChinaChess::SceneRsp)},
+  { 154, -1, sizeof(::ChinaChess::RoomSetReq)},
+  { 161, -1, sizeof(::ChinaChess::EmojiReq)},
+  { 169, -1, sizeof(::ChinaChess::EmojiRsp)},
+  { 178, -1, sizeof(::ChinaChess::ExtendCoin)},
+  { 185, -1, sizeof(::ChinaChess::UserInfoPush)},
+  { 203, -1, sizeof(::ChinaChess::GameScore)},
+  { 214, -1, sizeof(::ChinaChess::ReadyAgainReq)},
+  { 220, -1, sizeof(::ChinaChess::ReadyAgainRsp)},
+  { 227, -1, sizeof(::ChinaChess::EmojiInfo)},
+  { 234, -1, sizeof(::ChinaChess::EmojiConfigPush)},
+  { 240, -1, sizeof(::ChinaChess::ChatOrFaceReq)},
+  { 248, -1, sizeof(::ChinaChess::ChatOrFaceRsp)},
+  { 256, -1, sizeof(::ChinaChess::OpRsp)},
+  { 263, -1, sizeof(::ChinaChess::RegretRsp)},
+  { 271, -1, sizeof(::ChinaChess::AgreeReq)},
+  { 279, -1, sizeof(::ChinaChess::AgreeRsp)},
+  { 301, -1, sizeof(::ChinaChess::CounterPush)},
+  { 311, -1, sizeof(::ChinaChess::MoveReq)},
+  { 320, -1, sizeof(::ChinaChess::MoveRsp)},
+  { 331, -1, sizeof(::ChinaChess::TimerPush)},
+  { 340, -1, sizeof(::ChinaChess::GameResult)},
+  { 347, -1, sizeof(::ChinaChess::Chess_Manual)},
+  { 353, -1, sizeof(::ChinaChess::Chess_Manual_Item)},
+  { 364, -1, sizeof(::ChinaChess::NotifyRsp)},
+  { 372, -1, sizeof(::ChinaChess::MakeRuleRsp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -971,13 +1186,19 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_LoginRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_LogoutReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_LogoutRsp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ExitRsp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_SitDownRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_CustomLoginReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_CustomLoginRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_PlayerResult_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ResultPush_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ConfigPush_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_Scene_GameRuleInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ChessMap_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_Scene_ChessItem_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_Scene_Chess_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_SceneRsp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_RoomSetReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_EmojiReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_EmojiRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ExtendCoin_default_instance_),
@@ -989,172 +1210,203 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_EmojiConfigPush_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ChatOrFaceReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_ChatOrFaceRsp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_AdmitReq_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_AdmitRsp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_OpRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_RegretRsp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_DrawReq_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_DrawRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_AgreeReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_AgreeRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_CounterPush_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_MoveReq_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_MoveRsp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_TimerPush_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_GameResult_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_Chess_Manual_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_Chess_Manual_Item_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_NotifyRsp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::ChinaChess::_MakeRuleRsp_default_instance_),
 };
 
 const char descriptor_table_protodef_ChinaChess_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\020ChinaChess.proto\022\nChinaChess\"*\n\tCommon"
-  "Rsp\022\014\n\004code\030\001 \001(\005\022\017\n\007content\030\002 \001(\t\"+\n\010Lo"
-  "ginReq\022\020\n\010UserDBID\030\001 \001(\005\022\r\n\005Token\030\002 \001(\t\""
-  "]\n\010LoginRsp\022\020\n\010UserDBID\030\001 \001(\005\022\017\n\007tableID"
-  "\030\002 \001(\005\022\017\n\007chairID\030\003 \001(\005\022\014\n\004code\030\004 \001(\005\022\017\n"
-  "\007content\030\005 \001(\t\"\035\n\tLogoutReq\022\020\n\010UserDBID\030"
-  "\001 \001(\005\"*\n\tLogoutRsp\022\014\n\004code\030\001 \001(\005\022\017\n\007cont"
-  "ent\030\002 \001(\t\"K\n\016CustomLoginReq\022\020\n\010UserDBID\030"
-  "\001 \001(\005\022\n\n\002sn\030\002 \001(\005\022\014\n\004rule\030\003 \001(\005\022\r\n\005Token"
-  "\030\004 \001(\t\"\221\001\n\016CustomLoginRsp\022\020\n\010UserDBID\030\001 "
-  "\001(\005\022\017\n\007tableID\030\002 \001(\005\022\017\n\007chairID\030\003 \001(\005\022\014\n"
-  "\004code\030\004 \001(\005\022\017\n\007content\030\005 \001(\t\022\n\n\002sn\030\006 \001(\005"
-  "\022\020\n\010password\030\007 \001(\t\022\016\n\006RoomId\030\010 \001(\005\"\\\n\014Pl"
-  "ayerResult\022\013\n\003pid\030\001 \001(\005\022\017\n\007chairId\030\002 \001(\005"
-  "\022\r\n\005score\030\003 \001(\003\022\020\n\010winState\030\004 \003(\005\022\r\n\005mon"
-  "ey\030\005 \001(\003\"I\n\nResultPush\022)\n\007players\030\001 \003(\0132"
-  "\030.ChinaChess.PlayerResult\022\020\n\010winnerID\030\002 "
-  "\001(\005\"\273\001\n\nConfigPush\022\024\n\014isOpenTakeIn\030\001 \001(\010"
-  "\022\016\n\006taiFee\030\002 \001(\005\022\021\n\tSettlePay\030\003 \001(\010\022\027\n\017S"
-  "ettlePayFactor\030\004 \001(\005\022\021\n\tRoundTime\030\005 \001(\005\022"
-  "\020\n\010StepTime\030\006 \001(\005\022\021\n\tStepTime2\030\007 \001(\005\022\020\n\010"
-  "DingTime\030\010 \001(\005\022\021\n\tBaseScore\030\t \001(\003\"\030\n\010Che"
-  "ssMap\022\014\n\004MapY\030\001 \003(\005\"\240\002\n\010SceneRsp\022\r\n\005stag"
-  "e\030\001 \001(\005\022\017\n\007timeout\030\002 \001(\005\022\025\n\ractiveChairI"
-  "d\030\003 \001(\005\022!\n\003map\030\004 \003(\0132\024.ChinaChess.ChessM"
-  "ap\022(\n\007counter\030\005 \001(\0132\027.ChinaChess.Counter"
-  "Push\022$\n\005timer\030\006 \003(\0132\025.ChinaChess.TimerPu"
-  "sh\022\021\n\tisRedSide\030\007 \001(\010\022\020\n\010start_x0\030\010 \001(\005\022"
-  "\020\n\010start_y0\030\t \001(\005\022\016\n\006end_x0\030\n \001(\005\022\016\n\006end"
-  "_y0\030\013 \001(\005\022\023\n\013isGameBegin\030\014 \001(\010\"8\n\010EmojiR"
-  "eq\022\016\n\006sender\030\001 \001(\005\022\016\n\006sendee\030\002 \001(\005\022\014\n\004ie"
-  "ID\030\003 \001(\005\"E\n\010EmojiRsp\022\016\n\006sender\030\001 \001(\005\022\016\n\006"
-  "sendee\030\002 \001(\005\022\014\n\004ieID\030\003 \001(\005\022\013\n\003ret\030\004 \001(\005\""
-  "(\n\nExtendCoin\022\n\n\002id\030\001 \001(\005\022\016\n\006amount\030\002 \001("
-  "\003\"\213\002\n\014UserInfoPush\022\020\n\010table_id\030\001 \001(\005\022\r\n\005"
-  "index\030\002 \001(\005\022\021\n\tuser_dbid\030\003 \001(\005\022$\n\005Score\030"
-  "\004 \001(\0132\025.ChinaChess.GameScore\022\020\n\010chair_id"
-  "\030\005 \001(\005\022\017\n\007face_id\030\006 \001(\005\022\016\n\006status\030\007 \001(\005\022"
-  "\025\n\rvip_left_days\030\010 \001(\005\022\025\n\ruser_name_len\030"
-  "\t \001(\005\022\021\n\tuser_name\030\n \001(\t\022\017\n\007partner\030\013 \001("
-  "\t\022\n\n\002ip\030\014 \001(\t\022\020\n\010location\030\r \001(\t\"\202\001\n\tGame"
-  "Score\022\r\n\005score\030\001 \001(\003\022\r\n\005money\030\002 \001(\003\022\013\n\003t"
-  "ax\030\003 \001(\005\022\016\n\006result\030\004 \003(\005\022\016\n\006ticket\030\005 \001(\005"
-  "\022*\n\nextendCoin\030\006 \003(\0132\026.ChinaChess.Extend"
-  "Coin\"\"\n\rReadyAgainReq\022\021\n\tuser_dbid\030\001 \001(\005"
-  "\"/\n\rReadyAgainRsp\022\016\n\006status\030\001 \001(\005\022\016\n\006err"
-  "Msg\030\002 \001(\t\"&\n\tEmojiInfo\022\n\n\002id\030\001 \001(\005\022\r\n\005pr"
-  "ice\030\002 \001(\005\";\n\017EmojiConfigPush\022(\n\temojiLis"
-  "t\030\001 \003(\0132\025.ChinaChess.EmojiInfo\"B\n\rChatOr"
-  "FaceReq\022\021\n\tuser_dbid\030\001 \001(\005\022\016\n\006opType\030\002 \001"
-  "(\005\022\016\n\006faceID\030\003 \001(\005\"B\n\rChatOrFaceRsp\022\021\n\tu"
-  "ser_dbid\030\001 \001(\005\022\016\n\006opType\030\002 \001(\005\022\016\n\006faceID"
-  "\030\003 \001(\005\"\032\n\010AdmitReq\022\016\n\006userID\030\001 \001(\005\">\n\010Ad"
-  "mitRsp\022\014\n\004code\030\001 \001(\005\022\017\n\007content\030\002 \001(\t\022\023\n"
-  "\013applyUserID\030\003 \001(\005\"M\n\tRegretRsp\022\023\n\013wRegr"
-  "etUser\030\001 \001(\005\022\024\n\014wCurrentUser\030\002 \001(\005\022\025\n\rcb"
-  "RegretCount\030\003 \001(\005\"\031\n\007DrawReq\022\016\n\006userID\030\001"
-  " \001(\005\"Q\n\007DrawRsp\022\014\n\004code\030\001 \001(\005\022\017\n\007content"
-  "\030\002 \001(\t\022\023\n\013applyUserID\030\003 \001(\005\022\022\n\nhandleTim"
-  "e\030\004 \001(\005\"7\n\010AgreeReq\022\016\n\006userID\030\001 \001(\005\022\014\n\004k"
-  "ind\030\002 \001(\005\022\r\n\005agree\030\003 \001(\010\"\273\002\n\010AgreeRsp\022\014\n"
-  "\004code\030\001 \001(\005\022\017\n\007content\030\002 \001(\t\022\023\n\013applyUse"
-  "rID\030\003 \001(\005\022\024\n\014handleUserID\030\004 \001(\005\022\014\n\004kind\030"
-  "\005 \001(\005\022\r\n\005agree\030\006 \001(\010\022\020\n\010leftTime\030\007 \001(\005\022\020"
-  "\n\010start_x0\030\010 \001(\005\022\020\n\010start_y0\030\t \001(\005\022\016\n\006en"
-  "d_x0\030\n \001(\005\022\016\n\006end_y0\030\013 \001(\005\022\017\n\007start_x\030\014 "
-  "\001(\005\022\017\n\007start_y\030\r \001(\005\022\r\n\005end_x\030\016 \001(\005\022\r\n\005e"
-  "nd_y\030\017 \001(\005\022\014\n\004kill\030\020 \001(\005\022$\n\005timer\030\021 \003(\0132"
-  "\025.ChinaChess.TimerPush\"s\n\013CounterPush\022\020\n"
-  "\010canAdmit\030\001 \001(\010\022\021\n\tcanRegret\030\002 \001(\010\022\027\n\017re"
-  "gretLeftCount\030\003 \001(\005\022\017\n\007canDraw\030\004 \001(\010\022\025\n\r"
-  "drawLeftCount\030\005 \001(\005\"a\n\007MoveReq\022\024\n\014cbXSou"
-  "rcePos\030\001 \001(\005\022\024\n\014cbYSourcePos\030\002 \001(\005\022\024\n\014cb"
-  "XTargetPos\030\003 \001(\005\022\024\n\014cbYTargetPos\030\004 \001(\005\"w"
-  "\n\007MoveRsp\022\024\n\014cbXSourcePos\030\001 \001(\005\022\024\n\014cbYSo"
-  "urcePos\030\002 \001(\005\022\024\n\014cbXTargetPos\030\003 \001(\005\022\024\n\014c"
-  "bYTargetPos\030\004 \001(\005\022\024\n\014wCurrentUser\030\005 \001(\005\""
-  "Y\n\tTimerPush\022\r\n\005chair\030\001 \001(\005\022\025\n\rroundLeft"
-  "Time\030\002 \001(\005\022\024\n\014stepLeftTime\030\003 \001(\005\022\020\n\010step"
-  "Time\030\004 \001(\005*\255\010\n\rEMsgIDSubGame\022\036\n\032CMD_Ches"
-  "s_SUB_C_REGRET_REQ\020\000\022!\n\035CMD_Chess_SUB_C_"
-  "REGRET_ANSWER\020\001\022\036\n\032CMD_Chess_SUB_C_GIVEU"
-  "P_REQ\020\002\022\035\n\031CMD_Chess_SUB_C_PEACE_REQ\020\003\022 "
-  "\n\034CMD_Chess_SUB_C_PEACE_ANSWER\020\004\022\036\n\032CMD_"
-  "Chess_SUB_C_MOVE_CHESS\020\005\022\037\n\033CMD_Chess_SU"
-  "B_C_KICK_PLAYER\020\006\022\034\n\030CMD_Chess_SUB_C_SET"
-  "_RULE\020\007\022\035\n\031CMD_Chess_SUB_C_MAKE_RULE\020\010\022 "
-  "\n\034CMD_Chess_SUB_C_NOTIFY_READY\020\t\022 \n\034CMD_"
-  "Chess_SUB_C_NOTIFY_START\020\n\022\034\n\030CMD_Chess_"
-  "SUB_C_CONTINUE\020\013\022\036\n\032CMD_Chess_SUB_S_GAME"
-  "_START\020\014\022\036\n\032CMD_Chess_SUB_S_MOVE_CHESS\020\r"
-  "\022\036\n\032CMD_Chess_SUB_S_REGRET_REQ\020\016\022 \n\034CMD_"
-  "Chess_SUB_S_REGRET_FAILE\020\017\022!\n\035CMD_Chess_"
-  "SUB_S_REGRET_RESULT\020\020\022\035\n\031CMD_Chess_SUB_S"
-  "_PEACE_REQ\020\021\022 \n\034CMD_Chess_SUB_S_PEACE_AN"
-  "SWER\020\022\022\034\n\030CMD_Chess_SUB_S_GAME_END\020\023\022 \n\034"
-  "CMD_Chess_SUB_S_CHESS_MANUAL\020\024\022 \n\034CMD_Ch"
-  "ess_SUB_S_REQ_SET_RULE\020\025\022\"\n\036CMD_Chess_SU"
-  "B_S_REQ_AGREE_RULE\020\026\022\037\n\033CMD_Chess_SUB_S_"
-  "KICK_PLAYER\020\027\022 \n\034CMD_Chess_SUB_S_NOTIFY_"
-  "TIMER\020\030\022%\n!CMD_Chess_SUB_S_NOTIFY_ROOM_O"
-  "WNER\020\031\022#\n\037CMD_Chess_SUB_S_NOTIFY_SET_RUL"
-  "E\020\032\022\034\n\030CMD_Chess_SUB_S_SET_RULE\020\033\022\035\n\031CMD"
-  "_Chess_SUB_S_MAKE_RULE\020\034\022 \n\034CMD_Chess_SU"
-  "B_S_NOTIFY_READY\020\035\022 \n\034CMD_Chess_SUB_S_NO"
-  "TIFY_START\020\036\022\034\n\030CMD_Chess_SUB_S_CONTINUE"
-  "\020\037b\006proto3"
+  "\n\020ChinaChess.proto\022\nChinaChess\"S\n\tCommon"
+  "Rsp\022\014\n\004code\030\001 \001(\005\022\017\n\007content\030\002 \001(\t\022\023\n\013ap"
+  "plyUserID\030\003 \001(\005\022\022\n\nhandleTime\030\004 \001(\005\"+\n\010L"
+  "oginReq\022\020\n\010UserDBID\030\001 \001(\005\022\r\n\005Token\030\002 \001(\t"
+  "\"]\n\010LoginRsp\022\020\n\010UserDBID\030\001 \001(\005\022\017\n\007tableI"
+  "D\030\002 \001(\005\022\017\n\007chairID\030\003 \001(\005\022\014\n\004code\030\004 \001(\005\022\017"
+  "\n\007content\030\005 \001(\t\"\035\n\tLogoutReq\022\020\n\010UserDBID"
+  "\030\001 \001(\005\"*\n\tLogoutRsp\022\014\n\004code\030\001 \001(\005\022\017\n\007con"
+  "tent\030\002 \001(\t\"8\n\007ExitRsp\022\014\n\004code\030\001 \001(\005\022\017\n\007c"
+  "ontent\030\002 \001(\t\022\016\n\006userID\030\003 \001(\005\"<\n\nSitDownR"
+  "sp\022\014\n\004code\030\001 \001(\005\022\021\n\tuser_dbid\030\002 \001(\005\022\r\n\005c"
+  "hair\030\003 \001(\005\"K\n\016CustomLoginReq\022\020\n\010UserDBID"
+  "\030\001 \001(\005\022\n\n\002sn\030\002 \001(\005\022\014\n\004rule\030\003 \001(\005\022\r\n\005Toke"
+  "n\030\004 \001(\t\"\221\001\n\016CustomLoginRsp\022\020\n\010UserDBID\030\001"
+  " \001(\005\022\017\n\007tableID\030\002 \001(\005\022\017\n\007chairID\030\003 \001(\005\022\014"
+  "\n\004code\030\004 \001(\005\022\017\n\007content\030\005 \001(\t\022\n\n\002sn\030\006 \001("
+  "\005\022\020\n\010password\030\007 \001(\t\022\016\n\006RoomId\030\010 \001(\005\"\\\n\014P"
+  "layerResult\022\013\n\003pid\030\001 \001(\005\022\017\n\007chairId\030\002 \001("
+  "\005\022\r\n\005score\030\003 \001(\003\022\020\n\010winState\030\004 \003(\005\022\r\n\005mo"
+  "ney\030\005 \001(\003\"I\n\nResultPush\022)\n\007players\030\001 \003(\013"
+  "2\030.ChinaChess.PlayerResult\022\020\n\010winnerID\030\002"
+  " \001(\005\"\273\001\n\nConfigPush\022\024\n\014isOpenTakeIn\030\001 \001("
+  "\010\022\016\n\006taiFee\030\002 \001(\005\022\021\n\tSettlePay\030\003 \001(\010\022\027\n\017"
+  "SettlePayFactor\030\004 \001(\005\022\021\n\tRoundTime\030\005 \001(\005"
+  "\022\020\n\010StepTime\030\006 \001(\005\022\021\n\tStepTime2\030\007 \001(\005\022\020\n"
+  "\010DingTime\030\010 \001(\005\022\021\n\tBaseScore\030\t \001(\003\"\204\001\n\022S"
+  "cene_GameRuleInfo\022\017\n\007lBetMin\030\001 \001(\005\022\017\n\007lB"
+  "etMax\030\002 \001(\005\022\016\n\006szChip\030\003 \003(\005\022\r\n\005dwBet\030\004 \001"
+  "(\005\022\026\n\016wRuleLimitTime\030\005 \001(\005\022\025\n\rwRuleStepT"
+  "ime\030\006 \001(\005\"\315\001\n\010ChessMap\022\024\n\014wCurrentUser\030\001"
+  " \001(\005\022\027\n\017wChessStepCount\030\002 \003(\005\0224\n\014GameRul"
+  "eInfo\030\003 \001(\0132\036.ChinaChess.Scene_GameRuleI"
+  "nfo\022\024\n\014cbPeaceCount\030\004 \003(\005\022\025\n\rcbRegretCou"
+  "nt\030\005 \003(\005\022/\n\016ChessItemArray\030\006 \003(\0132\027.China"
+  "Chess.Scene_Chess\"S\n\017Scene_ChessItem\022\016\n\006"
+  "cbXPos\030\001 \001(\005\022\016\n\006cbYPos\030\002 \001(\005\022\017\n\007cbChess\030"
+  "\003 \001(\005\022\017\n\007cbColor\030\004 \001(\005\"9\n\013Scene_Chess\022*\n"
+  "\005items\030\001 \003(\0132\033.ChinaChess.Scene_ChessIte"
+  "m\"t\n\010SceneRsp\022\016\n\006status\030\001 \001(\005\022\"\n\004free\030\002 "
+  "\001(\0132\024.ChinaChess.ChessMap\022\"\n\004play\030\003 \001(\0132"
+  "\024.ChinaChess.ChessMap\022\020\n\010campSide\030\004 \001(\005\""
+  ",\n\nRoomSetReq\022\014\n\004mode\030\001 \001(\005\022\020\n\010campSide\030"
+  "\002 \001(\005\"8\n\010EmojiReq\022\016\n\006sender\030\001 \001(\005\022\016\n\006sen"
+  "dee\030\002 \001(\005\022\014\n\004ieID\030\003 \001(\005\"E\n\010EmojiRsp\022\016\n\006s"
+  "ender\030\001 \001(\005\022\016\n\006sendee\030\002 \001(\005\022\014\n\004ieID\030\003 \001("
+  "\005\022\013\n\003ret\030\004 \001(\005\"(\n\nExtendCoin\022\n\n\002id\030\001 \001(\005"
+  "\022\016\n\006amount\030\002 \001(\003\"\213\002\n\014UserInfoPush\022\020\n\010tab"
+  "le_id\030\001 \001(\005\022\r\n\005index\030\002 \001(\005\022\021\n\tuser_dbid\030"
+  "\003 \001(\005\022$\n\005Score\030\004 \001(\0132\025.ChinaChess.GameSc"
+  "ore\022\020\n\010chair_id\030\005 \001(\005\022\017\n\007face_id\030\006 \001(\005\022\016"
+  "\n\006status\030\007 \001(\005\022\025\n\rvip_left_days\030\010 \001(\005\022\025\n"
+  "\ruser_name_len\030\t \001(\005\022\021\n\tuser_name\030\n \001(\t\022"
+  "\017\n\007partner\030\013 \001(\t\022\n\n\002ip\030\014 \001(\t\022\020\n\010location"
+  "\030\r \001(\t\"\202\001\n\tGameScore\022\r\n\005score\030\001 \001(\003\022\r\n\005m"
+  "oney\030\002 \001(\003\022\013\n\003tax\030\003 \001(\005\022\016\n\006result\030\004 \003(\005\022"
+  "\016\n\006ticket\030\005 \001(\005\022*\n\nextendCoin\030\006 \003(\0132\026.Ch"
+  "inaChess.ExtendCoin\"\"\n\rReadyAgainReq\022\021\n\t"
+  "user_dbid\030\001 \001(\005\"/\n\rReadyAgainRsp\022\016\n\006stat"
+  "us\030\001 \001(\005\022\016\n\006errMsg\030\002 \001(\t\"&\n\tEmojiInfo\022\n\n"
+  "\002id\030\001 \001(\005\022\r\n\005price\030\002 \001(\005\";\n\017EmojiConfigP"
+  "ush\022(\n\temojiList\030\001 \003(\0132\025.ChinaChess.Emoj"
+  "iInfo\"B\n\rChatOrFaceReq\022\021\n\tuser_dbid\030\001 \001("
+  "\005\022\016\n\006opType\030\002 \001(\005\022\016\n\006faceID\030\003 \001(\005\"B\n\rCha"
+  "tOrFaceRsp\022\021\n\tuser_dbid\030\001 \001(\005\022\016\n\006opType\030"
+  "\002 \001(\005\022\016\n\006faceID\030\003 \001(\005\"*\n\005OpRsp\022\017\n\007opInde"
+  "x\030\001 \001(\005\022\020\n\010waitTime\030\002 \001(\005\"M\n\tRegretRsp\022\023"
+  "\n\013wRegretUser\030\001 \001(\005\022\024\n\014wCurrentUser\030\002 \001("
+  "\005\022\025\n\rcbRegretCount\030\003 \001(\005\"7\n\010AgreeReq\022\016\n\006"
+  "userID\030\001 \001(\005\022\014\n\004kind\030\002 \001(\005\022\r\n\005agree\030\003 \001("
+  "\010\"\273\002\n\010AgreeRsp\022\014\n\004code\030\001 \001(\005\022\017\n\007content\030"
+  "\002 \001(\t\022\023\n\013applyUserID\030\003 \001(\005\022\024\n\014handleUser"
+  "ID\030\004 \001(\005\022\014\n\004kind\030\005 \001(\005\022\r\n\005agree\030\006 \001(\010\022\020\n"
+  "\010leftTime\030\007 \001(\005\022\020\n\010start_x0\030\010 \001(\005\022\020\n\010sta"
+  "rt_y0\030\t \001(\005\022\016\n\006end_x0\030\n \001(\005\022\016\n\006end_y0\030\013 "
+  "\001(\005\022\017\n\007start_x\030\014 \001(\005\022\017\n\007start_y\030\r \001(\005\022\r\n"
+  "\005end_x\030\016 \001(\005\022\r\n\005end_y\030\017 \001(\005\022\014\n\004kill\030\020 \001("
+  "\005\022$\n\005timer\030\021 \003(\0132\025.ChinaChess.TimerPush\""
+  "s\n\013CounterPush\022\020\n\010canAdmit\030\001 \001(\010\022\021\n\tcanR"
+  "egret\030\002 \001(\010\022\027\n\017regretLeftCount\030\003 \001(\005\022\017\n\007"
+  "canDraw\030\004 \001(\010\022\025\n\rdrawLeftCount\030\005 \001(\005\"a\n\007"
+  "MoveReq\022\024\n\014cbXSourcePos\030\001 \001(\005\022\024\n\014cbYSour"
+  "cePos\030\002 \001(\005\022\024\n\014cbXTargetPos\030\003 \001(\005\022\024\n\014cbY"
+  "TargetPos\030\004 \001(\005\"\207\001\n\007MoveRsp\022\024\n\014cbXSource"
+  "Pos\030\001 \001(\005\022\024\n\014cbYSourcePos\030\002 \001(\005\022\024\n\014cbXTa"
+  "rgetPos\030\003 \001(\005\022\024\n\014cbYTargetPos\030\004 \001(\005\022\024\n\014w"
+  "CurrentUser\030\005 \001(\005\022\016\n\006result\030\006 \001(\005\"Y\n\tTim"
+  "erPush\022\r\n\005chair\030\001 \001(\005\022\025\n\rroundLeftTime\030\002"
+  " \001(\005\022\024\n\014stepLeftTime\030\003 \001(\005\022\020\n\010stepTime\030\004"
+  " \001(\005\"2\n\nGameResult\022\020\n\010wWinUser\030\001 \001(\005\022\022\n\n"
+  "lUserScore\030\002 \003(\003\"<\n\014Chess_Manual\022,\n\005item"
+  "s\030\001 \003(\0132\035.ChinaChess.Chess_Manual_Item\"\254"
+  "\001\n\021Chess_Manual_Item\022\031\n\021cbXSourceChessPo"
+  "s\030\001 \001(\005\022\031\n\021cbYSourceChessPos\030\002 \001(\005\022\031\n\021cb"
+  "XTargetChessPos\030\003 \001(\005\022\031\n\021cbYTargetChessP"
+  "os\030\004 \001(\005\022\024\n\014cbUniteChess\030\005 \001(\005\022\025\n\rcbSour"
+  "ceColor\030\006 \001(\005\">\n\tNotifyRsp\022\020\n\010waitTime\030\001"
+  " \001(\005\022\020\n\010roomType\030\002 \001(\005\022\r\n\005index\030\003 \001(\005\"-\n"
+  "\013MakeRuleRsp\022\017\n\007errorID\030\001 \001(\005\022\r\n\005score\030\002"
+  " \001(\003*\203\t\n\rEMsgIDSubGame\022\036\n\032CMD_Chess_SUB_"
+  "C_REGRET_REQ\020\000\022!\n\035CMD_Chess_SUB_C_REGRET"
+  "_ANSWER\020\001\022\036\n\032CMD_Chess_SUB_C_GIVEUP_REQ\020"
+  "\002\022\035\n\031CMD_Chess_SUB_C_PEACE_REQ\020\003\022 \n\034CMD_"
+  "Chess_SUB_C_PEACE_ANSWER\020\004\022\036\n\032CMD_Chess_"
+  "SUB_C_MOVE_CHESS\020\005\022\037\n\033CMD_Chess_SUB_C_KI"
+  "CK_PLAYER\020\006\022\034\n\030CMD_Chess_SUB_C_SET_RULE\020"
+  "\007\022\035\n\031CMD_Chess_SUB_C_MAKE_RULE\020\010\022 \n\034CMD_"
+  "Chess_SUB_C_NOTIFY_READY\020\t\022 \n\034CMD_Chess_"
+  "SUB_C_NOTIFY_START\020\n\022\034\n\030CMD_Chess_SUB_C_"
+  "CONTINUE\020\013\022\036\n\032CMD_Chess_SUB_S_GAME_START"
+  "\020\014\022\036\n\032CMD_Chess_SUB_S_MOVE_CHESS\020\r\022\036\n\032CM"
+  "D_Chess_SUB_S_REGRET_REQ\020\016\022 \n\034CMD_Chess_"
+  "SUB_S_REGRET_FAILE\020\017\022!\n\035CMD_Chess_SUB_S_"
+  "REGRET_RESULT\020\020\022\035\n\031CMD_Chess_SUB_S_PEACE"
+  "_REQ\020\021\022 \n\034CMD_Chess_SUB_S_PEACE_ANSWER\020\022"
+  "\022\034\n\030CMD_Chess_SUB_S_GAME_END\020\023\022 \n\034CMD_Ch"
+  "ess_SUB_S_CHESS_MANUAL\020\024\022 \n\034CMD_Chess_SU"
+  "B_S_REQ_SET_RULE\020\025\022\"\n\036CMD_Chess_SUB_S_RE"
+  "Q_AGREE_RULE\020\026\022\037\n\033CMD_Chess_SUB_S_KICK_P"
+  "LAYER\020\027\022 \n\034CMD_Chess_SUB_S_NOTIFY_TIMER\020"
+  "\030\022%\n!CMD_Chess_SUB_S_NOTIFY_ROOM_OWNER\020\031"
+  "\022#\n\037CMD_Chess_SUB_S_NOTIFY_SET_RULE\020\032\022\034\n"
+  "\030CMD_Chess_SUB_S_SET_RULE\020\033\022\035\n\031CMD_Chess"
+  "_SUB_S_MAKE_RULE\020\034\022 \n\034CMD_Chess_SUB_S_NO"
+  "TIFY_READY\020\035\022 \n\034CMD_Chess_SUB_S_NOTIFY_S"
+  "TART\020\036\022\034\n\030CMD_Chess_SUB_S_CONTINUE\020\037\022\025\n\021"
+  "CMD_ChatOrFaceReq\020 \022\025\n\021CMD_ChatOrFaceRsp"
+  "\020!\022\022\n\016CMD_RoomSetReq\020\"\022\022\n\016CMD_RoomSetRsp"
+  "\020#b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ChinaChess_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ChinaChess_2eproto_sccs[34] = {
-  &scc_info_AdmitReq_ChinaChess_2eproto.base,
-  &scc_info_AdmitRsp_ChinaChess_2eproto.base,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ChinaChess_2eproto_sccs[42] = {
   &scc_info_AgreeReq_ChinaChess_2eproto.base,
   &scc_info_AgreeRsp_ChinaChess_2eproto.base,
   &scc_info_ChatOrFaceReq_ChinaChess_2eproto.base,
   &scc_info_ChatOrFaceRsp_ChinaChess_2eproto.base,
   &scc_info_ChessMap_ChinaChess_2eproto.base,
+  &scc_info_Chess_Manual_ChinaChess_2eproto.base,
+  &scc_info_Chess_Manual_Item_ChinaChess_2eproto.base,
   &scc_info_CommonRsp_ChinaChess_2eproto.base,
   &scc_info_ConfigPush_ChinaChess_2eproto.base,
   &scc_info_CounterPush_ChinaChess_2eproto.base,
   &scc_info_CustomLoginReq_ChinaChess_2eproto.base,
   &scc_info_CustomLoginRsp_ChinaChess_2eproto.base,
-  &scc_info_DrawReq_ChinaChess_2eproto.base,
-  &scc_info_DrawRsp_ChinaChess_2eproto.base,
   &scc_info_EmojiConfigPush_ChinaChess_2eproto.base,
   &scc_info_EmojiInfo_ChinaChess_2eproto.base,
   &scc_info_EmojiReq_ChinaChess_2eproto.base,
   &scc_info_EmojiRsp_ChinaChess_2eproto.base,
+  &scc_info_ExitRsp_ChinaChess_2eproto.base,
   &scc_info_ExtendCoin_ChinaChess_2eproto.base,
+  &scc_info_GameResult_ChinaChess_2eproto.base,
   &scc_info_GameScore_ChinaChess_2eproto.base,
   &scc_info_LoginReq_ChinaChess_2eproto.base,
   &scc_info_LoginRsp_ChinaChess_2eproto.base,
   &scc_info_LogoutReq_ChinaChess_2eproto.base,
   &scc_info_LogoutRsp_ChinaChess_2eproto.base,
+  &scc_info_MakeRuleRsp_ChinaChess_2eproto.base,
   &scc_info_MoveReq_ChinaChess_2eproto.base,
   &scc_info_MoveRsp_ChinaChess_2eproto.base,
+  &scc_info_NotifyRsp_ChinaChess_2eproto.base,
+  &scc_info_OpRsp_ChinaChess_2eproto.base,
   &scc_info_PlayerResult_ChinaChess_2eproto.base,
   &scc_info_ReadyAgainReq_ChinaChess_2eproto.base,
   &scc_info_ReadyAgainRsp_ChinaChess_2eproto.base,
   &scc_info_RegretRsp_ChinaChess_2eproto.base,
   &scc_info_ResultPush_ChinaChess_2eproto.base,
+  &scc_info_RoomSetReq_ChinaChess_2eproto.base,
   &scc_info_SceneRsp_ChinaChess_2eproto.base,
+  &scc_info_Scene_Chess_ChinaChess_2eproto.base,
+  &scc_info_Scene_ChessItem_ChinaChess_2eproto.base,
+  &scc_info_Scene_GameRuleInfo_ChinaChess_2eproto.base,
+  &scc_info_SitDownRsp_ChinaChess_2eproto.base,
   &scc_info_TimerPush_ChinaChess_2eproto.base,
   &scc_info_UserInfoPush_ChinaChess_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ChinaChess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ChinaChess_2eproto = {
-  false, false, descriptor_table_protodef_ChinaChess_2eproto, "ChinaChess.proto", 4250,
-  &descriptor_table_ChinaChess_2eproto_once, descriptor_table_ChinaChess_2eproto_sccs, descriptor_table_ChinaChess_2eproto_deps, 34, 0,
+  false, false, descriptor_table_protodef_ChinaChess_2eproto, "ChinaChess.proto", 5090,
+  &descriptor_table_ChinaChess_2eproto_once, descriptor_table_ChinaChess_2eproto_sccs, descriptor_table_ChinaChess_2eproto_deps, 42, 0,
   schemas, file_default_instances, TableStruct_ChinaChess_2eproto::offsets,
-  file_level_metadata_ChinaChess_2eproto, 34, file_level_enum_descriptors_ChinaChess_2eproto, file_level_service_descriptors_ChinaChess_2eproto,
+  file_level_metadata_ChinaChess_2eproto, 42, file_level_enum_descriptors_ChinaChess_2eproto, file_level_service_descriptors_ChinaChess_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1198,6 +1450,10 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 29:
     case 30:
     case 31:
+    case 32:
+    case 33:
+    case 34:
+    case 35:
       return true;
     default:
       return false;
@@ -1225,14 +1481,19 @@ CommonRsp::CommonRsp(const CommonRsp& from)
     content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_content(), 
       GetArena());
   }
-  code_ = from.code_;
+  ::memcpy(&code_, &from.code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&handletime_) -
+    reinterpret_cast<char*>(&code_)) + sizeof(handletime_));
   // @@protoc_insertion_point(copy_constructor:ChinaChess.CommonRsp)
 }
 
 void CommonRsp::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CommonRsp_ChinaChess_2eproto.base);
   content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  code_ = 0;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&handletime_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(handletime_));
 }
 
 CommonRsp::~CommonRsp() {
@@ -1268,7 +1529,9 @@ void CommonRsp::Clear() {
   (void) cached_has_bits;
 
   content_.ClearToEmpty();
-  code_ = 0;
+  ::memset(&code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&handletime_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(handletime_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1292,6 +1555,20 @@ const char* CommonRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           auto str = _internal_mutable_content();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ChinaChess.CommonRsp.content"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 applyUserID = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          applyuserid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 handleTime = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          handletime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1339,6 +1616,18 @@ failure:
         2, this->_internal_content(), target);
   }
 
+  // int32 applyUserID = 3;
+  if (this->applyuserid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_applyuserid(), target);
+  }
+
+  // int32 handleTime = 4;
+  if (this->handletime() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_handletime(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1367,6 +1656,20 @@ size_t CommonRsp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_code());
+  }
+
+  // int32 applyUserID = 3;
+  if (this->applyuserid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_applyuserid());
+  }
+
+  // int32 handleTime = 4;
+  if (this->handletime() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_handletime());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1406,6 +1709,12 @@ void CommonRsp::MergeFrom(const CommonRsp& from) {
   if (from.code() != 0) {
     _internal_set_code(from._internal_code());
   }
+  if (from.applyuserid() != 0) {
+    _internal_set_applyuserid(from._internal_applyuserid());
+  }
+  if (from.handletime() != 0) {
+    _internal_set_handletime(from._internal_handletime());
+  }
 }
 
 void CommonRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1430,7 +1739,12 @@ void CommonRsp::InternalSwap(CommonRsp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   content_.Swap(&other->content_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(code_, other->code_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CommonRsp, handletime_)
+      + sizeof(CommonRsp::handletime_)
+      - PROTOBUF_FIELD_OFFSET(CommonRsp, code_)>(
+          reinterpret_cast<char*>(&code_),
+          reinterpret_cast<char*>(&other->code_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CommonRsp::GetMetadata() const {
@@ -2408,6 +2722,526 @@ void LogoutRsp::InternalSwap(LogoutRsp* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LogoutRsp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class ExitRsp::_Internal {
+ public:
+};
+
+ExitRsp::ExitRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.ExitRsp)
+}
+ExitRsp::ExitRsp(const ExitRsp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_content().empty()) {
+    content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_content(), 
+      GetArena());
+  }
+  ::memcpy(&code_, &from.code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&userid_) -
+    reinterpret_cast<char*>(&code_)) + sizeof(userid_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.ExitRsp)
+}
+
+void ExitRsp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ExitRsp_ChinaChess_2eproto.base);
+  content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&userid_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(userid_));
+}
+
+ExitRsp::~ExitRsp() {
+  // @@protoc_insertion_point(destructor:ChinaChess.ExitRsp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void ExitRsp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  content_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void ExitRsp::ArenaDtor(void* object) {
+  ExitRsp* _this = reinterpret_cast< ExitRsp* >(object);
+  (void)_this;
+}
+void ExitRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ExitRsp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ExitRsp& ExitRsp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ExitRsp_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void ExitRsp::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.ExitRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  content_.ClearToEmpty();
+  ::memset(&code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&userid_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(userid_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ExitRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 code = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string content = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_content();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ChinaChess.ExitRsp.content"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 userID = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ExitRsp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.ExitRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+  }
+
+  // string content = 2;
+  if (this->content().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "ChinaChess.ExitRsp.content");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_content(), target);
+  }
+
+  // int32 userID = 3;
+  if (this->userid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_userid(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.ExitRsp)
+  return target;
+}
+
+size_t ExitRsp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.ExitRsp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string content = 2;
+  if (this->content().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_content());
+  }
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_code());
+  }
+
+  // int32 userID = 3;
+  if (this->userid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_userid());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void ExitRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.ExitRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ExitRsp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ExitRsp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.ExitRsp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.ExitRsp)
+    MergeFrom(*source);
+  }
+}
+
+void ExitRsp::MergeFrom(const ExitRsp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.ExitRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.content().size() > 0) {
+    _internal_set_content(from._internal_content());
+  }
+  if (from.code() != 0) {
+    _internal_set_code(from._internal_code());
+  }
+  if (from.userid() != 0) {
+    _internal_set_userid(from._internal_userid());
+  }
+}
+
+void ExitRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.ExitRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void ExitRsp::CopyFrom(const ExitRsp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.ExitRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ExitRsp::IsInitialized() const {
+  return true;
+}
+
+void ExitRsp::InternalSwap(ExitRsp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  content_.Swap(&other->content_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ExitRsp, userid_)
+      + sizeof(ExitRsp::userid_)
+      - PROTOBUF_FIELD_OFFSET(ExitRsp, code_)>(
+          reinterpret_cast<char*>(&code_),
+          reinterpret_cast<char*>(&other->code_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ExitRsp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class SitDownRsp::_Internal {
+ public:
+};
+
+SitDownRsp::SitDownRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.SitDownRsp)
+}
+SitDownRsp::SitDownRsp(const SitDownRsp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&code_, &from.code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&chair_) -
+    reinterpret_cast<char*>(&code_)) + sizeof(chair_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.SitDownRsp)
+}
+
+void SitDownRsp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(chair_));
+}
+
+SitDownRsp::~SitDownRsp() {
+  // @@protoc_insertion_point(destructor:ChinaChess.SitDownRsp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void SitDownRsp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void SitDownRsp::ArenaDtor(void* object) {
+  SitDownRsp* _this = reinterpret_cast< SitDownRsp* >(object);
+  (void)_this;
+}
+void SitDownRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SitDownRsp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const SitDownRsp& SitDownRsp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SitDownRsp_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void SitDownRsp::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.SitDownRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&chair_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(chair_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SitDownRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 code = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 user_dbid = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          user_dbid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 chair = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          chair_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SitDownRsp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.SitDownRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+  }
+
+  // int32 user_dbid = 2;
+  if (this->user_dbid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_user_dbid(), target);
+  }
+
+  // int32 chair = 3;
+  if (this->chair() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_chair(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.SitDownRsp)
+  return target;
+}
+
+size_t SitDownRsp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.SitDownRsp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 code = 1;
+  if (this->code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_code());
+  }
+
+  // int32 user_dbid = 2;
+  if (this->user_dbid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_user_dbid());
+  }
+
+  // int32 chair = 3;
+  if (this->chair() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SitDownRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.SitDownRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SitDownRsp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SitDownRsp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.SitDownRsp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.SitDownRsp)
+    MergeFrom(*source);
+  }
+}
+
+void SitDownRsp::MergeFrom(const SitDownRsp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.SitDownRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.code() != 0) {
+    _internal_set_code(from._internal_code());
+  }
+  if (from.user_dbid() != 0) {
+    _internal_set_user_dbid(from._internal_user_dbid());
+  }
+  if (from.chair() != 0) {
+    _internal_set_chair(from._internal_chair());
+  }
+}
+
+void SitDownRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.SitDownRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SitDownRsp::CopyFrom(const SitDownRsp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.SitDownRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SitDownRsp::IsInitialized() const {
+  return true;
+}
+
+void SitDownRsp::InternalSwap(SitDownRsp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SitDownRsp, chair_)
+      + sizeof(SitDownRsp::chair_)
+      - PROTOBUF_FIELD_OFFSET(SitDownRsp, code_)>(
+          reinterpret_cast<char*>(&code_),
+          reinterpret_cast<char*>(&other->code_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SitDownRsp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -4030,25 +4864,384 @@ void ConfigPush::InternalSwap(ConfigPush* other) {
 
 // ===================================================================
 
-class ChessMap::_Internal {
+class Scene_GameRuleInfo::_Internal {
  public:
 };
 
+Scene_GameRuleInfo::Scene_GameRuleInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  szchip_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.Scene_GameRuleInfo)
+}
+Scene_GameRuleInfo::Scene_GameRuleInfo(const Scene_GameRuleInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      szchip_(from.szchip_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&lbetmin_, &from.lbetmin_,
+    static_cast<size_t>(reinterpret_cast<char*>(&wrulesteptime_) -
+    reinterpret_cast<char*>(&lbetmin_)) + sizeof(wrulesteptime_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.Scene_GameRuleInfo)
+}
+
+void Scene_GameRuleInfo::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&lbetmin_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&wrulesteptime_) -
+      reinterpret_cast<char*>(&lbetmin_)) + sizeof(wrulesteptime_));
+}
+
+Scene_GameRuleInfo::~Scene_GameRuleInfo() {
+  // @@protoc_insertion_point(destructor:ChinaChess.Scene_GameRuleInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void Scene_GameRuleInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void Scene_GameRuleInfo::ArenaDtor(void* object) {
+  Scene_GameRuleInfo* _this = reinterpret_cast< Scene_GameRuleInfo* >(object);
+  (void)_this;
+}
+void Scene_GameRuleInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Scene_GameRuleInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Scene_GameRuleInfo& Scene_GameRuleInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Scene_GameRuleInfo_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Scene_GameRuleInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.Scene_GameRuleInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  szchip_.Clear();
+  ::memset(&lbetmin_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&wrulesteptime_) -
+      reinterpret_cast<char*>(&lbetmin_)) + sizeof(wrulesteptime_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Scene_GameRuleInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 lBetMin = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          lbetmin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 lBetMax = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          lbetmax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 szChip = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_szchip(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
+          _internal_add_szchip(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 dwBet = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          dwbet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 wRuleLimitTime = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          wrulelimittime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 wRuleStepTime = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          wrulesteptime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Scene_GameRuleInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.Scene_GameRuleInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 lBetMin = 1;
+  if (this->lbetmin() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_lbetmin(), target);
+  }
+
+  // int32 lBetMax = 2;
+  if (this->lbetmax() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_lbetmax(), target);
+  }
+
+  // repeated int32 szChip = 3;
+  {
+    int byte_size = _szchip_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          3, _internal_szchip(), byte_size, target);
+    }
+  }
+
+  // int32 dwBet = 4;
+  if (this->dwbet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_dwbet(), target);
+  }
+
+  // int32 wRuleLimitTime = 5;
+  if (this->wrulelimittime() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_wrulelimittime(), target);
+  }
+
+  // int32 wRuleStepTime = 6;
+  if (this->wrulesteptime() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_wrulesteptime(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.Scene_GameRuleInfo)
+  return target;
+}
+
+size_t Scene_GameRuleInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.Scene_GameRuleInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated int32 szChip = 3;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->szchip_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _szchip_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // int32 lBetMin = 1;
+  if (this->lbetmin() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_lbetmin());
+  }
+
+  // int32 lBetMax = 2;
+  if (this->lbetmax() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_lbetmax());
+  }
+
+  // int32 dwBet = 4;
+  if (this->dwbet() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_dwbet());
+  }
+
+  // int32 wRuleLimitTime = 5;
+  if (this->wrulelimittime() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_wrulelimittime());
+  }
+
+  // int32 wRuleStepTime = 6;
+  if (this->wrulesteptime() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_wrulesteptime());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Scene_GameRuleInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.Scene_GameRuleInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Scene_GameRuleInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Scene_GameRuleInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.Scene_GameRuleInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.Scene_GameRuleInfo)
+    MergeFrom(*source);
+  }
+}
+
+void Scene_GameRuleInfo::MergeFrom(const Scene_GameRuleInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.Scene_GameRuleInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  szchip_.MergeFrom(from.szchip_);
+  if (from.lbetmin() != 0) {
+    _internal_set_lbetmin(from._internal_lbetmin());
+  }
+  if (from.lbetmax() != 0) {
+    _internal_set_lbetmax(from._internal_lbetmax());
+  }
+  if (from.dwbet() != 0) {
+    _internal_set_dwbet(from._internal_dwbet());
+  }
+  if (from.wrulelimittime() != 0) {
+    _internal_set_wrulelimittime(from._internal_wrulelimittime());
+  }
+  if (from.wrulesteptime() != 0) {
+    _internal_set_wrulesteptime(from._internal_wrulesteptime());
+  }
+}
+
+void Scene_GameRuleInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.Scene_GameRuleInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Scene_GameRuleInfo::CopyFrom(const Scene_GameRuleInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.Scene_GameRuleInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Scene_GameRuleInfo::IsInitialized() const {
+  return true;
+}
+
+void Scene_GameRuleInfo::InternalSwap(Scene_GameRuleInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  szchip_.InternalSwap(&other->szchip_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Scene_GameRuleInfo, wrulesteptime_)
+      + sizeof(Scene_GameRuleInfo::wrulesteptime_)
+      - PROTOBUF_FIELD_OFFSET(Scene_GameRuleInfo, lbetmin_)>(
+          reinterpret_cast<char*>(&lbetmin_),
+          reinterpret_cast<char*>(&other->lbetmin_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Scene_GameRuleInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class ChessMap::_Internal {
+ public:
+  static const ::ChinaChess::Scene_GameRuleInfo& gameruleinfo(const ChessMap* msg);
+};
+
+const ::ChinaChess::Scene_GameRuleInfo&
+ChessMap::_Internal::gameruleinfo(const ChessMap* msg) {
+  return *msg->gameruleinfo_;
+}
 ChessMap::ChessMap(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  mapy_(arena) {
+  wchessstepcount_(arena),
+  cbpeacecount_(arena),
+  cbregretcount_(arena),
+  chessitemarray_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:ChinaChess.ChessMap)
 }
 ChessMap::ChessMap(const ChessMap& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      mapy_(from.mapy_) {
+      wchessstepcount_(from.wchessstepcount_),
+      cbpeacecount_(from.cbpeacecount_),
+      cbregretcount_(from.cbregretcount_),
+      chessitemarray_(from.chessitemarray_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_gameruleinfo()) {
+    gameruleinfo_ = new ::ChinaChess::Scene_GameRuleInfo(*from.gameruleinfo_);
+  } else {
+    gameruleinfo_ = nullptr;
+  }
+  wcurrentuser_ = from.wcurrentuser_;
   // @@protoc_insertion_point(copy_constructor:ChinaChess.ChessMap)
 }
 
 void ChessMap::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ChessMap_ChinaChess_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&gameruleinfo_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&wcurrentuser_) -
+      reinterpret_cast<char*>(&gameruleinfo_)) + sizeof(wcurrentuser_));
 }
 
 ChessMap::~ChessMap() {
@@ -4059,6 +5252,7 @@ ChessMap::~ChessMap() {
 
 void ChessMap::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete gameruleinfo_;
 }
 
 void ChessMap::ArenaDtor(void* object) {
@@ -4082,7 +5276,15 @@ void ChessMap::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  mapy_.Clear();
+  wchessstepcount_.Clear();
+  cbpeacecount_.Clear();
+  cbregretcount_.Clear();
+  chessitemarray_.Clear();
+  if (GetArena() == nullptr && gameruleinfo_ != nullptr) {
+    delete gameruleinfo_;
+  }
+  gameruleinfo_ = nullptr;
+  wcurrentuser_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4093,14 +5295,60 @@ const char* ChessMap::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated int32 MapY = 1;
+      // int32 wCurrentUser = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_mapy(), ptr, ctx);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          wcurrentuser_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
-          _internal_add_mapy(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 wChessStepCount = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_wchessstepcount(), ptr, ctx);
           CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_wchessstepcount(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .ChinaChess.Scene_GameRuleInfo GameRuleInfo = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_gameruleinfo(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 cbPeaceCount = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cbpeacecount(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
+          _internal_add_cbpeacecount(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 cbRegretCount = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cbregretcount(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
+          _internal_add_cbregretcount(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .ChinaChess.Scene_Chess ChessItemArray = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_chessitemarray(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -4131,13 +5379,53 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated int32 MapY = 1;
+  // int32 wCurrentUser = 1;
+  if (this->wcurrentuser() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_wcurrentuser(), target);
+  }
+
+  // repeated int32 wChessStepCount = 2;
   {
-    int byte_size = _mapy_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _wchessstepcount_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          1, _internal_mapy(), byte_size, target);
+          2, _internal_wchessstepcount(), byte_size, target);
     }
+  }
+
+  // .ChinaChess.Scene_GameRuleInfo GameRuleInfo = 3;
+  if (this->has_gameruleinfo()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        3, _Internal::gameruleinfo(this), target, stream);
+  }
+
+  // repeated int32 cbPeaceCount = 4;
+  {
+    int byte_size = _cbpeacecount_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          4, _internal_cbpeacecount(), byte_size, target);
+    }
+  }
+
+  // repeated int32 cbRegretCount = 5;
+  {
+    int byte_size = _cbregretcount_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          5, _internal_cbregretcount(), byte_size, target);
+    }
+  }
+
+  // repeated .ChinaChess.Scene_Chess ChessItemArray = 6;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_chessitemarray_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(6, this->_internal_chessitemarray(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4156,19 +5444,70 @@ size_t ChessMap::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 MapY = 1;
+  // repeated int32 wChessStepCount = 2;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->mapy_);
+      Int32Size(this->wchessstepcount_);
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
             static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
     int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _mapy_cached_byte_size_.store(cached_size,
+    _wchessstepcount_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
+  }
+
+  // repeated int32 cbPeaceCount = 4;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->cbpeacecount_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _cbpeacecount_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int32 cbRegretCount = 5;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->cbregretcount_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _cbregretcount_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .ChinaChess.Scene_Chess ChessItemArray = 6;
+  total_size += 1UL * this->_internal_chessitemarray_size();
+  for (const auto& msg : this->chessitemarray_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // .ChinaChess.Scene_GameRuleInfo GameRuleInfo = 3;
+  if (this->has_gameruleinfo()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *gameruleinfo_);
+  }
+
+  // int32 wCurrentUser = 1;
+  if (this->wcurrentuser() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_wcurrentuser());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4202,7 +5541,16 @@ void ChessMap::MergeFrom(const ChessMap& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  mapy_.MergeFrom(from.mapy_);
+  wchessstepcount_.MergeFrom(from.wchessstepcount_);
+  cbpeacecount_.MergeFrom(from.cbpeacecount_);
+  cbregretcount_.MergeFrom(from.cbregretcount_);
+  chessitemarray_.MergeFrom(from.chessitemarray_);
+  if (from.has_gameruleinfo()) {
+    _internal_mutable_gameruleinfo()->::ChinaChess::Scene_GameRuleInfo::MergeFrom(from._internal_gameruleinfo());
+  }
+  if (from.wcurrentuser() != 0) {
+    _internal_set_wcurrentuser(from._internal_wcurrentuser());
+  }
 }
 
 void ChessMap::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -4226,7 +5574,16 @@ bool ChessMap::IsInitialized() const {
 void ChessMap::InternalSwap(ChessMap* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  mapy_.InternalSwap(&other->mapy_);
+  wchessstepcount_.InternalSwap(&other->wchessstepcount_);
+  cbpeacecount_.InternalSwap(&other->cbpeacecount_);
+  cbregretcount_.InternalSwap(&other->cbregretcount_);
+  chessitemarray_.InternalSwap(&other->chessitemarray_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ChessMap, wcurrentuser_)
+      + sizeof(ChessMap::wcurrentuser_)
+      - PROTOBUF_FIELD_OFFSET(ChessMap, gameruleinfo_)>(
+          reinterpret_cast<char*>(&gameruleinfo_),
+          reinterpret_cast<char*>(&other->gameruleinfo_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ChessMap::GetMetadata() const {
@@ -4236,45 +5593,526 @@ void ChessMap::InternalSwap(ChessMap* other) {
 
 // ===================================================================
 
-class SceneRsp::_Internal {
+class Scene_ChessItem::_Internal {
  public:
-  static const ::ChinaChess::CounterPush& counter(const SceneRsp* msg);
 };
 
-const ::ChinaChess::CounterPush&
-SceneRsp::_Internal::counter(const SceneRsp* msg) {
-  return *msg->counter_;
+Scene_ChessItem::Scene_ChessItem(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.Scene_ChessItem)
+}
+Scene_ChessItem::Scene_ChessItem(const Scene_ChessItem& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&cbxpos_, &from.cbxpos_,
+    static_cast<size_t>(reinterpret_cast<char*>(&cbcolor_) -
+    reinterpret_cast<char*>(&cbxpos_)) + sizeof(cbcolor_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.Scene_ChessItem)
+}
+
+void Scene_ChessItem::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&cbxpos_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&cbcolor_) -
+      reinterpret_cast<char*>(&cbxpos_)) + sizeof(cbcolor_));
+}
+
+Scene_ChessItem::~Scene_ChessItem() {
+  // @@protoc_insertion_point(destructor:ChinaChess.Scene_ChessItem)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void Scene_ChessItem::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void Scene_ChessItem::ArenaDtor(void* object) {
+  Scene_ChessItem* _this = reinterpret_cast< Scene_ChessItem* >(object);
+  (void)_this;
+}
+void Scene_ChessItem::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Scene_ChessItem::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Scene_ChessItem& Scene_ChessItem::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Scene_ChessItem_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Scene_ChessItem::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.Scene_ChessItem)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&cbxpos_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&cbcolor_) -
+      reinterpret_cast<char*>(&cbxpos_)) + sizeof(cbcolor_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Scene_ChessItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 cbXPos = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          cbxpos_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbYPos = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          cbypos_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbChess = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          cbchess_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbColor = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          cbcolor_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Scene_ChessItem::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.Scene_ChessItem)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 cbXPos = 1;
+  if (this->cbxpos() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_cbxpos(), target);
+  }
+
+  // int32 cbYPos = 2;
+  if (this->cbypos() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_cbypos(), target);
+  }
+
+  // int32 cbChess = 3;
+  if (this->cbchess() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_cbchess(), target);
+  }
+
+  // int32 cbColor = 4;
+  if (this->cbcolor() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_cbcolor(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.Scene_ChessItem)
+  return target;
+}
+
+size_t Scene_ChessItem::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.Scene_ChessItem)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 cbXPos = 1;
+  if (this->cbxpos() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbxpos());
+  }
+
+  // int32 cbYPos = 2;
+  if (this->cbypos() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbypos());
+  }
+
+  // int32 cbChess = 3;
+  if (this->cbchess() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbchess());
+  }
+
+  // int32 cbColor = 4;
+  if (this->cbcolor() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbcolor());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Scene_ChessItem::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.Scene_ChessItem)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Scene_ChessItem* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Scene_ChessItem>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.Scene_ChessItem)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.Scene_ChessItem)
+    MergeFrom(*source);
+  }
+}
+
+void Scene_ChessItem::MergeFrom(const Scene_ChessItem& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.Scene_ChessItem)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.cbxpos() != 0) {
+    _internal_set_cbxpos(from._internal_cbxpos());
+  }
+  if (from.cbypos() != 0) {
+    _internal_set_cbypos(from._internal_cbypos());
+  }
+  if (from.cbchess() != 0) {
+    _internal_set_cbchess(from._internal_cbchess());
+  }
+  if (from.cbcolor() != 0) {
+    _internal_set_cbcolor(from._internal_cbcolor());
+  }
+}
+
+void Scene_ChessItem::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.Scene_ChessItem)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Scene_ChessItem::CopyFrom(const Scene_ChessItem& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.Scene_ChessItem)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Scene_ChessItem::IsInitialized() const {
+  return true;
+}
+
+void Scene_ChessItem::InternalSwap(Scene_ChessItem* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Scene_ChessItem, cbcolor_)
+      + sizeof(Scene_ChessItem::cbcolor_)
+      - PROTOBUF_FIELD_OFFSET(Scene_ChessItem, cbxpos_)>(
+          reinterpret_cast<char*>(&cbxpos_),
+          reinterpret_cast<char*>(&other->cbxpos_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Scene_ChessItem::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class Scene_Chess::_Internal {
+ public:
+};
+
+Scene_Chess::Scene_Chess(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  items_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.Scene_Chess)
+}
+Scene_Chess::Scene_Chess(const Scene_Chess& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      items_(from.items_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.Scene_Chess)
+}
+
+void Scene_Chess::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Scene_Chess_ChinaChess_2eproto.base);
+}
+
+Scene_Chess::~Scene_Chess() {
+  // @@protoc_insertion_point(destructor:ChinaChess.Scene_Chess)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void Scene_Chess::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void Scene_Chess::ArenaDtor(void* object) {
+  Scene_Chess* _this = reinterpret_cast< Scene_Chess* >(object);
+  (void)_this;
+}
+void Scene_Chess::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Scene_Chess::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Scene_Chess& Scene_Chess::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Scene_Chess_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Scene_Chess::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.Scene_Chess)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  items_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Scene_Chess::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .ChinaChess.Scene_ChessItem items = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_items(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Scene_Chess::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.Scene_Chess)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .ChinaChess.Scene_ChessItem items = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_items_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_items(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.Scene_Chess)
+  return target;
+}
+
+size_t Scene_Chess::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.Scene_Chess)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .ChinaChess.Scene_ChessItem items = 1;
+  total_size += 1UL * this->_internal_items_size();
+  for (const auto& msg : this->items_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Scene_Chess::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.Scene_Chess)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Scene_Chess* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Scene_Chess>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.Scene_Chess)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.Scene_Chess)
+    MergeFrom(*source);
+  }
+}
+
+void Scene_Chess::MergeFrom(const Scene_Chess& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.Scene_Chess)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  items_.MergeFrom(from.items_);
+}
+
+void Scene_Chess::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.Scene_Chess)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Scene_Chess::CopyFrom(const Scene_Chess& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.Scene_Chess)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Scene_Chess::IsInitialized() const {
+  return true;
+}
+
+void Scene_Chess::InternalSwap(Scene_Chess* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  items_.InternalSwap(&other->items_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Scene_Chess::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class SceneRsp::_Internal {
+ public:
+  static const ::ChinaChess::ChessMap& free(const SceneRsp* msg);
+  static const ::ChinaChess::ChessMap& play(const SceneRsp* msg);
+};
+
+const ::ChinaChess::ChessMap&
+SceneRsp::_Internal::free(const SceneRsp* msg) {
+  return *msg->free_;
+}
+const ::ChinaChess::ChessMap&
+SceneRsp::_Internal::play(const SceneRsp* msg) {
+  return *msg->play_;
 }
 SceneRsp::SceneRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  map_(arena),
-  timer_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:ChinaChess.SceneRsp)
 }
 SceneRsp::SceneRsp(const SceneRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      map_(from.map_),
-      timer_(from.timer_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_counter()) {
-    counter_ = new ::ChinaChess::CounterPush(*from.counter_);
+  if (from._internal_has_free()) {
+    free_ = new ::ChinaChess::ChessMap(*from.free_);
   } else {
-    counter_ = nullptr;
+    free_ = nullptr;
   }
-  ::memcpy(&stage_, &from.stage_,
-    static_cast<size_t>(reinterpret_cast<char*>(&end_y0_) -
-    reinterpret_cast<char*>(&stage_)) + sizeof(end_y0_));
+  if (from._internal_has_play()) {
+    play_ = new ::ChinaChess::ChessMap(*from.play_);
+  } else {
+    play_ = nullptr;
+  }
+  ::memcpy(&status_, &from.status_,
+    static_cast<size_t>(reinterpret_cast<char*>(&campside_) -
+    reinterpret_cast<char*>(&status_)) + sizeof(campside_));
   // @@protoc_insertion_point(copy_constructor:ChinaChess.SceneRsp)
 }
 
 void SceneRsp::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SceneRsp_ChinaChess_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&counter_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&end_y0_) -
-      reinterpret_cast<char*>(&counter_)) + sizeof(end_y0_));
+      reinterpret_cast<char*>(&free_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&campside_) -
+      reinterpret_cast<char*>(&free_)) + sizeof(campside_));
 }
 
 SceneRsp::~SceneRsp() {
@@ -4285,7 +6123,8 @@ SceneRsp::~SceneRsp() {
 
 void SceneRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete counter_;
+  if (this != internal_default_instance()) delete free_;
+  if (this != internal_default_instance()) delete play_;
 }
 
 void SceneRsp::ArenaDtor(void* object) {
@@ -4309,15 +6148,17 @@ void SceneRsp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  map_.Clear();
-  timer_.Clear();
-  if (GetArena() == nullptr && counter_ != nullptr) {
-    delete counter_;
+  if (GetArena() == nullptr && free_ != nullptr) {
+    delete free_;
   }
-  counter_ = nullptr;
-  ::memset(&stage_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&end_y0_) -
-      reinterpret_cast<char*>(&stage_)) + sizeof(end_y0_));
+  free_ = nullptr;
+  if (GetArena() == nullptr && play_ != nullptr) {
+    delete play_;
+  }
+  play_ = nullptr;
+  ::memset(&status_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&campside_) -
+      reinterpret_cast<char*>(&status_)) + sizeof(campside_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4328,97 +6169,31 @@ const char* SceneRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 stage = 1;
+      // int32 status = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          stage_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 timeout = 2;
+      // .ChinaChess.ChessMap free = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          timeout_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_free(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 activeChairId = 3;
+      // .ChinaChess.ChessMap play = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          activechairid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_play(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .ChinaChess.ChessMap map = 4;
+      // int32 campSide = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_map(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
-        continue;
-      // .ChinaChess.CounterPush counter = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_counter(), ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated .ChinaChess.TimerPush timer = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_timer(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
-        } else goto handle_unusual;
-        continue;
-      // bool isRedSide = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          isredside_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 start_x0 = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          start_x0_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 start_y0 = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          start_y0_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 end_x0 = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          end_x0_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 end_y0 = 11;
-      case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          end_y0_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool isGameBegin = 12;
-      case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          isgamebegin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          campside_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4450,82 +6225,32 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 stage = 1;
-  if (this->stage() != 0) {
+  // int32 status = 1;
+  if (this->status() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_stage(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_status(), target);
   }
 
-  // int32 timeout = 2;
-  if (this->timeout() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_timeout(), target);
-  }
-
-  // int32 activeChairId = 3;
-  if (this->activechairid() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_activechairid(), target);
-  }
-
-  // repeated .ChinaChess.ChessMap map = 4;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_map_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_map(i), target, stream);
-  }
-
-  // .ChinaChess.CounterPush counter = 5;
-  if (this->has_counter()) {
+  // .ChinaChess.ChessMap free = 2;
+  if (this->has_free()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
-        5, _Internal::counter(this), target, stream);
+        2, _Internal::free(this), target, stream);
   }
 
-  // repeated .ChinaChess.TimerPush timer = 6;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_timer_size()); i < n; i++) {
+  // .ChinaChess.ChessMap play = 3;
+  if (this->has_play()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_timer(i), target, stream);
+      InternalWriteMessage(
+        3, _Internal::play(this), target, stream);
   }
 
-  // bool isRedSide = 7;
-  if (this->isredside() != 0) {
+  // int32 campSide = 4;
+  if (this->campside() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_isredside(), target);
-  }
-
-  // int32 start_x0 = 8;
-  if (this->start_x0() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_start_x0(), target);
-  }
-
-  // int32 start_y0 = 9;
-  if (this->start_y0() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_start_y0(), target);
-  }
-
-  // int32 end_x0 = 10;
-  if (this->end_x0() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_end_x0(), target);
-  }
-
-  // int32 end_y0 = 11;
-  if (this->end_y0() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_end_y0(), target);
-  }
-
-  // bool isGameBegin = 12;
-  if (this->isgamebegin() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->_internal_isgamebegin(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_campside(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4544,84 +6269,32 @@ size_t SceneRsp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .ChinaChess.ChessMap map = 4;
-  total_size += 1UL * this->_internal_map_size();
-  for (const auto& msg : this->map_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
-
-  // repeated .ChinaChess.TimerPush timer = 6;
-  total_size += 1UL * this->_internal_timer_size();
-  for (const auto& msg : this->timer_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
-
-  // .ChinaChess.CounterPush counter = 5;
-  if (this->has_counter()) {
+  // .ChinaChess.ChessMap free = 2;
+  if (this->has_free()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *counter_);
+        *free_);
   }
 
-  // int32 stage = 1;
-  if (this->stage() != 0) {
+  // .ChinaChess.ChessMap play = 3;
+  if (this->has_play()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *play_);
+  }
+
+  // int32 status = 1;
+  if (this->status() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_stage());
+        this->_internal_status());
   }
 
-  // int32 timeout = 2;
-  if (this->timeout() != 0) {
+  // int32 campSide = 4;
+  if (this->campside() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_timeout());
-  }
-
-  // int32 activeChairId = 3;
-  if (this->activechairid() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_activechairid());
-  }
-
-  // int32 start_x0 = 8;
-  if (this->start_x0() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_start_x0());
-  }
-
-  // int32 start_y0 = 9;
-  if (this->start_y0() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_start_y0());
-  }
-
-  // bool isRedSide = 7;
-  if (this->isredside() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool isGameBegin = 12;
-  if (this->isgamebegin() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // int32 end_x0 = 10;
-  if (this->end_x0() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_end_x0());
-  }
-
-  // int32 end_y0 = 11;
-  if (this->end_y0() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_end_y0());
+        this->_internal_campside());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4655,37 +6328,17 @@ void SceneRsp::MergeFrom(const SceneRsp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  map_.MergeFrom(from.map_);
-  timer_.MergeFrom(from.timer_);
-  if (from.has_counter()) {
-    _internal_mutable_counter()->::ChinaChess::CounterPush::MergeFrom(from._internal_counter());
+  if (from.has_free()) {
+    _internal_mutable_free()->::ChinaChess::ChessMap::MergeFrom(from._internal_free());
   }
-  if (from.stage() != 0) {
-    _internal_set_stage(from._internal_stage());
+  if (from.has_play()) {
+    _internal_mutable_play()->::ChinaChess::ChessMap::MergeFrom(from._internal_play());
   }
-  if (from.timeout() != 0) {
-    _internal_set_timeout(from._internal_timeout());
+  if (from.status() != 0) {
+    _internal_set_status(from._internal_status());
   }
-  if (from.activechairid() != 0) {
-    _internal_set_activechairid(from._internal_activechairid());
-  }
-  if (from.start_x0() != 0) {
-    _internal_set_start_x0(from._internal_start_x0());
-  }
-  if (from.start_y0() != 0) {
-    _internal_set_start_y0(from._internal_start_y0());
-  }
-  if (from.isredside() != 0) {
-    _internal_set_isredside(from._internal_isredside());
-  }
-  if (from.isgamebegin() != 0) {
-    _internal_set_isgamebegin(from._internal_isgamebegin());
-  }
-  if (from.end_x0() != 0) {
-    _internal_set_end_x0(from._internal_end_x0());
-  }
-  if (from.end_y0() != 0) {
-    _internal_set_end_y0(from._internal_end_y0());
+  if (from.campside() != 0) {
+    _internal_set_campside(from._internal_campside());
   }
 }
 
@@ -4710,17 +6363,244 @@ bool SceneRsp::IsInitialized() const {
 void SceneRsp::InternalSwap(SceneRsp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  map_.InternalSwap(&other->map_);
-  timer_.InternalSwap(&other->timer_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SceneRsp, end_y0_)
-      + sizeof(SceneRsp::end_y0_)
-      - PROTOBUF_FIELD_OFFSET(SceneRsp, counter_)>(
-          reinterpret_cast<char*>(&counter_),
-          reinterpret_cast<char*>(&other->counter_));
+      PROTOBUF_FIELD_OFFSET(SceneRsp, campside_)
+      + sizeof(SceneRsp::campside_)
+      - PROTOBUF_FIELD_OFFSET(SceneRsp, free_)>(
+          reinterpret_cast<char*>(&free_),
+          reinterpret_cast<char*>(&other->free_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SceneRsp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class RoomSetReq::_Internal {
+ public:
+};
+
+RoomSetReq::RoomSetReq(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.RoomSetReq)
+}
+RoomSetReq::RoomSetReq(const RoomSetReq& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&mode_, &from.mode_,
+    static_cast<size_t>(reinterpret_cast<char*>(&campside_) -
+    reinterpret_cast<char*>(&mode_)) + sizeof(campside_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.RoomSetReq)
+}
+
+void RoomSetReq::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&mode_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&campside_) -
+      reinterpret_cast<char*>(&mode_)) + sizeof(campside_));
+}
+
+RoomSetReq::~RoomSetReq() {
+  // @@protoc_insertion_point(destructor:ChinaChess.RoomSetReq)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void RoomSetReq::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void RoomSetReq::ArenaDtor(void* object) {
+  RoomSetReq* _this = reinterpret_cast< RoomSetReq* >(object);
+  (void)_this;
+}
+void RoomSetReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void RoomSetReq::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const RoomSetReq& RoomSetReq::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RoomSetReq_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void RoomSetReq::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.RoomSetReq)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&mode_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&campside_) -
+      reinterpret_cast<char*>(&mode_)) + sizeof(campside_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* RoomSetReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 mode = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          mode_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 campSide = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          campside_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* RoomSetReq::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.RoomSetReq)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 mode = 1;
+  if (this->mode() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_mode(), target);
+  }
+
+  // int32 campSide = 2;
+  if (this->campside() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_campside(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.RoomSetReq)
+  return target;
+}
+
+size_t RoomSetReq::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.RoomSetReq)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 mode = 1;
+  if (this->mode() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_mode());
+  }
+
+  // int32 campSide = 2;
+  if (this->campside() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_campside());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RoomSetReq::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.RoomSetReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RoomSetReq* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RoomSetReq>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.RoomSetReq)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.RoomSetReq)
+    MergeFrom(*source);
+  }
+}
+
+void RoomSetReq::MergeFrom(const RoomSetReq& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.RoomSetReq)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.mode() != 0) {
+    _internal_set_mode(from._internal_mode());
+  }
+  if (from.campside() != 0) {
+    _internal_set_campside(from._internal_campside());
+  }
+}
+
+void RoomSetReq::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.RoomSetReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RoomSetReq::CopyFrom(const RoomSetReq& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.RoomSetReq)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RoomSetReq::IsInitialized() const {
+  return true;
+}
+
+void RoomSetReq::InternalSwap(RoomSetReq* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RoomSetReq, campside_)
+      + sizeof(RoomSetReq::campside_)
+      - PROTOBUF_FIELD_OFFSET(RoomSetReq, mode_)>(
+          reinterpret_cast<char*>(&mode_),
+          reinterpret_cast<char*>(&other->mode_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata RoomSetReq::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -7750,299 +9630,87 @@ void ChatOrFaceRsp::InternalSwap(ChatOrFaceRsp* other) {
 
 // ===================================================================
 
-class AdmitReq::_Internal {
+class OpRsp::_Internal {
  public:
 };
 
-AdmitReq::AdmitReq(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+OpRsp::OpRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ChinaChess.AdmitReq)
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.OpRsp)
 }
-AdmitReq::AdmitReq(const AdmitReq& from)
+OpRsp::OpRsp(const OpRsp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  userid_ = from.userid_;
-  // @@protoc_insertion_point(copy_constructor:ChinaChess.AdmitReq)
+  ::memcpy(&opindex_, &from.opindex_,
+    static_cast<size_t>(reinterpret_cast<char*>(&waittime_) -
+    reinterpret_cast<char*>(&opindex_)) + sizeof(waittime_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.OpRsp)
 }
 
-void AdmitReq::SharedCtor() {
-  userid_ = 0;
-}
-
-AdmitReq::~AdmitReq() {
-  // @@protoc_insertion_point(destructor:ChinaChess.AdmitReq)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void AdmitReq::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void AdmitReq::ArenaDtor(void* object) {
-  AdmitReq* _this = reinterpret_cast< AdmitReq* >(object);
-  (void)_this;
-}
-void AdmitReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void AdmitReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const AdmitReq& AdmitReq::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AdmitReq_ChinaChess_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void AdmitReq::Clear() {
-// @@protoc_insertion_point(message_clear_start:ChinaChess.AdmitReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  userid_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* AdmitReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 userID = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* AdmitReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.AdmitReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 userID = 1;
-  if (this->userid() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_userid(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.AdmitReq)
-  return target;
-}
-
-size_t AdmitReq::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ChinaChess.AdmitReq)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 userID = 1;
-  if (this->userid() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_userid());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void AdmitReq::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.AdmitReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  const AdmitReq* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AdmitReq>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.AdmitReq)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.AdmitReq)
-    MergeFrom(*source);
-  }
-}
-
-void AdmitReq::MergeFrom(const AdmitReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.AdmitReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.userid() != 0) {
-    _internal_set_userid(from._internal_userid());
-  }
-}
-
-void AdmitReq::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.AdmitReq)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void AdmitReq::CopyFrom(const AdmitReq& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.AdmitReq)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool AdmitReq::IsInitialized() const {
-  return true;
-}
-
-void AdmitReq::InternalSwap(AdmitReq* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(userid_, other->userid_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata AdmitReq::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class AdmitRsp::_Internal {
- public:
-};
-
-AdmitRsp::AdmitRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ChinaChess.AdmitRsp)
-}
-AdmitRsp::AdmitRsp(const AdmitRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_content().empty()) {
-    content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_content(), 
-      GetArena());
-  }
-  ::memcpy(&code_, &from.code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&applyuserid_) -
-    reinterpret_cast<char*>(&code_)) + sizeof(applyuserid_));
-  // @@protoc_insertion_point(copy_constructor:ChinaChess.AdmitRsp)
-}
-
-void AdmitRsp::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AdmitRsp_ChinaChess_2eproto.base);
-  content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+void OpRsp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&applyuserid_) -
-      reinterpret_cast<char*>(&code_)) + sizeof(applyuserid_));
+      reinterpret_cast<char*>(&opindex_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&waittime_) -
+      reinterpret_cast<char*>(&opindex_)) + sizeof(waittime_));
 }
 
-AdmitRsp::~AdmitRsp() {
-  // @@protoc_insertion_point(destructor:ChinaChess.AdmitRsp)
+OpRsp::~OpRsp() {
+  // @@protoc_insertion_point(destructor:ChinaChess.OpRsp)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void AdmitRsp::SharedDtor() {
+void OpRsp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  content_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void AdmitRsp::ArenaDtor(void* object) {
-  AdmitRsp* _this = reinterpret_cast< AdmitRsp* >(object);
+void OpRsp::ArenaDtor(void* object) {
+  OpRsp* _this = reinterpret_cast< OpRsp* >(object);
   (void)_this;
 }
-void AdmitRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void OpRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void AdmitRsp::SetCachedSize(int size) const {
+void OpRsp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const AdmitRsp& AdmitRsp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AdmitRsp_ChinaChess_2eproto.base);
+const OpRsp& OpRsp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OpRsp_ChinaChess_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void AdmitRsp::Clear() {
-// @@protoc_insertion_point(message_clear_start:ChinaChess.AdmitRsp)
+void OpRsp::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.OpRsp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  content_.ClearToEmpty();
-  ::memset(&code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&applyuserid_) -
-      reinterpret_cast<char*>(&code_)) + sizeof(applyuserid_));
+  ::memset(&opindex_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&waittime_) -
+      reinterpret_cast<char*>(&opindex_)) + sizeof(waittime_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AdmitRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* OpRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 code = 1;
+      // int32 opIndex = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          opindex_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string content = 2;
+      // int32 waitTime = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_content();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ChinaChess.AdmitRsp.content"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 applyUserID = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          applyuserid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          waittime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8068,69 +9736,52 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AdmitRsp::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* OpRsp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.AdmitRsp)
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.OpRsp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 code = 1;
-  if (this->code() != 0) {
+  // int32 opIndex = 1;
+  if (this->opindex() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_opindex(), target);
   }
 
-  // string content = 2;
-  if (this->content().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ChinaChess.AdmitRsp.content");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_content(), target);
-  }
-
-  // int32 applyUserID = 3;
-  if (this->applyuserid() != 0) {
+  // int32 waitTime = 2;
+  if (this->waittime() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_applyuserid(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_waittime(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.AdmitRsp)
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.OpRsp)
   return target;
 }
 
-size_t AdmitRsp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ChinaChess.AdmitRsp)
+size_t OpRsp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.OpRsp)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string content = 2;
-  if (this->content().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_content());
-  }
-
-  // int32 code = 1;
-  if (this->code() != 0) {
+  // int32 opIndex = 1;
+  if (this->opindex() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
+        this->_internal_opindex());
   }
 
-  // int32 applyUserID = 3;
-  if (this->applyuserid() != 0) {
+  // int32 waitTime = 2;
+  if (this->waittime() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_applyuserid());
+        this->_internal_waittime());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -8142,70 +9793,66 @@ size_t AdmitRsp::ByteSizeLong() const {
   return total_size;
 }
 
-void AdmitRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.AdmitRsp)
+void OpRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.OpRsp)
   GOOGLE_DCHECK_NE(&from, this);
-  const AdmitRsp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<AdmitRsp>(
+  const OpRsp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OpRsp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.AdmitRsp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.OpRsp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.AdmitRsp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.OpRsp)
     MergeFrom(*source);
   }
 }
 
-void AdmitRsp::MergeFrom(const AdmitRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.AdmitRsp)
+void OpRsp::MergeFrom(const OpRsp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.OpRsp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.content().size() > 0) {
-    _internal_set_content(from._internal_content());
+  if (from.opindex() != 0) {
+    _internal_set_opindex(from._internal_opindex());
   }
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
-  }
-  if (from.applyuserid() != 0) {
-    _internal_set_applyuserid(from._internal_applyuserid());
+  if (from.waittime() != 0) {
+    _internal_set_waittime(from._internal_waittime());
   }
 }
 
-void AdmitRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.AdmitRsp)
+void OpRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.OpRsp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void AdmitRsp::CopyFrom(const AdmitRsp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.AdmitRsp)
+void OpRsp::CopyFrom(const OpRsp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.OpRsp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool AdmitRsp::IsInitialized() const {
+bool OpRsp::IsInitialized() const {
   return true;
 }
 
-void AdmitRsp::InternalSwap(AdmitRsp* other) {
+void OpRsp::InternalSwap(OpRsp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  content_.Swap(&other->content_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AdmitRsp, applyuserid_)
-      + sizeof(AdmitRsp::applyuserid_)
-      - PROTOBUF_FIELD_OFFSET(AdmitRsp, code_)>(
-          reinterpret_cast<char*>(&code_),
-          reinterpret_cast<char*>(&other->code_));
+      PROTOBUF_FIELD_OFFSET(OpRsp, waittime_)
+      + sizeof(OpRsp::waittime_)
+      - PROTOBUF_FIELD_OFFSET(OpRsp, opindex_)>(
+          reinterpret_cast<char*>(&opindex_),
+          reinterpret_cast<char*>(&other->opindex_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata AdmitRsp::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata OpRsp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -8458,491 +10105,6 @@ void RegretRsp::InternalSwap(RegretRsp* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RegretRsp::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class DrawReq::_Internal {
- public:
-};
-
-DrawReq::DrawReq(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ChinaChess.DrawReq)
-}
-DrawReq::DrawReq(const DrawReq& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  userid_ = from.userid_;
-  // @@protoc_insertion_point(copy_constructor:ChinaChess.DrawReq)
-}
-
-void DrawReq::SharedCtor() {
-  userid_ = 0;
-}
-
-DrawReq::~DrawReq() {
-  // @@protoc_insertion_point(destructor:ChinaChess.DrawReq)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void DrawReq::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void DrawReq::ArenaDtor(void* object) {
-  DrawReq* _this = reinterpret_cast< DrawReq* >(object);
-  (void)_this;
-}
-void DrawReq::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void DrawReq::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const DrawReq& DrawReq::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_DrawReq_ChinaChess_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void DrawReq::Clear() {
-// @@protoc_insertion_point(message_clear_start:ChinaChess.DrawReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  userid_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* DrawReq::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 userID = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* DrawReq::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.DrawReq)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 userID = 1;
-  if (this->userid() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_userid(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.DrawReq)
-  return target;
-}
-
-size_t DrawReq::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ChinaChess.DrawReq)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 userID = 1;
-  if (this->userid() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_userid());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void DrawReq::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.DrawReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DrawReq* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DrawReq>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.DrawReq)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.DrawReq)
-    MergeFrom(*source);
-  }
-}
-
-void DrawReq::MergeFrom(const DrawReq& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.DrawReq)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.userid() != 0) {
-    _internal_set_userid(from._internal_userid());
-  }
-}
-
-void DrawReq::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.DrawReq)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void DrawReq::CopyFrom(const DrawReq& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.DrawReq)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool DrawReq::IsInitialized() const {
-  return true;
-}
-
-void DrawReq::InternalSwap(DrawReq* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(userid_, other->userid_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata DrawReq::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class DrawRsp::_Internal {
- public:
-};
-
-DrawRsp::DrawRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ChinaChess.DrawRsp)
-}
-DrawRsp::DrawRsp(const DrawRsp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_content().empty()) {
-    content_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_content(), 
-      GetArena());
-  }
-  ::memcpy(&code_, &from.code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&handletime_) -
-    reinterpret_cast<char*>(&code_)) + sizeof(handletime_));
-  // @@protoc_insertion_point(copy_constructor:ChinaChess.DrawRsp)
-}
-
-void DrawRsp::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_DrawRsp_ChinaChess_2eproto.base);
-  content_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&handletime_) -
-      reinterpret_cast<char*>(&code_)) + sizeof(handletime_));
-}
-
-DrawRsp::~DrawRsp() {
-  // @@protoc_insertion_point(destructor:ChinaChess.DrawRsp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void DrawRsp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  content_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-
-void DrawRsp::ArenaDtor(void* object) {
-  DrawRsp* _this = reinterpret_cast< DrawRsp* >(object);
-  (void)_this;
-}
-void DrawRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void DrawRsp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const DrawRsp& DrawRsp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_DrawRsp_ChinaChess_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void DrawRsp::Clear() {
-// @@protoc_insertion_point(message_clear_start:ChinaChess.DrawRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  content_.ClearToEmpty();
-  ::memset(&code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&handletime_) -
-      reinterpret_cast<char*>(&code_)) + sizeof(handletime_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* DrawRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 code = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // string content = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_content();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ChinaChess.DrawRsp.content"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 applyUserID = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          applyuserid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 handleTime = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          handletime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* DrawRsp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.DrawRsp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 code = 1;
-  if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
-  }
-
-  // string content = 2;
-  if (this->content().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_content().data(), static_cast<int>(this->_internal_content().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "ChinaChess.DrawRsp.content");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_content(), target);
-  }
-
-  // int32 applyUserID = 3;
-  if (this->applyuserid() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_applyuserid(), target);
-  }
-
-  // int32 handleTime = 4;
-  if (this->handletime() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_handletime(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.DrawRsp)
-  return target;
-}
-
-size_t DrawRsp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:ChinaChess.DrawRsp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // string content = 2;
-  if (this->content().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_content());
-  }
-
-  // int32 code = 1;
-  if (this->code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
-  }
-
-  // int32 applyUserID = 3;
-  if (this->applyuserid() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_applyuserid());
-  }
-
-  // int32 handleTime = 4;
-  if (this->handletime() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_handletime());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void DrawRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.DrawRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DrawRsp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DrawRsp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.DrawRsp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.DrawRsp)
-    MergeFrom(*source);
-  }
-}
-
-void DrawRsp::MergeFrom(const DrawRsp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.DrawRsp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.content().size() > 0) {
-    _internal_set_content(from._internal_content());
-  }
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
-  }
-  if (from.applyuserid() != 0) {
-    _internal_set_applyuserid(from._internal_applyuserid());
-  }
-  if (from.handletime() != 0) {
-    _internal_set_handletime(from._internal_handletime());
-  }
-}
-
-void DrawRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.DrawRsp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void DrawRsp::CopyFrom(const DrawRsp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.DrawRsp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool DrawRsp::IsInitialized() const {
-  return true;
-}
-
-void DrawRsp::InternalSwap(DrawRsp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  content_.Swap(&other->content_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(DrawRsp, handletime_)
-      + sizeof(DrawRsp::handletime_)
-      - PROTOBUF_FIELD_OFFSET(DrawRsp, code_)>(
-          reinterpret_cast<char*>(&code_),
-          reinterpret_cast<char*>(&other->code_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata DrawRsp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -10377,16 +11539,16 @@ MoveRsp::MoveRsp(const MoveRsp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cbxsourcepos_, &from.cbxsourcepos_,
-    static_cast<size_t>(reinterpret_cast<char*>(&wcurrentuser_) -
-    reinterpret_cast<char*>(&cbxsourcepos_)) + sizeof(wcurrentuser_));
+    static_cast<size_t>(reinterpret_cast<char*>(&result_) -
+    reinterpret_cast<char*>(&cbxsourcepos_)) + sizeof(result_));
   // @@protoc_insertion_point(copy_constructor:ChinaChess.MoveRsp)
 }
 
 void MoveRsp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cbxsourcepos_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&wcurrentuser_) -
-      reinterpret_cast<char*>(&cbxsourcepos_)) + sizeof(wcurrentuser_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&result_) -
+      reinterpret_cast<char*>(&cbxsourcepos_)) + sizeof(result_));
 }
 
 MoveRsp::~MoveRsp() {
@@ -10421,8 +11583,8 @@ void MoveRsp::Clear() {
   (void) cached_has_bits;
 
   ::memset(&cbxsourcepos_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&wcurrentuser_) -
-      reinterpret_cast<char*>(&cbxsourcepos_)) + sizeof(wcurrentuser_));
+      reinterpret_cast<char*>(&result_) -
+      reinterpret_cast<char*>(&cbxsourcepos_)) + sizeof(result_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -10465,6 +11627,13 @@ const char* MoveRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           wcurrentuser_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 result = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          result_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10526,6 +11695,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_wcurrentuser(), target);
   }
 
+  // int32 result = 6;
+  if (this->result() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_result(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -10577,6 +11752,13 @@ size_t MoveRsp::ByteSizeLong() const {
         this->_internal_wcurrentuser());
   }
 
+  // int32 result = 6;
+  if (this->result() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_result());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -10623,6 +11805,9 @@ void MoveRsp::MergeFrom(const MoveRsp& from) {
   if (from.wcurrentuser() != 0) {
     _internal_set_wcurrentuser(from._internal_wcurrentuser());
   }
+  if (from.result() != 0) {
+    _internal_set_result(from._internal_result());
+  }
 }
 
 void MoveRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -10647,8 +11832,8 @@ void MoveRsp::InternalSwap(MoveRsp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MoveRsp, wcurrentuser_)
-      + sizeof(MoveRsp::wcurrentuser_)
+      PROTOBUF_FIELD_OFFSET(MoveRsp, result_)
+      + sizeof(MoveRsp::result_)
       - PROTOBUF_FIELD_OFFSET(MoveRsp, cbxsourcepos_)>(
           reinterpret_cast<char*>(&cbxsourcepos_),
           reinterpret_cast<char*>(&other->cbxsourcepos_));
@@ -10934,6 +12119,1241 @@ void TimerPush::InternalSwap(TimerPush* other) {
 }
 
 
+// ===================================================================
+
+class GameResult::_Internal {
+ public:
+};
+
+GameResult::GameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  luserscore_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.GameResult)
+}
+GameResult::GameResult(const GameResult& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      luserscore_(from.luserscore_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  wwinuser_ = from.wwinuser_;
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.GameResult)
+}
+
+void GameResult::SharedCtor() {
+  wwinuser_ = 0;
+}
+
+GameResult::~GameResult() {
+  // @@protoc_insertion_point(destructor:ChinaChess.GameResult)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void GameResult::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void GameResult::ArenaDtor(void* object) {
+  GameResult* _this = reinterpret_cast< GameResult* >(object);
+  (void)_this;
+}
+void GameResult::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void GameResult::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const GameResult& GameResult::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameResult_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void GameResult::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.GameResult)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  luserscore_.Clear();
+  wwinuser_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* GameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 wWinUser = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          wwinuser_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 lUserScore = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_luserscore(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_luserscore(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GameResult::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.GameResult)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 wWinUser = 1;
+  if (this->wwinuser() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_wwinuser(), target);
+  }
+
+  // repeated int64 lUserScore = 2;
+  {
+    int byte_size = _luserscore_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt64Packed(
+          2, _internal_luserscore(), byte_size, target);
+    }
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.GameResult)
+  return target;
+}
+
+size_t GameResult::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.GameResult)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated int64 lUserScore = 2;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->luserscore_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _luserscore_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // int32 wWinUser = 1;
+  if (this->wwinuser() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_wwinuser());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void GameResult::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.GameResult)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GameResult* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GameResult>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.GameResult)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.GameResult)
+    MergeFrom(*source);
+  }
+}
+
+void GameResult::MergeFrom(const GameResult& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.GameResult)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  luserscore_.MergeFrom(from.luserscore_);
+  if (from.wwinuser() != 0) {
+    _internal_set_wwinuser(from._internal_wwinuser());
+  }
+}
+
+void GameResult::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.GameResult)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GameResult::CopyFrom(const GameResult& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.GameResult)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GameResult::IsInitialized() const {
+  return true;
+}
+
+void GameResult::InternalSwap(GameResult* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  luserscore_.InternalSwap(&other->luserscore_);
+  swap(wwinuser_, other->wwinuser_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GameResult::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class Chess_Manual::_Internal {
+ public:
+};
+
+Chess_Manual::Chess_Manual(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  items_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.Chess_Manual)
+}
+Chess_Manual::Chess_Manual(const Chess_Manual& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      items_(from.items_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.Chess_Manual)
+}
+
+void Chess_Manual::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Chess_Manual_ChinaChess_2eproto.base);
+}
+
+Chess_Manual::~Chess_Manual() {
+  // @@protoc_insertion_point(destructor:ChinaChess.Chess_Manual)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void Chess_Manual::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void Chess_Manual::ArenaDtor(void* object) {
+  Chess_Manual* _this = reinterpret_cast< Chess_Manual* >(object);
+  (void)_this;
+}
+void Chess_Manual::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Chess_Manual::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Chess_Manual& Chess_Manual::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Chess_Manual_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Chess_Manual::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.Chess_Manual)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  items_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Chess_Manual::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .ChinaChess.Chess_Manual_Item items = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_items(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Chess_Manual::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.Chess_Manual)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .ChinaChess.Chess_Manual_Item items = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_items_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_items(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.Chess_Manual)
+  return target;
+}
+
+size_t Chess_Manual::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.Chess_Manual)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .ChinaChess.Chess_Manual_Item items = 1;
+  total_size += 1UL * this->_internal_items_size();
+  for (const auto& msg : this->items_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Chess_Manual::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.Chess_Manual)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Chess_Manual* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Chess_Manual>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.Chess_Manual)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.Chess_Manual)
+    MergeFrom(*source);
+  }
+}
+
+void Chess_Manual::MergeFrom(const Chess_Manual& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.Chess_Manual)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  items_.MergeFrom(from.items_);
+}
+
+void Chess_Manual::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.Chess_Manual)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Chess_Manual::CopyFrom(const Chess_Manual& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.Chess_Manual)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Chess_Manual::IsInitialized() const {
+  return true;
+}
+
+void Chess_Manual::InternalSwap(Chess_Manual* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  items_.InternalSwap(&other->items_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Chess_Manual::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class Chess_Manual_Item::_Internal {
+ public:
+};
+
+Chess_Manual_Item::Chess_Manual_Item(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.Chess_Manual_Item)
+}
+Chess_Manual_Item::Chess_Manual_Item(const Chess_Manual_Item& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&cbxsourcechesspos_, &from.cbxsourcechesspos_,
+    static_cast<size_t>(reinterpret_cast<char*>(&cbsourcecolor_) -
+    reinterpret_cast<char*>(&cbxsourcechesspos_)) + sizeof(cbsourcecolor_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.Chess_Manual_Item)
+}
+
+void Chess_Manual_Item::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&cbxsourcechesspos_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&cbsourcecolor_) -
+      reinterpret_cast<char*>(&cbxsourcechesspos_)) + sizeof(cbsourcecolor_));
+}
+
+Chess_Manual_Item::~Chess_Manual_Item() {
+  // @@protoc_insertion_point(destructor:ChinaChess.Chess_Manual_Item)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void Chess_Manual_Item::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void Chess_Manual_Item::ArenaDtor(void* object) {
+  Chess_Manual_Item* _this = reinterpret_cast< Chess_Manual_Item* >(object);
+  (void)_this;
+}
+void Chess_Manual_Item::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void Chess_Manual_Item::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const Chess_Manual_Item& Chess_Manual_Item::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Chess_Manual_Item_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void Chess_Manual_Item::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.Chess_Manual_Item)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&cbxsourcechesspos_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&cbsourcecolor_) -
+      reinterpret_cast<char*>(&cbxsourcechesspos_)) + sizeof(cbsourcecolor_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Chess_Manual_Item::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 cbXSourceChessPos = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          cbxsourcechesspos_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbYSourceChessPos = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          cbysourcechesspos_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbXTargetChessPos = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          cbxtargetchesspos_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbYTargetChessPos = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          cbytargetchesspos_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbUniteChess = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          cbunitechess_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 cbSourceColor = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          cbsourcecolor_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* Chess_Manual_Item::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.Chess_Manual_Item)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 cbXSourceChessPos = 1;
+  if (this->cbxsourcechesspos() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_cbxsourcechesspos(), target);
+  }
+
+  // int32 cbYSourceChessPos = 2;
+  if (this->cbysourcechesspos() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_cbysourcechesspos(), target);
+  }
+
+  // int32 cbXTargetChessPos = 3;
+  if (this->cbxtargetchesspos() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_cbxtargetchesspos(), target);
+  }
+
+  // int32 cbYTargetChessPos = 4;
+  if (this->cbytargetchesspos() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_cbytargetchesspos(), target);
+  }
+
+  // int32 cbUniteChess = 5;
+  if (this->cbunitechess() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_cbunitechess(), target);
+  }
+
+  // int32 cbSourceColor = 6;
+  if (this->cbsourcecolor() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_cbsourcecolor(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.Chess_Manual_Item)
+  return target;
+}
+
+size_t Chess_Manual_Item::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.Chess_Manual_Item)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 cbXSourceChessPos = 1;
+  if (this->cbxsourcechesspos() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbxsourcechesspos());
+  }
+
+  // int32 cbYSourceChessPos = 2;
+  if (this->cbysourcechesspos() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbysourcechesspos());
+  }
+
+  // int32 cbXTargetChessPos = 3;
+  if (this->cbxtargetchesspos() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbxtargetchesspos());
+  }
+
+  // int32 cbYTargetChessPos = 4;
+  if (this->cbytargetchesspos() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbytargetchesspos());
+  }
+
+  // int32 cbUniteChess = 5;
+  if (this->cbunitechess() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbunitechess());
+  }
+
+  // int32 cbSourceColor = 6;
+  if (this->cbsourcecolor() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cbsourcecolor());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void Chess_Manual_Item::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.Chess_Manual_Item)
+  GOOGLE_DCHECK_NE(&from, this);
+  const Chess_Manual_Item* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Chess_Manual_Item>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.Chess_Manual_Item)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.Chess_Manual_Item)
+    MergeFrom(*source);
+  }
+}
+
+void Chess_Manual_Item::MergeFrom(const Chess_Manual_Item& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.Chess_Manual_Item)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.cbxsourcechesspos() != 0) {
+    _internal_set_cbxsourcechesspos(from._internal_cbxsourcechesspos());
+  }
+  if (from.cbysourcechesspos() != 0) {
+    _internal_set_cbysourcechesspos(from._internal_cbysourcechesspos());
+  }
+  if (from.cbxtargetchesspos() != 0) {
+    _internal_set_cbxtargetchesspos(from._internal_cbxtargetchesspos());
+  }
+  if (from.cbytargetchesspos() != 0) {
+    _internal_set_cbytargetchesspos(from._internal_cbytargetchesspos());
+  }
+  if (from.cbunitechess() != 0) {
+    _internal_set_cbunitechess(from._internal_cbunitechess());
+  }
+  if (from.cbsourcecolor() != 0) {
+    _internal_set_cbsourcecolor(from._internal_cbsourcecolor());
+  }
+}
+
+void Chess_Manual_Item::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.Chess_Manual_Item)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Chess_Manual_Item::CopyFrom(const Chess_Manual_Item& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.Chess_Manual_Item)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Chess_Manual_Item::IsInitialized() const {
+  return true;
+}
+
+void Chess_Manual_Item::InternalSwap(Chess_Manual_Item* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(Chess_Manual_Item, cbsourcecolor_)
+      + sizeof(Chess_Manual_Item::cbsourcecolor_)
+      - PROTOBUF_FIELD_OFFSET(Chess_Manual_Item, cbxsourcechesspos_)>(
+          reinterpret_cast<char*>(&cbxsourcechesspos_),
+          reinterpret_cast<char*>(&other->cbxsourcechesspos_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Chess_Manual_Item::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class NotifyRsp::_Internal {
+ public:
+};
+
+NotifyRsp::NotifyRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.NotifyRsp)
+}
+NotifyRsp::NotifyRsp(const NotifyRsp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&waittime_, &from.waittime_,
+    static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+    reinterpret_cast<char*>(&waittime_)) + sizeof(index_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.NotifyRsp)
+}
+
+void NotifyRsp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&waittime_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&waittime_)) + sizeof(index_));
+}
+
+NotifyRsp::~NotifyRsp() {
+  // @@protoc_insertion_point(destructor:ChinaChess.NotifyRsp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void NotifyRsp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void NotifyRsp::ArenaDtor(void* object) {
+  NotifyRsp* _this = reinterpret_cast< NotifyRsp* >(object);
+  (void)_this;
+}
+void NotifyRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void NotifyRsp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const NotifyRsp& NotifyRsp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_NotifyRsp_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void NotifyRsp::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.NotifyRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&waittime_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&waittime_)) + sizeof(index_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* NotifyRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 waitTime = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          waittime_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 roomType = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          roomtype_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 index = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* NotifyRsp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.NotifyRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 waitTime = 1;
+  if (this->waittime() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_waittime(), target);
+  }
+
+  // int32 roomType = 2;
+  if (this->roomtype() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_roomtype(), target);
+  }
+
+  // int32 index = 3;
+  if (this->index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_index(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.NotifyRsp)
+  return target;
+}
+
+size_t NotifyRsp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.NotifyRsp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 waitTime = 1;
+  if (this->waittime() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_waittime());
+  }
+
+  // int32 roomType = 2;
+  if (this->roomtype() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_roomtype());
+  }
+
+  // int32 index = 3;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_index());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void NotifyRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.NotifyRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const NotifyRsp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NotifyRsp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.NotifyRsp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.NotifyRsp)
+    MergeFrom(*source);
+  }
+}
+
+void NotifyRsp::MergeFrom(const NotifyRsp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.NotifyRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.waittime() != 0) {
+    _internal_set_waittime(from._internal_waittime());
+  }
+  if (from.roomtype() != 0) {
+    _internal_set_roomtype(from._internal_roomtype());
+  }
+  if (from.index() != 0) {
+    _internal_set_index(from._internal_index());
+  }
+}
+
+void NotifyRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.NotifyRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void NotifyRsp::CopyFrom(const NotifyRsp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.NotifyRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool NotifyRsp::IsInitialized() const {
+  return true;
+}
+
+void NotifyRsp::InternalSwap(NotifyRsp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(NotifyRsp, index_)
+      + sizeof(NotifyRsp::index_)
+      - PROTOBUF_FIELD_OFFSET(NotifyRsp, waittime_)>(
+          reinterpret_cast<char*>(&waittime_),
+          reinterpret_cast<char*>(&other->waittime_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata NotifyRsp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MakeRuleRsp::_Internal {
+ public:
+};
+
+MakeRuleRsp::MakeRuleRsp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:ChinaChess.MakeRuleRsp)
+}
+MakeRuleRsp::MakeRuleRsp(const MakeRuleRsp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&score_, &from.score_,
+    static_cast<size_t>(reinterpret_cast<char*>(&errorid_) -
+    reinterpret_cast<char*>(&score_)) + sizeof(errorid_));
+  // @@protoc_insertion_point(copy_constructor:ChinaChess.MakeRuleRsp)
+}
+
+void MakeRuleRsp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&score_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&errorid_) -
+      reinterpret_cast<char*>(&score_)) + sizeof(errorid_));
+}
+
+MakeRuleRsp::~MakeRuleRsp() {
+  // @@protoc_insertion_point(destructor:ChinaChess.MakeRuleRsp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MakeRuleRsp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MakeRuleRsp::ArenaDtor(void* object) {
+  MakeRuleRsp* _this = reinterpret_cast< MakeRuleRsp* >(object);
+  (void)_this;
+}
+void MakeRuleRsp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MakeRuleRsp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MakeRuleRsp& MakeRuleRsp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MakeRuleRsp_ChinaChess_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MakeRuleRsp::Clear() {
+// @@protoc_insertion_point(message_clear_start:ChinaChess.MakeRuleRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&score_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&errorid_) -
+      reinterpret_cast<char*>(&score_)) + sizeof(errorid_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MakeRuleRsp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 errorID = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          errorid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 score = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MakeRuleRsp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:ChinaChess.MakeRuleRsp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 errorID = 1;
+  if (this->errorid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_errorid(), target);
+  }
+
+  // int64 score = 2;
+  if (this->score() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_score(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:ChinaChess.MakeRuleRsp)
+  return target;
+}
+
+size_t MakeRuleRsp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:ChinaChess.MakeRuleRsp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int64 score = 2;
+  if (this->score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_score());
+  }
+
+  // int32 errorID = 1;
+  if (this->errorid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_errorid());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MakeRuleRsp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:ChinaChess.MakeRuleRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MakeRuleRsp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MakeRuleRsp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:ChinaChess.MakeRuleRsp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:ChinaChess.MakeRuleRsp)
+    MergeFrom(*source);
+  }
+}
+
+void MakeRuleRsp::MergeFrom(const MakeRuleRsp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:ChinaChess.MakeRuleRsp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.score() != 0) {
+    _internal_set_score(from._internal_score());
+  }
+  if (from.errorid() != 0) {
+    _internal_set_errorid(from._internal_errorid());
+  }
+}
+
+void MakeRuleRsp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:ChinaChess.MakeRuleRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MakeRuleRsp::CopyFrom(const MakeRuleRsp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:ChinaChess.MakeRuleRsp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MakeRuleRsp::IsInitialized() const {
+  return true;
+}
+
+void MakeRuleRsp::InternalSwap(MakeRuleRsp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MakeRuleRsp, errorid_)
+      + sizeof(MakeRuleRsp::errorid_)
+      - PROTOBUF_FIELD_OFFSET(MakeRuleRsp, score_)>(
+          reinterpret_cast<char*>(&score_),
+          reinterpret_cast<char*>(&other->score_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MakeRuleRsp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace ChinaChess
 PROTOBUF_NAMESPACE_OPEN
@@ -10952,6 +13372,12 @@ template<> PROTOBUF_NOINLINE ::ChinaChess::LogoutReq* Arena::CreateMaybeMessage<
 template<> PROTOBUF_NOINLINE ::ChinaChess::LogoutRsp* Arena::CreateMaybeMessage< ::ChinaChess::LogoutRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::LogoutRsp >(arena);
 }
+template<> PROTOBUF_NOINLINE ::ChinaChess::ExitRsp* Arena::CreateMaybeMessage< ::ChinaChess::ExitRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::ExitRsp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::SitDownRsp* Arena::CreateMaybeMessage< ::ChinaChess::SitDownRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::SitDownRsp >(arena);
+}
 template<> PROTOBUF_NOINLINE ::ChinaChess::CustomLoginReq* Arena::CreateMaybeMessage< ::ChinaChess::CustomLoginReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::CustomLoginReq >(arena);
 }
@@ -10967,11 +13393,23 @@ template<> PROTOBUF_NOINLINE ::ChinaChess::ResultPush* Arena::CreateMaybeMessage
 template<> PROTOBUF_NOINLINE ::ChinaChess::ConfigPush* Arena::CreateMaybeMessage< ::ChinaChess::ConfigPush >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::ConfigPush >(arena);
 }
+template<> PROTOBUF_NOINLINE ::ChinaChess::Scene_GameRuleInfo* Arena::CreateMaybeMessage< ::ChinaChess::Scene_GameRuleInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::Scene_GameRuleInfo >(arena);
+}
 template<> PROTOBUF_NOINLINE ::ChinaChess::ChessMap* Arena::CreateMaybeMessage< ::ChinaChess::ChessMap >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::ChessMap >(arena);
 }
+template<> PROTOBUF_NOINLINE ::ChinaChess::Scene_ChessItem* Arena::CreateMaybeMessage< ::ChinaChess::Scene_ChessItem >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::Scene_ChessItem >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::Scene_Chess* Arena::CreateMaybeMessage< ::ChinaChess::Scene_Chess >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::Scene_Chess >(arena);
+}
 template<> PROTOBUF_NOINLINE ::ChinaChess::SceneRsp* Arena::CreateMaybeMessage< ::ChinaChess::SceneRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::SceneRsp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::RoomSetReq* Arena::CreateMaybeMessage< ::ChinaChess::RoomSetReq >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::RoomSetReq >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ChinaChess::EmojiReq* Arena::CreateMaybeMessage< ::ChinaChess::EmojiReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::EmojiReq >(arena);
@@ -11006,20 +13444,11 @@ template<> PROTOBUF_NOINLINE ::ChinaChess::ChatOrFaceReq* Arena::CreateMaybeMess
 template<> PROTOBUF_NOINLINE ::ChinaChess::ChatOrFaceRsp* Arena::CreateMaybeMessage< ::ChinaChess::ChatOrFaceRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::ChatOrFaceRsp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::ChinaChess::AdmitReq* Arena::CreateMaybeMessage< ::ChinaChess::AdmitReq >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ChinaChess::AdmitReq >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ChinaChess::AdmitRsp* Arena::CreateMaybeMessage< ::ChinaChess::AdmitRsp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ChinaChess::AdmitRsp >(arena);
+template<> PROTOBUF_NOINLINE ::ChinaChess::OpRsp* Arena::CreateMaybeMessage< ::ChinaChess::OpRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::OpRsp >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ChinaChess::RegretRsp* Arena::CreateMaybeMessage< ::ChinaChess::RegretRsp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::RegretRsp >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ChinaChess::DrawReq* Arena::CreateMaybeMessage< ::ChinaChess::DrawReq >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ChinaChess::DrawReq >(arena);
-}
-template<> PROTOBUF_NOINLINE ::ChinaChess::DrawRsp* Arena::CreateMaybeMessage< ::ChinaChess::DrawRsp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ChinaChess::DrawRsp >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ChinaChess::AgreeReq* Arena::CreateMaybeMessage< ::ChinaChess::AgreeReq >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::AgreeReq >(arena);
@@ -11038,6 +13467,21 @@ template<> PROTOBUF_NOINLINE ::ChinaChess::MoveRsp* Arena::CreateMaybeMessage< :
 }
 template<> PROTOBUF_NOINLINE ::ChinaChess::TimerPush* Arena::CreateMaybeMessage< ::ChinaChess::TimerPush >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ChinaChess::TimerPush >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::GameResult* Arena::CreateMaybeMessage< ::ChinaChess::GameResult >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::GameResult >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::Chess_Manual* Arena::CreateMaybeMessage< ::ChinaChess::Chess_Manual >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::Chess_Manual >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::Chess_Manual_Item* Arena::CreateMaybeMessage< ::ChinaChess::Chess_Manual_Item >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::Chess_Manual_Item >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::NotifyRsp* Arena::CreateMaybeMessage< ::ChinaChess::NotifyRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::NotifyRsp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::ChinaChess::MakeRuleRsp* Arena::CreateMaybeMessage< ::ChinaChess::MakeRuleRsp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::ChinaChess::MakeRuleRsp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

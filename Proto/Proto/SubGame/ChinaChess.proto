@@ -9,7 +9,7 @@ enum EMsgIDSubGame
 	CMD_Chess_SUB_C_GIVEUP_REQ = 2;			//认输请求(MsgCommonEmpty)
 	CMD_Chess_SUB_C_PEACE_REQ = 3;  		//和棋请求(MsgCommonEmpty)
 	CMD_Chess_SUB_C_PEACE_ANSWER = 4;  		//和棋应答(MsgCommonBool)
-	CMD_Chess_SUB_C_MOVE_CHESS = 5;			//移动棋子(CMD_Chess_MOVE_CHESS)
+	CMD_Chess_SUB_C_MOVE_CHESS = 5;			//移动棋子(MoveReq)
 	CMD_Chess_SUB_C_KICK_PLAYER = 6;		//房主踢人(MsgCommonN32)
 	CMD_Chess_SUB_C_SET_RULE = 7;			//玩家设置规则(MsgCommonN64)
 	CMD_Chess_SUB_C_MAKE_RULE = 8;			//玩家确定下注(MsgCommonN64)
@@ -17,11 +17,11 @@ enum EMsgIDSubGame
 	CMD_Chess_SUB_C_NOTIFY_START = 10;		//玩家选择开始(MsgCommonEmpty)
 	CMD_Chess_SUB_C_CONTINUE = 11;			//玩家选择继续(MsgCommonEmpty)
 	CMD_Chess_SUB_S_GAME_START = 12;		//游戏开始(MsgCommonEmpty)
-	CMD_Chess_SUB_S_MOVE_CHESS = 13;		//移动棋子(CMD_Chess_MOVE_CHESS)
+	CMD_Chess_SUB_S_MOVE_CHESS = 13;		//移动棋子(MoveRsp)
 	CMD_Chess_SUB_S_REGRET_REQ = 14;		//悔棋请求(MsgCommonN32)
 	CMD_Chess_SUB_S_REGRET_FAILE = 15;		//悔棋失败(MsgCommonN32)
 	CMD_Chess_SUB_S_REGRET_RESULT = 16;		//悔棋结果(RegretResult)
-	CMD_Chess_SUB_S_PEACE_REQ = 17;			//和棋请求(CMD_Common)
+	CMD_Chess_SUB_S_PEACE_REQ = 17;			//和棋请求(OpRsp)
 	CMD_Chess_SUB_S_PEACE_ANSWER = 18;		//悔棋失败(MsgCommonEmpty)
 	CMD_Chess_SUB_S_GAME_END = 19;			//游戏结束(GameEnd)
 	CMD_Chess_SUB_S_CHESS_MANUAL = 20;		//棋谱信息(Chess_Manual)
@@ -30,11 +30,11 @@ enum EMsgIDSubGame
 	CMD_Chess_SUB_S_KICK_PLAYER = 23;		//房主踢人(MsgCommonEmpty)
 	CMD_Chess_SUB_S_NOTIFY_TIMER = 24;		//等待时间通知(Notify_Timer)
 	CMD_Chess_SUB_S_NOTIFY_ROOM_OWNER = 25;	//通知谁是房主(MsgCommonN32)
-	CMD_Chess_SUB_S_NOTIFY_SET_RULE = 26;	//通知玩家设置规则(CMD_Common)
+	CMD_Chess_SUB_S_NOTIFY_SET_RULE = 26;	//通知玩家设置规则(OpRsp)
 	CMD_Chess_SUB_S_SET_RULE = 27;			//玩家设置规则
-	CMD_Chess_SUB_S_MAKE_RULE = 28;			//玩家确定下注(CMD_Make_Rule)
-	CMD_Chess_SUB_S_NOTIFY_READY = 29;		//通知玩家选择准备(CMD_Common)
-	CMD_Chess_SUB_S_NOTIFY_START = 30;		//通知玩家选择开始(CMD_Common)
+	CMD_Chess_SUB_S_MAKE_RULE = 28;			//玩家确定下注(MakeRuleRsp)
+	CMD_Chess_SUB_S_NOTIFY_READY = 29;		//通知玩家选择准备(OpRsp)
+	CMD_Chess_SUB_S_NOTIFY_START = 30;		//通知玩家选择开始(OpRsp)
 	CMD_Chess_SUB_S_CONTINUE = 31;			//玩家选择继续(MsgCommonN32)
     CMD_ChatOrFaceReq       = 32;
     CMD_ChatOrFaceRsp       = 33;
@@ -173,7 +173,7 @@ message Scene_Chess
 
 message SceneRsp
 {
-	int32 status = 1;		// 免费次数
+	int32 status = 1;		// 0:普通 1：残局
 	ChessMap free = 2;   	// 普通模式
 	ChessMap play = 3;   	// 残局
 	int32 campSide = 4;		//红1，黑2
@@ -335,6 +335,7 @@ message MoveRsp
 	int32	cbXTargetPos = 3;
 	int32	cbYTargetPos = 4;
 	int32 	wCurrentUser = 5;
+	int32	result		 = 6;
 }
 
 message TimerPush
