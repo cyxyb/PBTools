@@ -25,6 +25,7 @@ message MsgGamePlayerInfo
 	string		ip_info				= 10;	//ip
 	string		longitude			= 11;	//径度
 	string		latitude 			= 12;	//维度
+	int32 		status				= 13;	//状态(每个游戏的状态都不相同，所有用int代替)
 }
 
 //游戏登录返回
