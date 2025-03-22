@@ -7004,6 +7004,7 @@ class GameResult PROTOBUF_FINAL :
 
   enum : int {
     kLUserScoreFieldNumber = 2,
+    kBetFieldNumber = 3,
     kWWinUserFieldNumber = 1,
   };
   // repeated int64 lUserScore = 2;
@@ -7028,6 +7029,15 @@ class GameResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_luserscore();
 
+  // int64 bet = 3;
+  void clear_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet() const;
+  void set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet() const;
+  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 wWinUser = 1;
   void clear_wwinuser();
   ::PROTOBUF_NAMESPACE_ID::int32 wwinuser() const;
@@ -7046,6 +7056,7 @@ class GameResult PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > luserscore_;
   mutable std::atomic<int> _luserscore_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_;
   ::PROTOBUF_NAMESPACE_ID::int32 wwinuser_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ChinaChess_2eproto;
@@ -12117,6 +12128,26 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
 GameResult::mutable_luserscore() {
   // @@protoc_insertion_point(field_mutable_list:ChinaChess.GameResult.lUserScore)
   return _internal_mutable_luserscore();
+}
+
+// int64 bet = 3;
+inline void GameResult::clear_bet() {
+  bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameResult::_internal_bet() const {
+  return bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameResult::bet() const {
+  // @@protoc_insertion_point(field_get:ChinaChess.GameResult.bet)
+  return _internal_bet();
+}
+inline void GameResult::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_ = value;
+}
+inline void GameResult::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet(value);
+  // @@protoc_insertion_point(field_set:ChinaChess.GameResult.bet)
 }
 
 // -------------------------------------------------------------------

@@ -102,42 +102,42 @@ namespace ChinaChess {
             "Z2V0UG9zGAMgASgFEhQKDGNiWVRhcmdldFBvcxgEIAEoBRIUCgx3Q3VycmVu",
             "dFVzZXIYBSABKAUSDgoGcmVzdWx0GAYgASgFIlkKCVRpbWVyUHVzaBINCgVj",
             "aGFpchgBIAEoBRIVCg1yb3VuZExlZnRUaW1lGAIgASgFEhQKDHN0ZXBMZWZ0",
-            "VGltZRgDIAEoBRIQCghzdGVwVGltZRgEIAEoBSIyCgpHYW1lUmVzdWx0EhAK",
-            "CHdXaW5Vc2VyGAEgASgFEhIKCmxVc2VyU2NvcmUYAiADKAMiPAoMQ2hlc3Nf",
-            "TWFudWFsEiwKBWl0ZW1zGAEgAygLMh0uQ2hpbmFDaGVzcy5DaGVzc19NYW51",
-            "YWxfSXRlbSKsAQoRQ2hlc3NfTWFudWFsX0l0ZW0SGQoRY2JYU291cmNlQ2hl",
-            "c3NQb3MYASABKAUSGQoRY2JZU291cmNlQ2hlc3NQb3MYAiABKAUSGQoRY2JY",
-            "VGFyZ2V0Q2hlc3NQb3MYAyABKAUSGQoRY2JZVGFyZ2V0Q2hlc3NQb3MYBCAB",
-            "KAUSFAoMY2JVbml0ZUNoZXNzGAUgASgFEhUKDWNiU291cmNlQ29sb3IYBiAB",
-            "KAUiPgoJTm90aWZ5UnNwEhAKCHdhaXRUaW1lGAEgASgFEhAKCHJvb21UeXBl",
-            "GAIgASgFEg0KBWluZGV4GAMgASgFIi0KC01ha2VSdWxlUnNwEg8KB2Vycm9y",
-            "SUQYASABKAUSDQoFc2NvcmUYAiABKAMqgwkKDUVNc2dJRFN1YkdhbWUSHgoa",
-            "Q01EX0NoZXNzX1NVQl9DX1JFR1JFVF9SRVEQABIhCh1DTURfQ2hlc3NfU1VC",
-            "X0NfUkVHUkVUX0FOU1dFUhABEh4KGkNNRF9DaGVzc19TVUJfQ19HSVZFVVBf",
-            "UkVREAISHQoZQ01EX0NoZXNzX1NVQl9DX1BFQUNFX1JFURADEiAKHENNRF9D",
-            "aGVzc19TVUJfQ19QRUFDRV9BTlNXRVIQBBIeChpDTURfQ2hlc3NfU1VCX0Nf",
-            "TU9WRV9DSEVTUxAFEh8KG0NNRF9DaGVzc19TVUJfQ19LSUNLX1BMQVlFUhAG",
-            "EhwKGENNRF9DaGVzc19TVUJfQ19TRVRfUlVMRRAHEh0KGUNNRF9DaGVzc19T",
-            "VUJfQ19NQUtFX1JVTEUQCBIgChxDTURfQ2hlc3NfU1VCX0NfTk9USUZZX1JF",
-            "QURZEAkSIAocQ01EX0NoZXNzX1NVQl9DX05PVElGWV9TVEFSVBAKEhwKGENN",
-            "RF9DaGVzc19TVUJfQ19DT05USU5VRRALEh4KGkNNRF9DaGVzc19TVUJfU19H",
-            "QU1FX1NUQVJUEAwSHgoaQ01EX0NoZXNzX1NVQl9TX01PVkVfQ0hFU1MQDRIe",
-            "ChpDTURfQ2hlc3NfU1VCX1NfUkVHUkVUX1JFURAOEiAKHENNRF9DaGVzc19T",
-            "VUJfU19SRUdSRVRfRkFJTEUQDxIhCh1DTURfQ2hlc3NfU1VCX1NfUkVHUkVU",
-            "X1JFU1VMVBAQEh0KGUNNRF9DaGVzc19TVUJfU19QRUFDRV9SRVEQERIgChxD",
-            "TURfQ2hlc3NfU1VCX1NfUEVBQ0VfQU5TV0VSEBISHAoYQ01EX0NoZXNzX1NV",
-            "Ql9TX0dBTUVfRU5EEBMSIAocQ01EX0NoZXNzX1NVQl9TX0NIRVNTX01BTlVB",
-            "TBAUEiAKHENNRF9DaGVzc19TVUJfU19SRVFfU0VUX1JVTEUQFRIiCh5DTURf",
-            "Q2hlc3NfU1VCX1NfUkVRX0FHUkVFX1JVTEUQFhIfChtDTURfQ2hlc3NfU1VC",
-            "X1NfS0lDS19QTEFZRVIQFxIgChxDTURfQ2hlc3NfU1VCX1NfTk9USUZZX1RJ",
-            "TUVSEBgSJQohQ01EX0NoZXNzX1NVQl9TX05PVElGWV9ST09NX09XTkVSEBkS",
-            "IwofQ01EX0NoZXNzX1NVQl9TX05PVElGWV9TRVRfUlVMRRAaEhwKGENNRF9D",
-            "aGVzc19TVUJfU19TRVRfUlVMRRAbEh0KGUNNRF9DaGVzc19TVUJfU19NQUtF",
-            "X1JVTEUQHBIgChxDTURfQ2hlc3NfU1VCX1NfTk9USUZZX1JFQURZEB0SIAoc",
-            "Q01EX0NoZXNzX1NVQl9TX05PVElGWV9TVEFSVBAeEhwKGENNRF9DaGVzc19T",
-            "VUJfU19DT05USU5VRRAfEhUKEUNNRF9DaGF0T3JGYWNlUmVxECASFQoRQ01E",
-            "X0NoYXRPckZhY2VSc3AQIRISCg5DTURfUm9vbVNldFJlcRAiEhIKDkNNRF9S",
-            "b29tU2V0UnNwECNiBnByb3RvMw=="));
+            "VGltZRgDIAEoBRIQCghzdGVwVGltZRgEIAEoBSI/CgpHYW1lUmVzdWx0EhAK",
+            "CHdXaW5Vc2VyGAEgASgFEhIKCmxVc2VyU2NvcmUYAiADKAMSCwoDYmV0GAMg",
+            "ASgDIjwKDENoZXNzX01hbnVhbBIsCgVpdGVtcxgBIAMoCzIdLkNoaW5hQ2hl",
+            "c3MuQ2hlc3NfTWFudWFsX0l0ZW0irAEKEUNoZXNzX01hbnVhbF9JdGVtEhkK",
+            "EWNiWFNvdXJjZUNoZXNzUG9zGAEgASgFEhkKEWNiWVNvdXJjZUNoZXNzUG9z",
+            "GAIgASgFEhkKEWNiWFRhcmdldENoZXNzUG9zGAMgASgFEhkKEWNiWVRhcmdl",
+            "dENoZXNzUG9zGAQgASgFEhQKDGNiVW5pdGVDaGVzcxgFIAEoBRIVCg1jYlNv",
+            "dXJjZUNvbG9yGAYgASgFIj4KCU5vdGlmeVJzcBIQCgh3YWl0VGltZRgBIAEo",
+            "BRIQCghyb29tVHlwZRgCIAEoBRINCgVpbmRleBgDIAEoBSItCgtNYWtlUnVs",
+            "ZVJzcBIPCgdlcnJvcklEGAEgASgFEg0KBXNjb3JlGAIgASgDKoMJCg1FTXNn",
+            "SURTdWJHYW1lEh4KGkNNRF9DaGVzc19TVUJfQ19SRUdSRVRfUkVREAASIQod",
+            "Q01EX0NoZXNzX1NVQl9DX1JFR1JFVF9BTlNXRVIQARIeChpDTURfQ2hlc3Nf",
+            "U1VCX0NfR0lWRVVQX1JFURACEh0KGUNNRF9DaGVzc19TVUJfQ19QRUFDRV9S",
+            "RVEQAxIgChxDTURfQ2hlc3NfU1VCX0NfUEVBQ0VfQU5TV0VSEAQSHgoaQ01E",
+            "X0NoZXNzX1NVQl9DX01PVkVfQ0hFU1MQBRIfChtDTURfQ2hlc3NfU1VCX0Nf",
+            "S0lDS19QTEFZRVIQBhIcChhDTURfQ2hlc3NfU1VCX0NfU0VUX1JVTEUQBxId",
+            "ChlDTURfQ2hlc3NfU1VCX0NfTUFLRV9SVUxFEAgSIAocQ01EX0NoZXNzX1NV",
+            "Ql9DX05PVElGWV9SRUFEWRAJEiAKHENNRF9DaGVzc19TVUJfQ19OT1RJRllf",
+            "U1RBUlQQChIcChhDTURfQ2hlc3NfU1VCX0NfQ09OVElOVUUQCxIeChpDTURf",
+            "Q2hlc3NfU1VCX1NfR0FNRV9TVEFSVBAMEh4KGkNNRF9DaGVzc19TVUJfU19N",
+            "T1ZFX0NIRVNTEA0SHgoaQ01EX0NoZXNzX1NVQl9TX1JFR1JFVF9SRVEQDhIg",
+            "ChxDTURfQ2hlc3NfU1VCX1NfUkVHUkVUX0ZBSUxFEA8SIQodQ01EX0NoZXNz",
+            "X1NVQl9TX1JFR1JFVF9SRVNVTFQQEBIdChlDTURfQ2hlc3NfU1VCX1NfUEVB",
+            "Q0VfUkVREBESIAocQ01EX0NoZXNzX1NVQl9TX1BFQUNFX0FOU1dFUhASEhwK",
+            "GENNRF9DaGVzc19TVUJfU19HQU1FX0VORBATEiAKHENNRF9DaGVzc19TVUJf",
+            "U19DSEVTU19NQU5VQUwQFBIgChxDTURfQ2hlc3NfU1VCX1NfUkVRX1NFVF9S",
+            "VUxFEBUSIgoeQ01EX0NoZXNzX1NVQl9TX1JFUV9BR1JFRV9SVUxFEBYSHwob",
+            "Q01EX0NoZXNzX1NVQl9TX0tJQ0tfUExBWUVSEBcSIAocQ01EX0NoZXNzX1NV",
+            "Ql9TX05PVElGWV9USU1FUhAYEiUKIUNNRF9DaGVzc19TVUJfU19OT1RJRllf",
+            "Uk9PTV9PV05FUhAZEiMKH0NNRF9DaGVzc19TVUJfU19OT1RJRllfU0VUX1JV",
+            "TEUQGhIcChhDTURfQ2hlc3NfU1VCX1NfU0VUX1JVTEUQGxIdChlDTURfQ2hl",
+            "c3NfU1VCX1NfTUFLRV9SVUxFEBwSIAocQ01EX0NoZXNzX1NVQl9TX05PVElG",
+            "WV9SRUFEWRAdEiAKHENNRF9DaGVzc19TVUJfU19OT1RJRllfU1RBUlQQHhIc",
+            "ChhDTURfQ2hlc3NfU1VCX1NfQ09OVElOVUUQHxIVChFDTURfQ2hhdE9yRmFj",
+            "ZVJlcRAgEhUKEUNNRF9DaGF0T3JGYWNlUnNwECESEgoOQ01EX1Jvb21TZXRS",
+            "ZXEQIhISCg5DTURfUm9vbVNldFJzcBAjYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ChinaChess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -178,7 +178,7 @@ namespace ChinaChess {
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.MoveReq), global::ChinaChess.MoveReq.Parser, new[]{ "CbXSourcePos", "CbYSourcePos", "CbXTargetPos", "CbYTargetPos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.MoveRsp), global::ChinaChess.MoveRsp.Parser, new[]{ "CbXSourcePos", "CbYSourcePos", "CbXTargetPos", "CbYTargetPos", "WCurrentUser", "Result" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.TimerPush), global::ChinaChess.TimerPush.Parser, new[]{ "Chair", "RoundLeftTime", "StepLeftTime", "StepTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.GameResult), global::ChinaChess.GameResult.Parser, new[]{ "WWinUser", "LUserScore" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.GameResult), global::ChinaChess.GameResult.Parser, new[]{ "WWinUser", "LUserScore", "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.Chess_Manual), global::ChinaChess.Chess_Manual.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.Chess_Manual_Item), global::ChinaChess.Chess_Manual_Item.Parser, new[]{ "CbXSourceChessPos", "CbYSourceChessPos", "CbXTargetChessPos", "CbYTargetChessPos", "CbUniteChess", "CbSourceColor" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinaChess.NotifyRsp), global::ChinaChess.NotifyRsp.Parser, new[]{ "WaitTime", "RoomType", "Index" }, null, null, null, null),
@@ -255,7 +255,7 @@ namespace ChinaChess {
     /// </summary>
     [pbr::OriginalName("CMD_Chess_SUB_S_REGRET_FAILE")] CmdChessSubSRegretFaile = 15,
     /// <summary>
-    ///悔棋结果(RegretResult)
+    ///悔棋结果(RegretRsp)
     /// </summary>
     [pbr::OriginalName("CMD_Chess_SUB_S_REGRET_RESULT")] CmdChessSubSRegretResult = 16,
     /// <summary>
@@ -263,11 +263,11 @@ namespace ChinaChess {
     /// </summary>
     [pbr::OriginalName("CMD_Chess_SUB_S_PEACE_REQ")] CmdChessSubSPeaceReq = 17,
     /// <summary>
-    ///悔棋失败(MsgCommonEmpty)
+    ///和棋失败(MsgCommonEmpty)
     /// </summary>
     [pbr::OriginalName("CMD_Chess_SUB_S_PEACE_ANSWER")] CmdChessSubSPeaceAnswer = 18,
     /// <summary>
-    ///游戏结束(GameEnd)
+    ///游戏结束(GameResult)
     /// </summary>
     [pbr::OriginalName("CMD_Chess_SUB_S_GAME_END")] CmdChessSubSGameEnd = 19,
     /// <summary>
@@ -10931,6 +10931,7 @@ namespace ChinaChess {
     public GameResult(GameResult other) : this() {
       wWinUser_ = other.wWinUser_;
       lUserScore_ = other.lUserScore_.Clone();
+      bet_ = other.bet_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10966,6 +10967,17 @@ namespace ChinaChess {
       get { return lUserScore_; }
     }
 
+    /// <summary>Field number for the "bet" field.</summary>
+    public const int BetFieldNumber = 3;
+    private long bet_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Bet {
+      get { return bet_; }
+      set {
+        bet_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GameResult);
@@ -10981,6 +10993,7 @@ namespace ChinaChess {
       }
       if (WWinUser != other.WWinUser) return false;
       if(!lUserScore_.Equals(other.lUserScore_)) return false;
+      if (Bet != other.Bet) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -10989,6 +11002,7 @@ namespace ChinaChess {
       int hash = 1;
       if (WWinUser != 0) hash ^= WWinUser.GetHashCode();
       hash ^= lUserScore_.GetHashCode();
+      if (Bet != 0L) hash ^= Bet.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11010,6 +11024,10 @@ namespace ChinaChess {
         output.WriteInt32(WWinUser);
       }
       lUserScore_.WriteTo(output, _repeated_lUserScore_codec);
+      if (Bet != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Bet);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -11024,6 +11042,10 @@ namespace ChinaChess {
         output.WriteInt32(WWinUser);
       }
       lUserScore_.WriteTo(ref output, _repeated_lUserScore_codec);
+      if (Bet != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Bet);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -11037,6 +11059,9 @@ namespace ChinaChess {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(WWinUser);
       }
       size += lUserScore_.CalculateSize(_repeated_lUserScore_codec);
+      if (Bet != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Bet);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -11052,6 +11077,9 @@ namespace ChinaChess {
         WWinUser = other.WWinUser;
       }
       lUserScore_.Add(other.lUserScore_);
+      if (other.Bet != 0L) {
+        Bet = other.Bet;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -11075,6 +11103,10 @@ namespace ChinaChess {
             lUserScore_.AddEntriesFrom(input, _repeated_lUserScore_codec);
             break;
           }
+          case 24: {
+            Bet = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -11096,6 +11128,10 @@ namespace ChinaChess {
           case 18:
           case 16: {
             lUserScore_.AddEntriesFrom(ref input, _repeated_lUserScore_codec);
+            break;
+          }
+          case 24: {
+            Bet = input.ReadInt64();
             break;
           }
         }

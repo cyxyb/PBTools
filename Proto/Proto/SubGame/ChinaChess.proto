@@ -20,10 +20,10 @@ enum EMsgIDSubGame
 	CMD_Chess_SUB_S_MOVE_CHESS = 13;		//移动棋子(MoveRsp)
 	CMD_Chess_SUB_S_REGRET_REQ = 14;		//悔棋请求(MsgCommonN32)
 	CMD_Chess_SUB_S_REGRET_FAILE = 15;		//悔棋失败(MsgCommonN32)
-	CMD_Chess_SUB_S_REGRET_RESULT = 16;		//悔棋结果(RegretResult)
+	CMD_Chess_SUB_S_REGRET_RESULT = 16;		//悔棋结果(RegretRsp)
 	CMD_Chess_SUB_S_PEACE_REQ = 17;			//和棋请求(OpRsp)
-	CMD_Chess_SUB_S_PEACE_ANSWER = 18;		//悔棋失败(MsgCommonEmpty)
-	CMD_Chess_SUB_S_GAME_END = 19;			//游戏结束(GameEnd)
+	CMD_Chess_SUB_S_PEACE_ANSWER = 18;		//和棋失败(MsgCommonEmpty)
+	CMD_Chess_SUB_S_GAME_END = 19;			//游戏结束(GameResult)
 	CMD_Chess_SUB_S_CHESS_MANUAL = 20;		//棋谱信息(Chess_Manual)
 	CMD_Chess_SUB_S_REQ_SET_RULE = 21;		//请求设置
 	CMD_Chess_SUB_S_REQ_AGREE_RULE = 22;	//请求同意
@@ -350,6 +350,7 @@ message GameResult
 {
 	int32	wWinUser = 1;		//赢家，和局为65535
 	repeated int64 lUserScore = 2;		//玩家金币
+	int64	bet = 3;
 }
 
 message	Chess_Manual

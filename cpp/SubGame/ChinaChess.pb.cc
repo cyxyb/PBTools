@@ -1102,6 +1102,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinaChess_2eproto::offsets[] 
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::GameResult, wwinuser_),
   PROTOBUF_FIELD_OFFSET(::ChinaChess::GameResult, luserscore_),
+  PROTOBUF_FIELD_OFFSET(::ChinaChess::GameResult, bet_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinaChess::Chess_Manual, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1174,10 +1175,10 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 320, -1, sizeof(::ChinaChess::MoveRsp)},
   { 331, -1, sizeof(::ChinaChess::TimerPush)},
   { 340, -1, sizeof(::ChinaChess::GameResult)},
-  { 347, -1, sizeof(::ChinaChess::Chess_Manual)},
-  { 353, -1, sizeof(::ChinaChess::Chess_Manual_Item)},
-  { 364, -1, sizeof(::ChinaChess::NotifyRsp)},
-  { 372, -1, sizeof(::ChinaChess::MakeRuleRsp)},
+  { 348, -1, sizeof(::ChinaChess::Chess_Manual)},
+  { 354, -1, sizeof(::ChinaChess::Chess_Manual_Item)},
+  { 365, -1, sizeof(::ChinaChess::NotifyRsp)},
+  { 373, -1, sizeof(::ChinaChess::MakeRuleRsp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1314,46 +1315,46 @@ const char descriptor_table_protodef_ChinaChess_2eproto[] PROTOBUF_SECTION_VARIA
   "CurrentUser\030\005 \001(\005\022\016\n\006result\030\006 \001(\005\"Y\n\tTim"
   "erPush\022\r\n\005chair\030\001 \001(\005\022\025\n\rroundLeftTime\030\002"
   " \001(\005\022\024\n\014stepLeftTime\030\003 \001(\005\022\020\n\010stepTime\030\004"
-  " \001(\005\"2\n\nGameResult\022\020\n\010wWinUser\030\001 \001(\005\022\022\n\n"
-  "lUserScore\030\002 \003(\003\"<\n\014Chess_Manual\022,\n\005item"
-  "s\030\001 \003(\0132\035.ChinaChess.Chess_Manual_Item\"\254"
-  "\001\n\021Chess_Manual_Item\022\031\n\021cbXSourceChessPo"
-  "s\030\001 \001(\005\022\031\n\021cbYSourceChessPos\030\002 \001(\005\022\031\n\021cb"
-  "XTargetChessPos\030\003 \001(\005\022\031\n\021cbYTargetChessP"
-  "os\030\004 \001(\005\022\024\n\014cbUniteChess\030\005 \001(\005\022\025\n\rcbSour"
-  "ceColor\030\006 \001(\005\">\n\tNotifyRsp\022\020\n\010waitTime\030\001"
-  " \001(\005\022\020\n\010roomType\030\002 \001(\005\022\r\n\005index\030\003 \001(\005\"-\n"
-  "\013MakeRuleRsp\022\017\n\007errorID\030\001 \001(\005\022\r\n\005score\030\002"
-  " \001(\003*\203\t\n\rEMsgIDSubGame\022\036\n\032CMD_Chess_SUB_"
-  "C_REGRET_REQ\020\000\022!\n\035CMD_Chess_SUB_C_REGRET"
-  "_ANSWER\020\001\022\036\n\032CMD_Chess_SUB_C_GIVEUP_REQ\020"
-  "\002\022\035\n\031CMD_Chess_SUB_C_PEACE_REQ\020\003\022 \n\034CMD_"
-  "Chess_SUB_C_PEACE_ANSWER\020\004\022\036\n\032CMD_Chess_"
-  "SUB_C_MOVE_CHESS\020\005\022\037\n\033CMD_Chess_SUB_C_KI"
-  "CK_PLAYER\020\006\022\034\n\030CMD_Chess_SUB_C_SET_RULE\020"
-  "\007\022\035\n\031CMD_Chess_SUB_C_MAKE_RULE\020\010\022 \n\034CMD_"
-  "Chess_SUB_C_NOTIFY_READY\020\t\022 \n\034CMD_Chess_"
-  "SUB_C_NOTIFY_START\020\n\022\034\n\030CMD_Chess_SUB_C_"
-  "CONTINUE\020\013\022\036\n\032CMD_Chess_SUB_S_GAME_START"
-  "\020\014\022\036\n\032CMD_Chess_SUB_S_MOVE_CHESS\020\r\022\036\n\032CM"
-  "D_Chess_SUB_S_REGRET_REQ\020\016\022 \n\034CMD_Chess_"
-  "SUB_S_REGRET_FAILE\020\017\022!\n\035CMD_Chess_SUB_S_"
-  "REGRET_RESULT\020\020\022\035\n\031CMD_Chess_SUB_S_PEACE"
-  "_REQ\020\021\022 \n\034CMD_Chess_SUB_S_PEACE_ANSWER\020\022"
-  "\022\034\n\030CMD_Chess_SUB_S_GAME_END\020\023\022 \n\034CMD_Ch"
-  "ess_SUB_S_CHESS_MANUAL\020\024\022 \n\034CMD_Chess_SU"
-  "B_S_REQ_SET_RULE\020\025\022\"\n\036CMD_Chess_SUB_S_RE"
-  "Q_AGREE_RULE\020\026\022\037\n\033CMD_Chess_SUB_S_KICK_P"
-  "LAYER\020\027\022 \n\034CMD_Chess_SUB_S_NOTIFY_TIMER\020"
-  "\030\022%\n!CMD_Chess_SUB_S_NOTIFY_ROOM_OWNER\020\031"
-  "\022#\n\037CMD_Chess_SUB_S_NOTIFY_SET_RULE\020\032\022\034\n"
-  "\030CMD_Chess_SUB_S_SET_RULE\020\033\022\035\n\031CMD_Chess"
-  "_SUB_S_MAKE_RULE\020\034\022 \n\034CMD_Chess_SUB_S_NO"
-  "TIFY_READY\020\035\022 \n\034CMD_Chess_SUB_S_NOTIFY_S"
-  "TART\020\036\022\034\n\030CMD_Chess_SUB_S_CONTINUE\020\037\022\025\n\021"
-  "CMD_ChatOrFaceReq\020 \022\025\n\021CMD_ChatOrFaceRsp"
-  "\020!\022\022\n\016CMD_RoomSetReq\020\"\022\022\n\016CMD_RoomSetRsp"
-  "\020#b\006proto3"
+  " \001(\005\"\?\n\nGameResult\022\020\n\010wWinUser\030\001 \001(\005\022\022\n\n"
+  "lUserScore\030\002 \003(\003\022\013\n\003bet\030\003 \001(\003\"<\n\014Chess_M"
+  "anual\022,\n\005items\030\001 \003(\0132\035.ChinaChess.Chess_"
+  "Manual_Item\"\254\001\n\021Chess_Manual_Item\022\031\n\021cbX"
+  "SourceChessPos\030\001 \001(\005\022\031\n\021cbYSourceChessPo"
+  "s\030\002 \001(\005\022\031\n\021cbXTargetChessPos\030\003 \001(\005\022\031\n\021cb"
+  "YTargetChessPos\030\004 \001(\005\022\024\n\014cbUniteChess\030\005 "
+  "\001(\005\022\025\n\rcbSourceColor\030\006 \001(\005\">\n\tNotifyRsp\022"
+  "\020\n\010waitTime\030\001 \001(\005\022\020\n\010roomType\030\002 \001(\005\022\r\n\005i"
+  "ndex\030\003 \001(\005\"-\n\013MakeRuleRsp\022\017\n\007errorID\030\001 \001"
+  "(\005\022\r\n\005score\030\002 \001(\003*\203\t\n\rEMsgIDSubGame\022\036\n\032C"
+  "MD_Chess_SUB_C_REGRET_REQ\020\000\022!\n\035CMD_Chess"
+  "_SUB_C_REGRET_ANSWER\020\001\022\036\n\032CMD_Chess_SUB_"
+  "C_GIVEUP_REQ\020\002\022\035\n\031CMD_Chess_SUB_C_PEACE_"
+  "REQ\020\003\022 \n\034CMD_Chess_SUB_C_PEACE_ANSWER\020\004\022"
+  "\036\n\032CMD_Chess_SUB_C_MOVE_CHESS\020\005\022\037\n\033CMD_C"
+  "hess_SUB_C_KICK_PLAYER\020\006\022\034\n\030CMD_Chess_SU"
+  "B_C_SET_RULE\020\007\022\035\n\031CMD_Chess_SUB_C_MAKE_R"
+  "ULE\020\010\022 \n\034CMD_Chess_SUB_C_NOTIFY_READY\020\t\022"
+  " \n\034CMD_Chess_SUB_C_NOTIFY_START\020\n\022\034\n\030CMD"
+  "_Chess_SUB_C_CONTINUE\020\013\022\036\n\032CMD_Chess_SUB"
+  "_S_GAME_START\020\014\022\036\n\032CMD_Chess_SUB_S_MOVE_"
+  "CHESS\020\r\022\036\n\032CMD_Chess_SUB_S_REGRET_REQ\020\016\022"
+  " \n\034CMD_Chess_SUB_S_REGRET_FAILE\020\017\022!\n\035CMD"
+  "_Chess_SUB_S_REGRET_RESULT\020\020\022\035\n\031CMD_Ches"
+  "s_SUB_S_PEACE_REQ\020\021\022 \n\034CMD_Chess_SUB_S_P"
+  "EACE_ANSWER\020\022\022\034\n\030CMD_Chess_SUB_S_GAME_EN"
+  "D\020\023\022 \n\034CMD_Chess_SUB_S_CHESS_MANUAL\020\024\022 \n"
+  "\034CMD_Chess_SUB_S_REQ_SET_RULE\020\025\022\"\n\036CMD_C"
+  "hess_SUB_S_REQ_AGREE_RULE\020\026\022\037\n\033CMD_Chess"
+  "_SUB_S_KICK_PLAYER\020\027\022 \n\034CMD_Chess_SUB_S_"
+  "NOTIFY_TIMER\020\030\022%\n!CMD_Chess_SUB_S_NOTIFY"
+  "_ROOM_OWNER\020\031\022#\n\037CMD_Chess_SUB_S_NOTIFY_"
+  "SET_RULE\020\032\022\034\n\030CMD_Chess_SUB_S_SET_RULE\020\033"
+  "\022\035\n\031CMD_Chess_SUB_S_MAKE_RULE\020\034\022 \n\034CMD_C"
+  "hess_SUB_S_NOTIFY_READY\020\035\022 \n\034CMD_Chess_S"
+  "UB_S_NOTIFY_START\020\036\022\034\n\030CMD_Chess_SUB_S_C"
+  "ONTINUE\020\037\022\025\n\021CMD_ChatOrFaceReq\020 \022\025\n\021CMD_"
+  "ChatOrFaceRsp\020!\022\022\n\016CMD_RoomSetReq\020\"\022\022\n\016C"
+  "MD_RoomSetRsp\020#b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ChinaChess_2eproto_deps[1] = {
 };
@@ -1403,7 +1404,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Chi
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ChinaChess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ChinaChess_2eproto = {
-  false, false, descriptor_table_protodef_ChinaChess_2eproto, "ChinaChess.proto", 5090,
+  false, false, descriptor_table_protodef_ChinaChess_2eproto, "ChinaChess.proto", 5103,
   &descriptor_table_ChinaChess_2eproto_once, descriptor_table_ChinaChess_2eproto_sccs, descriptor_table_ChinaChess_2eproto_deps, 42, 0,
   schemas, file_default_instances, TableStruct_ChinaChess_2eproto::offsets,
   file_level_metadata_ChinaChess_2eproto, 42, file_level_enum_descriptors_ChinaChess_2eproto, file_level_service_descriptors_ChinaChess_2eproto,
@@ -12136,12 +12137,17 @@ GameResult::GameResult(const GameResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       luserscore_(from.luserscore_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  wwinuser_ = from.wwinuser_;
+  ::memcpy(&bet_, &from.bet_,
+    static_cast<size_t>(reinterpret_cast<char*>(&wwinuser_) -
+    reinterpret_cast<char*>(&bet_)) + sizeof(wwinuser_));
   // @@protoc_insertion_point(copy_constructor:ChinaChess.GameResult)
 }
 
 void GameResult::SharedCtor() {
-  wwinuser_ = 0;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&bet_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&wwinuser_) -
+      reinterpret_cast<char*>(&bet_)) + sizeof(wwinuser_));
 }
 
 GameResult::~GameResult() {
@@ -12176,7 +12182,9 @@ void GameResult::Clear() {
   (void) cached_has_bits;
 
   luserscore_.Clear();
-  wwinuser_ = 0;
+  ::memset(&bet_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&wwinuser_) -
+      reinterpret_cast<char*>(&bet_)) + sizeof(wwinuser_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -12201,6 +12209,13 @@ const char* GameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
           _internal_add_luserscore(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 bet = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -12247,6 +12262,12 @@ failure:
     }
   }
 
+  // int64 bet = 3;
+  if (this->bet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_bet(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -12276,6 +12297,13 @@ size_t GameResult::ByteSizeLong() const {
     _luserscore_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
+  }
+
+  // int64 bet = 3;
+  if (this->bet() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_bet());
   }
 
   // int32 wWinUser = 1;
@@ -12317,6 +12345,9 @@ void GameResult::MergeFrom(const GameResult& from) {
   (void) cached_has_bits;
 
   luserscore_.MergeFrom(from.luserscore_);
+  if (from.bet() != 0) {
+    _internal_set_bet(from._internal_bet());
+  }
   if (from.wwinuser() != 0) {
     _internal_set_wwinuser(from._internal_wwinuser());
   }
@@ -12344,7 +12375,12 @@ void GameResult::InternalSwap(GameResult* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   luserscore_.InternalSwap(&other->luserscore_);
-  swap(wwinuser_, other->wwinuser_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GameResult, wwinuser_)
+      + sizeof(GameResult::wwinuser_)
+      - PROTOBUF_FIELD_OFFSET(GameResult, bet_)>(
+          reinterpret_cast<char*>(&bet_),
+          reinterpret_cast<char*>(&other->bet_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameResult::GetMetadata() const {
