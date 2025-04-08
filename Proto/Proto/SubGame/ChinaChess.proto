@@ -142,7 +142,7 @@ message ConfigPush
 message Scene_GameRuleInfo
 {
 	int32 lBetMin = 1;
-	int32 lBetMax = 2;
+	int64 lBetMax = 2;
 	repeated int32 szChip = 3;
 	int32 dwBet = 4;
 	int32 wRuleLimitTime = 5;

@@ -1254,7 +1254,7 @@ const char descriptor_table_protodef_ChinaChess_2eproto[] PROTOBUF_SECTION_VARIA
   "\022\020\n\010StepTime\030\006 \001(\005\022\021\n\tStepTime2\030\007 \001(\005\022\020\n"
   "\010DingTime\030\010 \001(\005\022\021\n\tBaseScore\030\t \001(\003\"\204\001\n\022S"
   "cene_GameRuleInfo\022\017\n\007lBetMin\030\001 \001(\005\022\017\n\007lB"
-  "etMax\030\002 \001(\005\022\016\n\006szChip\030\003 \003(\005\022\r\n\005dwBet\030\004 \001"
+  "etMax\030\002 \001(\003\022\016\n\006szChip\030\003 \003(\005\022\r\n\005dwBet\030\004 \001"
   "(\005\022\026\n\016wRuleLimitTime\030\005 \001(\005\022\025\n\rwRuleStepT"
   "ime\030\006 \001(\005\"\315\001\n\010ChessMap\022\024\n\014wCurrentUser\030\001"
   " \001(\005\022\027\n\017wChessStepCount\030\002 \003(\005\0224\n\014GameRul"
@@ -4882,17 +4882,17 @@ Scene_GameRuleInfo::Scene_GameRuleInfo(const Scene_GameRuleInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       szchip_(from.szchip_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&lbetmin_, &from.lbetmin_,
+  ::memcpy(&lbetmax_, &from.lbetmax_,
     static_cast<size_t>(reinterpret_cast<char*>(&wrulesteptime_) -
-    reinterpret_cast<char*>(&lbetmin_)) + sizeof(wrulesteptime_));
+    reinterpret_cast<char*>(&lbetmax_)) + sizeof(wrulesteptime_));
   // @@protoc_insertion_point(copy_constructor:ChinaChess.Scene_GameRuleInfo)
 }
 
 void Scene_GameRuleInfo::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&lbetmin_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&lbetmax_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&wrulesteptime_) -
-      reinterpret_cast<char*>(&lbetmin_)) + sizeof(wrulesteptime_));
+      reinterpret_cast<char*>(&lbetmax_)) + sizeof(wrulesteptime_));
 }
 
 Scene_GameRuleInfo::~Scene_GameRuleInfo() {
@@ -4927,9 +4927,9 @@ void Scene_GameRuleInfo::Clear() {
   (void) cached_has_bits;
 
   szchip_.Clear();
-  ::memset(&lbetmin_, 0, static_cast<size_t>(
+  ::memset(&lbetmax_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&wrulesteptime_) -
-      reinterpret_cast<char*>(&lbetmin_)) + sizeof(wrulesteptime_));
+      reinterpret_cast<char*>(&lbetmax_)) + sizeof(wrulesteptime_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4947,7 +4947,7 @@ const char* Scene_GameRuleInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 lBetMax = 2;
+      // int64 lBetMax = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           lbetmax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -5019,10 +5019,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_lbetmin(), target);
   }
 
-  // int32 lBetMax = 2;
+  // int64 lBetMax = 2;
   if (this->lbetmax() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_lbetmax(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_lbetmax(), target);
   }
 
   // repeated int32 szChip = 3;
@@ -5083,18 +5083,18 @@ size_t Scene_GameRuleInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
+  // int64 lBetMax = 2;
+  if (this->lbetmax() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_lbetmax());
+  }
+
   // int32 lBetMin = 1;
   if (this->lbetmin() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_lbetmin());
-  }
-
-  // int32 lBetMax = 2;
-  if (this->lbetmax() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_lbetmax());
   }
 
   // int32 dwBet = 4;
@@ -5150,11 +5150,11 @@ void Scene_GameRuleInfo::MergeFrom(const Scene_GameRuleInfo& from) {
   (void) cached_has_bits;
 
   szchip_.MergeFrom(from.szchip_);
-  if (from.lbetmin() != 0) {
-    _internal_set_lbetmin(from._internal_lbetmin());
-  }
   if (from.lbetmax() != 0) {
     _internal_set_lbetmax(from._internal_lbetmax());
+  }
+  if (from.lbetmin() != 0) {
+    _internal_set_lbetmin(from._internal_lbetmin());
   }
   if (from.dwbet() != 0) {
     _internal_set_dwbet(from._internal_dwbet());
@@ -5192,9 +5192,9 @@ void Scene_GameRuleInfo::InternalSwap(Scene_GameRuleInfo* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Scene_GameRuleInfo, wrulesteptime_)
       + sizeof(Scene_GameRuleInfo::wrulesteptime_)
-      - PROTOBUF_FIELD_OFFSET(Scene_GameRuleInfo, lbetmin_)>(
-          reinterpret_cast<char*>(&lbetmin_),
-          reinterpret_cast<char*>(&other->lbetmin_));
+      - PROTOBUF_FIELD_OFFSET(Scene_GameRuleInfo, lbetmax_)>(
+          reinterpret_cast<char*>(&lbetmax_),
+          reinterpret_cast<char*>(&other->lbetmax_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Scene_GameRuleInfo::GetMetadata() const {

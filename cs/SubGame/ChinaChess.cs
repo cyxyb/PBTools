@@ -48,7 +48,7 @@ namespace ChinaChess {
             "Y3RvchgEIAEoBRIRCglSb3VuZFRpbWUYBSABKAUSEAoIU3RlcFRpbWUYBiAB",
             "KAUSEQoJU3RlcFRpbWUyGAcgASgFEhAKCERpbmdUaW1lGAggASgFEhEKCUJh",
             "c2VTY29yZRgJIAEoAyKEAQoSU2NlbmVfR2FtZVJ1bGVJbmZvEg8KB2xCZXRN",
-            "aW4YASABKAUSDwoHbEJldE1heBgCIAEoBRIOCgZzekNoaXAYAyADKAUSDQoF",
+            "aW4YASABKAUSDwoHbEJldE1heBgCIAEoAxIOCgZzekNoaXAYAyADKAUSDQoF",
             "ZHdCZXQYBCABKAUSFgoOd1J1bGVMaW1pdFRpbWUYBSABKAUSFQoNd1J1bGVT",
             "dGVwVGltZRgGIAEoBSLNAQoIQ2hlc3NNYXASFAoMd0N1cnJlbnRVc2VyGAEg",
             "ASgFEhcKD3dDaGVzc1N0ZXBDb3VudBgCIAMoBRI0CgxHYW1lUnVsZUluZm8Y",
@@ -3734,9 +3734,9 @@ namespace ChinaChess {
 
     /// <summary>Field number for the "lBetMax" field.</summary>
     public const int LBetMaxFieldNumber = 2;
-    private int lBetMax_;
+    private long lBetMax_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int LBetMax {
+    public long LBetMax {
       get { return lBetMax_; }
       set {
         lBetMax_ = value;
@@ -3812,7 +3812,7 @@ namespace ChinaChess {
     public override int GetHashCode() {
       int hash = 1;
       if (LBetMin != 0) hash ^= LBetMin.GetHashCode();
-      if (LBetMax != 0) hash ^= LBetMax.GetHashCode();
+      if (LBetMax != 0L) hash ^= LBetMax.GetHashCode();
       hash ^= szChip_.GetHashCode();
       if (DwBet != 0) hash ^= DwBet.GetHashCode();
       if (WRuleLimitTime != 0) hash ^= WRuleLimitTime.GetHashCode();
@@ -3837,9 +3837,9 @@ namespace ChinaChess {
         output.WriteRawTag(8);
         output.WriteInt32(LBetMin);
       }
-      if (LBetMax != 0) {
+      if (LBetMax != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt32(LBetMax);
+        output.WriteInt64(LBetMax);
       }
       szChip_.WriteTo(output, _repeated_szChip_codec);
       if (DwBet != 0) {
@@ -3867,9 +3867,9 @@ namespace ChinaChess {
         output.WriteRawTag(8);
         output.WriteInt32(LBetMin);
       }
-      if (LBetMax != 0) {
+      if (LBetMax != 0L) {
         output.WriteRawTag(16);
-        output.WriteInt32(LBetMax);
+        output.WriteInt64(LBetMax);
       }
       szChip_.WriteTo(ref output, _repeated_szChip_codec);
       if (DwBet != 0) {
@@ -3896,8 +3896,8 @@ namespace ChinaChess {
       if (LBetMin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LBetMin);
       }
-      if (LBetMax != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LBetMax);
+      if (LBetMax != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(LBetMax);
       }
       size += szChip_.CalculateSize(_repeated_szChip_codec);
       if (DwBet != 0) {
@@ -3923,7 +3923,7 @@ namespace ChinaChess {
       if (other.LBetMin != 0) {
         LBetMin = other.LBetMin;
       }
-      if (other.LBetMax != 0) {
+      if (other.LBetMax != 0L) {
         LBetMax = other.LBetMax;
       }
       szChip_.Add(other.szChip_);
@@ -3955,7 +3955,7 @@ namespace ChinaChess {
             break;
           }
           case 16: {
-            LBetMax = input.ReadInt32();
+            LBetMax = input.ReadInt64();
             break;
           }
           case 26:
@@ -3994,7 +3994,7 @@ namespace ChinaChess {
             break;
           }
           case 16: {
-            LBetMax = input.ReadInt32();
+            LBetMax = input.ReadInt64();
             break;
           }
           case 26:

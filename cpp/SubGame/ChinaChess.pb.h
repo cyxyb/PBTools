@@ -2510,8 +2510,8 @@ class Scene_GameRuleInfo PROTOBUF_FINAL :
 
   enum : int {
     kSzChipFieldNumber = 3,
-    kLBetMinFieldNumber = 1,
     kLBetMaxFieldNumber = 2,
+    kLBetMinFieldNumber = 1,
     kDwBetFieldNumber = 4,
     kWRuleLimitTimeFieldNumber = 5,
     kWRuleStepTimeFieldNumber = 6,
@@ -2538,6 +2538,15 @@ class Scene_GameRuleInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_szchip();
 
+  // int64 lBetMax = 2;
+  void clear_lbetmax();
+  ::PROTOBUF_NAMESPACE_ID::int64 lbetmax() const;
+  void set_lbetmax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_lbetmax() const;
+  void _internal_set_lbetmax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 lBetMin = 1;
   void clear_lbetmin();
   ::PROTOBUF_NAMESPACE_ID::int32 lbetmin() const;
@@ -2545,15 +2554,6 @@ class Scene_GameRuleInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_lbetmin() const;
   void _internal_set_lbetmin(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 lBetMax = 2;
-  void clear_lbetmax();
-  ::PROTOBUF_NAMESPACE_ID::int32 lbetmax() const;
-  void set_lbetmax(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_lbetmax() const;
-  void _internal_set_lbetmax(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 dwBet = 4;
@@ -2592,8 +2592,8 @@ class Scene_GameRuleInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > szchip_;
   mutable std::atomic<int> _szchip_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 lbetmax_;
   ::PROTOBUF_NAMESPACE_ID::int32 lbetmin_;
-  ::PROTOBUF_NAMESPACE_ID::int32 lbetmax_;
   ::PROTOBUF_NAMESPACE_ID::int32 dwbet_;
   ::PROTOBUF_NAMESPACE_ID::int32 wrulelimittime_;
   ::PROTOBUF_NAMESPACE_ID::int32 wrulesteptime_;
@@ -9116,22 +9116,22 @@ inline void Scene_GameRuleInfo::set_lbetmin(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:ChinaChess.Scene_GameRuleInfo.lBetMin)
 }
 
-// int32 lBetMax = 2;
+// int64 lBetMax = 2;
 inline void Scene_GameRuleInfo::clear_lbetmax() {
-  lbetmax_ = 0;
+  lbetmax_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 Scene_GameRuleInfo::_internal_lbetmax() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 Scene_GameRuleInfo::_internal_lbetmax() const {
   return lbetmax_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 Scene_GameRuleInfo::lbetmax() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 Scene_GameRuleInfo::lbetmax() const {
   // @@protoc_insertion_point(field_get:ChinaChess.Scene_GameRuleInfo.lBetMax)
   return _internal_lbetmax();
 }
-inline void Scene_GameRuleInfo::_internal_set_lbetmax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void Scene_GameRuleInfo::_internal_set_lbetmax(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   lbetmax_ = value;
 }
-inline void Scene_GameRuleInfo::set_lbetmax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void Scene_GameRuleInfo::set_lbetmax(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_lbetmax(value);
   // @@protoc_insertion_point(field_set:ChinaChess.Scene_GameRuleInfo.lBetMax)
 }
