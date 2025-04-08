@@ -1325,7 +1325,7 @@ const char descriptor_table_protodef_ChinaChess_2eproto[] PROTOBUF_SECTION_VARIA
   "\001(\005\022\025\n\rcbSourceColor\030\006 \001(\005\">\n\tNotifyRsp\022"
   "\020\n\010waitTime\030\001 \001(\005\022\020\n\010roomType\030\002 \001(\005\022\r\n\005i"
   "ndex\030\003 \001(\005\"-\n\013MakeRuleRsp\022\017\n\007errorID\030\001 \001"
-  "(\005\022\r\n\005score\030\002 \001(\003*\203\t\n\rEMsgIDSubGame\022\036\n\032C"
+  "(\005\022\r\n\005score\030\002 \001(\003*\231\t\n\rEMsgIDSubGame\022\036\n\032C"
   "MD_Chess_SUB_C_REGRET_REQ\020\000\022!\n\035CMD_Chess"
   "_SUB_C_REGRET_ANSWER\020\001\022\036\n\032CMD_Chess_SUB_"
   "C_GIVEUP_REQ\020\002\022\035\n\031CMD_Chess_SUB_C_PEACE_"
@@ -1354,7 +1354,8 @@ const char descriptor_table_protodef_ChinaChess_2eproto[] PROTOBUF_SECTION_VARIA
   "UB_S_NOTIFY_START\020\036\022\034\n\030CMD_Chess_SUB_S_C"
   "ONTINUE\020\037\022\025\n\021CMD_ChatOrFaceReq\020 \022\025\n\021CMD_"
   "ChatOrFaceRsp\020!\022\022\n\016CMD_RoomSetReq\020\"\022\022\n\016C"
-  "MD_RoomSetRsp\020#b\006proto3"
+  "MD_RoomSetRsp\020#\022\024\n\020CMD_TimeOverKick\020$b\006p"
+  "roto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ChinaChess_2eproto_deps[1] = {
 };
@@ -1404,7 +1405,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Chi
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ChinaChess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ChinaChess_2eproto = {
-  false, false, descriptor_table_protodef_ChinaChess_2eproto, "ChinaChess.proto", 5103,
+  false, false, descriptor_table_protodef_ChinaChess_2eproto, "ChinaChess.proto", 5125,
   &descriptor_table_ChinaChess_2eproto_once, descriptor_table_ChinaChess_2eproto_sccs, descriptor_table_ChinaChess_2eproto_deps, 42, 0,
   schemas, file_default_instances, TableStruct_ChinaChess_2eproto::offsets,
   file_level_metadata_ChinaChess_2eproto, 42, file_level_enum_descriptors_ChinaChess_2eproto, file_level_service_descriptors_ChinaChess_2eproto,
@@ -1455,6 +1456,7 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 33:
     case 34:
     case 35:
+    case 36:
       return true;
     default:
       return false;

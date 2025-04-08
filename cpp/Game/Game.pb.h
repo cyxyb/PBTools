@@ -498,6 +498,7 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
     kChairIdFieldNumber = 7,
     kVipLevelFieldNumber = 8,
     kAvatarFrameFieldNumber = 9,
+    kStatusFieldNumber = 13,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -642,6 +643,15 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 status = 13;
+  void clear_status();
+  ::PROTOBUF_NAMESPACE_ID::int32 status() const;
+  void set_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_status() const;
+  void _internal_set_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgGamePlayerInfo)
  private:
   class _Internal;
@@ -661,6 +671,7 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 status_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -5781,6 +5792,26 @@ inline void MsgGamePlayerInfo::set_allocated_latitude(std::string* latitude) {
   latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), latitude,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgGamePlayerInfo.latitude)
+}
+
+// int32 status = 13;
+inline void MsgGamePlayerInfo::clear_status() {
+  status_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGamePlayerInfo::_internal_status() const {
+  return status_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGamePlayerInfo::status() const {
+  // @@protoc_insertion_point(field_get:MsgGamePlayerInfo.status)
+  return _internal_status();
+}
+inline void MsgGamePlayerInfo::_internal_set_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  status_ = value;
+}
+inline void MsgGamePlayerInfo::set_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_status(value);
+  // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.status)
 }
 
 // -------------------------------------------------------------------

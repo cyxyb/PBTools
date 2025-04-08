@@ -265,12 +265,13 @@ enum EMsgIDSubGame : int {
   CMD_ChatOrFaceRsp = 33,
   CMD_RoomSetReq = 34,
   CMD_RoomSetRsp = 35,
+  CMD_TimeOverKick = 36,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = CMD_Chess_SUB_C_REGRET_REQ;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = CMD_RoomSetRsp;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = CMD_TimeOverKick;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();

@@ -111,7 +111,7 @@ namespace ChinaChess {
             "dENoZXNzUG9zGAQgASgFEhQKDGNiVW5pdGVDaGVzcxgFIAEoBRIVCg1jYlNv",
             "dXJjZUNvbG9yGAYgASgFIj4KCU5vdGlmeVJzcBIQCgh3YWl0VGltZRgBIAEo",
             "BRIQCghyb29tVHlwZRgCIAEoBRINCgVpbmRleBgDIAEoBSItCgtNYWtlUnVs",
-            "ZVJzcBIPCgdlcnJvcklEGAEgASgFEg0KBXNjb3JlGAIgASgDKoMJCg1FTXNn",
+            "ZVJzcBIPCgdlcnJvcklEGAEgASgFEg0KBXNjb3JlGAIgASgDKpkJCg1FTXNn",
             "SURTdWJHYW1lEh4KGkNNRF9DaGVzc19TVUJfQ19SRUdSRVRfUkVREAASIQod",
             "Q01EX0NoZXNzX1NVQl9DX1JFR1JFVF9BTlNXRVIQARIeChpDTURfQ2hlc3Nf",
             "U1VCX0NfR0lWRVVQX1JFURACEh0KGUNNRF9DaGVzc19TVUJfQ19QRUFDRV9S",
@@ -137,7 +137,8 @@ namespace ChinaChess {
             "WV9SRUFEWRAdEiAKHENNRF9DaGVzc19TVUJfU19OT1RJRllfU1RBUlQQHhIc",
             "ChhDTURfQ2hlc3NfU1VCX1NfQ09OVElOVUUQHxIVChFDTURfQ2hhdE9yRmFj",
             "ZVJlcRAgEhUKEUNNRF9DaGF0T3JGYWNlUnNwECESEgoOQ01EX1Jvb21TZXRS",
-            "ZXEQIhISCg5DTURfUm9vbVNldFJzcBAjYgZwcm90bzM="));
+            "ZXEQIhISCg5DTURfUm9vbVNldFJzcBAjEhQKEENNRF9UaW1lT3ZlcktpY2sQ",
+            "JGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ChinaChess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -328,6 +329,10 @@ namespace ChinaChess {
     ///房间设置返回(MsgCommonN32)
     /// </summary>
     [pbr::OriginalName("CMD_RoomSetRsp")] CmdRoomSetRsp = 35,
+    /// <summary>
+    ///超时被踢
+    /// </summary>
+    [pbr::OriginalName("CMD_TimeOverKick")] CmdTimeOverKick = 36,
   }
 
   #endregion

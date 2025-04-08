@@ -39,7 +39,8 @@ enum EMsgIDSubGame
     CMD_ChatOrFaceReq       = 32;
     CMD_ChatOrFaceRsp       = 33;
     CMD_RoomSetReq       = 34;				//房间设置(RoomSetReq)
-    CMD_RoomSetRsp       = 35;					//房间设置返回(MsgCommonN32)
+    CMD_RoomSetRsp       = 35;				//房间设置返回(MsgCommonN32)
+	CMD_TimeOverKick	 = 36;				//超时被踢
 }
 
 message CommonRsp
