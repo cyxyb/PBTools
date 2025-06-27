@@ -1,0 +1,63 @@
+syntax = "proto3";
+package BattleRoyale;
+
+enum EMsgIDSubGame {
+    MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_Bet					= 1;	//玩家下注(MsgBet)
+	MsgIDSubGame_BetResp				= 2;	//玩家下注返回(MsgBetResp)
+    MsgIDSubGame_BetChange              = 3;    //玩家更换下注区域(MsgChangeBet)
+    MsgIDSubGame_BetChangeResp          = 4;    //玩家更换下注区域结果(MsgChangeBetResp)
+	MsgIDSubGame_GameResultResp			= 7;	//游戏结果(MsgResult)
+	MsgIDSubGame_NotifyStateResp		= 8;	//游戏状态(MsgCommonN32)
+}
+
+message MsgChairBetData {
+    int32               chair_id   = 1;
+    int64               gold       = 2;
+    int32               area       = 3;//下注区域
+}
+
+//场景消息
+message MsgSceneInfo {
+    repeated int32                  bet         = 1;//下注配置
+    repeated int32                  record      = 2;//游戏记录
+    int32                           bet_limit   = 3;//下注最大限制
+    repeated int32                  state_time  = 4;//时间状态(0:准备 1:下注 2:结算)
+    int32                           pass_time   = 5;//当前状态已过时间
+    int32                           state       = 6;//当前状态
+    int32                           max_area    = 7;//最大下注区域
+    repeated MsgChairBetData        data        = 8;//当前桌子上下注分布
+}
+
+message MsgBet {
+    int32               index           = 1;//下注金额下标
+    int32               area            = 2;//下注区域
+}
+
+message MsgBetResp {
+    int32               chair_id        = 1;//下注座位
+    MsgBet              bet_info        = 2;//下注信息
+}
+
+//玩家转投
+message MsgChangeBet {
+    int32               cur_area        = 1;//当前投注区域
+    int32               new_area        = 2;//新区域
+    int64               gold            = 3;//金币 (客户端请求消息可不发此字段)
+}
+
+//玩家转投返回
+message MsgChangeBetResp {
+    int32               chair_id        = 1;//玩家座位
+    MsgChangeBet        bet_info        = 2;//下注信息
+}
+
+message MsgWinData {
+    int32               chair_id        = 1;//座位
+    int64               gold            = 2;//金币输赢
+}
+
+message MsgResult {
+    int32               area            = 1;//输家区域
+    repeated MsgWinData results         = 2;//输赢情况
+}

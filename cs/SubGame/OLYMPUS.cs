@@ -31,10 +31,11 @@ namespace OLYMPUS {
             "BRILCgNvZGQYBCABKAUihAEKCU1zZ1Jlc3VsdBIlCgpyb3VuZF9kYXRhGAEg",
             "AygLMhEuT0xZTVBVUy5Nc2dSb3VuZBIVCg10YWJsZV9hbGxfbXVsGAIgASgF",
             "EhIKCmZyZWVfdGltZXMYAyABKAUSFAoMZnJlZV9hZGRfbXVsGAQgASgFEg8K",
-            "B3JldmVudWUYBSABKAQqfQoNRU1zZ0lEU3ViR2FtZRIVChFNc2dJRFN1Ykdh",
-            "bWVfTnVsbBAAEhoKFk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnQQARIYChRNc2dJ",
-            "RFN1YkdhbWVfQnV5RnJlZRACEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0",
-            "UmVzcBADYgZwcm90bzM="));
+            "B3JldmVudWUYBSABKAQqvwEKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJH",
+            "YW1lX051bGwQABIaChZNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0EAESGAoUTXNn",
+            "SURTdWJHYW1lX0J1eUZyZWUQAhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3Vs",
+            "dFJlc3AQAxIdChlNc2dJRFN1YkdhbWVfRG91YmxlQ2hhbmdlEAQSIQodTXNn",
+            "SURTdWJHYW1lX0RvdWJsZUNoYW5nZVJlc3AQBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OLYMPUS.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -61,6 +62,14 @@ namespace OLYMPUS {
     ///游戏结果(MsgResult)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 3,
+    /// <summary>
+    ///开启doublechange
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_DoubleChange")] MsgIdsubGameDoubleChange = 4,
+    /// <summary>
+    ///开启doublechange返回
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_DoubleChangeResp")] MsgIdsubGameDoubleChangeResp = 5,
   }
 
   #endregion
