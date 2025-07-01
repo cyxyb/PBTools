@@ -17,10 +17,15 @@ message MsgChairBetData {
     int32               area       = 3;//下注区域
 }
 
+message MsgRecordData {
+    int32               area        = 1;//区域
+    int32               seri_no     = 2;//局数
+}
+
 //场景消息
 message MsgSceneInfo {
     repeated int32                  bet         = 1;//下注配置
-    repeated int32                  record      = 2;//游戏记录
+    repeated MsgRecordData          record      = 2;//游戏记录
     int32                           bet_limit   = 3;//下注最大限制
     repeated int32                  state_time  = 4;//时间状态(0:准备 1:下注 2:结算)
     int32                           pass_time   = 5;//当前状态已过时间

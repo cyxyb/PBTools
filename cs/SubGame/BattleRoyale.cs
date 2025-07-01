@@ -26,28 +26,31 @@ namespace BattleRoyale {
           string.Concat(
             "CiBQcm90by9TdWJHYW1lL0JhdHRsZVJveWFsZS5wcm90bxIMQmF0dGxlUm95",
             "YWxlIj8KD01zZ0NoYWlyQmV0RGF0YRIQCghjaGFpcl9pZBgBIAEoBRIMCgRn",
-            "b2xkGAIgASgDEgwKBGFyZWEYAyABKAUiswEKDE1zZ1NjZW5lSW5mbxILCgNi",
-            "ZXQYASADKAUSDgoGcmVjb3JkGAIgAygFEhEKCWJldF9saW1pdBgDIAEoBRIS",
-            "CgpzdGF0ZV90aW1lGAQgAygFEhEKCXBhc3NfdGltZRgFIAEoBRINCgVzdGF0",
-            "ZRgGIAEoBRIQCghtYXhfYXJlYRgHIAEoBRIrCgRkYXRhGAggAygLMh0uQmF0",
-            "dGxlUm95YWxlLk1zZ0NoYWlyQmV0RGF0YSIlCgZNc2dCZXQSDQoFaW5kZXgY",
-            "ASABKAUSDAoEYXJlYRgCIAEoBSJGCgpNc2dCZXRSZXNwEhAKCGNoYWlyX2lk",
-            "GAEgASgFEiYKCGJldF9pbmZvGAIgASgLMhQuQmF0dGxlUm95YWxlLk1zZ0Jl",
-            "dCJACgxNc2dDaGFuZ2VCZXQSEAoIY3VyX2FyZWEYASABKAUSEAoIbmV3X2Fy",
-            "ZWEYAiABKAUSDAoEZ29sZBgDIAEoAyJSChBNc2dDaGFuZ2VCZXRSZXNwEhAK",
-            "CGNoYWlyX2lkGAEgASgFEiwKCGJldF9pbmZvGAIgASgLMhouQmF0dGxlUm95",
-            "YWxlLk1zZ0NoYW5nZUJldCIsCgpNc2dXaW5EYXRhEhAKCGNoYWlyX2lkGAEg",
-            "ASgFEgwKBGdvbGQYAiABKAMiRAoJTXNnUmVzdWx0EgwKBGFyZWEYASABKAUS",
-            "KQoHcmVzdWx0cxgCIAMoCzIYLkJhdHRsZVJveWFsZS5Nc2dXaW5EYXRhKtUB",
-            "Cg1FTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASFAoQTXNn",
-            "SURTdWJHYW1lX0JldBABEhgKFE1zZ0lEU3ViR2FtZV9CZXRSZXNwEAISGgoW",
-            "TXNnSURTdWJHYW1lX0JldENoYW5nZRADEh4KGk1zZ0lEU3ViR2FtZV9CZXRD",
-            "aGFuZ2VSZXNwEAQSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAcS",
-            "IAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAIYgZwcm90bzM="));
+            "b2xkGAIgASgDEgwKBGFyZWEYAyABKAUiLgoNTXNnUmVjb3JkRGF0YRIMCgRh",
+            "cmVhGAEgASgFEg8KB3Nlcmlfbm8YAiABKAUi0AEKDE1zZ1NjZW5lSW5mbxIL",
+            "CgNiZXQYASADKAUSKwoGcmVjb3JkGAIgAygLMhsuQmF0dGxlUm95YWxlLk1z",
+            "Z1JlY29yZERhdGESEQoJYmV0X2xpbWl0GAMgASgFEhIKCnN0YXRlX3RpbWUY",
+            "BCADKAUSEQoJcGFzc190aW1lGAUgASgFEg0KBXN0YXRlGAYgASgFEhAKCG1h",
+            "eF9hcmVhGAcgASgFEisKBGRhdGEYCCADKAsyHS5CYXR0bGVSb3lhbGUuTXNn",
+            "Q2hhaXJCZXREYXRhIiUKBk1zZ0JldBINCgVpbmRleBgBIAEoBRIMCgRhcmVh",
+            "GAIgASgFIkYKCk1zZ0JldFJlc3ASEAoIY2hhaXJfaWQYASABKAUSJgoIYmV0",
+            "X2luZm8YAiABKAsyFC5CYXR0bGVSb3lhbGUuTXNnQmV0IkAKDE1zZ0NoYW5n",
+            "ZUJldBIQCghjdXJfYXJlYRgBIAEoBRIQCghuZXdfYXJlYRgCIAEoBRIMCgRn",
+            "b2xkGAMgASgDIlIKEE1zZ0NoYW5nZUJldFJlc3ASEAoIY2hhaXJfaWQYASAB",
+            "KAUSLAoIYmV0X2luZm8YAiABKAsyGi5CYXR0bGVSb3lhbGUuTXNnQ2hhbmdl",
+            "QmV0IiwKCk1zZ1dpbkRhdGESEAoIY2hhaXJfaWQYASABKAUSDAoEZ29sZBgC",
+            "IAEoAyJECglNc2dSZXN1bHQSDAoEYXJlYRgBIAEoBRIpCgdyZXN1bHRzGAIg",
+            "AygLMhguQmF0dGxlUm95YWxlLk1zZ1dpbkRhdGEq1QEKDUVNc2dJRFN1Ykdh",
+            "bWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0",
+            "EAESGAoUTXNnSURTdWJHYW1lX0JldFJlc3AQAhIaChZNc2dJRFN1YkdhbWVf",
+            "QmV0Q2hhbmdlEAMSHgoaTXNnSURTdWJHYW1lX0JldENoYW5nZVJlc3AQBBIf",
+            "ChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJRFN1Ykdh",
+            "bWVfTm90aWZ5U3RhdGVSZXNwEAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::BattleRoyale.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::BattleRoyale.MsgChairBetData), global::BattleRoyale.MsgChairBetData.Parser, new[]{ "ChairId", "Gold", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::BattleRoyale.MsgRecordData), global::BattleRoyale.MsgRecordData.Parser, new[]{ "Area", "SeriNo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::BattleRoyale.MsgSceneInfo), global::BattleRoyale.MsgSceneInfo.Parser, new[]{ "Bet", "Record", "BetLimit", "StateTime", "PassTime", "State", "MaxArea", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::BattleRoyale.MsgBet), global::BattleRoyale.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::BattleRoyale.MsgBetResp), global::BattleRoyale.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
@@ -339,6 +342,220 @@ namespace BattleRoyale {
 
   }
 
+  public sealed partial class MsgRecordData : pb::IMessage<MsgRecordData>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgRecordData> _parser = new pb::MessageParser<MsgRecordData>(() => new MsgRecordData());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MsgRecordData> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgRecordData() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgRecordData(MsgRecordData other) : this() {
+      area_ = other.area_;
+      seriNo_ = other.seriNo_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgRecordData Clone() {
+      return new MsgRecordData(this);
+    }
+
+    /// <summary>Field number for the "area" field.</summary>
+    public const int AreaFieldNumber = 1;
+    private int area_;
+    /// <summary>
+    ///区域
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Area {
+      get { return area_; }
+      set {
+        area_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "seri_no" field.</summary>
+    public const int SeriNoFieldNumber = 2;
+    private int seriNo_;
+    /// <summary>
+    ///局数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SeriNo {
+      get { return seriNo_; }
+      set {
+        seriNo_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MsgRecordData);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MsgRecordData other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Area != other.Area) return false;
+      if (SeriNo != other.SeriNo) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Area != 0) hash ^= Area.GetHashCode();
+      if (SeriNo != 0) hash ^= SeriNo.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Area != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Area);
+      }
+      if (SeriNo != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SeriNo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Area != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Area);
+      }
+      if (SeriNo != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SeriNo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Area != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Area);
+      }
+      if (SeriNo != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SeriNo);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MsgRecordData other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Area != 0) {
+        Area = other.Area;
+      }
+      if (other.SeriNo != 0) {
+        SeriNo = other.SeriNo;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Area = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            SeriNo = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Area = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            SeriNo = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   /// <summary>
   ///场景消息
   /// </summary>
@@ -354,7 +571,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[1]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -402,14 +619,14 @@ namespace BattleRoyale {
 
     /// <summary>Field number for the "record" field.</summary>
     public const int RecordFieldNumber = 2;
-    private static readonly pb::FieldCodec<int> _repeated_record_codec
-        = pb::FieldCodec.ForInt32(18);
-    private readonly pbc::RepeatedField<int> record_ = new pbc::RepeatedField<int>();
+    private static readonly pb::FieldCodec<global::BattleRoyale.MsgRecordData> _repeated_record_codec
+        = pb::FieldCodec.ForMessage(18, global::BattleRoyale.MsgRecordData.Parser);
+    private readonly pbc::RepeatedField<global::BattleRoyale.MsgRecordData> record_ = new pbc::RepeatedField<global::BattleRoyale.MsgRecordData>();
     /// <summary>
     ///游戏记录
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Record {
+    public pbc::RepeatedField<global::BattleRoyale.MsgRecordData> Record {
       get { return record_; }
     }
 
@@ -666,8 +883,7 @@ namespace BattleRoyale {
             bet_.AddEntriesFrom(input, _repeated_bet_codec);
             break;
           }
-          case 18:
-          case 16: {
+          case 18: {
             record_.AddEntriesFrom(input, _repeated_record_codec);
             break;
           }
@@ -715,8 +931,7 @@ namespace BattleRoyale {
             bet_.AddEntriesFrom(ref input, _repeated_bet_codec);
             break;
           }
-          case 18:
-          case 16: {
+          case 18: {
             record_.AddEntriesFrom(ref input, _repeated_record_codec);
             break;
           }
@@ -764,7 +979,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[2]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -978,7 +1193,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[3]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1204,7 +1419,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[4]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1460,7 +1675,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[5]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1683,7 +1898,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[6]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1897,7 +2112,7 @@ namespace BattleRoyale {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[7]; }
+      get { return global::BattleRoyale.BattleRoyaleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

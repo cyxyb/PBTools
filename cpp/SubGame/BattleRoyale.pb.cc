@@ -17,12 +17,17 @@
 extern PROTOBUF_INTERNAL_EXPORT_BattleRoyale_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBet_BattleRoyale_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_BattleRoyale_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgChairBetData_BattleRoyale_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_BattleRoyale_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgChangeBet_BattleRoyale_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_BattleRoyale_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgRecordData_BattleRoyale_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_BattleRoyale_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWinData_BattleRoyale_2eproto;
 namespace BattleRoyale {
 class MsgChairBetDataDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgChairBetData> _instance;
 } _MsgChairBetData_default_instance_;
+class MsgRecordDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgRecordData> _instance;
+} _MsgRecordData_default_instance_;
 class MsgSceneInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSceneInfo> _instance;
@@ -119,6 +124,19 @@ static void InitDefaultsscc_info_MsgChangeBetResp_BattleRoyale_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgChangeBetResp_BattleRoyale_2eproto}, {
       &scc_info_MsgChangeBet_BattleRoyale_2eproto.base,}};
 
+static void InitDefaultsscc_info_MsgRecordData_BattleRoyale_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::BattleRoyale::_MsgRecordData_default_instance_;
+    new (ptr) ::BattleRoyale::MsgRecordData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgRecordData_BattleRoyale_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgRecordData_BattleRoyale_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgResult_BattleRoyale_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -143,8 +161,9 @@ static void InitDefaultsscc_info_MsgSceneInfo_BattleRoyale_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgSceneInfo_BattleRoyale_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgSceneInfo_BattleRoyale_2eproto}, {
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_MsgSceneInfo_BattleRoyale_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_MsgSceneInfo_BattleRoyale_2eproto}, {
+      &scc_info_MsgRecordData_BattleRoyale_2eproto.base,
       &scc_info_MsgChairBetData_BattleRoyale_2eproto.base,}};
 
 static void InitDefaultsscc_info_MsgWinData_BattleRoyale_2eproto() {
@@ -160,7 +179,7 @@ static void InitDefaultsscc_info_MsgWinData_BattleRoyale_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWinData_BattleRoyale_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWinData_BattleRoyale_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_BattleRoyale_2eproto[8];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_BattleRoyale_2eproto[9];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_BattleRoyale_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_BattleRoyale_2eproto = nullptr;
 
@@ -173,6 +192,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_BattleRoyale_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgChairBetData, chair_id_),
   PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgChairBetData, gold_),
   PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgChairBetData, area_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgRecordData, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgRecordData, area_),
+  PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgRecordData, seri_no_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::BattleRoyale::MsgSceneInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -232,17 +258,19 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_BattleRoyale_2eproto::offsets[
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::BattleRoyale::MsgChairBetData)},
-  { 8, -1, sizeof(::BattleRoyale::MsgSceneInfo)},
-  { 21, -1, sizeof(::BattleRoyale::MsgBet)},
-  { 28, -1, sizeof(::BattleRoyale::MsgBetResp)},
-  { 35, -1, sizeof(::BattleRoyale::MsgChangeBet)},
-  { 43, -1, sizeof(::BattleRoyale::MsgChangeBetResp)},
-  { 50, -1, sizeof(::BattleRoyale::MsgWinData)},
-  { 57, -1, sizeof(::BattleRoyale::MsgResult)},
+  { 8, -1, sizeof(::BattleRoyale::MsgRecordData)},
+  { 15, -1, sizeof(::BattleRoyale::MsgSceneInfo)},
+  { 28, -1, sizeof(::BattleRoyale::MsgBet)},
+  { 35, -1, sizeof(::BattleRoyale::MsgBetResp)},
+  { 42, -1, sizeof(::BattleRoyale::MsgChangeBet)},
+  { 50, -1, sizeof(::BattleRoyale::MsgChangeBetResp)},
+  { 57, -1, sizeof(::BattleRoyale::MsgWinData)},
+  { 64, -1, sizeof(::BattleRoyale::MsgResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::BattleRoyale::_MsgChairBetData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::BattleRoyale::_MsgRecordData_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::BattleRoyale::_MsgSceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::BattleRoyale::_MsgBet_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::BattleRoyale::_MsgBetResp_default_instance_),
@@ -255,46 +283,48 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_BattleRoyale_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\022BattleRoyale.proto\022\014BattleRoyale\"\?\n\017Ms"
   "gChairBetData\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030"
-  "\002 \001(\003\022\014\n\004area\030\003 \001(\005\"\263\001\n\014MsgSceneInfo\022\013\n\003"
-  "bet\030\001 \003(\005\022\016\n\006record\030\002 \003(\005\022\021\n\tbet_limit\030\003"
-  " \001(\005\022\022\n\nstate_time\030\004 \003(\005\022\021\n\tpass_time\030\005 "
-  "\001(\005\022\r\n\005state\030\006 \001(\005\022\020\n\010max_area\030\007 \001(\005\022+\n\004"
-  "data\030\010 \003(\0132\035.BattleRoyale.MsgChairBetDat"
-  "a\"%\n\006MsgBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005"
-  "\"F\n\nMsgBetResp\022\020\n\010chair_id\030\001 \001(\005\022&\n\010bet_"
-  "info\030\002 \001(\0132\024.BattleRoyale.MsgBet\"@\n\014MsgC"
-  "hangeBet\022\020\n\010cur_area\030\001 \001(\005\022\020\n\010new_area\030\002"
-  " \001(\005\022\014\n\004gold\030\003 \001(\003\"R\n\020MsgChangeBetResp\022\020"
-  "\n\010chair_id\030\001 \001(\005\022,\n\010bet_info\030\002 \001(\0132\032.Bat"
-  "tleRoyale.MsgChangeBet\",\n\nMsgWinData\022\020\n\010"
-  "chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"D\n\tMsgResul"
-  "t\022\014\n\004area\030\001 \001(\005\022)\n\007results\030\002 \003(\0132\030.Battl"
-  "eRoyale.MsgWinData*\325\001\n\rEMsgIDSubGame\022\025\n\021"
-  "MsgIDSubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020"
-  "\001\022\030\n\024MsgIDSubGame_BetResp\020\002\022\032\n\026MsgIDSubG"
-  "ame_BetChange\020\003\022\036\n\032MsgIDSubGame_BetChang"
-  "eResp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\007"
-  "\022 \n\034MsgIDSubGame_NotifyStateResp\020\010b\006prot"
-  "o3"
+  "\002 \001(\003\022\014\n\004area\030\003 \001(\005\".\n\rMsgRecordData\022\014\n\004"
+  "area\030\001 \001(\005\022\017\n\007seri_no\030\002 \001(\005\"\320\001\n\014MsgScene"
+  "Info\022\013\n\003bet\030\001 \003(\005\022+\n\006record\030\002 \003(\0132\033.Batt"
+  "leRoyale.MsgRecordData\022\021\n\tbet_limit\030\003 \001("
+  "\005\022\022\n\nstate_time\030\004 \003(\005\022\021\n\tpass_time\030\005 \001(\005"
+  "\022\r\n\005state\030\006 \001(\005\022\020\n\010max_area\030\007 \001(\005\022+\n\004dat"
+  "a\030\010 \003(\0132\035.BattleRoyale.MsgChairBetData\"%"
+  "\n\006MsgBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\"F\n"
+  "\nMsgBetResp\022\020\n\010chair_id\030\001 \001(\005\022&\n\010bet_inf"
+  "o\030\002 \001(\0132\024.BattleRoyale.MsgBet\"@\n\014MsgChan"
+  "geBet\022\020\n\010cur_area\030\001 \001(\005\022\020\n\010new_area\030\002 \001("
+  "\005\022\014\n\004gold\030\003 \001(\003\"R\n\020MsgChangeBetResp\022\020\n\010c"
+  "hair_id\030\001 \001(\005\022,\n\010bet_info\030\002 \001(\0132\032.Battle"
+  "Royale.MsgChangeBet\",\n\nMsgWinData\022\020\n\010cha"
+  "ir_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"D\n\tMsgResult\022\014"
+  "\n\004area\030\001 \001(\005\022)\n\007results\030\002 \003(\0132\030.BattleRo"
+  "yale.MsgWinData*\325\001\n\rEMsgIDSubGame\022\025\n\021Msg"
+  "IDSubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030"
+  "\n\024MsgIDSubGame_BetResp\020\002\022\032\n\026MsgIDSubGame"
+  "_BetChange\020\003\022\036\n\032MsgIDSubGame_BetChangeRe"
+  "sp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 \n"
+  "\034MsgIDSubGame_NotifyStateResp\020\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_BattleRoyale_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_BattleRoyale_2eproto_sccs[8] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_BattleRoyale_2eproto_sccs[9] = {
   &scc_info_MsgBet_BattleRoyale_2eproto.base,
   &scc_info_MsgBetResp_BattleRoyale_2eproto.base,
   &scc_info_MsgChairBetData_BattleRoyale_2eproto.base,
   &scc_info_MsgChangeBet_BattleRoyale_2eproto.base,
   &scc_info_MsgChangeBetResp_BattleRoyale_2eproto.base,
+  &scc_info_MsgRecordData_BattleRoyale_2eproto.base,
   &scc_info_MsgResult_BattleRoyale_2eproto.base,
   &scc_info_MsgSceneInfo_BattleRoyale_2eproto.base,
   &scc_info_MsgWinData_BattleRoyale_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_BattleRoyale_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_BattleRoyale_2eproto = {
-  false, false, descriptor_table_protodef_BattleRoyale_2eproto, "BattleRoyale.proto", 882,
-  &descriptor_table_BattleRoyale_2eproto_once, descriptor_table_BattleRoyale_2eproto_sccs, descriptor_table_BattleRoyale_2eproto_deps, 8, 0,
+  false, false, descriptor_table_protodef_BattleRoyale_2eproto, "BattleRoyale.proto", 959,
+  &descriptor_table_BattleRoyale_2eproto_once, descriptor_table_BattleRoyale_2eproto_sccs, descriptor_table_BattleRoyale_2eproto_deps, 9, 0,
   schemas, file_default_instances, TableStruct_BattleRoyale_2eproto::offsets,
-  file_level_metadata_BattleRoyale_2eproto, 8, file_level_enum_descriptors_BattleRoyale_2eproto, file_level_service_descriptors_BattleRoyale_2eproto,
+  file_level_metadata_BattleRoyale_2eproto, 9, file_level_enum_descriptors_BattleRoyale_2eproto, file_level_service_descriptors_BattleRoyale_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -574,6 +604,235 @@ void MsgChairBetData::InternalSwap(MsgChairBetData* other) {
 
 // ===================================================================
 
+class MsgRecordData::_Internal {
+ public:
+};
+
+MsgRecordData::MsgRecordData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:BattleRoyale.MsgRecordData)
+}
+MsgRecordData::MsgRecordData(const MsgRecordData& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&area_, &from.area_,
+    static_cast<size_t>(reinterpret_cast<char*>(&seri_no_) -
+    reinterpret_cast<char*>(&area_)) + sizeof(seri_no_));
+  // @@protoc_insertion_point(copy_constructor:BattleRoyale.MsgRecordData)
+}
+
+void MsgRecordData::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&area_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&seri_no_) -
+      reinterpret_cast<char*>(&area_)) + sizeof(seri_no_));
+}
+
+MsgRecordData::~MsgRecordData() {
+  // @@protoc_insertion_point(destructor:BattleRoyale.MsgRecordData)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgRecordData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgRecordData::ArenaDtor(void* object) {
+  MsgRecordData* _this = reinterpret_cast< MsgRecordData* >(object);
+  (void)_this;
+}
+void MsgRecordData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgRecordData::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgRecordData& MsgRecordData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgRecordData_BattleRoyale_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgRecordData::Clear() {
+// @@protoc_insertion_point(message_clear_start:BattleRoyale.MsgRecordData)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&area_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&seri_no_) -
+      reinterpret_cast<char*>(&area_)) + sizeof(seri_no_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgRecordData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 area = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          area_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 seri_no = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          seri_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgRecordData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:BattleRoyale.MsgRecordData)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 area = 1;
+  if (this->area() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_area(), target);
+  }
+
+  // int32 seri_no = 2;
+  if (this->seri_no() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_seri_no(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:BattleRoyale.MsgRecordData)
+  return target;
+}
+
+size_t MsgRecordData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:BattleRoyale.MsgRecordData)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 area = 1;
+  if (this->area() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_area());
+  }
+
+  // int32 seri_no = 2;
+  if (this->seri_no() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_seri_no());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgRecordData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:BattleRoyale.MsgRecordData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgRecordData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgRecordData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:BattleRoyale.MsgRecordData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:BattleRoyale.MsgRecordData)
+    MergeFrom(*source);
+  }
+}
+
+void MsgRecordData::MergeFrom(const MsgRecordData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:BattleRoyale.MsgRecordData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.area() != 0) {
+    _internal_set_area(from._internal_area());
+  }
+  if (from.seri_no() != 0) {
+    _internal_set_seri_no(from._internal_seri_no());
+  }
+}
+
+void MsgRecordData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:BattleRoyale.MsgRecordData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgRecordData::CopyFrom(const MsgRecordData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:BattleRoyale.MsgRecordData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgRecordData::IsInitialized() const {
+  return true;
+}
+
+void MsgRecordData::InternalSwap(MsgRecordData* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgRecordData, seri_no_)
+      + sizeof(MsgRecordData::seri_no_)
+      - PROTOBUF_FIELD_OFFSET(MsgRecordData, area_)>(
+          reinterpret_cast<char*>(&area_),
+          reinterpret_cast<char*>(&other->area_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgRecordData::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class MsgSceneInfo::_Internal {
  public:
 };
@@ -667,14 +926,16 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 record = 2;
+      // repeated .BattleRoyale.MsgRecordData record = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_record(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_record(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_record(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       // int32 bet_limit = 3;
@@ -764,13 +1025,12 @@ failure:
     }
   }
 
-  // repeated int32 record = 2;
-  {
-    int byte_size = _record_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          2, _internal_record(), byte_size, target);
-    }
+  // repeated .BattleRoyale.MsgRecordData record = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_record_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_record(i), target, stream);
   }
 
   // int32 bet_limit = 3;
@@ -845,19 +1105,11 @@ size_t MsgSceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int32 record = 2;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->record_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _record_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
+  // repeated .BattleRoyale.MsgRecordData record = 2;
+  total_size += 1UL * this->_internal_record_size();
+  for (const auto& msg : this->record_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated int32 state_time = 4;
@@ -2425,6 +2677,9 @@ void MsgResult::InternalSwap(MsgResult* other) {
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::BattleRoyale::MsgChairBetData* Arena::CreateMaybeMessage< ::BattleRoyale::MsgChairBetData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::BattleRoyale::MsgChairBetData >(arena);
+}
+template<> PROTOBUF_NOINLINE ::BattleRoyale::MsgRecordData* Arena::CreateMaybeMessage< ::BattleRoyale::MsgRecordData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::BattleRoyale::MsgRecordData >(arena);
 }
 template<> PROTOBUF_NOINLINE ::BattleRoyale::MsgSceneInfo* Arena::CreateMaybeMessage< ::BattleRoyale::MsgSceneInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::BattleRoyale::MsgSceneInfo >(arena);

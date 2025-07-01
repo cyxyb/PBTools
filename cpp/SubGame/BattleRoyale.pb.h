@@ -47,7 +47,7 @@ struct TableStruct_BattleRoyale_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[8]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[9]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -70,6 +70,9 @@ extern MsgChangeBetDefaultTypeInternal _MsgChangeBet_default_instance_;
 class MsgChangeBetResp;
 class MsgChangeBetRespDefaultTypeInternal;
 extern MsgChangeBetRespDefaultTypeInternal _MsgChangeBetResp_default_instance_;
+class MsgRecordData;
+class MsgRecordDataDefaultTypeInternal;
+extern MsgRecordDataDefaultTypeInternal _MsgRecordData_default_instance_;
 class MsgResult;
 class MsgResultDefaultTypeInternal;
 extern MsgResultDefaultTypeInternal _MsgResult_default_instance_;
@@ -86,6 +89,7 @@ template<> ::BattleRoyale::MsgBetResp* Arena::CreateMaybeMessage<::BattleRoyale:
 template<> ::BattleRoyale::MsgChairBetData* Arena::CreateMaybeMessage<::BattleRoyale::MsgChairBetData>(Arena*);
 template<> ::BattleRoyale::MsgChangeBet* Arena::CreateMaybeMessage<::BattleRoyale::MsgChangeBet>(Arena*);
 template<> ::BattleRoyale::MsgChangeBetResp* Arena::CreateMaybeMessage<::BattleRoyale::MsgChangeBetResp>(Arena*);
+template<> ::BattleRoyale::MsgRecordData* Arena::CreateMaybeMessage<::BattleRoyale::MsgRecordData>(Arena*);
 template<> ::BattleRoyale::MsgResult* Arena::CreateMaybeMessage<::BattleRoyale::MsgResult>(Arena*);
 template<> ::BattleRoyale::MsgSceneInfo* Arena::CreateMaybeMessage<::BattleRoyale::MsgSceneInfo>(Arena*);
 template<> ::BattleRoyale::MsgWinData* Arena::CreateMaybeMessage<::BattleRoyale::MsgWinData>(Arena*);
@@ -282,6 +286,153 @@ class MsgChairBetData PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgRecordData PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BattleRoyale.MsgRecordData) */ {
+ public:
+  inline MsgRecordData() : MsgRecordData(nullptr) {}
+  virtual ~MsgRecordData();
+
+  MsgRecordData(const MsgRecordData& from);
+  MsgRecordData(MsgRecordData&& from) noexcept
+    : MsgRecordData() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgRecordData& operator=(const MsgRecordData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgRecordData& operator=(MsgRecordData&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgRecordData& default_instance();
+
+  static inline const MsgRecordData* internal_default_instance() {
+    return reinterpret_cast<const MsgRecordData*>(
+               &_MsgRecordData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  friend void swap(MsgRecordData& a, MsgRecordData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgRecordData* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgRecordData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgRecordData* New() const final {
+    return CreateMaybeMessage<MsgRecordData>(nullptr);
+  }
+
+  MsgRecordData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgRecordData>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgRecordData& from);
+  void MergeFrom(const MsgRecordData& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgRecordData* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "BattleRoyale.MsgRecordData";
+  }
+  protected:
+  explicit MsgRecordData(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_BattleRoyale_2eproto);
+    return ::descriptor_table_BattleRoyale_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAreaFieldNumber = 1,
+    kSeriNoFieldNumber = 2,
+  };
+  // int32 area = 1;
+  void clear_area();
+  ::PROTOBUF_NAMESPACE_ID::int32 area() const;
+  void set_area(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_area() const;
+  void _internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 seri_no = 2;
+  void clear_seri_no();
+  ::PROTOBUF_NAMESPACE_ID::int32 seri_no() const;
+  void set_seri_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_seri_no() const;
+  void _internal_set_seri_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:BattleRoyale.MsgRecordData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 area_;
+  ::PROTOBUF_NAMESPACE_ID::int32 seri_no_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_BattleRoyale_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgSceneInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:BattleRoyale.MsgSceneInfo) */ {
  public:
@@ -323,7 +474,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
                &_MsgSceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(MsgSceneInfo& a, MsgSceneInfo& b) {
     a.Swap(&b);
@@ -425,27 +576,23 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_bet();
 
-  // repeated int32 record = 2;
+  // repeated .BattleRoyale.MsgRecordData record = 2;
   int record_size() const;
   private:
   int _internal_record_size() const;
   public:
   void clear_record();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_record(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_record() const;
-  void _internal_add_record(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_record();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 record(int index) const;
-  void set_record(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_record(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      record() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+  ::BattleRoyale::MsgRecordData* mutable_record(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BattleRoyale::MsgRecordData >*
       mutable_record();
+  private:
+  const ::BattleRoyale::MsgRecordData& _internal_record(int index) const;
+  ::BattleRoyale::MsgRecordData* _internal_add_record();
+  public:
+  const ::BattleRoyale::MsgRecordData& record(int index) const;
+  ::BattleRoyale::MsgRecordData* add_record();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BattleRoyale::MsgRecordData >&
+      record() const;
 
   // repeated int32 state_time = 4;
   int state_time_size() const;
@@ -532,8 +679,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_;
   mutable std::atomic<int> _bet_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > record_;
-  mutable std::atomic<int> _record_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BattleRoyale::MsgRecordData > record_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > state_time_;
   mutable std::atomic<int> _state_time_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BattleRoyale::MsgChairBetData > data_;
@@ -587,7 +733,7 @@ class MsgBet PROTOBUF_FINAL :
                &_MsgBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   friend void swap(MsgBet& a, MsgBet& b) {
     a.Swap(&b);
@@ -734,7 +880,7 @@ class MsgBetResp PROTOBUF_FINAL :
                &_MsgBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(MsgBetResp& a, MsgBetResp& b) {
     a.Swap(&b);
@@ -890,7 +1036,7 @@ class MsgChangeBet PROTOBUF_FINAL :
                &_MsgChangeBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(MsgChangeBet& a, MsgChangeBet& b) {
     a.Swap(&b);
@@ -1048,7 +1194,7 @@ class MsgChangeBetResp PROTOBUF_FINAL :
                &_MsgChangeBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(MsgChangeBetResp& a, MsgChangeBetResp& b) {
     a.Swap(&b);
@@ -1204,7 +1350,7 @@ class MsgWinData PROTOBUF_FINAL :
                &_MsgWinData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(MsgWinData& a, MsgWinData& b) {
     a.Swap(&b);
@@ -1351,7 +1497,7 @@ class MsgResult PROTOBUF_FINAL :
                &_MsgResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(MsgResult& a, MsgResult& b) {
     a.Swap(&b);
@@ -1537,6 +1683,50 @@ inline void MsgChairBetData::set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // -------------------------------------------------------------------
 
+// MsgRecordData
+
+// int32 area = 1;
+inline void MsgRecordData::clear_area() {
+  area_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecordData::_internal_area() const {
+  return area_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecordData::area() const {
+  // @@protoc_insertion_point(field_get:BattleRoyale.MsgRecordData.area)
+  return _internal_area();
+}
+inline void MsgRecordData::_internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  area_ = value;
+}
+inline void MsgRecordData::set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_area(value);
+  // @@protoc_insertion_point(field_set:BattleRoyale.MsgRecordData.area)
+}
+
+// int32 seri_no = 2;
+inline void MsgRecordData::clear_seri_no() {
+  seri_no_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecordData::_internal_seri_no() const {
+  return seri_no_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecordData::seri_no() const {
+  // @@protoc_insertion_point(field_get:BattleRoyale.MsgRecordData.seri_no)
+  return _internal_seri_no();
+}
+inline void MsgRecordData::_internal_set_seri_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  seri_no_ = value;
+}
+inline void MsgRecordData::set_seri_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_seri_no(value);
+  // @@protoc_insertion_point(field_set:BattleRoyale.MsgRecordData.seri_no)
+}
+
+// -------------------------------------------------------------------
+
 // MsgSceneInfo
 
 // repeated int32 bet = 1;
@@ -1586,7 +1776,7 @@ MsgSceneInfo::mutable_bet() {
   return _internal_mutable_bet();
 }
 
-// repeated int32 record = 2;
+// repeated .BattleRoyale.MsgRecordData record = 2;
 inline int MsgSceneInfo::_internal_record_size() const {
   return record_.size();
 }
@@ -1596,41 +1786,33 @@ inline int MsgSceneInfo::record_size() const {
 inline void MsgSceneInfo::clear_record() {
   record_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_record(int index) const {
+inline ::BattleRoyale::MsgRecordData* MsgSceneInfo::mutable_record(int index) {
+  // @@protoc_insertion_point(field_mutable:BattleRoyale.MsgSceneInfo.record)
+  return record_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BattleRoyale::MsgRecordData >*
+MsgSceneInfo::mutable_record() {
+  // @@protoc_insertion_point(field_mutable_list:BattleRoyale.MsgSceneInfo.record)
+  return &record_;
+}
+inline const ::BattleRoyale::MsgRecordData& MsgSceneInfo::_internal_record(int index) const {
   return record_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::record(int index) const {
+inline const ::BattleRoyale::MsgRecordData& MsgSceneInfo::record(int index) const {
   // @@protoc_insertion_point(field_get:BattleRoyale.MsgSceneInfo.record)
   return _internal_record(index);
 }
-inline void MsgSceneInfo::set_record(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  record_.Set(index, value);
-  // @@protoc_insertion_point(field_set:BattleRoyale.MsgSceneInfo.record)
+inline ::BattleRoyale::MsgRecordData* MsgSceneInfo::_internal_add_record() {
+  return record_.Add();
 }
-inline void MsgSceneInfo::_internal_add_record(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  record_.Add(value);
-}
-inline void MsgSceneInfo::add_record(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_record(value);
+inline ::BattleRoyale::MsgRecordData* MsgSceneInfo::add_record() {
   // @@protoc_insertion_point(field_add:BattleRoyale.MsgSceneInfo.record)
+  return _internal_add_record();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_record() const {
-  return record_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::BattleRoyale::MsgRecordData >&
 MsgSceneInfo::record() const {
   // @@protoc_insertion_point(field_list:BattleRoyale.MsgSceneInfo.record)
-  return _internal_record();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_record() {
-  return &record_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_record() {
-  // @@protoc_insertion_point(field_mutable_list:BattleRoyale.MsgSceneInfo.record)
-  return _internal_mutable_record();
+  return record_;
 }
 
 // int32 bet_limit = 3;
@@ -2231,6 +2413,8 @@ MsgResult::results() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
