@@ -394,6 +394,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
     kPlayerTotalWinSocreFieldNumber = 6,
     kPlayerMaxScoreFieldNumber = 7,
     kHistoryResultFieldNumber = 9,
+    kBetListFieldNumber = 10,
     kCurStateFieldNumber = 1,
     kRemainTimeFieldNumber = 2,
     kHistoryNumFieldNumber = 8,
@@ -530,6 +531,28 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_history_result();
 
+  // repeated int32 bet_list = 10;
+  int bet_list_size() const;
+  private:
+  int _internal_bet_list_size() const;
+  public:
+  void clear_bet_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_bet_list() const;
+  void _internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_bet_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 bet_list(int index) const;
+  void set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      bet_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_bet_list();
+
   // int32 cur_state = 1;
   void clear_cur_state();
   ::PROTOBUF_NAMESPACE_ID::int32 cur_state() const;
@@ -576,6 +599,8 @@ class SC_SceneInfo PROTOBUF_FINAL :
   mutable std::atomic<int> _player_max_score_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > history_result_;
   mutable std::atomic<int> _history_result_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_list_;
+  mutable std::atomic<int> _bet_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 remain_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 history_num_;
@@ -1629,6 +1654,53 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 SC_SceneInfo::mutable_history_result() {
   // @@protoc_insertion_point(field_mutable_list:CRASH.SC_SceneInfo.history_result)
   return _internal_mutable_history_result();
+}
+
+// repeated int32 bet_list = 10;
+inline int SC_SceneInfo::_internal_bet_list_size() const {
+  return bet_list_.size();
+}
+inline int SC_SceneInfo::bet_list_size() const {
+  return _internal_bet_list_size();
+}
+inline void SC_SceneInfo::clear_bet_list() {
+  bet_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_bet_list(int index) const {
+  return bet_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::bet_list(int index) const {
+  // @@protoc_insertion_point(field_get:CRASH.SC_SceneInfo.bet_list)
+  return _internal_bet_list(index);
+}
+inline void SC_SceneInfo::set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bet_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:CRASH.SC_SceneInfo.bet_list)
+}
+inline void SC_SceneInfo::_internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bet_list_.Add(value);
+}
+inline void SC_SceneInfo::add_bet_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_bet_list(value);
+  // @@protoc_insertion_point(field_add:CRASH.SC_SceneInfo.bet_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::_internal_bet_list() const {
+  return bet_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::bet_list() const {
+  // @@protoc_insertion_point(field_list:CRASH.SC_SceneInfo.bet_list)
+  return _internal_bet_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::_internal_mutable_bet_list() {
+  return &bet_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::mutable_bet_list() {
+  // @@protoc_insertion_point(field_mutable_list:CRASH.SC_SceneInfo.bet_list)
+  return _internal_mutable_bet_list();
 }
 
 // -------------------------------------------------------------------

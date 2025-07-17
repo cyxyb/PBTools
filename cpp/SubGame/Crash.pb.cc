@@ -145,6 +145,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Crash_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::CRASH::SC_SceneInfo, player_max_score_),
   PROTOBUF_FIELD_OFFSET(::CRASH::SC_SceneInfo, history_num_),
   PROTOBUF_FIELD_OFFSET(::CRASH::SC_SceneInfo, history_result_),
+  PROTOBUF_FIELD_OFFSET(::CRASH::SC_SceneInfo, bet_list_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CRASH::sS2CPlayerBet, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -181,10 +182,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Crash_2eproto::offsets[] PROTO
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::CRASH::sC2SPlayerBet)},
   { 8, -1, sizeof(::CRASH::SC_SceneInfo)},
-  { 22, -1, sizeof(::CRASH::sS2CPlayerBet)},
-  { 30, -1, sizeof(::CRASH::sS2CCancelBet)},
-  { 37, -1, sizeof(::CRASH::sS2CPlayerDot)},
-  { 47, -1, sizeof(::CRASH::sS2CNotifyProgress)},
+  { 23, -1, sizeof(::CRASH::sS2CPlayerBet)},
+  { 31, -1, sizeof(::CRASH::sS2CCancelBet)},
+  { 38, -1, sizeof(::CRASH::sS2CPlayerDot)},
+  { 48, -1, sizeof(::CRASH::sS2CNotifyProgress)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -199,25 +200,26 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_Crash_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\013Crash.proto\022\005CRASH\"M\n\rsC2SPlayerBet\022\022\n"
   "\narea_index\030\001 \001(\005\022\021\n\tbet_index\030\002 \001(\005\022\025\n\r"
-  "dot_odd_index\030\003 \001(\005\"\346\001\n\014SC_SceneInfo\022\021\n\t"
+  "dot_odd_index\030\003 \001(\005\"\370\001\n\014SC_SceneInfo\022\021\n\t"
   "cur_state\030\001 \001(\005\022\023\n\013remain_time\030\002 \001(\005\022\022\n\n"
   "player_bet\030\003 \003(\005\022\027\n\017player_win_gold\030\004 \003("
   "\003\022\032\n\022player_win_dot_odd\030\005 \003(\005\022\036\n\026player_"
   "total_win_socre\030\006 \003(\003\022\030\n\020player_max_scor"
   "e\030\007 \003(\003\022\023\n\013history_num\030\010 \001(\005\022\026\n\016history_"
-  "result\030\t \003(\005\"A\n\rsS2CPlayerBet\022\017\n\007chairid"
-  "\030\001 \001(\005\022\022\n\narea_index\030\002 \001(\005\022\013\n\003bet\030\003 \001(\005\""
-  "-\n\rsS2CCancelBet\022\017\n\007chairid\030\001 \001(\005\022\013\n\003bet"
-  "\030\002 \001(\005\"d\n\rsS2CPlayerDot\022\017\n\007chairid\030\001 \001(\005"
-  "\022\022\n\narea_index\030\002 \001(\005\022\013\n\003odd\030\003 \001(\005\022\020\n\010win"
-  "_gold\030\004 \001(\003\022\017\n\007revenue\030\005 \001(\004\"6\n\022sS2CNoti"
-  "fyProgress\022\017\n\007is_boom\030\001 \001(\010\022\017\n\007cur_odd\030\002"
-  " \001(\005*\325\001\n\013EMsgIDCRASH\022\016\n\nSUB_CS_Bet\020\000\022\024\n\020"
-  "SUB_CS_CancelBet\020\001\022\024\n\020SUB_CS_PlayerDot\020\002"
-  "\022\016\n\nSUB_SC_Bet\020\003\022\024\n\020SUB_SC_CancelBet\020\004\022\024"
-  "\n\020SUB_SC_PlayerDot\020\005\022\031\n\025SUB_SC_NotifyPro"
-  "gress\020\006\022\026\n\022SUB_SC_ChangeState\020\007\022\033\n\027SUB_S"
-  "_CHECK_ROBOT_LEAVE\020\010b\006proto3"
+  "result\030\t \003(\005\022\020\n\010bet_list\030\n \003(\005\"A\n\rsS2CPl"
+  "ayerBet\022\017\n\007chairid\030\001 \001(\005\022\022\n\narea_index\030\002"
+  " \001(\005\022\013\n\003bet\030\003 \001(\005\"-\n\rsS2CCancelBet\022\017\n\007ch"
+  "airid\030\001 \001(\005\022\013\n\003bet\030\002 \001(\005\"d\n\rsS2CPlayerDo"
+  "t\022\017\n\007chairid\030\001 \001(\005\022\022\n\narea_index\030\002 \001(\005\022\013"
+  "\n\003odd\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\003\022\017\n\007revenue"
+  "\030\005 \001(\004\"6\n\022sS2CNotifyProgress\022\017\n\007is_boom\030"
+  "\001 \001(\010\022\017\n\007cur_odd\030\002 \001(\005*\325\001\n\013EMsgIDCRASH\022\016"
+  "\n\nSUB_CS_Bet\020\000\022\024\n\020SUB_CS_CancelBet\020\001\022\024\n\020"
+  "SUB_CS_PlayerDot\020\002\022\016\n\nSUB_SC_Bet\020\003\022\024\n\020SU"
+  "B_SC_CancelBet\020\004\022\024\n\020SUB_SC_PlayerDot\020\005\022\031"
+  "\n\025SUB_SC_NotifyProgress\020\006\022\026\n\022SUB_SC_Chan"
+  "geState\020\007\022\033\n\027SUB_S_CHECK_ROBOT_LEAVE\020\010b\006"
+  "proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Crash_2eproto_deps[1] = {
 };
@@ -231,7 +233,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Cra
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Crash_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Crash_2eproto = {
-  false, false, descriptor_table_protodef_Crash_2eproto, "Crash.proto", 828,
+  false, false, descriptor_table_protodef_Crash_2eproto, "Crash.proto", 846,
   &descriptor_table_Crash_2eproto_once, descriptor_table_Crash_2eproto_sccs, descriptor_table_Crash_2eproto_deps, 6, 0,
   schemas, file_default_instances, TableStruct_Crash_2eproto::offsets,
   file_level_metadata_Crash_2eproto, 6, file_level_enum_descriptors_Crash_2eproto, file_level_service_descriptors_Crash_2eproto,
@@ -527,7 +529,8 @@ SC_SceneInfo::SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   player_win_dot_odd_(arena),
   player_total_win_socre_(arena),
   player_max_score_(arena),
-  history_result_(arena) {
+  history_result_(arena),
+  bet_list_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:CRASH.SC_SceneInfo)
@@ -539,7 +542,8 @@ SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
       player_win_dot_odd_(from.player_win_dot_odd_),
       player_total_win_socre_(from.player_total_win_socre_),
       player_max_score_(from.player_max_score_),
-      history_result_(from.history_result_) {
+      history_result_(from.history_result_),
+      bet_list_(from.bet_list_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_state_, &from.cur_state_,
     static_cast<size_t>(reinterpret_cast<char*>(&history_num_) -
@@ -591,6 +595,7 @@ void SC_SceneInfo::Clear() {
   player_total_win_socre_.Clear();
   player_max_score_.Clear();
   history_result_.Clear();
+  bet_list_.Clear();
   ::memset(&cur_state_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&history_num_) -
       reinterpret_cast<char*>(&cur_state_)) + sizeof(history_num_));
@@ -682,6 +687,16 @@ const char* SC_SceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72) {
           _internal_add_history_result(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 bet_list = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bet_list(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80) {
+          _internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -782,6 +797,15 @@ failure:
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
           9, _internal_history_result(), byte_size, target);
+    }
+  }
+
+  // repeated int32 bet_list = 10;
+  {
+    int byte_size = _bet_list_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          10, _internal_bet_list(), byte_size, target);
     }
   }
 
@@ -891,6 +915,21 @@ size_t SC_SceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
+  // repeated int32 bet_list = 10;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->bet_list_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _bet_list_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
   // int32 cur_state = 1;
   if (this->cur_state() != 0) {
     total_size += 1 +
@@ -949,6 +988,7 @@ void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
   player_total_win_socre_.MergeFrom(from.player_total_win_socre_);
   player_max_score_.MergeFrom(from.player_max_score_);
   history_result_.MergeFrom(from.history_result_);
+  bet_list_.MergeFrom(from.bet_list_);
   if (from.cur_state() != 0) {
     _internal_set_cur_state(from._internal_cur_state());
   }
@@ -987,6 +1027,7 @@ void SC_SceneInfo::InternalSwap(SC_SceneInfo* other) {
   player_total_win_socre_.InternalSwap(&other->player_total_win_socre_);
   player_max_score_.InternalSwap(&other->player_max_score_);
   history_result_.InternalSwap(&other->history_result_);
+  bet_list_.InternalSwap(&other->bet_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SC_SceneInfo, history_num_)
       + sizeof(SC_SceneInfo::history_num_)

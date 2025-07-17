@@ -26,28 +26,29 @@ namespace CRASH {
           string.Concat(
             "ChlQcm90by9TdWJHYW1lL0NyYXNoLnByb3RvEgVDUkFTSCJNCg1zQzJTUGxh",
             "eWVyQmV0EhIKCmFyZWFfaW5kZXgYASABKAUSEQoJYmV0X2luZGV4GAIgASgF",
-            "EhUKDWRvdF9vZGRfaW5kZXgYAyABKAUi5gEKDFNDX1NjZW5lSW5mbxIRCglj",
+            "EhUKDWRvdF9vZGRfaW5kZXgYAyABKAUi+AEKDFNDX1NjZW5lSW5mbxIRCglj",
             "dXJfc3RhdGUYASABKAUSEwoLcmVtYWluX3RpbWUYAiABKAUSEgoKcGxheWVy",
             "X2JldBgDIAMoBRIXCg9wbGF5ZXJfd2luX2dvbGQYBCADKAMSGgoScGxheWVy",
             "X3dpbl9kb3Rfb2RkGAUgAygFEh4KFnBsYXllcl90b3RhbF93aW5fc29jcmUY",
             "BiADKAMSGAoQcGxheWVyX21heF9zY29yZRgHIAMoAxITCgtoaXN0b3J5X251",
-            "bRgIIAEoBRIWCg5oaXN0b3J5X3Jlc3VsdBgJIAMoBSJBCg1zUzJDUGxheWVy",
-            "QmV0Eg8KB2NoYWlyaWQYASABKAUSEgoKYXJlYV9pbmRleBgCIAEoBRILCgNi",
-            "ZXQYAyABKAUiLQoNc1MyQ0NhbmNlbEJldBIPCgdjaGFpcmlkGAEgASgFEgsK",
-            "A2JldBgCIAEoBSJkCg1zUzJDUGxheWVyRG90Eg8KB2NoYWlyaWQYASABKAUS",
-            "EgoKYXJlYV9pbmRleBgCIAEoBRILCgNvZGQYAyABKAUSEAoId2luX2dvbGQY",
-            "BCABKAMSDwoHcmV2ZW51ZRgFIAEoBCI2ChJzUzJDTm90aWZ5UHJvZ3Jlc3MS",
-            "DwoHaXNfYm9vbRgBIAEoCBIPCgdjdXJfb2RkGAIgASgFKtUBCgtFTXNnSURD",
-            "UkFTSBIOCgpTVUJfQ1NfQmV0EAASFAoQU1VCX0NTX0NhbmNlbEJldBABEhQK",
-            "EFNVQl9DU19QbGF5ZXJEb3QQAhIOCgpTVUJfU0NfQmV0EAMSFAoQU1VCX1ND",
-            "X0NhbmNlbEJldBAEEhQKEFNVQl9TQ19QbGF5ZXJEb3QQBRIZChVTVUJfU0Nf",
-            "Tm90aWZ5UHJvZ3Jlc3MQBhIWChJTVUJfU0NfQ2hhbmdlU3RhdGUQBxIbChdT",
-            "VUJfU19DSEVDS19ST0JPVF9MRUFWRRAIYgZwcm90bzM="));
+            "bRgIIAEoBRIWCg5oaXN0b3J5X3Jlc3VsdBgJIAMoBRIQCghiZXRfbGlzdBgK",
+            "IAMoBSJBCg1zUzJDUGxheWVyQmV0Eg8KB2NoYWlyaWQYASABKAUSEgoKYXJl",
+            "YV9pbmRleBgCIAEoBRILCgNiZXQYAyABKAUiLQoNc1MyQ0NhbmNlbEJldBIP",
+            "CgdjaGFpcmlkGAEgASgFEgsKA2JldBgCIAEoBSJkCg1zUzJDUGxheWVyRG90",
+            "Eg8KB2NoYWlyaWQYASABKAUSEgoKYXJlYV9pbmRleBgCIAEoBRILCgNvZGQY",
+            "AyABKAUSEAoId2luX2dvbGQYBCABKAMSDwoHcmV2ZW51ZRgFIAEoBCI2ChJz",
+            "UzJDTm90aWZ5UHJvZ3Jlc3MSDwoHaXNfYm9vbRgBIAEoCBIPCgdjdXJfb2Rk",
+            "GAIgASgFKtUBCgtFTXNnSURDUkFTSBIOCgpTVUJfQ1NfQmV0EAASFAoQU1VC",
+            "X0NTX0NhbmNlbEJldBABEhQKEFNVQl9DU19QbGF5ZXJEb3QQAhIOCgpTVUJf",
+            "U0NfQmV0EAMSFAoQU1VCX1NDX0NhbmNlbEJldBAEEhQKEFNVQl9TQ19QbGF5",
+            "ZXJEb3QQBRIZChVTVUJfU0NfTm90aWZ5UHJvZ3Jlc3MQBhIWChJTVUJfU0Nf",
+            "Q2hhbmdlU3RhdGUQBxIbChdTVUJfU19DSEVDS19ST0JPVF9MRUFWRRAIYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::CRASH.EMsgIDCRASH), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sC2SPlayerBet), global::CRASH.sC2SPlayerBet.Parser, new[]{ "AreaIndex", "BetIndex", "DotOddIndex" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.SC_SceneInfo), global::CRASH.SC_SceneInfo.Parser, new[]{ "CurState", "RemainTime", "PlayerBet", "PlayerWinGold", "PlayerWinDotOdd", "PlayerTotalWinSocre", "PlayerMaxScore", "HistoryNum", "HistoryResult" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.SC_SceneInfo), global::CRASH.SC_SceneInfo.Parser, new[]{ "CurState", "RemainTime", "PlayerBet", "PlayerWinGold", "PlayerWinDotOdd", "PlayerTotalWinSocre", "PlayerMaxScore", "HistoryNum", "HistoryResult", "BetList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CPlayerBet), global::CRASH.sS2CPlayerBet.Parser, new[]{ "Chairid", "AreaIndex", "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CCancelBet), global::CRASH.sS2CCancelBet.Parser, new[]{ "Chairid", "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CPlayerDot), global::CRASH.sS2CPlayerDot.Parser, new[]{ "Chairid", "AreaIndex", "Odd", "WinGold", "Revenue" }, null, null, null, null),
@@ -397,6 +398,7 @@ namespace CRASH {
       playerMaxScore_ = other.playerMaxScore_.Clone();
       historyNum_ = other.historyNum_;
       historyResult_ = other.historyResult_.Clone();
+      betList_ = other.betList_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -525,6 +527,19 @@ namespace CRASH {
       get { return historyResult_; }
     }
 
+    /// <summary>Field number for the "bet_list" field.</summary>
+    public const int BetListFieldNumber = 10;
+    private static readonly pb::FieldCodec<int> _repeated_betList_codec
+        = pb::FieldCodec.ForInt32(82);
+    private readonly pbc::RepeatedField<int> betList_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///押注列表
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> BetList {
+      get { return betList_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SC_SceneInfo);
@@ -547,6 +562,7 @@ namespace CRASH {
       if(!playerMaxScore_.Equals(other.playerMaxScore_)) return false;
       if (HistoryNum != other.HistoryNum) return false;
       if(!historyResult_.Equals(other.historyResult_)) return false;
+      if(!betList_.Equals(other.betList_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -562,6 +578,7 @@ namespace CRASH {
       hash ^= playerMaxScore_.GetHashCode();
       if (HistoryNum != 0) hash ^= HistoryNum.GetHashCode();
       hash ^= historyResult_.GetHashCode();
+      hash ^= betList_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -596,6 +613,7 @@ namespace CRASH {
         output.WriteInt32(HistoryNum);
       }
       historyResult_.WriteTo(output, _repeated_historyResult_codec);
+      betList_.WriteTo(output, _repeated_betList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -623,6 +641,7 @@ namespace CRASH {
         output.WriteInt32(HistoryNum);
       }
       historyResult_.WriteTo(ref output, _repeated_historyResult_codec);
+      betList_.WriteTo(ref output, _repeated_betList_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -647,6 +666,7 @@ namespace CRASH {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HistoryNum);
       }
       size += historyResult_.CalculateSize(_repeated_historyResult_codec);
+      size += betList_.CalculateSize(_repeated_betList_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -673,6 +693,7 @@ namespace CRASH {
         HistoryNum = other.HistoryNum;
       }
       historyResult_.Add(other.historyResult_);
+      betList_.Add(other.betList_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -729,6 +750,11 @@ namespace CRASH {
             historyResult_.AddEntriesFrom(input, _repeated_historyResult_codec);
             break;
           }
+          case 82:
+          case 80: {
+            betList_.AddEntriesFrom(input, _repeated_betList_codec);
+            break;
+          }
         }
       }
     #endif
@@ -783,6 +809,11 @@ namespace CRASH {
           case 74:
           case 72: {
             historyResult_.AddEntriesFrom(ref input, _repeated_historyResult_codec);
+            break;
+          }
+          case 82:
+          case 80: {
+            betList_.AddEntriesFrom(ref input, _repeated_betList_codec);
             break;
           }
         }

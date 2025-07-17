@@ -35,6 +35,7 @@ message SC_SceneInfo
 	repeated int64	player_max_score 		= 7;	//玩家赢得最大分数
 	int32	history_num 					= 8;	//历史记录条数
 	repeated int32	history_result 			= 9;	//历史记录
+	repeated int32	bet_list				= 10;	//押注列表
 }
 
 //玩家下注
