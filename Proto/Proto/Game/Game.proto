@@ -116,6 +116,13 @@ message MsgGetPropInfo
 {
 	repeated MsgPropInfo	prop_info	= 1;
 }
+
+//大逃杀个人记录
+message MsgBattleRoyalePlayerRecord {
+    int64               total_bet       = 1;    //总下注
+    int64               total_win       = 2;    //总赢钱
+    repeated string     records         = 3;    //json字符串 //"{\"betScore\":\"%d\",\"betArea\":\"%d\",\"resultArea\":\"%d\",\"winScore\":\"%I64d\"}"
+}
 //////////////////////////////////////////////////PVP//////////////////////////////////////////////
 //pvp桌子信息
 message MsgPvpTableInfo

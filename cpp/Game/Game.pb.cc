@@ -71,6 +71,10 @@ class MsgGetPropInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgGetPropInfo> _instance;
 } _MsgGetPropInfo_default_instance_;
+class MsgBattleRoyalePlayerRecordDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBattleRoyalePlayerRecord> _instance;
+} _MsgBattleRoyalePlayerRecord_default_instance_;
 class MsgPvpTableInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPvpTableInfo> _instance;
@@ -127,6 +131,19 @@ class MsgPvpTableRoundChangeRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPvpTableRoundChangeResp> _instance;
 } _MsgPvpTableRoundChangeResp_default_instance_;
+static void InitDefaultsscc_info_MsgBattleRoyalePlayerRecord_Game_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgBattleRoyalePlayerRecord_default_instance_;
+    new (ptr) ::MsgBattleRoyalePlayerRecord();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBattleRoyalePlayerRecord_Game_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBattleRoyalePlayerRecord_Game_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgDayData_Game_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -484,7 +501,7 @@ static void InitDefaultsscc_info_MsgTotalRoundData_Game_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgTotalRoundData_Game_2eproto}, {
       &scc_info_MsgRoundData_Game_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Game_2eproto[27];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Game_2eproto[28];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Game_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Game_2eproto = nullptr;
 
@@ -606,6 +623,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgGetPropInfo, prop_info_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgBattleRoyalePlayerRecord, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgBattleRoyalePlayerRecord, total_bet_),
+  PROTOBUF_FIELD_OFFSET(::MsgBattleRoyalePlayerRecord, total_win_),
+  PROTOBUF_FIELD_OFFSET(::MsgBattleRoyalePlayerRecord, records_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpTableInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -758,20 +783,21 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 97, -1, sizeof(::MsgJackpotInfo)},
   { 104, -1, sizeof(::MsgPropInfo)},
   { 111, -1, sizeof(::MsgGetPropInfo)},
-  { 117, -1, sizeof(::MsgPvpTableInfo)},
-  { 140, -1, sizeof(::MsgPvpRoomCfgItem)},
-  { 149, -1, sizeof(::MsgPvpRoomConfig)},
-  { 159, -1, sizeof(::MsgPvpTableList)},
-  { 165, -1, sizeof(::MsgPvpCreateTable)},
-  { 175, -1, sizeof(::MsgPvpCreateTableResp)},
-  { 183, -1, sizeof(::MsgPvpJoinTable)},
-  { 191, -1, sizeof(::MsgPvpJoinTableResp)},
-  { 201, -1, sizeof(::MsgPvpStandUpTableResp)},
-  { 211, -1, sizeof(::MsgPvpDestroyTableResp)},
-  { 219, -1, sizeof(::MsgPvpKickUserResp)},
-  { 229, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
-  { 237, -1, sizeof(::MsgPvpActivateTableResp)},
-  { 246, -1, sizeof(::MsgPvpTableRoundChangeResp)},
+  { 117, -1, sizeof(::MsgBattleRoyalePlayerRecord)},
+  { 125, -1, sizeof(::MsgPvpTableInfo)},
+  { 148, -1, sizeof(::MsgPvpRoomCfgItem)},
+  { 157, -1, sizeof(::MsgPvpRoomConfig)},
+  { 167, -1, sizeof(::MsgPvpTableList)},
+  { 173, -1, sizeof(::MsgPvpCreateTable)},
+  { 183, -1, sizeof(::MsgPvpCreateTableResp)},
+  { 191, -1, sizeof(::MsgPvpJoinTable)},
+  { 199, -1, sizeof(::MsgPvpJoinTableResp)},
+  { 209, -1, sizeof(::MsgPvpStandUpTableResp)},
+  { 219, -1, sizeof(::MsgPvpDestroyTableResp)},
+  { 227, -1, sizeof(::MsgPvpKickUserResp)},
+  { 237, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
+  { 245, -1, sizeof(::MsgPvpActivateTableResp)},
+  { 254, -1, sizeof(::MsgPvpTableRoundChangeResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -788,6 +814,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgJackpotInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPropInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetPropInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBattleRoyalePlayerRecord_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpTableInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpRoomCfgItem_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpRoomConfig_default_instance_),
@@ -836,52 +863,55 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\001 \001(\003\022\024\n\014fake_jackpot\030\002 \001(\003\"0\n\013MsgPropIn"
   "fo\022\017\n\007prop_id\030\001 \001(\005\022\020\n\010prop_num\030\002 \001(\005\"1\n"
   "\016MsgGetPropInfo\022\037\n\tprop_info\030\001 \003(\0132\014.Msg"
-  "PropInfo\"\316\002\n\017MsgPvpTableInfo\022\020\n\010table_id"
-  "\030\001 \001(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030"
-  "\003 \001(\005\022\021\n\tenter_num\030\004 \001(\005\022\020\n\010play_num\030\005 \001"
-  "(\005\022\023\n\013is_activate\030\006 \001(\010\022\022\n\nis_private\030\007 "
-  "\001(\010\022\020\n\010password\030\010 \001(\t\022\020\n\010owner_id\030\t \001(\005\022"
-  "\020\n\010table_no\030\n \001(\005\022\016\n\006value1\030\013 \001(\003\022\016\n\006val"
-  "ue2\030\014 \001(\003\022\016\n\006value3\030\r \001(\003\022\016\n\006value4\030\016 \001("
-  "\003\022\016\n\006value5\030\017 \001(\003\022\016\n\006value6\030\020 \001(\003\022\016\n\006val"
-  "ue7\030\021 \001(\003\022\016\n\006value8\030\022 \001(\003\"a\n\021MsgPvpRoomC"
-  "fgItem\022\017\n\007lag_key\030\001 \001(\005\022\023\n\013clinet_open\030\002"
-  " \001(\005\022\022\n\ncan_select\030\003 \001(\005\022\022\n\nvalue_list\030\004"
-  " \003(\005\"\230\001\n\020MsgPvpRoomConfig\022\030\n\020create_vip_"
-  "limit\030\001 \001(\005\022\027\n\017chair_limit_min\030\002 \001(\005\022\027\n\017"
-  "chair_limit_max\030\003 \001(\005\022\021\n\tmax_round\030\004 \001(\005"
-  "\022%\n\tpara_lsit\030\013 \003(\0132\022.MsgPvpRoomCfgItem\""
-  "7\n\017MsgPvpTableList\022$\n\ntable_list\030\001 \003(\0132\020"
-  ".MsgPvpTableInfo\"s\n\021MsgPvpCreateTable\022\022\n"
-  "\nis_private\030\001 \001(\010\022\022\n\ntable_name\030\002 \001(\t\022\021\n"
-  "\tchair_num\030\003 \001(\005\022\020\n\010password\030\006 \001(\t\022\021\n\tpa"
-  "ra_lsit\030\007 \003(\005\"^\n\025MsgPvpCreateTableResp\022\020"
-  "\n\010ret_code\030\001 \001(\005\022\r\n\005value\030\002 \001(\005\022$\n\ntable"
-  "_info\030\003 \001(\0132\020.MsgPvpTableInfo\"G\n\017MsgPvpJ"
-  "oinTable\022\020\n\010table_id\030\001 \001(\005\022\020\n\010table_no\030\002"
-  " \001(\005\022\020\n\010password\030\003 \001(\t\"p\n\023MsgPvpJoinTabl"
+  "PropInfo\"T\n\033MsgBattleRoyalePlayerRecord\022"
+  "\021\n\ttotal_bet\030\001 \001(\003\022\021\n\ttotal_win\030\002 \001(\003\022\017\n"
+  "\007records\030\003 \003(\t\"\316\002\n\017MsgPvpTableInfo\022\020\n\010ta"
+  "ble_id\030\001 \001(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchai"
+  "r_num\030\003 \001(\005\022\021\n\tenter_num\030\004 \001(\005\022\020\n\010play_n"
+  "um\030\005 \001(\005\022\023\n\013is_activate\030\006 \001(\010\022\022\n\nis_priv"
+  "ate\030\007 \001(\010\022\020\n\010password\030\010 \001(\t\022\020\n\010owner_id\030"
+  "\t \001(\005\022\020\n\010table_no\030\n \001(\005\022\016\n\006value1\030\013 \001(\003\022"
+  "\016\n\006value2\030\014 \001(\003\022\016\n\006value3\030\r \001(\003\022\016\n\006value"
+  "4\030\016 \001(\003\022\016\n\006value5\030\017 \001(\003\022\016\n\006value6\030\020 \001(\003\022"
+  "\016\n\006value7\030\021 \001(\003\022\016\n\006value8\030\022 \001(\003\"a\n\021MsgPv"
+  "pRoomCfgItem\022\017\n\007lag_key\030\001 \001(\005\022\023\n\013clinet_"
+  "open\030\002 \001(\005\022\022\n\ncan_select\030\003 \001(\005\022\022\n\nvalue_"
+  "list\030\004 \003(\005\"\230\001\n\020MsgPvpRoomConfig\022\030\n\020creat"
+  "e_vip_limit\030\001 \001(\005\022\027\n\017chair_limit_min\030\002 \001"
+  "(\005\022\027\n\017chair_limit_max\030\003 \001(\005\022\021\n\tmax_round"
+  "\030\004 \001(\005\022%\n\tpara_lsit\030\013 \003(\0132\022.MsgPvpRoomCf"
+  "gItem\"7\n\017MsgPvpTableList\022$\n\ntable_list\030\001"
+  " \003(\0132\020.MsgPvpTableInfo\"s\n\021MsgPvpCreateTa"
+  "ble\022\022\n\nis_private\030\001 \001(\010\022\022\n\ntable_name\030\002 "
+  "\001(\t\022\021\n\tchair_num\030\003 \001(\005\022\020\n\010password\030\006 \001(\t"
+  "\022\021\n\tpara_lsit\030\007 \003(\005\"^\n\025MsgPvpCreateTable"
+  "Resp\022\020\n\010ret_code\030\001 \001(\005\022\r\n\005value\030\002 \001(\005\022$\n"
+  "\ntable_info\030\003 \001(\0132\020.MsgPvpTableInfo\"G\n\017M"
+  "sgPvpJoinTable\022\020\n\010table_id\030\001 \001(\005\022\020\n\010tabl"
+  "e_no\030\002 \001(\005\022\020\n\010password\030\003 \001(\t\"p\n\023MsgPvpJo"
+  "inTableResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_i"
+  "d\030\002 \001(\005\022\020\n\010table_no\030\003 \001(\005\022\017\n\007user_id\030\004 \001"
+  "(\005\022\022\n\nplayer_num\030\005 \001(\005\"s\n\026MsgPvpStandUpT"
+  "ableResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002"
+  " \001(\005\022\020\n\010table_no\030\003 \001(\005\022\017\n\007user_id\030\004 \001(\005\022"
+  "\022\n\nplayer_num\030\005 \001(\005\"N\n\026MsgPvpDestroyTabl"
   "eResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001("
-  "\005\022\020\n\010table_no\030\003 \001(\005\022\017\n\007user_id\030\004 \001(\005\022\022\n\n"
-  "player_num\030\005 \001(\005\"s\n\026MsgPvpStandUpTableRe"
-  "sp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020"
-  "\n\010table_no\030\003 \001(\005\022\017\n\007user_id\030\004 \001(\005\022\022\n\npla"
-  "yer_num\030\005 \001(\005\"N\n\026MsgPvpDestroyTableResp\022"
-  "\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010t"
-  "able_no\030\003 \001(\005\"p\n\022MsgPvpKickUserResp\022\020\n\010r"
-  "et_code\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022\022\n\nowner"
-  "_nick\030\003 \001(\t\022\017\n\007kick_id\030\004 \001(\005\022\021\n\tkick_nic"
-  "k\030\005 \001(\t\"U\n\032MsgPvpTableChangeOwnerResp\022\020\n"
-  "\010table_id\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022\023\n\013is_"
-  "activate\030\003 \001(\010\"d\n\027MsgPvpActivateTableRes"
-  "p\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n"
-  "\010owner_id\030\003 \001(\005\022\023\n\013is_activate\030\004 \001(\010\"O\n\032"
-  "MsgPvpTableRoundChangeResp\022\020\n\010table_id\030\001"
-  " \001(\005\022\020\n\010table_no\030\002 \001(\005\022\r\n\005round\030\003 \001(\005b\006p"
-  "roto3"
+  "\005\022\020\n\010table_no\030\003 \001(\005\"p\n\022MsgPvpKickUserRes"
+  "p\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022\022\n"
+  "\nowner_nick\030\003 \001(\t\022\017\n\007kick_id\030\004 \001(\005\022\021\n\tki"
+  "ck_nick\030\005 \001(\t\"U\n\032MsgPvpTableChangeOwnerR"
+  "esp\022\020\n\010table_id\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022"
+  "\023\n\013is_activate\030\003 \001(\010\"d\n\027MsgPvpActivateTa"
+  "bleResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 "
+  "\001(\005\022\020\n\010owner_id\030\003 \001(\005\022\023\n\013is_activate\030\004 \001"
+  "(\010\"O\n\032MsgPvpTableRoundChangeResp\022\020\n\010tabl"
+  "e_id\030\001 \001(\005\022\020\n\010table_no\030\002 \001(\005\022\r\n\005round\030\003 "
+  "\001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Game_2eproto_sccs[27] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Game_2eproto_sccs[28] = {
+  &scc_info_MsgBattleRoyalePlayerRecord_Game_2eproto.base,
   &scc_info_MsgDayData_Game_2eproto.base,
   &scc_info_MsgGamePlayerInfo_Game_2eproto.base,
   &scc_info_MsgGamePlayerLogin_Game_2eproto.base,
@@ -912,10 +942,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2885,
-  &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 27, 0,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2971,
+  &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 28, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
-  file_level_metadata_Game_2eproto, 27, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
+  file_level_metadata_Game_2eproto, 28, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -4658,6 +4688,273 @@ void MsgGetPropInfo::InternalSwap(MsgGetPropInfo* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgGetPropInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgBattleRoyalePlayerRecord::_Internal {
+ public:
+};
+
+MsgBattleRoyalePlayerRecord::MsgBattleRoyalePlayerRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  records_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgBattleRoyalePlayerRecord)
+}
+MsgBattleRoyalePlayerRecord::MsgBattleRoyalePlayerRecord(const MsgBattleRoyalePlayerRecord& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      records_(from.records_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&total_bet_, &from.total_bet_,
+    static_cast<size_t>(reinterpret_cast<char*>(&total_win_) -
+    reinterpret_cast<char*>(&total_bet_)) + sizeof(total_win_));
+  // @@protoc_insertion_point(copy_constructor:MsgBattleRoyalePlayerRecord)
+}
+
+void MsgBattleRoyalePlayerRecord::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBattleRoyalePlayerRecord_Game_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&total_bet_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&total_win_) -
+      reinterpret_cast<char*>(&total_bet_)) + sizeof(total_win_));
+}
+
+MsgBattleRoyalePlayerRecord::~MsgBattleRoyalePlayerRecord() {
+  // @@protoc_insertion_point(destructor:MsgBattleRoyalePlayerRecord)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgBattleRoyalePlayerRecord::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgBattleRoyalePlayerRecord::ArenaDtor(void* object) {
+  MsgBattleRoyalePlayerRecord* _this = reinterpret_cast< MsgBattleRoyalePlayerRecord* >(object);
+  (void)_this;
+}
+void MsgBattleRoyalePlayerRecord::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgBattleRoyalePlayerRecord::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgBattleRoyalePlayerRecord& MsgBattleRoyalePlayerRecord::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBattleRoyalePlayerRecord_Game_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgBattleRoyalePlayerRecord::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgBattleRoyalePlayerRecord)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  records_.Clear();
+  ::memset(&total_bet_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&total_win_) -
+      reinterpret_cast<char*>(&total_bet_)) + sizeof(total_win_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgBattleRoyalePlayerRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int64 total_bet = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          total_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 total_win = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          total_win_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated string records = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            auto str = _internal_add_records();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBattleRoyalePlayerRecord.records"));
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgBattleRoyalePlayerRecord::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgBattleRoyalePlayerRecord)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 total_bet = 1;
+  if (this->total_bet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_total_bet(), target);
+  }
+
+  // int64 total_win = 2;
+  if (this->total_win() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_total_win(), target);
+  }
+
+  // repeated string records = 3;
+  for (int i = 0, n = this->_internal_records_size(); i < n; i++) {
+    const auto& s = this->_internal_records(i);
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      s.data(), static_cast<int>(s.length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgBattleRoyalePlayerRecord.records");
+    target = stream->WriteString(3, s, target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgBattleRoyalePlayerRecord)
+  return target;
+}
+
+size_t MsgBattleRoyalePlayerRecord::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgBattleRoyalePlayerRecord)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated string records = 3;
+  total_size += 1 *
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(records_.size());
+  for (int i = 0, n = records_.size(); i < n; i++) {
+    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      records_.Get(i));
+  }
+
+  // int64 total_bet = 1;
+  if (this->total_bet() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_total_bet());
+  }
+
+  // int64 total_win = 2;
+  if (this->total_win() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_total_win());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgBattleRoyalePlayerRecord::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgBattleRoyalePlayerRecord)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgBattleRoyalePlayerRecord* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBattleRoyalePlayerRecord>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBattleRoyalePlayerRecord)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBattleRoyalePlayerRecord)
+    MergeFrom(*source);
+  }
+}
+
+void MsgBattleRoyalePlayerRecord::MergeFrom(const MsgBattleRoyalePlayerRecord& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgBattleRoyalePlayerRecord)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  records_.MergeFrom(from.records_);
+  if (from.total_bet() != 0) {
+    _internal_set_total_bet(from._internal_total_bet());
+  }
+  if (from.total_win() != 0) {
+    _internal_set_total_win(from._internal_total_win());
+  }
+}
+
+void MsgBattleRoyalePlayerRecord::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgBattleRoyalePlayerRecord)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgBattleRoyalePlayerRecord::CopyFrom(const MsgBattleRoyalePlayerRecord& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgBattleRoyalePlayerRecord)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgBattleRoyalePlayerRecord::IsInitialized() const {
+  return true;
+}
+
+void MsgBattleRoyalePlayerRecord::InternalSwap(MsgBattleRoyalePlayerRecord* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  records_.InternalSwap(&other->records_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgBattleRoyalePlayerRecord, total_win_)
+      + sizeof(MsgBattleRoyalePlayerRecord::total_win_)
+      - PROTOBUF_FIELD_OFFSET(MsgBattleRoyalePlayerRecord, total_bet_)>(
+          reinterpret_cast<char*>(&total_bet_),
+          reinterpret_cast<char*>(&other->total_bet_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgBattleRoyalePlayerRecord::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -8958,6 +9255,9 @@ template<> PROTOBUF_NOINLINE ::MsgPropInfo* Arena::CreateMaybeMessage< ::MsgProp
 }
 template<> PROTOBUF_NOINLINE ::MsgGetPropInfo* Arena::CreateMaybeMessage< ::MsgGetPropInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgGetPropInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgBattleRoyalePlayerRecord* Arena::CreateMaybeMessage< ::MsgBattleRoyalePlayerRecord >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgBattleRoyalePlayerRecord >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgPvpTableInfo* Arena::CreateMaybeMessage< ::MsgPvpTableInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgPvpTableInfo >(arena);

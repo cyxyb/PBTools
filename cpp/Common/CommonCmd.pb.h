@@ -296,6 +296,8 @@ enum EMsgIDGame : int {
   MsgIDGame_GetPropInfoResp = 1024,
   MsgIDGame_SitDownByTableNo = 1025,
   MsgIDGame_SyncTableInfo = 1026,
+  MsgIDGame_QueryBattleRoyaleRecord = 1027,
+  MsgIDGame_QueryBattleRoyaleRecordResp = 1028,
   MsgIDGame_Pvp_GetRoomConfigResp = 1051,
   MsgIDGame_Pvp_SendTableListResp = 1053,
   MsgIDGame_Pvp_CreateTable = 1054,

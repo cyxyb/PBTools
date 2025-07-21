@@ -354,6 +354,8 @@ enum EMsgIDDB : int {
   DB2GAME_ModifyPropResp = 2024,
   GAME2DB_VerifyAgentRelation = 2025,
   DB2GAME_VerifyAgentRelationResp = 2026,
+  GAME2DB_QueryBattleRoyalePlayerRecord = 2027,
+  DB2GAME_QueryBattleRoyalePlayerRecordResp = 2028,
   CHAT2DB_Login = 3001,
   DB2CHAT_LoginResp = 3002,
   CHAT2DB_SendTrumpetMsg = 3003,

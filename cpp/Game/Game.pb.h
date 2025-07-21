@@ -46,13 +46,16 @@ struct TableStruct_Game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[27]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[28]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto;
+class MsgBattleRoyalePlayerRecord;
+class MsgBattleRoyalePlayerRecordDefaultTypeInternal;
+extern MsgBattleRoyalePlayerRecordDefaultTypeInternal _MsgBattleRoyalePlayerRecord_default_instance_;
 class MsgDayData;
 class MsgDayDataDefaultTypeInternal;
 extern MsgDayDataDefaultTypeInternal _MsgDayData_default_instance_;
@@ -135,6 +138,7 @@ class MsgTotalRoundData;
 class MsgTotalRoundDataDefaultTypeInternal;
 extern MsgTotalRoundDataDefaultTypeInternal _MsgTotalRoundData_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
+template<> ::MsgBattleRoyalePlayerRecord* Arena::CreateMaybeMessage<::MsgBattleRoyalePlayerRecord>(Arena*);
 template<> ::MsgDayData* Arena::CreateMaybeMessage<::MsgDayData>(Arena*);
 template<> ::MsgGamePlayerInfo* Arena::CreateMaybeMessage<::MsgGamePlayerInfo>(Arena*);
 template<> ::MsgGamePlayerLogin* Arena::CreateMaybeMessage<::MsgGamePlayerLogin>(Arena*);
@@ -2481,6 +2485,179 @@ class MsgGetPropInfo PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgBattleRoyalePlayerRecord PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgBattleRoyalePlayerRecord) */ {
+ public:
+  inline MsgBattleRoyalePlayerRecord() : MsgBattleRoyalePlayerRecord(nullptr) {}
+  virtual ~MsgBattleRoyalePlayerRecord();
+
+  MsgBattleRoyalePlayerRecord(const MsgBattleRoyalePlayerRecord& from);
+  MsgBattleRoyalePlayerRecord(MsgBattleRoyalePlayerRecord&& from) noexcept
+    : MsgBattleRoyalePlayerRecord() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgBattleRoyalePlayerRecord& operator=(const MsgBattleRoyalePlayerRecord& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgBattleRoyalePlayerRecord& operator=(MsgBattleRoyalePlayerRecord&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgBattleRoyalePlayerRecord& default_instance();
+
+  static inline const MsgBattleRoyalePlayerRecord* internal_default_instance() {
+    return reinterpret_cast<const MsgBattleRoyalePlayerRecord*>(
+               &_MsgBattleRoyalePlayerRecord_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    13;
+
+  friend void swap(MsgBattleRoyalePlayerRecord& a, MsgBattleRoyalePlayerRecord& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgBattleRoyalePlayerRecord* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgBattleRoyalePlayerRecord* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgBattleRoyalePlayerRecord* New() const final {
+    return CreateMaybeMessage<MsgBattleRoyalePlayerRecord>(nullptr);
+  }
+
+  MsgBattleRoyalePlayerRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgBattleRoyalePlayerRecord>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgBattleRoyalePlayerRecord& from);
+  void MergeFrom(const MsgBattleRoyalePlayerRecord& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgBattleRoyalePlayerRecord* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgBattleRoyalePlayerRecord";
+  }
+  protected:
+  explicit MsgBattleRoyalePlayerRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Game_2eproto);
+    return ::descriptor_table_Game_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRecordsFieldNumber = 3,
+    kTotalBetFieldNumber = 1,
+    kTotalWinFieldNumber = 2,
+  };
+  // repeated string records = 3;
+  int records_size() const;
+  private:
+  int _internal_records_size() const;
+  public:
+  void clear_records();
+  const std::string& records(int index) const;
+  std::string* mutable_records(int index);
+  void set_records(int index, const std::string& value);
+  void set_records(int index, std::string&& value);
+  void set_records(int index, const char* value);
+  void set_records(int index, const char* value, size_t size);
+  std::string* add_records();
+  void add_records(const std::string& value);
+  void add_records(std::string&& value);
+  void add_records(const char* value);
+  void add_records(const char* value, size_t size);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>& records() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>* mutable_records();
+  private:
+  const std::string& _internal_records(int index) const;
+  std::string* _internal_add_records();
+  public:
+
+  // int64 total_bet = 1;
+  void clear_total_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_bet() const;
+  void set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_bet() const;
+  void _internal_set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 total_win = 2;
+  void clear_total_win();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_win() const;
+  void set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_win() const;
+  void _internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgBattleRoyalePlayerRecord)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> records_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_win_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Game_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgPvpTableInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpTableInfo) */ {
  public:
@@ -2522,7 +2699,7 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
                &_MsgPvpTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(MsgPvpTableInfo& a, MsgPvpTableInfo& b) {
     a.Swap(&b);
@@ -2859,7 +3036,7 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
                &_MsgPvpRoomCfgItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(MsgPvpRoomCfgItem& a, MsgPvpRoomCfgItem& b) {
     a.Swap(&b);
@@ -3042,7 +3219,7 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
                &_MsgPvpRoomConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(MsgPvpRoomConfig& a, MsgPvpRoomConfig& b) {
     a.Swap(&b);
@@ -3231,7 +3408,7 @@ class MsgPvpTableList PROTOBUF_FINAL :
                &_MsgPvpTableList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(MsgPvpTableList& a, MsgPvpTableList& b) {
     a.Swap(&b);
@@ -3376,7 +3553,7 @@ class MsgPvpCreateTable PROTOBUF_FINAL :
                &_MsgPvpCreateTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(MsgPvpCreateTable& a, MsgPvpCreateTable& b) {
     a.Swap(&b);
@@ -3584,7 +3761,7 @@ class MsgPvpCreateTableResp PROTOBUF_FINAL :
                &_MsgPvpCreateTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(MsgPvpCreateTableResp& a, MsgPvpCreateTableResp& b) {
     a.Swap(&b);
@@ -3751,7 +3928,7 @@ class MsgPvpJoinTable PROTOBUF_FINAL :
                &_MsgPvpJoinTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(MsgPvpJoinTable& a, MsgPvpJoinTable& b) {
     a.Swap(&b);
@@ -3916,7 +4093,7 @@ class MsgPvpJoinTableResp PROTOBUF_FINAL :
                &_MsgPvpJoinTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(MsgPvpJoinTableResp& a, MsgPvpJoinTableResp& b) {
     a.Swap(&b);
@@ -4096,7 +4273,7 @@ class MsgPvpStandUpTableResp PROTOBUF_FINAL :
                &_MsgPvpStandUpTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   friend void swap(MsgPvpStandUpTableResp& a, MsgPvpStandUpTableResp& b) {
     a.Swap(&b);
@@ -4276,7 +4453,7 @@ class MsgPvpDestroyTableResp PROTOBUF_FINAL :
                &_MsgPvpDestroyTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    23;
 
   friend void swap(MsgPvpDestroyTableResp& a, MsgPvpDestroyTableResp& b) {
     a.Swap(&b);
@@ -4434,7 +4611,7 @@ class MsgPvpKickUserResp PROTOBUF_FINAL :
                &_MsgPvpKickUserResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    24;
 
   friend void swap(MsgPvpKickUserResp& a, MsgPvpKickUserResp& b) {
     a.Swap(&b);
@@ -4628,7 +4805,7 @@ class MsgPvpTableChangeOwnerResp PROTOBUF_FINAL :
                &_MsgPvpTableChangeOwnerResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    25;
 
   friend void swap(MsgPvpTableChangeOwnerResp& a, MsgPvpTableChangeOwnerResp& b) {
     a.Swap(&b);
@@ -4786,7 +4963,7 @@ class MsgPvpActivateTableResp PROTOBUF_FINAL :
                &_MsgPvpActivateTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    26;
 
   friend void swap(MsgPvpActivateTableResp& a, MsgPvpActivateTableResp& b) {
     a.Swap(&b);
@@ -4955,7 +5132,7 @@ class MsgPvpTableRoundChangeResp PROTOBUF_FINAL :
                &_MsgPvpTableRoundChangeResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    27;
 
   friend void swap(MsgPvpTableRoundChangeResp& a, MsgPvpTableRoundChangeResp& b) {
     a.Swap(&b);
@@ -6757,6 +6934,124 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPropInfo >&
 MsgGetPropInfo::prop_info() const {
   // @@protoc_insertion_point(field_list:MsgGetPropInfo.prop_info)
   return prop_info_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgBattleRoyalePlayerRecord
+
+// int64 total_bet = 1;
+inline void MsgBattleRoyalePlayerRecord::clear_total_bet() {
+  total_bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgBattleRoyalePlayerRecord::_internal_total_bet() const {
+  return total_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgBattleRoyalePlayerRecord::total_bet() const {
+  // @@protoc_insertion_point(field_get:MsgBattleRoyalePlayerRecord.total_bet)
+  return _internal_total_bet();
+}
+inline void MsgBattleRoyalePlayerRecord::_internal_set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_bet_ = value;
+}
+inline void MsgBattleRoyalePlayerRecord::set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_bet(value);
+  // @@protoc_insertion_point(field_set:MsgBattleRoyalePlayerRecord.total_bet)
+}
+
+// int64 total_win = 2;
+inline void MsgBattleRoyalePlayerRecord::clear_total_win() {
+  total_win_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgBattleRoyalePlayerRecord::_internal_total_win() const {
+  return total_win_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgBattleRoyalePlayerRecord::total_win() const {
+  // @@protoc_insertion_point(field_get:MsgBattleRoyalePlayerRecord.total_win)
+  return _internal_total_win();
+}
+inline void MsgBattleRoyalePlayerRecord::_internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_win_ = value;
+}
+inline void MsgBattleRoyalePlayerRecord::set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_win(value);
+  // @@protoc_insertion_point(field_set:MsgBattleRoyalePlayerRecord.total_win)
+}
+
+// repeated string records = 3;
+inline int MsgBattleRoyalePlayerRecord::_internal_records_size() const {
+  return records_.size();
+}
+inline int MsgBattleRoyalePlayerRecord::records_size() const {
+  return _internal_records_size();
+}
+inline void MsgBattleRoyalePlayerRecord::clear_records() {
+  records_.Clear();
+}
+inline std::string* MsgBattleRoyalePlayerRecord::add_records() {
+  // @@protoc_insertion_point(field_add_mutable:MsgBattleRoyalePlayerRecord.records)
+  return _internal_add_records();
+}
+inline const std::string& MsgBattleRoyalePlayerRecord::_internal_records(int index) const {
+  return records_.Get(index);
+}
+inline const std::string& MsgBattleRoyalePlayerRecord::records(int index) const {
+  // @@protoc_insertion_point(field_get:MsgBattleRoyalePlayerRecord.records)
+  return _internal_records(index);
+}
+inline std::string* MsgBattleRoyalePlayerRecord::mutable_records(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgBattleRoyalePlayerRecord.records)
+  return records_.Mutable(index);
+}
+inline void MsgBattleRoyalePlayerRecord::set_records(int index, const std::string& value) {
+  // @@protoc_insertion_point(field_set:MsgBattleRoyalePlayerRecord.records)
+  records_.Mutable(index)->assign(value);
+}
+inline void MsgBattleRoyalePlayerRecord::set_records(int index, std::string&& value) {
+  // @@protoc_insertion_point(field_set:MsgBattleRoyalePlayerRecord.records)
+  records_.Mutable(index)->assign(std::move(value));
+}
+inline void MsgBattleRoyalePlayerRecord::set_records(int index, const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  records_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:MsgBattleRoyalePlayerRecord.records)
+}
+inline void MsgBattleRoyalePlayerRecord::set_records(int index, const char* value, size_t size) {
+  records_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:MsgBattleRoyalePlayerRecord.records)
+}
+inline std::string* MsgBattleRoyalePlayerRecord::_internal_add_records() {
+  return records_.Add();
+}
+inline void MsgBattleRoyalePlayerRecord::add_records(const std::string& value) {
+  records_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:MsgBattleRoyalePlayerRecord.records)
+}
+inline void MsgBattleRoyalePlayerRecord::add_records(std::string&& value) {
+  records_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:MsgBattleRoyalePlayerRecord.records)
+}
+inline void MsgBattleRoyalePlayerRecord::add_records(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  records_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:MsgBattleRoyalePlayerRecord.records)
+}
+inline void MsgBattleRoyalePlayerRecord::add_records(const char* value, size_t size) {
+  records_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:MsgBattleRoyalePlayerRecord.records)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
+MsgBattleRoyalePlayerRecord::records() const {
+  // @@protoc_insertion_point(field_list:MsgBattleRoyalePlayerRecord.records)
+  return records_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
+MsgBattleRoyalePlayerRecord::mutable_records() {
+  // @@protoc_insertion_point(field_mutable_list:MsgBattleRoyalePlayerRecord.records)
+  return &records_;
 }
 
 // -------------------------------------------------------------------
@@ -8600,6 +8895,8 @@ inline void MsgPvpTableRoundChangeResp::set_round(::PROTOBUF_NAMESPACE_ID::int32
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
