@@ -207,6 +207,8 @@ enum EMsgIDGame
 	MsgIDGame_SyncTableInfo				= 1026;		//同步桌子人数信息(MsgModifyTableInfo)
 	MsgIDGame_QueryBattleRoyaleRecord 			= 1027;		//查询大逃杀个人记录(MsgCommonN32)
 	MsgIDGame_QueryBattleRoyaleRecordResp		= 1028;		//查询大逃杀个人记录返回(MsgBattleRoyalePlayerRecord)
+	MsgIDGame_Heart						= 1029;		//心跳(MsgCommonEmpty)
+	MsgIDGame_HeartResp					= 1030;		//心跳返回(MsgCommonEmpty)
 	
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////
