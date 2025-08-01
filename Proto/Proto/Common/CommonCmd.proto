@@ -175,6 +175,7 @@ enum EMsgIDLogin
 	MsgIDBank_GetRecordResp						= 161;		//获取银行操作记录返回(MsgBankOperateRecordResp)
 	MsgIDBank_ModifyPassword					= 162;		//修改银行密码(MsgModifyBankPassword)
 	MsgIDBank_ModifyPasswordResp				= 163;		//修改银行密码返回(MsgCommonN32)
+	MsgIDLogin_SqueezeAccountResp				= 164;		//挤号返回(MsgCommonEmpty)
 }
 
 enum EMsgIDGame
@@ -209,6 +210,7 @@ enum EMsgIDGame
 	MsgIDGame_QueryBattleRoyaleRecordResp		= 1028;		//查询大逃杀个人记录返回(MsgBattleRoyalePlayerRecord)
 	MsgIDGame_Heart						= 1029;		//心跳(MsgCommonEmpty)
 	MsgIDGame_HeartResp					= 1030;		//心跳返回(MsgCommonEmpty)
+	MsgIDGame_SqueezeAccountResp		= 1033;		//挤号返回(MsgCommonEmpty)
 	
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////

@@ -59,6 +59,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_NotifyWebBuyWeekMonthCard		= 37;	//通知后台购买周卡月卡成功
 	CENTER2LOGIN_NotifySysMaintain				= 38;	//通知服务器即将维护时间点
 	CENTER2LOGIN_ModifyTableInfo				= 39;	//修改桌子信息
+	LOGIN2CENTER_SqueezeAccount					= 40;	//挤号
+	CENTER2LOGIN_SqueezeAccount					= 41;	//挤号
 
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -69,6 +71,7 @@ enum EMsgIDServerInternalProto
 	GAME2CENTER_BroadcastTip		= 2006;	//游戏请求跑马灯广播
 	CENTER2GAME_KickUserResp		= 2007;	//踢玩家
 	GAME2CENTER_ModifyTableInfo		= 2008; //修改桌子信息
+	CENTER2GAME_SqueezeAccount		= 2009;	//挤号
 
 	///////////////////////////////////PVP///////////////////////////////////
 	GAME2CENTER_PvpAddTable			= 2050;	//通知桌子增加

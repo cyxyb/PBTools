@@ -299,12 +299,13 @@ const char descriptor_table_protodef_BattleRoyale_2eproto[] PROTOBUF_SECTION_VAR
   "Royale.MsgChangeBet\",\n\nMsgWinData\022\020\n\010cha"
   "ir_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"D\n\tMsgResult\022\014"
   "\n\004area\030\001 \001(\005\022)\n\007results\030\002 \003(\0132\030.BattleRo"
-  "yale.MsgWinData*\325\001\n\rEMsgIDSubGame\022\025\n\021Msg"
+  "yale.MsgWinData*\362\001\n\rEMsgIDSubGame\022\025\n\021Msg"
   "IDSubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030"
   "\n\024MsgIDSubGame_BetResp\020\002\022\032\n\026MsgIDSubGame"
   "_BetChange\020\003\022\036\n\032MsgIDSubGame_BetChangeRe"
   "sp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 \n"
-  "\034MsgIDSubGame_NotifyStateResp\020\010b\006proto3"
+  "\034MsgIDSubGame_NotifyStateResp\020\010\022\033\n\027SUB_S"
+  "_CHECK_ROBOT_LEAVE\020\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_BattleRoyale_2eproto_deps[1] = {
 };
@@ -321,7 +322,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Bat
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_BattleRoyale_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_BattleRoyale_2eproto = {
-  false, false, descriptor_table_protodef_BattleRoyale_2eproto, "BattleRoyale.proto", 959,
+  false, false, descriptor_table_protodef_BattleRoyale_2eproto, "BattleRoyale.proto", 988,
   &descriptor_table_BattleRoyale_2eproto_once, descriptor_table_BattleRoyale_2eproto_sccs, descriptor_table_BattleRoyale_2eproto_deps, 9, 0,
   schemas, file_default_instances, TableStruct_BattleRoyale_2eproto::offsets,
   file_level_metadata_BattleRoyale_2eproto, 9, file_level_enum_descriptors_BattleRoyale_2eproto, file_level_service_descriptors_BattleRoyale_2eproto,
@@ -343,6 +344,7 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 4:
     case 7:
     case 8:
+    case 9:
       return true;
     default:
       return false;

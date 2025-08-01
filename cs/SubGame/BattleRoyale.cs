@@ -40,12 +40,13 @@ namespace BattleRoyale {
             "KAUSLAoIYmV0X2luZm8YAiABKAsyGi5CYXR0bGVSb3lhbGUuTXNnQ2hhbmdl",
             "QmV0IiwKCk1zZ1dpbkRhdGESEAoIY2hhaXJfaWQYASABKAUSDAoEZ29sZBgC",
             "IAEoAyJECglNc2dSZXN1bHQSDAoEYXJlYRgBIAEoBRIpCgdyZXN1bHRzGAIg",
-            "AygLMhguQmF0dGxlUm95YWxlLk1zZ1dpbkRhdGEq1QEKDUVNc2dJRFN1Ykdh",
+            "AygLMhguQmF0dGxlUm95YWxlLk1zZ1dpbkRhdGEq8gEKDUVNc2dJRFN1Ykdh",
             "bWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0",
             "EAESGAoUTXNnSURTdWJHYW1lX0JldFJlc3AQAhIaChZNc2dJRFN1YkdhbWVf",
             "QmV0Q2hhbmdlEAMSHgoaTXNnSURTdWJHYW1lX0JldENoYW5nZVJlc3AQBBIf",
             "ChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJRFN1Ykdh",
-            "bWVfTm90aWZ5U3RhdGVSZXNwEAhiBnByb3RvMw=="));
+            "bWVfTm90aWZ5U3RhdGVSZXNwEAgSGwoXU1VCX1NfQ0hFQ0tfUk9CT1RfTEVB",
+            "VkUQCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::BattleRoyale.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,6 +91,10 @@ namespace BattleRoyale {
     ///游戏状态(MsgCommonN32)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 8,
+    /// <summary>
+    ///检测机器人退出
+    /// </summary>
+    [pbr::OriginalName("SUB_S_CHECK_ROBOT_LEAVE")] SubSCheckRobotLeave = 9,
   }
 
   #endregion

@@ -9,6 +9,7 @@ enum EMsgIDSubGame {
     MsgIDSubGame_BetChangeResp          = 4;    //玩家更换下注区域结果(MsgChangeBetResp)
 	MsgIDSubGame_GameResultResp			= 7;	//游戏结果(MsgResult)
 	MsgIDSubGame_NotifyStateResp		= 8;	//游戏状态(MsgCommonN32)
+    SUB_S_CHECK_ROBOT_LEAVE             = 9;    //检测机器人退出
 }
 
 message MsgChairBetData {
