@@ -333,6 +333,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_GetGoldOperateRecordResp = 1124,
   LOGIN2DB_ModifyBankPassword = 1125,
   DB2LOGIN_ModifyBankPasswordResp = 1126,
+  LOGIN2DB_QueryPlayerScore = 1127,
+  DB2LOGIN_QueryPlayerScoreResp = 1128,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

@@ -780,3 +780,25 @@ message MsgModifyBankPassword
 	int32	user_id		= 3;			//玩家ID
 	string	phone		= 4;			//玩家手机号
 }
+
+//玩家分数变化
+message MsgPlayerScoreChangeItem
+{
+	string	time		= 1;			//时间
+	int32	action		= 2;			//行为
+	int64	gold		= 3;			//金币
+	int64	change_gold	= 4;			//操作金币
+}
+
+//玩家分数变化
+message MsgPlayerScoreRecord
+{
+	int32	res_code		= 1;
+	string	nickname 		= 2;		//玩家昵称
+	int64	score	 		= 3;		//玩家总资产
+	int64	up_score 		= 4;		//总上
+	int64	down_score		= 5;		//总下
+	int64	win_lose_score 	= 6;		//总输赢
+	int32	total_cnt		= 7;		//总条数
+	repeated MsgPlayerScoreChangeItem item = 8;	//金币变动记录
+}

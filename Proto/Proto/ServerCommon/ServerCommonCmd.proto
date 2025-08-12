@@ -259,6 +259,8 @@ enum EMsgIDDB
 	DB2LOGIN_GetGoldOperateRecordResp		= 1124;	//获取银行操作记录返回
 	LOGIN2DB_ModifyBankPassword				= 1125;	//修改银行密码
 	DB2LOGIN_ModifyBankPasswordResp			= 1126;	//修改银行密码返回
+	LOGIN2DB_QueryPlayerScore				= 1127;	//查分
+	DB2LOGIN_QueryPlayerScoreResp			= 1128;	//查分返回
 	
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏

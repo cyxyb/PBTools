@@ -177,6 +177,8 @@ enum EMsgIDLogin
 	MsgIDBank_ModifyPasswordResp				= 163;		//修改银行密码返回(MsgCommonN32)
 	MsgIDLogin_SqueezeAccountResp				= 164;		//挤号返回(MsgCommonEmpty)
 	MsgIDLogin_SyncRecallUserBankGold			= 165;		//同步被撤回人银行金币(MsgCommonN64)
+	MsgIDLogin_QueryPlayerScoreRecord			= 166;		//查询玩家分数记录(MsgCommonKV(k:beautifulID,v:页码))
+	MsgIDLogin_QueryPlayerScoreRecordResp		= 167;		//查询玩家分数记录返回(MsgPlayerScoreRecord)
 }
 
 enum EMsgIDGame

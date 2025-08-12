@@ -229,7 +229,13 @@ public static partial class LoginReflection {
           "Z0JhbmtPcGVyYXRlUmVjb3JkUmVzcBIlCgZyZWNvcmQYASADKAsyFS5Nc2dC",
           "YW5rT3BlcmF0ZVJlY29yZCJXChVNc2dNb2RpZnlCYW5rUGFzc3dvcmQSDAoE",
           "Y29kZRgBIAEoBRIQCghwYXNzd29yZBgCIAEoCRIPCgd1c2VyX2lkGAMgASgF",
-          "Eg0KBXBob25lGAQgASgJYgZwcm90bzM="));
+          "Eg0KBXBob25lGAQgASgJIlsKGE1zZ1BsYXllclNjb3JlQ2hhbmdlSXRlbRIM",
+          "CgR0aW1lGAEgASgJEg4KBmFjdGlvbhgCIAEoBRIMCgRnb2xkGAMgASgDEhMK",
+          "C2NoYW5nZV9nb2xkGAQgASgDIsMBChRNc2dQbGF5ZXJTY29yZVJlY29yZBIQ",
+          "CghyZXNfY29kZRgBIAEoBRIQCghuaWNrbmFtZRgCIAEoCRINCgVzY29yZRgD",
+          "IAEoAxIQCgh1cF9zY29yZRgEIAEoAxISCgpkb3duX3Njb3JlGAUgASgDEhYK",
+          "Dndpbl9sb3NlX3Njb3JlGAYgASgDEhEKCXRvdGFsX2NudBgHIAEoBRInCgRp",
+          "dGVtGAggAygLMhkuTXNnUGxheWVyU2NvcmVDaGFuZ2VJdGVtYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -320,7 +326,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperate), global::MsgBankOperate.Parser, new[]{ "Type", "Gold", "Password", "UserId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperateResp), global::MsgBankOperateResp.Parser, new[]{ "Code", "Record" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperateRecordResp), global::MsgBankOperateRecordResp.Parser, new[]{ "Record" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyBankPassword), global::MsgModifyBankPassword.Parser, new[]{ "Code", "Password", "UserId", "Phone" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyBankPassword), global::MsgModifyBankPassword.Parser, new[]{ "Code", "Password", "UserId", "Phone" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerScoreChangeItem), global::MsgPlayerScoreChangeItem.Parser, new[]{ "Time", "Action", "Gold", "ChangeGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerScoreRecord), global::MsgPlayerScoreRecord.Parser, new[]{ "ResCode", "Nickname", "Score", "UpScore", "DownScore", "WinLoseScore", "TotalCnt", "Item" }, null, null, null, null)
         }));
   }
   #endregion
@@ -26340,6 +26348,738 @@ public sealed partial class MsgModifyBankPassword : pb::IMessage<MsgModifyBankPa
         }
         case 34: {
           Phone = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///玩家分数变化
+/// </summary>
+public sealed partial class MsgPlayerScoreChangeItem : pb::IMessage<MsgPlayerScoreChangeItem>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPlayerScoreChangeItem> _parser = new pb::MessageParser<MsgPlayerScoreChangeItem>(() => new MsgPlayerScoreChangeItem());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPlayerScoreChangeItem> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[88]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerScoreChangeItem() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerScoreChangeItem(MsgPlayerScoreChangeItem other) : this() {
+    time_ = other.time_;
+    action_ = other.action_;
+    gold_ = other.gold_;
+    changeGold_ = other.changeGold_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerScoreChangeItem Clone() {
+    return new MsgPlayerScoreChangeItem(this);
+  }
+
+  /// <summary>Field number for the "time" field.</summary>
+  public const int TimeFieldNumber = 1;
+  private string time_ = "";
+  /// <summary>
+  ///时间
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Time {
+    get { return time_; }
+    set {
+      time_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "action" field.</summary>
+  public const int ActionFieldNumber = 2;
+  private int action_;
+  /// <summary>
+  ///行为
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Action {
+    get { return action_; }
+    set {
+      action_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "gold" field.</summary>
+  public const int GoldFieldNumber = 3;
+  private long gold_;
+  /// <summary>
+  ///金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long Gold {
+    get { return gold_; }
+    set {
+      gold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "change_gold" field.</summary>
+  public const int ChangeGoldFieldNumber = 4;
+  private long changeGold_;
+  /// <summary>
+  ///操作金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long ChangeGold {
+    get { return changeGold_; }
+    set {
+      changeGold_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPlayerScoreChangeItem);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPlayerScoreChangeItem other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Time != other.Time) return false;
+    if (Action != other.Action) return false;
+    if (Gold != other.Gold) return false;
+    if (ChangeGold != other.ChangeGold) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Time.Length != 0) hash ^= Time.GetHashCode();
+    if (Action != 0) hash ^= Action.GetHashCode();
+    if (Gold != 0L) hash ^= Gold.GetHashCode();
+    if (ChangeGold != 0L) hash ^= ChangeGold.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Time.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(Time);
+    }
+    if (Action != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Action);
+    }
+    if (Gold != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(Gold);
+    }
+    if (ChangeGold != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(ChangeGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Time.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(Time);
+    }
+    if (Action != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Action);
+    }
+    if (Gold != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(Gold);
+    }
+    if (ChangeGold != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(ChangeGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Time.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Time);
+    }
+    if (Action != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Action);
+    }
+    if (Gold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
+    }
+    if (ChangeGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(ChangeGold);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPlayerScoreChangeItem other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Time.Length != 0) {
+      Time = other.Time;
+    }
+    if (other.Action != 0) {
+      Action = other.Action;
+    }
+    if (other.Gold != 0L) {
+      Gold = other.Gold;
+    }
+    if (other.ChangeGold != 0L) {
+      ChangeGold = other.ChangeGold;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          Time = input.ReadString();
+          break;
+        }
+        case 16: {
+          Action = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Gold = input.ReadInt64();
+          break;
+        }
+        case 32: {
+          ChangeGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          Time = input.ReadString();
+          break;
+        }
+        case 16: {
+          Action = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Gold = input.ReadInt64();
+          break;
+        }
+        case 32: {
+          ChangeGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///玩家分数变化
+/// </summary>
+public sealed partial class MsgPlayerScoreRecord : pb::IMessage<MsgPlayerScoreRecord>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPlayerScoreRecord> _parser = new pb::MessageParser<MsgPlayerScoreRecord>(() => new MsgPlayerScoreRecord());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPlayerScoreRecord> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[89]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerScoreRecord() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerScoreRecord(MsgPlayerScoreRecord other) : this() {
+    resCode_ = other.resCode_;
+    nickname_ = other.nickname_;
+    score_ = other.score_;
+    upScore_ = other.upScore_;
+    downScore_ = other.downScore_;
+    winLoseScore_ = other.winLoseScore_;
+    totalCnt_ = other.totalCnt_;
+    item_ = other.item_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerScoreRecord Clone() {
+    return new MsgPlayerScoreRecord(this);
+  }
+
+  /// <summary>Field number for the "res_code" field.</summary>
+  public const int ResCodeFieldNumber = 1;
+  private int resCode_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ResCode {
+    get { return resCode_; }
+    set {
+      resCode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "nickname" field.</summary>
+  public const int NicknameFieldNumber = 2;
+  private string nickname_ = "";
+  /// <summary>
+  ///玩家昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Nickname {
+    get { return nickname_; }
+    set {
+      nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "score" field.</summary>
+  public const int ScoreFieldNumber = 3;
+  private long score_;
+  /// <summary>
+  ///玩家总资产
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long Score {
+    get { return score_; }
+    set {
+      score_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "up_score" field.</summary>
+  public const int UpScoreFieldNumber = 4;
+  private long upScore_;
+  /// <summary>
+  ///总上
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long UpScore {
+    get { return upScore_; }
+    set {
+      upScore_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "down_score" field.</summary>
+  public const int DownScoreFieldNumber = 5;
+  private long downScore_;
+  /// <summary>
+  ///总下
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long DownScore {
+    get { return downScore_; }
+    set {
+      downScore_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "win_lose_score" field.</summary>
+  public const int WinLoseScoreFieldNumber = 6;
+  private long winLoseScore_;
+  /// <summary>
+  ///总输赢
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long WinLoseScore {
+    get { return winLoseScore_; }
+    set {
+      winLoseScore_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "total_cnt" field.</summary>
+  public const int TotalCntFieldNumber = 7;
+  private int totalCnt_;
+  /// <summary>
+  ///总条数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TotalCnt {
+    get { return totalCnt_; }
+    set {
+      totalCnt_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "item" field.</summary>
+  public const int ItemFieldNumber = 8;
+  private static readonly pb::FieldCodec<global::MsgPlayerScoreChangeItem> _repeated_item_codec
+      = pb::FieldCodec.ForMessage(66, global::MsgPlayerScoreChangeItem.Parser);
+  private readonly pbc::RepeatedField<global::MsgPlayerScoreChangeItem> item_ = new pbc::RepeatedField<global::MsgPlayerScoreChangeItem>();
+  /// <summary>
+  ///金币变动记录
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgPlayerScoreChangeItem> Item {
+    get { return item_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPlayerScoreRecord);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPlayerScoreRecord other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ResCode != other.ResCode) return false;
+    if (Nickname != other.Nickname) return false;
+    if (Score != other.Score) return false;
+    if (UpScore != other.UpScore) return false;
+    if (DownScore != other.DownScore) return false;
+    if (WinLoseScore != other.WinLoseScore) return false;
+    if (TotalCnt != other.TotalCnt) return false;
+    if(!item_.Equals(other.item_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ResCode != 0) hash ^= ResCode.GetHashCode();
+    if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
+    if (Score != 0L) hash ^= Score.GetHashCode();
+    if (UpScore != 0L) hash ^= UpScore.GetHashCode();
+    if (DownScore != 0L) hash ^= DownScore.GetHashCode();
+    if (WinLoseScore != 0L) hash ^= WinLoseScore.GetHashCode();
+    if (TotalCnt != 0) hash ^= TotalCnt.GetHashCode();
+    hash ^= item_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ResCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ResCode);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Nickname);
+    }
+    if (Score != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(Score);
+    }
+    if (UpScore != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(UpScore);
+    }
+    if (DownScore != 0L) {
+      output.WriteRawTag(40);
+      output.WriteInt64(DownScore);
+    }
+    if (WinLoseScore != 0L) {
+      output.WriteRawTag(48);
+      output.WriteInt64(WinLoseScore);
+    }
+    if (TotalCnt != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(TotalCnt);
+    }
+    item_.WriteTo(output, _repeated_item_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ResCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ResCode);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Nickname);
+    }
+    if (Score != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(Score);
+    }
+    if (UpScore != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(UpScore);
+    }
+    if (DownScore != 0L) {
+      output.WriteRawTag(40);
+      output.WriteInt64(DownScore);
+    }
+    if (WinLoseScore != 0L) {
+      output.WriteRawTag(48);
+      output.WriteInt64(WinLoseScore);
+    }
+    if (TotalCnt != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(TotalCnt);
+    }
+    item_.WriteTo(ref output, _repeated_item_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (ResCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ResCode);
+    }
+    if (Nickname.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+    }
+    if (Score != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+    }
+    if (UpScore != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(UpScore);
+    }
+    if (DownScore != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(DownScore);
+    }
+    if (WinLoseScore != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinLoseScore);
+    }
+    if (TotalCnt != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalCnt);
+    }
+    size += item_.CalculateSize(_repeated_item_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPlayerScoreRecord other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ResCode != 0) {
+      ResCode = other.ResCode;
+    }
+    if (other.Nickname.Length != 0) {
+      Nickname = other.Nickname;
+    }
+    if (other.Score != 0L) {
+      Score = other.Score;
+    }
+    if (other.UpScore != 0L) {
+      UpScore = other.UpScore;
+    }
+    if (other.DownScore != 0L) {
+      DownScore = other.DownScore;
+    }
+    if (other.WinLoseScore != 0L) {
+      WinLoseScore = other.WinLoseScore;
+    }
+    if (other.TotalCnt != 0) {
+      TotalCnt = other.TotalCnt;
+    }
+    item_.Add(other.item_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ResCode = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 24: {
+          Score = input.ReadInt64();
+          break;
+        }
+        case 32: {
+          UpScore = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          DownScore = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          WinLoseScore = input.ReadInt64();
+          break;
+        }
+        case 56: {
+          TotalCnt = input.ReadInt32();
+          break;
+        }
+        case 66: {
+          item_.AddEntriesFrom(input, _repeated_item_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ResCode = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 24: {
+          Score = input.ReadInt64();
+          break;
+        }
+        case 32: {
+          UpScore = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          DownScore = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          WinLoseScore = input.ReadInt64();
+          break;
+        }
+        case 56: {
+          TotalCnt = input.ReadInt32();
+          break;
+        }
+        case 66: {
+          item_.AddEntriesFrom(ref input, _repeated_item_codec);
           break;
         }
       }
