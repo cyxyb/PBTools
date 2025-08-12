@@ -738,6 +738,8 @@ message MsgTranferRecallResp
 {
 	int32 code 			= 1;			//0成功，非0多语言码
 	int64 cur_gold		= 2;			//玩家当前金币
+	int32 recall_userid = 3;			//被撤回人的userid
+	int64 recall_user_gold = 4;			//被撤回人银行金币
 }
 
 //银行操作

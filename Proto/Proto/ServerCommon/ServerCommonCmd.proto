@@ -61,6 +61,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_ModifyTableInfo				= 39;	//修改桌子信息
 	LOGIN2CENTER_SqueezeAccount					= 40;	//挤号
 	CENTER2LOGIN_SqueezeAccount					= 41;	//挤号
+	LOGIN2CENTER_SyncRecallSocre				= 42;	//同步撤回玩家银行金币
+	CENTER2LOGIN_SyncRecallSocre				= 43;	//同步撤回玩家银行金币
 
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册

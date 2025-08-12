@@ -133,6 +133,8 @@ enum EMsgIDServerInternalProto : int {
   CENTER2LOGIN_ModifyTableInfo = 39,
   LOGIN2CENTER_SqueezeAccount = 40,
   CENTER2LOGIN_SqueezeAccount = 41,
+  LOGIN2CENTER_SyncRecallSocre = 42,
+  CENTER2LOGIN_SyncRecallSocre = 43,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,

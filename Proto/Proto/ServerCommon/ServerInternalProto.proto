@@ -603,6 +603,15 @@ message MsgDBVerifyAgentrelation
 	int32 		sitdown_userid 	= 3;	//已经坐下玩家userid
 	int32		user_id			= 4;	//自己userid
 }
+
+//同步撤回玩家金币
+message MsgRecallUserScore
+{
+	int32		user_id			= 1;
+	int64 		score 			= 2;
+}
+
+
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo
 {

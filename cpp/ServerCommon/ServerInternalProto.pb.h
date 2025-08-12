@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[69]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[70]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -221,6 +221,9 @@ extern MsgPvpDelTableDefaultTypeInternal _MsgPvpDelTable_default_instance_;
 class MsgPvpSerTableInfo;
 class MsgPvpSerTableInfoDefaultTypeInternal;
 extern MsgPvpSerTableInfoDefaultTypeInternal _MsgPvpSerTableInfo_default_instance_;
+class MsgRecallUserScore;
+class MsgRecallUserScoreDefaultTypeInternal;
+extern MsgRecallUserScoreDefaultTypeInternal _MsgRecallUserScore_default_instance_;
 class MsgRegisterChatServer;
 class MsgRegisterChatServerDefaultTypeInternal;
 extern MsgRegisterChatServerDefaultTypeInternal _MsgRegisterChatServer_default_instance_;
@@ -317,6 +320,7 @@ template<> ::MsgPlayerAttribute* Arena::CreateMaybeMessage<::MsgPlayerAttribute>
 template<> ::MsgPvpAddTable* Arena::CreateMaybeMessage<::MsgPvpAddTable>(Arena*);
 template<> ::MsgPvpDelTable* Arena::CreateMaybeMessage<::MsgPvpDelTable>(Arena*);
 template<> ::MsgPvpSerTableInfo* Arena::CreateMaybeMessage<::MsgPvpSerTableInfo>(Arena*);
+template<> ::MsgRecallUserScore* Arena::CreateMaybeMessage<::MsgRecallUserScore>(Arena*);
 template<> ::MsgRegisterChatServer* Arena::CreateMaybeMessage<::MsgRegisterChatServer>(Arena*);
 template<> ::MsgRegisterGameServer* Arena::CreateMaybeMessage<::MsgRegisterGameServer>(Arena*);
 template<> ::MsgRegisterServer* Arena::CreateMaybeMessage<::MsgRegisterServer>(Arena*);
@@ -12157,6 +12161,153 @@ class MsgDBVerifyAgentrelation PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgRecallUserScore PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgRecallUserScore) */ {
+ public:
+  inline MsgRecallUserScore() : MsgRecallUserScore(nullptr) {}
+  virtual ~MsgRecallUserScore();
+
+  MsgRecallUserScore(const MsgRecallUserScore& from);
+  MsgRecallUserScore(MsgRecallUserScore&& from) noexcept
+    : MsgRecallUserScore() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgRecallUserScore& operator=(const MsgRecallUserScore& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgRecallUserScore& operator=(MsgRecallUserScore&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgRecallUserScore& default_instance();
+
+  static inline const MsgRecallUserScore* internal_default_instance() {
+    return reinterpret_cast<const MsgRecallUserScore*>(
+               &_MsgRecallUserScore_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    66;
+
+  friend void swap(MsgRecallUserScore& a, MsgRecallUserScore& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgRecallUserScore* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgRecallUserScore* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgRecallUserScore* New() const final {
+    return CreateMaybeMessage<MsgRecallUserScore>(nullptr);
+  }
+
+  MsgRecallUserScore* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgRecallUserScore>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgRecallUserScore& from);
+  void MergeFrom(const MsgRecallUserScore& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgRecallUserScore* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgRecallUserScore";
+  }
+  protected:
+  explicit MsgRecallUserScore(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kScoreFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // int64 score = 2;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgRecallUserScore)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgPvpSerTableInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpSerTableInfo) */ {
  public:
@@ -12198,7 +12349,7 @@ class MsgPvpSerTableInfo PROTOBUF_FINAL :
                &_MsgPvpSerTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    67;
 
   friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
     a.Swap(&b);
@@ -12436,7 +12587,7 @@ class MsgPvpAddTable PROTOBUF_FINAL :
                &_MsgPvpAddTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    68;
 
   friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
     a.Swap(&b);
@@ -12592,7 +12743,7 @@ class MsgPvpDelTable PROTOBUF_FINAL :
                &_MsgPvpDelTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    69;
 
   friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
     a.Swap(&b);
@@ -21012,6 +21163,50 @@ inline void MsgDBVerifyAgentrelation::set_user_id(::PROTOBUF_NAMESPACE_ID::int32
 
 // -------------------------------------------------------------------
 
+// MsgRecallUserScore
+
+// int32 user_id = 1;
+inline void MsgRecallUserScore::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecallUserScore::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecallUserScore::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgRecallUserScore.user_id)
+  return _internal_user_id();
+}
+inline void MsgRecallUserScore::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgRecallUserScore::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgRecallUserScore.user_id)
+}
+
+// int64 score = 2;
+inline void MsgRecallUserScore::clear_score() {
+  score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgRecallUserScore::_internal_score() const {
+  return score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgRecallUserScore::score() const {
+  // @@protoc_insertion_point(field_get:MsgRecallUserScore.score)
+  return _internal_score();
+}
+inline void MsgRecallUserScore::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  score_ = value;
+}
+inline void MsgRecallUserScore::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_score(value);
+  // @@protoc_insertion_point(field_set:MsgRecallUserScore.score)
+}
+
+// -------------------------------------------------------------------
+
 // MsgPvpSerTableInfo
 
 // int32 table_id = 1;
@@ -21386,6 +21581,8 @@ inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

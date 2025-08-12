@@ -218,17 +218,18 @@ public static partial class LoginReflection {
           "ZUluZm8SHgoIVXNlckluZm8YASADKAsyDC5Nc2dDb21tb25LViIvChFNc2dC",
           "aW5kUGhvbmVBd2FyZBIMCgRjb2RlGAEgASgFEgwKBGdvbGQYAyABKAUiSgoO",
           "TXNnQ29udHJvbFVzZXISFAoMY29udHJvbF91c2VyGAEgASgFEgwKBHR5cGUY",
-          "AiABKAUSFAoMY29udHJvbF9nb2xkGAMgASgDIjYKFE1zZ1RyYW5mZXJSZWNh",
-          "bGxSZXNwEgwKBGNvZGUYASABKAUSEAoIY3VyX2dvbGQYAiABKAMiQAoUTXNn",
-          "QmFua09wZXJhdGVSZWNvcmQSDAoEdHlwZRgBIAEoBRIMCgRnb2xkGAIgASgD",
-          "EgwKBHRpbWUYAyABKAMiTwoOTXNnQmFua09wZXJhdGUSDAoEdHlwZRgBIAEo",
-          "BRIMCgRnb2xkGAIgASgDEhAKCHBhc3N3b3JkGAMgASgJEg8KB3VzZXJfaWQY",
-          "BCABKAUiSQoSTXNnQmFua09wZXJhdGVSZXNwEgwKBGNvZGUYASABKAUSJQoG",
-          "cmVjb3JkGAIgASgLMhUuTXNnQmFua09wZXJhdGVSZWNvcmQiQQoYTXNnQmFu",
-          "a09wZXJhdGVSZWNvcmRSZXNwEiUKBnJlY29yZBgBIAMoCzIVLk1zZ0JhbmtP",
-          "cGVyYXRlUmVjb3JkIlcKFU1zZ01vZGlmeUJhbmtQYXNzd29yZBIMCgRjb2Rl",
-          "GAEgASgFEhAKCHBhc3N3b3JkGAIgASgJEg8KB3VzZXJfaWQYAyABKAUSDQoF",
-          "cGhvbmUYBCABKAliBnByb3RvMw=="));
+          "AiABKAUSFAoMY29udHJvbF9nb2xkGAMgASgDImcKFE1zZ1RyYW5mZXJSZWNh",
+          "bGxSZXNwEgwKBGNvZGUYASABKAUSEAoIY3VyX2dvbGQYAiABKAMSFQoNcmVj",
+          "YWxsX3VzZXJpZBgDIAEoBRIYChByZWNhbGxfdXNlcl9nb2xkGAQgASgDIkAK",
+          "FE1zZ0JhbmtPcGVyYXRlUmVjb3JkEgwKBHR5cGUYASABKAUSDAoEZ29sZBgC",
+          "IAEoAxIMCgR0aW1lGAMgASgDIk8KDk1zZ0JhbmtPcGVyYXRlEgwKBHR5cGUY",
+          "ASABKAUSDAoEZ29sZBgCIAEoAxIQCghwYXNzd29yZBgDIAEoCRIPCgd1c2Vy",
+          "X2lkGAQgASgFIkkKEk1zZ0JhbmtPcGVyYXRlUmVzcBIMCgRjb2RlGAEgASgF",
+          "EiUKBnJlY29yZBgCIAEoCzIVLk1zZ0JhbmtPcGVyYXRlUmVjb3JkIkEKGE1z",
+          "Z0JhbmtPcGVyYXRlUmVjb3JkUmVzcBIlCgZyZWNvcmQYASADKAsyFS5Nc2dC",
+          "YW5rT3BlcmF0ZVJlY29yZCJXChVNc2dNb2RpZnlCYW5rUGFzc3dvcmQSDAoE",
+          "Y29kZRgBIAEoBRIQCghwYXNzd29yZBgCIAEoCRIPCgd1c2VyX2lkGAMgASgF",
+          "Eg0KBXBob25lGAQgASgJYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -314,7 +315,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRechargeGiveInfo), global::MsgQueryRechargeGiveInfo.Parser, new[]{ "UserInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhoneAward), global::MsgBindPhoneAward.Parser, new[]{ "Code", "Gold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgControlUser), global::MsgControlUser.Parser, new[]{ "ControlUser", "Type", "ControlGold" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTranferRecallResp), global::MsgTranferRecallResp.Parser, new[]{ "Code", "CurGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTranferRecallResp), global::MsgTranferRecallResp.Parser, new[]{ "Code", "CurGold", "RecallUserid", "RecallUserGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperateRecord), global::MsgBankOperateRecord.Parser, new[]{ "Type", "Gold", "Time" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperate), global::MsgBankOperate.Parser, new[]{ "Type", "Gold", "Password", "UserId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperateResp), global::MsgBankOperateResp.Parser, new[]{ "Code", "Record" }, null, null, null, null),
@@ -24848,6 +24849,8 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
   public MsgTranferRecallResp(MsgTranferRecallResp other) : this() {
     code_ = other.code_;
     curGold_ = other.curGold_;
+    recallUserid_ = other.recallUserid_;
+    recallUserGold_ = other.recallUserGold_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -24884,6 +24887,34 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     }
   }
 
+  /// <summary>Field number for the "recall_userid" field.</summary>
+  public const int RecallUseridFieldNumber = 3;
+  private int recallUserid_;
+  /// <summary>
+  ///被撤回人的userid
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RecallUserid {
+    get { return recallUserid_; }
+    set {
+      recallUserid_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "recall_user_gold" field.</summary>
+  public const int RecallUserGoldFieldNumber = 4;
+  private long recallUserGold_;
+  /// <summary>
+  ///被撤回人银行金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long RecallUserGold {
+    get { return recallUserGold_; }
+    set {
+      recallUserGold_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgTranferRecallResp);
@@ -24899,6 +24930,8 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     }
     if (Code != other.Code) return false;
     if (CurGold != other.CurGold) return false;
+    if (RecallUserid != other.RecallUserid) return false;
+    if (RecallUserGold != other.RecallUserGold) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -24907,6 +24940,8 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     int hash = 1;
     if (Code != 0) hash ^= Code.GetHashCode();
     if (CurGold != 0L) hash ^= CurGold.GetHashCode();
+    if (RecallUserid != 0) hash ^= RecallUserid.GetHashCode();
+    if (RecallUserGold != 0L) hash ^= RecallUserGold.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -24931,6 +24966,14 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
       output.WriteRawTag(16);
       output.WriteInt64(CurGold);
     }
+    if (RecallUserid != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(RecallUserid);
+    }
+    if (RecallUserGold != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(RecallUserGold);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -24948,6 +24991,14 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
       output.WriteRawTag(16);
       output.WriteInt64(CurGold);
     }
+    if (RecallUserid != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(RecallUserid);
+    }
+    if (RecallUserGold != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(RecallUserGold);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -24962,6 +25013,12 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     }
     if (CurGold != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(CurGold);
+    }
+    if (RecallUserid != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RecallUserid);
+    }
+    if (RecallUserGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(RecallUserGold);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -24979,6 +25036,12 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     }
     if (other.CurGold != 0L) {
       CurGold = other.CurGold;
+    }
+    if (other.RecallUserid != 0) {
+      RecallUserid = other.RecallUserid;
+    }
+    if (other.RecallUserGold != 0L) {
+      RecallUserGold = other.RecallUserGold;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -25002,6 +25065,14 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
           CurGold = input.ReadInt64();
           break;
         }
+        case 24: {
+          RecallUserid = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          RecallUserGold = input.ReadInt64();
+          break;
+        }
       }
     }
   #endif
@@ -25022,6 +25093,14 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
         }
         case 16: {
           CurGold = input.ReadInt64();
+          break;
+        }
+        case 24: {
+          RecallUserid = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          RecallUserGold = input.ReadInt64();
           break;
         }
       }

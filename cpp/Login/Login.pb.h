@@ -15295,6 +15295,8 @@ class MsgTranferRecallResp PROTOBUF_FINAL :
   enum : int {
     kCurGoldFieldNumber = 2,
     kCodeFieldNumber = 1,
+    kRecallUseridFieldNumber = 3,
+    kRecallUserGoldFieldNumber = 4,
   };
   // int64 cur_gold = 2;
   void clear_cur_gold();
@@ -15314,6 +15316,24 @@ class MsgTranferRecallResp PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 recall_userid = 3;
+  void clear_recall_userid();
+  ::PROTOBUF_NAMESPACE_ID::int32 recall_userid() const;
+  void set_recall_userid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_recall_userid() const;
+  void _internal_set_recall_userid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 recall_user_gold = 4;
+  void clear_recall_user_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 recall_user_gold() const;
+  void set_recall_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_recall_user_gold() const;
+  void _internal_set_recall_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgTranferRecallResp)
  private:
   class _Internal;
@@ -15323,6 +15343,8 @@ class MsgTranferRecallResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 cur_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 recall_userid_;
+  ::PROTOBUF_NAMESPACE_ID::int64 recall_user_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -26620,6 +26642,46 @@ inline void MsgTranferRecallResp::_internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID
 inline void MsgTranferRecallResp::set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cur_gold(value);
   // @@protoc_insertion_point(field_set:MsgTranferRecallResp.cur_gold)
+}
+
+// int32 recall_userid = 3;
+inline void MsgTranferRecallResp::clear_recall_userid() {
+  recall_userid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTranferRecallResp::_internal_recall_userid() const {
+  return recall_userid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTranferRecallResp::recall_userid() const {
+  // @@protoc_insertion_point(field_get:MsgTranferRecallResp.recall_userid)
+  return _internal_recall_userid();
+}
+inline void MsgTranferRecallResp::_internal_set_recall_userid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  recall_userid_ = value;
+}
+inline void MsgTranferRecallResp::set_recall_userid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_recall_userid(value);
+  // @@protoc_insertion_point(field_set:MsgTranferRecallResp.recall_userid)
+}
+
+// int64 recall_user_gold = 4;
+inline void MsgTranferRecallResp::clear_recall_user_gold() {
+  recall_user_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTranferRecallResp::_internal_recall_user_gold() const {
+  return recall_user_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTranferRecallResp::recall_user_gold() const {
+  // @@protoc_insertion_point(field_get:MsgTranferRecallResp.recall_user_gold)
+  return _internal_recall_user_gold();
+}
+inline void MsgTranferRecallResp::_internal_set_recall_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  recall_user_gold_ = value;
+}
+inline void MsgTranferRecallResp::set_recall_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_recall_user_gold(value);
+  // @@protoc_insertion_point(field_set:MsgTranferRecallResp.recall_user_gold)
 }
 
 // -------------------------------------------------------------------

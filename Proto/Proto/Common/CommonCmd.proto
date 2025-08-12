@@ -176,6 +176,7 @@ enum EMsgIDLogin
 	MsgIDBank_ModifyPassword					= 162;		//修改银行密码(MsgModifyBankPassword)
 	MsgIDBank_ModifyPasswordResp				= 163;		//修改银行密码返回(MsgCommonN32)
 	MsgIDLogin_SqueezeAccountResp				= 164;		//挤号返回(MsgCommonEmpty)
+	MsgIDLogin_SyncRecallUserBankGold			= 165;		//同步被撤回人银行金币(MsgCommonN64)
 }
 
 enum EMsgIDGame

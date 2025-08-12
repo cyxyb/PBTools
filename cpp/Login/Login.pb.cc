@@ -2326,6 +2326,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTranferRecallResp, code_),
   PROTOBUF_FIELD_OFFSET(::MsgTranferRecallResp, cur_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTranferRecallResp, recall_userid_),
+  PROTOBUF_FIELD_OFFSET(::MsgTranferRecallResp, recall_user_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgBankOperateRecord, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -2450,11 +2452,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 740, -1, sizeof(::MsgBindPhoneAward)},
   { 747, -1, sizeof(::MsgControlUser)},
   { 755, -1, sizeof(::MsgTranferRecallResp)},
-  { 762, -1, sizeof(::MsgBankOperateRecord)},
-  { 770, -1, sizeof(::MsgBankOperate)},
-  { 779, -1, sizeof(::MsgBankOperateResp)},
-  { 786, -1, sizeof(::MsgBankOperateRecordResp)},
-  { 792, -1, sizeof(::MsgModifyBankPassword)},
+  { 764, -1, sizeof(::MsgBankOperateRecord)},
+  { 772, -1, sizeof(::MsgBankOperate)},
+  { 781, -1, sizeof(::MsgBankOperateResp)},
+  { 788, -1, sizeof(::MsgBankOperateRecordResp)},
+  { 794, -1, sizeof(::MsgModifyBankPassword)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2769,18 +2771,20 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\n\010UserInfo\030\001 \003(\0132\014.MsgCommonKV\"/\n\021MsgBin"
   "dPhoneAward\022\014\n\004code\030\001 \001(\005\022\014\n\004gold\030\003 \001(\005\""
   "J\n\016MsgControlUser\022\024\n\014control_user\030\001 \001(\005\022"
-  "\014\n\004type\030\002 \001(\005\022\024\n\014control_gold\030\003 \001(\003\"6\n\024M"
+  "\014\n\004type\030\002 \001(\005\022\024\n\014control_gold\030\003 \001(\003\"g\n\024M"
   "sgTranferRecallResp\022\014\n\004code\030\001 \001(\005\022\020\n\010cur"
-  "_gold\030\002 \001(\003\"@\n\024MsgBankOperateRecord\022\014\n\004t"
-  "ype\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\022\014\n\004time\030\003 \001(\003\"O\n"
-  "\016MsgBankOperate\022\014\n\004type\030\001 \001(\005\022\014\n\004gold\030\002 "
-  "\001(\003\022\020\n\010password\030\003 \001(\t\022\017\n\007user_id\030\004 \001(\005\"I"
-  "\n\022MsgBankOperateResp\022\014\n\004code\030\001 \001(\005\022%\n\006re"
-  "cord\030\002 \001(\0132\025.MsgBankOperateRecord\"A\n\030Msg"
-  "BankOperateRecordResp\022%\n\006record\030\001 \003(\0132\025."
-  "MsgBankOperateRecord\"W\n\025MsgModifyBankPas"
-  "sword\022\014\n\004code\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\022\017\n"
-  "\007user_id\030\003 \001(\005\022\r\n\005phone\030\004 \001(\tb\006proto3"
+  "_gold\030\002 \001(\003\022\025\n\rrecall_userid\030\003 \001(\005\022\030\n\020re"
+  "call_user_gold\030\004 \001(\003\"@\n\024MsgBankOperateRe"
+  "cord\022\014\n\004type\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\022\014\n\004time"
+  "\030\003 \001(\003\"O\n\016MsgBankOperate\022\014\n\004type\030\001 \001(\005\022\014"
+  "\n\004gold\030\002 \001(\003\022\020\n\010password\030\003 \001(\t\022\017\n\007user_i"
+  "d\030\004 \001(\005\"I\n\022MsgBankOperateResp\022\014\n\004code\030\001 "
+  "\001(\005\022%\n\006record\030\002 \001(\0132\025.MsgBankOperateReco"
+  "rd\"A\n\030MsgBankOperateRecordResp\022%\n\006record"
+  "\030\001 \003(\0132\025.MsgBankOperateRecord\"W\n\025MsgModi"
+  "fyBankPassword\022\014\n\004code\030\001 \001(\005\022\020\n\010password"
+  "\030\002 \001(\t\022\017\n\007user_id\030\003 \001(\005\022\r\n\005phone\030\004 \001(\tb\006"
+  "proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2876,7 +2880,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 9277,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 9326,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 88, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 88, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -26708,16 +26712,16 @@ MsgTranferRecallResp::MsgTranferRecallResp(const MsgTranferRecallResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_gold_, &from.cur_gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&code_) -
-    reinterpret_cast<char*>(&cur_gold_)) + sizeof(code_));
+    static_cast<size_t>(reinterpret_cast<char*>(&recall_user_gold_) -
+    reinterpret_cast<char*>(&cur_gold_)) + sizeof(recall_user_gold_));
   // @@protoc_insertion_point(copy_constructor:MsgTranferRecallResp)
 }
 
 void MsgTranferRecallResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cur_gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&code_) -
-      reinterpret_cast<char*>(&cur_gold_)) + sizeof(code_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&recall_user_gold_) -
+      reinterpret_cast<char*>(&cur_gold_)) + sizeof(recall_user_gold_));
 }
 
 MsgTranferRecallResp::~MsgTranferRecallResp() {
@@ -26752,8 +26756,8 @@ void MsgTranferRecallResp::Clear() {
   (void) cached_has_bits;
 
   ::memset(&cur_gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&code_) -
-      reinterpret_cast<char*>(&cur_gold_)) + sizeof(code_));
+      reinterpret_cast<char*>(&recall_user_gold_) -
+      reinterpret_cast<char*>(&cur_gold_)) + sizeof(recall_user_gold_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -26775,6 +26779,20 @@ const char* MsgTranferRecallResp::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           cur_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 recall_userid = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          recall_userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 recall_user_gold = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          recall_user_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -26818,6 +26836,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_cur_gold(), target);
   }
 
+  // int32 recall_userid = 3;
+  if (this->recall_userid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_recall_userid(), target);
+  }
+
+  // int64 recall_user_gold = 4;
+  if (this->recall_user_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_recall_user_gold(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -26846,6 +26876,20 @@ size_t MsgTranferRecallResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_code());
+  }
+
+  // int32 recall_userid = 3;
+  if (this->recall_userid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_recall_userid());
+  }
+
+  // int64 recall_user_gold = 4;
+  if (this->recall_user_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_recall_user_gold());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -26885,6 +26929,12 @@ void MsgTranferRecallResp::MergeFrom(const MsgTranferRecallResp& from) {
   if (from.code() != 0) {
     _internal_set_code(from._internal_code());
   }
+  if (from.recall_userid() != 0) {
+    _internal_set_recall_userid(from._internal_recall_userid());
+  }
+  if (from.recall_user_gold() != 0) {
+    _internal_set_recall_user_gold(from._internal_recall_user_gold());
+  }
 }
 
 void MsgTranferRecallResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -26909,8 +26959,8 @@ void MsgTranferRecallResp::InternalSwap(MsgTranferRecallResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, code_)
-      + sizeof(MsgTranferRecallResp::code_)
+      PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, recall_user_gold_)
+      + sizeof(MsgTranferRecallResp::recall_user_gold_)
       - PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, cur_gold_)>(
           reinterpret_cast<char*>(&cur_gold_),
           reinterpret_cast<char*>(&other->cur_gold_));
