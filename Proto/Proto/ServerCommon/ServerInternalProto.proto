@@ -611,6 +611,14 @@ message MsgRecallUserScore
 	int64 		score 			= 2;
 }
 
+//查分
+message MsgQueryUserScore
+{
+	int32		user_id			= 1;
+	int32 		beautiful_id	= 2;
+	int32		page			= 3;
+}
+
 
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo

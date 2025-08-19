@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[70]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[71]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -221,6 +221,9 @@ extern MsgPvpDelTableDefaultTypeInternal _MsgPvpDelTable_default_instance_;
 class MsgPvpSerTableInfo;
 class MsgPvpSerTableInfoDefaultTypeInternal;
 extern MsgPvpSerTableInfoDefaultTypeInternal _MsgPvpSerTableInfo_default_instance_;
+class MsgQueryUserScore;
+class MsgQueryUserScoreDefaultTypeInternal;
+extern MsgQueryUserScoreDefaultTypeInternal _MsgQueryUserScore_default_instance_;
 class MsgRecallUserScore;
 class MsgRecallUserScoreDefaultTypeInternal;
 extern MsgRecallUserScoreDefaultTypeInternal _MsgRecallUserScore_default_instance_;
@@ -320,6 +323,7 @@ template<> ::MsgPlayerAttribute* Arena::CreateMaybeMessage<::MsgPlayerAttribute>
 template<> ::MsgPvpAddTable* Arena::CreateMaybeMessage<::MsgPvpAddTable>(Arena*);
 template<> ::MsgPvpDelTable* Arena::CreateMaybeMessage<::MsgPvpDelTable>(Arena*);
 template<> ::MsgPvpSerTableInfo* Arena::CreateMaybeMessage<::MsgPvpSerTableInfo>(Arena*);
+template<> ::MsgQueryUserScore* Arena::CreateMaybeMessage<::MsgQueryUserScore>(Arena*);
 template<> ::MsgRecallUserScore* Arena::CreateMaybeMessage<::MsgRecallUserScore>(Arena*);
 template<> ::MsgRegisterChatServer* Arena::CreateMaybeMessage<::MsgRegisterChatServer>(Arena*);
 template<> ::MsgRegisterGameServer* Arena::CreateMaybeMessage<::MsgRegisterGameServer>(Arena*);
@@ -12308,6 +12312,164 @@ class MsgRecallUserScore PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgQueryUserScore PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgQueryUserScore) */ {
+ public:
+  inline MsgQueryUserScore() : MsgQueryUserScore(nullptr) {}
+  virtual ~MsgQueryUserScore();
+
+  MsgQueryUserScore(const MsgQueryUserScore& from);
+  MsgQueryUserScore(MsgQueryUserScore&& from) noexcept
+    : MsgQueryUserScore() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgQueryUserScore& operator=(const MsgQueryUserScore& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgQueryUserScore& operator=(MsgQueryUserScore&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgQueryUserScore& default_instance();
+
+  static inline const MsgQueryUserScore* internal_default_instance() {
+    return reinterpret_cast<const MsgQueryUserScore*>(
+               &_MsgQueryUserScore_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    67;
+
+  friend void swap(MsgQueryUserScore& a, MsgQueryUserScore& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgQueryUserScore* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgQueryUserScore* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgQueryUserScore* New() const final {
+    return CreateMaybeMessage<MsgQueryUserScore>(nullptr);
+  }
+
+  MsgQueryUserScore* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgQueryUserScore>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgQueryUserScore& from);
+  void MergeFrom(const MsgQueryUserScore& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgQueryUserScore* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgQueryUserScore";
+  }
+  protected:
+  explicit MsgQueryUserScore(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kBeautifulIdFieldNumber = 2,
+    kPageFieldNumber = 3,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 beautiful_id = 2;
+  void clear_beautiful_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id() const;
+  void set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_beautiful_id() const;
+  void _internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 page = 3;
+  void clear_page();
+  ::PROTOBUF_NAMESPACE_ID::int32 page() const;
+  void set_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_page() const;
+  void _internal_set_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgQueryUserScore)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 page_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgPvpSerTableInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpSerTableInfo) */ {
  public:
@@ -12349,7 +12511,7 @@ class MsgPvpSerTableInfo PROTOBUF_FINAL :
                &_MsgPvpSerTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    68;
 
   friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
     a.Swap(&b);
@@ -12587,7 +12749,7 @@ class MsgPvpAddTable PROTOBUF_FINAL :
                &_MsgPvpAddTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    69;
 
   friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
     a.Swap(&b);
@@ -12743,7 +12905,7 @@ class MsgPvpDelTable PROTOBUF_FINAL :
                &_MsgPvpDelTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    70;
 
   friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
     a.Swap(&b);
@@ -21207,6 +21369,70 @@ inline void MsgRecallUserScore::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) 
 
 // -------------------------------------------------------------------
 
+// MsgQueryUserScore
+
+// int32 user_id = 1;
+inline void MsgQueryUserScore::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryUserScore::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryUserScore::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgQueryUserScore.user_id)
+  return _internal_user_id();
+}
+inline void MsgQueryUserScore::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgQueryUserScore::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgQueryUserScore.user_id)
+}
+
+// int32 beautiful_id = 2;
+inline void MsgQueryUserScore::clear_beautiful_id() {
+  beautiful_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryUserScore::_internal_beautiful_id() const {
+  return beautiful_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryUserScore::beautiful_id() const {
+  // @@protoc_insertion_point(field_get:MsgQueryUserScore.beautiful_id)
+  return _internal_beautiful_id();
+}
+inline void MsgQueryUserScore::_internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  beautiful_id_ = value;
+}
+inline void MsgQueryUserScore::set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_beautiful_id(value);
+  // @@protoc_insertion_point(field_set:MsgQueryUserScore.beautiful_id)
+}
+
+// int32 page = 3;
+inline void MsgQueryUserScore::clear_page() {
+  page_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryUserScore::_internal_page() const {
+  return page_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryUserScore::page() const {
+  // @@protoc_insertion_point(field_get:MsgQueryUserScore.page)
+  return _internal_page();
+}
+inline void MsgQueryUserScore::_internal_set_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  page_ = value;
+}
+inline void MsgQueryUserScore::set_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_page(value);
+  // @@protoc_insertion_point(field_set:MsgQueryUserScore.page)
+}
+
+// -------------------------------------------------------------------
+
 // MsgPvpSerTableInfo
 
 // int32 table_id = 1;
@@ -21581,6 +21807,8 @@ inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
